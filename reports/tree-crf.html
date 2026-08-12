@@ -6,6 +6,13 @@
   <meta name="description" content="A conditional random field over a claim's dependency parse tree: the model definition, its emissions and transitions, exact belief-propagation inference, and what the structure buys for audio-visual claim verification.">
   <title>A CRF over the parse tree · AViD</title>
   <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
   <nav class="site-nav" aria-label="Primary navigation">
@@ -75,10 +82,10 @@
             <p class="eyebrow">The model</p>
             <h2>A conditional random field, but on a tree</h2>
             <p>Parse the claim into a dependency tree (we use Universal Dependencies). We then tag <strong>every node</strong> of that tree with a label, and the root's label is the claim verdict. This is a sequence-labelling problem — like NER or POS tagging — except the tokens are arranged as a tree rather than a chain. So the model is the natural tree version of a linear-chain CRF: unary factors on the nodes, pairwise factors on the edges.</p>
-            <p>Let the tree be <span class="math">T = (V, E)</span> with root <span class="math">r</span>, and let each node <span class="math">v</span> carry a label <span class="math">z<sub>v</sub></span>. Given the input <span class="math">x</span> (the claim plus the video), the joint distribution over labellings is a product of node factors and edge factors:</p>
-            <div class="equation">P(z | x) = (1 / Z) · &prod;<sub>v&isin;V</sub> &phi;<sub>v</sub>(z<sub>v</sub>) · &prod;<sub>(p,c)&isin;E</sub> &psi;<sub>rel(p,c)</sub>(z<sub>p</sub>, z<sub>c</sub>)</div>
-            <div class="equation">Z = &sum;<sub>z</sub> &prod;<sub>v</sub> &phi;<sub>v</sub>(z<sub>v</sub>) · &prod;<sub>(p,c)</sub> &psi;(z<sub>p</sub>, z<sub>c</sub>)</div>
-            <p>Here <span class="math">&phi;<sub>v</sub></span> is the <strong>emission</strong> (a unary factor: how well the evidence supports node <span class="math">v</span> on its own), <span class="math">&psi;</span> is the <strong>transition</strong> (a pairwise factor: how compatible a parent label is with a child label), and <span class="math">Z</span> is the partition function. In HMM terms: emissions and transitions, over a tree instead of a chain. Everything specific to this problem lives in what <span class="math">&phi;</span> and <span class="math">&psi;</span> mean and where their numbers come from — the two next sections.</p>
+            <p>Let the tree be \(T = (V, E)\) with root \(r\), and let each node \(v\) carry a label \(z_v\). Given the input \(x\) (the claim plus the video), the joint distribution over labellings is a product of node factors and edge factors:</p>
+            <div class="equation">\[ P(z \mid x) = \frac{1}{Z}\,\prod_{v\in V}\varphi_v(z_v)\,\prod_{(p,c)\in E}\psi_{\mathrm{rel}(p,c)}(z_p, z_c) \]</div>
+            <div class="equation">\[ Z = \sum_{z}\,\prod_{v}\varphi_v(z_v)\,\prod_{(p,c)}\psi(z_p, z_c) \]</div>
+            <p>Here \(\varphi_v\) is the <strong>emission</strong> (a unary factor: how well the evidence supports node \(v\) on its own), \(\psi\) is the <strong>transition</strong> (a pairwise factor: how compatible a parent label is with a child label), and \(Z\) is the partition function. In HMM terms: emissions and transitions, over a tree instead of a chain. Everything specific to this problem lives in what \(\varphi\) and \(\psi\) mean and where their numbers come from — the two next sections.</p>
 
             <figure class="figure">
               <svg viewBox="0 0 720 430" role="img" aria-labelledby="crf-fig-title" class="diagram">
@@ -134,18 +141,18 @@
                 <text x="40" y="414" fill="var(--accent)" font-size="12" font-weight="800">&phi;<tspan dx="6" font-weight="400" fill="var(--muted)">emission: the model's probe of one node, from x</tspan></text>
                 <text x="400" y="414" fill="var(--muted)" font-size="12" font-weight="800">&psi;<tspan dx="6" font-weight="400" fill="var(--muted)">transition: a table keyed by the relation</tspan></text>
               </svg>
-              <figcaption>Claim “a man is pushing a cart.” Every node carries an emission <span class="math">&phi;</span> — the multimodal model's own probe of that node against the shared video-plus-audio; every edge carries a transition <span class="math">&psi;</span> keyed by the dependency relation. Belief propagation sends messages up (inside) and down (outside) the fixed tree; the root's reconciled label is the verdict.</figcaption>
+              <figcaption>Claim “a man is pushing a cart.” Every node carries an emission \(\varphi\) — the multimodal model's own probe of that node against the shared video-plus-audio; every edge carries a transition \(\psi\) keyed by the dependency relation. Belief propagation sends messages up (inside) and down (outside) the fixed tree; the root's reconciled label is the verdict.</figcaption>
             </figure>
 
-            <p><strong>Two trees, one per channel.</strong> We actually run two of these CRFs side by side — one for the visual channel, one for the audio channel — with no edge between them. Within a modality the label set is three states, <span class="math">S = {no, A, B}</span>: for the visual tree <span class="math">A</span> = something you can see and <span class="math">B</span> = on-screen text; for the audio tree <span class="math">A</span> = speech and <span class="math">B</span> = a non-speech sound. The support mass of a node is just <span class="math">1 &minus; P(no)</span> in each tree, and the two subtypes are the <em>modality posterior</em> — the fine-grained “grounded by what” answer. The scalar verdict reads off the more-supported channel; the per-part “video / audio / both / neither” attribution is read off the local node probes.</p>
+            <p><strong>Two trees, one per channel.</strong> We actually run two of these CRFs side by side — one for the visual channel, one for the audio channel — with no edge between them. Within a modality the label set is three states, \(S = \{\text{no}, A, B\}\): for the visual tree \(A\) = something you can see and \(B\) = on-screen text; for the audio tree \(A\) = speech and \(B\) = a non-speech sound. The support mass of a node is just \(1 - P(\text{no})\) in each tree, and the two subtypes are the <em>modality posterior</em> — the fine-grained “grounded by what” answer. The scalar verdict reads off the more-supported channel; the per-part “video / audio / both / neither” attribution is read off the local node probes.</p>
           </section>
 
           <section id="emissions" class="section">
             <p class="eyebrow">The node factors</p>
             <h2>Emissions: the multimodal model does the perceiving</h2>
-            <p>The emission <span class="math">&phi;<sub>v</sub></span> is a distribution produced by a multimodal model that looks at the video and answers a question about <em>one node</em>. Crucially, the question is <strong>self-contained and about the unit only</strong> — “is a man visible?”, not “given the claim ‘a man is pushing a cart’, is a man visible?”. Conditioning on the claim makes the model copy the claim's overall verdict onto every part (we measured this: it collapses to the same label on 81% of multi-part claims). Asking about the unit alone is exactly the conditional independence a CRF assumes — <em>emissions independent given the labels</em> — and the tree then reintroduces the right context through the transitions. The anti-anchoring choice and the CRF are the same idea.</p>
-            <p>Concretely, the probe returns a calibrated support probability <span class="math">p = P(supported)</span> and a subtype split <span class="math">q<sub>A</sub>, q<sub>B</sub></span>, which map onto the three states:</p>
-            <div class="equation">&phi;<sub>v</sub>(no) = 1 &minus; p &nbsp;&nbsp;·&nbsp;&nbsp; &phi;<sub>v</sub>(A) = p · q<sub>A</sub> &nbsp;&nbsp;·&nbsp;&nbsp; &phi;<sub>v</sub>(B) = p · q<sub>B</sub></div>
+            <p>The emission \(\varphi_v\) is a distribution produced by a multimodal model that looks at the video and answers a question about <em>one node</em>. Crucially, the question is <strong>self-contained and about the unit only</strong> — “is a man visible?”, not “given the claim ‘a man is pushing a cart’, is a man visible?”. Conditioning on the claim makes the model copy the claim's overall verdict onto every part (we measured this: it collapses to the same label on 81% of multi-part claims). Asking about the unit alone is exactly the conditional independence a CRF assumes — <em>emissions independent given the labels</em> — and the tree then reintroduces the right context through the transitions. The anti-anchoring choice and the CRF are the same idea.</p>
+            <p>Concretely, the probe returns a calibrated support probability \(p = P(\text{supported})\) and a subtype split \(q_A,\, q_B\), which map onto the three states:</p>
+            <div class="equation">\[ \varphi_v(\text{no}) = 1 - p \qquad \varphi_v(A) = p\,q_A \qquad \varphi_v(B) = p\,q_B \]</div>
             <p><strong>Three answers, not two.</strong> The probe answers <em>yes / no / can't-tell</em> rather than a forced yes/no, and the three outcomes are treated very differently downstream:</p>
             <ul>
               <li><strong>yes</strong> — grounded; split into the two subtypes as above.</li>
@@ -158,7 +165,7 @@
           <section id="transitions" class="section">
             <p class="eyebrow">The edge factors</p>
             <h2>Transitions: a tiny compatibility table, keyed by grammar</h2>
-            <p>A transition <span class="math">&psi;<sub>rel</sub>(z<sub>p</sub>, z<sub>c</sub>)</span> is just a small lookup table scoring how compatible a parent label is with a child label — rows are parent labels, columns are child labels, and each cell is a number where <span class="math">1.0</span> means “normal combination, no opinion” and a small number means “this combination is fishy, discourage it.” The <em>only</em> thing a table encodes is which parent/child label pairs to frown on. Here is the table for a verb and its required object (say <em>pushing</em> → <em>cart</em>), on plain yes/no support:</p>
+            <p>A transition \(\psi_{\mathrm{rel}}(z_p, z_c)\) is just a small lookup table scoring how compatible a parent label is with a child label — rows are parent labels, columns are child labels, and each cell is a number where \(1.0\) means “normal combination, no opinion” and a small number means “this combination is fishy, discourage it.” The <em>only</em> thing a table encodes is which parent/child label pairs to frown on. Here is the table for a verb and its required object (say <em>pushing</em> → <em>cart</em>), on plain yes/no support:</p>
             <div class="table-wrap">
               <table>
                 <thead><tr><th></th><th>child = no</th><th>child = yes</th></tr></thead>
@@ -168,7 +175,7 @@
                 </tbody>
               </table>
             </div>
-            <p>Only one cell is discouraged: “the composite is supported, but a required part is absent.” You cannot be pushing a cart that is not there. An <em>optional</em> modifier — “red” in “red car” — gets an all-<span class="math">1.0</span> table: nothing is discouraged, a missing optional attribute never sinks its head. So the whole edge model is really <strong>one strictness knob</strong> <span class="math">&lambda;</span> (the <span class="math">0.05</span>) applied to the edges the parser already marks as <em>required</em>. On top of that sit two logical edges: <strong>negation</strong> flips the support polarity of whatever it scopes over, and <strong>coordination</strong> demands “both” for <em>and</em> and “either” for <em>or</em>.</p>
+            <p>Only one cell is discouraged: “the composite is supported, but a required part is absent.” You cannot be pushing a cart that is not there. An <em>optional</em> modifier — “red” in “red car” — gets an all-\(1.0\) table: nothing is discouraged, a missing optional attribute never sinks its head. So the whole edge model is really <strong>one strictness knob</strong> \(\lambda\) (the \(0.05\)) applied to the edges the parser already marks as <em>required</em>. On top of that sit two logical edges: <strong>negation</strong> flips the support polarity of whatever it scopes over, and <strong>coordination</strong> demands “both” for <em>and</em> and “either” for <em>or</em>.</p>
             <div class="callout">
               <strong>Division of labour</strong>
               <p>The multimodal model does <em>perception</em> — the emissions, at every granularity, including composed spans. The tree does <em>logic</em> — the transitions: necessity, negation, coordination. We deliberately lean on the model's strength (concrete “is X there?” judgments) and refuse its weakness (abstract compositional reasoning). A transition is never a model call.</p>
@@ -177,7 +184,7 @@
             <ol class="steps">
               <li>
                 <strong>Deterministic</strong>
-                <p>Hand-set one <span class="math">&lambda;</span>; “required vs optional” comes free from the dependency label. Auditable, reproducible, training-free — and correct for literal claims.</p>
+                <p>Hand-set one \(\lambda\); “required vs optional” comes free from the dependency label. Auditable, reproducible, training-free — and correct for literal claims.</p>
               </li>
               <li>
                 <strong>Fit a handful of scalars</strong>
@@ -185,7 +192,7 @@
               </li>
               <li>
                 <strong>Typed edges</strong>
-                <p>A text-only pass tags each edge as factual / hedged / modal / negated, and a fixed table maps the type to a <span class="math">&lambda;</span>. The model does linguistic typing; the table still owns the number.</p>
+                <p>A text-only pass tags each edge as factual / hedged / modal / negated, and a fixed table maps the type to a \(\lambda\). The model does linguistic typing; the table still owns the number.</p>
               </li>
             </ol>
             <p>The transition is a low-dimensional, largely universal prior — deterministic is likely ~90% of the value. The real bottleneck is emission <em>calibration</em> (three-quarters of the raw probabilities sit at essentially 1.0), not transition sophistication. Keep the tables simple; spend the effort on calibration.</p>
@@ -195,12 +202,12 @@
             <p class="eyebrow">Inference</p>
             <h2>Belief propagation: up is inside, down is outside</h2>
             <p>Because the graph is a tree, inference is <strong>exact and linear-time</strong> by belief propagation — the tree generalisation of forward–backward. Two passes of messages: an upward pass from the leaves to the root, and a downward pass from the root back to the leaves.</p>
-            <div class="equation">up:&nbsp;&nbsp; m<sub>c&rarr;p</sub>(z<sub>p</sub>) = &sum;<sub>z<sub>c</sub></sub> &phi;<sub>c</sub>(z<sub>c</sub>) · &psi;(z<sub>p</sub>, z<sub>c</sub>) · &prod;<sub>k&isin;ch(c)</sub> m<sub>k&rarr;c</sub>(z<sub>c</sub>)</div>
-            <div class="equation">down: m<sub>p&rarr;c</sub>(z<sub>c</sub>) = &sum;<sub>z<sub>p</sub></sub> &phi;<sub>p</sub>(z<sub>p</sub>) · &psi;(z<sub>p</sub>, z<sub>c</sub>) · m<sub>pa(p)&rarr;p</sub>(z<sub>p</sub>) · &prod;<sub>c&prime;&ne;c</sub> m<sub>c&prime;&rarr;p</sub>(z<sub>p</sub>)</div>
-            <div class="equation">belief: b<sub>v</sub>(z<sub>v</sub>) &prop; &phi;<sub>v</sub>(z<sub>v</sub>) · m<sub>pa(v)&rarr;v</sub>(z<sub>v</sub>) · &prod;<sub>c&isin;ch(v)</sub> m<sub>c&rarr;v</sub>(z<sub>v</sub>)</div>
+            <div class="equation">\[ \textbf{up:}\quad m_{c\to p}(z_p) = \sum_{z_c}\varphi_c(z_c)\,\psi(z_p, z_c)\!\!\prod_{k\in\mathrm{ch}(c)}\!\! m_{k\to c}(z_c) \]</div>
+            <div class="equation">\[ \textbf{down:}\quad m_{p\to c}(z_c) = \sum_{z_p}\varphi_p(z_p)\,\psi(z_p, z_c)\,m_{\mathrm{pa}(p)\to p}(z_p)\!\!\prod_{c'\neq c}\!\! m_{c'\to p}(z_p) \]</div>
+            <div class="equation">\[ \textbf{belief:}\quad b_v(z_v) \propto \varphi_v(z_v)\,m_{\mathrm{pa}(v)\to v}(z_v)\!\!\prod_{c\in\mathrm{ch}(v)}\!\! m_{c\to v}(z_v) \]</div>
             <ul>
-              <li><strong>Sum-product</strong> gives the per-node marginals — the support probability and the modality posterior at every node — and the partition function <span class="math">Z</span> from the root belief.</li>
-              <li><strong>Max-product</strong> (replace each <span class="math">&sum;</span> with a <span class="math">max</span> and backtrack) gives the single most-consistent labelling of the whole tree — the MAP decomposition that the paper reports.</li>
+              <li><strong>Sum-product</strong> gives the per-node marginals — the support probability and the modality posterior at every node — and the partition function \(Z\) from the root belief.</li>
+              <li><strong>Max-product</strong> (replace each \(\textstyle\sum\) with a \(\max\) and backtrack) gives the single most-consistent labelling of the whole tree — the MAP decomposition that the paper reports.</li>
             </ul>
             <div class="callout amber">
               <strong>One clarification worth making, because it is a common confusion</strong>
@@ -213,7 +220,7 @@
             <p class="eyebrow">Two factors, one veto</p>
             <h2>A part is supported only if it <em>exists</em> and is <em>bound</em> correctly</h2>
             <p>A composed node's support decomposes into two things joined by AND: its required parts must <em>exist</em>, and the composition itself — the <em>binding</em> — must hold.</p>
-            <div class="equation">support(v) &nbsp;&asymp;&nbsp; [ required parts exist ] &nbsp; AND &nbsp; [ binding holds ]</div>
+            <div class="equation">\[ \mathrm{support}(v)\;\approx\;\big[\,\text{required parts exist}\,\big]\;\wedge\;\big[\,\text{binding holds}\,\big] \]</div>
             <p><strong>Binding is the composed node's own authority, never the parts'.</strong> Part-existence can never confirm a binding; only a direct probe of the composed span can. This is why we probe interior nodes and not just leaves.</p>
             <div class="callout">
               <strong>The dancing decoy</strong>
@@ -272,7 +279,7 @@
 
             <div class="callout amber">
               <strong>Consistency is not correctness — the one thing to keep honest</strong>
-              <p>Turn the enforcement knob <span class="math">&lambda;</span> up to infinity and you get a perfectly self-consistent <em>wrong</em> answer — the model's bias made coherent. So enforcement strength is a tunable knob and a headline ablation, always anchored by the evidence terms and by distant labels. And the method does <em>not</em> claim to fix the multimodal model's binding failures — the emissions are themselves fallible. What it claims is correct <em>aggregation</em> (never “supported” just because the parts exist), <em>preservation</em> of the negation and binding failures that flat methods erase, and <em>diagnosis</em> (the gap between a node's own probe and its reconciled belief flags binding risk).</p>
+              <p>Turn the enforcement knob \(\lambda\) up to infinity and you get a perfectly self-consistent <em>wrong</em> answer — the model's bias made coherent. So enforcement strength is a tunable knob and a headline ablation, always anchored by the evidence terms and by distant labels. And the method does <em>not</em> claim to fix the multimodal model's binding failures — the emissions are themselves fallible. What it claims is correct <em>aggregation</em> (never “supported” just because the parts exist), <em>preservation</em> of the negation and binding failures that flat methods erase, and <em>diagnosis</em> (the gap between a node's own probe and its reconciled belief flags binding risk).</p>
             </div>
           </section>
 
