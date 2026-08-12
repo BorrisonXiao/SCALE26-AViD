@@ -7,6 +7,9 @@ of the claim is grounded, by which evidence channel (visible thing / on-screen t
 non-speech sound), and where the composition breaks. The engine is a **conditional random field
 over the claim's dependency parse tree**.
 
+**🌐 Live site: [borrisonxiao.github.io/SCALE26-AViD](https://borrisonxiao.github.io/SCALE26-AViD/)**
+&nbsp;·&nbsp; [Tree-CRF method note](https://borrisonxiao.github.io/SCALE26-AViD/reports/tree-crf.html)
+
 ## Pages
 
 - `index.html` — project home.
@@ -26,4 +29,4 @@ python3 -m http.server -d . 8000   # then open http://localhost:8000
 
 Serve from `main` at the repository root: **Settings → Pages → Build and deployment →
 Source: Deploy from a branch → Branch: `main` / `/ (root)`**. The live site is then at
-`https://borrisonxiao.github.io/SCALE26-AViD/`. `.nojekyll` disables Jekyll so files are served as-is.
+<https://borrisonxiao.github.io/SCALE26-AViD/>. `.nojekyll` disables Jekyll so files are served as-is.
