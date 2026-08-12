@@ -245,6 +245,43 @@ summary { cursor: pointer; font-weight: 720; }
 .equation mjx-container[display="true"] { margin: 0 !important; }
 mjx-container { max-width: 100%; }
 
+.subnav-wrap {
+  position: sticky;
+  top: 62px;
+  z-index: 15;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(14px);
+}
+.subnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  min-height: 46px;
+}
+.subnav-label {
+  margin-right: 2px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.subnav a {
+  padding: 12px 1px;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  font-size: 14px;
+  text-decoration: none;
+}
+.subnav a:hover { color: var(--text); }
+.subnav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); font-weight: 680; }
+
+.cap { margin: 12px 2px 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.cap b, .cap strong { color: var(--text); }
+.cap-lead { font-weight: 720; color: var(--text); }
+
 .figure { margin: 26px 0; }
 .diagram { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); padding: 14px; box-shadow: var(--shadow); }
 figcaption { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.5; }

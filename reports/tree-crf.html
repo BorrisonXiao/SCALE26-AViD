@@ -24,6 +24,13 @@
       </div>
     </div>
   </nav>
+  <div class="subnav-wrap">
+    <nav class="subnav container" aria-label="Section navigation">
+      <span class="subnav-label">Tree-CRF verifier</span>
+      <a href="tree-crf.html" aria-current="page">The model</a>
+      <a href="interior-emissions.html">Overlapping evidence</a>
+    </nav>
+  </div>
 
   <main>
     <header class="hero">
@@ -85,7 +92,7 @@
             <p>Let the tree be \(T = (V, E)\) with root \(r\), and let each node \(v\) carry a label \(z_v\). Given the input \(x\) (the claim plus the video), the joint distribution over labellings is a product of node factors and edge factors:</p>
             <div class="equation">\[ P(z \mid x) = \frac{1}{Z}\,\prod_{v\in V}\varphi_v(z_v)\,\prod_{(p,c)\in E}\psi_{\mathrm{rel}(p,c)}(z_p, z_c) \]</div>
             <div class="equation">\[ Z = \sum_{z}\,\prod_{v}\varphi_v(z_v)\,\prod_{(p,c)}\psi(z_p, z_c) \]</div>
-            <p>Here \(\varphi_v\) is the <strong>emission</strong> (a unary factor: how well the evidence supports node \(v\) on its own), \(\psi\) is the <strong>transition</strong> (a pairwise factor: how compatible a parent label is with a child label), and \(Z\) is the partition function. In HMM terms: emissions and transitions, over a tree instead of a chain. Everything specific to this problem lives in what \(\varphi\) and \(\psi\) mean and where their numbers come from — the two next sections.</p>
+            <p>Here \(\varphi_v\) is the <strong>emission</strong> (a unary factor: how well the evidence supports node \(v\) on its own), \(\psi\) is the <strong>transition</strong> (a pairwise factor: how compatible a parent label is with a child label), and \(Z\) is the partition function. In HMM terms: emissions and transitions, over a tree instead of a chain. Everything specific to this problem lives in what \(\varphi\) and \(\psi\) mean and where their numbers come from — the two next sections. Figure 1 places these pieces on a small tree.</p>
 
             <figure class="figure">
               <svg viewBox="0 0 720 430" role="img" aria-labelledby="crf-fig-title" class="diagram">
@@ -141,7 +148,7 @@
                 <text x="40" y="414" fill="var(--accent)" font-size="12" font-weight="800">&phi;<tspan dx="6" font-weight="400" fill="var(--muted)">emission: the model's probe of one node, from x</tspan></text>
                 <text x="400" y="414" fill="var(--muted)" font-size="12" font-weight="800">&psi;<tspan dx="6" font-weight="400" fill="var(--muted)">transition: a table keyed by the relation</tspan></text>
               </svg>
-              <figcaption>Claim “a man is pushing a cart.” Every node carries an emission \(\varphi\) — the multimodal model's own probe of that node against the shared video-plus-audio; every edge carries a transition \(\psi\) keyed by the dependency relation. Belief propagation sends messages up (inside) and down (outside) the fixed tree; the root's reconciled label is the verdict.</figcaption>
+              <figcaption><span class="cap-lead">Figure 1.</span> Claim “a man is pushing a cart.” Every node carries an emission \(\varphi\) — the multimodal model's own probe of that node against the shared video-plus-audio; every edge carries a transition \(\psi\) keyed by the dependency relation. Belief propagation sends messages up (inside) and down (outside) the fixed tree; the root's reconciled label is the verdict.</figcaption>
             </figure>
 
             <p><strong>Two trees, one per channel.</strong> We actually run two of these CRFs side by side — one for the visual channel, one for the audio channel — with no edge between them. Within a modality the label set is three states, \(S = \{\text{no}, A, B\}\): for the visual tree \(A\) = something you can see and \(B\) = on-screen text; for the audio tree \(A\) = speech and \(B\) = a non-speech sound. The support mass of a node is just \(1 - P(\text{no})\) in each tree, and the two subtypes are the <em>modality posterior</em> — the fine-grained “grounded by what” answer. The scalar verdict reads off the more-supported channel; the per-part “video / audio / both / neither” attribution is read off the local node probes.</p>
@@ -165,15 +172,16 @@
           <section id="transitions" class="section">
             <p class="eyebrow">The edge factors</p>
             <h2>Transitions: a tiny compatibility table, keyed by grammar</h2>
-            <p>A transition \(\psi_{\mathrm{rel}}(z_p, z_c)\) is just a small lookup table scoring how compatible a parent label is with a child label — rows are parent labels, columns are child labels, and each cell is a number where \(1.0\) means “normal combination, no opinion” and a small number means “this combination is fishy, discourage it.” The <em>only</em> thing a table encodes is which parent/child label pairs to frown on. Here is the table for a verb and its required object (say <em>pushing</em> → <em>cart</em>), on plain yes/no support:</p>
+            <p>A transition \(\psi_{\mathrm{rel}}(z_p, z_c)\) is just a small lookup table scoring how compatible a parent label is with a child label — rows are parent labels, columns are child labels, and each cell is a number where \(1.0\) means “normal combination, no opinion” and a small number means “this combination is fishy, discourage it.” The <em>only</em> thing a table encodes is which parent/child label pairs to frown on. Here is the table for a verb and its required object (say <em>pushing</em> → <em>cart</em>), on plain yes/no support (Table 1):</p>
             <div class="table-wrap">
               <table>
                 <thead><tr><th></th><th>child = no</th><th>child = yes</th></tr></thead>
                 <tbody>
                   <tr><td><strong>parent = no</strong></td><td>1.0</td><td>1.0</td></tr>
-                  <tr><td><strong>parent = yes</strong></td><td><strong>0.05</strong> &nbsp;(&lambda;)</td><td>1.0</td></tr>
+                  <tr><td><strong>parent = yes</strong></td><td><strong>0.05</strong> &nbsp;(\(\lambda\))</td><td>1.0</td></tr>
                 </tbody>
               </table>
+              <p class="cap"><span class="cap-lead">Table 1.</span> The transition (edge) potential for a required verb→object edge, on plain yes/no support. Only the “supported parent, absent required child” cell is discouraged, with strength \(\lambda\); an optional modifier’s table is all ones.</p>
             </div>
             <p>Only one cell is discouraged: “the composite is supported, but a required part is absent.” You cannot be pushing a cart that is not there. An <em>optional</em> modifier — “red” in “red car” — gets an all-\(1.0\) table: nothing is discouraged, a missing optional attribute never sinks its head. So the whole edge model is really <strong>one strictness knob</strong> \(\lambda\) (the \(0.05\)) applied to the edges the parser already marks as <em>required</em>. On top of that sit two logical edges: <strong>negation</strong> flips the support polarity of whatever it scopes over, and <strong>coordination</strong> demands “both” for <em>and</em> and “either” for <em>or</em>.</p>
             <div class="callout">
@@ -240,7 +248,7 @@
             <p class="eyebrow">A necessary preprocessing step</p>
             <h2>From raw parse tokens to checkable units</h2>
             <p>Raw dependency tokens are the wrong <em>units</em> to verify. The manner phrase “by hand” gets split into a vacuous atom “hand”; light verbs like “gets out” become the tree root; a main-content purpose clause is filed as a lowly adverbial adjunct. So between the parser and the CRF we run a <strong>normalization step</strong> that rewrites the parse into a tree of checkable units, then hands that fixed tree to the CRF unchanged.</p>
-            <p>The rewrite is a precision-ordered, <em>resolve-once</em> pipeline: cheap deterministic rules act first, semantic role labelling next, and a language model only on the residue that neither can decide — and no later stage overrides an earlier one. The information levels are nested, so each decision is made by the cheapest source that can actually make it. Two phrases with identical syntax — “change it <em>by hand</em>” (manner) versus “crash <em>into the shore</em>” (direction) — get different treatments, and only the semantic role, not the syntax, can tell them apart:</p>
+            <p>The rewrite is a precision-ordered, <em>resolve-once</em> pipeline: cheap deterministic rules act first, semantic role labelling next, and a language model only on the residue that neither can decide — and no later stage overrides an earlier one. The information levels are nested, so each decision is made by the cheapest source that can actually make it. Two phrases with identical syntax — “change it <em>by hand</em>” (manner) versus “crash <em>into the shore</em>” (direction) — get different treatments, and only the semantic role, not the syntax, can tell them apart (Table 2):</p>
             <div class="table-wrap">
               <table>
                 <thead><tr><th>Phrase</th><th>Syntax</th><th>Semantic role</th><th>Decision</th></tr></thead>
@@ -250,6 +258,7 @@
                   <tr><td>…<strong>in the morning</strong></td><td>oblique + case</td><td>time</td><td>not check-worthy against the clip → abstain</td></tr>
                 </tbody>
               </table>
+              <p class="cap"><span class="cap-lead">Table 2.</span> Three prepositional phrases with identical syntax get different treatments; only the semantic role separates them, which is why the normalization step needs more than the parse.</p>
             </div>
             <p>The output is a per-claim tree of units with typed edges (required / soft / inert / negation / coordination) and per-node roles (probe it, abstain, or contract it away). Because the two models on this path are pinned and the tree is released as a frozen artifact, the whole preprocessing step is reproducible even if an API model later drifts. The CRF above is the headline; this step is what makes its units mean something.</p>
           </section>
@@ -260,7 +269,7 @@
             <p>Two payoffs, one about evaluation and one about accuracy.</p>
 
             <h3>Faithful by construction, and measurably so</h3>
-            <p>Because the root verdict is literally the composition of the node labels, the decomposition is faithful to the verdict by construction — a flat decomposition is not, since its parts need not add up to its aggregate. To test that the structure earns its keep, we built a set of <strong>5,556 claims that are false by construction</strong> — 1,796 with an injected negation, 1,880 with a swapped entity (a binding break), 1,880 with a required argument deleted — all of which should read <em>unsupported</em>. We compare the tree-CRF against a flat whole-claim baseline. Detection counts a claim as caught if it is labelled anything other than supported.</p>
+            <p>Because the root verdict is literally the composition of the node labels, the decomposition is faithful to the verdict by construction — a flat decomposition is not, since its parts need not add up to its aggregate. To test that the structure earns its keep, we built a set of <strong>5,556 claims that are false by construction</strong> — 1,796 with an injected negation, 1,880 with a swapped entity (a binding break), 1,880 with a required argument deleted — all of which should read <em>unsupported</em>. We compare the tree-CRF against a flat whole-claim baseline. Detection counts a claim as caught if it is labelled anything other than supported (Table 3).</p>
             <div class="table-wrap">
               <table>
                 <thead><tr><th>Perturbation</th><th>n</th><th>Tree-CRF detection</th><th>Flat baseline</th></tr></thead>
@@ -271,6 +280,7 @@
                   <tr><td><strong>All</strong></td><td><strong>5,556</strong></td><td><strong>84.0%</strong></td><td>63.3%</td></tr>
                 </tbody>
               </table>
+              <p class="cap"><span class="cap-lead">Table 3.</span> Detection rate — the fraction of false-by-construction claims labelled anything other than supported (higher is better; all three types should read unsupported). Tree-CRF vs. a flat whole-claim baseline, n = 5,556.</p>
             </div>
             <p>The tree beats the whole-claim baseline on every perturbation type — most sharply on argument removal (71.1% vs 31.1%), where a flat model, reading the mangled claim as a whole, simply does not notice a piece is gone. On a stricter paired subset (only claims both systems support before the edit, n = 2,936), the tree downgrades 73.2% of edits versus 51.1% for flat. The headline result is that the decomposition is not just prettier; it catches breaks the flat verdict misses.</p>
 

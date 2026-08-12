@@ -42,12 +42,17 @@
     <section class="section">
       <div class="container">
         <p class="eyebrow">Read next</p>
-        <h2>Method note</h2>
+        <h2>Method note &amp; design notes</h2>
         <div class="card-grid">
           <a class="card card-link" href="reports/tree-crf.html">
             <span class="tag green">Model · math · analysis</span>
             <h3>A CRF over the parse tree</h3>
             <p>The full definition: the tree-structured conditional random field, its emissions (the multimodal probe) and transitions (the composition rules), exact belief-propagation inference, the existence-versus-binding veto, and what the structure buys on negation, binding, and modality attribution.</p>
+          </a>
+          <a class="card card-link" href="reports/interior-emissions.html">
+            <span class="tag amber">Open question</span>
+            <h3>What does an interior node's probe measure?</h3>
+            <p>A design note on the model's sharpest open question: the probe at an interior node scores the whole subtree, not the node alone, so the same evidence gets counted twice. Why that happens, why you cannot just probe the head word, and what a clean per-conjunct fix looks like.</p>
           </a>
         </div>
         <p class="section-intro" style="margin-top:20px;">More reports — the dataset, the annotation surface, and the full experiment grid — will be added here as they are written up. This page starts with the core method.</p>

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An open modelling question in the AViD tree-CRF: the probe at an interior node scores the whole subtree proposition, not the node on its own. Why that double-counts evidence, why you cannot simply probe the head word, and how to fix it.">
+  <title>What does an interior node's probe measure? · AViD</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html">SCALE 2026 · AViD</a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="tree-crf.html" aria-current="page">Tree-CRF verifier</a>
+      </div>
+    </div>
+  </nav>
+  <div class="subnav-wrap">
+    <nav class="subnav container" aria-label="Section navigation">
+      <span class="subnav-label">Tree-CRF verifier</span>
+      <a href="tree-crf.html">The model</a>
+      <a href="interior-emissions.html" aria-current="page">Overlapping evidence</a>
+    </nav>
+  </div>
+
+  <main>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">Design note · open question · 12 August 2026</p>
+        <h1>What does an interior node's probe measure?</h1>
+        <p class="lede">In the current model the probe at an interior node scores the <em>whole subtree</em> — the full proposition hanging under that node — not the node on its own. That is a modelling choice with a real cost: the same pixels get counted more than once. This note works through whether it is the right thing to do, why you cannot simply fall back to probing the head word, and what a clean fix looks like.</p>
+        <div class="button-row">
+          <a class="button primary" href="#fix">Jump to the fix</a>
+          <a class="button" href="tree-crf.html">Back to the model</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container split">
+        <aside class="toc" aria-label="Table of contents">
+          <strong>On this page</strong>
+          <a href="#question">The question</a>
+          <a href="#now">What a node probes now</a>
+          <a href="#problem">Why overlap is a problem</a>
+          <a href="#local">Why not just probe the head</a>
+          <a href="#fix">A cleaner split</a>
+          <a href="#combine">On "combining" the two</a>
+          <a href="#fallback">A cheaper fallback</a>
+          <a href="#trilemma">Pick two of three</a>
+          <a href="#notconfuse">What this is not</a>
+          <a href="#decide">How to decide it</a>
+          <a href="#references">References</a>
+        </aside>
+
+        <article class="prose">
+          <section id="question">
+            <p class="eyebrow">The question</p>
+            <h2>The interior emission is really a subtree probe</h2>
+            <p>The <a href="tree-crf.html#emissions">method note</a> defines the emission \(\varphi_v\) as "the multimodal model's own probe of node \(v\)." For a leaf like <em>a cart</em> that is honest — the probe asks "is a cart visible?" But for an interior <em>event</em> node the probe asks about the entire span hanging under it — "is a man pushing a cart?" — which is the whole proposition, not the node alone. So the object the CRF calls a node emission is actually a <strong>subtree emission</strong>. Is that the right thing to do, or should each node carry its own local probe, combined somehow with the subtree probe?</p>
+            <div class="callout">
+              <strong>Short answer</strong>
+              <p>The concern is correct and it is already on the record — the project's own CRF-semantics review names the model "a parse-indexed tree CRF over <em>overlapping proposition units</em>" and flags the double-counting as unresolved. But the fix is <em>neither</em> "probe the head word instead" <em>nor</em> "multiply a node probe by a subtree probe." Both mishandle overlapping evidence. The clean move is to make the probes cover <em>disjoint</em> pieces of the claim, one per logical conjunct.</p>
+            </div>
+          </section>
+
+          <section id="now" class="section">
+            <p class="eyebrow">The current behaviour</p>
+            <h2>What each node actually probes today</h2>
+            <p>Each CRF variable scores support for the <em>text that was queried against the clip</em> — and for events and the root that text is the full proposition, which literally contains its descendants' text. Take the claim "Huge crowd standing together chanting":</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Parse anchor</th><th>Text actually probed</th><th>Relation to other probes</th></tr></thead>
+                <tbody>
+                  <tr><td><code>crowd</code> (root)</td><td>"Huge crowd standing together chanting"</td><td>the whole claim</td></tr>
+                  <tr><td><code>standing</code></td><td>"standing together"</td><td>inside the root probe</td></tr>
+                  <tr><td><code>chanting</code></td><td>"chanting"</td><td>inside the root probe</td></tr>
+                  <tr><td><code>Huge</code>, <code>together</code></td><td>— (folded into a parent; not probed)</td><td>—</td></tr>
+                </tbody>
+              </table>
+              <p class="cap"><span class="cap-lead">Table 1.</span> The variable indexed by <code>crowd</code> scores support for the full proposition anchored at <code>crowd</code>, not for the word "crowd." Its probe text is a superset of the <code>standing</code> and <code>chanting</code> probe texts, so the three observations overlap. Entity/leaf nodes are tight (non-overlapping); the overlap is concentrated at event and root nodes over their children.</p>
+            </div>
+            <p>The same holds up a chain of nested events (a matrix verb and its purpose clause), so the overlap compounds toward the root. Figure 1 shows the pattern.</p>
+            <figure class="figure">
+              <svg viewBox="0 0 720 280" role="img" aria-labelledby="ov-fig-title" class="diagram">
+                <title id="ov-fig-title">The root node's probe text spans the whole claim and contains the shorter child probe texts, so the same video frames feed the root probe and each child probe.</title>
+                <!-- reused-evidence bands -->
+                <rect x="232" y="86" width="226" height="78" fill="var(--blue)" opacity="0.08"/>
+                <rect x="470" y="86" width="90" height="120" fill="var(--amber)" opacity="0.10"/>
+                <!-- sentence -->
+                <text x="80"  y="60" text-anchor="middle" fill="var(--text)" font-size="15" font-weight="600">Huge</text>
+                <text x="165" y="60" text-anchor="middle" fill="var(--text)" font-size="15" font-weight="600">crowd</text>
+                <text x="290" y="60" text-anchor="middle" fill="var(--text)" font-size="15" font-weight="600">standing</text>
+                <text x="405" y="60" text-anchor="middle" fill="var(--text)" font-size="15" font-weight="600">together</text>
+                <text x="515" y="60" text-anchor="middle" fill="var(--text)" font-size="15" font-weight="600">chanting</text>
+                <!-- root probe bar -->
+                <text x="46" y="83" fill="var(--accent)" font-size="11.5" font-weight="700">root probe — whole proposition</text>
+                <rect x="44" y="90" width="516" height="18" rx="5" fill="var(--accent-soft)" stroke="var(--accent)"/>
+                <!-- standing probe bar -->
+                <text x="234" y="131" fill="var(--blue)" font-size="11.5" font-weight="700">child probe — "standing together"</text>
+                <rect x="232" y="138" width="226" height="18" rx="5" fill="var(--blue-soft)" stroke="var(--blue)"/>
+                <!-- chanting probe bar -->
+                <text x="392" y="177" fill="var(--amber)" font-size="11.5" font-weight="700">child probe — "chanting"</text>
+                <rect x="470" y="184" width="90" height="18" rx="5" fill="var(--amber-soft)" stroke="var(--amber)"/>
+                <!-- note -->
+                <text x="44" y="240" fill="var(--muted)" font-size="12.5">The root probe already sees "standing together" and "chanting" (shaded columns).</text>
+                <text x="44" y="262" fill="var(--muted)" font-size="12.5">Multiplying all three as independent evidence scores the same frames two-to-three times.</text>
+              </svg>
+              <figcaption><span class="cap-lead">Figure 1.</span> Probe coverage for "Huge crowd standing together chanting." Each bar is the text one node scores against the clip; the root bar spans the whole claim and covers both child bars (shaded columns), so their evidence is reused when the CRF multiplies the emissions.</figcaption>
+            </figure>
+          </section>
+
+          <section id="problem" class="section">
+            <p class="eyebrow">Why it matters</p>
+            <h2>Overlapping probes double-count evidence</h2>
+            <p>The method note justifies multiplying the emissions by appealing to conditional independence — "local emissions give exactly the independence a CRF assumes." <strong>That justification is false at interior event nodes</strong>, because their observation is not local: it re-reads the same frames as the children. When the clip clearly shows everything, the model multiplies</p>
+            <div class="equation">\[ P(\text{man visible}) \times P(\text{cart visible}) \times P(\text{man pushing cart}), \]</div>
+            <p>but the last term is high <em>because</em> the man and the cart are visible. Agreement inflates confidence super-linearly, and when the terms disagree the trade-off has no principled scale — you are multiplying correlated probabilities with no weight to discount the redundancy. The asymmetric necessity edge softens this (a child mostly <em>vetoes</em> a supported parent rather than boosting it), which is why the raw verdict is empirically robust to unit changes. But the double-count still distorts exactly the quantities that are the project's contribution: the per-node marginals, the existence-versus-binding split, and the per-part <strong>modality attribution</strong> — a "video / audio" label read off an event node currently describes its whole subtree, not the node.</p>
+          </section>
+
+          <section id="local" class="section">
+            <p class="eyebrow">The tempting non-fix</p>
+            <h2>Why you cannot just probe the head word</h2>
+            <p>The obvious reaction is "make the interior emission local — probe only the head, <em>pushing</em>." That throws away the two things the subtree probe was doing right:</p>
+            <ul>
+              <li><strong>Binding needs a composed probe.</strong> The head word alone cannot tell you the <em>man</em> is the one pushing. The dancing decoy — a woman dancing while a man watches, for "a man is dancing" — is caught only by a probe of the composed span, never by the parts. This is the whole reason interior nodes are probed at all.</li>
+              <li><strong>The root needs claim coverage.</strong> The claim-level verdict is read off the root, so the root probe must cover the full claim; shrinking it to a head word breaks the readout (this is exactly why the surface was changed to full-subtree roots, taking claim coverage from 48% to 96%).</li>
+            </ul>
+            <p>So "go local" is not the answer. The real problem is not that the probe is big — it is that the <em>same evidence sits on two factors</em>.</p>
+          </section>
+
+          <section id="fix" class="section">
+            <p class="eyebrow">The clean resolution</p>
+            <h2>One probe per conjunct</h2>
+            <p>A proposition is a conjunction, and the single subtree probe collapses several conjuncts into one. Written out in the neo-Davidsonian style familiar from semantic role labelling,</p>
+            <div class="equation">\[ \exists e:\; \operatorname{push}(e)\;\wedge\;\operatorname{Agent}(e,\text{man})\;\wedge\;\operatorname{Theme}(e,\text{cart}). \]</div>
+            <p>Each conjunct is a <em>different</em> observation you can probe separately, so assign each to exactly one factor. Then no frame feeds two factors, binding is preserved (it lives in the relational factors), and inference stays exact — a factor tying an event to its arguments keeps the graph singly connected, so belief propagation is unchanged in form.</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Conjunct</th><th>Probe</th><th>Where it lives</th></tr></thead>
+                <tbody>
+                  <tr><td>the man exists · the cart exists</td><td>"is a man visible?" · "is a cart visible?"</td><td>local unary at each argument node</td></tr>
+                  <tr><td>a pushing event occurs</td><td>"is someone pushing something?"</td><td>local-ish unary at the event node</td></tr>
+                  <tr><td>the man is the agent · the cart is the theme</td><td>"is the man the one pushing?" · "is the cart the thing pushed?"</td><td>a binding factor between the event and each argument</td></tr>
+                </tbody>
+              </table>
+              <p class="cap"><span class="cap-lead">Table 2.</span> The single subtree probe ("is a man pushing a cart?") conflates all four rows. Splitting them removes the overlap by construction and — a bonus — lets you attribute the <em>binding</em> to a channel separately from the arguments (e.g. the man and cart are on video, but the relation is asserted only in the narration).</p>
+            </div>
+            <p>Formally this is the identity the model should factor along:</p>
+            <div class="equation">\[ P(\text{proposition}) \;=\; P(\text{parts exist}) \;\times\; P(\text{binding}\mid\text{parts exist}). \]</div>
+            <p>Existence goes on the argument unaries; the <em>binding-given-existence</em> residual goes on the relational factor. This is also the principled reading of the nearest competitor, <a href="#references">BTProp</a>: treat each node's probe as a noisy observation of that node's <em>own latent truth</em>, with the tree carrying the logical relations — so the observations are of distinct truths, not re-readings of one another. The practical catch is eliciting the residual: it means getting the model to presuppose the arguments ("a man and a cart are present — is he pushing it?"), which multimodal models honour unreliably. That risk is what motivates the fallback below.</p>
+          </section>
+
+          <section id="combine" class="section">
+            <p class="eyebrow">Answering the literal question</p>
+            <h2>On "combining" a node probe with the subtree probe</h2>
+            <p>Combining is right only in the <em>conditional</em> sense above, never as a product of two overlapping marginals. Putting a local head emission and a full-proposition emission on the same node and multiplying gives</p>
+            <div class="equation">\[ \underbrace{P(\text{head alone})}_{\text{node probe}}\;\times\;\underbrace{P(\text{whole proposition})}_{\text{subtree probe}}, \]</div>
+            <p>and since the proposition already entails the head, this counts the head evidence <em>twice</em> — it makes the double-counting worse, not better. "Combine" is correct when the second term is the residual \(P(\text{binding}\mid\text{parts})\), wrong when it is another overlapping whole.</p>
+          </section>
+
+          <section id="fallback" class="section">
+            <p class="eyebrow">If clean probes are unreliable</p>
+            <h2>A cheaper fallback: learn the weights</h2>
+            <p>Keep the proposition probes, but stop treating them as calibrated likelihoods to be multiplied, and read the model as a genuine <em>discriminative</em> CRF — which is its correct formal status anyway. Then</p>
+            <div class="equation">\[ \log P(z\mid x) \;=\; \sum_v w_v \,\log \varphi_v(z_v) \;+\; \sum_{(p,c)} \log \psi(z_p, z_c), \]</div>
+            <p>and you <strong>fit a weight \(w_v\) per node role</strong> (or per depth of overlap) so the redundancy is discounted. CRFs are built to tolerate overlapping features — but only once the weights are learned; you cannot plug in raw probabilities and multiply. This is a handful of scalars, the same machinery already proposed for the edge strengths, and the gold surface needed to fit it is being built regardless. The cost is that it spends the "training-free" property, which is why the choice is a genuine fork.</p>
+          </section>
+
+          <section id="trilemma" class="section">
+            <p class="eyebrow">The tension in one line</p>
+            <h2>Pick two of three</h2>
+            <div class="callout amber">
+              <p>You can have at most two of: <strong>(a)</strong> plug in the model's probabilities untrained; <strong>(b)</strong> keep proposition-level probes at interior nodes; <strong>(c)</strong> read calibrated per-node marginals as the interpretable output.</p>
+            </div>
+            <ul>
+              <li>The current model quietly wants all three — the double-count is that contradiction surfacing.</li>
+              <li><strong>One probe per conjunct</strong> (the fix above) keeps (a) and (c), gives up (b): interior emissions become conjunct-local.</li>
+              <li><strong>Learn the weights</strong> keeps (b) and (c), gives up (a).</li>
+            </ul>
+            <p>Because the decomposition — property (c) — is the contribution, the conjunct-split is the recommended direction, with learned weights as the fallback if the relational probe cannot be elicited cleanly.</p>
+          </section>
+
+          <section id="notconfuse" class="section">
+            <p class="eyebrow">Two easy confusions</p>
+            <h2>What this is <em>not</em></h2>
+            <ul>
+              <li><strong>Not the same as deliberate redundancy.</strong> Probing the <em>same</em> binding two ways (a dependency node and a constituency node) is averaging repeated reads of one quantity — that reduces variance and is fine. Nested parent-contains-child multiplication introduces <em>bias</em> (over-concentration), not just variance. Different phenomenon.</li>
+              <li><strong>Orthogonal to the state-space fix.</strong> The separate proposal to use explicit support / refuted / can't-tell states (and make "can't-tell" structurally neutral) fixes a different bug — an evidence-free node scoring two-thirds support. Do both; they don't interact.</li>
+            </ul>
+          </section>
+
+          <section id="decide" class="section">
+            <p class="eyebrow">Resolving it empirically</p>
+            <h2>How to decide it</h2>
+            <p>The binding-decoy perturbation split is exactly where the existence-versus-binding separation bites, so it is the discriminating test. On that split — and, once available, on the gold decomposition — compare three variants: <strong>(i)</strong> the current proposition-everywhere model; <strong>(ii)</strong> conjunct-local unaries plus a relational binding factor; <strong>(iii)</strong> proposition probes with fitted per-role weights. Report per-node label correctness and faithfulness (does the verdict move when a node label is dropped or corrupted), not just the root verdict — the verdict is already known to be insensitive, so it cannot adjudicate this.</p>
+            <div class="callout">
+              <strong>Status</strong>
+              <p>Open question, not a decided change. This note states the diagnosis and the options; the experiment above is what would settle which factorization the paper adopts.</p>
+            </div>
+          </section>
+
+          <section id="references" class="section">
+            <p class="eyebrow">Selected references</p>
+            <h2>Primary sources</h2>
+            <ol class="references">
+              <li><a href="https://arxiv.org/abs/2406.06950">Hou, Zhang, Andreas, Chang. Belief-tree Propagation for fact-checking (per-node LLM beliefs, exact message passing over a claim tree). NAACL 2025.</a></li>
+              <li><a href="https://arxiv.org/abs/2310.18235">Cho et al. Davidsonian Scene Graph: dependency-gated atomic questions. ICLR 2024.</a></li>
+              <li><a href="https://aclanthology.org/J05-1004/">Palmer, Gildea, Kingsbury. The Proposition Bank: core arguments vs. adjuncts (the conjunct decomposition). Computational Linguistics 2005.</a></li>
+              <li><a href="https://www.nowpublishers.com/article/Details/MAL-013">Sutton, McCallum. An introduction to conditional random fields — why CRFs allow overlapping features once weights are learned. Foundations and Trends in ML 2011.</a></li>
+              <li><a href="https://doi.org/10.1162/089976602760128018">Hinton. Training products of experts by minimizing contrastive divergence — the over-concentration of multiplied overlapping experts. Neural Computation 2002.</a></li>
+            </ol>
+            <p class="meta">Companion to the <a href="tree-crf.html">tree-CRF method note</a>. Diagnosis distilled from the AViD CRF-semantics review and compositional-verification design notes; the neo-Davidsonian framing follows standard event semantics and semantic-role labelling.</p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">SCALE 2026 · AViD — audio-visual claim disentanglement · Design note: overlapping evidence.</div>
+  </footer>
+</body>
+</html>
