@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AViD (SCALE 2026): verifying claims against video-with-audio by labelling a claim's parse tree with a conditional random field, and attributing each part to the evidence channel that grounds it.">
+  <title>SCALE 2026 · AViD — Audio-Visual claim Disentanglement</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="./">SCALE 2026 · AViD</a>
+      <div class="nav-links">
+        <a href="./" aria-current="page">Home</a>
+        <a href="reports/tree-crf.html">Tree-CRF verifier</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">SCALE 2026 · AViD</p>
+        <h1>Verifying claims against video, one part of the parse at a time</h1>
+        <p class="lede">AViD checks whether a claim holds in a video-with-audio and, more importantly, <em>decomposes</em> the verdict: which part of the claim is grounded, by which evidence channel — something you can see, on-screen text, speech, or a non-speech sound — and where the composition breaks. The engine is a conditional random field over the claim's dependency parse tree.</p>
+        <div class="button-row">
+          <a class="button primary" href="reports/tree-crf.html">Read the method note</a>
+        </div>
+        <p class="meta">A slightly better yes/no is not the interesting result — a whole-claim verdict is ~84% redundant across audio and visual. The structure is.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">The idea in one paragraph</p>
+        <h2>Label every node of the parse, then reconcile</h2>
+        <p class="section-intro">Parse the claim into a dependency tree. Ask a multimodal model, for each node on its own, whether that part is grounded in the clip — and by which channel. Then run belief propagation over the tree, trading each part's own evidence against a small set of composition rules (a required part cannot be missing, a negation flips its scope, a coordination needs both or either). The root's reconciled label is the verdict, and it is faithful to the parts by construction: the sub-part labels actually compose into it. That is the property flat, part-by-part fact-checking cannot give you — and the reason it silently mis-handles negation and binding.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Read next</p>
+        <h2>Method note</h2>
+        <div class="card-grid">
+          <a class="card card-link" href="reports/tree-crf.html">
+            <span class="tag green">Model · math · analysis</span>
+            <h3>A CRF over the parse tree</h3>
+            <p>The full definition: the tree-structured conditional random field, its emissions (the multimodal probe) and transitions (the composition rules), exact belief-propagation inference, the existence-versus-binding veto, and what the structure buys on negation, binding, and modality attribution.</p>
+          </a>
+        </div>
+        <p class="section-intro" style="margin-top:20px;">More reports — the dataset, the annotation surface, and the full experiment grid — will be added here as they are written up. This page starts with the core method.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">The working picture</p>
+        <h2>Current evidence</h2>
+        <div class="stat-grid">
+          <div class="stat"><strong>84.0%</strong><span>Tree-CRF detection of false-by-construction claims (flat baseline: 63.3%)</span></div>
+          <div class="stat"><strong>+20.7 pts</strong><span>Over a flat whole-claim verifier, on 5,556 perturbed claims</span></div>
+          <div class="stat"><strong>16.6%</strong><span>Of claim parts are grounded by audio alone — hidden by whole-claim verdicts</span></div>
+          <div class="stat"><strong>2,375</strong><span>Real claims decomposed: 56.5% supported · 27.5% partial · 16.0% unsupported</span></div>
+        </div>
+        <div class="callout">
+          <strong>Where the gain comes from</strong>
+          <p>The tree beats the flat baseline on every perturbation type — negation 88.1% vs 84.4%, entity-swap 93.0% vs 75.5%, argument-removal 71.1% vs 31.1% — because a whole-claim model reading a mangled claim does not notice a piece is missing, while a compositional model checks each required part and its binding directly.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">SCALE 2026 · AViD — audio-visual claim disentanglement · Updated 11 August 2026</div>
+  </footer>
+</body>
+</html>

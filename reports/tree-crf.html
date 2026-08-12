@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A conditional random field over a claim's dependency parse tree: the model definition, its emissions and transitions, exact belief-propagation inference, and what the structure buys for audio-visual claim verification.">
+  <title>A CRF over the parse tree · AViD</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html">SCALE 2026 · AViD</a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="tree-crf.html" aria-current="page">Tree-CRF verifier</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">Method note · 11 August 2026</p>
+        <h1>A CRF over the parse tree</h1>
+        <p class="lede">We verify a claim against a video-with-audio by labelling every node of the claim's dependency parse. The model is an ordinary conditional random field — the kind used for POS tagging or NER — but its tokens sit in a tree instead of a left-to-right chain. This note gives the model, its emissions and transitions, the exact inference, and what the structure buys.</p>
+        <div class="button-row">
+          <a class="button primary" href="#model">Jump to the model</a>
+          <a class="button" href="#analysis">What it buys</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container split">
+        <aside class="toc" aria-label="Table of contents">
+          <strong>On this page</strong>
+          <a href="#task">The task</a>
+          <a href="#flat">Why flat checking breaks</a>
+          <a href="#model">A CRF over the tree</a>
+          <a href="#emissions">Emissions</a>
+          <a href="#transitions">Transitions</a>
+          <a href="#inference">Inference</a>
+          <a href="#binding">Existence vs. binding</a>
+          <a href="#units">From words to units</a>
+          <a href="#analysis">What it buys</a>
+          <a href="#related">Related work</a>
+          <a href="#references">References</a>
+        </aside>
+
+        <article class="prose">
+          <section id="task">
+            <p class="eyebrow">The task</p>
+            <h2>Not a better yes/no — a decomposition</h2>
+            <p>Given a natural-language claim and a video with an audio track, we want a verdict — <em>supported</em>, <em>partially supported</em>, or <em>unsupported</em> — <strong>together with a decomposition of it</strong>: which parts of the claim are actually grounded, by which evidence channel (something you can see, on-screen text, speech, or a non-speech sound), and where the claim falls apart when it does.</p>
+            <p>The decomposition is the point, not the verdict. On our data a whole-claim yes/no answer is roughly 84% redundant across the audio and visual channels — either modality alone usually gets it — so a slightly better yes/no is not an interesting result. What is interesting is the <em>structure</em>: a per-part, per-channel account of the claim that is <strong>faithful by construction</strong>, meaning the sub-part labels actually compose into the claim-level verdict rather than being a separate post-hoc story.</p>
+            <div class="callout">
+              <strong>The question we are testing</strong>
+              <p>Does enforcing compositional and modality <em>consistency</em> between a claim's parse-tree decomposition and its per-part audio-visual evidence give more faithful and more accurate verification — especially on negation, on binding, and on decoy cases — than checking each part independently?</p>
+            </div>
+          </section>
+
+          <section id="flat" class="section">
+            <p class="eyebrow">Motivation</p>
+            <h2>Checking each part independently is not just less interpretable — it is wrong</h2>
+            <p>The standard recipe for claim verification is <em>decompose into a flat list of atomic facts, check each one on its own, then aggregate with a simple precision rule</em> (FactScore, SAFE, WICE). Flat checking has a failure mode that is not a matter of taste; it produces the wrong answer.</p>
+            <div class="callout red">
+              <strong>The negation trap</strong>
+              <p>Claim: “The dog is <strong>not</strong> barking.” Video: a dog plainly barking. A flat checker verifies “dog” ✓ and “barking” ✓, aggregates, and calls the claim <em>supported</em>. The truth is <em>unsupported</em> — exactly inverted. The word “not” cannot be pointed at in a video, so a flat pipeline quietly drops it, and the truth value flips.</p>
+            </div>
+            <p>The deeper problem is <strong>inconsistency</strong>: the label a model gives the whole claim and the labels it gives the parts routinely disagree, and a flat pipeline has no machinery to reconcile them. “Compose the parts upward” and “push the claim's context downward” are not competing philosophies to pick between — they are the two halves of one computation. What we want is the single most <em>consistent</em> labelling of every node at once, trading the evidence for each part against a small set of composition rules. On a tree, that reconciliation is exact and cheap.</p>
+          </section>
+
+          <section id="model" class="section">
+            <p class="eyebrow">The model</p>
+            <h2>A conditional random field, but on a tree</h2>
+            <p>Parse the claim into a dependency tree (we use Universal Dependencies). We then tag <strong>every node</strong> of that tree with a label, and the root's label is the claim verdict. This is a sequence-labelling problem — like NER or POS tagging — except the tokens are arranged as a tree rather than a chain. So the model is the natural tree version of a linear-chain CRF: unary factors on the nodes, pairwise factors on the edges.</p>
+            <p>Let the tree be <span class="math">T = (V, E)</span> with root <span class="math">r</span>, and let each node <span class="math">v</span> carry a label <span class="math">z<sub>v</sub></span>. Given the input <span class="math">x</span> (the claim plus the video), the joint distribution over labellings is a product of node factors and edge factors:</p>
+            <div class="equation">P(z | x) = (1 / Z) · &prod;<sub>v&isin;V</sub> &phi;<sub>v</sub>(z<sub>v</sub>) · &prod;<sub>(p,c)&isin;E</sub> &psi;<sub>rel(p,c)</sub>(z<sub>p</sub>, z<sub>c</sub>)</div>
+            <div class="equation">Z = &sum;<sub>z</sub> &prod;<sub>v</sub> &phi;<sub>v</sub>(z<sub>v</sub>) · &prod;<sub>(p,c)</sub> &psi;(z<sub>p</sub>, z<sub>c</sub>)</div>
+            <p>Here <span class="math">&phi;<sub>v</sub></span> is the <strong>emission</strong> (a unary factor: how well the evidence supports node <span class="math">v</span> on its own), <span class="math">&psi;</span> is the <strong>transition</strong> (a pairwise factor: how compatible a parent label is with a child label), and <span class="math">Z</span> is the partition function. In HMM terms: emissions and transitions, over a tree instead of a chain. Everything specific to this problem lives in what <span class="math">&phi;</span> and <span class="math">&psi;</span> mean and where their numbers come from — the two next sections.</p>
+
+            <figure class="figure">
+              <svg viewBox="0 0 720 430" role="img" aria-labelledby="crf-fig-title" class="diagram">
+                <title id="crf-fig-title">A dependency parse tree with an emission factor on every node and a transition factor on every edge. The inside pass sends support up the tree; the outside pass sends context down; the root's label is the claim verdict.</title>
+                <defs>
+                  <marker id="arrUp" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="var(--accent)"/></marker>
+                  <marker id="arrDown" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="var(--blue)"/></marker>
+                  <marker id="arrEmit" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="var(--muted)"/></marker>
+                </defs>
+
+                <!-- tree edges (drawn first, under the nodes) -->
+                <line x1="360" y1="104" x2="180" y2="248" stroke="var(--border)" stroke-width="1.6"/>
+                <line x1="360" y1="104" x2="540" y2="248" stroke="var(--border)" stroke-width="1.6"/>
+
+                <!-- transition pills on the edges -->
+                <rect x="205" y="163" width="128" height="26" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+                <text x="269" y="180" text-anchor="middle" fill="var(--muted)" font-size="11.5">&psi; · nsubj (required)</text>
+                <rect x="387" y="163" width="120" height="26" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+                <text x="447" y="180" text-anchor="middle" fill="var(--muted)" font-size="11.5">&psi; · obj (required)</text>
+
+                <!-- inside (up) message, left of the left edge -->
+                <path d="M172,244 L250,120" fill="none" stroke="var(--accent)" stroke-width="1.7" stroke-dasharray="5 4" marker-end="url(#arrUp)"/>
+                <!-- outside (down) message, right of the right edge -->
+                <path d="M470,120 L548,244" fill="none" stroke="var(--blue)" stroke-width="1.7" stroke-dasharray="5 4" marker-end="url(#arrDown)"/>
+
+                <!-- root node -->
+                <rect x="285" y="52" width="150" height="52" rx="12" fill="var(--surface)" stroke="var(--accent)" stroke-width="2"/>
+                <circle cx="299" cy="66" r="11" fill="var(--accent-soft)"/><text x="299" y="70" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="800">&phi;</text>
+                <text x="368" y="76" text-anchor="middle" fill="var(--text)" font-size="14" font-weight="700">pushing</text>
+                <text x="368" y="94" text-anchor="middle" fill="var(--muted)" font-size="11">root label = verdict</text>
+
+                <!-- child nodes -->
+                <rect x="95" y="248" width="150" height="52" rx="12" fill="var(--surface)" stroke="var(--border)"/>
+                <circle cx="109" cy="262" r="11" fill="var(--accent-soft)"/><text x="109" y="266" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="800">&phi;</text>
+                <text x="176" y="272" text-anchor="middle" fill="var(--text)" font-size="14" font-weight="700">a man</text>
+                <text x="176" y="290" text-anchor="middle" fill="var(--muted)" font-size="11">noun phrase</text>
+
+                <rect x="475" y="248" width="150" height="52" rx="12" fill="var(--surface)" stroke="var(--border)"/>
+                <circle cx="489" cy="262" r="11" fill="var(--accent-soft)"/><text x="489" y="266" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="800">&phi;</text>
+                <text x="556" y="272" text-anchor="middle" fill="var(--text)" font-size="14" font-weight="700">a cart</text>
+                <text x="556" y="290" text-anchor="middle" fill="var(--muted)" font-size="11">noun phrase</text>
+
+                <!-- evidence source + emission note -->
+                <rect x="285" y="330" width="150" height="30" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+                <text x="360" y="349" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="700">video + audio (x)</text>
+                <path d="M320,330 C300,300 240,300 176,302" fill="none" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="2 3" marker-end="url(#arrEmit)"/>
+                <path d="M400,330 C420,300 480,300 556,302" fill="none" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="2 3" marker-end="url(#arrEmit)"/>
+                <path d="M360,330 L360,108" fill="none" stroke="var(--muted)" stroke-width="1.2" stroke-dasharray="2 3"/>
+
+                <!-- legend -->
+                <text x="40" y="392" fill="var(--accent)" font-size="12" font-weight="800">&#8599;<tspan dx="6" font-weight="400" fill="var(--muted)">inside pass — support composes up the tree</tspan></text>
+                <text x="400" y="392" fill="var(--blue)" font-size="12" font-weight="800">&#8600;<tspan dx="6" font-weight="400" fill="var(--muted)">outside pass — context flows down</tspan></text>
+                <text x="40" y="414" fill="var(--accent)" font-size="12" font-weight="800">&phi;<tspan dx="6" font-weight="400" fill="var(--muted)">emission: the model's probe of one node, from x</tspan></text>
+                <text x="400" y="414" fill="var(--muted)" font-size="12" font-weight="800">&psi;<tspan dx="6" font-weight="400" fill="var(--muted)">transition: a table keyed by the relation</tspan></text>
+              </svg>
+              <figcaption>Claim “a man is pushing a cart.” Every node carries an emission <span class="math">&phi;</span> — the multimodal model's own probe of that node against the shared video-plus-audio; every edge carries a transition <span class="math">&psi;</span> keyed by the dependency relation. Belief propagation sends messages up (inside) and down (outside) the fixed tree; the root's reconciled label is the verdict.</figcaption>
+            </figure>
+
+            <p><strong>Two trees, one per channel.</strong> We actually run two of these CRFs side by side — one for the visual channel, one for the audio channel — with no edge between them. Within a modality the label set is three states, <span class="math">S = {no, A, B}</span>: for the visual tree <span class="math">A</span> = something you can see and <span class="math">B</span> = on-screen text; for the audio tree <span class="math">A</span> = speech and <span class="math">B</span> = a non-speech sound. The support mass of a node is just <span class="math">1 &minus; P(no)</span> in each tree, and the two subtypes are the <em>modality posterior</em> — the fine-grained “grounded by what” answer. The scalar verdict reads off the more-supported channel; the per-part “video / audio / both / neither” attribution is read off the local node probes.</p>
+          </section>
+
+          <section id="emissions" class="section">
+            <p class="eyebrow">The node factors</p>
+            <h2>Emissions: the multimodal model does the perceiving</h2>
+            <p>The emission <span class="math">&phi;<sub>v</sub></span> is a distribution produced by a multimodal model that looks at the video and answers a question about <em>one node</em>. Crucially, the question is <strong>self-contained and about the unit only</strong> — “is a man visible?”, not “given the claim ‘a man is pushing a cart’, is a man visible?”. Conditioning on the claim makes the model copy the claim's overall verdict onto every part (we measured this: it collapses to the same label on 81% of multi-part claims). Asking about the unit alone is exactly the conditional independence a CRF assumes — <em>emissions independent given the labels</em> — and the tree then reintroduces the right context through the transitions. The anti-anchoring choice and the CRF are the same idea.</p>
+            <p>Concretely, the probe returns a calibrated support probability <span class="math">p = P(supported)</span> and a subtype split <span class="math">q<sub>A</sub>, q<sub>B</sub></span>, which map onto the three states:</p>
+            <div class="equation">&phi;<sub>v</sub>(no) = 1 &minus; p &nbsp;&nbsp;·&nbsp;&nbsp; &phi;<sub>v</sub>(A) = p · q<sub>A</sub> &nbsp;&nbsp;·&nbsp;&nbsp; &phi;<sub>v</sub>(B) = p · q<sub>B</sub></div>
+            <p><strong>Three answers, not two.</strong> The probe answers <em>yes / no / can't-tell</em> rather than a forced yes/no, and the three outcomes are treated very differently downstream:</p>
+            <ul>
+              <li><strong>yes</strong> — grounded; split into the two subtypes as above.</li>
+              <li><strong>no</strong> — verifiably absent: the scene or audio is available and the thing is not there. This is <em>evidence against</em>, and it is what lets a child veto its parent.</li>
+              <li><strong>can't-tell</strong> — the view or audio is simply unavailable (off-screen, occluded, silent). This is <em>no evidence</em>: the node abstains, contributes a flat emission, and cannot veto anything.</li>
+            </ul>
+            <p>Separating “verifiably absent” from “cannot tell” matters because vision-language models are notoriously bad at saying “absent” — they log absence as indeterminate and are heavily biased toward “yes” on presence probes. Making the veto read the <em>label</em> (“no” vetoes, “can't-tell” abstains) rather than thresholding a saturated probability is what makes the bottom-up correction safe.</p>
+          </section>
+
+          <section id="transitions" class="section">
+            <p class="eyebrow">The edge factors</p>
+            <h2>Transitions: a tiny compatibility table, keyed by grammar</h2>
+            <p>A transition <span class="math">&psi;<sub>rel</sub>(z<sub>p</sub>, z<sub>c</sub>)</span> is just a small lookup table scoring how compatible a parent label is with a child label — rows are parent labels, columns are child labels, and each cell is a number where <span class="math">1.0</span> means “normal combination, no opinion” and a small number means “this combination is fishy, discourage it.” The <em>only</em> thing a table encodes is which parent/child label pairs to frown on. Here is the table for a verb and its required object (say <em>pushing</em> → <em>cart</em>), on plain yes/no support:</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th></th><th>child = no</th><th>child = yes</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>parent = no</strong></td><td>1.0</td><td>1.0</td></tr>
+                  <tr><td><strong>parent = yes</strong></td><td><strong>0.05</strong> &nbsp;(&lambda;)</td><td>1.0</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Only one cell is discouraged: “the composite is supported, but a required part is absent.” You cannot be pushing a cart that is not there. An <em>optional</em> modifier — “red” in “red car” — gets an all-<span class="math">1.0</span> table: nothing is discouraged, a missing optional attribute never sinks its head. So the whole edge model is really <strong>one strictness knob</strong> <span class="math">&lambda;</span> (the <span class="math">0.05</span>) applied to the edges the parser already marks as <em>required</em>. On top of that sit two logical edges: <strong>negation</strong> flips the support polarity of whatever it scopes over, and <strong>coordination</strong> demands “both” for <em>and</em> and “either” for <em>or</em>.</p>
+            <div class="callout">
+              <strong>Division of labour</strong>
+              <p>The multimodal model does <em>perception</em> — the emissions, at every granularity, including composed spans. The tree does <em>logic</em> — the transitions: necessity, negation, coordination. We deliberately lean on the model's strength (concrete “is X there?” judgments) and refuse its weakness (abstract compositional reasoning). A transition is never a model call.</p>
+            </div>
+            <p><strong>Where the numbers come from.</strong> Three options, from simplest to fanciest, and we default to the first:</p>
+            <ol class="steps">
+              <li>
+                <strong>Deterministic</strong>
+                <p>Hand-set one <span class="math">&lambda;</span>; “required vs optional” comes free from the dependency label. Auditable, reproducible, training-free — and correct for literal claims.</p>
+              </li>
+              <li>
+                <strong>Fit a handful of scalars</strong>
+                <p>The tables are only a few numbers, so “learning” them is a grid search or a logistic-regression-scale fit to examples with known answers (natural claims → root supported; perturbed claims → root unsupported). The big model stays frozen; it only makes emissions. A freely-fit negation table should <em>recover</em> the flip — a nice validation.</p>
+              </li>
+              <li>
+                <strong>Typed edges</strong>
+                <p>A text-only pass tags each edge as factual / hedged / modal / negated, and a fixed table maps the type to a <span class="math">&lambda;</span>. The model does linguistic typing; the table still owns the number.</p>
+              </li>
+            </ol>
+            <p>The transition is a low-dimensional, largely universal prior — deterministic is likely ~90% of the value. The real bottleneck is emission <em>calibration</em> (three-quarters of the raw probabilities sit at essentially 1.0), not transition sophistication. Keep the tables simple; spend the effort on calibration.</p>
+          </section>
+
+          <section id="inference" class="section">
+            <p class="eyebrow">Inference</p>
+            <h2>Belief propagation: up is inside, down is outside</h2>
+            <p>Because the graph is a tree, inference is <strong>exact and linear-time</strong> by belief propagation — the tree generalisation of forward–backward. Two passes of messages: an upward pass from the leaves to the root, and a downward pass from the root back to the leaves.</p>
+            <div class="equation">up:&nbsp;&nbsp; m<sub>c&rarr;p</sub>(z<sub>p</sub>) = &sum;<sub>z<sub>c</sub></sub> &phi;<sub>c</sub>(z<sub>c</sub>) · &psi;(z<sub>p</sub>, z<sub>c</sub>) · &prod;<sub>k&isin;ch(c)</sub> m<sub>k&rarr;c</sub>(z<sub>c</sub>)</div>
+            <div class="equation">down: m<sub>p&rarr;c</sub>(z<sub>c</sub>) = &sum;<sub>z<sub>p</sub></sub> &phi;<sub>p</sub>(z<sub>p</sub>) · &psi;(z<sub>p</sub>, z<sub>c</sub>) · m<sub>pa(p)&rarr;p</sub>(z<sub>p</sub>) · &prod;<sub>c&prime;&ne;c</sub> m<sub>c&prime;&rarr;p</sub>(z<sub>p</sub>)</div>
+            <div class="equation">belief: b<sub>v</sub>(z<sub>v</sub>) &prop; &phi;<sub>v</sub>(z<sub>v</sub>) · m<sub>pa(v)&rarr;v</sub>(z<sub>v</sub>) · &prod;<sub>c&isin;ch(v)</sub> m<sub>c&rarr;v</sub>(z<sub>v</sub>)</div>
+            <ul>
+              <li><strong>Sum-product</strong> gives the per-node marginals — the support probability and the modality posterior at every node — and the partition function <span class="math">Z</span> from the root belief.</li>
+              <li><strong>Max-product</strong> (replace each <span class="math">&sum;</span> with a <span class="math">max</span> and backtrack) gives the single most-consistent labelling of the whole tree — the MAP decomposition that the paper reports.</li>
+            </ul>
+            <div class="callout amber">
+              <strong>One clarification worth making, because it is a common confusion</strong>
+              <p>The upward pass is the <em>inside</em> recursion and the downward pass is the <em>outside</em> recursion — but there is <strong>no sum over tree structures</strong> here. The parse is fixed and given; we are doing belief propagation on one known tree, not PCFG inside–outside over all parses. Inside–outside as “sum over derivations” only comes back if the tree itself is latent, which it is not in our setting.</p>
+            </div>
+            <p>The two passes are not two rival methods — they <em>are</em> the algorithm. Running only the upward pass (compose parts up) or only the downward pass (push the claim down) gives you exactly the two halves whose individual “flaws” people argue about. Run both and you get the single reconciliation that trades each node's own evidence against its neighbours'.</p>
+          </section>
+
+          <section id="binding" class="section">
+            <p class="eyebrow">Two factors, one veto</p>
+            <h2>A part is supported only if it <em>exists</em> and is <em>bound</em> correctly</h2>
+            <p>A composed node's support decomposes into two things joined by AND: its required parts must <em>exist</em>, and the composition itself — the <em>binding</em> — must hold.</p>
+            <div class="equation">support(v) &nbsp;&asymp;&nbsp; [ required parts exist ] &nbsp; AND &nbsp; [ binding holds ]</div>
+            <p><strong>Binding is the composed node's own authority, never the parts'.</strong> Part-existence can never confirm a binding; only a direct probe of the composed span can. This is why we probe interior nodes and not just leaves.</p>
+            <div class="callout">
+              <strong>The dancing decoy</strong>
+              <p>Claim “a man is dancing.” Video: a <em>woman</em> dancing while a man watches. “man” ✓ and “dancing” ✓ — both parts exist — but the direct probe “is a <em>man</em> dancing?” says no. The binding factor sinks the claim to <em>unsupported</em>. Correctly, and not rescued by the parts being present. This is a distinct mechanism from the veto below.</p>
+            </div>
+            <p><strong>The child-to-parent veto</strong> is the other half: a required part that is confidently, verifiably absent should pull its parent down. But a blanket veto would break perfectly good cases, so it is gated four ways, and it is a confidence-weighted reconciliation rather than a hard override:</p>
+            <ol>
+              <li><strong>Only required parts veto.</strong> A missing core argument can flip the parent; a missing optional modifier only downgrades it to <em>partially supported</em>. “Red car” with an unverifiable “red” is a partial, not an unsupported.</li>
+              <li><strong>Absent in every channel.</strong> The veto fires only if the part is absent in both audio and video. A place named in speech but never shown must not veto a visually-grounded parent.</li>
+              <li><strong>Confidence-weighted.</strong> A confident, calibrated child-absence competes with the parent's own evidence; the more confident side wins. This is why calibration is a prerequisite — with saturated probabilities every child looks confident and the veto over-fires.</li>
+              <li><strong>Rescue and veto are one mechanism.</strong> A confident parent pulls a shaky child up (rescue); a confidently-absent child pulls a shaky parent down (veto). Which way it goes is decided by which side is more confident, not by a fixed rule.</li>
+            </ol>
+            <p>All of this is just the consistency objective seen from the parent's side: “parent says yes” plus “a required child confidently says no” is precisely an inconsistency, and the joint inference refuses to accept it. It is one asymmetric, requiredness-gated edge factor, not a new module.</p>
+          </section>
+
+          <section id="units" class="section">
+            <p class="eyebrow">A necessary preprocessing step</p>
+            <h2>From raw parse tokens to checkable units</h2>
+            <p>Raw dependency tokens are the wrong <em>units</em> to verify. The manner phrase “by hand” gets split into a vacuous atom “hand”; light verbs like “gets out” become the tree root; a main-content purpose clause is filed as a lowly adverbial adjunct. So between the parser and the CRF we run a <strong>normalization step</strong> that rewrites the parse into a tree of checkable units, then hands that fixed tree to the CRF unchanged.</p>
+            <p>The rewrite is a precision-ordered, <em>resolve-once</em> pipeline: cheap deterministic rules act first, semantic role labelling next, and a language model only on the residue that neither can decide — and no later stage overrides an earlier one. The information levels are nested, so each decision is made by the cheapest source that can actually make it. Two phrases with identical syntax — “change it <em>by hand</em>” (manner) versus “crash <em>into the shore</em>” (direction) — get different treatments, and only the semantic role, not the syntax, can tell them apart:</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Phrase</th><th>Syntax</th><th>Semantic role</th><th>Decision</th></tr></thead>
+                <tbody>
+                  <tr><td>…change it <strong>by hand</strong></td><td>oblique + case</td><td>manner</td><td>keep the whole phrase; probe it as a relation</td></tr>
+                  <tr><td>…crash <strong>into the shore</strong></td><td>oblique + case</td><td>direction</td><td>keep “shore” as a plain entity to probe</td></tr>
+                  <tr><td>…<strong>in the morning</strong></td><td>oblique + case</td><td>time</td><td>not check-worthy against the clip → abstain</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>The output is a per-claim tree of units with typed edges (required / soft / inert / negation / coordination) and per-node roles (probe it, abstain, or contract it away). Because the two models on this path are pinned and the tree is released as a frozen artifact, the whole preprocessing step is reproducible even if an API model later drifts. The CRF above is the headline; this step is what makes its units mean something.</p>
+          </section>
+
+          <section id="analysis" class="section">
+            <p class="eyebrow">Analysis</p>
+            <h2>What the structure buys</h2>
+            <p>Two payoffs, one about evaluation and one about accuracy.</p>
+
+            <h3>Faithful by construction, and measurably so</h3>
+            <p>Because the root verdict is literally the composition of the node labels, the decomposition is faithful to the verdict by construction — a flat decomposition is not, since its parts need not add up to its aggregate. To test that the structure earns its keep, we built a set of <strong>5,556 claims that are false by construction</strong> — 1,796 with an injected negation, 1,880 with a swapped entity (a binding break), 1,880 with a required argument deleted — all of which should read <em>unsupported</em>. We compare the tree-CRF against a flat whole-claim baseline. Detection counts a claim as caught if it is labelled anything other than supported.</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Perturbation</th><th>n</th><th>Tree-CRF detection</th><th>Flat baseline</th></tr></thead>
+                <tbody>
+                  <tr><td>Negation injected</td><td>1,796</td><td><strong>88.1%</strong></td><td>84.4%</td></tr>
+                  <tr><td>Entity swap (binding)</td><td>1,880</td><td><strong>93.0%</strong></td><td>75.5%</td></tr>
+                  <tr><td>Argument removed</td><td>1,880</td><td><strong>71.1%</strong></td><td>31.1%</td></tr>
+                  <tr><td><strong>All</strong></td><td><strong>5,556</strong></td><td><strong>84.0%</strong></td><td>63.3%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>The tree beats the whole-claim baseline on every perturbation type — most sharply on argument removal (71.1% vs 31.1%), where a flat model, reading the mangled claim as a whole, simply does not notice a piece is gone. On a stricter paired subset (only claims both systems support before the edit, n = 2,936), the tree downgrades 73.2% of edits versus 51.1% for flat. The headline result is that the decomposition is not just prettier; it catches breaks the flat verdict misses.</p>
+
+            <h3>The audio channel is doing real, distinct work</h3>
+            <p>Across ~2,375 real claims and their parts, per-part grounding splits roughly: 34% grounded only by the video, <strong>17% grounded only by audio</strong>, 26% by both, and 23% by neither. The audio-only figure is the disentanglement payoff: audio uniquely grounds about one part in six, even though on <em>whole</em> claims audio is almost never uniquely decisive — the per-part view surfaces a channel the whole-claim verdict hides. On the same claims the CRF's verdicts land at 56.5% supported / 27.5% partially / 16.0% unsupported.</p>
+
+            <div class="callout amber">
+              <strong>Consistency is not correctness — the one thing to keep honest</strong>
+              <p>Turn the enforcement knob <span class="math">&lambda;</span> up to infinity and you get a perfectly self-consistent <em>wrong</em> answer — the model's bias made coherent. So enforcement strength is a tunable knob and a headline ablation, always anchored by the evidence terms and by distant labels. And the method does <em>not</em> claim to fix the multimodal model's binding failures — the emissions are themselves fallible. What it claims is correct <em>aggregation</em> (never “supported” just because the parts exist), <em>preservation</em> of the negation and binding failures that flat methods erase, and <em>diagnosis</em> (the gap between a node's own probe and its reconciled belief flags binding risk).</p>
+            </div>
+          </section>
+
+          <section id="related" class="section">
+            <p class="eyebrow">Where this sits</p>
+            <h2>Related work</h2>
+            <div class="card-grid">
+              <div class="card">
+                <span class="tag green">Nearest neighbour</span>
+                <h3>Belief propagation over a claim tree</h3>
+                <p>BTProp (Hou et al., NAACL 2025) decomposes a statement into a tree of logically-related claims and runs <em>exact</em> message passing over a hidden Markov tree of per-node model beliefs — same family, training-free. The differences: it is text-only, has no modality, its tree is an LLM-built logic tree rather than a dependency parse, and it has no typed composition factors or negation flip.</p>
+              </div>
+              <div class="card">
+                <span class="tag blue">Closest structural analogue</span>
+                <h3>Dependency-gated QA</h3>
+                <p>Davidsonian Scene Graph (Cho et al., ICLR 2024) organises generated questions into a dependency graph and scores a child only if its parent holds. But it evaluates text-to-image <em>generation</em> faithfulness, is visual-only, and the graph is over QA pairs rather than a parse of the claim's own words.</p>
+              </div>
+              <div class="card">
+                <span class="tag amber">The baseline we beat</span>
+                <h3>Flat decompose-then-verify</h3>
+                <p>FactScore, SAFE, and WICE decompose into a flat list of atomic units and check each independently with a precision roll-up — no structural aggregation, no modality. This is exactly the flat baseline in the tables above.</p>
+              </div>
+              <div class="card">
+                <span class="tag">Motivation</span>
+                <h3>Models fail at binding</h3>
+                <p>Winoground, ARO, and SugarCrepe show vision-language models treat a caption as a bag of concepts and miss composition. These are diagnostics, not methods — they are why we probe binding at composed nodes and do not trust part-existence to confirm it.</p>
+              </div>
+            </div>
+            <p>The unoccupied conjunction we aim at: a parser-grounded, compositional, <em>audio-visual</em> verifier with per-part modality attribution — structured multimodal verification is still mostly unstructured (DEFAME, ICML 2025), and structured verification is still text- or image-only.</p>
+          </section>
+
+          <section id="references" class="section">
+            <p class="eyebrow">Selected references</p>
+            <h2>Primary sources</h2>
+            <ol class="references">
+              <li><a href="https://arxiv.org/abs/2406.06950">Hou, Zhang, Andreas, Chang. Belief-tree Propagation for fact-checking. NAACL 2025.</a></li>
+              <li><a href="https://arxiv.org/abs/2310.18235">Cho et al. Davidsonian Scene Graph: text-to-image faithfulness via dependency-gated questions. ICLR 2024.</a></li>
+              <li><a href="https://aclanthology.org/2023.emnlp-main.741/">Min et al. FActScore: fine-grained atomic evaluation of factual precision. EMNLP 2023.</a></li>
+              <li><a href="https://aclanthology.org/2023.emnlp-main.470/">Kamoi et al. WiCE: real-world entailment for claims in Wikipedia. EMNLP 2023.</a></li>
+              <li><a href="https://arxiv.org/abs/2403.18802">Wei et al. Long-form factuality in large language models (SAFE). NeurIPS 2024.</a></li>
+              <li><a href="https://aclanthology.org/2023.acl-long.386/">Pan et al. Fact-checking complex claims with program-guided reasoning (ProgramFC). ACL 2023.</a></li>
+              <li><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Thrush_Winoground_Probing_Vision_and_Language_Models_for_Visio-Linguistic_Compositionality_CVPR_2022_paper.html">Thrush et al. Winoground: probing vision-and-language models for visio-linguistic compositionality. CVPR 2022.</a></li>
+              <li><a href="https://arxiv.org/abs/2210.01936">Yuksekgonul et al. When and why VLMs behave like bags-of-words (ARO). ICLR 2023.</a></li>
+              <li><a href="https://arxiv.org/abs/2306.14610">Hsieh et al. SugarCrepe: fixing hackable benchmarks for compositionality. NeurIPS 2023.</a></li>
+              <li><a href="https://aclanthology.org/J05-1004/">Palmer, Gildea, Kingsbury. The Proposition Bank: an annotated corpus of semantic roles. Computational Linguistics 2005.</a></li>
+              <li><a href="https://aclanthology.org/2024.findings-emnlp.552/">Song, Kim, Iyyer. VeriScore: evaluating the factuality of verifiable claims. Findings of EMNLP 2024.</a></li>
+              <li><a href="https://arxiv.org/abs/2108.11357">Krishna, Riedel, Vlachos. ProoFVer: natural-logic, faithful-by-construction fact verification. TACL 2022.</a></li>
+              <li><a href="https://dl.acm.org/doi/10.5555/645530.655813">Lafferty, McCallum, Pereira. Conditional random fields. ICML 2001.</a></li>
+              <li><a href="https://www.nowpublishers.com/article/Details/MAL-013">Sutton, McCallum. An introduction to conditional random fields. Foundations and Trends in Machine Learning 2011.</a></li>
+              <li><a href="https://arxiv.org/abs/2412.10510">Braun et al. DEFAME: dynamic evidence-based multimodal fact-checking. ICML 2025.</a></li>
+            </ol>
+            <p class="meta">Method note distilled from the AViD compositional-verification and parse-normalization design documents. Numbers are from the perturbation and grounding runs described in the project's experiment log; the reference list is drawn from the project's citation-verified literature review.</p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">SCALE 2026 · AViD — audio-visual claim disentanglement · A parse-tree CRF verifier.</div>
+  </footer>
+</body>
+</html>
