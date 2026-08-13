@@ -14,6 +14,7 @@
       <div class="nav-links">
         <a href="./" aria-current="page">Home</a>
         <a href="reports/tree-crf.html">Tree-CRF verifier</a>
+        <a href="proposals/">Proposals</a>
       </div>
     </div>
   </nav>
@@ -43,7 +44,7 @@
       <div class="container">
         <p class="eyebrow">Read next</p>
         <h2>Method note &amp; design notes</h2>
-        <div class="card-grid">
+        <div class="card-grid three">
           <a class="card card-link" href="reports/tree-crf.html">
             <span class="tag green">Model · math · analysis</span>
             <h3>A CRF over the parse tree</h3>
@@ -53,6 +54,11 @@
             <span class="tag amber">Open question</span>
             <h3>What does an interior node's probe measure?</h3>
             <p>A design note on the model's sharpest open question: the probe at an interior node scores the whole subtree, not the node alone, so the same evidence gets counted twice. Why that happens, why you cannot just probe the head word, and what a clean per-conjunct fix looks like.</p>
+          </a>
+          <a class="card card-link" href="proposals/semantic-factor-tree.html">
+            <span class="tag green">Implemented pilot</span>
+            <h3>Conjunct-local semantic factor trees</h3>
+            <p>The executable follow-up: independent content probes, explicit property and binding factors, a revised local meaning of <code>na</code>, exact tree inference, prompt audits, and the new gold-v3 annotation surface.</p>
           </a>
         </div>
         <p class="section-intro" style="margin-top:20px;">More reports — the dataset, the annotation surface, and the full experiment grid — will be added here as they are written up. This page starts with the core method.</p>
@@ -78,7 +84,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">SCALE 2026 · AViD — audio-visual claim disentanglement · Updated 11 August 2026</div>
+    <div class="container">SCALE 2026 · AViD — audio-visual claim disentanglement · Updated 13 August 2026</div>
   </footer>
 </body>
 </html>

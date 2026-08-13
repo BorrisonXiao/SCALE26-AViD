@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proposal and implementation specification for conjunct-local semantic factor trees in AViD: independent unary probes, explicit binding factors, revised normalization, exact inference, and prompt-selection audit.">
+  <title>Conjunct-local semantic factor trees · AViD proposal</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>
+    window.MathJax = { tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] }, svg: { fontCache: 'global' } };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html">SCALE 2026 · AViD</a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../reports/tree-crf.html">Tree-CRF verifier</a>
+        <a href="./" aria-current="page">Proposals</a>
+      </div>
+    </div>
+  </nav>
+  <div class="subnav-wrap">
+    <nav class="subnav container" aria-label="Proposal navigation">
+      <span class="subnav-label">Proposals</span>
+      <a href="./">All proposals</a>
+      <a href="semantic-factor-tree.html" aria-current="page">Semantic factor tree</a>
+    </nav>
+  </div>
+
+  <main>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">Proposal · implemented annotation pilot · 13 August 2026</p>
+        <h1>Conjunct-local semantic factor trees</h1>
+        <p class="lede">Probe content units independently, probe their bindings explicitly, and let messages—not contextualized questions—carry subtree evidence upward. The dependency parse remains useful as a scaffold, but the executable object is a typed semantic factor tree.</p>
+        <div class="button-row">
+          <a class="button primary" href="#example">See the crowd example</a>
+          <a class="button" href="../reports/interior-emissions.html">Read the motivating note</a>
+        </div>
+        <p class="meta">Status: deterministic compiler and gold-v3 annotation surface built. Selected text-model prompts are versioned; the local Qwen scale pass remains separately cacheable.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container split">
+        <aside class="toc" aria-label="Table of contents">
+          <strong>On this page</strong>
+          <a href="#decision">Decision</a>
+          <a href="#objects">Three different objects</a>
+          <a href="#construction">Construction</a>
+          <a href="#example">Crowd example</a>
+          <a href="#more-examples">More examples</a>
+          <a href="#normalization">Normalization and na</a>
+          <a href="#scope">Immediate endpoints</a>
+          <a href="#model">Factorization and inference</a>
+          <a href="#prompts">Prompt selection</a>
+          <a href="#implementation">Implementation status</a>
+          <a href="#risks">Risks and evaluation</a>
+        </aside>
+
+        <article class="prose">
+          <section id="decision">
+            <p class="eyebrow">Decision</p>
+            <h2>Local truths on nodes; bindings on factors</h2>
+            <div class="callout">
+              <strong>Recommended formulation</strong>
+              <p>Every retained entity, event, or state receives an independent unary probe. Attributes and cardinalities become local observed factors on a host. Every retained parent–child connection is replaced by one typed relation factor over its immediate semantic endpoints. A latent, unprobed claim-output variable is computed recursively at the root.</p>
+            </div>
+            <p>This confirms the core interpretation developed in the discussion: there is no execution gate and no contextualized leaf question. A child probe is asked even when its parent is unsupported. The context-sensitive question is the edge probe—for example, whether <em>this crowd</em> participates in <em>standing</em>—and its conditional semantics live in the factor potential rather than in an English “given that…” preamble.</p>
+            <p>The resulting model gives up bottom-up <em>text expansion</em>, not bottom-up inference. Evidence still propagates from leaves to the root by exact belief propagation; what disappears is the practice of copying a child subtree into its parent’s emission.</p>
+          </section>
+
+          <section id="objects" class="section">
+            <p class="eyebrow">Terminology</p>
+            <h2>The parse tree is meaningful—but it is not the final graph</h2>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Object</th><th>Job</th><th>Contains <code>attr</code> / <code>prep-rel</code>?</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>(T_{mathrm{UD}})</strong><br>dependency parse</td><td>Parser-produced syntactic scaffold: heads, dependents, case markers, spans, and coordination.</td><td>No. Its labels are UD relations such as <code>nsubj</code>, <code>acl</code>, and <code>obl</code>.</td></tr>
+                  <tr><td><strong>(T^*)</strong><br>normalized units</td><td>Contracts function words, resolves local unit types, and preserves a tree-shaped backbone.</td><td>It may carry semantic annotations, but it remains traceable to UD nodes.</td></tr>
+                  <tr><td><strong>(G^*)</strong><br>semantic factor tree</td><td>Executable and annotatable bipartite graph: truth variables alternate with local/edge factors.</td><td>Yes, as <em>factor types</em> such as attribute or prepositional relation—not as invented dependency nodes.</td></tr>
+                </tbody>
+              </table>
+              <p class="cap"><span class="cap-lead">Table 1.</span> Separating these objects removes the naming confusion. The earlier gold-v2 span-containment visualization mixed “node” and “factor” boxes; gold-v3 renders the actual bipartite factor tree.</p>
+            </div>
+          </section>
+
+          <section id="construction" class="section">
+            <p class="eyebrow">Compiler contract</p>
+            <h2>From dependency scaffold to factor tree</h2>
+            <ol class="steps">
+              <li><strong>Retain local truth variables.</strong><p>Keep concrete entities, events, and states. Retag reduced-clause gerunds conservatively—for example, noun-tagged <em>standing</em> under <code>acl</code> becomes an event.</p></li>
+              <li><strong>Contract grammatical material.</strong><p>Determiners, auxiliaries, case markers, punctuation, and similar operators do not become independent truth variables. Their text remains available as a relation marker.</p></li>
+              <li><strong>Attach local property factors.</strong><p>An attribute or cardinality scopes over its nearest retained host: <code>attribute(crowd, Huge)</code>, not a unary “does Huge exist?” probe.</p></li>
+              <li><strong>Replace each retained connection with one factor.</strong><p>Core arguments use deterministic UD mappings where reliable; ambiguous <code>acl</code>, <code>advcl</code>, <code>obl</code>, <code>nmod</code>, and clausal complements go through a closed-label residual classifier.</p></li>
+              <li><strong>Add an unprobed output.</strong><p>A fixed root-composition factor connects the semantic root frontier to <code>claim verdict</code>. If a copular/property UD root was contracted, its predicate becomes an observed root factor instead.</p></li>
+            </ol>
+          </section>
+
+          <section id="example" class="section">
+            <p class="eyebrow">Worked example</p>
+            <h2>“Huge crowd standing together chanting.”</h2>
+            <figure class="figure">
+              <svg class="diagram" viewBox="0 0 820 565" role="img" aria-labelledby="factor-tree-title">
+                <title id="factor-tree-title">A semantic factor tree for Huge crowd standing together chanting. The latent claim output connects through a fixed composition factor to crowd. Local attribute Huge attaches to crowd, an agent factor connects crowd to standing, a manner factor attaches together to standing, and a shared-participant factor connects standing to chanting.</title>
+                <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="var(--muted)"/></marker></defs>
+                <g stroke="var(--muted)" stroke-width="1.4" fill="none">
+                  <path d="M410 54 L410 91"/><path d="M410 133 L410 170"/>
+                  <path d="M410 214 L190 263"/><path d="M410 214 L520 263"/>
+                  <path d="M520 305 L520 342"/><path d="M520 386 L300 435"/><path d="M520 386 L630 435"/>
+                  <path d="M630 477 L630 514"/>
+                </g>
+                <g font-family="system-ui,sans-serif" text-anchor="middle">
+                  <g><rect x="320" y="12" width="180" height="42" rx="10" fill="var(--accent-soft)" stroke="var(--accent)"/><text x="410" y="38" fill="var(--text)" font-weight="700">claim verdict</text></g>
+                  <g><rect x="318" y="91" width="184" height="42" rx="10" fill="var(--surface-2)" stroke="var(--muted)"/><text x="410" y="109" fill="var(--text)" font-weight="700">composition</text><text x="410" y="124" fill="var(--muted)" font-size="11">fixed · no probe</text></g>
+                  <g><rect x="336" y="170" width="148" height="44" rx="10" fill="var(--blue-soft)" stroke="var(--blue)"/><text x="410" y="188" fill="var(--text)" font-weight="700">crowd</text><text x="410" y="204" fill="var(--muted)" font-size="11">entity unary</text></g>
+                  <g><rect x="96" y="263" width="188" height="42" rx="10" fill="var(--amber-soft)" stroke="var(--amber)"/><text x="190" y="281" fill="var(--text)" font-weight="700">attribute(crowd, Huge)</text><text x="190" y="296" fill="var(--muted)" font-size="11">local observed factor</text></g>
+                  <g><rect x="423" y="263" width="194" height="42" rx="10" fill="var(--amber-soft)" stroke="var(--amber)"/><text x="520" y="281" fill="var(--text)" font-weight="700">agent(crowd, standing)</text><text x="520" y="296" fill="var(--muted)" font-size="11">edge observed factor</text></g>
+                  <g><rect x="446" y="342" width="148" height="44" rx="10" fill="var(--blue-soft)" stroke="var(--blue)"/><text x="520" y="360" fill="var(--text)" font-weight="700">standing</text><text x="520" y="376" fill="var(--muted)" font-size="11">event unary</text></g>
+                  <g><rect x="202" y="435" width="196" height="42" rx="10" fill="var(--amber-soft)" stroke="var(--amber)"/><text x="300" y="453" fill="var(--text)" font-weight="700">manner(standing, together)</text><text x="300" y="468" fill="var(--muted)" font-size="11">local observed factor</text></g>
+                  <g><rect x="515" y="435" width="230" height="42" rx="10" fill="var(--amber-soft)" stroke="var(--amber)"/><text x="630" y="453" fill="var(--text)" font-weight="700">shared-participant</text><text x="630" y="468" fill="var(--muted)" font-size="11">standing ↔ chanting</text></g>
+                  <g><rect x="556" y="514" width="148" height="44" rx="10" fill="var(--blue-soft)" stroke="var(--blue)"/><text x="630" y="532" fill="var(--text)" font-weight="700">chanting</text><text x="630" y="548" fill="var(--muted)" font-size="11">event unary</text></g>
+                </g>
+              </svg>
+              <figcaption><span class="cap-lead">Figure 1.</span> The executable factor tree. A factor scopes over only the boxes it directly joins. Evidence about the <em>chanting</em> subtree reaches <em>standing</em> as a belief-propagation message; it is not copied into the shared-participant question.</figcaption>
+            </figure>
+
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Target</th><th>Visual probe (illustrative)</th><th>What it does not ask</th></tr></thead>
+                <tbody>
+                  <tr><td><code>crowd</code></td><td>Can the visible evidence establish the presence of a crowd?</td><td>Whether it is huge, standing, or chanting.</td></tr>
+                  <tr><td><code>standing</code></td><td>Can the visible evidence establish that the action “standing” occurs?</td><td>Who stands or whether they chant.</td></tr>
+                  <tr><td><code>chanting</code></td><td>Can the visible evidence establish that the action “chanting” occurs?</td><td>Who chants or whether they stand.</td></tr>
+                  <tr><td><code>attribute(crowd, Huge)</code></td><td>Does the visible evidence show that the crowd is huge?</td><td>Standing or chanting.</td></tr>
+                  <tr><td><code>agent(crowd, standing)</code></td><td>Does the clip show the crowd participating in the standing event?</td><td>Whether the crowd chants.</td></tr>
+                  <tr><td><code>manner(standing, together)</code></td><td>Does the visible evidence establish that the standing is together?</td><td>Whether chanting occurs.</td></tr>
+                  <tr><td><code>shared-participant(standing, chanting)</code></td><td>Do standing and chanting visibly involve the same participant?</td><td>The crowd’s size or either event’s independent existence.</td></tr>
+                </tbody>
+              </table>
+              <p class="cap"><span class="cap-lead">Table 2.</span> One probe per conjunct does not mean one probe per token. <em>Huge</em> and <em>together</em> are predicates whose truth is evaluated on a host; they therefore live on factors.</p>
+            </div>
+          </section>
+
+          <section id="more-examples" class="section">
+            <p class="eyebrow">Additional illustrations</p>
+            <h2>The same rule across constructions</h2>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Claim</th><th>Independent variables</th><th>Observed/fixed factors</th></tr></thead>
+                <tbody>
+                  <tr><td>A man is pushing a cart.</td><td><code>man</code>, <code>pushing</code>, <code>cart</code></td><td><code>agent(pushing, man)</code>; <code>theme(pushing, cart)</code></td></tr>
+                  <tr><td>Waves are crashing into shore.</td><td><code>waves</code>, <code>crashing</code>, <code>shore</code></td><td><code>agent(crashing, waves)</code>; <code>direction(crashing, shore)</code> with marker <em>into</em></td></tr>
+                  <tr><td>People gather and sing.</td><td><code>people</code>, <code>gather</code>, <code>sing</code></td><td>participant bindings plus <code>coordination_and(gather, sing)</code>, a fixed grammatical factor</td></tr>
+                  <tr><td>The driver changes the switch by hand.</td><td><code>driver</code>, <code>changes</code>, <code>switch</code>, <code>hand</code></td><td>agent, theme, and <code>manner(changes, hand)</code>; the case word <em>by</em> is contracted into the marker</td></tr>
+                  <tr><td>The switch is in the correct position.</td><td><code>switch</code>, <code>position</code></td><td>spatial binding is observed; <em>correct</em> is <code>abstain</code> if it denotes normative correctness rather than a visible configuration</td></tr>
+                </tbody>
+              </table>
+              <p class="cap"><span class="cap-lead">Table 3.</span> Examples are schematic; exact orientation is normalized to event-first roles in the final factor record even when the UD scaffold attaches a reduced clause under a noun.</p>
+            </div>
+          </section>
+
+          <section id="normalization" class="section">
+            <p class="eyebrow">Revised normalization</p>
+            <h2><code>na</code> is local and unconditional</h2>
+            <p>The old normalization pass judged a contextualized unit such as <em>standing together</em>, so its decision mixed local checkability with how that phrase sat under its parent. In the new pass, the target span and optional host are fixed before the LLM is called. The decision is one of:</p>
+            <ul>
+              <li><strong><code>unary_probe</code></strong> for an independently testable entity, event, or state;</li>
+              <li><strong><code>observed_factor</code></strong> for a property/cardinality on a supplied host;</li>
+              <li><strong><code>contract</code></strong> for purely grammatical material;</li>
+              <li><strong><code>abstain</code></strong> (the new precise meaning of <code>na</code>) only for unresolved referents, dangling fragments, or meanings without a stable local audio-visual truth value.</li>
+            </ul>
+            <p>“The parent was not verified” is never a reason for <code>abstain</code>. Hard-to-see is not <code>abstain</code>. Names and numbers can be established by speech or readable text and remain probeable. This is intentionally different from a scene-graph pipeline that conditionally skips children.</p>
+          </section>
+
+          <section id="scope" class="section">
+            <p class="eyebrow">Scope rule</p>
+            <h2>Combine immediate endpoints, receive subtrees as messages</h2>
+            <p>A relation factor combines only its immediate semantic arguments. For (f_{pc}), the model-generated observation may mention (p), (c), and the supplied relation marker—but not (p)’s other children or (c)’s descendants. The subtree still matters computationally:</p>
+            <div class="equation">\[ m_{c\rightarrow f_{pc}}(z_c) = \varphi_c(z_c) \prod_{g\in N(c)\setminus f_{pc}} m_{g\rightarrow c}(z_c). \]</div>
+            <p>The message (m_{c\rightarrow f_{pc}}) summarizes all evidence below (c). Thus the factor combines <em>immediate nodes semantically</em> and <em>subtree beliefs probabilistically</em>. Asking the factor question about both full subtrees would reintroduce the overlap the redesign is meant to remove.</p>
+          </section>
+
+          <section id="model" class="section">
+            <p class="eyebrow">Executable model</p>
+            <h2>A bipartite tree preserves exact inference</h2>
+            <p>Let (V) contain the local truth variables and latent output (y); let (F_{mathrm{local}}), (F_{mathrm{edge}}), and (F_{mathrm{fixed}}) contain property, binding, and grammatical/root factors. The score is</p>
+            <div class="equation">\[ P(z\mid x,c) \propto \prod_{v\in V_{\mathrm{probe}}}\varphi_v(z_v;x)\;\prod_{f\in F_{\mathrm{obs}}}\rho_f(z_{\partial f};x)\;\prod_{f\in F_{\mathrm{fixed}}}\psi_f(z_{\partial f}). \]</div>
+            <p>The compiler replaces every retained dependency connection with exactly one factor instead of laying factors on top of dependency edges. With one root-composition factor, the bipartite graph is connected and has (|E|=|V|+|F|-1); sum-product inference remains exact. The claim verdict is the marginal of (y), not a separate whole-claim MLLM emission.</p>
+          </section>
+
+          <section id="prompts" class="section">
+            <p class="eyebrow">Prompt engineering</p>
+            <h2>Separate decisions, frozen selection rule, disjoint fixtures</h2>
+            <p>Graph structure and language generation are deliberately separate. Unit normalization cannot alter edges; edge typing cannot invent units; question generation receives a fixed target and cannot change either. Each stage had a terse v1, constrained v2, and full locality-aware v3 candidate. Selection used a frozen score—80% behavioral correctness, 20% required-instruction coverage, shorter prompt on an exact tie.</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Stage</th><th>Selected</th><th>v1 score</th><th>v2 score</th><th>v3 score</th><th>Synthetic cases</th></tr></thead>
+                <tbody>
+                  <tr><td>Local unit role</td><td><strong><code>sfu-v3</code></strong></td><td>0.845</td><td>0.920</td><td>1.000</td><td>8</td></tr>
+                  <tr><td>Ambiguous edge type</td><td><strong><code>sf-v3</code></strong></td><td>0.500</td><td>0.620</td><td>1.000</td><td>8</td></tr>
+                  <tr><td>Probe questions</td><td><strong><code>sfq-v3</code></strong></td><td>0.840</td><td>0.880</td><td>1.000</td><td>5</td></tr>
+                </tbody>
+              </table>
+              <p class="cap"><span class="cap-lead">Table 4.</span> Prompt audit on domain-neutral synthetic cases. Eight deterministically selected AViD targets per stage were audited locally for input shape/locality, but zero AViD claims were sent to the external judge and none supplied expected labels.</p>
+            </div>
+            <p>Anti-overfitting safeguards are structural: closed label sets, parser-fixed endpoints, generic examples outside the corpus, stable hash sampling, no claim-ID exceptions, validation with deterministic fallback, and a separate annotation set that never enters prompt selection.</p>
+          </section>
+
+          <section id="implementation" class="section">
+            <p class="eyebrow">What exists now</p>
+            <h2>Full compiler, versioned prompts, new gold surface</h2>
+            <div class="stat-grid">
+              <div class="stat"><strong>2,375</strong><span>claims compiled</span></div>
+              <div class="stat"><strong>11,750</strong><span>local truth variables</span></div>
+              <div class="stat"><strong>9,366</strong><span>edge factors</span></div>
+              <div class="stat"><strong>2,755</strong><span>local property/logic factors</span></div>
+            </div>
+            <p>The corpus audit finds four upstream overspanned parser nodes; they remain explicit failures rather than being hidden by claim-specific repairs. The annotation pilot contains 43 claims and 562 targets, all with connected acyclic factor graphs. It records predicted/gold role and relation, visual/audio evidence, question quality, notes, and per-channel claim verdicts. The previous gold-v2 files remain untouched.</p>
+            <div class="callout amber">
+              <strong>Text-model execution status</strong>
+              <p>The selected prompts and validated batch runner are implemented. At build time the Slurm controller was unreachable, so the local frozen Qwen pass could not launch. Gold-v3 therefore exposes deterministic parser/SRL decisions and question wording as <code>fallback</code> for annotation instead of silently exporting AViD claims to an external model. Model decisions will remain separate versioned caches when the local scheduler returns.</p>
+            </div>
+          </section>
+
+          <section id="risks" class="section">
+            <p class="eyebrow">Risks and acceptance criteria</p>
+            <h2>What annotation must settle</h2>
+            <ul>
+              <li><strong>Event existence may be underspecified.</strong> “Does a standing event occur?” is local, but some verbs require a generic participant/object to sound natural. Question-quality labels quantify this.</li>
+              <li><strong>Conditional binding is hard to elicit.</strong> A factor question must test identity or role rather than re-test endpoint existence. Binding-decoy cases are the primary stress test.</li>
+              <li><strong>Parser topology can be wrong.</strong> The text model may type an offered edge but cannot invent a missing endpoint. Coverage failures need upstream reparsing, not prompt cleverness.</li>
+              <li><strong>High-order roots need care.</strong> Contracted copular/cardinality roots become observed root factors; annotation should test whether these are understandable without a whole-claim question.</li>
+            </ul>
+            <p>Adopt this factorization for the main experiment only if factor-role/relation agreement is high, most unary and binding questions are judged answerable without forbidden context, binding-decoy accuracy improves, and root verdicts remain calibrated under exact inference.</p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container">SCALE 2026 · AViD — proposal: conjunct-local semantic factor trees.</div></footer>
+</body>
+</html>
