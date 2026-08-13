@@ -40,7 +40,7 @@
           <a class="button primary" href="#example">See the crowd example</a>
           <a class="button" href="../reports/interior-emissions.html">Read the motivating note</a>
         </div>
-        <p class="meta">Status: deterministic compiler and gold-v3 annotation surface built. Selected text-model prompts are versioned; the local Qwen scale pass remains separately cacheable.</p>
+        <p class="meta">Status: deterministic compiler and simplified gold-v3 annotation surface built. Internal factors are hidden from annotators; the natural-language copy-edit pass remains separately cacheable.</p>
       </div>
     </header>
 
@@ -54,6 +54,7 @@
           <a href="#example">Crowd example</a>
           <a href="#more-examples">More examples</a>
           <a href="#normalization">Normalization and na</a>
+          <a href="#annotation">Human annotation surface</a>
           <a href="#scope">Immediate endpoints</a>
           <a href="#model">Factorization and inference</a>
           <a href="#prompts">Prompt selection</a>
@@ -133,12 +134,12 @@
               <table>
                 <thead><tr><th>Target</th><th>Visual probe (illustrative)</th><th>What it does not ask</th></tr></thead>
                 <tbody>
-                  <tr><td><code>crowd</code></td><td>Can the visible evidence establish the presence of a crowd?</td><td>Whether it is huge, standing, or chanting.</td></tr>
-                  <tr><td><code>standing</code></td><td>Can the visible evidence establish that the action “standing” occurs?</td><td>Who stands or whether they chant.</td></tr>
-                  <tr><td><code>chanting</code></td><td>Can the visible evidence establish that the action “chanting” occurs?</td><td>Who chants or whether they stand.</td></tr>
-                  <tr><td><code>attribute(crowd, Huge)</code></td><td>Does the visible evidence show that the crowd is huge?</td><td>Standing or chanting.</td></tr>
-                  <tr><td><code>agent(crowd, standing)</code></td><td>Does the clip show the crowd participating in the standing event?</td><td>Whether the crowd chants.</td></tr>
-                  <tr><td><code>manner(standing, together)</code></td><td>Does the visible evidence establish that the standing is together?</td><td>Whether chanting occurs.</td></tr>
+                  <tr><td><code>crowd</code></td><td>Is a crowd visible in the video?</td><td>Whether it is huge, standing, or chanting.</td></tr>
+                  <tr><td><code>standing</code></td><td>Is someone visibly standing?</td><td>Who stands or whether they chant.</td></tr>
+                  <tr><td><code>chanting</code></td><td>Is someone visibly chanting?</td><td>Who chants or whether they stand.</td></tr>
+                  <tr><td><code>attribute(crowd, Huge)</code></td><td>Is a huge crowd visible in the video?</td><td>Standing or chanting.</td></tr>
+                  <tr><td><code>agent(crowd, standing)</code></td><td>Is the crowd the one standing?</td><td>Whether the crowd chants.</td></tr>
+                  <tr><td><code>manner(standing, together)</code></td><td>Are people visibly standing together?</td><td>Whether chanting occurs.</td></tr>
                   <tr><td><code>shared-participant(standing, chanting)</code></td><td>Do standing and chanting visibly involve the same participant?</td><td>The crowd’s size or either event’s independent existence.</td></tr>
                 </tbody>
               </table>
@@ -158,6 +159,7 @@
                   <tr><td>People gather and sing.</td><td><code>people</code>, <code>gather</code>, <code>sing</code></td><td>participant bindings plus <code>coordination_and(gather, sing)</code>, a fixed grammatical factor</td></tr>
                   <tr><td>The driver changes the switch by hand.</td><td><code>driver</code>, <code>changes</code>, <code>switch</code>, <code>hand</code></td><td>agent, theme, and <code>manner(changes, hand)</code>; the case word <em>by</em> is contracted into the marker</td></tr>
                   <tr><td>The switch is in the correct position.</td><td><code>switch</code>, <code>position</code></td><td>spatial binding is observed; <em>correct</em> is <code>abstain</code> if it denotes normative correctness rather than a visible configuration</td></tr>
+                  <tr><td>A close-up before-and-after comparison highlights the lander’s position clearly.</td><td><code>comparison</code>, <code>highlights</code>, <code>position</code>, <code>lander</code></td><td><em>close-up</em> and <em>before-and-after</em> are atomic lexical modifiers; <code>possessive(position, lander)</code> is shown to annotators as <em>the lander’s position</em></td></tr>
                 </tbody>
               </table>
               <p class="cap"><span class="cap-lead">Table 3.</span> Examples are schematic; exact orientation is normalized to event-first roles in the final factor record even when the UD scaffold attaches a reduced clause under a noun.</p>
@@ -175,6 +177,17 @@
               <li><strong><code>abstain</code></strong> (the new precise meaning of <code>na</code>) only for unresolved referents, dangling fragments, or meanings without a stable local audio-visual truth value.</li>
             </ul>
             <p>“The parent was not verified” is never a reason for <code>abstain</code>. Hard-to-see is not <code>abstain</code>. Names and numbers can be established by speech or readable text and remain probeable. This is intentionally different from a scene-graph pipeline that conditionally skips children.</p>
+          </section>
+
+          <section id="annotation" class="section">
+            <p class="eyebrow">Annotator-facing simplification</p>
+            <h2>The factor graph is richer than the human form</h2>
+            <div class="callout">
+              <strong>Only two normalization labels are annotated</strong>
+              <p>For each natural-language target, the annotator chooses <code>not na</code> or <code>na</code>. A <code>not na</code> target then receives one visual and one audio evidence judgment. There is no relation-class gold field and no question-quality field.</p>
+            </div>
+            <p>The root <code>composition</code> factor is bookkeeping for inference: it connects the latent claim verdict to the semantic root and has no perceptual truth of its own. Its repeated <code>na</code> row in the first pilot was therefore an interface bug, not an annotation task. Root composition, latent outputs, fixed coordination, and other grammatical operators are now hidden.</p>
+            <p>Relation types such as <code>agent</code>, <code>theme</code>, and <code>possessive</code> remain in the machine-readable factor tree, but annotators see only their natural realization—for example <em>the lander’s position</em> and “Is the lander’s position visible in the video?” This keeps the executable representation precise without asking humans to learn the ontology.</p>
           </section>
 
           <section id="scope" class="section">
@@ -196,14 +209,14 @@
           <section id="prompts" class="section">
             <p class="eyebrow">Prompt engineering</p>
             <h2>Separate decisions, frozen selection rule, disjoint fixtures</h2>
-            <p>Graph structure and language generation are deliberately separate. Unit normalization cannot alter edges; edge typing cannot invent units; question generation receives a fixed target and cannot change either. Each stage had a terse v1, constrained v2, and full locality-aware v3 candidate. Selection used a frozen score—80% behavioral correctness, 20% required-instruction coverage, shorter prompt on an exact tie.</p>
+            <p>Graph structure and language generation are deliberately separate. Unit normalization cannot alter edges; edge typing cannot invent units; question generation receives a fixed target and cannot change either. The question stage adds a v4 copy-edit candidate after annotator feedback: it may restore the minimal possessive, particle, preposition, or event argument needed for fluent English, but it may not absorb sibling conjuncts. Selection used a frozen score—80% behavioral correctness, 20% required-instruction coverage, shorter prompt on an exact tie.</p>
             <div class="table-wrap">
               <table>
-                <thead><tr><th>Stage</th><th>Selected</th><th>v1 score</th><th>v2 score</th><th>v3 score</th><th>Synthetic cases</th></tr></thead>
+                <thead><tr><th>Stage</th><th>Selected</th><th>v1 score</th><th>v2 score</th><th>v3 score</th><th>v4 score</th><th>Synthetic cases</th></tr></thead>
                 <tbody>
-                  <tr><td>Local unit role</td><td><strong><code>sfu-v3</code></strong></td><td>0.845</td><td>0.920</td><td>1.000</td><td>8</td></tr>
-                  <tr><td>Ambiguous edge type</td><td><strong><code>sf-v3</code></strong></td><td>0.500</td><td>0.620</td><td>1.000</td><td>8</td></tr>
-                  <tr><td>Probe questions</td><td><strong><code>sfq-v3</code></strong></td><td>0.840</td><td>0.880</td><td>1.000</td><td>5</td></tr>
+                  <tr><td>Local unit role</td><td><strong><code>sfu-v3</code></strong></td><td>0.845</td><td>0.920</td><td>1.000</td><td>—</td><td>8</td></tr>
+                  <tr><td>Ambiguous edge type</td><td><strong><code>sf-v3</code></strong></td><td>0.500</td><td>0.620</td><td>1.000</td><td>—</td><td>8</td></tr>
+                  <tr><td>Probe questions</td><td><strong><code>sfq-v4</code></strong></td><td>0.825</td><td>0.850</td><td>0.925</td><td>1.000</td><td>5</td></tr>
                 </tbody>
               </table>
               <p class="cap"><span class="cap-lead">Table 4.</span> Prompt audit on domain-neutral synthetic cases. Eight deterministically selected AViD targets per stage were audited locally for input shape/locality, but zero AViD claims were sent to the external judge and none supplied expected labels.</p>
@@ -216,14 +229,14 @@
             <h2>Full compiler, versioned prompts, new gold surface</h2>
             <div class="stat-grid">
               <div class="stat"><strong>2,375</strong><span>claims compiled</span></div>
-              <div class="stat"><strong>11,750</strong><span>local truth variables</span></div>
-              <div class="stat"><strong>9,366</strong><span>edge factors</span></div>
-              <div class="stat"><strong>2,755</strong><span>local property/logic factors</span></div>
+              <div class="stat"><strong>11,741</strong><span>local truth variables</span></div>
+              <div class="stat"><strong>9,356</strong><span>edge factors</span></div>
+              <div class="stat"><strong>2,714</strong><span>local property/logic factors</span></div>
             </div>
-            <p>The corpus audit finds four upstream overspanned parser nodes; they remain explicit failures rather than being hidden by claim-specific repairs. The annotation pilot contains 43 claims and 562 targets, all with connected acyclic factor graphs. It records predicted/gold role and relation, visual/audio evidence, question quality, notes, and per-channel claim verdicts. The previous gold-v2 files remain untouched.</p>
+            <p>The corpus audit finds four upstream overspanned parser nodes; they remain explicit failures rather than being hidden by claim-specific repairs. A generic surface repair now preserves hyphenated lexical units such as <em>close-up</em> and <em>before-and-after</em>, rather than treating their fragments as separate targets. The annotation pilot contains 43 claims and 507 human-visible targets. It records only binary <code>na</code>/<code>not na</code>, visual/audio evidence, optional notes, and per-channel claim verdicts. The previous gold-v2 files remain untouched.</p>
             <div class="callout amber">
               <strong>Text-model execution status</strong>
-              <p>The selected prompts and validated batch runner are implemented. At build time the Slurm controller was unreachable, so the local frozen Qwen pass could not launch. Gold-v3 therefore exposes deterministic parser/SRL decisions and question wording as <code>fallback</code> for annotation instead of silently exporting AViD claims to an external model. Model decisions will remain separate versioned caches when the local scheduler returns.</p>
+              <p>The selected prompts and validated batch runners are implemented. At build time the Slurm controller was unreachable. A cached local Qwen3-0.6B trial was impractically slow on the CPU-only host, and the internal AViD claims were not exported to an external service. The served pilot therefore uses checked natural-language fallback templates; <code>sfq-v4</code> model rewrites remain a separate versioned cache to apply when a local GPU is available or external processing is explicitly authorized.</p>
             </div>
           </section>
 
@@ -231,10 +244,10 @@
             <p class="eyebrow">Risks and acceptance criteria</p>
             <h2>What annotation must settle</h2>
             <ul>
-              <li><strong>Event existence may be underspecified.</strong> “Does a standing event occur?” is local, but some verbs require a generic participant/object to sound natural. Question-quality labels quantify this.</li>
+              <li><strong>Event existence may be underspecified.</strong> Some verbs require a generic participant or object to sound natural. The v4 copy-edit pass may add only that minimal grammatical context; awkward wording is reported in optional notes rather than a dedicated quality taxonomy.</li>
               <li><strong>Conditional binding is hard to elicit.</strong> A factor question must test identity or role rather than re-test endpoint existence. Binding-decoy cases are the primary stress test.</li>
               <li><strong>Parser topology can be wrong.</strong> The text model may type an offered edge but cannot invent a missing endpoint. Coverage failures need upstream reparsing, not prompt cleverness.</li>
-              <li><strong>High-order roots need care.</strong> Contracted copular/cardinality roots become observed root factors; annotation should test whether these are understandable without a whole-claim question.</li>
+              <li><strong>High-order roots need care.</strong> Contracted copular/cardinality roots remain machine-side factors. They must be evaluated in inference tests, not exposed as mysterious human annotation rows.</li>
             </ul>
             <p>Adopt this factorization for the main experiment only if factor-role/relation agreement is high, most unary and binding questions are judged answerable without forbidden context, binding-decoy accuracy improves, and root verdicts remain calibrated under exact inference.</p>
           </section>
