@@ -13,6 +13,7 @@
       <a class="brand" href="./">SCALE 2026 · AViD</a>
       <div class="nav-links">
         <a href="./" aria-current="page">Home</a>
+        <a href="reports/pipeline.html">Pipeline &amp; ablations</a>
         <a href="reports/tree-crf.html">Tree-CRF verifier</a>
         <a href="proposals/">Proposals</a>
       </div>
@@ -44,7 +45,12 @@
       <div class="container">
         <p class="eyebrow">Read next</p>
         <h2>Method note &amp; design notes</h2>
-        <div class="card-grid three">
+        <div class="card-grid">
+          <a class="card card-link" href="reports/pipeline.html">
+            <span class="tag amber">Pipeline · ablation</span>
+            <h3>From a claim to a verdict</h3>
+            <p>The current end-to-end pipeline — parse → checkable units → semantic factor tree → check-worthiness gate → multimodal probing → tree-CRF — plus the local-vs-external gate ablation (84% agreement; we use the local Qwen gate).</p>
+          </a>
           <a class="card card-link" href="reports/tree-crf.html">
             <span class="tag green">Model · math · analysis</span>
             <h3>A CRF over the parse tree</h3>
