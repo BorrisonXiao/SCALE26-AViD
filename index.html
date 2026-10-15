@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AViD (SCALE 2026): verifying claims against video-with-audio by labelling a claim's parse tree with a conditional random field, and attributing each part to the evidence channel that grounds it.">
+  <meta name="description" content="Chosen paper direction: probabilistic parsing for multimodal claim verification, using frozen media models, small learned relation classifiers, and probabilistic logic inference.">
   <title>SCALE 2026 · AViD — Audio-Visual claim Disentanglement</title>
   <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -24,20 +24,22 @@
     <header class="hero">
       <div class="container">
         <p class="eyebrow">SCALE 2026 · AViD</p>
-        <h1>Verifying claims against video, one part of the parse at a time</h1>
-        <p class="lede">AViD checks whether a claim holds in a video-with-audio and, more importantly, <em>decomposes</em> the verdict: which part of the claim is grounded, by which evidence channel — something you can see, on-screen text, speech, or a non-speech sound — and where the composition breaks. The engine is a conditional random field over the claim's dependency parse tree.</p>
+        <h1>Probabilistic parsing for multimodal claim verification</h1>
+        <p class="lede">Compile a claim into probabilistic logic, use frozen visual and audio models to collect evidence, and learn small relation classifiers to check whether the participants and events are related as the claim says.</p>
         <div class="button-row">
-          <a class="button primary" href="reports/tree-crf.html">Read the method note</a>
+          <a class="button primary" href="proposals/probabilistic-verification.html">Read the chosen paper direction</a>
+          <a class="button" href="proposals/probabilistic-verification.html#generated-examples">See generated examples</a>
+          <a class="button" href="reports/tree-crf.html">Earlier tree-CRF note</a>
         </div>
-        <p class="meta">A slightly better yes/no is not the interesting result — a whole-claim verdict is ~84% redundant across audio and visual. The structure is.</p>
+        <p class="meta">Direction adopted 14 October 2026. The new design is a proposal, not a completed experiment. Earlier tree-CRF reports and pilot results are retained below as historical evidence.</p>
       </div>
     </header>
 
     <section class="section">
       <div class="container">
         <p class="eyebrow">The idea in one paragraph</p>
-        <h2>Label every node of the parse, then reconcile</h2>
-        <p class="section-intro">Parse the claim into a dependency tree. Ask a multimodal model, for each node on its own, whether that part is grounded in the clip — and by which channel. Then run belief propagation over the tree, trading each part's own evidence against a small set of composition rules (a required part cannot be missing, a negation flips its scope, a coordination needs both or either). The root's reconciled label is the verdict, and it is faithful to the parts by construction: the sub-part labels actually compose into it. That is the property flat, part-by-part fact-checking cannot give you — and the reason it silently mis-handles negation and binding.</p>
+        <h2>Represent the claim, score the relations, and infer support</h2>
+        <p class="section-intro">Dependency parsing and semantic role labeling identify the claim's predicates and arguments. A compiler preserves their roles, shared variables, and logical scope in a probabilistic program. Fixed functions or small learned classifiers produce evidence probabilities from cached media-model outputs. Inference considers alternative evidence assignments and returns supported, refuted, or insufficient-evidence probabilities. Existing systems such as DeepProbLog can provide the inference and learning backend.</p>
       </div>
     </section>
 
@@ -46,10 +48,20 @@
         <p class="eyebrow">Read next</p>
         <h2>Method note &amp; design notes</h2>
         <div class="card-grid">
+          <a class="card card-link" href="proposals/probabilistic-verification.html">
+            <span class="tag green">Chosen direction · design draft</span>
+            <h3>Probabilistic parsing and learned relation classifiers</h3>
+            <p>The current paper plan: claim compilation, frozen evidence modules, interchangeable fixed and learned functions, model parameterization, training objectives, and controlled experiments.</p>
+          </a>
           <a class="card card-link" href="reports/pipeline.html">
-            <span class="tag amber">Pipeline · ablation</span>
+            <span class="tag amber">Historical pipeline · ablation</span>
             <h3>From a claim to a verdict</h3>
-            <p>The current end-to-end pipeline — parse → checkable units → semantic factor tree → check-worthiness gate → multimodal probing → tree-CRF — plus the local-vs-external gate ablation (84% agreement; we use the local Qwen gate).</p>
+            <p>The earlier end-to-end pipeline — parse → checkable units → semantic factor tree → check-worthiness gate → multimodal probing → tree-CRF — plus the local-vs-external gate ablation (84% agreement; we use the local Qwen gate).</p>
+          </a>
+          <a class="card card-link" href="reports/verification-pilot.html">
+            <span class="tag green">15 October · completed development runs</span>
+            <h3>Generated data and verification baselines</h3>
+            <p>Inspect actual candidates, prompt revisions, corrected seed descriptions, and two checked color swaps. Explicit fact assignments worked better than free-form editing in this small pilot; method gains remain unmeasured.</p>
           </a>
           <a class="card card-link" href="reports/tree-crf.html">
             <span class="tag green">Model · math · analysis</span>
@@ -74,7 +86,8 @@
     <section class="section">
       <div class="container">
         <p class="eyebrow">The working picture</p>
-        <h2>Current evidence</h2>
+        <h2>Historical tree-CRF pilot results</h2>
+        <p class="section-intro">These figures reproduce the earlier pilot report. Generated edits carry distant labels, and entity replacements are not a clean test of binding between present participants. They do not validate the new probabilistic-program design; see the dated research review for the independent audit.</p>
         <div class="stat-grid">
           <div class="stat"><strong>84.0%</strong><span>Tree-CRF detection of false-by-construction claims (flat baseline: 63.3%)</span></div>
           <div class="stat"><strong>+20.7 pts</strong><span>Over a flat whole-claim verifier, on 5,556 perturbed claims</span></div>
@@ -82,15 +95,15 @@
           <div class="stat"><strong>2,375</strong><span>Real claims decomposed: 56.5% supported · 27.5% partial · 16.0% unsupported</span></div>
         </div>
         <div class="callout">
-          <strong>Where the gain comes from</strong>
-          <p>The tree beats the flat baseline on every perturbation type — negation 88.1% vs 84.4%, entity-swap 93.0% vs 75.5%, argument-removal 71.1% vs 31.1% — because a whole-claim model reading a mangled claim does not notice a piece is missing, while a compositional model checks each required part and its binding directly.</p>
+          <strong>Earlier reported comparison</strong>
+          <p>The earlier report lists negation 88.1% vs 84.4%, entity-swap 93.0% vs 75.5%, and argument-removal 71.1% vs 31.1%. Label validity, paired eligibility, and unequal negation handling limit interpretation. These numbers alone do not establish a binding mechanism or explain the source of the difference.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">SCALE 2026 · AViD — audio-visual claim disentanglement · Updated 13 August 2026</div>
+    <div class="container">SCALE 2026 · AViD — multimodal claim verification · Updated 15 October 2026</div>
   </footer>
 </body>
 </html>
