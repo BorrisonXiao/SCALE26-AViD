@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-22",
+  "scope": "implementation and training demonstration, not held-out evaluation",
+  "real_claims": 3,
+  "training_claims": 2,
+  "independent_source_videos": 1,
+  "controlled_claims": 3,
+  "compiler_checks": 18,
+  "compiler_checks_passed": 15,
+  "new_gpu_requests": 0,
+  "backend_versions": {
+    "deepproblog": "2.0.6",
+    "problog": "2.3.0",
+    "pysdd": "1.0.6",
+    "torch": "2.10.0+cu128"
+  },
+  "parser_provenance": {
+    "library": "stanza",
+    "version": "1.10.1",
+    "device": "cpu",
+    "model_dir": "/exp/cxiao/.cache/stanza",
+    "model_sha256": {
+      "en/tokenize/combined.pt": "db893a78a14995f6ee18085c44263570b84fed676957a434ba5f6a9a7af939ca",
+      "en/pos/combined_charlm.pt": "af44da5e7e0e22a6d99d3b6e8932d3b3d630dd63d370b9819f6d598edae1ef61",
+      "en/lemma/combined_nocharlm.pt": "1be2573296bc837e6361db795a725c1b0a6c5ddc16e328a971d9353be84c1841",
+      "en/depparse/combined_charlm.pt": "466c62d0cbe97e6cbcc177ecf5693cd90f113dd03c246da26586eb7695d620f3"
+    }
+  },
+  "training_seconds": 1.0290527045726776,
+  "total_seconds": 3.0178906694054604,
+  "source_sha256": {
+    "scripts/probabilistic_verification/__init__.py": "2a04e48e76316ea6494a6b1fc16c5376d8fea082306ba88018a657777dffdbb8",
+    "scripts/probabilistic_verification/representation.py": "a4329ccf0a3bd66b37fe92bfbae2dbe762883346f133f58a470220ee860efab6",
+    "scripts/probabilistic_verification/compiler.py": "049253dd8fc2416006e1626eaaa26c9c6e51fc2c3d3f0ddab1cbbbc034579d43",
+    "scripts/probabilistic_verification/parsing.py": "c5623d06475ae453d700eae6e133b6a0eb65a8e431efc024cdf33c0c4999d5e4",
+    "scripts/probabilistic_verification/logic.py": "119c597a4e366eccbdb5a44279835010c86f8bdea2ddd2b68daf15adb5605edc",
+    "scripts/probabilistic_verification/backend.py": "be3101746529d9f582e959dd918330541ace2c6329222a3997575f09b07b177e"
+  },
+  "caveats": [
+    "The real examples use manually specified depicted referents, not detected tracks.",
+    "Six saved perception observations come from the same frozen model and are modeled as independent categorical facts except for exact reuse.",
+    "The learned MLP is a score calibrator; this run does not establish improved perception or generalization.",
+    "Root-label training uses the same two development claims shown in the report.",
+    "Controlled event probabilities are constructed inputs, not real media-model outputs."
+  ]
+}

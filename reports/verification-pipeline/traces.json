@@ -1,0 +1,3265 @@
+{
+  "real_supported": {
+    "compilation": {
+      "claim_id": "real_supported",
+      "text": "The aircraft is gray and the school buses are yellow.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "aircraft",
+          "lemma": "aircraft",
+          "upos": "NOUN",
+          "head": 4,
+          "deprel": "nsubj",
+          "start_char": 4,
+          "end_char": 12,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "is",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 4,
+          "deprel": "cop",
+          "start_char": 13,
+          "end_char": 15,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "gray",
+          "lemma": "gray",
+          "upos": "ADJ",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 16,
+          "end_char": 20,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 5,
+          "text": "and",
+          "lemma": "and",
+          "upos": "CCONJ",
+          "head": 10,
+          "deprel": "cc",
+          "start_char": 21,
+          "end_char": 24,
+          "feats": null
+        },
+        {
+          "id": 6,
+          "text": "the",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 8,
+          "deprel": "det",
+          "start_char": 25,
+          "end_char": 28,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 7,
+          "text": "school",
+          "lemma": "school",
+          "upos": "NOUN",
+          "head": 8,
+          "deprel": "compound",
+          "start_char": 29,
+          "end_char": 35,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 8,
+          "text": "buses",
+          "lemma": "bus",
+          "upos": "NOUN",
+          "head": 10,
+          "deprel": "nsubj",
+          "start_char": 36,
+          "end_char": 41,
+          "feats": "Number=Plur"
+        },
+        {
+          "id": 9,
+          "text": "are",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 10,
+          "deprel": "cop",
+          "start_char": 42,
+          "end_char": 45,
+          "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 10,
+          "text": "yellow",
+          "lemma": "yellow",
+          "upos": "ADJ",
+          "head": 4,
+          "deprel": "conj",
+          "start_char": 46,
+          "end_char": 52,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 11,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 4,
+          "deprel": "punct",
+          "start_char": 52,
+          "end_char": 53,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "aircraft",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "school buses",
+          "token_ids": [
+            7,
+            8
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "aircraft"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "aircraft is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "attribute",
+          "arguments": [
+            "X1",
+            "gray"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "aircraft is gray.",
+          "token_ids": [
+            4
+          ],
+          "trainable": true
+        },
+        {
+          "id": "a2",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "school_bus"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "school buses is present.",
+          "token_ids": [
+            7,
+            8
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a3",
+          "predicate": "attribute",
+          "arguments": [
+            "X2",
+            "yellow"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "buses is yellow.",
+          "token_ids": [
+            10
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "and",
+        "children": [
+          {
+            "op": "exists",
+            "children": [
+              {
+                "op": "and",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a0",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a1",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X1"
+            ],
+            "state": ""
+          },
+          {
+            "op": "exists",
+            "children": [
+              {
+                "op": "and",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a2",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a3",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X2"
+            ],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "aircraft",
+          "represented_by": [
+            "a0"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "is",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "gray",
+          "represented_by": [
+            "a1"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": "and",
+          "represented_by": [
+            "logical and"
+          ]
+        },
+        {
+          "token_id": 6,
+          "text": "the",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 7,
+          "text": "school",
+          "represented_by": [
+            "a2"
+          ]
+        },
+        {
+          "token_id": 8,
+          "text": "buses",
+          "represented_by": [
+            "a2"
+          ]
+        },
+        {
+          "token_id": 9,
+          "text": "are",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 10,
+          "text": "yellow",
+          "represented_by": [
+            "a3"
+          ]
+        },
+        {
+          "token_id": 11,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "(EXISTS X1: ((entity(X1, aircraft) AND attribute(X1, gray))) AND EXISTS X2: ((entity(X2, school_bus) AND attribute(X2, yellow))))"
+    },
+    "domains": {
+      "X1": [
+        "depicted_aircraft"
+      ],
+      "X2": [
+        "depicted_school_bus"
+      ]
+    },
+    "complete": {
+      "X1": true,
+      "X2": true
+    },
+    "candidate_descriptions": {
+      "depicted_aircraft": "aircraft",
+      "depicted_school_bus": "school bus"
+    },
+    "observations": {
+      "o_b00c88c5e7f9454fa7b1": {
+        "key": "[\"zlD_zgNiYJkRV1PS\",\"visual_depiction\",\"entity\",[\"depicted_aircraft\",\"aircraft\"]]",
+        "distribution": [
+          0.9999999943863849,
+          1.2501528593688655e-09,
+          4.363462228448904e-09
+        ],
+        "trainable": false,
+        "text": "An aircraft is present.",
+        "provenance": {
+          "source": "saved frozen Qwen3-VL-8B output",
+          "request_id": "6f92243f59cf38c04ca56227a6a50041c3f6bdfa0b784e26ee1098b95c14e900",
+          "request_hash": "1adff1104f167baf1af1bcab79f65e80a36ea67556de92a98da9dd0a6649f157",
+          "original_distribution": {
+            "supported": 0.9999999943863849,
+            "refuted": 1.2501528593688655e-09,
+            "unknown": 4.363462228448904e-09
+          },
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": true,
+        "id": "o_b00c88c5e7f9454fa7b1"
+      },
+      "o_f336bbe2060a97d53642": {
+        "key": "[\"zlD_zgNiYJkRV1PS\",\"visual_depiction\",\"attribute\",[\"depicted_aircraft\",\"gray\"]]",
+        "distribution": [
+          0.9999977145650073,
+          2.5109943150137486e-08,
+          2.2603250494945646e-06
+        ],
+        "trainable": true,
+        "text": "The aircraft is gray.",
+        "provenance": {
+          "source": "saved frozen Qwen3-VL-8B output",
+          "request_id": "21ef87387a85c8c12bc67b1b762865325ecfabfc096c92b6d1d2a052466ecc70",
+          "request_hash": "fe9d28ae0fa4c148ec61d0034a0a820a950f23d612a655fac0dd4d6b431fb0a1",
+          "original_distribution": {
+            "supported": 0.9999977145650073,
+            "refuted": 2.5109943150137486e-08,
+            "unknown": 2.2603250494945646e-06
+          },
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": true,
+        "id": "o_f336bbe2060a97d53642"
+      },
+      "o_5ce9614d056c0e559071": {
+        "key": "[\"zlD_zgNiYJkRV1PS\",\"visual_depiction\",\"entity\",[\"depicted_school_bus\",\"school_bus\"]]",
+        "distribution": [
+          0.999999843640861,
+          1.1861119710704782e-08,
+          1.4449801924284193e-07
+        ],
+        "trainable": false,
+        "text": "School buses are present.",
+        "provenance": {
+          "source": "saved frozen Qwen3-VL-8B output",
+          "request_id": "0be557df6981be8b20b7c1c05af9cbfe6794c930e03881424d774893e4def54d",
+          "request_hash": "9b909feeb36201969c3a33a0b7353475d5760bf33af6c700aab16edd0f104fdc",
+          "original_distribution": {
+            "supported": 0.999999843640861,
+            "refuted": 1.1861119710704782e-08,
+            "unknown": 1.4449801924284193e-07
+          },
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": true,
+        "id": "o_5ce9614d056c0e559071"
+      },
+      "o_97495214205925702e3d": {
+        "key": "[\"zlD_zgNiYJkRV1PS\",\"visual_depiction\",\"attribute\",[\"depicted_school_bus\",\"yellow\"]]",
+        "distribution": [
+          0.9999977074331617,
+          3.224180498641669e-08,
+          2.260325033374239e-06
+        ],
+        "trainable": true,
+        "text": "The school buses are yellow.",
+        "provenance": {
+          "source": "saved frozen Qwen3-VL-8B output",
+          "request_id": "04aa96a5555de87d5cf09a9e31cc977e1a423ce8563aed52f794f2aa8f46c083",
+          "request_hash": "0d131ba4fc8ffcc9538a92d139e02a54f8474ec8ed4b88c53e5b873b9a23e9a5",
+          "original_distribution": {
+            "supported": 0.9999977074331617,
+            "refuted": 3.224180498641669e-08,
+            "unknown": 2.260325033374239e-06
+          },
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": true,
+        "id": "o_97495214205925702e3d"
+      }
+    },
+    "occurrences": [
+      {
+        "atom_id": "a0",
+        "observation_id": "o_b00c88c5e7f9454fa7b1",
+        "predicate": "entity(X1, aircraft)",
+        "assignment": {
+          "X1": "depicted_aircraft"
+        }
+      },
+      {
+        "atom_id": "a1",
+        "observation_id": "o_f336bbe2060a97d53642",
+        "predicate": "attribute(X1, gray)",
+        "assignment": {
+          "X1": "depicted_aircraft"
+        }
+      },
+      {
+        "atom_id": "a2",
+        "observation_id": "o_5ce9614d056c0e559071",
+        "predicate": "entity(X2, school_bus)",
+        "assignment": {
+          "X2": "depicted_school_bus"
+        }
+      },
+      {
+        "atom_id": "a3",
+        "observation_id": "o_97495214205925702e3d",
+        "predicate": "attribute(X2, yellow)",
+        "assignment": {
+          "X2": "depicted_school_bus"
+        }
+      }
+    ],
+    "expansions": [
+      {
+        "variables": [
+          "X1"
+        ],
+        "candidate_combinations": 1,
+        "complete": true,
+        "outer_assignment": {}
+      },
+      {
+        "variables": [
+          "X2"
+        ],
+        "candidate_combinations": 1,
+        "complete": true,
+        "outer_assignment": {}
+      }
+    ],
+    "label": "supported",
+    "label_source": "assistant inspection of source frames; development labels, not human gold",
+    "predictions": {
+      "fixed": {
+        "claim_id": "real_supported",
+        "distribution": {
+          "supported": 0.9999952600313969,
+          "refuted": 7.046301942362744e-08,
+          "unknown": 4.669505582675445e-06
+        },
+        "prediction": "supported",
+        "timing": {
+          "ground_seconds": 0.024335384368896484,
+          "compile_seconds": 0.012127161026000977,
+          "evaluate_seconds": 0.007985115051269531
+        },
+        "wall_seconds": 0.04461728595197201
+      },
+      "initialized": {
+        "claim_id": "real_supported",
+        "distribution": {
+          "supported": 0.9999952600313966,
+          "refuted": 7.046301956018163e-08,
+          "unknown": 4.669505583544247e-06
+        },
+        "prediction": "supported",
+        "timing": {
+          "ground_seconds": 0.026674270629882812,
+          "compile_seconds": 0.012276411056518555,
+          "evaluate_seconds": 0.019061803817749023
+        },
+        "wall_seconds": 0.07883049920201302
+      },
+      "trained": {
+        "claim_id": "real_supported",
+        "distribution": {
+          "supported": 0.9999997767858205,
+          "refuted": 5.9343668757897995e-08,
+          "unknown": 1.638705107686582e-07
+        },
+        "prediction": "supported",
+        "timing": {
+          "ground_seconds": 0.026674270629882812,
+          "compile_seconds": 0.012276411056518555,
+          "evaluate_seconds": 0.014360904693603516
+        },
+        "wall_seconds": 0.015140492469072342
+      }
+    },
+    "local_after_training": {
+      "o_b00c88c5e7f9454fa7b1": [
+        0.9999999943863849,
+        1.2501528593688655e-09,
+        4.363462228448904e-09
+      ],
+      "o_f336bbe2060a97d53642": [
+        0.9999999720113376,
+        2.0512492549378975e-08,
+        7.476169916571294e-09
+      ],
+      "o_5ce9614d056c0e559071": [
+        0.999999843640861,
+        1.1861119710704782e-08,
+        1.4449801924284193e-07
+      ],
+      "o_97495214205925702e3d": [
+        0.999999966747225,
+        2.571990435709208e-08,
+        7.532870431398539e-09
+      ]
+    }
+  },
+  "real_swapped": {
+    "compilation": {
+      "claim_id": "real_swapped",
+      "text": "The aircraft is yellow and the school buses are gray.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "aircraft",
+          "lemma": "aircraft",
+          "upos": "NOUN",
+          "head": 4,
+          "deprel": "nsubj",
+          "start_char": 4,
+          "end_char": 12,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "is",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 4,
+          "deprel": "cop",
+          "start_char": 13,
+          "end_char": 15,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "yellow",
+          "lemma": "yellow",
+          "upos": "ADJ",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 16,
+          "end_char": 22,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 5,
+          "text": "and",
+          "lemma": "and",
+          "upos": "CCONJ",
+          "head": 10,
+          "deprel": "cc",
+          "start_char": 23,
+          "end_char": 26,
+          "feats": null
+        },
+        {
+          "id": 6,
+          "text": "the",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 8,
+          "deprel": "det",
+          "start_char": 27,
+          "end_char": 30,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 7,
+          "text": "school",
+          "lemma": "school",
+          "upos": "NOUN",
+          "head": 8,
+          "deprel": "compound",
+          "start_char": 31,
+          "end_char": 37,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 8,
+          "text": "buses",
+          "lemma": "bus",
+          "upos": "NOUN",
+          "head": 10,
+          "deprel": "nsubj",
+          "start_char": 38,
+          "end_char": 43,
+          "feats": "Number=Plur"
+        },
+        {
+          "id": 9,
+          "text": "are",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 10,
+          "deprel": "cop",
+          "start_char": 44,
+          "end_char": 47,
+          "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 10,
+          "text": "gray",
+          "lemma": "gray",
+          "upos": "ADJ",
+          "head": 4,
+          "deprel": "conj",
+          "start_char": 48,
+          "end_char": 52,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 11,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 4,
+          "deprel": "punct",
+          "start_char": 52,
+          "end_char": 53,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "aircraft",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "school buses",
+          "token_ids": [
+            7,
+            8
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "aircraft"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "aircraft is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "attribute",
+          "arguments": [
+            "X1",
+            "yellow"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "aircraft is yellow.",
+          "token_ids": [
+            4
+          ],
+          "trainable": true
+        },
+        {
+          "id": "a2",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "school_bus"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "school buses is present.",
+          "token_ids": [
+            7,
+            8
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a3",
+          "predicate": "attribute",
+          "arguments": [
+            "X2",
+            "gray"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "buses is gray.",
+          "token_ids": [
+            10
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "and",
+        "children": [
+          {
+            "op": "exists",
+            "children": [
+              {
+                "op": "and",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a0",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a1",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X1"
+            ],
+            "state": ""
+          },
+          {
+            "op": "exists",
+            "children": [
+              {
+                "op": "and",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a2",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a3",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X2"
+            ],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "aircraft",
+          "represented_by": [
+            "a0"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "is",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "yellow",
+          "represented_by": [
+            "a1"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": "and",
+          "represented_by": [
+            "logical and"
+          ]
+        },
+        {
+          "token_id": 6,
+          "text": "the",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 7,
+          "text": "school",
+          "represented_by": [
+            "a2"
+          ]
+        },
+        {
+          "token_id": 8,
+          "text": "buses",
+          "represented_by": [
+            "a2"
+          ]
+        },
+        {
+          "token_id": 9,
+          "text": "are",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 10,
+          "text": "gray",
+          "represented_by": [
+            "a3"
+          ]
+        },
+        {
+          "token_id": 11,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "(EXISTS X1: ((entity(X1, aircraft) AND attribute(X1, yellow))) AND EXISTS X2: ((entity(X2, school_bus) AND attribute(X2, gray))))"
+    },
+    "domains": {
+      "X1": [
+        "depicted_aircraft"
+      ],
+      "X2": [
+        "depicted_school_bus"
+      ]
+    },
+    "complete": {
+      "X1": true,
+      "X2": true
+    },
+    "candidate_descriptions": {
+      "depicted_aircraft": "aircraft",
+      "depicted_school_bus": "school bus"
+    },
+    "observations": {
+      "o_b00c88c5e7f9454fa7b1": {
+        "key": "[\"zlD_zgNiYJkRV1PS\",\"visual_depiction\",\"entity\",[\"depicted_aircraft\",\"aircraft\"]]",
+        "distribution": [
+          0.9999999943863849,
+          1.2501528593688655e-09,
+          4.363462228448904e-09
+        ],
+        "trainable": false,
+        "text": "An aircraft is present.",
+        "provenance": {
+          "source": "saved frozen Qwen3-VL-8B output",
+          "request_id": "6f92243f59cf38c04ca56227a6a50041c3f6bdfa0b784e26ee1098b95c14e900",
+          "request_hash": "1adff1104f167baf1af1bcab79f65e80a36ea67556de92a98da9dd0a6649f157",
+          "original_distribution": {
+            "supported": 0.9999999943863849,
+            "refuted": 1.2501528593688655e-09,
+            "unknown": 4.363462228448904e-09
+          },
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": true,
+        "id": "o_b00c88c5e7f9454fa7b1"
+      },
+      "o_7befa1451684e2503e41": {
+        "key": "[\"zlD_zgNiYJkRV1PS\",\"visual_depiction\",\"attribute\",[\"depicted_aircraft\",\"yellow\"]]",
+        "distribution": [
+          1.300506440179514e-05,
+          0.00015843411853342902,
+          0.9998285608170648
+        ],
+        "trainable": true,
+        "text": "The aircraft is yellow.",
+        "provenance": {
+          "source": "saved frozen Qwen3-VL-8B output",
+          "request_id": "3447f6e1ef90438f687f9e4dc2f0083859d17d4d4a3f0ed49ae64b5fa0a7fa74",
+          "request_hash": "ec4969131df5aa1611a40e6f191592d4da39cf9e64b70eac643d4aff1d3e898d",
+          "original_distribution": {
+            "supported": 1.300506440179514e-05,
+            "refuted": 0.00015843411853342902,
+            "unknown": 0.9998285608170648
+          },
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": true,
+        "id": "o_7befa1451684e2503e41"
+      },
+      "o_5ce9614d056c0e559071": {
+        "key": "[\"zlD_zgNiYJkRV1PS\",\"visual_depiction\",\"entity\",[\"depicted_school_bus\",\"school_bus\"]]",
+        "distribution": [
+          0.999999843640861,
+          1.1861119710704782e-08,
+          1.4449801924284193e-07
+        ],
+        "trainable": false,
+        "text": "School buses are present.",
+        "provenance": {
+          "source": "saved frozen Qwen3-VL-8B output",
+          "request_id": "0be557df6981be8b20b7c1c05af9cbfe6794c930e03881424d774893e4def54d",
+          "request_hash": "9b909feeb36201969c3a33a0b7353475d5760bf33af6c700aab16edd0f104fdc",
+          "original_distribution": {
+            "supported": 0.999999843640861,
+            "refuted": 1.1861119710704782e-08,
+            "unknown": 1.4449801924284193e-07
+          },
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": true,
+        "id": "o_5ce9614d056c0e559071"
+      },
+      "o_059efb40dc6588f5a7c3": {
+        "key": "[\"zlD_zgNiYJkRV1PS\",\"visual_depiction\",\"attribute\",[\"depicted_school_bus\",\"gray\"]]",
+        "distribution": [
+          7.888903481790643e-06,
+          4.539750508706336e-05,
+          0.9999467135914312
+        ],
+        "trainable": true,
+        "text": "The school buses are gray.",
+        "provenance": {
+          "source": "saved frozen Qwen3-VL-8B output",
+          "request_id": "887f9d808d8ae264e1ba631ba7b8ea38265d7b7b38773978ade59ff247ecb296",
+          "request_hash": "cc6d3485fcb71723018f76e5491a34773952e1638b33d3e22a8a59951202dda6",
+          "original_distribution": {
+            "supported": 7.888903481790643e-06,
+            "refuted": 4.539750508706336e-05,
+            "unknown": 0.9999467135914312
+          },
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": true,
+        "id": "o_059efb40dc6588f5a7c3"
+      }
+    },
+    "occurrences": [
+      {
+        "atom_id": "a0",
+        "observation_id": "o_b00c88c5e7f9454fa7b1",
+        "predicate": "entity(X1, aircraft)",
+        "assignment": {
+          "X1": "depicted_aircraft"
+        }
+      },
+      {
+        "atom_id": "a1",
+        "observation_id": "o_7befa1451684e2503e41",
+        "predicate": "attribute(X1, yellow)",
+        "assignment": {
+          "X1": "depicted_aircraft"
+        }
+      },
+      {
+        "atom_id": "a2",
+        "observation_id": "o_5ce9614d056c0e559071",
+        "predicate": "entity(X2, school_bus)",
+        "assignment": {
+          "X2": "depicted_school_bus"
+        }
+      },
+      {
+        "atom_id": "a3",
+        "observation_id": "o_059efb40dc6588f5a7c3",
+        "predicate": "attribute(X2, gray)",
+        "assignment": {
+          "X2": "depicted_school_bus"
+        }
+      }
+    ],
+    "expansions": [
+      {
+        "variables": [
+          "X1"
+        ],
+        "candidate_combinations": 1,
+        "complete": true,
+        "outer_assignment": {}
+      },
+      {
+        "variables": [
+          "X2"
+        ],
+        "candidate_combinations": 1,
+        "complete": true,
+        "outer_assignment": {}
+      }
+    ],
+    "label": "refuted",
+    "label_source": "assistant inspection of source frames; development labels, not human gold",
+    "predictions": {
+      "fixed": {
+        "claim_id": "real_swapped",
+        "distribution": {
+          "supported": 1.0259568122686445e-10,
+          "refuted": 0.00020383753970688526,
+          "unknown": 0.9997961623576974
+        },
+        "prediction": "unknown",
+        "timing": {
+          "ground_seconds": 0.023488283157348633,
+          "compile_seconds": 0.011404275894165039,
+          "evaluate_seconds": 0.008349418640136719
+        },
+        "wall_seconds": 0.0433572493493557
+      },
+      "initialized": {
+        "claim_id": "real_swapped",
+        "distribution": {
+          "supported": 1.025956812225256e-10,
+          "refuted": 0.00020383753970737762,
+          "unknown": 0.999796162357697
+        },
+        "prediction": "unknown",
+        "timing": {
+          "ground_seconds": 0.026049137115478516,
+          "compile_seconds": 0.015433788299560547,
+          "evaluate_seconds": 0.01853346824645996
+        },
+        "wall_seconds": 0.061295682564377785
+      },
+      "trained": {
+        "claim_id": "real_swapped",
+        "distribution": {
+          "supported": 1.869932068910608e-16,
+          "refuted": 0.9999999944347931,
+          "unknown": 5.5652066898675944e-09
+        },
+        "prediction": "refuted",
+        "timing": {
+          "ground_seconds": 0.026049137115478516,
+          "compile_seconds": 0.015433788299560547,
+          "evaluate_seconds": 0.014263629913330078
+        },
+        "wall_seconds": 0.015028418973088264
+      }
+    },
+    "local_after_training": {
+      "o_b00c88c5e7f9454fa7b1": [
+        0.9999999943863849,
+        1.2501528593688655e-09,
+        4.363462228448904e-09
+      ],
+      "o_7befa1451684e2503e41": [
+        9.416413805255945e-09,
+        0.9999599661216162,
+        4.0024461969877244e-05
+      ],
+      "o_5ce9614d056c0e559071": [
+        0.999999843640861,
+        1.1861119710704782e-08,
+        1.4449801924284193e-07
+      ],
+      "o_059efb40dc6588f5a7c3": [
+        1.9858222147639252e-08,
+        0.9998609875641703,
+        0.00013899257760760462
+      ]
+    }
+  },
+  "real_unknown": {
+    "compilation": {
+      "claim_id": "real_unknown",
+      "text": "The aircraft is gray and the school buses are yellow.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "aircraft",
+          "lemma": "aircraft",
+          "upos": "NOUN",
+          "head": 4,
+          "deprel": "nsubj",
+          "start_char": 4,
+          "end_char": 12,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "is",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 4,
+          "deprel": "cop",
+          "start_char": 13,
+          "end_char": 15,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "gray",
+          "lemma": "gray",
+          "upos": "ADJ",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 16,
+          "end_char": 20,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 5,
+          "text": "and",
+          "lemma": "and",
+          "upos": "CCONJ",
+          "head": 10,
+          "deprel": "cc",
+          "start_char": 21,
+          "end_char": 24,
+          "feats": null
+        },
+        {
+          "id": 6,
+          "text": "the",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 8,
+          "deprel": "det",
+          "start_char": 25,
+          "end_char": 28,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 7,
+          "text": "school",
+          "lemma": "school",
+          "upos": "NOUN",
+          "head": 8,
+          "deprel": "compound",
+          "start_char": 29,
+          "end_char": 35,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 8,
+          "text": "buses",
+          "lemma": "bus",
+          "upos": "NOUN",
+          "head": 10,
+          "deprel": "nsubj",
+          "start_char": 36,
+          "end_char": 41,
+          "feats": "Number=Plur"
+        },
+        {
+          "id": 9,
+          "text": "are",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 10,
+          "deprel": "cop",
+          "start_char": 42,
+          "end_char": 45,
+          "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 10,
+          "text": "yellow",
+          "lemma": "yellow",
+          "upos": "ADJ",
+          "head": 4,
+          "deprel": "conj",
+          "start_char": 46,
+          "end_char": 52,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 11,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 4,
+          "deprel": "punct",
+          "start_char": 52,
+          "end_char": 53,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "aircraft",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "school buses",
+          "token_ids": [
+            7,
+            8
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "aircraft"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "aircraft is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "attribute",
+          "arguments": [
+            "X1",
+            "gray"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "aircraft is gray.",
+          "token_ids": [
+            4
+          ],
+          "trainable": true
+        },
+        {
+          "id": "a2",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "school_bus"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "school buses is present.",
+          "token_ids": [
+            7,
+            8
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a3",
+          "predicate": "attribute",
+          "arguments": [
+            "X2",
+            "yellow"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "buses is yellow.",
+          "token_ids": [
+            10
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "and",
+        "children": [
+          {
+            "op": "exists",
+            "children": [
+              {
+                "op": "and",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a0",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a1",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X1"
+            ],
+            "state": ""
+          },
+          {
+            "op": "exists",
+            "children": [
+              {
+                "op": "and",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a2",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a3",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X2"
+            ],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "aircraft",
+          "represented_by": [
+            "a0"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "is",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "gray",
+          "represented_by": [
+            "a1"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": "and",
+          "represented_by": [
+            "logical and"
+          ]
+        },
+        {
+          "token_id": 6,
+          "text": "the",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 7,
+          "text": "school",
+          "represented_by": [
+            "a2"
+          ]
+        },
+        {
+          "token_id": 8,
+          "text": "buses",
+          "represented_by": [
+            "a2"
+          ]
+        },
+        {
+          "token_id": 9,
+          "text": "are",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 10,
+          "text": "yellow",
+          "represented_by": [
+            "a3"
+          ]
+        },
+        {
+          "token_id": 11,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "(EXISTS X1: ((entity(X1, aircraft) AND attribute(X1, gray))) AND EXISTS X2: ((entity(X2, school_bus) AND attribute(X2, yellow))))"
+    },
+    "domains": {
+      "X1": [
+        "depicted_aircraft"
+      ],
+      "X2": [
+        "depicted_school_bus"
+      ]
+    },
+    "complete": {
+      "X1": true,
+      "X2": true
+    },
+    "candidate_descriptions": {
+      "depicted_aircraft": "aircraft",
+      "depicted_school_bus": "school bus"
+    },
+    "observations": {
+      "o_38d0a19e8e5dac6d4159": {
+        "key": "[\"zlD_zgNiYJkRV1PS_no_media\",\"visual_depiction\",\"entity\",[\"depicted_aircraft\",\"aircraft\"]]",
+        "distribution": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "trainable": false,
+        "text": "An aircraft is present.",
+        "provenance": {
+          "source": "explicit unavailable-media control",
+          "request_id": null,
+          "request_hash": null,
+          "original_distribution": null,
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": false,
+        "id": "o_38d0a19e8e5dac6d4159"
+      },
+      "o_12708a8a192009601d34": {
+        "key": "[\"zlD_zgNiYJkRV1PS_no_media\",\"visual_depiction\",\"attribute\",[\"depicted_aircraft\",\"gray\"]]",
+        "distribution": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "trainable": false,
+        "text": "The aircraft is gray.",
+        "provenance": {
+          "source": "explicit unavailable-media control",
+          "request_id": null,
+          "request_hash": null,
+          "original_distribution": null,
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": false,
+        "id": "o_12708a8a192009601d34"
+      },
+      "o_c8ea06a7b650f2f2b949": {
+        "key": "[\"zlD_zgNiYJkRV1PS_no_media\",\"visual_depiction\",\"entity\",[\"depicted_school_bus\",\"school_bus\"]]",
+        "distribution": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "trainable": false,
+        "text": "School buses are present.",
+        "provenance": {
+          "source": "explicit unavailable-media control",
+          "request_id": null,
+          "request_hash": null,
+          "original_distribution": null,
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": false,
+        "id": "o_c8ea06a7b650f2f2b949"
+      },
+      "o_1cdbf820ca243bd3fb99": {
+        "key": "[\"zlD_zgNiYJkRV1PS_no_media\",\"visual_depiction\",\"attribute\",[\"depicted_school_bus\",\"yellow\"]]",
+        "distribution": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "trainable": false,
+        "text": "The school buses are yellow.",
+        "provenance": {
+          "source": "explicit unavailable-media control",
+          "request_id": null,
+          "request_hash": null,
+          "original_distribution": null,
+          "route": "visual_depiction",
+          "candidate_origin": "manually specified depicted referents; no tracker"
+        },
+        "available": false,
+        "id": "o_1cdbf820ca243bd3fb99"
+      }
+    },
+    "occurrences": [
+      {
+        "atom_id": "a0",
+        "observation_id": "o_38d0a19e8e5dac6d4159",
+        "predicate": "entity(X1, aircraft)",
+        "assignment": {
+          "X1": "depicted_aircraft"
+        }
+      },
+      {
+        "atom_id": "a1",
+        "observation_id": "o_12708a8a192009601d34",
+        "predicate": "attribute(X1, gray)",
+        "assignment": {
+          "X1": "depicted_aircraft"
+        }
+      },
+      {
+        "atom_id": "a2",
+        "observation_id": "o_c8ea06a7b650f2f2b949",
+        "predicate": "entity(X2, school_bus)",
+        "assignment": {
+          "X2": "depicted_school_bus"
+        }
+      },
+      {
+        "atom_id": "a3",
+        "observation_id": "o_1cdbf820ca243bd3fb99",
+        "predicate": "attribute(X2, yellow)",
+        "assignment": {
+          "X2": "depicted_school_bus"
+        }
+      }
+    ],
+    "expansions": [
+      {
+        "variables": [
+          "X1"
+        ],
+        "candidate_combinations": 1,
+        "complete": true,
+        "outer_assignment": {}
+      },
+      {
+        "variables": [
+          "X2"
+        ],
+        "candidate_combinations": 1,
+        "complete": true,
+        "outer_assignment": {}
+      }
+    ],
+    "label": "unknown",
+    "label_source": "availability control",
+    "predictions": {
+      "fixed": {
+        "claim_id": "real_unknown",
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "prediction": "unknown",
+        "timing": {
+          "ground_seconds": 0.024477005004882812,
+          "compile_seconds": 0.012119054794311523,
+          "evaluate_seconds": 0.00810098648071289
+        },
+        "wall_seconds": 0.04480909928679466
+      },
+      "initialized": {
+        "claim_id": "real_unknown",
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "prediction": "unknown",
+        "timing": {
+          "ground_seconds": 0.024119853973388672,
+          "compile_seconds": 0.012264013290405273,
+          "evaluate_seconds": 0.00792837142944336
+        },
+        "wall_seconds": 0.04442984238266945
+      },
+      "trained": {
+        "claim_id": "real_unknown",
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "prediction": "unknown",
+        "timing": {
+          "ground_seconds": 0.024119853973388672,
+          "compile_seconds": 0.012264013290405273,
+          "evaluate_seconds": 0.0052187442779541016
+        },
+        "wall_seconds": 0.005322504788637161
+      }
+    },
+    "local_after_training": {
+      "o_38d0a19e8e5dac6d4159": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "o_12708a8a192009601d34": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "o_c8ea06a7b650f2f2b949": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "o_1cdbf820ca243bd3fb99": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "control_matching": {
+    "compilation": {
+      "claim_id": "control_matching",
+      "text": "Alice hugs Bob.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "Alice",
+          "lemma": "Alice",
+          "upos": "PROPN",
+          "head": 2,
+          "deprel": "nsubj",
+          "start_char": 0,
+          "end_char": 5,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 2,
+          "text": "hugs",
+          "lemma": "hug",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 6,
+          "end_char": 10,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 3,
+          "text": "Bob",
+          "lemma": "Bob",
+          "upos": "PROPN",
+          "head": 2,
+          "deprel": "obj",
+          "start_char": 11,
+          "end_char": 14,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 4,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 2,
+          "deprel": "punct",
+          "start_char": 14,
+          "end_char": 15,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "Alice",
+          "token_ids": [
+            1
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "hug",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "Bob",
+          "token_ids": [
+            3
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "alice"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Alice is present.",
+          "token_ids": [
+            1
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "bob"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Bob is present.",
+          "token_ids": [
+            3
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "hug"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of hug occurs.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a3",
+          "predicate": "hug",
+          "arguments": [
+            "E1",
+            "X1",
+            "X2"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent",
+            "theme"
+          ],
+          "text": "Alice hugs Bob.",
+          "token_ids": [
+            1,
+            2,
+            3
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a1",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "exists",
+                "children": [
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a3",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [
+                  "E1"
+                ],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1",
+          "X2"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "Alice",
+          "represented_by": [
+            "a0",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "hugs",
+          "represented_by": [
+            "a2",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "Bob",
+          "represented_by": [
+            "a1",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1, X2: ((entity(X1, alice) AND entity(X2, bob) AND EXISTS E1: ((event(E1, hug) AND hug(E1, X1, X2)))))"
+    },
+    "domains": {
+      "X1": [
+        "alice"
+      ],
+      "E1": [
+        "event_1",
+        "event_2"
+      ],
+      "X2": [
+        "bob"
+      ]
+    },
+    "complete": {
+      "X1": true,
+      "E1": true,
+      "X2": true
+    },
+    "candidate_descriptions": {
+      "event_1": "Alice hugs Bob",
+      "event_2": "Carol hugs Dave"
+    },
+    "observations": {
+      "o_f4d188cd731f2622a2c9": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"entity\",[\"alice\",\"alice\"]]",
+        "distribution": [
+          0.99,
+          0.005,
+          0.005
+        ],
+        "trainable": false,
+        "text": "entity(alice, alice)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_f4d188cd731f2622a2c9"
+      },
+      "o_ae9d541f4713a931f94b": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"entity\",[\"bob\",\"bob\"]]",
+        "distribution": [
+          0.99,
+          0.005,
+          0.005
+        ],
+        "trainable": false,
+        "text": "entity(bob, bob)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_ae9d541f4713a931f94b"
+      },
+      "o_3b1a3ce6bf1269c0f37f": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"event\",[\"event_1\",\"hug\"]]",
+        "distribution": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "trainable": false,
+        "text": "event(event_1, hug)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_3b1a3ce6bf1269c0f37f"
+      },
+      "o_3fb8915ff251ab11b75e": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"hug\",[\"event_1\",\"alice\",\"bob\"]]",
+        "distribution": [
+          0.95,
+          0.02,
+          0.03
+        ],
+        "trainable": false,
+        "text": "hug(event_1, alice, bob)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_3fb8915ff251ab11b75e"
+      },
+      "o_e876b0d7e5bb8cbaad09": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"event\",[\"event_2\",\"hug\"]]",
+        "distribution": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "trainable": false,
+        "text": "event(event_2, hug)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_e876b0d7e5bb8cbaad09"
+      },
+      "o_2a4b027376c9f8696e29": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"hug\",[\"event_2\",\"alice\",\"bob\"]]",
+        "distribution": [
+          0.01,
+          0.96,
+          0.03
+        ],
+        "trainable": false,
+        "text": "hug(event_2, alice, bob)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_2a4b027376c9f8696e29"
+      }
+    },
+    "occurrences": [
+      {
+        "atom_id": "a0",
+        "observation_id": "o_f4d188cd731f2622a2c9",
+        "predicate": "entity(X1, alice)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "bob"
+        }
+      },
+      {
+        "atom_id": "a1",
+        "observation_id": "o_ae9d541f4713a931f94b",
+        "predicate": "entity(X2, bob)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "bob"
+        }
+      },
+      {
+        "atom_id": "a2",
+        "observation_id": "o_3b1a3ce6bf1269c0f37f",
+        "predicate": "event(E1, hug)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "bob",
+          "E1": "event_1"
+        }
+      },
+      {
+        "atom_id": "a3",
+        "observation_id": "o_3fb8915ff251ab11b75e",
+        "predicate": "hug(E1, X1, X2)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "bob",
+          "E1": "event_1"
+        }
+      },
+      {
+        "atom_id": "a2",
+        "observation_id": "o_e876b0d7e5bb8cbaad09",
+        "predicate": "event(E1, hug)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "bob",
+          "E1": "event_2"
+        }
+      },
+      {
+        "atom_id": "a3",
+        "observation_id": "o_2a4b027376c9f8696e29",
+        "predicate": "hug(E1, X1, X2)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "bob",
+          "E1": "event_2"
+        }
+      }
+    ],
+    "expansions": [
+      {
+        "variables": [
+          "X1",
+          "X2"
+        ],
+        "candidate_combinations": 1,
+        "complete": true,
+        "outer_assignment": {}
+      },
+      {
+        "variables": [
+          "E1"
+        ],
+        "candidate_combinations": 2,
+        "complete": true,
+        "outer_assignment": {
+          "X1": "alice",
+          "X2": "bob"
+        }
+      }
+    ],
+    "label": "supported",
+    "label_source": "constructed event inventory",
+    "predictions": {
+      "controlled": {
+        "claim_id": "control_matching",
+        "distribution": {
+          "supported": 0.93158505,
+          "refuted": 0.028983480000000002,
+          "unknown": 0.03943147
+        },
+        "prediction": "supported",
+        "timing": {
+          "ground_seconds": 0.03849053382873535,
+          "compile_seconds": 0.02654290199279785,
+          "evaluate_seconds": 0.021982908248901367
+        },
+        "wall_seconds": 0.08713452517986298
+      }
+    }
+  },
+  "control_cross_event": {
+    "compilation": {
+      "claim_id": "control_cross_event",
+      "text": "Alice hugs Dave.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "Alice",
+          "lemma": "Alice",
+          "upos": "PROPN",
+          "head": 2,
+          "deprel": "nsubj",
+          "start_char": 0,
+          "end_char": 5,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 2,
+          "text": "hugs",
+          "lemma": "hug",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 6,
+          "end_char": 10,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 3,
+          "text": "Dave",
+          "lemma": "Dave",
+          "upos": "PROPN",
+          "head": 2,
+          "deprel": "obj",
+          "start_char": 11,
+          "end_char": 15,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 4,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 2,
+          "deprel": "punct",
+          "start_char": 15,
+          "end_char": 16,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "Alice",
+          "token_ids": [
+            1
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "hug",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "Dave",
+          "token_ids": [
+            3
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "alice"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Alice is present.",
+          "token_ids": [
+            1
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "dave"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Dave is present.",
+          "token_ids": [
+            3
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "hug"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of hug occurs.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a3",
+          "predicate": "hug",
+          "arguments": [
+            "E1",
+            "X1",
+            "X2"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent",
+            "theme"
+          ],
+          "text": "Alice hugs Dave.",
+          "token_ids": [
+            1,
+            2,
+            3
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a1",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "exists",
+                "children": [
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a3",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [
+                  "E1"
+                ],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1",
+          "X2"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "Alice",
+          "represented_by": [
+            "a0",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "hugs",
+          "represented_by": [
+            "a2",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "Dave",
+          "represented_by": [
+            "a1",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1, X2: ((entity(X1, alice) AND entity(X2, dave) AND EXISTS E1: ((event(E1, hug) AND hug(E1, X1, X2)))))"
+    },
+    "domains": {
+      "X1": [
+        "alice"
+      ],
+      "E1": [
+        "event_1",
+        "event_2"
+      ],
+      "X2": [
+        "dave"
+      ]
+    },
+    "complete": {
+      "X1": true,
+      "E1": true,
+      "X2": true
+    },
+    "candidate_descriptions": {
+      "event_1": "Alice hugs Bob",
+      "event_2": "Carol hugs Dave"
+    },
+    "observations": {
+      "o_f4d188cd731f2622a2c9": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"entity\",[\"alice\",\"alice\"]]",
+        "distribution": [
+          0.99,
+          0.005,
+          0.005
+        ],
+        "trainable": false,
+        "text": "entity(alice, alice)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_f4d188cd731f2622a2c9"
+      },
+      "o_f2361216964fc16e0e74": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"entity\",[\"dave\",\"dave\"]]",
+        "distribution": [
+          0.99,
+          0.005,
+          0.005
+        ],
+        "trainable": false,
+        "text": "entity(dave, dave)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_f2361216964fc16e0e74"
+      },
+      "o_3b1a3ce6bf1269c0f37f": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"event\",[\"event_1\",\"hug\"]]",
+        "distribution": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "trainable": false,
+        "text": "event(event_1, hug)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_3b1a3ce6bf1269c0f37f"
+      },
+      "o_a97aeeee210cc0d5c9fb": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"hug\",[\"event_1\",\"alice\",\"dave\"]]",
+        "distribution": [
+          0.01,
+          0.96,
+          0.03
+        ],
+        "trainable": false,
+        "text": "hug(event_1, alice, dave)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_a97aeeee210cc0d5c9fb"
+      },
+      "o_e876b0d7e5bb8cbaad09": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"event\",[\"event_2\",\"hug\"]]",
+        "distribution": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "trainable": false,
+        "text": "event(event_2, hug)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_e876b0d7e5bb8cbaad09"
+      },
+      "o_1eadd4bd167491f2bf1a": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"hug\",[\"event_2\",\"alice\",\"dave\"]]",
+        "distribution": [
+          0.01,
+          0.96,
+          0.03
+        ],
+        "trainable": false,
+        "text": "hug(event_2, alice, dave)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_1eadd4bd167491f2bf1a"
+      }
+    },
+    "occurrences": [
+      {
+        "atom_id": "a0",
+        "observation_id": "o_f4d188cd731f2622a2c9",
+        "predicate": "entity(X1, alice)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "dave"
+        }
+      },
+      {
+        "atom_id": "a1",
+        "observation_id": "o_f2361216964fc16e0e74",
+        "predicate": "entity(X2, dave)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "dave"
+        }
+      },
+      {
+        "atom_id": "a2",
+        "observation_id": "o_3b1a3ce6bf1269c0f37f",
+        "predicate": "event(E1, hug)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "dave",
+          "E1": "event_1"
+        }
+      },
+      {
+        "atom_id": "a3",
+        "observation_id": "o_a97aeeee210cc0d5c9fb",
+        "predicate": "hug(E1, X1, X2)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "dave",
+          "E1": "event_1"
+        }
+      },
+      {
+        "atom_id": "a2",
+        "observation_id": "o_e876b0d7e5bb8cbaad09",
+        "predicate": "event(E1, hug)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "dave",
+          "E1": "event_2"
+        }
+      },
+      {
+        "atom_id": "a3",
+        "observation_id": "o_1eadd4bd167491f2bf1a",
+        "predicate": "hug(E1, X1, X2)",
+        "assignment": {
+          "X1": "alice",
+          "X2": "dave",
+          "E1": "event_2"
+        }
+      }
+    ],
+    "expansions": [
+      {
+        "variables": [
+          "X1",
+          "X2"
+        ],
+        "candidate_combinations": 1,
+        "complete": true,
+        "outer_assignment": {}
+      },
+      {
+        "variables": [
+          "E1"
+        ],
+        "candidate_combinations": 2,
+        "complete": true,
+        "outer_assignment": {
+          "X1": "alice",
+          "X2": "dave"
+        }
+      }
+    ],
+    "label": "refuted",
+    "label_source": "constructed event inventory",
+    "predictions": {
+      "controlled": {
+        "claim_id": "control_cross_event",
+        "distribution": {
+          "supported": 0.019503990000000006,
+          "refuted": 0.92238204,
+          "unknown": 0.058113969999999994
+        },
+        "prediction": "refuted",
+        "timing": {
+          "ground_seconds": 0.03818845748901367,
+          "compile_seconds": 0.026998043060302734,
+          "evaluate_seconds": 0.021758079528808594
+        },
+        "wall_seconds": 0.0870576985180378
+      }
+    }
+  },
+  "control_reversed": {
+    "compilation": {
+      "claim_id": "control_reversed",
+      "text": "Bob hugs Alice.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "Bob",
+          "lemma": "Bob",
+          "upos": "PROPN",
+          "head": 2,
+          "deprel": "nsubj",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 2,
+          "text": "hugs",
+          "lemma": "hug",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 4,
+          "end_char": 8,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 3,
+          "text": "Alice",
+          "lemma": "Alice",
+          "upos": "PROPN",
+          "head": 2,
+          "deprel": "obj",
+          "start_char": 9,
+          "end_char": 14,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 4,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 2,
+          "deprel": "punct",
+          "start_char": 14,
+          "end_char": 15,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "Bob",
+          "token_ids": [
+            1
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "hug",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "Alice",
+          "token_ids": [
+            3
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "bob"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Bob is present.",
+          "token_ids": [
+            1
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "alice"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Alice is present.",
+          "token_ids": [
+            3
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "hug"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of hug occurs.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a3",
+          "predicate": "hug",
+          "arguments": [
+            "E1",
+            "X1",
+            "X2"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent",
+            "theme"
+          ],
+          "text": "Bob hugs Alice.",
+          "token_ids": [
+            1,
+            2,
+            3
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a1",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "exists",
+                "children": [
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a3",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [
+                  "E1"
+                ],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1",
+          "X2"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "Bob",
+          "represented_by": [
+            "a0",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "hugs",
+          "represented_by": [
+            "a2",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "Alice",
+          "represented_by": [
+            "a1",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1, X2: ((entity(X1, bob) AND entity(X2, alice) AND EXISTS E1: ((event(E1, hug) AND hug(E1, X1, X2)))))"
+    },
+    "domains": {
+      "X1": [
+        "bob"
+      ],
+      "E1": [
+        "event_1",
+        "event_2"
+      ],
+      "X2": [
+        "alice"
+      ]
+    },
+    "complete": {
+      "X1": true,
+      "E1": true,
+      "X2": true
+    },
+    "candidate_descriptions": {
+      "event_1": "Alice hugs Bob",
+      "event_2": "Carol hugs Dave"
+    },
+    "observations": {
+      "o_ae9d541f4713a931f94b": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"entity\",[\"bob\",\"bob\"]]",
+        "distribution": [
+          0.99,
+          0.005,
+          0.005
+        ],
+        "trainable": false,
+        "text": "entity(bob, bob)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_ae9d541f4713a931f94b"
+      },
+      "o_f4d188cd731f2622a2c9": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"entity\",[\"alice\",\"alice\"]]",
+        "distribution": [
+          0.99,
+          0.005,
+          0.005
+        ],
+        "trainable": false,
+        "text": "entity(alice, alice)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_f4d188cd731f2622a2c9"
+      },
+      "o_3b1a3ce6bf1269c0f37f": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"event\",[\"event_1\",\"hug\"]]",
+        "distribution": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "trainable": false,
+        "text": "event(event_1, hug)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_3b1a3ce6bf1269c0f37f"
+      },
+      "o_0730ec90cb8e8dc9b5a3": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"hug\",[\"event_1\",\"bob\",\"alice\"]]",
+        "distribution": [
+          0.01,
+          0.96,
+          0.03
+        ],
+        "trainable": false,
+        "text": "hug(event_1, bob, alice)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_0730ec90cb8e8dc9b5a3"
+      },
+      "o_e876b0d7e5bb8cbaad09": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"event\",[\"event_2\",\"hug\"]]",
+        "distribution": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "trainable": false,
+        "text": "event(event_2, hug)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_e876b0d7e5bb8cbaad09"
+      },
+      "o_3b296a9c30650d87d1b6": {
+        "key": "[\"constructed_hug_scene\",\"visual_depiction\",\"hug\",[\"event_2\",\"bob\",\"alice\"]]",
+        "distribution": [
+          0.01,
+          0.96,
+          0.03
+        ],
+        "trainable": false,
+        "text": "hug(event_2, bob, alice)",
+        "provenance": {
+          "source": "constructed probability table for a logical diagnostic; not a model prediction",
+          "route": "visual_depiction"
+        },
+        "available": true,
+        "id": "o_3b296a9c30650d87d1b6"
+      }
+    },
+    "occurrences": [
+      {
+        "atom_id": "a0",
+        "observation_id": "o_ae9d541f4713a931f94b",
+        "predicate": "entity(X1, bob)",
+        "assignment": {
+          "X1": "bob",
+          "X2": "alice"
+        }
+      },
+      {
+        "atom_id": "a1",
+        "observation_id": "o_f4d188cd731f2622a2c9",
+        "predicate": "entity(X2, alice)",
+        "assignment": {
+          "X1": "bob",
+          "X2": "alice"
+        }
+      },
+      {
+        "atom_id": "a2",
+        "observation_id": "o_3b1a3ce6bf1269c0f37f",
+        "predicate": "event(E1, hug)",
+        "assignment": {
+          "X1": "bob",
+          "X2": "alice",
+          "E1": "event_1"
+        }
+      },
+      {
+        "atom_id": "a3",
+        "observation_id": "o_0730ec90cb8e8dc9b5a3",
+        "predicate": "hug(E1, X1, X2)",
+        "assignment": {
+          "X1": "bob",
+          "X2": "alice",
+          "E1": "event_1"
+        }
+      },
+      {
+        "atom_id": "a2",
+        "observation_id": "o_e876b0d7e5bb8cbaad09",
+        "predicate": "event(E1, hug)",
+        "assignment": {
+          "X1": "bob",
+          "X2": "alice",
+          "E1": "event_2"
+        }
+      },
+      {
+        "atom_id": "a3",
+        "observation_id": "o_3b296a9c30650d87d1b6",
+        "predicate": "hug(E1, X1, X2)",
+        "assignment": {
+          "X1": "bob",
+          "X2": "alice",
+          "E1": "event_2"
+        }
+      }
+    ],
+    "expansions": [
+      {
+        "variables": [
+          "X1",
+          "X2"
+        ],
+        "candidate_combinations": 1,
+        "complete": true,
+        "outer_assignment": {}
+      },
+      {
+        "variables": [
+          "E1"
+        ],
+        "candidate_combinations": 2,
+        "complete": true,
+        "outer_assignment": {
+          "X1": "bob",
+          "X2": "alice"
+        }
+      }
+    ],
+    "label": "refuted",
+    "label_source": "constructed event inventory",
+    "predictions": {
+      "controlled": {
+        "claim_id": "control_reversed",
+        "distribution": {
+          "supported": 0.019503990000000006,
+          "refuted": 0.92238204,
+          "unknown": 0.058113969999999994
+        },
+        "prediction": "refuted",
+        "timing": {
+          "ground_seconds": 0.03865242004394531,
+          "compile_seconds": 0.025702953338623047,
+          "evaluate_seconds": 0.021611690521240234
+        },
+        "wall_seconds": 0.08608099445700645
+      }
+    }
+  }
+}

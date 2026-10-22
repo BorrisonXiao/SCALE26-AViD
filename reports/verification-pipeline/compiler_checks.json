@@ -1,0 +1,2605 @@
+[
+  {
+    "name": "active",
+    "text": "Alice hugs Bob.",
+    "expected": "compiled",
+    "passed": true,
+    "result": {
+      "claim_id": "active",
+      "text": "Alice hugs Bob.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "Alice",
+          "lemma": "Alice",
+          "upos": "PROPN",
+          "head": 2,
+          "deprel": "nsubj",
+          "start_char": 0,
+          "end_char": 5,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 2,
+          "text": "hugs",
+          "lemma": "hug",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 6,
+          "end_char": 10,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 3,
+          "text": "Bob",
+          "lemma": "Bob",
+          "upos": "PROPN",
+          "head": 2,
+          "deprel": "obj",
+          "start_char": 11,
+          "end_char": 14,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 4,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 2,
+          "deprel": "punct",
+          "start_char": 14,
+          "end_char": 15,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "Alice",
+          "token_ids": [
+            1
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "hug",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "Bob",
+          "token_ids": [
+            3
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "alice"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Alice is present.",
+          "token_ids": [
+            1
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "bob"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Bob is present.",
+          "token_ids": [
+            3
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "hug"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of hug occurs.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a3",
+          "predicate": "hug",
+          "arguments": [
+            "E1",
+            "X1",
+            "X2"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent",
+            "theme"
+          ],
+          "text": "Alice hugs Bob.",
+          "token_ids": [
+            1,
+            2,
+            3
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a1",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "exists",
+                "children": [
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a3",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [
+                  "E1"
+                ],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1",
+          "X2"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "Alice",
+          "represented_by": [
+            "a0",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "hugs",
+          "represented_by": [
+            "a2",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "Bob",
+          "represented_by": [
+            "a1",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1, X2: ((entity(X1, alice) AND entity(X2, bob) AND EXISTS E1: ((event(E1, hug) AND hug(E1, X1, X2)))))"
+    }
+  },
+  {
+    "name": "passive",
+    "text": "Bob is hugged by Alice.",
+    "expected": "compiled",
+    "passed": true,
+    "result": {
+      "claim_id": "passive",
+      "text": "Bob is hugged by Alice.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "Bob",
+          "lemma": "Bob",
+          "upos": "PROPN",
+          "head": 3,
+          "deprel": "nsubj:pass",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 2,
+          "text": "is",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 3,
+          "deprel": "aux:pass",
+          "start_char": 4,
+          "end_char": 6,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 3,
+          "text": "hugged",
+          "lemma": "hug",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 7,
+          "end_char": 13,
+          "feats": "Tense=Past|VerbForm=Part|Voice=Pass"
+        },
+        {
+          "id": 4,
+          "text": "by",
+          "lemma": "by",
+          "upos": "ADP",
+          "head": 5,
+          "deprel": "case",
+          "start_char": 14,
+          "end_char": 16,
+          "feats": null
+        },
+        {
+          "id": 5,
+          "text": "Alice",
+          "lemma": "Alice",
+          "upos": "PROPN",
+          "head": 3,
+          "deprel": "obl:agent",
+          "start_char": 17,
+          "end_char": 22,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 6,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 3,
+          "deprel": "punct",
+          "start_char": 22,
+          "end_char": 23,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "Bob",
+          "token_ids": [
+            1
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "hug",
+          "token_ids": [
+            3
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "Alice",
+          "token_ids": [
+            5
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "bob"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Bob is present.",
+          "token_ids": [
+            1
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "alice"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Alice is present.",
+          "token_ids": [
+            5
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "hug"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of hug occurs.",
+          "token_ids": [
+            3
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a3",
+          "predicate": "hug",
+          "arguments": [
+            "E1",
+            "X2",
+            "X1"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent",
+            "theme"
+          ],
+          "text": "Bob hugged Bob.",
+          "token_ids": [
+            1,
+            3,
+            5
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a1",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "exists",
+                "children": [
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a3",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [
+                  "E1"
+                ],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1",
+          "X2"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "Bob",
+          "represented_by": [
+            "a0",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "is",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "hugged",
+          "represented_by": [
+            "a2",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "by",
+          "represented_by": [
+            "passive agent marker"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": "Alice",
+          "represented_by": [
+            "a1",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 6,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1, X2: ((entity(X1, bob) AND entity(X2, alice) AND EXISTS E1: ((event(E1, hug) AND hug(E1, X2, X1)))))"
+    }
+  },
+  {
+    "name": "shared_subject",
+    "text": "Alice hugs Bob and waves.",
+    "expected": "compiled",
+    "passed": false,
+    "result": {
+      "status": "unsupported",
+      "code": "coordinated_arguments",
+      "message": "Collective versus distributive argument conjunction is not yet resolved.",
+      "token_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "name": "shared_name",
+    "text": "Alice hugs Bob and Alice waves.",
+    "expected": "compiled",
+    "passed": false,
+    "result": {
+      "status": "unsupported",
+      "code": "coordinated_arguments",
+      "message": "Collective versus distributive argument conjunction is not yet resolved.",
+      "token_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "name": "negation",
+    "text": "Alice does not hug Bob.",
+    "expected": "compiled",
+    "passed": true,
+    "result": {
+      "claim_id": "negation",
+      "text": "Alice does not hug Bob.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "Alice",
+          "lemma": "Alice",
+          "upos": "PROPN",
+          "head": 4,
+          "deprel": "nsubj",
+          "start_char": 0,
+          "end_char": 5,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 2,
+          "text": "does",
+          "lemma": "do",
+          "upos": "AUX",
+          "head": 4,
+          "deprel": "aux",
+          "start_char": 6,
+          "end_char": 10,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 3,
+          "text": "not",
+          "lemma": "not",
+          "upos": "PART",
+          "head": 4,
+          "deprel": "advmod",
+          "start_char": 11,
+          "end_char": 14,
+          "feats": null
+        },
+        {
+          "id": 4,
+          "text": "hug",
+          "lemma": "hug",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 15,
+          "end_char": 18,
+          "feats": "VerbForm=Inf"
+        },
+        {
+          "id": 5,
+          "text": "Bob",
+          "lemma": "Bob",
+          "upos": "PROPN",
+          "head": 4,
+          "deprel": "obj",
+          "start_char": 19,
+          "end_char": 22,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 6,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 4,
+          "deprel": "punct",
+          "start_char": 22,
+          "end_char": 23,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "Alice",
+          "token_ids": [
+            1
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "hug",
+          "token_ids": [
+            4
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "Bob",
+          "token_ids": [
+            5
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "alice"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Alice is present.",
+          "token_ids": [
+            1
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "bob"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "Bob is present.",
+          "token_ids": [
+            5
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "hug"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of hug occurs.",
+          "token_ids": [
+            4
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a3",
+          "predicate": "hug",
+          "arguments": [
+            "E1",
+            "X1",
+            "X2"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent",
+            "theme"
+          ],
+          "text": "Alice hug Bob.",
+          "token_ids": [
+            1,
+            4,
+            5
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a1",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "not",
+                "children": [
+                  {
+                    "op": "exists",
+                    "children": [
+                      {
+                        "op": "and",
+                        "children": [
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a2",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a3",
+                            "variables": [],
+                            "state": ""
+                          }
+                        ],
+                        "atom_id": "",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [
+                      "E1"
+                    ],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1",
+          "X2"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "Alice",
+          "represented_by": [
+            "a0",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "does",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "not",
+          "represented_by": [
+            "scoped negation"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "hug",
+          "represented_by": [
+            "a2",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": "Bob",
+          "represented_by": [
+            "a1",
+            "a3"
+          ]
+        },
+        {
+          "token_id": 6,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1, X2: ((entity(X1, alice) AND entity(X2, bob) AND NOT (EXISTS E1: ((event(E1, hug) AND hug(E1, X1, X2))))))"
+    }
+  },
+  {
+    "name": "property_negation",
+    "text": "The aircraft is not yellow.",
+    "expected": "compiled",
+    "passed": true,
+    "result": {
+      "claim_id": "property_negation",
+      "text": "The aircraft is not yellow.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "aircraft",
+          "lemma": "aircraft",
+          "upos": "NOUN",
+          "head": 5,
+          "deprel": "nsubj",
+          "start_char": 4,
+          "end_char": 12,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "is",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 5,
+          "deprel": "cop",
+          "start_char": 13,
+          "end_char": 15,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "not",
+          "lemma": "not",
+          "upos": "PART",
+          "head": 5,
+          "deprel": "advmod",
+          "start_char": 16,
+          "end_char": 19,
+          "feats": null
+        },
+        {
+          "id": 5,
+          "text": "yellow",
+          "lemma": "yellow",
+          "upos": "ADJ",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 20,
+          "end_char": 26,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 6,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 5,
+          "deprel": "punct",
+          "start_char": 26,
+          "end_char": 27,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "aircraft",
+          "token_ids": [
+            2
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "aircraft"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "aircraft is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "attribute",
+          "arguments": [
+            "X1",
+            "yellow"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "aircraft is yellow.",
+          "token_ids": [
+            5
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "not",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a1",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "aircraft",
+          "represented_by": [
+            "a0"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "is",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "not",
+          "represented_by": [
+            "scoped negation"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": "yellow",
+          "represented_by": [
+            "a1"
+          ]
+        },
+        {
+          "token_id": 6,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1: ((entity(X1, aircraft) AND NOT (attribute(X1, yellow))))"
+    }
+  },
+  {
+    "name": "two_clauses",
+    "text": "The aircraft is gray and the school buses are yellow.",
+    "expected": "compiled",
+    "passed": true,
+    "result": {
+      "claim_id": "two_clauses",
+      "text": "The aircraft is gray and the school buses are yellow.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "aircraft",
+          "lemma": "aircraft",
+          "upos": "NOUN",
+          "head": 4,
+          "deprel": "nsubj",
+          "start_char": 4,
+          "end_char": 12,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "is",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 4,
+          "deprel": "cop",
+          "start_char": 13,
+          "end_char": 15,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "gray",
+          "lemma": "gray",
+          "upos": "ADJ",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 16,
+          "end_char": 20,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 5,
+          "text": "and",
+          "lemma": "and",
+          "upos": "CCONJ",
+          "head": 10,
+          "deprel": "cc",
+          "start_char": 21,
+          "end_char": 24,
+          "feats": null
+        },
+        {
+          "id": 6,
+          "text": "the",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 8,
+          "deprel": "det",
+          "start_char": 25,
+          "end_char": 28,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 7,
+          "text": "school",
+          "lemma": "school",
+          "upos": "NOUN",
+          "head": 8,
+          "deprel": "compound",
+          "start_char": 29,
+          "end_char": 35,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 8,
+          "text": "buses",
+          "lemma": "bus",
+          "upos": "NOUN",
+          "head": 10,
+          "deprel": "nsubj",
+          "start_char": 36,
+          "end_char": 41,
+          "feats": "Number=Plur"
+        },
+        {
+          "id": 9,
+          "text": "are",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 10,
+          "deprel": "cop",
+          "start_char": 42,
+          "end_char": 45,
+          "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 10,
+          "text": "yellow",
+          "lemma": "yellow",
+          "upos": "ADJ",
+          "head": 4,
+          "deprel": "conj",
+          "start_char": 46,
+          "end_char": 52,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 11,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 4,
+          "deprel": "punct",
+          "start_char": 52,
+          "end_char": 53,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "aircraft",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "school buses",
+          "token_ids": [
+            7,
+            8
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "aircraft"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "aircraft is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "attribute",
+          "arguments": [
+            "X1",
+            "gray"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "aircraft is gray.",
+          "token_ids": [
+            4
+          ],
+          "trainable": true
+        },
+        {
+          "id": "a2",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "school_bus"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "school buses is present.",
+          "token_ids": [
+            7,
+            8
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a3",
+          "predicate": "attribute",
+          "arguments": [
+            "X2",
+            "yellow"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "buses is yellow.",
+          "token_ids": [
+            10
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "and",
+        "children": [
+          {
+            "op": "exists",
+            "children": [
+              {
+                "op": "and",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a0",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a1",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X1"
+            ],
+            "state": ""
+          },
+          {
+            "op": "exists",
+            "children": [
+              {
+                "op": "and",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a2",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a3",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X2"
+            ],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "aircraft",
+          "represented_by": [
+            "a0"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "is",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "gray",
+          "represented_by": [
+            "a1"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": "and",
+          "represented_by": [
+            "logical and"
+          ]
+        },
+        {
+          "token_id": 6,
+          "text": "the",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 7,
+          "text": "school",
+          "represented_by": [
+            "a2"
+          ]
+        },
+        {
+          "token_id": 8,
+          "text": "buses",
+          "represented_by": [
+            "a2"
+          ]
+        },
+        {
+          "token_id": 9,
+          "text": "are",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 10,
+          "text": "yellow",
+          "represented_by": [
+            "a3"
+          ]
+        },
+        {
+          "token_id": 11,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "(EXISTS X1: ((entity(X1, aircraft) AND attribute(X1, gray))) AND EXISTS X2: ((entity(X2, school_bus) AND attribute(X2, yellow))))"
+    }
+  },
+  {
+    "name": "verb_attributes",
+    "text": "The woman wears a white shirt and the man wears a red shirt.",
+    "expected": "compiled",
+    "passed": true,
+    "result": {
+      "claim_id": "verb_attributes",
+      "text": "The woman wears a white shirt and the man wears a red shirt.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "woman",
+          "lemma": "woman",
+          "upos": "NOUN",
+          "head": 3,
+          "deprel": "nsubj",
+          "start_char": 4,
+          "end_char": 9,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "wears",
+          "lemma": "wear",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 10,
+          "end_char": 15,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "a",
+          "lemma": "a",
+          "upos": "DET",
+          "head": 6,
+          "deprel": "det",
+          "start_char": 16,
+          "end_char": 17,
+          "feats": "Definite=Ind|PronType=Art"
+        },
+        {
+          "id": 5,
+          "text": "white",
+          "lemma": "white",
+          "upos": "ADJ",
+          "head": 6,
+          "deprel": "amod",
+          "start_char": 18,
+          "end_char": 23,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 6,
+          "text": "shirt",
+          "lemma": "shirt",
+          "upos": "NOUN",
+          "head": 3,
+          "deprel": "obj",
+          "start_char": 24,
+          "end_char": 29,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 7,
+          "text": "and",
+          "lemma": "and",
+          "upos": "CCONJ",
+          "head": 10,
+          "deprel": "cc",
+          "start_char": 30,
+          "end_char": 33,
+          "feats": null
+        },
+        {
+          "id": 8,
+          "text": "the",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 9,
+          "deprel": "det",
+          "start_char": 34,
+          "end_char": 37,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 9,
+          "text": "man",
+          "lemma": "man",
+          "upos": "NOUN",
+          "head": 10,
+          "deprel": "nsubj",
+          "start_char": 38,
+          "end_char": 41,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 10,
+          "text": "wears",
+          "lemma": "wear",
+          "upos": "VERB",
+          "head": 3,
+          "deprel": "conj",
+          "start_char": 42,
+          "end_char": 47,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 11,
+          "text": "a",
+          "lemma": "a",
+          "upos": "DET",
+          "head": 13,
+          "deprel": "det",
+          "start_char": 48,
+          "end_char": 49,
+          "feats": "Definite=Ind|PronType=Art"
+        },
+        {
+          "id": 12,
+          "text": "red",
+          "lemma": "red",
+          "upos": "ADJ",
+          "head": 13,
+          "deprel": "amod",
+          "start_char": 50,
+          "end_char": 53,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 13,
+          "text": "shirt",
+          "lemma": "shirt",
+          "upos": "NOUN",
+          "head": 10,
+          "deprel": "obj",
+          "start_char": 54,
+          "end_char": 59,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 14,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 3,
+          "deprel": "punct",
+          "start_char": 59,
+          "end_char": 60,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "woman",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "wear",
+          "token_ids": [
+            3
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "shirt",
+          "token_ids": [
+            6
+          ]
+        },
+        {
+          "name": "X3",
+          "kind": "entity",
+          "description": "man",
+          "token_ids": [
+            9
+          ]
+        },
+        {
+          "name": "E2",
+          "kind": "event",
+          "description": "wear",
+          "token_ids": [
+            10
+          ]
+        },
+        {
+          "name": "X4",
+          "kind": "entity",
+          "description": "shirt",
+          "token_ids": [
+            13
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "woman"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "woman is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "shirt"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "shirt is present.",
+          "token_ids": [
+            6
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "attribute",
+          "arguments": [
+            "X2",
+            "white"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "The shirt is white.",
+          "token_ids": [
+            5
+          ],
+          "trainable": true
+        },
+        {
+          "id": "a3",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "wear"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of wear occurs.",
+          "token_ids": [
+            3
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a4",
+          "predicate": "wear",
+          "arguments": [
+            "E1",
+            "X1",
+            "X2"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent",
+            "theme"
+          ],
+          "text": "woman wears shirt.",
+          "token_ids": [
+            2,
+            3,
+            6
+          ],
+          "trainable": true
+        },
+        {
+          "id": "a5",
+          "predicate": "entity",
+          "arguments": [
+            "X3",
+            "man"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "man is present.",
+          "token_ids": [
+            9
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a6",
+          "predicate": "entity",
+          "arguments": [
+            "X4",
+            "shirt"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "shirt is present.",
+          "token_ids": [
+            13
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a7",
+          "predicate": "attribute",
+          "arguments": [
+            "X4",
+            "red"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "The shirt is red.",
+          "token_ids": [
+            12
+          ],
+          "trainable": true
+        },
+        {
+          "id": "a8",
+          "predicate": "event",
+          "arguments": [
+            "E2",
+            "wear"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of wear occurs.",
+          "token_ids": [
+            10
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a9",
+          "predicate": "wear",
+          "arguments": [
+            "E2",
+            "X3",
+            "X4"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent",
+            "theme"
+          ],
+          "text": "man wears shirt.",
+          "token_ids": [
+            9,
+            10,
+            13
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "and",
+        "children": [
+          {
+            "op": "exists",
+            "children": [
+              {
+                "op": "and",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a0",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a1",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "exists",
+                    "children": [
+                      {
+                        "op": "and",
+                        "children": [
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a3",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a4",
+                            "variables": [],
+                            "state": ""
+                          }
+                        ],
+                        "atom_id": "",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [
+                      "E1"
+                    ],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X1",
+              "X2"
+            ],
+            "state": ""
+          },
+          {
+            "op": "exists",
+            "children": [
+              {
+                "op": "and",
+                "children": [
+                  {
+                    "op": "atom",
+                    "children": [],
+                    "atom_id": "a5",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a6",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a7",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  },
+                  {
+                    "op": "exists",
+                    "children": [
+                      {
+                        "op": "and",
+                        "children": [
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a8",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a9",
+                            "variables": [],
+                            "state": ""
+                          }
+                        ],
+                        "atom_id": "",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [
+                      "E2"
+                    ],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X3",
+              "X4"
+            ],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "woman",
+          "represented_by": [
+            "a0",
+            "a4"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "wears",
+          "represented_by": [
+            "a3",
+            "a4"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "a",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": "white",
+          "represented_by": [
+            "a2"
+          ]
+        },
+        {
+          "token_id": 6,
+          "text": "shirt",
+          "represented_by": [
+            "a1",
+            "a4"
+          ]
+        },
+        {
+          "token_id": 7,
+          "text": "and",
+          "represented_by": [
+            "logical and"
+          ]
+        },
+        {
+          "token_id": 8,
+          "text": "the",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 9,
+          "text": "man",
+          "represented_by": [
+            "a5",
+            "a9"
+          ]
+        },
+        {
+          "token_id": 10,
+          "text": "wears",
+          "represented_by": [
+            "a8",
+            "a9"
+          ]
+        },
+        {
+          "token_id": 11,
+          "text": "a",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 12,
+          "text": "red",
+          "represented_by": [
+            "a7"
+          ]
+        },
+        {
+          "token_id": 13,
+          "text": "shirt",
+          "represented_by": [
+            "a6",
+            "a9"
+          ]
+        },
+        {
+          "token_id": 14,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "(EXISTS X1, X2: ((entity(X1, woman) AND (entity(X2, shirt) AND attribute(X2, white)) AND EXISTS E1: ((event(E1, wear) AND wear(E1, X1, X2))))) AND EXISTS X3, X4: ((entity(X3, man) AND (entity(X4, shirt) AND attribute(X4, red)) AND EXISTS E2: ((event(E2, wear) AND wear(E2, X3, X4))))))"
+    }
+  },
+  {
+    "name": "disjunction",
+    "text": "Alice hugs Bob or Carol waves.",
+    "expected": "compiled",
+    "passed": false,
+    "result": {
+      "status": "unsupported",
+      "code": "coordinated_arguments",
+      "message": "Collective versus distributive argument conjunction is not yet resolved.",
+      "token_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "name": "possessive",
+    "text": "The woman's shirt is white.",
+    "expected": "compiled",
+    "passed": true,
+    "result": {
+      "claim_id": "possessive",
+      "text": "The woman's shirt is white.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "woman",
+          "lemma": "woman",
+          "upos": "NOUN",
+          "head": 4,
+          "deprel": "nmod:poss",
+          "start_char": 4,
+          "end_char": 9,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "'s",
+          "lemma": "'s",
+          "upos": "PART",
+          "head": 2,
+          "deprel": "case",
+          "start_char": 9,
+          "end_char": 11,
+          "feats": null
+        },
+        {
+          "id": 4,
+          "text": "shirt",
+          "lemma": "shirt",
+          "upos": "NOUN",
+          "head": 6,
+          "deprel": "nsubj",
+          "start_char": 12,
+          "end_char": 17,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 5,
+          "text": "is",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 6,
+          "deprel": "cop",
+          "start_char": 18,
+          "end_char": 20,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 6,
+          "text": "white",
+          "lemma": "white",
+          "upos": "ADJ",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 21,
+          "end_char": 26,
+          "feats": "Degree=Pos"
+        },
+        {
+          "id": 7,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 6,
+          "deprel": "punct",
+          "start_char": 26,
+          "end_char": 27,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "shirt",
+          "token_ids": [
+            4
+          ]
+        },
+        {
+          "name": "X2",
+          "kind": "entity",
+          "description": "woman",
+          "token_ids": [
+            2
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "shirt"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "shirt is present.",
+          "token_ids": [
+            4
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "entity",
+          "arguments": [
+            "X2",
+            "woman"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "woman is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "possess",
+          "arguments": [
+            "X2",
+            "X1"
+          ],
+          "kind": "relation",
+          "roles": [
+            "owner",
+            "possession"
+          ],
+          "text": "The shirt belongs to woman.",
+          "token_ids": [
+            2,
+            4
+          ],
+          "trainable": true
+        },
+        {
+          "id": "a3",
+          "predicate": "attribute",
+          "arguments": [
+            "X1",
+            "white"
+          ],
+          "kind": "attribute",
+          "roles": [
+            "holder",
+            "property"
+          ],
+          "text": "shirt is white.",
+          "token_ids": [
+            6
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "exists",
+                "children": [
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a0",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a1",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [
+                  "X2"
+                ],
+                "state": ""
+              },
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a3",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "woman",
+          "represented_by": [
+            "a1",
+            "a2"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "'s",
+          "represented_by": [
+            "possessive marker"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "shirt",
+          "represented_by": [
+            "a0",
+            "a2"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": "is",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 6,
+          "text": "white",
+          "represented_by": [
+            "a3"
+          ]
+        },
+        {
+          "token_id": 7,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1: ((EXISTS X2: ((entity(X1, shirt) AND entity(X2, woman) AND possess(X2, X1))) AND attribute(X1, white)))"
+    }
+  },
+  {
+    "name": "temporal",
+    "text": "Alice waves before Bob runs.",
+    "expected": "unsupported",
+    "passed": true,
+    "result": {
+      "status": "unsupported",
+      "code": "scope",
+      "message": "Temporal, conditional, and causal clauses need an explicit extension.",
+      "token_ids": [
+        3
+      ]
+    }
+  },
+  {
+    "name": "quantifier",
+    "text": "Every woman wears a shirt.",
+    "expected": "unsupported",
+    "passed": true,
+    "result": {
+      "status": "unsupported",
+      "code": "quantification",
+      "message": "Counting and quantified noun phrases are outside the initial fragment.",
+      "token_ids": [
+        1
+      ]
+    }
+  },
+  {
+    "name": "count",
+    "text": "Two women wear shirts.",
+    "expected": "unsupported",
+    "passed": true,
+    "result": {
+      "status": "unsupported",
+      "code": "quantification",
+      "message": "Counting and quantified noun phrases are outside the initial fragment.",
+      "token_ids": [
+        1
+      ]
+    }
+  },
+  {
+    "name": "pronoun",
+    "text": "She hugs Bob.",
+    "expected": "unsupported",
+    "passed": true,
+    "result": {
+      "status": "unsupported",
+      "code": "reference",
+      "message": "An explicit noun phrase is required; pronoun resolution is not implemented.",
+      "token_ids": [
+        1
+      ]
+    }
+  },
+  {
+    "name": "unhandled_adverb",
+    "text": "Alice quickly hugs Bob.",
+    "expected": "unsupported",
+    "passed": true,
+    "result": {
+      "status": "unsupported",
+      "code": "unhandled_content",
+      "message": "The compiler cannot yet preserve: quickly",
+      "token_ids": [
+        2
+      ]
+    }
+  },
+  {
+    "name": "assertion",
+    "text": "Alice says that Bob runs.",
+    "expected": "unsupported",
+    "passed": true,
+    "result": {
+      "status": "unsupported",
+      "code": "intensional_predicate",
+      "message": "Assertion, intention, and aspect need explicit scope and evidence policies.",
+      "token_ids": [
+        2
+      ]
+    }
+  },
+  {
+    "name": "modal",
+    "text": "Alice might hug Bob.",
+    "expected": "unsupported",
+    "passed": true,
+    "result": {
+      "status": "unsupported",
+      "code": "modality",
+      "message": "Modal auxiliaries are outside the initial fragment.",
+      "token_ids": [
+        2
+      ]
+    }
+  },
+  {
+    "name": "negative_indefinite",
+    "text": "A woman does not wear a shirt.",
+    "expected": "unsupported",
+    "passed": true,
+    "result": {
+      "status": "unsupported",
+      "code": "negative_indefinite",
+      "message": "Negation with indefinite arguments needs a richer quantifier analysis.",
+      "token_ids": [
+        2
+      ]
+    }
+  }
+]

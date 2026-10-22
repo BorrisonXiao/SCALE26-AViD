@@ -14,6 +14,12 @@ The tree-CRF reports describe the earlier implementation and remain comparisons.
 ## Pages
 
 - `index.html` — project home.
+- `reports/verification-pipeline.html` — executed 22 October restricted compiler,
+  frozen observations, DeepProbLog inference, same-event diagnostics, and sample
+  claim-label training. Reached through the Implementation sub-tab on the paper
+  design page. Includes diagrams, exact scores/programs, compiler failures, and
+  downloadable source/cached inputs under `reports/verification-pipeline/`.
+  Build with `python scripts/build_verification_pipeline_report.py`.
 - `reports/verification-pilot.html` — completed 15 October local-model generation,
   prompt revisions, assistant sample inspection, full-resolution checks, and
   initial baselines. Development labels are not independent human gold. Build
