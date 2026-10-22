@@ -1,0 +1,30 @@
+[
+  {
+    "media": "vehicles",
+    "prompt": "<|im_start|>user\n<|audio_start|><|audio_pad|><|audio_end|>Describe only the supplied audio excerpt. Is there intelligible speech, music, or another sound? If speech is intelligible, transcribe the exact words and language. If there is no intelligible speech, say so and do not guess words. Do not infer anything about a video or its captions. Explain any uncertainty in a few sentences.<|im_end|>\n<|im_start|>assistant\n",
+    "audio_sha256": "003f02257ebffe13564b45d8d1ce79bd3c545a9ab2d51d755f0cd18d341bdb52",
+    "response": "There is music in the audio. There is no intelligible speech.",
+    "source": "frozen Qwen3-Omni audio-only inspection; not human gold",
+    "chat_template": "official",
+    "generation": {
+      "max_new_tokens": 96,
+      "do_sample": false,
+      "repetition_penalty": 1.05,
+      "eos_token_id": 151645
+    }
+  },
+  {
+    "media": "clothing",
+    "prompt": "<|im_start|>user\n<|audio_start|><|audio_pad|><|audio_end|>Describe only the supplied audio excerpt. Is there intelligible speech, music, or another sound? If speech is intelligible, transcribe the exact words and language. If there is no intelligible speech, say so and do not guess words. Do not infer anything about a video or its captions. Explain any uncertainty in a few sentences.<|im_end|>\n<|im_start|>assistant\n",
+    "audio_sha256": "553fa218a75b018d381103d38b932a156996b00ac76f0f6d5e84cb8c359e2815",
+    "response": "The audio contains the sound of a train passing by at high speed. There is no intelligible speech or music present.",
+    "source": "frozen Qwen3-Omni audio-only inspection; not human gold",
+    "chat_template": "official",
+    "generation": {
+      "max_new_tokens": 96,
+      "do_sample": false,
+      "repetition_penalty": 1.05,
+      "eos_token_id": 151645
+    }
+  }
+]

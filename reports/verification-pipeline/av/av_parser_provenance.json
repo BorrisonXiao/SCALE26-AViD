@@ -1,0 +1,12 @@
+{
+  "library": "stanza",
+  "version": "1.10.1",
+  "device": "cpu",
+  "model_dir": "/exp/cxiao/.cache/stanza",
+  "model_sha256": {
+    "en/tokenize/combined.pt": "db893a78a14995f6ee18085c44263570b84fed676957a434ba5f6a9a7af939ca",
+    "en/pos/combined_charlm.pt": "af44da5e7e0e22a6d99d3b6e8932d3b3d630dd63d370b9819f6d598edae1ef61",
+    "en/lemma/combined_nocharlm.pt": "1be2573296bc837e6361db795a725c1b0a6c5ddc16e328a971d9353be84c1841",
+    "en/depparse/combined_charlm.pt": "466c62d0cbe97e6cbcc177ecf5693cd90f113dd03c246da26586eb7695d620f3"
+  }
+}

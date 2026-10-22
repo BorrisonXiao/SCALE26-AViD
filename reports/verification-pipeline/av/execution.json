@@ -1,0 +1,62 @@
+{
+  "source": "Slurm sacct; GPU allocation \u00d7 elapsed wall time, including failed setup and revisions; not a paper efficiency benchmark",
+  "jobs": [
+    {
+      "job": 1122558,
+      "purpose": "ASR dependency check",
+      "state": "FAILED",
+      "elapsed_seconds": 97,
+      "gpus": 1,
+      "gpu": "L40S"
+    },
+    {
+      "job": 1122563,
+      "purpose": "Independent ASR",
+      "state": "COMPLETED",
+      "elapsed_seconds": 89,
+      "gpus": 1,
+      "gpu": "L40S"
+    },
+    {
+      "job": 1122565,
+      "purpose": "Initial visual resize audit",
+      "state": "COMPLETED",
+      "elapsed_seconds": 31,
+      "gpus": 1,
+      "gpu": "A100 40GB"
+    },
+    {
+      "job": 1122567,
+      "purpose": "Audio dtype check",
+      "state": "FAILED",
+      "elapsed_seconds": 362,
+      "gpus": 2,
+      "gpu": "A100 40GB"
+    },
+    {
+      "job": 1122572,
+      "purpose": "Final visual audit",
+      "state": "COMPLETED",
+      "elapsed_seconds": 26,
+      "gpus": 1,
+      "gpu": "A100 40GB"
+    },
+    {
+      "job": 1122573,
+      "purpose": "Initial audio template audit",
+      "state": "COMPLETED",
+      "elapsed_seconds": 218,
+      "gpus": 2,
+      "gpu": "A100 40GB"
+    },
+    {
+      "job": 1122577,
+      "purpose": "Final audio audit",
+      "state": "COMPLETED",
+      "elapsed_seconds": 157,
+      "gpus": 2,
+      "gpu": "A100 40GB"
+    }
+  ],
+  "total_allocated_gpu_hours": 0.47694444444444445
+}

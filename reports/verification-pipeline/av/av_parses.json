@@ -1,0 +1,814 @@
+{
+  "aircraft_original": [
+    {
+      "id": 1,
+      "text": "The",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 2,
+      "deprel": "det",
+      "start_char": 0,
+      "end_char": 3,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 2,
+      "text": "aircraft",
+      "lemma": "aircraft",
+      "upos": "NOUN",
+      "head": 4,
+      "deprel": "nsubj",
+      "start_char": 4,
+      "end_char": 12,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 3,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 4,
+      "deprel": "cop",
+      "start_char": 13,
+      "end_char": 15,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 4,
+      "text": "gray",
+      "lemma": "gray",
+      "upos": "ADJ",
+      "head": 0,
+      "deprel": "root",
+      "start_char": 16,
+      "end_char": 20,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 5,
+      "text": ".",
+      "lemma": ".",
+      "upos": "PUNCT",
+      "head": 4,
+      "deprel": "punct",
+      "start_char": 20,
+      "end_char": 21,
+      "feats": null
+    }
+  ],
+  "aircraft_edit": [
+    {
+      "id": 1,
+      "text": "The",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 2,
+      "deprel": "det",
+      "start_char": 0,
+      "end_char": 3,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 2,
+      "text": "aircraft",
+      "lemma": "aircraft",
+      "upos": "NOUN",
+      "head": 4,
+      "deprel": "nsubj",
+      "start_char": 4,
+      "end_char": 12,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 3,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 4,
+      "deprel": "cop",
+      "start_char": 13,
+      "end_char": 15,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 4,
+      "text": "yellow",
+      "lemma": "yellow",
+      "upos": "ADJ",
+      "head": 0,
+      "deprel": "root",
+      "start_char": 16,
+      "end_char": 22,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 5,
+      "text": ".",
+      "lemma": ".",
+      "upos": "PUNCT",
+      "head": 4,
+      "deprel": "punct",
+      "start_char": 22,
+      "end_char": 23,
+      "feats": null
+    }
+  ],
+  "bus_original": [
+    {
+      "id": 1,
+      "text": "The",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 3,
+      "deprel": "det",
+      "start_char": 0,
+      "end_char": 3,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 2,
+      "text": "school",
+      "lemma": "school",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "compound",
+      "start_char": 4,
+      "end_char": 10,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 3,
+      "text": "buses",
+      "lemma": "bus",
+      "upos": "NOUN",
+      "head": 5,
+      "deprel": "nsubj",
+      "start_char": 11,
+      "end_char": 16,
+      "feats": "Number=Plur"
+    },
+    {
+      "id": 4,
+      "text": "are",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 5,
+      "deprel": "cop",
+      "start_char": 17,
+      "end_char": 20,
+      "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 5,
+      "text": "yellow",
+      "lemma": "yellow",
+      "upos": "ADJ",
+      "head": 0,
+      "deprel": "root",
+      "start_char": 21,
+      "end_char": 27,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 6,
+      "text": ".",
+      "lemma": ".",
+      "upos": "PUNCT",
+      "head": 5,
+      "deprel": "punct",
+      "start_char": 27,
+      "end_char": 28,
+      "feats": null
+    }
+  ],
+  "bus_edit": [
+    {
+      "id": 1,
+      "text": "The",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 3,
+      "deprel": "det",
+      "start_char": 0,
+      "end_char": 3,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 2,
+      "text": "school",
+      "lemma": "school",
+      "upos": "NOUN",
+      "head": 3,
+      "deprel": "compound",
+      "start_char": 4,
+      "end_char": 10,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 3,
+      "text": "buses",
+      "lemma": "bus",
+      "upos": "NOUN",
+      "head": 5,
+      "deprel": "nsubj",
+      "start_char": 11,
+      "end_char": 16,
+      "feats": "Number=Plur"
+    },
+    {
+      "id": 4,
+      "text": "are",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 5,
+      "deprel": "cop",
+      "start_char": 17,
+      "end_char": 20,
+      "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 5,
+      "text": "gray",
+      "lemma": "gray",
+      "upos": "ADJ",
+      "head": 0,
+      "deprel": "root",
+      "start_char": 21,
+      "end_char": 25,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 6,
+      "text": ".",
+      "lemma": ".",
+      "upos": "PUNCT",
+      "head": 5,
+      "deprel": "punct",
+      "start_char": 25,
+      "end_char": 26,
+      "feats": null
+    }
+  ],
+  "music_original": [
+    {
+      "id": 1,
+      "text": "The",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 2,
+      "deprel": "det",
+      "start_char": 0,
+      "end_char": 3,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 2,
+      "text": "music",
+      "lemma": "music",
+      "upos": "NOUN",
+      "head": 4,
+      "deprel": "nsubj",
+      "start_char": 4,
+      "end_char": 9,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 3,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 4,
+      "deprel": "cop",
+      "start_char": 10,
+      "end_char": 12,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 4,
+      "text": "instrumental",
+      "lemma": "instrumental",
+      "upos": "ADJ",
+      "head": 0,
+      "deprel": "root",
+      "start_char": 13,
+      "end_char": 25,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 5,
+      "text": ".",
+      "lemma": ".",
+      "upos": "PUNCT",
+      "head": 4,
+      "deprel": "punct",
+      "start_char": 25,
+      "end_char": 26,
+      "feats": null
+    }
+  ],
+  "music_edit": [
+    {
+      "id": 1,
+      "text": "The",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 2,
+      "deprel": "det",
+      "start_char": 0,
+      "end_char": 3,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 2,
+      "text": "music",
+      "lemma": "music",
+      "upos": "NOUN",
+      "head": 4,
+      "deprel": "nsubj",
+      "start_char": 4,
+      "end_char": 9,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 3,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 4,
+      "deprel": "cop",
+      "start_char": 10,
+      "end_char": 12,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 4,
+      "text": "vocal",
+      "lemma": "vocal",
+      "upos": "ADJ",
+      "head": 0,
+      "deprel": "root",
+      "start_char": 13,
+      "end_char": 18,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 5,
+      "text": ".",
+      "lemma": ".",
+      "upos": "PUNCT",
+      "head": 4,
+      "deprel": "punct",
+      "start_char": 18,
+      "end_char": 19,
+      "feats": null
+    }
+  ],
+  "mixed_original": [
+    {
+      "id": 1,
+      "text": "The",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 2,
+      "deprel": "det",
+      "start_char": 0,
+      "end_char": 3,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 2,
+      "text": "aircraft",
+      "lemma": "aircraft",
+      "upos": "NOUN",
+      "head": 4,
+      "deprel": "nsubj",
+      "start_char": 4,
+      "end_char": 12,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 3,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 4,
+      "deprel": "cop",
+      "start_char": 13,
+      "end_char": 15,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 4,
+      "text": "gray",
+      "lemma": "gray",
+      "upos": "ADJ",
+      "head": 0,
+      "deprel": "root",
+      "start_char": 16,
+      "end_char": 20,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 5,
+      "text": "and",
+      "lemma": "and",
+      "upos": "CCONJ",
+      "head": 9,
+      "deprel": "cc",
+      "start_char": 21,
+      "end_char": 24,
+      "feats": null
+    },
+    {
+      "id": 6,
+      "text": "the",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 7,
+      "deprel": "det",
+      "start_char": 25,
+      "end_char": 28,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 7,
+      "text": "music",
+      "lemma": "music",
+      "upos": "NOUN",
+      "head": 9,
+      "deprel": "nsubj",
+      "start_char": 29,
+      "end_char": 34,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 8,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 9,
+      "deprel": "cop",
+      "start_char": 35,
+      "end_char": 37,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 9,
+      "text": "instrumental",
+      "lemma": "instrumental",
+      "upos": "ADJ",
+      "head": 4,
+      "deprel": "conj",
+      "start_char": 38,
+      "end_char": 50,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 10,
+      "text": ".",
+      "lemma": ".",
+      "upos": "PUNCT",
+      "head": 4,
+      "deprel": "punct",
+      "start_char": 50,
+      "end_char": 51,
+      "feats": null
+    }
+  ],
+  "mixed_visual_edit": [
+    {
+      "id": 1,
+      "text": "The",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 2,
+      "deprel": "det",
+      "start_char": 0,
+      "end_char": 3,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 2,
+      "text": "aircraft",
+      "lemma": "aircraft",
+      "upos": "NOUN",
+      "head": 4,
+      "deprel": "nsubj",
+      "start_char": 4,
+      "end_char": 12,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 3,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 4,
+      "deprel": "cop",
+      "start_char": 13,
+      "end_char": 15,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 4,
+      "text": "yellow",
+      "lemma": "yellow",
+      "upos": "ADJ",
+      "head": 0,
+      "deprel": "root",
+      "start_char": 16,
+      "end_char": 22,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 5,
+      "text": "and",
+      "lemma": "and",
+      "upos": "CCONJ",
+      "head": 9,
+      "deprel": "cc",
+      "start_char": 23,
+      "end_char": 26,
+      "feats": null
+    },
+    {
+      "id": 6,
+      "text": "the",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 7,
+      "deprel": "det",
+      "start_char": 27,
+      "end_char": 30,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 7,
+      "text": "music",
+      "lemma": "music",
+      "upos": "NOUN",
+      "head": 9,
+      "deprel": "nsubj",
+      "start_char": 31,
+      "end_char": 36,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 8,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 9,
+      "deprel": "cop",
+      "start_char": 37,
+      "end_char": 39,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 9,
+      "text": "instrumental",
+      "lemma": "instrumental",
+      "upos": "ADJ",
+      "head": 4,
+      "deprel": "conj",
+      "start_char": 40,
+      "end_char": 52,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 10,
+      "text": ".",
+      "lemma": ".",
+      "upos": "PUNCT",
+      "head": 4,
+      "deprel": "punct",
+      "start_char": 52,
+      "end_char": 53,
+      "feats": null
+    }
+  ],
+  "mixed_audio_edit": [
+    {
+      "id": 1,
+      "text": "The",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 2,
+      "deprel": "det",
+      "start_char": 0,
+      "end_char": 3,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 2,
+      "text": "aircraft",
+      "lemma": "aircraft",
+      "upos": "NOUN",
+      "head": 4,
+      "deprel": "nsubj",
+      "start_char": 4,
+      "end_char": 12,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 3,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 4,
+      "deprel": "cop",
+      "start_char": 13,
+      "end_char": 15,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 4,
+      "text": "gray",
+      "lemma": "gray",
+      "upos": "ADJ",
+      "head": 0,
+      "deprel": "root",
+      "start_char": 16,
+      "end_char": 20,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 5,
+      "text": "and",
+      "lemma": "and",
+      "upos": "CCONJ",
+      "head": 9,
+      "deprel": "cc",
+      "start_char": 21,
+      "end_char": 24,
+      "feats": null
+    },
+    {
+      "id": 6,
+      "text": "the",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 7,
+      "deprel": "det",
+      "start_char": 25,
+      "end_char": 28,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 7,
+      "text": "music",
+      "lemma": "music",
+      "upos": "NOUN",
+      "head": 9,
+      "deprel": "nsubj",
+      "start_char": 29,
+      "end_char": 34,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 8,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 9,
+      "deprel": "cop",
+      "start_char": 35,
+      "end_char": 37,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 9,
+      "text": "vocal",
+      "lemma": "vocal",
+      "upos": "ADJ",
+      "head": 4,
+      "deprel": "conj",
+      "start_char": 38,
+      "end_char": 43,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 10,
+      "text": ".",
+      "lemma": ".",
+      "upos": "PUNCT",
+      "head": 4,
+      "deprel": "punct",
+      "start_char": 43,
+      "end_char": 44,
+      "feats": null
+    }
+  ],
+  "missing_media": [
+    {
+      "id": 1,
+      "text": "The",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 2,
+      "deprel": "det",
+      "start_char": 0,
+      "end_char": 3,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 2,
+      "text": "aircraft",
+      "lemma": "aircraft",
+      "upos": "NOUN",
+      "head": 4,
+      "deprel": "nsubj",
+      "start_char": 4,
+      "end_char": 12,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 3,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 4,
+      "deprel": "cop",
+      "start_char": 13,
+      "end_char": 15,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 4,
+      "text": "gray",
+      "lemma": "gray",
+      "upos": "ADJ",
+      "head": 0,
+      "deprel": "root",
+      "start_char": 16,
+      "end_char": 20,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 5,
+      "text": "and",
+      "lemma": "and",
+      "upos": "CCONJ",
+      "head": 9,
+      "deprel": "cc",
+      "start_char": 21,
+      "end_char": 24,
+      "feats": null
+    },
+    {
+      "id": 6,
+      "text": "the",
+      "lemma": "the",
+      "upos": "DET",
+      "head": 7,
+      "deprel": "det",
+      "start_char": 25,
+      "end_char": 28,
+      "feats": "Definite=Def|PronType=Art"
+    },
+    {
+      "id": 7,
+      "text": "music",
+      "lemma": "music",
+      "upos": "NOUN",
+      "head": 9,
+      "deprel": "nsubj",
+      "start_char": 29,
+      "end_char": 34,
+      "feats": "Number=Sing"
+    },
+    {
+      "id": 8,
+      "text": "is",
+      "lemma": "be",
+      "upos": "AUX",
+      "head": 9,
+      "deprel": "cop",
+      "start_char": 35,
+      "end_char": 37,
+      "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+    },
+    {
+      "id": 9,
+      "text": "instrumental",
+      "lemma": "instrumental",
+      "upos": "ADJ",
+      "head": 4,
+      "deprel": "conj",
+      "start_char": 38,
+      "end_char": 50,
+      "feats": "Degree=Pos"
+    },
+    {
+      "id": 10,
+      "text": ".",
+      "lemma": ".",
+      "upos": "PUNCT",
+      "head": 4,
+      "deprel": "punct",
+      "start_char": 50,
+      "end_char": 51,
+      "feats": null
+    }
+  ]
+}

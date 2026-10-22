@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-22",
+  "partition": "development",
+  "source_video": "zlD_zgNiYJkRV1PS",
+  "window_seconds": [
+    0,
+    12
+  ],
+  "review_note": "Inspected the three displayed frames directly: gray aircraft, yellow school buses, Alaska printed in a caption. The assistant cannot directly listen in this interface. Audio labels are provisional model-assisted judgments, not human gold; inspect the published WAV before training. No claim is accepted as true in the world from captions or narration.",
+  "claims": [
+    {
+      "id": "aircraft_original",
+      "text": "The aircraft is gray.",
+      "edit": "Original visual attribute",
+      "reference": {
+        "visual": "S",
+        "audio": "U",
+        "combined": "S"
+      },
+      "reason": "The shown aircraft is gray. Audio cannot establish this depicted color.",
+      "review_status": "assistant frame review; audio-dependent labels provisional",
+      "eligible_for_training": false
+    },
+    {
+      "id": "aircraft_edit",
+      "text": "The aircraft is yellow.",
+      "edit": "Visual edit: gray → yellow",
+      "reference": {
+        "visual": "R",
+        "audio": "U",
+        "combined": "R"
+      },
+      "reason": "The visible aircraft has an incompatible gray color. This edit does not change audio verifiability.",
+      "review_status": "assistant frame review; audio-dependent labels provisional",
+      "eligible_for_training": false
+    },
+    {
+      "id": "bus_original",
+      "text": "The school buses are yellow.",
+      "edit": "Original visual attribute",
+      "reference": {
+        "visual": "S",
+        "audio": "U",
+        "combined": "S"
+      },
+      "reason": "The foreground bus is yellow; a bus group is treated as the selected referent, not a universal count claim.",
+      "review_status": "assistant frame review; audio-dependent labels provisional",
+      "eligible_for_training": false
+    },
+    {
+      "id": "bus_edit",
+      "text": "The school buses are gray.",
+      "edit": "Visual edit: yellow → gray",
+      "reference": {
+        "visual": "R",
+        "audio": "U",
+        "combined": "R"
+      },
+      "reason": "The shown bus body is yellow. Audio remains insufficient to determine its color.",
+      "review_status": "assistant frame review; audio-dependent labels provisional",
+      "eligible_for_training": false
+    },
+    {
+      "id": "music_original",
+      "text": "The music is instrumental.",
+      "edit": "Original sound attribute",
+      "reference": {
+        "visual": "U",
+        "audio": "S",
+        "combined": "S"
+      },
+      "reason": "Provisional proposal from the frozen classification readout: instrumental music. The free description confirms music only; human listening is needed to certify the instrumental/vocal distinction.",
+      "review_status": "assistant frame review; audio-dependent labels provisional",
+      "eligible_for_training": false
+    },
+    {
+      "id": "music_edit",
+      "text": "The music is vocal.",
+      "edit": "Audio edit: instrumental → vocal",
+      "reference": {
+        "visual": "U",
+        "audio": "R",
+        "combined": "R"
+      },
+      "reason": "Provisional: instrumental rather than sung music. Vocal means singing in the music, not any unrelated crowd voice. Human listening is required before using this label for training.",
+      "review_status": "assistant frame review; audio-dependent labels provisional",
+      "eligible_for_training": false
+    },
+    {
+      "id": "mixed_original",
+      "text": "The aircraft is gray and the music is instrumental.",
+      "edit": "Original mixed claim",
+      "reference": {
+        "visual": "U",
+        "audio": "U",
+        "combined": "S"
+      },
+      "reason": "Visual evidence supplies the color clause and audio supplies the music clause. Neither source alone verifies both clauses.",
+      "review_status": "assistant frame review; audio-dependent labels provisional",
+      "eligible_for_training": false
+    },
+    {
+      "id": "mixed_visual_edit",
+      "text": "The aircraft is yellow and the music is instrumental.",
+      "edit": "Visual clause edited; audio clause unchanged",
+      "reference": {
+        "visual": "R",
+        "audio": "U",
+        "combined": "R"
+      },
+      "reason": "The gray aircraft refutes the color clause. The audio branch still cannot determine aircraft color.",
+      "review_status": "assistant frame review; audio-dependent labels provisional",
+      "eligible_for_training": false
+    },
+    {
+      "id": "mixed_audio_edit",
+      "text": "The aircraft is gray and the music is vocal.",
+      "edit": "Audio clause edited; visual clause unchanged",
+      "reference": {
+        "visual": "U",
+        "audio": "R",
+        "combined": "R"
+      },
+      "reason": "Provisional audio refutation of the music clause; the visual branch still cannot determine the music type.",
+      "review_status": "assistant frame review; audio-dependent labels provisional",
+      "eligible_for_training": false
+    },
+    {
+      "id": "missing_media",
+      "text": "The aircraft is gray and the music is instrumental.",
+      "edit": "No media supplied",
+      "reference": {
+        "visual": "U",
+        "audio": "U",
+        "combined": "U"
+      },
+      "reason": "Explicit missing input yields unknown, independently of model scores.",
+      "review_status": "constructed missing-input control",
+      "no_media": true,
+      "eligible_for_training": false
+    }
+  ],
+  "audio_label_provenance": "Proposed instrumental/vocal labels use the same frozen audio verifier inspected here. The independent ASR provides no usable transcript; the free description confirms music but does not independently certify the absence of sung/hummed vocals. These labels are not suitable for accuracy measurement or training until independently checked."
+}

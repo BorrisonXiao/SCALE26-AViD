@@ -1,0 +1,62 @@
+[
+  {
+    "id": "aircraft_entity",
+    "text": "An aircraft is present.",
+    "media": "vehicles"
+  },
+  {
+    "id": "bus_entity",
+    "text": "School buses are present.",
+    "media": "vehicles"
+  },
+  {
+    "id": "aircraft_gray",
+    "text": "The aircraft is gray.",
+    "media": "vehicles"
+  },
+  {
+    "id": "aircraft_yellow",
+    "text": "The aircraft is yellow.",
+    "media": "vehicles"
+  },
+  {
+    "id": "bus_yellow",
+    "text": "The school buses are yellow.",
+    "media": "vehicles"
+  },
+  {
+    "id": "bus_gray",
+    "text": "The school buses are gray.",
+    "media": "vehicles"
+  },
+  {
+    "id": "music_entity",
+    "text": "Music is audible.",
+    "media": "vehicles"
+  },
+  {
+    "id": "music_instrumental",
+    "text": "The music is instrumental.",
+    "media": "vehicles"
+  },
+  {
+    "id": "music_vocal",
+    "text": "The music is vocal.",
+    "media": "vehicles"
+  },
+  {
+    "id": "speech",
+    "text": "Intelligible speech is audible.",
+    "media": "vehicles"
+  },
+  {
+    "id": "alaska_mention",
+    "text": "The narrator mentions Alaska.",
+    "media": "vehicles"
+  },
+  {
+    "id": "florida_mention",
+    "text": "The narrator mentions Florida.",
+    "media": "vehicles"
+  }
+]

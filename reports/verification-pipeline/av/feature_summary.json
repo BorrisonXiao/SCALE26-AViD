@@ -1,0 +1,939 @@
+{
+  "date": "2026-10-22",
+  "scope": "one development clip plus one mismatched-media control; no classifier training or held-out evaluation",
+  "requests": {
+    "visual": 48,
+    "audio": 48
+  },
+  "models": {
+    "visual": {
+      "model": "/exp/cxiao/calm/downloads/models/qwen3-vl/8B-Instruct",
+      "feature": "last prompt-token decoder state before answer generation; conditioned on proposition and supplied media",
+      "dimension": 4096,
+      "elapsed_seconds": 12.560059366747737,
+      "cuda_peak_bytes": 17643160064,
+      "versions": {
+        "torch": "2.10.0+cu128",
+        "transformers": "4.57.6"
+      },
+      "weights_frozen": true
+    },
+    "audio": {
+      "model": "/exp/cxiao/calm/downloads/models/qwen3-omni/30B-A3B-Instruct",
+      "feature": "last prompt-token decoder state before answer generation; conditioned on proposition and supplied media",
+      "dimension": 2048,
+      "elapsed_seconds": 140.02794986777008,
+      "cuda_peak_bytes": 31777089536,
+      "versions": {
+        "torch": "2.10.0+cu128",
+        "transformers": "4.57.6"
+      },
+      "weights_frozen": true
+    }
+  },
+  "diagnostics": [
+    {
+      "modality": "visual",
+      "proposition_id": "aircraft_entity",
+      "condition": "mismatched",
+      "cosine": 0.8511887192726135,
+      "l2": 105.090087890625,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "aircraft_entity",
+      "condition": "blank",
+      "cosine": 0.8688669204711914,
+      "l2": 99.33665466308594,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "aircraft_entity",
+      "condition": "text_only",
+      "cosine": 0.9365434646606445,
+      "l2": 67.2272720336914,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "bus_entity",
+      "condition": "mismatched",
+      "cosine": 0.8743253946304321,
+      "l2": 96.66114807128906,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "bus_entity",
+      "condition": "blank",
+      "cosine": 0.9014525413513184,
+      "l2": 86.386474609375,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "bus_entity",
+      "condition": "text_only",
+      "cosine": 0.9124559164047241,
+      "l2": 78.82339477539062,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "aircraft_gray",
+      "condition": "mismatched",
+      "cosine": 0.8853908181190491,
+      "l2": 88.97676086425781,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "aircraft_gray",
+      "condition": "blank",
+      "cosine": 0.9447681307792664,
+      "l2": 61.821842193603516,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "aircraft_gray",
+      "condition": "text_only",
+      "cosine": 0.9436498880386353,
+      "l2": 64.29208374023438,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "aircraft_yellow",
+      "condition": "mismatched",
+      "cosine": 0.9340673089027405,
+      "l2": 67.16312408447266,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "aircraft_yellow",
+      "condition": "blank",
+      "cosine": 0.9321560263633728,
+      "l2": 72.0037841796875,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "aircraft_yellow",
+      "condition": "text_only",
+      "cosine": 0.9142487049102783,
+      "l2": 80.1183090209961,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "bus_yellow",
+      "condition": "mismatched",
+      "cosine": 0.8954974412918091,
+      "l2": 87.69654846191406,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "bus_yellow",
+      "condition": "blank",
+      "cosine": 0.9151859283447266,
+      "l2": 80.33759307861328,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "bus_yellow",
+      "condition": "text_only",
+      "cosine": 0.9332816004753113,
+      "l2": 71.1620864868164,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "bus_gray",
+      "condition": "mismatched",
+      "cosine": 0.9364495873451233,
+      "l2": 67.4091796875,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "bus_gray",
+      "condition": "blank",
+      "cosine": 0.940881073474884,
+      "l2": 66.51949310302734,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "bus_gray",
+      "condition": "text_only",
+      "cosine": 0.9358229637145996,
+      "l2": 69.94216918945312,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "music_entity",
+      "condition": "mismatched",
+      "cosine": 0.9905418753623962,
+      "l2": 25.579195022583008,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "music_entity",
+      "condition": "blank",
+      "cosine": 0.9826703071594238,
+      "l2": 36.324256896972656,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "music_entity",
+      "condition": "text_only",
+      "cosine": 0.9690680503845215,
+      "l2": 45.43629837036133,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "music_instrumental",
+      "condition": "mismatched",
+      "cosine": 0.9936404824256897,
+      "l2": 21.445423126220703,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "music_instrumental",
+      "condition": "blank",
+      "cosine": 0.9825415015220642,
+      "l2": 34.972225189208984,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "music_instrumental",
+      "condition": "text_only",
+      "cosine": 0.9389762282371521,
+      "l2": 64.19931030273438,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "music_vocal",
+      "condition": "mismatched",
+      "cosine": 0.988995373249054,
+      "l2": 26.408050537109375,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "music_vocal",
+      "condition": "blank",
+      "cosine": 0.9841548800468445,
+      "l2": 34.37729263305664,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "music_vocal",
+      "condition": "text_only",
+      "cosine": 0.9594221115112305,
+      "l2": 52.062522888183594,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "speech",
+      "condition": "mismatched",
+      "cosine": 0.9914164543151855,
+      "l2": 23.743154525756836,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "speech",
+      "condition": "blank",
+      "cosine": 0.9905939102172852,
+      "l2": 33.941009521484375,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "speech",
+      "condition": "text_only",
+      "cosine": 0.9750367999076843,
+      "l2": 40.217323303222656,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "alaska_mention",
+      "condition": "mismatched",
+      "cosine": 0.9304138422012329,
+      "l2": 67.76565551757812,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "alaska_mention",
+      "condition": "blank",
+      "cosine": 0.9335312247276306,
+      "l2": 72.63729095458984,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "alaska_mention",
+      "condition": "text_only",
+      "cosine": 0.9337456822395325,
+      "l2": 68.30925750732422,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "florida_mention",
+      "condition": "mismatched",
+      "cosine": 0.9958318471908569,
+      "l2": 16.595705032348633,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "florida_mention",
+      "condition": "blank",
+      "cosine": 0.9795135259628296,
+      "l2": 40.916988372802734,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "visual",
+      "proposition_id": "florida_mention",
+      "condition": "text_only",
+      "cosine": 0.9812896251678467,
+      "l2": 36.87957000732422,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "aircraft_entity",
+      "condition": "mismatched",
+      "cosine": 0.9601469039916992,
+      "l2": 44.16228103637695,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "aircraft_entity",
+      "condition": "blank",
+      "cosine": 0.9889726042747498,
+      "l2": 23.138713836669922,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "aircraft_entity",
+      "condition": "text_only",
+      "cosine": 0.9727854132652283,
+      "l2": 36.00251770019531,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "bus_entity",
+      "condition": "mismatched",
+      "cosine": 0.990853488445282,
+      "l2": 21.115386962890625,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "bus_entity",
+      "condition": "blank",
+      "cosine": 0.9897568225860596,
+      "l2": 22.328750610351562,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "bus_entity",
+      "condition": "text_only",
+      "cosine": 0.9720910787582397,
+      "l2": 36.702392578125,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "aircraft_gray",
+      "condition": "mismatched",
+      "cosine": 0.9919514656066895,
+      "l2": 19.602964401245117,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "aircraft_gray",
+      "condition": "blank",
+      "cosine": 0.9881323575973511,
+      "l2": 23.739748001098633,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "aircraft_gray",
+      "condition": "text_only",
+      "cosine": 0.9636143445968628,
+      "l2": 41.546592712402344,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "aircraft_yellow",
+      "condition": "mismatched",
+      "cosine": 0.9948331713676453,
+      "l2": 16.003326416015625,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "aircraft_yellow",
+      "condition": "blank",
+      "cosine": 0.9893091917037964,
+      "l2": 22.879610061645508,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "aircraft_yellow",
+      "condition": "text_only",
+      "cosine": 0.9612154960632324,
+      "l2": 42.91001510620117,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "bus_yellow",
+      "condition": "mismatched",
+      "cosine": 0.9937084913253784,
+      "l2": 17.348188400268555,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "bus_yellow",
+      "condition": "blank",
+      "cosine": 0.9903013110160828,
+      "l2": 21.664838790893555,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "bus_yellow",
+      "condition": "text_only",
+      "cosine": 0.97034752368927,
+      "l2": 37.28956604003906,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "bus_gray",
+      "condition": "mismatched",
+      "cosine": 0.9938468337059021,
+      "l2": 17.101484298706055,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "bus_gray",
+      "condition": "blank",
+      "cosine": 0.9899610877037048,
+      "l2": 22.182037353515625,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "bus_gray",
+      "condition": "text_only",
+      "cosine": 0.9662258625030518,
+      "l2": 40.02619934082031,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "music_entity",
+      "condition": "mismatched",
+      "cosine": 0.9208191633224487,
+      "l2": 56.94727325439453,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "music_entity",
+      "condition": "blank",
+      "cosine": 0.9771918058395386,
+      "l2": 36.07756805419922,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "music_entity",
+      "condition": "text_only",
+      "cosine": 0.9717006683349609,
+      "l2": 37.726261138916016,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "music_instrumental",
+      "condition": "mismatched",
+      "cosine": 0.9532602429389954,
+      "l2": 47.68587875366211,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "music_instrumental",
+      "condition": "blank",
+      "cosine": 0.9828832149505615,
+      "l2": 29.12002944946289,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "music_instrumental",
+      "condition": "text_only",
+      "cosine": 0.934356689453125,
+      "l2": 56.31709671020508,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "music_vocal",
+      "condition": "mismatched",
+      "cosine": 0.9817966222763062,
+      "l2": 28.065494537353516,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "music_vocal",
+      "condition": "blank",
+      "cosine": 0.9809408783912659,
+      "l2": 28.619619369506836,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "music_vocal",
+      "condition": "text_only",
+      "cosine": 0.9339362978935242,
+      "l2": 54.75082015991211,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "speech",
+      "condition": "mismatched",
+      "cosine": 0.9939382076263428,
+      "l2": 15.64210319519043,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "speech",
+      "condition": "blank",
+      "cosine": 0.9400166273117065,
+      "l2": 52.551700592041016,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "speech",
+      "condition": "text_only",
+      "cosine": 0.9297005534172058,
+      "l2": 57.558895111083984,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "alaska_mention",
+      "condition": "mismatched",
+      "cosine": 0.9932960271835327,
+      "l2": 18.630794525146484,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "alaska_mention",
+      "condition": "blank",
+      "cosine": 0.9885521531105042,
+      "l2": 23.547616958618164,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "alaska_mention",
+      "condition": "text_only",
+      "cosine": 0.9628368020057678,
+      "l2": 41.387393951416016,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "florida_mention",
+      "condition": "mismatched",
+      "cosine": 0.9952896237373352,
+      "l2": 15.124329566955566,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "florida_mention",
+      "condition": "blank",
+      "cosine": 0.9901152849197388,
+      "l2": 21.752239227294922,
+      "same_prompt": true,
+      "same_input_ids": true,
+      "same_input_shapes": true
+    },
+    {
+      "modality": "audio",
+      "proposition_id": "florida_mention",
+      "condition": "text_only",
+      "cosine": 0.9649326205253601,
+      "l2": 40.51859664916992,
+      "same_prompt": false,
+      "same_input_ids": false,
+      "same_input_shapes": false
+    }
+  ],
+  "relation_feature_changes": [
+    {
+      "modality": "visual",
+      "first": "aircraft_gray",
+      "second": "aircraft_yellow",
+      "cosine": 0.9164623022079468,
+      "l2": 75.35570526123047
+    },
+    {
+      "modality": "visual",
+      "first": "bus_yellow",
+      "second": "bus_gray",
+      "cosine": 0.9134600162506104,
+      "l2": 79.49337005615234
+    },
+    {
+      "modality": "visual",
+      "first": "music_instrumental",
+      "second": "music_vocal",
+      "cosine": 0.9965234398841858,
+      "l2": 14.933958053588867
+    },
+    {
+      "modality": "audio",
+      "first": "aircraft_gray",
+      "second": "aircraft_yellow",
+      "cosine": 0.9982943534851074,
+      "l2": 9.018716812133789
+    },
+    {
+      "modality": "audio",
+      "first": "bus_yellow",
+      "second": "bus_gray",
+      "cosine": 0.9984846711158752,
+      "l2": 8.494444847106934
+    },
+    {
+      "modality": "audio",
+      "first": "music_instrumental",
+      "second": "music_vocal",
+      "cosine": 0.9221592545509338,
+      "l2": 61.06552505493164
+    }
+  ],
+  "all_backend_roots_normalized": true,
+  "all_backend_roots_match_enumeration": true,
+  "feature_heads_trained": 0,
+  "claims": 10,
+  "branch_verdicts": 30,
+  "all_features_finite": true,
+  "feature_sha256": {
+    "visual": "97cd93562e9237c01ed15ec808d244a0a34443352daeecb4bbaa4ec30f995e34",
+    "audio": "d8f8d2e389e9aa9b5c10065d03e21c1c53727f58a7683fd7edf36d1c0df7232a"
+  },
+  "feature_hash_definition": "SHA-256 of sorted joint-feature keys and their float32 bytes; excludes unused media-token sequences",
+  "audio_template_check": [
+    {
+      "proposition": "music_entity",
+      "condition": "matched",
+      "initial_empty_thinking": {
+        "supported": 0.9975489857111893,
+        "refuted": 0.0008545342084278761,
+        "unknown": 0.0015964800803829238
+      },
+      "official_default": {
+        "supported": 0.9999145420765255,
+        "refuted": 4.006187349583248e-05,
+        "unknown": 4.539604997876146e-05
+      }
+    },
+    {
+      "proposition": "music_entity",
+      "condition": "blank",
+      "initial_empty_thinking": {
+        "supported": 0.9788287942608032,
+        "refuted": 0.011575105901134558,
+        "unknown": 0.009596099838062332
+      },
+      "official_default": {
+        "supported": 0.9970450060935596,
+        "refuted": 0.001924749656018494,
+        "unknown": 0.001030244250421894
+      }
+    },
+    {
+      "proposition": "music_entity",
+      "condition": "text_only",
+      "initial_empty_thinking": {
+        "supported": 0.9892412058557739,
+        "refuted": 0.005882243227996986,
+        "unknown": 0.004876550916228974
+      },
+      "official_default": {
+        "supported": 0.9997182082997422,
+        "refuted": 0.00015841667202952178,
+        "unknown": 0.0001233750282281575
+      }
+    },
+    {
+      "proposition": "music_instrumental",
+      "condition": "matched",
+      "initial_empty_thinking": {
+        "supported": 0.996219666286015,
+        "refuted": 0.0008016908507956825,
+        "unknown": 0.00297864286318945
+      },
+      "official_default": {
+        "supported": 0.9998365516182611,
+        "refuted": 4.00587487849283e-05,
+        "unknown": 0.0001233896329539109
+      }
+    },
+    {
+      "proposition": "music_instrumental",
+      "condition": "blank",
+      "initial_empty_thinking": {
+        "supported": 0.9547420441426229,
+        "refuted": 0.016427244280993982,
+        "unknown": 0.02883071157638292
+      },
+      "official_default": {
+        "supported": 0.9940441101695223,
+        "refuted": 0.0027920653257464336,
+        "unknown": 0.003163824504731096
+      }
+    },
+    {
+      "proposition": "music_instrumental",
+      "condition": "text_only",
+      "initial_empty_thinking": {
+        "supported": 0.37708768613674054,
+        "refuted": 0.07425296797605892,
+        "unknown": 0.5486593458872004
+      },
+      "official_default": {
+        "supported": 0.19706337377513752,
+        "refuted": 0.023535863666618705,
+        "unknown": 0.7794007625582438
+      }
+    },
+    {
+      "proposition": "music_vocal",
+      "condition": "matched",
+      "initial_empty_thinking": {
+        "supported": 0.037257668751321686,
+        "refuted": 0.8479806322094505,
+        "unknown": 0.1147616990392279
+      },
+      "official_default": {
+        "supported": 0.0007987086066837954,
+        "refuted": 0.992513786106668,
+        "unknown": 0.0066875052866483785
+      }
+    },
+    {
+      "proposition": "music_vocal",
+      "condition": "blank",
+      "initial_empty_thinking": {
+        "supported": 0.027268629905545592,
+        "refuted": 0.6606584265878493,
+        "unknown": 0.3120729435066051
+      },
+      "official_default": {
+        "supported": 0.00432821830016161,
+        "refuted": 0.7278943975114883,
+        "unknown": 0.26777738418835
+      }
+    },
+    {
+      "proposition": "music_vocal",
+      "condition": "text_only",
+      "initial_empty_thinking": {
+        "supported": 0.24289531114035925,
+        "refuted": 0.24289531114035925,
+        "unknown": 0.5142093777192813
+      },
+      "official_default": {
+        "supported": 0.12048744540580224,
+        "refuted": 0.09383571683231191,
+        "unknown": 0.7856768377618858
+      }
+    }
+  ]
+}

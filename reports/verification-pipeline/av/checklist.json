@@ -1,0 +1,91 @@
+{
+  "updated": "2026-10-22",
+  "steps": [
+    {
+      "id": 1,
+      "title": "Check useful features from frozen visual and audio models",
+      "status": "initial pilot completed; usefulness still to test",
+      "items": [
+        {
+          "text": "Inspect each edit under separate visual and audio policies; audio judgments explicitly provisional",
+          "done": true
+        },
+        {
+          "text": "Extract real pre-answer neural representations from both frozen models",
+          "done": true
+        },
+        {
+          "text": "Compare matched, mismatched, blank and text-only inputs; retain failed controls",
+          "done": true
+        },
+        {
+          "text": "Save exact inputs, prompts, scores, feature vectors and provenance",
+          "done": true
+        },
+        {
+          "text": "Confirm audio labels by listening and check feature usefulness across 10–20 reviewed examples",
+          "done": false
+        }
+      ],
+      "note": "This run uses one development clip, one unrelated media control, and 12 proposition probes. It is not 12 independent source videos and does not test a trained feature classifier."
+    },
+    {
+      "id": 2,
+      "title": "Build separate visual and audio evidence trees",
+      "status": "prototype completed; broader source coverage pending",
+      "items": [
+        {
+          "text": "Reuse one compiled claim with separate visual/audio observations and verdicts",
+          "done": true
+        },
+        {
+          "text": "Keep per-modality reference labels and reasons separate",
+          "done": true
+        },
+        {
+          "text": "Combine corresponding predicates before claim logic; preserve unknown and flag conflicts",
+          "done": true
+        },
+        {
+          "text": "Test complementary evidence, source exclusion, conflicts and candidate alignment",
+          "done": true
+        },
+        {
+          "text": "Extend quoted speech/assertion scope and automatic candidate alignment",
+          "done": false
+        }
+      ],
+      "note": "The real pilot uses depicted colors and non-speech music. Speech word-mention probes expose caption leakage, but their claim compilation is rejected until source/content scope is represented correctly."
+    },
+    {
+      "id": 3,
+      "title": "Prepare a verified pilot with source-video splits",
+      "status": "planned",
+      "items": [
+        "Review existing generated candidates",
+        "Target 40–60 checked pairs plus controls",
+        "Reserve test videos before generating edits"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Train feature-based relation models and compare baselines",
+      "status": "planned",
+      "items": [
+        "Start with a linear classifier and one small MLP",
+        "Compare whole-claim, calibrated, independent-relation, and shared-assignment methods",
+        "Use claim-level labels and limited diagnostic local annotations"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Evaluate generalization and inspect errors",
+      "status": "planned",
+      "items": [
+        "Test on unseen source videos",
+        "Measure pair correctness, three-way verdicts, unknown behavior, and cost",
+        "Separate parsing, candidate, perception, classifier, and composition failures"
+      ]
+    }
+  ]
+}
