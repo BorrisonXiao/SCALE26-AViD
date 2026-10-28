@@ -1,0 +1,13 @@
+{
+  "model": {
+    "resource": "https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz",
+    "cached_path": "/home/hltcoe/cxiao/.allennlp/cache/b5f1db011cc85691a5fa2bf29e055a712261a2e5d74a74edd7da2fffc98d4ab8.4c4ac7e06ec3d85631bd26b839f90b5a375d3ceeb43e3c74f1cf4758dcee2bb3",
+    "creation_time": 1784834603.2696517,
+    "size": 405972254,
+    "etag": "\"35f3a6a7a3a5b2d61fc64d8a1b6fd1f6\"",
+    "extraction_dir": false
+  },
+  "device": "cpu",
+  "claims": 21,
+  "prediction_seconds": 2.5332464929670095
+}

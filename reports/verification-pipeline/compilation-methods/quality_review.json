@@ -1,0 +1,118 @@
+{
+  "reviewer": "Codex assistant; qualitative inspection, not independent human gold",
+  "date": "2026-10-28",
+  "scope": "Ten selected examples across four routes; no parser-accuracy score is derived.",
+  "complete_reference_review": false,
+  "cases": [
+    {
+      "claim_id": "T2G_ACMxR_I4_1396",
+      "title": "Landing roles and name",
+      "requirement": "IM-1 is the lander; the moon is its location. Retain the past tense.",
+      "assessments": {
+        "srl": "The trained SRL preserves IM-1 as ARG1 and on the moon as a location phrase. The location phrase is not internally decomposed.",
+        "amr": "land-01 has ARG1=IM-1 and location=moon. The source-aligned temporal atom is past/simple.",
+        "direct": "The graph assigns ARG0=IM-1 and ARG1=moon. This is the wrong PropBank land-01 frame even though the compiler accepts it.",
+        "guided": "Dependency/SRL assistance still produces ARG0=IM-1 and ARG1=moon. Assistance did not preserve the supplied semantic roles."
+      }
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2073",
+      "title": "Passive patient and polarity",
+      "requirement": "Shi Yongxin is the person arrested; the claim has no overt arresting agent or negation. Preserve perfect aspect.",
+      "assessments": {
+        "srl": "ARG1=Shi Yongxin; no agent is invented. The auxiliary chain supplies present/perfect.",
+        "amr": "arrest-01 ARG1=Shi Yongxin; no agent is invented. The auxiliary chain supplies present/perfect.",
+        "direct": "Assigns the arrested person to ARG0, the arresting agent. The program is executable but the role is wrong.",
+        "guided": "Assigns Shi Yongxin to ARG0 and adds negative polarity to a positive sentence. This is an incorrect accepted translation."
+      }
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1000",
+      "title": "Written source scope",
+      "requirement": "The text asserts a death-toll claim. Do not assert actual deaths or the toll as unscoped world facts.",
+      "assessments": {
+        "srl": "The adapter was revised after inspection: read-01 uses ARG1 for Text and ARG3 for the content. The inner reach frame is excluded from world assertions. Content remains one proposition.",
+        "amr": "The pretrained graph uses ARG1=text and ARG3=content. The revised frame-specific compiler preserves OCR scope; inner cause/die/reach predicates are not asserted as world facts.",
+        "direct": "Reuses graph variables for different concepts; refused. Its attempted content graph also changes the structure of the quoted text.",
+        "guided": "Reuses graph variables for different concepts; refused. No semantic success is claimed for this output."
+      }
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1088",
+      "title": "Depiction and embedded content",
+      "requirement": "Photos depict buildings in a collapsed state. Preserve that content inside the photo scope.",
+      "assessments": {
+        "srl": "Preserves the exact collapsed buildings phrase as photo content; it does not separately compile building/collapse relationships.",
+        "amr": "Preserves building and collapse inside a reified photo-content graph; no unscoped collapse assertion. Internal content is not yet recursively compiled.",
+        "direct": "Preserves an attempted building/collapse content graph under the photo. Internal content is opaque to the current executable program.",
+        "guided": "Preserves a collapsed-building content graph under show. Internal content is opaque to the current executable program."
+      }
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_289",
+      "title": "Lexical meaning and direction",
+      "requirement": "Haboob denotes the moving phenomenon, approaching an airport. Do not silently turn it into a city.",
+      "assessments": {
+        "srl": "Keeps Haboob and towards airport as argument phrases. This preserves wording but leaves lexical typing and internal direction decomposition unresolved.",
+        "amr": "Incorrectly types Haboob as a city name. The compiler retains that city condition; executable output does not correct the lexical error.",
+        "direct": "Retains a haboob concept but uses an unvalidated come-01 role frame. Direction is not explicitly distinguished from its airport argument.",
+        "guided": "Retains a haboob concept but separates towards from airport into different arguments. The intended direction/target relation is not cleanly represented."
+      }
+    },
+    {
+      "claim_id": "TInVWzp25aIM_90",
+      "title": "Modifier attachment and untranslated edges",
+      "requirement": "The Alaskan qualifier applies to the coast that the storm impacted.",
+      "assessments": {
+        "srl": "Keeps the full Alaskan coast phrase as ARG1; the qualifier is not separately compiled.",
+        "amr": "The input graph has coast :part-of state named Alaskan. Normalization reverses the edge; the current compiler lists it as untranslated and does not enforce it. Partial output, not faithful full compilation.",
+        "direct": "Attaches Alaskan as a modifier of coast. This attachment is carried into a property atom.",
+        "guided": "Attaches alaskan to coast; extra determiner concepts show that the representation is less canonical than pretrained AMR."
+      }
+    },
+    {
+      "claim_id": "TLO3smKI67PM_588",
+      "title": "Name fidelity and nested noun phrases",
+      "requirement": "Retain the phrase Phillies fan son without silently rewriting the team or dropping son. The noun-phrase relationship itself needs review.",
+      "assessments": {
+        "srl": "Preserves the exact phrase and receive role; the son/fan relationship remains inside one argument phrase.",
+        "amr": "Changes Phillies to Phillips. The output is valid and executable but the name is wrong.",
+        "direct": "Drops son from the recipient description. This loses claim content even though compilation succeeds.",
+        "guided": "Retains son/fan/Phillies concepts but treats an article as a semantic modifier. Internal noun-phrase semantics remain provisional."
+      }
+    },
+    {
+      "claim_id": "contrast_04",
+      "title": "Unlicensed negation",
+      "requirement": "Was landing is past progressive; it does not mean did not land.",
+      "assessments": {
+        "srl": "Retains the lander and location and adds past/progressive from the source auxiliary sequence.",
+        "amr": "Returns a positive landing graph. Source alignment distinguishes past/progressive from the other landing forms.",
+        "direct": "Adds :polarity - without a negation in the source sentence. This is an incorrect accepted translation.",
+        "guided": "Does not add negation, but its graph has repeated variable declarations and is refused. This is not a successful parse."
+      }
+    },
+    {
+      "claim_id": "contrast_10",
+      "title": "Shared subject across events",
+      "requirement": "The same Alice hugs Bob and waves; two separate events share one participant.",
+      "assessments": {
+        "srl": "The trained SRL control output has no predicate with arguments; this route refuses the claim. No replacement parse was hand-written.",
+        "amr": "The two event graphs share the Alice node. The compiler retains that shared variable across conjunction.",
+        "direct": "Declares a repeatedly for different nodes; refused. The graph does not provide a usable shared-reference representation.",
+        "guided": "The hug and wave frames share one Alice node. The compiler retains the shared subject."
+      }
+    },
+    {
+      "claim_id": "contrast_14",
+      "title": "Positive perfect clause",
+      "requirement": "Buildings have collapsed is positive and perfect, with buildings as the collapse participant.",
+      "assessments": {
+        "srl": "Preserves a positive collapse frame; source alignment supplies present/perfect.",
+        "amr": "collapse-01 ARG1=building, positive. Source alignment supplies present/perfect.",
+        "direct": "Uses ARG0=building instead of collapse-01 ARG1. This is an incorrect role frame even though compilation succeeds.",
+        "guided": "Adds negative polarity and ARG0=building to a positive sentence. This is an incorrect accepted translation."
+      }
+    }
+  ]
+}

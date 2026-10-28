@@ -27,48 +27,52 @@
     },
     {
       "id": 7,
-      "title": "Improve semantic parsing, including tense and aspect",
-      "status": "prototype implemented and compared; parser quality remains inadequate for replacement",
+      "title": "Get claim-to-DeepProbLog compilation working",
+      "status": "comparison completed; common representation and semantic review still in progress",
       "items": [
         {
-          "text": "Compare the rule baseline with a frozen text model producing a constrained semantic representation assisted by dependency/SRL analyses",
+          "text": "Research existing syntax-to-logic, SRL, AMR and recent clause-level logical-form generation methods",
           "done": true
         },
         {
-          "text": "Keep deterministic compilation and checks for roles, shared references, source/content scope and word spans",
+          "text": "Run syntax/SRL rules, pretrained AMR, direct neural graphs and syntax/SRL-assisted neural graphs on the same 79 development claims and 21 controls",
           "done": true
         },
         {
-          "text": "Distinguish numbers inside names such as Apollo 11 from quantities, and preserve location arguments such as on the moon",
+          "text": "Inspect generated graphs and compiled predicates; revise source-scope handling where trained SRL and AMR use different argument slots",
           "done": true
         },
         {
-          "text": "Check current tense/aspect behavior with the exact Apollo examples and four simpler supported clauses",
+          "text": "Validate generated Prolog syntax and execute a bounded compilation diagnostic in DeepProbLog, without media verification",
           "done": true
         },
         {
-          "text": "Preserve tense and aspect from the complete verb and auxiliary sequence, including past, progressive and perfect forms",
-          "done": true
-        },
-        {
-          "text": "Represent a context-dependent reference time and carry temporal conditions into executable predicates, evidence keys and verifier inputs",
-          "done": true
-        },
-        {
-          "text": "Resolve source/content output failures, ambiguous lexical readings and event types; review accepted representations independently",
+          "text": "Finish a reviewed reference set for 25 selected real claims and 21 controls; check roles, modifiers, shared identity, source scope, polarity and tense separately",
           "done": false
         },
         {
-          "text": "Freeze a selected parser/compiler on development claims and evaluate on separate source videos",
+          "text": "Freeze a common logical-form schema: predicate signatures and senses, recursive source content, noun-phrase decomposition, and one temporal interface",
+          "done": false
+        },
+        {
+          "text": "Fix shared translation defects and explicit refusals; retain trained SRL and pretrained AMR as the two low-cost baselines",
+          "done": false
+        },
+        {
+          "text": "Test one small clause-level logical-form generator with deterministic serialization; compare text-only and SRL assistance on the same references",
+          "done": false
+        },
+        {
+          "text": "Freeze the parser/compiler and evaluate compilation plus meaning preservation on unseen source videos before more media verification",
           "done": false
         }
       ],
-      "note": "New opt-in compiler preserves complete role tuples, prepositions, checked source/content boundaries, tense/aspect and reference context. Broad frozen 8B parsing passes 11/79 development claims versus 20/79 for v1. The larger model passes 3/7 selected diagnostics; three source cases compile only after a revised prompt plus removal of unused inner annotations (0/3 without that normalization). These conditions are separate, not accuracy gains or a replacement validation. Real-media temporal observations and video-window localization remain pending."
+      "note": "Immediate priority confirmed by user: compilation first. New source: compilation_methods_20261028. Higher acceptance is not semantic accuracy: SRL retains opaque phrases; AMR loses some details; prompted 8B graphs can invent polarity or roles. Ten examples have assistant qualitative reviews; the full reference review is pending. Planning proposal: one or two focused working days, then choose a bounded supported fragment. No new relation model was trained."
     },
     {
       "id": 8,
-      "title": "Add contrastive compiler tests before relation training",
-      "status": "64 regression checks and temporal controls pass; generated parsing and held-out evaluation remain incomplete",
+      "title": "Keep meaning and executability checks separate",
+      "status": "77 regression checks; parser-reference and held-out compilation evaluation remain pending",
       "items": [
         {
           "text": "Check paraphrases and active/passive forms for equivalent meaning",
@@ -95,7 +99,7 @@
           "done": false
         }
       ],
-      "note": "Compiler tests use hand-authored semantic representations and constructed event intervals; actual DeepProbLog executes the temporal conditions. The generated 8B parser still rejects valid active/passive and source contrasts. Tests do not certify text-parser semantic accuracy. No relation classifier was trained."
+      "note": "Historical tests use hand-authored inputs; the new regression tests also cover trained-SRL written-content scope, inverse AMR roles, shared variables, branch-local quantifiers and explicit refusals. Automatic parsing is assessed separately. New temporal atoms are compilation outputs and are not connected to the older interval-checking interface."
     },
     {
       "id": 1,
@@ -119,7 +123,7 @@
           "done": true
         },
         {
-          "text": "Confirm audio labels by listening and check feature usefulness across 10–20 reviewed examples",
+          "text": "Confirm audio labels by listening and check feature usefulness across 10\u201320 reviewed examples",
           "done": false
         }
       ],
@@ -159,7 +163,7 @@
       "status": "planned",
       "items": [
         "Review existing generated candidates",
-        "Target 40–60 checked pairs plus controls",
+        "Target 40\u201360 checked pairs plus controls",
         "Reserve test videos before generating edits"
       ]
     },
@@ -184,7 +188,7 @@
       ]
     }
   ],
-  "intro": "The baseline audit and first compiler-improvement prototype are complete. Keep the original compiler available: semantic parsing remains the bottleneck. Review the model comparison and remaining failures before more feature extraction or training.",
+  "intro": "Current priority: get claim-to-DeepProbLog compilation working. Compare syntax/SRL rules, neural transformation and direct semantic parsing before media verification or relation-classifier training.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -204,5 +208,10 @@
     "source_path": "exp/probabilistic_verification/semantic_compiler_20261028",
     "report_anchor": "semantic-compiler",
     "status": "opt-in prototype; semantic review and held-out evaluation pending"
+  },
+  "compilation_methods_run": {
+    "source_path": "exp/probabilistic_verification/compilation_methods_20261028",
+    "report_anchor": "compilation-methods",
+    "status": "fixed-input comparison and focused qualitative review; not a selected production parser"
   }
 }

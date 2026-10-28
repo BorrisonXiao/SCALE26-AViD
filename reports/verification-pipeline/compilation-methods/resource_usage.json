@@ -1,0 +1,43 @@
+{
+  "jobs": [
+    {
+      "job_id": 1146314,
+      "gpu": "V100",
+      "gpus": 1,
+      "elapsed_seconds": 116,
+      "state": "COMPLETED"
+    },
+    {
+      "job_id": 1146317,
+      "gpu": "V100",
+      "gpus": 1,
+      "elapsed_seconds": 243,
+      "state": "COMPLETED"
+    },
+    {
+      "job_id": 1146318,
+      "gpu": "V100",
+      "gpus": 1,
+      "elapsed_seconds": 264,
+      "state": "COMPLETED"
+    },
+    {
+      "job_id": 1146319,
+      "gpu": "V100",
+      "gpus": 1,
+      "elapsed_seconds": 369,
+      "state": "COMPLETED"
+    },
+    {
+      "job_id": 1146320,
+      "gpu": "V100",
+      "gpus": 1,
+      "elapsed_seconds": 209,
+      "state": "COMPLETED"
+    }
+  ],
+  "peak_gpus": 4,
+  "allocated_gpu_hours": 0.33361111111111114,
+  "new_training": false,
+  "media_verification": false
+}

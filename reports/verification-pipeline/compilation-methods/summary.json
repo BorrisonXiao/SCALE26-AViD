@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-28",
+  "task": "Claim compilation only",
+  "real_claims": 79,
+  "constructed_controls": 21,
+  "interpretation": "Coverage and backend acceptance are not semantic accuracy.",
+  "backend_policy": "Parse generated Prolog for every compiled input; execute five selected cases per method in isolated 10-second subprocesses. Artificial unknown observations only.",
+  "methods": {
+    "srl": {
+      "name": "Trained SRL + dependency-assisted rules",
+      "real": {
+        "total": 79,
+        "graph_valid": 72,
+        "compiled": 68,
+        "program_syntax_valid": 68,
+        "backend_attempted": 1,
+        "backend_accepted": 1,
+        "diagnostics": 11,
+        "rejection_codes": {
+          "unhandled_scope": 8,
+          "missing_predicate": 3
+        }
+      },
+      "controls": {
+        "total": 21,
+        "graph_valid": 19,
+        "compiled": 19,
+        "program_syntax_valid": 19,
+        "backend_attempted": 3,
+        "backend_accepted": 3,
+        "diagnostics": 3,
+        "rejection_codes": {
+          "missing_predicate": 1,
+          "unhandled_scope": 1
+        }
+      }
+    },
+    "amr": {
+      "name": "Pretrained BART AMR + post-processing",
+      "real": {
+        "total": 79,
+        "graph_valid": 79,
+        "compiled": 46,
+        "program_syntax_valid": 46,
+        "backend_attempted": 1,
+        "backend_accepted": 1,
+        "diagnostics": 28,
+        "rejection_codes": {
+          "event_complement": 15,
+          "unhandled_scope": 8,
+          "missing_arguments": 5,
+          "non_propositional": 3,
+          "cross_scope_reference": 2
+        }
+      },
+      "controls": {
+        "total": 21,
+        "graph_valid": 21,
+        "compiled": 20,
+        "program_syntax_valid": 20,
+        "backend_attempted": 4,
+        "backend_accepted": 4,
+        "diagnostics": 4,
+        "rejection_codes": {
+          "unhandled_scope": 1
+        }
+      }
+    },
+    "direct": {
+      "name": "Frozen 8B text model → predicate graph",
+      "real": {
+        "total": 79,
+        "graph_valid": 44,
+        "compiled": 33,
+        "program_syntax_valid": 33,
+        "backend_attempted": 1,
+        "backend_accepted": 1,
+        "diagnostics": 8,
+        "rejection_codes": {
+          "unhandled_scope": 2,
+          "graph_nodes": 26,
+          "graph_syntax": 9,
+          "missing_arguments": 3,
+          "event_complement": 5,
+          "cross_scope_reference": 1
+        }
+      },
+      "controls": {
+        "total": 21,
+        "graph_valid": 18,
+        "compiled": 15,
+        "program_syntax_valid": 15,
+        "backend_attempted": 3,
+        "backend_accepted": 3,
+        "diagnostics": 3,
+        "rejection_codes": {
+          "missing_arguments": 2,
+          "graph_nodes": 3,
+          "unhandled_scope": 1
+        }
+      }
+    },
+    "guided": {
+      "name": "Dependency/SRL-assisted frozen 8B → predicate graph",
+      "real": {
+        "total": 79,
+        "graph_valid": 37,
+        "compiled": 30,
+        "program_syntax_valid": 30,
+        "backend_attempted": 1,
+        "backend_accepted": 1,
+        "diagnostics": 6,
+        "rejection_codes": {
+          "graph_nodes": 31,
+          "unhandled_scope": 4,
+          "graph_syntax": 11,
+          "event_complement": 1,
+          "duplicate_roles": 1,
+          "cross_scope_reference": 1
+        }
+      },
+      "controls": {
+        "total": 21,
+        "graph_valid": 13,
+        "compiled": 11,
+        "program_syntax_valid": 11,
+        "backend_attempted": 4,
+        "backend_accepted": 4,
+        "diagnostics": 3,
+        "rejection_codes": {
+          "missing_arguments": 2,
+          "graph_nodes": 8
+        }
+      }
+    }
+  },
+  "input_sha256": "424504582e6169e7a56799c40e2410daeaef5bfa50a84554cffcb90575595af0",
+  "legacy_reference": {
+    "v1": 20,
+    "schema_heavy_8b_v2": 11,
+    "denominator": 79,
+    "note": "Historical compilers use stricter, different supported fragments. Counts alone do not establish improvement."
+  },
+  "predpatt": {
+    "available": 99,
+    "total": 100,
+    "note": "Extraction diagnostic only; no scope-aware PredPatt compiler is claimed."
+  }
+}
