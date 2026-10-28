@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-28",
+  "scope": "Mechanical compilation coverage; not semantic accuracy.",
+  "conditions": {
+    "cached": {
+      "n": 2375,
+      "statuses": {
+        "unsupported": 2296,
+        "compiled": 79
+      },
+      "first_diagnostics": {
+        "unhandled_content": 1049,
+        "compiled": 79,
+        "subject": 243,
+        "scope": 94,
+        "quantification": 495,
+        "reference": 67,
+        "coordinated_arguments": 48,
+        "predicate": 31,
+        "modality": 145,
+        "intensional_predicate": 89,
+        "sentence_count": 29,
+        "coordination": 3,
+        "duplicate_role": 2,
+        "negative_indefinite": 1
+      },
+      "total_record_seconds": 0.1890565399080515
+    },
+    "current": {
+      "n": 2375,
+      "statuses": {
+        "unsupported": 2268,
+        "compiled": 78,
+        "parser_rejected": 29
+      },
+      "first_diagnostics": {
+        "unhandled_content": 1060,
+        "compiled": 78,
+        "subject": 238,
+        "scope": 94,
+        "quantification": 487,
+        "reference": 66,
+        "coordinated_arguments": 52,
+        "predicate": 31,
+        "modality": 145,
+        "intensional_predicate": 88,
+        "sentence_count": 29,
+        "coordination": 3,
+        "duplicate_role": 3,
+        "negative_indefinite": 1
+      },
+      "total_record_seconds": 459.6997299063951
+    }
+  },
+  "development": {
+    "cached": {
+      "n": 494,
+      "statuses": {
+        "unsupported": 473,
+        "compiled": 21
+      },
+      "first_diagnostics": {
+        "unhandled_content": 258,
+        "subject": 69,
+        "scope": 10,
+        "compiled": 21,
+        "quantification": 64,
+        "modality": 20,
+        "coordinated_arguments": 12,
+        "reference": 18,
+        "intensional_predicate": 15,
+        "sentence_count": 4,
+        "predicate": 2,
+        "coordination": 1
+      },
+      "total_record_seconds": 0.04191547445952892
+    },
+    "current": {
+      "n": 494,
+      "statuses": {
+        "unsupported": 470,
+        "compiled": 20,
+        "parser_rejected": 4
+      },
+      "first_diagnostics": {
+        "unhandled_content": 258,
+        "subject": 68,
+        "scope": 10,
+        "compiled": 20,
+        "quantification": 64,
+        "modality": 20,
+        "coordinated_arguments": 15,
+        "reference": 18,
+        "intensional_predicate": 14,
+        "sentence_count": 4,
+        "predicate": 2,
+        "coordination": 1
+      },
+      "total_record_seconds": 84.11029589548707
+    }
+  },
+  "status_transitions": [
+    {
+      "cached": "compiled",
+      "current": "compiled",
+      "count": 76
+    },
+    {
+      "cached": "compiled",
+      "current": "unsupported",
+      "count": 3
+    },
+    {
+      "cached": "unsupported",
+      "current": "compiled",
+      "count": 2
+    },
+    {
+      "cached": "unsupported",
+      "current": "parser_rejected",
+      "count": 29
+    },
+    {
+      "cached": "unsupported",
+      "current": "unsupported",
+      "count": 2265
+    }
+  ],
+  "changed_compiled_forms": 0
+}

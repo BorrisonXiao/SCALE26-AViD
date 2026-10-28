@@ -1,0 +1,126 @@
+{
+  "findings": [
+    {
+      "id": "F1",
+      "evidence_status": "Evidence-backed",
+      "finding": "The current pipeline compiles 78 of 2375 claims (3.28%); 2268 are rejected by the compiler and 29 by the one-sentence parser interface. No unexpected exception is recorded.",
+      "evidence": [
+        "current_results.jsonl:status",
+        "census_summary.json:conditions.current"
+      ]
+    },
+    {
+      "id": "F2",
+      "evidence_status": "Evidence-backed",
+      "finding": "The stored parses compile 79 claims. The two conditions share 76 accepted claims, with identical literal logical forms for all 76; 3 lose acceptance and 2 gain it under the current parser.",
+      "evidence": [
+        "cached_results.jsonl",
+        "current_results.jsonl",
+        "analysis.json:acceptance_matrix"
+      ]
+    },
+    {
+      "id": "F3",
+      "evidence_status": "Inferred",
+      "finding": "For these two UD input conditions, compiler representation/rule coverage is the larger obstacle. This comparison does not evaluate an LLM semantic parser or prove that all parser changes would be ineffective.",
+      "evidence": [
+        "census_summary.json",
+        "semantic_reviews.jsonl:review_index=23,44,50"
+      ]
+    },
+    {
+      "id": "F4",
+      "evidence_status": "Evidence-backed",
+      "finding": "The first diagnostics are unhandled content (1060), quantification (487) and missing expected subject structure (238). Diagnostics record the first guard, not every semantic phenomenon in a claim.",
+      "evidence": [
+        "census_summary.json:conditions.current.first_diagnostics"
+      ]
+    },
+    {
+      "id": "F5",
+      "evidence_status": "Inferred",
+      "finding": "Across all 20 accepted development programs, the assistant judges 11 core structures adequate within a tense-agnostic fragment, 2 core structures incorrect and 7 dependent on unspecified semantic contracts. These are not independent human annotations or full-meaning accuracy measurements.",
+      "evidence": [
+        "semantic_reviews.jsonl",
+        "analysis.json:accepted_development_review"
+      ]
+    },
+    {
+      "id": "F6",
+      "evidence_status": "Evidence-backed",
+      "finding": "74 accepted current inputs contain a finite tense feature. The compiler predicate families do not add explicit tense/aspect conditions. Core-structure judgments therefore do not certify temporal faithfulness.",
+      "evidence": [
+        "current_results.jsonl:tokens.feats",
+        "analysis.json:accepted_finite_tense",
+        "frozen_source/scripts/probabilistic_verification/compiler.py"
+      ]
+    },
+    {
+      "id": "F7",
+      "evidence_status": "Evidence-backed",
+      "finding": "91 quantification rejections have a NUM modifier attached to a PROPN head. This structural heuristic is not a count of 91 verified name-handling errors.",
+      "evidence": [
+        "analysis.json:numeric_modifiers_of_proper_names"
+      ]
+    },
+    {
+      "id": "F8",
+      "evidence_status": "Open question",
+      "finding": "The reviewed source-content and abstract-noun programs require a clearer domain/typing contract. Some may be usable with appropriate neural-predicate semantics, but the current programs do not establish that contract.",
+      "evidence": [
+        "semantic_reviews.jsonl:review_index=56,57,58,59,75,77,78"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": 1,
+      "action": "Define the semantic representation and compare a frozen text-model semantic parser against this baseline on development claims.",
+      "addresses": [
+        "F1",
+        "F3",
+        "F5",
+        "F8"
+      ],
+      "success_criterion": "Preserve argument identity, lexical compounds, genitive relations, source/content scope and tense/aspect on adjudicated examples; leave ambiguous cases explicit. Measure both coverage and correctness before claiming improvement."
+    },
+    {
+      "priority": 2,
+      "action": "Extend ordinary argument/modifier coverage and distinguish names, measurements and genuine quantities.",
+      "addresses": [
+        "F1",
+        "F4",
+        "F7"
+      ],
+      "success_criterion": "Retain locations and complements in examples such as occurred in Myanmar and IM-1 landed on the moon. Do not improve acceptance by deleting constraints."
+    },
+    {
+      "priority": 3,
+      "action": "Add contrastive tests and explicit event/source/abstract-entity contracts before training relation classifiers.",
+      "addresses": [
+        "F5",
+        "F6",
+        "F8"
+      ],
+      "success_criterion": "The earthquake genitive is not ownership; martial law remains a lexical unit; depiction/quotation does not silently certify world facts; temporal forms lead to distinct evidence conditions."
+    },
+    {
+      "priority": 4,
+      "action": "Keep input-form rejection and media-evidence uncertainty separate, and reserve independent sources for later evaluation.",
+      "addresses": [
+        "F1",
+        "F4"
+      ],
+      "success_criterion": "Fragments, metadata, multiple sentences and unresolved references have visible diagnostics. Compiler rejection is never scored as a factual refutation or insufficient-evidence prediction."
+    }
+  ],
+  "qualitative_review_indices": [
+    23,
+    50,
+    76,
+    55,
+    56,
+    10,
+    62
+  ]
+}

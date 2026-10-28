@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-28",
+  "inventory_claims": 2375,
+  "annotation_rows": 17813,
+  "development_eligible": 494,
+  "reserved_video_count": 102,
+  "input_files": {
+    "annotation": {
+      "path": "exp/phase1/reports/annotation_units.tsv",
+      "sha256": "e43976e4473af99d7931e3c8a8dfff39565f52af25e0cf180b06f85a8a203e4f"
+    },
+    "hypergraph": {
+      "path": "exp/phase1/hypergraph.jsonl",
+      "sha256": "918a9a815bd03af7fb17030d66fd5b6aa47d6b196d1d42a40ccb6b298b82f896"
+    },
+    "manifest": {
+      "path": "exp/phase2/manifest_avid.jsonl",
+      "sha256": "27cc087d45d69beb213cf0abb8a15b9d7575e35e6bb0c848ba940e7a3458c86b"
+    },
+    "reserved": {
+      "path": "exp/probabilistic_verification/pilot_20261015/reserved_videos.json",
+      "sha256": "b944115c1e64b355ce99aa1497131d2c4878a238ee414aa9a809935c4374b6a8"
+    }
+  },
+  "baseline_code_sha256": {
+    "scripts/probabilistic_verification/__init__.py": "2a04e48e76316ea6494a6b1fc16c5376d8fea082306ba88018a657777dffdbb8",
+    "scripts/probabilistic_verification/backend.py": "be3101746529d9f582e959dd918330541ace2c6329222a3997575f09b07b177e",
+    "scripts/probabilistic_verification/compiler.py": "a0c33a187e05df7610385ab279962d9e3505c15c08ceb309e689e8722f4761c8",
+    "scripts/probabilistic_verification/logic.py": "21885304608b896045db81175c2d1fb3b8a1bd3a137d86df32f775ff2bfcd182",
+    "scripts/probabilistic_verification/multimodal.py": "b3ba93da917ebb3628659c0fb4adb723bb3ff6648902b21bf93c3c9f82cbbac3",
+    "scripts/probabilistic_verification/parsing.py": "c5623d06475ae453d700eae6e133b6a0eb65a8e431efc024cdf33c0c4999d5e4",
+    "scripts/probabilistic_verification/representation.py": "a4329ccf0a3bd66b37fe92bfbae2dbe762883346f133f58a470220ee860efab6"
+  },
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "versions": {
+    "stanza": "1.10.1",
+    "torch": "2.10.0+cu128"
+  },
+  "cached_parser_provenance": "Existing phase1 hypergraph UD records; original runtime/model version is not recorded in that artifact.",
+  "cached_conversion": "Zero-based token/head indices become one-based; self-headed root becomes head 0. SpaCy SPACE-only records are omitted (retained in original_tokens), with original lexical IDs preserved. No lexical/dependency edits. Stored cache has no morphology or word offsets.",
+  "review_scope": "Text-only assistant semantic review on development-eligible sources, not independent human gold; reserved source labels/media are not read.",
+  "sampling_seed": 20261028
+}

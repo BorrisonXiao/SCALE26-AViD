@@ -1,0 +1,532 @@
+{
+  "date": "2026-10-28",
+  "verification": {
+    "compiler_replays": 4721,
+    "recorded_parser_rejections": 29,
+    "inventory_claims": 2375,
+    "both_conditions_cover_inventory": true,
+    "adapter_lexical_tokens_preserved": true,
+    "excluded_cached_whitespace_records": 7,
+    "code_hashes_match_frozen_snapshot": true,
+    "review_sample_has_no_reserved_sources": true,
+    "random_sample_matches_frozen_seed": true
+  },
+  "acceptance_matrix": [
+    {
+      "cached_compiled": false,
+      "current_compiled": false,
+      "count": 2294
+    },
+    {
+      "cached_compiled": false,
+      "current_compiled": true,
+      "count": 2
+    },
+    {
+      "cached_compiled": true,
+      "current_compiled": false,
+      "count": 3
+    },
+    {
+      "cached_compiled": true,
+      "current_compiled": true,
+      "count": 76
+    }
+  ],
+  "unhandled_token_pos": {
+    "NOUN": 1542,
+    "ADP": 1462,
+    "PROPN": 930,
+    "DET": 870,
+    "VERB": 514,
+    "ADJ": 496,
+    "ADV": 277,
+    "PART": 192,
+    "PRON": 129,
+    "CCONJ": 86,
+    "SCONJ": 81,
+    "NUM": 78,
+    "AUX": 73,
+    "SYM": 7,
+    "X": 3
+  },
+  "unhandled_token_dependencies": {
+    "case": 1457,
+    "det": 868,
+    "obl": 812,
+    "compound": 582,
+    "nmod": 554,
+    "amod": 482,
+    "advmod": 285,
+    "mark": 209,
+    "obj": 192,
+    "xcomp": 161,
+    "acl": 132,
+    "nsubj": 121,
+    "advcl": 110,
+    "conj": 99,
+    "cc": 91,
+    "flat": 76,
+    "appos": 75,
+    "nmod:poss": 68,
+    "ccomp": 56,
+    "compound:prt": 40,
+    "expl": 39,
+    "acl:relcl": 36,
+    "cop": 32,
+    "fixed": 28,
+    "aux": 27,
+    "dep": 19,
+    "nmod:tmod": 18,
+    "parataxis": 16,
+    "aux:pass": 14,
+    "nsubj:pass": 8,
+    "iobj": 8,
+    "obl:tmod": 7,
+    "obl:agent": 7,
+    "nmod:npmod": 3,
+    "obl:npmod": 3,
+    "advcl:relcl": 2,
+    "csubj": 2,
+    "vocative": 1
+  },
+  "numeric_modifiers_of_proper_names": {
+    "count": 91,
+    "claim_ids": [
+      "TbJqMFkNxARY_121",
+      "TbJqMFkNxARY_138",
+      "TbJqMFkNxARY_152",
+      "TbJqMFkNxARY_153",
+      "TbJqMFkNxARY_155",
+      "TbJqMFkNxARY_156",
+      "T2EE72iNELEs_193",
+      "Tg0UxWYuPeJ0_328",
+      "Tg0UxWYuPeJ0_329",
+      "Tg0UxWYuPeJ0_336",
+      "Tg0UxWYuPeJ0_337",
+      "Tg0UxWYuPeJ0_340",
+      "Tg0UxWYuPeJ0_344",
+      "Tg0UxWYuPeJ0_366",
+      "Tg0UxWYuPeJ0_367",
+      "Tg0UxWYuPeJ0_368",
+      "Tg0UxWYuPeJ0_369",
+      "Tg0UxWYuPeJ0_370",
+      "Tg0UxWYuPeJ0_399",
+      "Tg0UxWYuPeJ0_410",
+      "Tg0UxWYuPeJ0_411",
+      "Tg0UxWYuPeJ0_412",
+      "Tg0UxWYuPeJ0_413",
+      "Tg0UxWYuPeJ0_414",
+      "Tg0UxWYuPeJ0_416",
+      "Tg0UxWYuPeJ0_426",
+      "Tg0UxWYuPeJ0_428",
+      "Tg0UxWYuPeJ0_430",
+      "TFOEIehBwT8Q_482",
+      "TFOEIehBwT8Q_495",
+      "TQEmEycTI0RQ_833",
+      "TQEmEycTI0RQ_891",
+      "TQEmEycTI0RQ_907",
+      "TQEmEycTI0RQ_974",
+      "T2G_ACMxR_I4_1090",
+      "T2G_ACMxR_I4_1092",
+      "T2G_ACMxR_I4_1100",
+      "T2G_ACMxR_I4_1102",
+      "T2G_ACMxR_I4_1103",
+      "T2G_ACMxR_I4_1111",
+      "T2G_ACMxR_I4_1113",
+      "T2G_ACMxR_I4_1115",
+      "T2G_ACMxR_I4_1116",
+      "T2G_ACMxR_I4_1120",
+      "T2G_ACMxR_I4_1121",
+      "T2G_ACMxR_I4_1122",
+      "T2G_ACMxR_I4_1123",
+      "T2G_ACMxR_I4_1125",
+      "T2G_ACMxR_I4_1126",
+      "T2G_ACMxR_I4_1127",
+      "T2G_ACMxR_I4_1128",
+      "T2G_ACMxR_I4_1131",
+      "T2G_ACMxR_I4_1132",
+      "T2G_ACMxR_I4_1195",
+      "T2G_ACMxR_I4_1209",
+      "T2G_ACMxR_I4_1249",
+      "T2G_ACMxR_I4_1257",
+      "T2G_ACMxR_I4_1266",
+      "T2G_ACMxR_I4_1272",
+      "T2G_ACMxR_I4_1277",
+      "T2G_ACMxR_I4_1279",
+      "T2G_ACMxR_I4_1378",
+      "T2G_ACMxR_I4_1380",
+      "T2G_ACMxR_I4_1406",
+      "T2G_ACMxR_I4_1413",
+      "TgPh_fzHTCm4_1484",
+      "TgPh_fzHTCm4_1493",
+      "TFgw4IaR9R8s_1581",
+      "TFgw4IaR9R8s_1582",
+      "TFgw4IaR9R8s_1603",
+      "TFgw4IaR9R8s_1607",
+      "TFgw4IaR9R8s_1608",
+      "TFgw4IaR9R8s_1609",
+      "TFgw4IaR9R8s_1610",
+      "TFgw4IaR9R8s_1692",
+      "TW4OYA3RN-Hw_1792",
+      "TgR_u37mCoQ4_1866",
+      "TgR_u37mCoQ4_1868",
+      "TgR_u37mCoQ4_1930",
+      "TgR_u37mCoQ4_1940",
+      "TgR_u37mCoQ4_1944",
+      "TgR_u37mCoQ4_1946",
+      "TgR_u37mCoQ4_1948",
+      "TgR_u37mCoQ4_1953",
+      "TgR_u37mCoQ4_1954",
+      "TzzhcBIczf_M_2031",
+      "Txf2EdqOg1SQ_2305",
+      "Txf2EdqOg1SQ_2306",
+      "Txf2EdqOg1SQ_2311",
+      "Txf2EdqOg1SQ_2373",
+      "Txf2EdqOg1SQ_2383"
+    ],
+    "interpretation": "Structural heuristic only: not all such numbers have been semantically adjudicated."
+  },
+  "accepted_finite_tense": {
+    "count": 74,
+    "claim_ids": [
+      "TInVWzp25aIM_3",
+      "TInVWzp25aIM_4",
+      "TInVWzp25aIM_13",
+      "TInVWzp25aIM_32",
+      "TInVWzp25aIM_33",
+      "TInVWzp25aIM_42",
+      "TInVWzp25aIM_43",
+      "TInVWzp25aIM_76",
+      "TInVWzp25aIM_81",
+      "TInVWzp25aIM_84",
+      "TInVWzp25aIM_90",
+      "TInVWzp25aIM_104",
+      "TzF9M4kZ3Pys_217",
+      "TzF9M4kZ3Pys_219",
+      "TzF9M4kZ3Pys_266",
+      "TzF9M4kZ3Pys_291",
+      "TzF9M4kZ3Pys_294",
+      "Tg0UxWYuPeJ0_353",
+      "Tg0UxWYuPeJ0_402",
+      "Tg0UxWYuPeJ0_434",
+      "TFOEIehBwT8Q_475",
+      "TFOEIehBwT8Q_511",
+      "TLO3smKI67PM_553",
+      "TLO3smKI67PM_555",
+      "TLO3smKI67PM_588",
+      "TLO3smKI67PM_591",
+      "Tsuk2uoYj-kc_623",
+      "TKCfkoNUssZI_700",
+      "TKCfkoNUssZI_704",
+      "TKCfkoNUssZI_715",
+      "TKCfkoNUssZI_720",
+      "TKCfkoNUssZI_729",
+      "TMrQshDs8aH0_739",
+      "TjHepwuhkYFA_1045",
+      "TjHepwuhkYFA_1080",
+      "TjHepwuhkYFA_1086",
+      "TjHepwuhkYFA_1087",
+      "TjHepwuhkYFA_1088",
+      "TjHepwuhkYFA_1089",
+      "T2G_ACMxR_I4_1130",
+      "T2G_ACMxR_I4_1189",
+      "T2G_ACMxR_I4_1286",
+      "T2G_ACMxR_I4_1293",
+      "T2G_ACMxR_I4_1295",
+      "T2G_ACMxR_I4_1304",
+      "T2G_ACMxR_I4_1305",
+      "T2G_ACMxR_I4_1309",
+      "T2G_ACMxR_I4_1333",
+      "T2G_ACMxR_I4_1334",
+      "T2G_ACMxR_I4_1368",
+      "T2G_ACMxR_I4_1370",
+      "T2G_ACMxR_I4_1403",
+      "T2G_ACMxR_I4_1439",
+      "TFgw4IaR9R8s_1640",
+      "TFgw4IaR9R8s_1674",
+      "TFgw4IaR9R8s_1733",
+      "TFgw4IaR9R8s_1743",
+      "TFgw4IaR9R8s_1764",
+      "TgR_u37mCoQ4_1870",
+      "TgR_u37mCoQ4_1932",
+      "TzzhcBIczf_M_2043",
+      "TzzhcBIczf_M_2045",
+      "TzzhcBIczf_M_2049",
+      "TzzhcBIczf_M_2051",
+      "TzzhcBIczf_M_2060",
+      "TzzhcBIczf_M_2073",
+      "TzzhcBIczf_M_2099",
+      "TzzhcBIczf_M_2153",
+      "Txf2EdqOg1SQ_2179",
+      "Txf2EdqOg1SQ_2180",
+      "Txf2EdqOg1SQ_2181",
+      "Txf2EdqOg1SQ_2313",
+      "Txf2EdqOg1SQ_2329",
+      "Txf2EdqOg1SQ_2442"
+    ],
+    "interpretation": "Finite tense is present in the input; current predicate families provide no explicit tense/aspect constraints."
+  },
+  "by_topic": {
+    "T1JQ-aG78Zuc": {
+      "unsupported": 13
+    },
+    "T2EE72iNELEs": {
+      "unsupported": 33,
+      "parser_rejected": 1,
+      "compiled": 1
+    },
+    "T2G_ACMxR_I4": {
+      "unsupported": 354,
+      "compiled": 14,
+      "parser_rejected": 2
+    },
+    "T3HTSBW42QaY": {
+      "unsupported": 30
+    },
+    "T8u81WMIyj18": {
+      "unsupported": 6
+    },
+    "TFOEIehBwT8Q": {
+      "unsupported": 85,
+      "parser_rejected": 2,
+      "compiled": 2
+    },
+    "TFgw4IaR9R8s": {
+      "unsupported": 240,
+      "compiled": 5,
+      "parser_rejected": 3
+    },
+    "TInVWzp25aIM": {
+      "unsupported": 104,
+      "compiled": 12
+    },
+    "TKCfkoNUssZI": {
+      "unsupported": 48,
+      "compiled": 5
+    },
+    "TLO3smKI67PM": {
+      "unsupported": 35,
+      "compiled": 4
+    },
+    "TMrQshDs8aH0": {
+      "unsupported": 21,
+      "compiled": 1
+    },
+    "TQEmEycTI0RQ": {
+      "unsupported": 184,
+      "parser_rejected": 11
+    },
+    "TQKCK6-tRaoE": {
+      "unsupported": 30,
+      "compiled": 1
+    },
+    "TW4OYA3RN-Hw": {
+      "unsupported": 61,
+      "parser_rejected": 3
+    },
+    "TbJqMFkNxARY": {
+      "unsupported": 53
+    },
+    "Tg0UxWYuPeJ0": {
+      "unsupported": 126,
+      "compiled": 4,
+      "parser_rejected": 3
+    },
+    "TgPh_fzHTCm4": {
+      "unsupported": 45
+    },
+    "TgR_u37mCoQ4": {
+      "unsupported": 172,
+      "compiled": 2,
+      "parser_rejected": 2
+    },
+    "TjHepwuhkYFA": {
+      "unsupported": 87,
+      "compiled": 6
+    },
+    "Tsuk2uoYj-kc": {
+      "unsupported": 48,
+      "compiled": 1
+    },
+    "Txf2EdqOg1SQ": {
+      "unsupported": 277,
+      "compiled": 6,
+      "parser_rejected": 1
+    },
+    "TzF9M4kZ3Pys": {
+      "unsupported": 92,
+      "compiled": 6,
+      "parser_rejected": 1
+    },
+    "TzzhcBIczf_M": {
+      "unsupported": 124,
+      "compiled": 8
+    }
+  },
+  "review_sample_counts": {
+    "random": 50,
+    "diagnostic": 20,
+    "accepted_development": 9
+  },
+  "semantic_review": {
+    "random": {
+      "n": 50,
+      "compiler_statuses": {
+        "unsupported": 49,
+        "compiled": 1
+      },
+      "core_assessments": {
+        "not_emitted": 49,
+        "adequate_in_restricted_core": 1
+      },
+      "flags": {
+        "complement": 2,
+        "location": 18,
+        "compound_attachment": 1,
+        "source_content": 11,
+        "fragment": 6,
+        "appearance_scope": 2,
+        "quantity": 10,
+        "clausal_complement": 4,
+        "unit": 1,
+        "temporal": 10,
+        "nominal_predication": 2,
+        "organization_relation": 2,
+        "manner": 2,
+        "tense_aspect_missing": 1,
+        "event_nominal_typing": 1,
+        "nominalization": 1,
+        "negation": 2,
+        "modal_scope": 4,
+        "inference_scope": 1,
+        "pronoun": 3,
+        "degree": 1,
+        "causal_relation": 1,
+        "phrasal_verb": 2,
+        "partitive": 2,
+        "source_attribution": 1,
+        "relative_clause": 2,
+        "passive_agent": 3,
+        "coordination": 2,
+        "concessive_scope": 1,
+        "uncertainty": 2,
+        "nonpropositional_entry": 1,
+        "recipient": 1,
+        "existential": 3,
+        "abstract_entity_typing": 1,
+        "change_of_state": 1,
+        "goal_result": 1,
+        "direction": 3,
+        "circumstance": 1,
+        "goal": 1,
+        "apposition": 1,
+        "input_ambiguity": 2,
+        "topic": 1,
+        "attachment_ambiguity": 1,
+        "measurement": 1,
+        "allegation_scope": 1,
+        "epistemic_scope": 1,
+        "beneficiary": 1,
+        "question_scope": 1,
+        "diagnostic_overgeneralization": 1,
+        "context_reference": 1,
+        "number_in_name": 2,
+        "tense_aspect": 2,
+        "inchoative_aspect": 1
+      }
+    },
+    "diagnostic": {
+      "n": 20,
+      "compiler_statuses": {
+        "compiled": 10,
+        "unsupported": 9,
+        "parser_rejected": 1
+      },
+      "core_assessments": {
+        "adequate_in_restricted_core": 5,
+        "incorrect_core": 1,
+        "ambiguous_semantic_contract": 4,
+        "not_emitted": 10
+      },
+      "flags": {
+        "tense_aspect_missing": 10,
+        "event_nominal_typing": 1,
+        "context_dependent_attribute": 2,
+        "lexical_compound": 1,
+        "source_content_scope_unspecified": 3,
+        "abstract_entity_typing": 2,
+        "role_metadata_not_predicate_specific": 1,
+        "source_content": 4,
+        "relative_clause": 2,
+        "coordination": 6,
+        "parser_error": 1,
+        "temporal": 6,
+        "quantity": 1,
+        "reference": 2,
+        "modal_scope": 1,
+        "direction": 1,
+        "epistemic_scope": 1,
+        "location": 1,
+        "pronoun": 1,
+        "attempt_scope": 2,
+        "negation": 1,
+        "inchoative_aspect": 1,
+        "goal": 1,
+        "source_attribution": 1,
+        "multi_sentence": 1,
+        "tense_aspect": 1,
+        "numeric_predication": 1
+      }
+    },
+    "accepted_development": {
+      "n": 9,
+      "compiler_statuses": {
+        "compiled": 9
+      },
+      "core_assessments": {
+        "adequate_in_restricted_core": 5,
+        "ambiguous_semantic_contract": 3,
+        "incorrect_core": 1
+      },
+      "flags": {
+        "fragment": 1,
+        "plural_group_semantics": 3,
+        "temporal_aspect_missing": 1,
+        "predicate_lemma_normalization": 1,
+        "tense_aspect_missing": 8,
+        "role_metadata_not_predicate_specific": 1,
+        "idiom": 1,
+        "event_nominal_typing": 2,
+        "wrong_possessive_relation": 1,
+        "source_content_scope_unspecified": 2,
+        "role_identity_risk": 1
+      }
+    }
+  },
+  "accepted_development_review": {
+    "n": 20,
+    "core_assessments": {
+      "adequate_in_restricted_core": 11,
+      "incorrect_core": 2,
+      "ambiguous_semantic_contract": 7
+    },
+    "flags": {
+      "tense_aspect_missing": 19,
+      "event_nominal_typing": 4,
+      "context_dependent_attribute": 2,
+      "lexical_compound": 1,
+      "source_content_scope_unspecified": 5,
+      "abstract_entity_typing": 2,
+      "role_metadata_not_predicate_specific": 2,
+      "fragment": 1,
+      "plural_group_semantics": 3,
+      "temporal_aspect_missing": 1,
+      "predicate_lemma_normalization": 1,
+      "idiom": 1,
+      "wrong_possessive_relation": 1,
+      "role_identity_risk": 1
+    },
+    "label_source": "assistant text review, not independent human gold"
+  }
+}

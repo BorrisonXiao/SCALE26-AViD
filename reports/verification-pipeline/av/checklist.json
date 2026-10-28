@@ -4,26 +4,26 @@
     {
       "id": 6,
       "title": "Audit compilation on real dataset claims",
-      "status": "next priority; full audit pending",
+      "status": "audit completed; compiler fixes remain separate",
       "items": [
         {
           "text": "Freeze the current claim texts and parser/compiler versions; use the 2,375-claim annotation inventory, not the older 761-claim file",
-          "done": false
+          "done": true
         },
         {
           "text": "Run the unchanged compiler and retain accepted programs, rejected claims and unexpected errors",
-          "done": false
+          "done": true
         },
         {
           "text": "Review about 50 random claims plus a separate difficult diagnostic set, including accepted and rejected cases",
-          "done": false
+          "done": true
         },
         {
           "text": "Measure compilation coverage separately from meaning preservation; keep parser rejection separate from insufficient media evidence",
-          "done": false
+          "done": true
         }
       ],
-      "note": "Existing cached trees match the current 2,375 claim texts. Reuse them where they preserve the required details; do not assume the older semantic analyses are gold. The full compiler audit has not yet been run."
+      "note": "Frozen current-pipeline census: 78 of 2,375 claims compile (3.28%); 2,268 compiler rejections and 29 parser refusals. The stored parses compile 79 claims. Reviewed 50 random development claims, 20 diagnostic cases and 9 supplemental accepted cases, covering all 20 accepted development programs. Semantic judgments are assistant reviews, not independent human gold. Compiler code is unchanged."
     },
     {
       "id": 7,
@@ -176,10 +176,20 @@
       ]
     }
   ],
-  "intro": "Compiler meaning preservation is now the first priority. Audit real claims, improve semantic parsing, and add contrastive checks before extending feature extraction or training. Completed visual/audio pilot work is retained below.",
+  "intro": "The real-claim baseline audit is complete. Improve semantic parsing and contrastive checks before extending feature extraction or training. Completed visual/audio pilot work is retained below.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
     "status": "diagnostic of the unchanged compiler; proposed temporal handling is not implemented"
+  },
+  "audit_run": {
+    "source_path": "exp/probabilistic_verification/compilation_audit_20261028",
+    "completed_stages": [
+      "frozen",
+      "census",
+      "reviewed",
+      "analyzed"
+    ],
+    "report_anchor": "compilation-audit"
   }
 }
