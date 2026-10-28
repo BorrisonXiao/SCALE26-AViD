@@ -1,0 +1,126 @@
+{
+  "scope": "development comparison; compilation coverage is not semantic accuracy",
+  "selected_development": 79,
+  "reserved_source_overlap": 0,
+  "model": "Qwen3-VL-8B-Instruct, frozen, text-only, float16, Transformers",
+  "cohorts": {
+    "random": {
+      "n": 50,
+      "baseline_compiled": 1,
+      "status": {
+        "unsupported": 46,
+        "compiled": 4
+      },
+      "representation": {
+        "decomposed world claim": 4
+      }
+    },
+    "diagnostic": {
+      "n": 20,
+      "baseline_compiled": 10,
+      "status": {
+        "compiled": 4,
+        "unsupported": 15,
+        "parser_refusal": 1
+      },
+      "representation": {
+        "decomposed world claim": 4
+      }
+    },
+    "accepted_development": {
+      "n": 9,
+      "baseline_compiled": 9,
+      "status": {
+        "unsupported": 6,
+        "compiled": 3
+      },
+      "representation": {
+        "decomposed world claim": 3
+      }
+    }
+  },
+  "contrast_status": {
+    "unsupported": 13,
+    "compiled": 8
+  },
+  "diagnostics": {
+    "function_word": 16,
+    "relation_arguments": 3,
+    "scope": 5,
+    "schema": 2,
+    "quantity": 2,
+    "roles": 2,
+    "compiled": 19,
+    "head": 10,
+    "parser_abstention": 7,
+    "source_scope": 7,
+    "coverage": 3,
+    "predicate_analysis": 6,
+    "source_analysis": 1,
+    "span": 2,
+    "source": 8,
+    "predicate_anchor": 2,
+    "reference": 3,
+    "role_frame": 1
+  },
+  "requests_generated": 99,
+  "prompt_demonstration_claim": "TInVWzp25aIM_13",
+  "generation_seconds": 2394.8902292251587,
+  "output_tokens": 44760,
+  "compiler_seconds": 1.3273718357086182,
+  "provenance": "Exact raw prompts/outputs retained; text and parser inputs match frozen audit; no media/fact labels supplied.",
+  "development": {
+    "n": 79,
+    "baseline_compiled": 20,
+    "status": {
+      "unsupported": 67,
+      "compiled": 11,
+      "parser_refusal": 1
+    },
+    "representation": {
+      "decomposed world claim": 11
+    },
+    "accepted_with_normalization": 3
+  },
+  "all_cohort_names": {
+    "random": 50,
+    "diagnostic": 20,
+    "accepted_development": 9,
+    "constructed_contrast": 21
+  },
+  "pilot": {
+    "v1_compiled": 2,
+    "v2_compiled": 4
+  },
+  "tests": {
+    "tests": 64,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "diagnostic30b": {
+    "n": 7,
+    "status": {
+      "compiled": 3,
+      "unsupported": 4
+    },
+    "representation": {
+      "decomposed world claim": 3
+    },
+    "model": "Qwen3-30B-A3B-Instruct-2507, frozen text model, float16, layers split across four V100s",
+    "generation_seconds": 845.0971007347107,
+    "scope": "Seven purposively selected development diagnostics, same prompt and compiler; not comparable to the 79-claim coverage denominator."
+  },
+  "source_prompt_v3": {
+    "n": 3,
+    "status": {
+      "compiled": 3
+    },
+    "compiled_without_unused_annotation_removal": 0,
+    "representation": {
+      "source content retained as text": 3
+    },
+    "generation_seconds": 42.994279861450195,
+    "scope": "Three known development failures after adding synthetic source-scope examples; not an independent evaluation or new 79-claim coverage estimate."
+  }
+}

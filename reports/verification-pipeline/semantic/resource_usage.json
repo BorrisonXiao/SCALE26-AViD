@@ -1,0 +1,90 @@
+{
+  "jobs": [
+    {
+      "job_id": "1145858",
+      "state": "CANCELLED by 1906",
+      "elapsed": "00:00:00",
+      "start": "None",
+      "end": "2026-10-28T15:17:52",
+      "allocated_gpus": 0,
+      "allocated_resources": ""
+    },
+    {
+      "job_id": "1145869",
+      "state": "COMPLETED",
+      "elapsed": "00:03:49",
+      "start": "2026-10-28T15:17:41",
+      "end": "2026-10-28T15:21:30",
+      "allocated_gpus": 1,
+      "allocated_resources": "billing=372,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=96G,node=1"
+    },
+    {
+      "job_id": "1145876",
+      "state": "COMPLETED",
+      "elapsed": "00:01:35",
+      "start": "2026-10-28T15:22:42",
+      "end": "2026-10-28T15:24:17",
+      "allocated_gpus": 1,
+      "allocated_resources": "billing=372,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=96G,node=1"
+    },
+    {
+      "job_id": "1145884_0",
+      "state": "COMPLETED",
+      "elapsed": "00:10:26",
+      "start": "2026-10-28T15:26:42",
+      "end": "2026-10-28T15:37:08",
+      "allocated_gpus": 1,
+      "allocated_resources": "billing=372,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=96G,node=1"
+    },
+    {
+      "job_id": "1145884_1",
+      "state": "COMPLETED",
+      "elapsed": "00:11:21",
+      "start": "2026-10-28T15:26:42",
+      "end": "2026-10-28T15:38:03",
+      "allocated_gpus": 1,
+      "allocated_resources": "billing=372,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=96G,node=1"
+    },
+    {
+      "job_id": "1145884_2",
+      "state": "COMPLETED",
+      "elapsed": "00:10:40",
+      "start": "2026-10-28T15:26:42",
+      "end": "2026-10-28T15:37:22",
+      "allocated_gpus": 1,
+      "allocated_resources": "billing=372,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=96G,node=1"
+    },
+    {
+      "job_id": "1145884_3",
+      "state": "COMPLETED",
+      "elapsed": "00:11:29",
+      "start": "2026-10-28T15:26:42",
+      "end": "2026-10-28T15:38:11",
+      "allocated_gpus": 1,
+      "allocated_resources": "billing=372,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=96G,node=1"
+    },
+    {
+      "job_id": "1145907",
+      "state": "COMPLETED",
+      "elapsed": "00:23:15",
+      "start": "2026-10-28T15:38:44",
+      "end": "2026-10-28T16:01:59",
+      "allocated_gpus": 4,
+      "allocated_resources": "billing=1288,cpu=6,gres/gpu:v100=4,gres/gpu=4,mem=128G,node=1"
+    },
+    {
+      "job_id": "1145958",
+      "state": "COMPLETED",
+      "elapsed": "00:01:48",
+      "start": "2026-10-28T16:02:16",
+      "end": "2026-10-28T16:04:04",
+      "allocated_gpus": 1,
+      "allocated_resources": "billing=372,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=96G,node=1"
+    }
+  ],
+  "peak_concurrent_gpus": 4,
+  "allocated_gpu_hours": 2.402222222222222,
+  "all_started_jobs_completed": true,
+  "pending_or_running_jobs": 0,
+  "notes": "A100 job cancelled before allocation; all actual GPU allocations used V100s. Elapsed allocation includes model loading and generation; it is not inference-only timing."
+}

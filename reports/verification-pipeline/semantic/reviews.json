@@ -1,0 +1,197 @@
+{
+  "date": "2026-10-28",
+  "reviewer": "assistant; same developer as the compiler",
+  "evidence_status": "Inferred from original text, raw model proposal and compiled/rejected output; no media reviewed",
+  "scope": "All 11 accepted broad 8B development programs, all seven larger-model diagnostics, three revised-prompt source programs, and five diagnostic refusals were inspected. These are assistant reviews, not independent human gold. Home-run meaning and some type/role contracts remain unresolved.",
+  "examples": [
+    {
+      "claim_id": "TInVWzp25aIM_13",
+      "model": "8b",
+      "assessment": "adequate restricted core",
+      "judgment": "The cause and effect use one complete tuple, massive modifies the same flooding referent, and the auxiliary chain adds present progressive. This exact claim is a worked prompt example, so it is not independent evidence of parser generalization.",
+      "draw": true
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1001",
+      "model": "8b",
+      "assessment": "adequate restricted core",
+      "judgment": "The earthquake and Myanmar are linked in occur(theme,location), with the preposition in preserved and an explicit past/simple condition. The dropped preposition is recovered and logged.",
+      "draw": true
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_289",
+      "model": "8b",
+      "assessment": "core retained; coarse role label",
+      "judgment": "The directional word towards survives in the complete tuple. Location is a coarse role name for the goal. The gerund fragment is progressive with unspecified finite tense, rather than silently made present tense.",
+      "draw": false
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1396",
+      "model": "8b",
+      "assessment": "adequate restricted core",
+      "judgment": "IM-1 stays one named referent despite its split tokens and NOUN tag. The spacecraft is theme and moon location; on survives in the tuple. The ordinary affirmative landing reading requires completion before the reference context.",
+      "draw": true
+    },
+    {
+      "claim_id": "TInVWzp25aIM_76",
+      "model": "8b",
+      "assessment": "typing needs review",
+      "judgment": "Heavy modifies the same winds referent that participates in bringing. The complete subject/object tuple and progressive aspect are retained, but winds is typed object and the storm receives an agent label; natural phenomena need a clearer type/role contract.",
+      "draw": false
+    },
+    {
+      "claim_id": "TInVWzp25aIM_90",
+      "model": "8b",
+      "assessment": "core retained; coarse role label",
+      "judgment": "The storm and the Alaskan coast stay linked under impact with past tense. The natural causer is labeled agent, which is coarser than the intended intentional-agent definition. The tuple is not reversed.",
+      "draw": false
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_715",
+      "model": "8b",
+      "assessment": "adequate restricted core",
+      "judgment": "Martial law troops is retained as one group description, rather than law_troops plus an independent martial property. The complete storm event links that group to the parliament building.",
+      "draw": true
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1403",
+      "model": "8b",
+      "assessment": "core retained; coarse role label",
+      "judgment": "Stephen Altemus and the IM team are linked in the same congratulate event. Theme names the target coarsely; this is not an argument reversal. Predicate-specific role definitions still need consistency checks.",
+      "draw": false
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_720",
+      "model": "8b",
+      "assessment": "adequate core with plural limits",
+      "judgment": "Holding retains its actor, flags and present-progressive aspect. Plurality lives in the referent description and group inventory; no explicit number or universal quantifier has been implemented.",
+      "draw": false
+    },
+    {
+      "claim_id": "TLO3smKI67PM_591",
+      "model": "8b",
+      "assessment": "unresolved lexical reading",
+      "judgment": "The output still uses hit with a separate home-run event referent. The intended sporting achievement is not explicitly normalized to hit_home_run. This preserves the word tuple but leaves the same kind of idiom contract that the audit flagged. It is not counted as certified meaning preservation.",
+      "draw": false
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2073",
+      "model": "8b",
+      "assessment": "adequate restricted core",
+      "judgment": "Passive arrest correctly has only a theme and introduces no invented arresting agent. Has been arrested produces present perfect; whether the perfect is supported still needs evidence and a supplied reference interpretation.",
+      "draw": false
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_635",
+      "model": "8b",
+      "assessment": "appropriately rejected binding error",
+      "judgment": "The model proposed a walking event and a separate in(background) state without linking that location to the people or walking event. Word coverage passed, but the new binary-relation check rejects it.",
+      "draw": false
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2313",
+      "model": "8b",
+      "assessment": "appropriately rejected source error",
+      "judgment": "The model proposed an ordinary depict event with imagery and cloud-top temperatures instead of scoped media content. The source-scope check rejects this, even though the word tuple is otherwise complete.",
+      "draw": false
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1087",
+      "model": "8b",
+      "assessment": "parser representation failure",
+      "judgment": "The 8B output does not conform to the declared source/content interface. The compiler declines it instead of asserting damaged buildings as an unqualified world fact.",
+      "draw": false
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1080",
+      "model": "8b",
+      "assessment": "parser representation failure",
+      "judgment": "The 8B proposal needs a checked predicate/part-of-speech analysis before it can replace the old possess(earthquake,impact) error. Refusal here is not a successful semantic parse.",
+      "draw": false
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1000",
+      "model": "8b",
+      "assessment": "parser representation failure",
+      "judgment": "The 8B output invents a content semantic role and world referents inside source text. The declared source interface rejects it; quantities inside exact quoted content would otherwise be allowed.",
+      "draw": false
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1001",
+      "model": "30b",
+      "assessment": "adequate restricted core",
+      "judgment": "The larger model keeps the earthquake, Myanmar and past/simple occurrence condition. The preposition in is explicit in the tuple after recorded normalization. This is the same development diagnostic, not a new test claim.",
+      "draw": false
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1396",
+      "model": "30b",
+      "assessment": "adequate restricted core",
+      "judgment": "The complete IM-1 name, theme and on-moon location are retained. The raw mention omitted the hyphen token; unassigned punctuation is recorded without changing the name or event tuple.",
+      "draw": false
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_715",
+      "model": "30b",
+      "assessment": "adequate restricted core",
+      "judgment": "The larger model keeps martial law troops as one group and links it to the building. This does not add evidence of generalization beyond the already examined claim.",
+      "draw": false
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1087",
+      "model": "30b",
+      "assessment": "source-scope failure",
+      "judgment": "The larger model still emits an ordinary show event and an outer damaged property while placing content inside an event unit. This conflicts with the declared source scope and is rejected.",
+      "draw": false
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1088",
+      "model": "30b",
+      "assessment": "source-scope failure",
+      "judgment": "The larger model repeats the same structural source error on collapsed buildings. Scaling the model did not fix this interface failure.",
+      "draw": false
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1080",
+      "model": "30b",
+      "assessment": "missing genitive relation",
+      "judgment": "The model creates earthquake and impact referents but only states that impact is devastating. It omits their causal/effect relationship and treats the possessive marker as ignorable. Refusal is correct; this is not a successful repair of the genitive.",
+      "draw": false
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1000",
+      "model": "30b",
+      "assessment": "source-scope failure",
+      "judgment": "The model retains a source unit but also asserts an inner reach(death_toll,1600) event outside it. The referenced inner entities are not removable annotations, so source-scope validation rejects the proposal.",
+      "draw": false
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1000",
+      "model": "8b-v3",
+      "assessment": "adequate scoped source; inner content opaque",
+      "judgment": "The complete quoted text, including 1600, is an OCR assertion bound to the text source. An unused inner annotation is removed after checking the full complement. No earthquake/death-toll event is asserted in the world. The content is not recursively decomposed.",
+      "draw": true
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1087",
+      "model": "8b-v3",
+      "assessment": "adequate scoped source; inner content opaque",
+      "judgment": "The photo source binds to the exact phrase damaged buildings under the depiction route. The unused buildings annotation is removed from the outer entity list; no outer damaged-building fact is created. Depict is a source-level paraphrase of show here.",
+      "draw": true
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1088",
+      "model": "8b-v3",
+      "assessment": "adequate scoped source; inner content opaque",
+      "judgment": "The same source boundary is preserved for collapsed buildings. The program asks what the photos depict, and does not certify a world event or the cause of the collapse.",
+      "draw": false
+    }
+  ],
+  "remaining": [
+    "Keep the new compiler opt-in. The broad 8B parser covers fewer selected claims than v1; a larger model alone did not fix source scope. Three targeted source fixes combine prompt revision with checked normalization and do not establish generalization.",
+    "Re-run the source-aware prompt and compiler on the same development inventory before expanding. Resolve genitive relations, lexical readings such as hit a home run, natural-phenomenon types and inconsistent role names; do not relax semantic checks to raise coverage.",
+    "Add checked dependency repairs for genuine parser errors and more scope constructions. A model proposal that conflicts with the parse should be reviewed, not silently accepted.",
+    "Review more accepted programs independently, freeze the selected parser/compiler on development data, and evaluate on separate source videos.",
+    "Extract and review real temporal observations before treating interval checks as media verification; video-window localization and relation-classifier training remain later work."
+  ]
+}
