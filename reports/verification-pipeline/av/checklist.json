@@ -1,6 +1,94 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-28",
   "steps": [
+    {
+      "id": 6,
+      "title": "Audit compilation on real dataset claims",
+      "status": "next priority; full audit pending",
+      "items": [
+        {
+          "text": "Freeze the current claim texts and parser/compiler versions; use the 2,375-claim annotation inventory, not the older 761-claim file",
+          "done": false
+        },
+        {
+          "text": "Run the unchanged compiler and retain accepted programs, rejected claims and unexpected errors",
+          "done": false
+        },
+        {
+          "text": "Review about 50 random claims plus a separate difficult diagnostic set, including accepted and rejected cases",
+          "done": false
+        },
+        {
+          "text": "Measure compilation coverage separately from meaning preservation; keep parser rejection separate from insufficient media evidence",
+          "done": false
+        }
+      ],
+      "note": "Existing cached trees match the current 2,375 claim texts. Reuse them where they preserve the required details; do not assume the older semantic analyses are gold. The full compiler audit has not yet been run."
+    },
+    {
+      "id": 7,
+      "title": "Improve semantic parsing, including tense and aspect",
+      "status": "planned; temporal distinctions are not implemented",
+      "items": [
+        {
+          "text": "Compare the rule baseline with a frozen text model producing a constrained semantic representation assisted by dependency/SRL analyses",
+          "done": false
+        },
+        {
+          "text": "Keep deterministic compilation and checks for roles, shared references, source/content scope and word spans",
+          "done": false
+        },
+        {
+          "text": "Distinguish numbers inside names such as Apollo 11 from quantities, and preserve location arguments such as on the moon",
+          "done": false
+        },
+        {
+          "text": "Check current tense/aspect behavior with the exact Apollo examples and four simpler supported clauses",
+          "done": true
+        },
+        {
+          "text": "Preserve tense and aspect from the complete verb and auxiliary sequence, including past, progressive and perfect forms",
+          "done": false
+        },
+        {
+          "text": "Represent a context-dependent reference time and carry temporal conditions into executable predicates, evidence keys and verifier inputs",
+          "done": false
+        }
+      ],
+      "note": "First preserve the claim’s temporal meaning. Grounding events to video time windows, including parent/child interval proposals, is a later extension. Specific temporal predicates and evidence rules remain design proposals."
+    },
+    {
+      "id": 8,
+      "title": "Add contrastive compiler tests before relation training",
+      "status": "planned",
+      "items": [
+        {
+          "text": "Check paraphrases and active/passive forms for equivalent meaning",
+          "done": false
+        },
+        {
+          "text": "Check role swaps, modifier attachment, negation, conjunction and source assertions for the intended differences",
+          "done": false
+        },
+        {
+          "text": "Check landed versus is landing, was landing and has landed without collapsing them to one temporal condition",
+          "done": false
+        },
+        {
+          "text": "Inspect incomplete, completed and interrupted events; progressive evidence must not automatically certify completion",
+          "done": false
+        },
+        {
+          "text": "Do not assume a tense swap makes a negative: review the reference time, event identity and phases shown in the clip",
+          "done": false
+        },
+        {
+          "text": "Develop fixes on development sources, then freeze the compiler for evaluation on separate sources",
+          "done": false
+        }
+      ],
+      "note": "Time-box the initial audit and design comparison to roughly two or three working days (planning estimate). Extend frequent verification-relevant constructions first."
+    },
     {
       "id": 1,
       "title": "Check useful features from frozen visual and audio models",
@@ -87,5 +175,11 @@
         "Separate parsing, candidate, perception, classifier, and composition failures"
       ]
     }
-  ]
+  ],
+  "intro": "Compiler meaning preservation is now the first priority. Audit real claims, improve semantic parsing, and add contrastive checks before extending feature extraction or training. Completed visual/audio pilot work is retained below.",
+  "temporal_diagnostic": {
+    "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
+    "artifact": "temporal_compilation_check.json",
+    "status": "diagnostic of the unchanged compiler; proposed temporal handling is not implemented"
+  }
 }

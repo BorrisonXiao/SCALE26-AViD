@@ -1,0 +1,1132 @@
+{
+  "date": "2026-10-28",
+  "purpose": "Read-only diagnostic of the unchanged compiler, not a temporal implementation or benchmark",
+  "compiler_sha256": "a0c33a187e05df7610385ab279962d9e3505c15c08ceb309e689e8722f4761c8",
+  "parser": {
+    "library": "stanza",
+    "version": "1.10.1",
+    "device": "cpu",
+    "model_dir": "/exp/cxiao/.cache/stanza",
+    "model_sha256": {
+      "en/tokenize/combined.pt": "db893a78a14995f6ee18085c44263570b84fed676957a434ba5f6a9a7af939ca",
+      "en/pos/combined_charlm.pt": "af44da5e7e0e22a6d99d3b6e8932d3b3d630dd63d370b9819f6d598edae1ef61",
+      "en/lemma/combined_nocharlm.pt": "1be2573296bc837e6361db795a725c1b0a6c5ddc16e328a971d9353be84c1841",
+      "en/depparse/combined_charlm.pt": "466c62d0cbe97e6cbcc177ecf5693cd90f113dd03c246da26586eb7695d620f3"
+    }
+  },
+  "records": [
+    {
+      "status": "unsupported",
+      "code": "quantification",
+      "message": "Counting and quantified noun phrases are outside the initial fragment.",
+      "token_ids": [
+        2
+      ],
+      "tokens": [
+        {
+          "id": 1,
+          "text": "Apollo",
+          "lemma": "Apollo",
+          "upos": "PROPN",
+          "head": 3,
+          "deprel": "nsubj",
+          "start_char": 0,
+          "end_char": 6,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 2,
+          "text": "11",
+          "lemma": "11",
+          "upos": "NUM",
+          "head": 1,
+          "deprel": "nummod",
+          "start_char": 7,
+          "end_char": 9,
+          "feats": "NumForm=Digit|NumType=Card"
+        },
+        {
+          "id": 3,
+          "text": "landed",
+          "lemma": "land",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 10,
+          "end_char": 16,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "on",
+          "lemma": "on",
+          "upos": "ADP",
+          "head": 6,
+          "deprel": "case",
+          "start_char": 17,
+          "end_char": 19,
+          "feats": null
+        },
+        {
+          "id": 5,
+          "text": "the",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 6,
+          "deprel": "det",
+          "start_char": 20,
+          "end_char": 23,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 6,
+          "text": "moon",
+          "lemma": "moon",
+          "upos": "NOUN",
+          "head": 3,
+          "deprel": "obl",
+          "start_char": 24,
+          "end_char": 28,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 7,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 3,
+          "deprel": "punct",
+          "start_char": 28,
+          "end_char": 29,
+          "feats": null
+        }
+      ],
+      "text": "Apollo 11 landed on the moon."
+    },
+    {
+      "status": "unsupported",
+      "code": "quantification",
+      "message": "Counting and quantified noun phrases are outside the initial fragment.",
+      "token_ids": [
+        2
+      ],
+      "tokens": [
+        {
+          "id": 1,
+          "text": "Apollo",
+          "lemma": "Apollo",
+          "upos": "PROPN",
+          "head": 4,
+          "deprel": "nsubj",
+          "start_char": 0,
+          "end_char": 6,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 2,
+          "text": "11",
+          "lemma": "11",
+          "upos": "NUM",
+          "head": 1,
+          "deprel": "nummod",
+          "start_char": 7,
+          "end_char": 9,
+          "feats": "NumForm=Digit|NumType=Card"
+        },
+        {
+          "id": 3,
+          "text": "is",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 4,
+          "deprel": "aux",
+          "start_char": 10,
+          "end_char": 12,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "landing",
+          "lemma": "land",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 13,
+          "end_char": 20,
+          "feats": "Tense=Pres|VerbForm=Part"
+        },
+        {
+          "id": 5,
+          "text": "on",
+          "lemma": "on",
+          "upos": "ADP",
+          "head": 7,
+          "deprel": "case",
+          "start_char": 21,
+          "end_char": 23,
+          "feats": null
+        },
+        {
+          "id": 6,
+          "text": "the",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 7,
+          "deprel": "det",
+          "start_char": 24,
+          "end_char": 27,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 7,
+          "text": "moon",
+          "lemma": "moon",
+          "upos": "NOUN",
+          "head": 4,
+          "deprel": "obl",
+          "start_char": 28,
+          "end_char": 32,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 8,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 4,
+          "deprel": "punct",
+          "start_char": 32,
+          "end_char": 33,
+          "feats": null
+        }
+      ],
+      "text": "Apollo 11 is landing on the moon."
+    },
+    {
+      "claim_id": "tense_2",
+      "text": "The spacecraft landed.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "spacecraft",
+          "lemma": "spacecraft",
+          "upos": "NOUN",
+          "head": 3,
+          "deprel": "nsubj",
+          "start_char": 4,
+          "end_char": 14,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "landed",
+          "lemma": "land",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 15,
+          "end_char": 21,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 3,
+          "deprel": "punct",
+          "start_char": 21,
+          "end_char": 22,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "spacecraft",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "land",
+          "token_ids": [
+            3
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "spacecraft"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "spacecraft is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "land"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of land occurs.",
+          "token_ids": [
+            3
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "land",
+          "arguments": [
+            "E1",
+            "X1"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent"
+          ],
+          "text": "spacecraft landed.",
+          "token_ids": [
+            2,
+            3
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "exists",
+                "children": [
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a1",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [
+                  "E1"
+                ],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "spacecraft",
+          "represented_by": [
+            "a0",
+            "a2"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "landed",
+          "represented_by": [
+            "a1",
+            "a2"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1: ((entity(X1, spacecraft) AND EXISTS E1: ((event(E1, land) AND land(E1, X1)))))"
+    },
+    {
+      "claim_id": "tense_3",
+      "text": "The spacecraft is landing.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "spacecraft",
+          "lemma": "spacecraft",
+          "upos": "NOUN",
+          "head": 4,
+          "deprel": "nsubj",
+          "start_char": 4,
+          "end_char": 14,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "is",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 4,
+          "deprel": "aux",
+          "start_char": 15,
+          "end_char": 17,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "landing",
+          "lemma": "land",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 18,
+          "end_char": 25,
+          "feats": "Tense=Pres|VerbForm=Part"
+        },
+        {
+          "id": 5,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 4,
+          "deprel": "punct",
+          "start_char": 25,
+          "end_char": 26,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "spacecraft",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "land",
+          "token_ids": [
+            4
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "spacecraft"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "spacecraft is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "land"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of land occurs.",
+          "token_ids": [
+            4
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "land",
+          "arguments": [
+            "E1",
+            "X1"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent"
+          ],
+          "text": "spacecraft landing.",
+          "token_ids": [
+            2,
+            4
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "exists",
+                "children": [
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a1",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [
+                  "E1"
+                ],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "spacecraft",
+          "represented_by": [
+            "a0",
+            "a2"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "is",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "landing",
+          "represented_by": [
+            "a1",
+            "a2"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1: ((entity(X1, spacecraft) AND EXISTS E1: ((event(E1, land) AND land(E1, X1)))))"
+    },
+    {
+      "claim_id": "tense_4",
+      "text": "The spacecraft was landing.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "spacecraft",
+          "lemma": "spacecraft",
+          "upos": "NOUN",
+          "head": 4,
+          "deprel": "nsubj",
+          "start_char": 4,
+          "end_char": 14,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "was",
+          "lemma": "be",
+          "upos": "AUX",
+          "head": 4,
+          "deprel": "aux",
+          "start_char": 15,
+          "end_char": 18,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "landing",
+          "lemma": "land",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 19,
+          "end_char": 26,
+          "feats": "Tense=Pres|VerbForm=Part"
+        },
+        {
+          "id": 5,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 4,
+          "deprel": "punct",
+          "start_char": 26,
+          "end_char": 27,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "spacecraft",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "land",
+          "token_ids": [
+            4
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "spacecraft"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "spacecraft is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "land"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of land occurs.",
+          "token_ids": [
+            4
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "land",
+          "arguments": [
+            "E1",
+            "X1"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent"
+          ],
+          "text": "spacecraft landing.",
+          "token_ids": [
+            2,
+            4
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "exists",
+                "children": [
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a1",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [
+                  "E1"
+                ],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "spacecraft",
+          "represented_by": [
+            "a0",
+            "a2"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "was",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "landing",
+          "represented_by": [
+            "a1",
+            "a2"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1: ((entity(X1, spacecraft) AND EXISTS E1: ((event(E1, land) AND land(E1, X1)))))"
+    },
+    {
+      "claim_id": "tense_5",
+      "text": "The spacecraft has landed.",
+      "tokens": [
+        {
+          "id": 1,
+          "text": "The",
+          "lemma": "the",
+          "upos": "DET",
+          "head": 2,
+          "deprel": "det",
+          "start_char": 0,
+          "end_char": 3,
+          "feats": "Definite=Def|PronType=Art"
+        },
+        {
+          "id": 2,
+          "text": "spacecraft",
+          "lemma": "spacecraft",
+          "upos": "NOUN",
+          "head": 4,
+          "deprel": "nsubj",
+          "start_char": 4,
+          "end_char": 14,
+          "feats": "Number=Sing"
+        },
+        {
+          "id": 3,
+          "text": "has",
+          "lemma": "have",
+          "upos": "AUX",
+          "head": 4,
+          "deprel": "aux",
+          "start_char": 15,
+          "end_char": 18,
+          "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+        },
+        {
+          "id": 4,
+          "text": "landed",
+          "lemma": "land",
+          "upos": "VERB",
+          "head": 0,
+          "deprel": "root",
+          "start_char": 19,
+          "end_char": 25,
+          "feats": "Tense=Past|VerbForm=Part"
+        },
+        {
+          "id": 5,
+          "text": ".",
+          "lemma": ".",
+          "upos": "PUNCT",
+          "head": 4,
+          "deprel": "punct",
+          "start_char": 25,
+          "end_char": 26,
+          "feats": null
+        }
+      ],
+      "variables": [
+        {
+          "name": "X1",
+          "kind": "entity",
+          "description": "spacecraft",
+          "token_ids": [
+            2
+          ]
+        },
+        {
+          "name": "E1",
+          "kind": "event",
+          "description": "land",
+          "token_ids": [
+            4
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "id": "a0",
+          "predicate": "entity",
+          "arguments": [
+            "X1",
+            "spacecraft"
+          ],
+          "kind": "entity",
+          "roles": [
+            "referent",
+            "type"
+          ],
+          "text": "spacecraft is present.",
+          "token_ids": [
+            2
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a1",
+          "predicate": "event",
+          "arguments": [
+            "E1",
+            "land"
+          ],
+          "kind": "event",
+          "roles": [
+            "event",
+            "action"
+          ],
+          "text": "An instance of land occurs.",
+          "token_ids": [
+            4
+          ],
+          "trainable": false
+        },
+        {
+          "id": "a2",
+          "predicate": "land",
+          "arguments": [
+            "E1",
+            "X1"
+          ],
+          "kind": "relation",
+          "roles": [
+            "event",
+            "agent"
+          ],
+          "text": "spacecraft landed.",
+          "token_ids": [
+            2,
+            4
+          ],
+          "trainable": true
+        }
+      ],
+      "expression": {
+        "op": "exists",
+        "children": [
+          {
+            "op": "and",
+            "children": [
+              {
+                "op": "atom",
+                "children": [],
+                "atom_id": "a0",
+                "variables": [],
+                "state": ""
+              },
+              {
+                "op": "exists",
+                "children": [
+                  {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a1",
+                        "variables": [],
+                        "state": ""
+                      },
+                      {
+                        "op": "atom",
+                        "children": [],
+                        "atom_id": "a2",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [
+                  "E1"
+                ],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [],
+            "state": ""
+          }
+        ],
+        "atom_id": "",
+        "variables": [
+          "X1"
+        ],
+        "state": ""
+      },
+      "coverage": [
+        {
+          "token_id": 1,
+          "text": "The",
+          "represented_by": [
+            "noun phrase determiner"
+          ]
+        },
+        {
+          "token_id": 2,
+          "text": "spacecraft",
+          "represented_by": [
+            "a0",
+            "a2"
+          ]
+        },
+        {
+          "token_id": 3,
+          "text": "has",
+          "represented_by": [
+            "auxiliary or copula"
+          ]
+        },
+        {
+          "token_id": 4,
+          "text": "landed",
+          "represented_by": [
+            "a1",
+            "a2"
+          ]
+        },
+        {
+          "token_id": 5,
+          "text": ".",
+          "represented_by": [
+            "punctuation"
+          ]
+        }
+      ],
+      "warnings": [],
+      "version": "claim-compiler-v1",
+      "status": "compiled",
+      "logical_form": "EXISTS X1: ((entity(X1, spacecraft) AND EXISTS E1: ((event(E1, land) AND land(E1, X1)))))"
+    }
+  ]
+}
