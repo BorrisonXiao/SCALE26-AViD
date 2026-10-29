@@ -1,0 +1,25 @@
+{
+  "description": "Two actual DeepProbLog ExactEngine executions on new SRL graphs, including a qualified event and a relative-clause description. Every observation is deliberately unknown. This is neither media verification nor whole-corpus inference throughput.",
+  "cases": [
+    {
+      "status": "passed",
+      "claim_id": "TzF9M4kZ3Pys_281",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "seconds": 6.088727807626128
+    },
+    {
+      "status": "passed",
+      "claim_id": "TQEmEycTI0RQ_899",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "seconds": 1.6507774945348501
+    }
+  ]
+}

@@ -1,0 +1,1072 @@
+{
+  "protocol": "Within-corpus development. Full SRL conditions run on all 2,375 original claims. The two model conditions use the same 48 inputs: 24 known development-pilot cases and 24 additional IDs sampled uniformly before generation. The same assistant reviews the 24 random cases under all conditions. The SRL graph was frozen before that review; the restricted edit interface followed a separate 12-output regeneration pilot that changed correct roles. This is not human gold or a source-disjoint generalization study. Compilation counts do not establish semantic faithfulness.",
+  "counts": {
+    "previous_srl": {
+      "refused": 10,
+      "faithful": 5,
+      "partial": 7,
+      "incorrect": 2
+    },
+    "trained_srl": {
+      "refused": 4,
+      "faithful": 7,
+      "partial": 9,
+      "incorrect": 4
+    },
+    "revised_ud_srl": {
+      "refused": 4,
+      "faithful": 7,
+      "partial": 9,
+      "incorrect": 4
+    },
+    "revised_ud_srl_amr": {
+      "refused": 4,
+      "faithful": 7,
+      "partial": 9,
+      "incorrect": 4
+    }
+  },
+  "cases": [
+    {
+      "method": "previous_srl",
+      "index": 0,
+      "judgment": "refused",
+      "note": "A relative clause exceeds the old clausal-argument restriction.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TQEmEycTI0RQ_827",
+      "text": "2021 map shows more NDP seats, many of which have since gone Liberal."
+    },
+    {
+      "method": "previous_srl",
+      "index": 1,
+      "judgment": "faithful",
+      "note": "Passive rebroadcast retains the footage and named broadcaster. ",
+      "patterns": [],
+      "claim_id": "TInVWzp25aIM_88",
+      "text": "Footage is being rebroadcast by The Weather Channel."
+    },
+    {
+      "method": "previous_srl",
+      "index": 2,
+      "judgment": "partial",
+      "note": "Image, depicted person and credits remain one opaque noun phrase.",
+      "patterns": [
+        "noun_phrase_binding",
+        "credit_attachment"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1720",
+      "text": "Shows image of Charles Tupper from Elliott and Fry/Library and Archives Canada."
+    },
+    {
+      "method": "previous_srl",
+      "index": 3,
+      "judgment": "partial",
+      "note": "The final descent is retained but typed as a location rather than a phase/time.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "claim_id": "T2EE72iNELEs_210",
+      "text": "Burning of thrusters in the final descent."
+    },
+    {
+      "method": "previous_srl",
+      "index": 4,
+      "judgment": "incorrect",
+      "note": "Under the natural reading of this malformed source, sailing is an event; the output treats ship sail as a manner object and omits that event.",
+      "patterns": [
+        "clause_attachment",
+        "source_ambiguity"
+      ],
+      "claim_id": "TQKCK6-tRaoE_663",
+      "text": "Music plays as ship sail."
+    },
+    {
+      "method": "previous_srl",
+      "index": 5,
+      "judgment": "partial",
+      "note": "Likely is a manner literal; the source of the appeals and possessive reference are incompletely represented.",
+      "patterns": [
+        "modality_scope",
+        "coreference",
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1746",
+      "text": "The Trump appeals to the International Trade Foundation will likely go to their Supreme Court."
+    },
+    {
+      "method": "previous_srl",
+      "index": 6,
+      "judgment": "faithful",
+      "note": "The referee is shared across stop/start, their count/fight targets are retained, and again is attached to start. Activity nouns remain referents, without invented participants.",
+      "patterns": [],
+      "claim_id": "Tg0UxWYuPeJ0_431",
+      "text": "Referee stops the count and starts the fight again."
+    },
+    {
+      "method": "previous_srl",
+      "index": 7,
+      "judgment": "refused",
+      "note": "The noun phrase contains multiple embedded predicates.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TQEmEycTI0RQ_909",
+      "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf."
+    },
+    {
+      "method": "previous_srl",
+      "index": 8,
+      "judgment": "refused",
+      "note": "The perception complement is refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_364",
+      "text": "People are watching the robot perform."
+    },
+    {
+      "method": "previous_srl",
+      "index": 9,
+      "judgment": "partial",
+      "note": "Take place remains take with a separate place participant; its idiomatic occurrence reading is unresolved.",
+      "patterns": [
+        "idiom"
+      ],
+      "claim_id": "TFOEIehBwT8Q_466",
+      "text": "The protest is taking place in front of National Palace."
+    },
+    {
+      "method": "previous_srl",
+      "index": 10,
+      "judgment": "refused",
+      "note": "Registered inside the vessel description is refused.",
+      "patterns": [
+        "modifier_scope"
+      ],
+      "claim_id": "TbJqMFkNxARY_124",
+      "text": "The Mississippi is a Madeira-registered cargo vessel."
+    },
+    {
+      "method": "previous_srl",
+      "index": 11,
+      "judgment": "faithful",
+      "note": "Existence of a helicopter sound is retained; actual helicopter existence is not asserted.",
+      "patterns": [],
+      "claim_id": "TKCfkoNUssZI_681",
+      "text": "There is a helicopter sound."
+    },
+    {
+      "method": "previous_srl",
+      "index": 12,
+      "judgment": "refused",
+      "note": "The relative clause and ability modal are refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1162",
+      "text": "There are multiple possible routes spacecrafts can take to the Moon."
+    },
+    {
+      "method": "previous_srl",
+      "index": 13,
+      "judgment": "refused",
+      "note": "No verbal SRL frame; the nominal sound/event description is refused.",
+      "patterns": [
+        "nominal_description"
+      ],
+      "claim_id": "T2EE72iNELEs_205",
+      "text": "Combustion sound as rocket descents."
+    },
+    {
+      "method": "previous_srl",
+      "index": 14,
+      "judgment": "refused",
+      "note": "The purpose clause is refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TzzhcBIczf_M_2059",
+      "text": "Miss Tourism World contestants visited the Shaolin Temple to learn Kung Fu."
+    },
+    {
+      "method": "previous_srl",
+      "index": 15,
+      "judgment": "faithful",
+      "note": "Causation, eruption description, pressure, flooding source and Dongguan relation survive. Flooding is a nominal referent; no additional actor was stated.",
+      "patterns": [],
+      "claim_id": "Txf2EdqOg1SQ_2279",
+      "text": "The geyser-like eruptions are caused by high pressure from flooding in Dongguan."
+    },
+    {
+      "method": "previous_srl",
+      "index": 16,
+      "judgment": "partial",
+      "note": "Prior to landing is preserved as a time string without explicitly binding the landing event to Blue Ghost.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1155",
+      "text": "Prior to landing, Blue Ghost entered a low lunar orbit."
+    },
+    {
+      "method": "previous_srl",
+      "index": 17,
+      "judgment": "incorrect",
+      "note": "Localization is asserted outside the prediction and the following-day time is omitted.",
+      "patterns": [
+        "source_scope",
+        "omission"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2188",
+      "text": "The heaviest localized rain the following day is predicted for southern regions and mountain areas."
+    },
+    {
+      "method": "previous_srl",
+      "index": 18,
+      "judgment": "faithful",
+      "note": "Could scopes over impact, with the haboob and airport operations in the intended roles.",
+      "patterns": [],
+      "claim_id": "TzF9M4kZ3Pys_281",
+      "text": "Haboob could impact airport operations."
+    },
+    {
+      "method": "previous_srl",
+      "index": 19,
+      "judgment": "refused",
+      "note": "Nested scheduled capture, eclipse and viewing clauses are refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon."
+    },
+    {
+      "method": "previous_srl",
+      "index": 20,
+      "judgment": "refused",
+      "note": "The including clause inside the six-floor description is refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TKCfkoNUssZI_683",
+      "text": "The building has 6 floors, including the bottom floor. "
+    },
+    {
+      "method": "previous_srl",
+      "index": 21,
+      "judgment": "refused",
+      "note": "The concession with negation is refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TjHepwuhkYFA_1007",
+      "text": "A satellite image shows damaged residential areas, although the nature of the damage is not very clear."
+    },
+    {
+      "method": "previous_srl",
+      "index": 22,
+      "judgment": "partial",
+      "note": "The IM-to-landing relation stays an opaque possessive modifier; nailbiter is a separate referent rather than an explicit evaluative property.",
+      "patterns": [
+        "noun_phrase_binding",
+        "metaphor"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "text": "IM's moon landing was a nailbiter."
+    },
+    {
+      "method": "previous_srl",
+      "index": 23,
+      "judgment": "partial",
+      "note": "Part of the spatial structure is exposed, but the moon/near-side relation stays opaque and the of near role is unclear.",
+      "patterns": [
+        "noun_phrase_binding",
+        "spatial_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1278",
+      "text": "The Mare Crisium is in the northeast quadrant of the moon's near side."
+    },
+    {
+      "method": "trained_srl",
+      "index": 0,
+      "judgment": "refused",
+      "note": "Repeated ARG1 on gone remains unresolved.",
+      "patterns": [
+        "duplicate_role"
+      ],
+      "claim_id": "TQEmEycTI0RQ_827",
+      "text": "2021 map shows more NDP seats, many of which have since gone Liberal."
+    },
+    {
+      "method": "trained_srl",
+      "index": 1,
+      "judgment": "faithful",
+      "note": "Passive rebroadcast retains the footage and named broadcaster. ",
+      "patterns": [],
+      "claim_id": "TInVWzp25aIM_88",
+      "text": "Footage is being rebroadcast by The Weather Channel."
+    },
+    {
+      "method": "trained_srl",
+      "index": 2,
+      "judgment": "partial",
+      "note": "Depicted person is explicit, but the photographer/library credit structure is incomplete and the output is unnecessarily classified as a mention.",
+      "patterns": [
+        "credit_attachment",
+        "nominal_description"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1720",
+      "text": "Shows image of Charles Tupper from Elliott and Fry/Library and Archives Canada."
+    },
+    {
+      "method": "trained_srl",
+      "index": 3,
+      "judgment": "partial",
+      "note": "The final descent is retained but typed as a location rather than a phase/time.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "claim_id": "T2EE72iNELEs_210",
+      "text": "Burning of thrusters in the final descent."
+    },
+    {
+      "method": "trained_srl",
+      "index": 4,
+      "judgment": "incorrect",
+      "note": "Under the natural reading of this malformed source, sailing is an event; the output treats ship sail as a manner object and omits that event.",
+      "patterns": [
+        "clause_attachment",
+        "source_ambiguity"
+      ],
+      "claim_id": "TQKCK6-tRaoE_663",
+      "text": "Music plays as ship sail."
+    },
+    {
+      "method": "trained_srl",
+      "index": 5,
+      "judgment": "partial",
+      "note": "Possessive reference is explicit, but likely is a text adjunct and the organization name is split into a head and modifier.",
+      "patterns": [
+        "modality_scope",
+        "proper_name"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1746",
+      "text": "The Trump appeals to the International Trade Foundation will likely go to their Supreme Court."
+    },
+    {
+      "method": "trained_srl",
+      "index": 6,
+      "judgment": "faithful",
+      "note": "The referee is shared across stop/start, their count/fight targets are retained, and again is attached to start. Activity nouns remain referents, without invented participants.",
+      "patterns": [],
+      "claim_id": "Tg0UxWYuPeJ0_431",
+      "text": "Referee stops the count and starts the fight again."
+    },
+    {
+      "method": "trained_srl",
+      "index": 7,
+      "judgment": "refused",
+      "note": "The podium/content phrase still has no usable attached clause frame.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TQEmEycTI0RQ_909",
+      "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf."
+    },
+    {
+      "method": "trained_srl",
+      "index": 8,
+      "judgment": "refused",
+      "note": "The robot-perform complement still lacks a linked frame.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_364",
+      "text": "People are watching the robot perform."
+    },
+    {
+      "method": "trained_srl",
+      "index": 9,
+      "judgment": "partial",
+      "note": "Take place remains take with a separate place participant; its idiomatic occurrence reading is unresolved.",
+      "patterns": [
+        "idiom"
+      ],
+      "claim_id": "TFOEIehBwT8Q_466",
+      "text": "The protest is taking place in front of National Palace."
+    },
+    {
+      "method": "trained_srl",
+      "index": 10,
+      "judgment": "incorrect",
+      "note": "Registered vessel and the named Mississippi are represented by different referents; their identity is not enforced.",
+      "patterns": [
+        "coreference",
+        "modifier_scope"
+      ],
+      "claim_id": "TbJqMFkNxARY_124",
+      "text": "The Mississippi is a Madeira-registered cargo vessel."
+    },
+    {
+      "method": "trained_srl",
+      "index": 11,
+      "judgment": "faithful",
+      "note": "Existence of a helicopter sound is retained; actual helicopter existence is not asserted.",
+      "patterns": [],
+      "claim_id": "TKCfkoNUssZI_681",
+      "text": "There is a helicopter sound."
+    },
+    {
+      "method": "trained_srl",
+      "index": 12,
+      "judgment": "faithful",
+      "note": "Possible/multiple route modifiers, spacecraft ability, the route reference and Moon destination are retained in the relative description.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1162",
+      "text": "There are multiple possible routes spacecrafts can take to the Moon."
+    },
+    {
+      "method": "trained_srl",
+      "index": 13,
+      "judgment": "partial",
+      "note": "The source descents wording is retained as a nominal relation, but its temporal/event interpretation remains unresolved.",
+      "patterns": [
+        "temporal_binding",
+        "source_ambiguity"
+      ],
+      "claim_id": "T2EE72iNELEs_205",
+      "text": "Combustion sound as rocket descents."
+    },
+    {
+      "method": "trained_srl",
+      "index": 14,
+      "judgment": "partial",
+      "note": "Visit and purpose learn are correctly nested with shared contestants, but the Miss Tourism World name is split into separate modifiers.",
+      "patterns": [
+        "proper_name"
+      ],
+      "claim_id": "TzzhcBIczf_M_2059",
+      "text": "Miss Tourism World contestants visited the Shaolin Temple to learn Kung Fu."
+    },
+    {
+      "method": "trained_srl",
+      "index": 15,
+      "judgment": "faithful",
+      "note": "Causation, eruption description, pressure, flooding source and Dongguan relation survive. Flooding is a nominal referent; no additional actor was stated.",
+      "patterns": [],
+      "claim_id": "Txf2EdqOg1SQ_2279",
+      "text": "The geyser-like eruptions are caused by high pressure from flooding in Dongguan."
+    },
+    {
+      "method": "trained_srl",
+      "index": 16,
+      "judgment": "partial",
+      "note": "Prior to landing is preserved as a time string without explicitly binding the landing event to Blue Ghost.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1155",
+      "text": "Prior to landing, Blue Ghost entered a low lunar orbit."
+    },
+    {
+      "method": "trained_srl",
+      "index": 17,
+      "judgment": "incorrect",
+      "note": "Localization is asserted outside the prediction and the following-day time is omitted.",
+      "patterns": [
+        "source_scope",
+        "omission"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2188",
+      "text": "The heaviest localized rain the following day is predicted for southern regions and mountain areas."
+    },
+    {
+      "method": "trained_srl",
+      "index": 18,
+      "judgment": "faithful",
+      "note": "Could scopes over impact, with the haboob and airport operations in the intended roles.",
+      "patterns": [],
+      "claim_id": "TzF9M4kZ3Pys_281",
+      "text": "Haboob could impact airport operations."
+    },
+    {
+      "method": "trained_srl",
+      "index": 19,
+      "judgment": "refused",
+      "note": "Nested scheduled capture, eclipse and viewing clauses are refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon."
+    },
+    {
+      "method": "trained_srl",
+      "index": 20,
+      "judgment": "faithful",
+      "note": "The building, exact six-floor group and inclusion of the bottom floor are linked; the same group/floor references are reused.",
+      "patterns": [],
+      "claim_id": "TKCfkoNUssZI_683",
+      "text": "The building has 6 floors, including the bottom floor. "
+    },
+    {
+      "method": "trained_srl",
+      "index": 21,
+      "judgment": "incorrect",
+      "note": "Damage is asserted outside the depicted image content. The unclear-damage concession is nested as generic content, with a duplicate opaque adjunct.",
+      "patterns": [
+        "source_scope",
+        "modifier_scope"
+      ],
+      "claim_id": "TjHepwuhkYFA_1007",
+      "text": "A satellite image shows damaged residential areas, although the nature of the damage is not very clear."
+    },
+    {
+      "method": "trained_srl",
+      "index": 22,
+      "judgment": "partial",
+      "note": "Nailbiter is retained as a property value, but IM-to-landing identity remains hidden inside a modifier.",
+      "patterns": [
+        "noun_phrase_binding",
+        "metaphor"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "text": "IM's moon landing was a nailbiter."
+    },
+    {
+      "method": "trained_srl",
+      "index": 23,
+      "judgment": "partial",
+      "note": "The whole spatial complement is a text literal; northeast, quadrant, near side and Moon have no explicit internal bindings.",
+      "patterns": [
+        "noun_phrase_binding",
+        "spatial_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1278",
+      "text": "The Mare Crisium is in the northeast quadrant of the moon's near side."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 0,
+      "judgment": "refused",
+      "note": "Repeated ARG1 on gone remains unresolved.",
+      "patterns": [
+        "duplicate_role"
+      ],
+      "claim_id": "TQEmEycTI0RQ_827",
+      "text": "2021 map shows more NDP seats, many of which have since gone Liberal."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 1,
+      "judgment": "faithful",
+      "note": "Passive rebroadcast retains the footage and named broadcaster. ",
+      "patterns": [],
+      "claim_id": "TInVWzp25aIM_88",
+      "text": "Footage is being rebroadcast by The Weather Channel."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 2,
+      "judgment": "partial",
+      "note": "Depicted person is explicit, but the photographer/library credit structure is incomplete and the output is unnecessarily classified as a mention.",
+      "patterns": [
+        "credit_attachment",
+        "nominal_description"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1720",
+      "text": "Shows image of Charles Tupper from Elliott and Fry/Library and Archives Canada."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 3,
+      "judgment": "partial",
+      "note": "The final descent is retained but typed as a location rather than a phase/time.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "claim_id": "T2EE72iNELEs_210",
+      "text": "Burning of thrusters in the final descent."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 4,
+      "judgment": "incorrect",
+      "note": "Under the natural reading of this malformed source, sailing is an event; the output treats ship sail as a manner object and omits that event.",
+      "patterns": [
+        "clause_attachment",
+        "source_ambiguity"
+      ],
+      "claim_id": "TQKCK6-tRaoE_663",
+      "text": "Music plays as ship sail."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 5,
+      "judgment": "partial",
+      "note": "Possessive reference is explicit, but likely is a text adjunct and the organization name is split into a head and modifier.",
+      "patterns": [
+        "modality_scope",
+        "proper_name"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1746",
+      "text": "The Trump appeals to the International Trade Foundation will likely go to their Supreme Court."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 6,
+      "judgment": "faithful",
+      "note": "The referee is shared across stop/start, their count/fight targets are retained, and again is attached to start. Activity nouns remain referents, without invented participants.",
+      "patterns": [],
+      "claim_id": "Tg0UxWYuPeJ0_431",
+      "text": "Referee stops the count and starts the fight again."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 7,
+      "judgment": "refused",
+      "note": "The podium/content phrase still has no usable attached clause frame.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TQEmEycTI0RQ_909",
+      "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 8,
+      "judgment": "incorrect",
+      "note": "The editor adds a perform frame but assigns its ARG0 to People instead of the robot. Correct JSON and source spans do not prevent a wrong controller.",
+      "patterns": [
+        "role_binding",
+        "control"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_364",
+      "text": "People are watching the robot perform."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 9,
+      "judgment": "partial",
+      "note": "Take place remains take with a separate place participant; its idiomatic occurrence reading is unresolved.",
+      "patterns": [
+        "idiom"
+      ],
+      "claim_id": "TFOEIehBwT8Q_466",
+      "text": "The protest is taking place in front of National Palace."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 10,
+      "judgment": "incorrect",
+      "note": "Registered vessel and the named Mississippi are represented by different referents; their identity is not enforced.",
+      "patterns": [
+        "coreference",
+        "modifier_scope"
+      ],
+      "claim_id": "TbJqMFkNxARY_124",
+      "text": "The Mississippi is a Madeira-registered cargo vessel."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 11,
+      "judgment": "faithful",
+      "note": "Existence of a helicopter sound is retained; actual helicopter existence is not asserted.",
+      "patterns": [],
+      "claim_id": "TKCfkoNUssZI_681",
+      "text": "There is a helicopter sound."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 12,
+      "judgment": "faithful",
+      "note": "Possible/multiple route modifiers, spacecraft ability, the route reference and Moon destination are retained in the relative description.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1162",
+      "text": "There are multiple possible routes spacecrafts can take to the Moon."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 13,
+      "judgment": "partial",
+      "note": "The source descents wording is retained as a nominal relation, but its temporal/event interpretation remains unresolved.",
+      "patterns": [
+        "temporal_binding",
+        "source_ambiguity"
+      ],
+      "claim_id": "T2EE72iNELEs_205",
+      "text": "Combustion sound as rocket descents."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 14,
+      "judgment": "partial",
+      "note": "Visit and purpose learn are correctly nested with shared contestants, but the Miss Tourism World name is split into separate modifiers.",
+      "patterns": [
+        "proper_name"
+      ],
+      "claim_id": "TzzhcBIczf_M_2059",
+      "text": "Miss Tourism World contestants visited the Shaolin Temple to learn Kung Fu."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 15,
+      "judgment": "faithful",
+      "note": "Causation, eruption description, pressure, flooding source and Dongguan relation survive. Flooding is a nominal referent; no additional actor was stated.",
+      "patterns": [],
+      "claim_id": "Txf2EdqOg1SQ_2279",
+      "text": "The geyser-like eruptions are caused by high pressure from flooding in Dongguan."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 16,
+      "judgment": "partial",
+      "note": "Prior to landing is preserved as a time string without explicitly binding the landing event to Blue Ghost.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1155",
+      "text": "Prior to landing, Blue Ghost entered a low lunar orbit."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 17,
+      "judgment": "refused",
+      "note": "After editing, following is treated as an unresolved clausal argument. The prior incorrect accepted output becomes a refusal.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2188",
+      "text": "The heaviest localized rain the following day is predicted for southern regions and mountain areas."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 18,
+      "judgment": "faithful",
+      "note": "Could scopes over impact, with the haboob and airport operations in the intended roles.",
+      "patterns": [],
+      "claim_id": "TzF9M4kZ3Pys_281",
+      "text": "Haboob could impact airport operations."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 19,
+      "judgment": "refused",
+      "note": "Nested scheduled capture, eclipse and viewing clauses are refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 20,
+      "judgment": "faithful",
+      "note": "The building, exact six-floor group and inclusion of the bottom floor are linked; the same group/floor references are reused.",
+      "patterns": [],
+      "claim_id": "TKCfkoNUssZI_683",
+      "text": "The building has 6 floors, including the bottom floor. "
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 21,
+      "judgment": "incorrect",
+      "note": "The editor adds an unnegated clear frame while retaining the separate negated copula, and source-damage scope is not preserved.",
+      "patterns": [
+        "source_scope",
+        "polarity",
+        "modifier_scope"
+      ],
+      "claim_id": "TjHepwuhkYFA_1007",
+      "text": "A satellite image shows damaged residential areas, although the nature of the damage is not very clear."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 22,
+      "judgment": "partial",
+      "note": "Nailbiter is retained as a property value, but IM-to-landing identity remains hidden inside a modifier. An additional nailbiter predicate duplicates the evaluative description.",
+      "patterns": [
+        "noun_phrase_binding",
+        "metaphor"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "text": "IM's moon landing was a nailbiter."
+    },
+    {
+      "method": "revised_ud_srl",
+      "index": 23,
+      "judgment": "partial",
+      "note": "The whole spatial complement is a text literal; northeast, quadrant, near side and Moon have no explicit internal bindings.",
+      "patterns": [
+        "noun_phrase_binding",
+        "spatial_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1278",
+      "text": "The Mare Crisium is in the northeast quadrant of the moon's near side."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 0,
+      "judgment": "refused",
+      "note": "Repeated ARG1 on gone remains unresolved.",
+      "patterns": [
+        "duplicate_role"
+      ],
+      "claim_id": "TQEmEycTI0RQ_827",
+      "text": "2021 map shows more NDP seats, many of which have since gone Liberal."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 1,
+      "judgment": "faithful",
+      "note": "Passive rebroadcast retains the footage and named broadcaster. ",
+      "patterns": [],
+      "claim_id": "TInVWzp25aIM_88",
+      "text": "Footage is being rebroadcast by The Weather Channel."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 2,
+      "judgment": "partial",
+      "note": "Depicted person is explicit, but the photographer/library credit structure is incomplete and the output is unnecessarily classified as a mention.",
+      "patterns": [
+        "credit_attachment",
+        "nominal_description"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1720",
+      "text": "Shows image of Charles Tupper from Elliott and Fry/Library and Archives Canada."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 3,
+      "judgment": "partial",
+      "note": "The final descent is retained but typed as a location rather than a phase/time.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "claim_id": "T2EE72iNELEs_210",
+      "text": "Burning of thrusters in the final descent."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 4,
+      "judgment": "incorrect",
+      "note": "Under the natural reading of this malformed source, sailing is an event; the output treats ship sail as a manner object and omits that event.",
+      "patterns": [
+        "clause_attachment",
+        "source_ambiguity"
+      ],
+      "claim_id": "TQKCK6-tRaoE_663",
+      "text": "Music plays as ship sail."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 5,
+      "judgment": "partial",
+      "note": "Possessive reference is explicit, but likely is a text adjunct and the organization name is split into a head and modifier.",
+      "patterns": [
+        "modality_scope",
+        "proper_name"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1746",
+      "text": "The Trump appeals to the International Trade Foundation will likely go to their Supreme Court."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 6,
+      "judgment": "faithful",
+      "note": "The referee is shared across stop/start, their count/fight targets are retained, and again is attached to start. Activity nouns remain referents, without invented participants.",
+      "patterns": [],
+      "claim_id": "Tg0UxWYuPeJ0_431",
+      "text": "Referee stops the count and starts the fight again."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 7,
+      "judgment": "refused",
+      "note": "An edit refers to an absent argument-list index and is explicitly refused.",
+      "patterns": [
+        "edit_reference"
+      ],
+      "claim_id": "TQEmEycTI0RQ_909",
+      "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 8,
+      "judgment": "refused",
+      "note": "The robot-perform complement still lacks a linked frame.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_364",
+      "text": "People are watching the robot perform."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 9,
+      "judgment": "partial",
+      "note": "Take place remains take with a separate place participant; its idiomatic occurrence reading is unresolved.",
+      "patterns": [
+        "idiom"
+      ],
+      "claim_id": "TFOEIehBwT8Q_466",
+      "text": "The protest is taking place in front of National Palace."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 10,
+      "judgment": "incorrect",
+      "note": "Registered vessel and the named Mississippi are represented by different referents; their identity is not enforced. An added vessel predicate does not unify the registered vessel with the named ship.",
+      "patterns": [
+        "coreference",
+        "modifier_scope"
+      ],
+      "claim_id": "TbJqMFkNxARY_124",
+      "text": "The Mississippi is a Madeira-registered cargo vessel."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 11,
+      "judgment": "faithful",
+      "note": "Existence of a helicopter sound is retained; actual helicopter existence is not asserted.",
+      "patterns": [],
+      "claim_id": "TKCfkoNUssZI_681",
+      "text": "There is a helicopter sound."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 12,
+      "judgment": "faithful",
+      "note": "Possible/multiple route modifiers, spacecraft ability, the route reference and Moon destination are retained in the relative description.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1162",
+      "text": "There are multiple possible routes spacecrafts can take to the Moon."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 13,
+      "judgment": "partial",
+      "note": "The source descents wording is retained as a nominal relation, but its temporal/event interpretation remains unresolved.",
+      "patterns": [
+        "temporal_binding",
+        "source_ambiguity"
+      ],
+      "claim_id": "T2EE72iNELEs_205",
+      "text": "Combustion sound as rocket descents."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 14,
+      "judgment": "partial",
+      "note": "Visit and purpose learn are correctly nested with shared contestants, but the Miss Tourism World name is split into separate modifiers.",
+      "patterns": [
+        "proper_name"
+      ],
+      "claim_id": "TzzhcBIczf_M_2059",
+      "text": "Miss Tourism World contestants visited the Shaolin Temple to learn Kung Fu."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 15,
+      "judgment": "faithful",
+      "note": "Causation, eruption description, pressure, flooding source and Dongguan relation survive. Flooding is a nominal referent; no additional actor was stated.",
+      "patterns": [],
+      "claim_id": "Txf2EdqOg1SQ_2279",
+      "text": "The geyser-like eruptions are caused by high pressure from flooding in Dongguan."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 16,
+      "judgment": "partial",
+      "note": "Prior to landing is preserved as a time string without explicitly binding the landing event to Blue Ghost.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1155",
+      "text": "Prior to landing, Blue Ghost entered a low lunar orbit."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 17,
+      "judgment": "incorrect",
+      "note": "The editor removes localize but adds an independent follow(day) event. The following-day relation to the forecast and the scope of the predicted rain remain wrong.",
+      "patterns": [
+        "source_scope",
+        "temporal_binding",
+        "spurious_predicate"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2188",
+      "text": "The heaviest localized rain the following day is predicted for southern regions and mountain areas."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 18,
+      "judgment": "faithful",
+      "note": "Could scopes over impact, with the haboob and airport operations in the intended roles.",
+      "patterns": [],
+      "claim_id": "TzF9M4kZ3Pys_281",
+      "text": "Haboob could impact airport operations."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 19,
+      "judgment": "refused",
+      "note": "Nested scheduled capture, eclipse and viewing clauses are refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 20,
+      "judgment": "faithful",
+      "note": "The building, exact six-floor group and inclusion of the bottom floor are linked; the same group/floor references are reused.",
+      "patterns": [],
+      "claim_id": "TKCfkoNUssZI_683",
+      "text": "The building has 6 floors, including the bottom floor. "
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 21,
+      "judgment": "incorrect",
+      "note": "The damaged modifier is absent from the depicted areas. Negated clear and the original negated copula are both retained in different contexts; the source/content relationship remains incomplete.",
+      "patterns": [
+        "source_scope",
+        "omission",
+        "modifier_scope"
+      ],
+      "claim_id": "TjHepwuhkYFA_1007",
+      "text": "A satellite image shows damaged residential areas, although the nature of the damage is not very clear."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 22,
+      "judgment": "partial",
+      "note": "Nailbiter is retained as a property value, but IM-to-landing identity remains hidden inside a modifier. The editor also adds a separate nailbiter predicate.",
+      "patterns": [
+        "noun_phrase_binding",
+        "metaphor"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "text": "IM's moon landing was a nailbiter."
+    },
+    {
+      "method": "revised_ud_srl_amr",
+      "index": 23,
+      "judgment": "partial",
+      "note": "The whole spatial complement is a text literal; northeast, quadrant, near side and Moon have no explicit internal bindings.",
+      "patterns": [
+        "noun_phrase_binding",
+        "spatial_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1278",
+      "text": "The Mare Crisium is in the northeast quadrant of the moon's near side."
+    }
+  ]
+}

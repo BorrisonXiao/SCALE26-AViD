@@ -1,0 +1,219 @@
+{
+  "conditions": {
+    "previous_srl": {
+      "total": 2375,
+      "compiled": 1344,
+      "refused": 1031,
+      "kinds": {
+        "claim": 1344
+      },
+      "failures": {
+        "event_argument": 780,
+        "argument": 42,
+        "negative_quantifier": 10,
+        "missing_srl": 150,
+        "missing_srl_span": 10,
+        "anchor_alignment": 1,
+        "quantity_type": 14,
+        "modal_scope": 18,
+        "polarity_omission": 3,
+        "coordination": 1,
+        "source": 2
+      },
+      "paired48_compiled": 26,
+      "paired48_attempted": 48,
+      "review24_compiled": 14,
+      "diagnostics": {
+        "possible_omission": 139,
+        "phrase_argument": 108,
+        "context_required": 65,
+        "long_literal": 4,
+        "role_frame": 4,
+        "qualification_missing": 2
+      }
+    },
+    "trained_srl": {
+      "total": 2375,
+      "compiled": 1997,
+      "refused": 378,
+      "kinds": {
+        "mention": 178,
+        "claim": 1819
+      },
+      "failures": {
+        "negative_quantifier": 10,
+        "unresolved_clause": 148,
+        "missing_predicate": 82,
+        "duplicate_role": 52,
+        "missing_srl": 53,
+        "mention_alignment": 3,
+        "predicate_type": 8,
+        "quantity_type": 3,
+        "modal_scope": 17,
+        "polarity_omission": 2
+      },
+      "paired48_compiled": 40,
+      "paired48_attempted": 48,
+      "review24_compiled": 20,
+      "diagnostics": {
+        "context_required": 352,
+        "standalone_mention": 178,
+        "possible_omission": 239,
+        "source_content_missing": 16,
+        "long_literal": 64,
+        "phrase_argument": 61,
+        "negation_missing": 1,
+        "clause_in_entity": 9,
+        "role_frame": 3,
+        "qualification_missing": 1
+      }
+    },
+    "revised_ud_srl": {
+      "total": 48,
+      "compiled": 37,
+      "refused": 11,
+      "kinds": {
+        "mention": 3,
+        "claim": 34
+      },
+      "failures": {
+        "unresolved_clause": 7,
+        "negative_quantifier": 1,
+        "missing_predicate": 2,
+        "duplicate_role": 1
+      },
+      "paired48_compiled": 37,
+      "paired48_attempted": 48,
+      "review24_compiled": 20,
+      "diagnostics": {
+        "context_required": 7,
+        "standalone_mention": 3,
+        "possible_omission": 3,
+        "long_literal": 2
+      }
+    },
+    "revised_ud_srl_amr": {
+      "total": 48,
+      "compiled": 38,
+      "refused": 10,
+      "kinds": {
+        "mention": 3,
+        "claim": 35
+      },
+      "failures": {
+        "unresolved_clause": 6,
+        "negative_quantifier": 1,
+        "missing_predicate": 1,
+        "duplicate_role": 1,
+        "edit_reference": 1
+      },
+      "paired48_compiled": 38,
+      "paired48_attempted": 48,
+      "review24_compiled": 20,
+      "diagnostics": {
+        "context_required": 7,
+        "standalone_mention": 3,
+        "possible_omission": 2,
+        "source_content_missing": 1,
+        "long_literal": 2,
+        "phrase_argument": 1
+      }
+    }
+  },
+  "model_runs": {
+    "srl": {
+      "requests": 48,
+      "schema_valid": 48,
+      "valid_edit_references": 48,
+      "edit_errors": {},
+      "finish_reasons": {
+        "stop": 48
+      },
+      "mean_input_tokens": 649.0833333333334,
+      "mean_output_tokens": 46.6875,
+      "nonempty_edit_lists": 41,
+      "records_changed_including_source_spacing": 29,
+      "operations": {
+        "edits": 90,
+        "remove_predicates": 8,
+        "add_frames": 6
+      },
+      "effective_span_edits": {
+        "changed_spans": 18,
+        "unchanged_spans": 72
+      },
+      "core_role_renaming_supported": false,
+      "decoding": "Greedy float16, Transformers 4.57.6 and XGrammar, same frozen 30B model. Existing roles inherited; additions have PropBank roles."
+    },
+    "amr": {
+      "requests": 48,
+      "schema_valid": 48,
+      "valid_edit_references": 47,
+      "edit_errors": {
+        "edit_reference": 1
+      },
+      "finish_reasons": {
+        "stop": 48
+      },
+      "mean_input_tokens": 770.4583333333334,
+      "mean_output_tokens": 47.6875,
+      "nonempty_edit_lists": 41,
+      "records_changed_including_source_spacing": 25,
+      "operations": {
+        "edits": 90,
+        "remove_predicates": 8,
+        "add_frames": 6
+      },
+      "effective_span_edits": {
+        "changed_spans": 16,
+        "unchanged_spans": 69
+      },
+      "core_role_renaming_supported": false,
+      "decoding": "Greedy float16, Transformers 4.57.6 and XGrammar, same frozen 30B model. Existing roles inherited; additions have PropBank roles."
+    }
+  },
+  "review_counts": {
+    "previous_srl": {
+      "refused": 10,
+      "faithful": 5,
+      "partial": 7,
+      "incorrect": 2
+    },
+    "trained_srl": {
+      "refused": 4,
+      "faithful": 7,
+      "partial": 9,
+      "incorrect": 4
+    },
+    "revised_ud_srl": {
+      "refused": 4,
+      "faithful": 7,
+      "partial": 9,
+      "incorrect": 4
+    },
+    "revised_ud_srl_amr": {
+      "refused": 4,
+      "faithful": 7,
+      "partial": 9,
+      "incorrect": 4
+    }
+  },
+  "transitions": {
+    "new_only": 717,
+    "both_compiled": 1280,
+    "both_refused": 314,
+    "previous_only": 64
+  },
+  "prompt_words": {
+    "previous_free_logical_form": 491,
+    "first_srl_regeneration": 159,
+    "minimal_edits": 150
+  },
+  "protocol": "Within-corpus development. Full SRL conditions run on all 2,375 original claims. The two model conditions use the same 48 inputs: 24 known development-pilot cases and 24 additional IDs sampled uniformly before generation. The same assistant reviews the 24 random cases under all conditions. The SRL graph was frozen before that review; the restricted edit interface followed a separate 12-output regeneration pilot that changed correct roles. This is not human gold or a source-disjoint generalization study. Compilation counts do not establish semantic faithfulness.",
+  "source_sha256": {
+    "previous_srl": "5a140cea2f01124256d9d8fe47882aa864aeee421507a15596d63966f296ea77",
+    "trained_srl": "f2c1968431d5574af3528a2209d284dfdc027f0322fff1343b42a38f3d205ccd",
+    "revised_ud_srl": "531b01f4c4eea4d35d43d2b6af417e18f54eec2deba17084b1a95e229cb0ecab",
+    "revised_ud_srl_amr": "470b99ffd3dc9e58ba962b7b5aae403a8848f7fa09e50b2b47e363891fc79666"
+  }
+}

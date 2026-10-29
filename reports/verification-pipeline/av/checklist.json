@@ -28,7 +28,7 @@
     {
       "id": 7,
       "title": "Make original-claim compilation reliable",
-      "status": "full-corpus run and review completed; compiler remains opt-in",
+      "status": "SRL-only census and separate parse-editing experiments complete; semantic reliability still open",
       "items": [
         {
           "text": "Specify semantic requirements for 25 real diagnostic claims and 21 controls; flag uncertain readings separately",
@@ -81,14 +81,30 @@
         {
           "text": "Publish per-claim outputs, full-corpus statistics and semantic failure examples; do not equate compilation with correctness",
           "done": true
+        },
+        {
+          "text": "Run one SRL/dependency clause-graph compiler on all 2,375 original inputs without candidate selection",
+          "done": true
+        },
+        {
+          "text": "Compare concise token-referenced LLM edits with and without AMR on the same 48 claims; review the same 24 random cases",
+          "done": true
+        },
+        {
+          "text": "Keep nominal objects and participial modifiers inside their source or prediction context",
+          "done": false
+        },
+        {
+          "text": "Preserve structured copular/location complements and resolve event controllers before selecting a default compiler",
+          "done": false
         }
       ],
-      "note": "Final full_compilation_20261029: 1934/2,375 compiled, versus 1,544 previously. These are not correctness counts. Fresh 20-case assistant review: 4 faithful (one mention), 7 partial, 6 incorrect, 3 refused. Source videos overlap development. Sentence rewriting remains prohibited; no new media verification or relation training."
+      "note": "srl_revision_20261029: earlier SRL 1,344/2,375 compiled; new SRL graph 1,997 (1,819 claims and 178 nominal descriptions). Same 24 random-case assistant review: earlier 5 faithful; new SRL and both LLM editors 7 each. These are development checks, not corpus accuracy. Current LLM editing gives no observed faithful-output gain. Sentence rewriting remains unimplemented; verification/training are deferred."
     },
     {
       "id": 8,
       "title": "Keep meaning and executability checks separate",
-      "status": "134 regression checks; full-corpus CPU replay; semantic reliability still unresolved",
+      "status": "148 regression tests pass; cached replay covers the full SRL census and both editor conditions",
       "items": [
         {
           "text": "Check paraphrases and active/passive forms for equivalent meaning",
@@ -123,7 +139,7 @@
           "done": false
         }
       ],
-      "note": "All selected programs parse as ProbLog. Seventeen of nineteen bounded small DeepProbLog checks complete with the expected unknown output; two exceed the 15-second end-to-end limit. These include startup overhead and do not establish whole-corpus inference throughput."
+      "note": "Source-token bounds and unchanged-role guarantees are limited. New frames can still assign the wrong subject, and syntactically valid outputs can lose source scope. Use the complete reference structures and accepted-error examples; never equate acceptance with semantic correctness."
     },
     {
       "id": 1,
@@ -212,7 +228,7 @@
       ]
     }
   ],
-  "intro": "Current priority: make original-claim logical forms reliable. The full 2,375-claim census is complete; accepted programs still have semantic errors, so media verification and relation training remain deferred.",
+  "intro": "Current priority: one SRL/dependency-to-logic pipeline. The complete 2,375-input SRL follow-up and separate 48-claim LLM edit experiments are complete. Do not use per-claim SRL/neural selection as the main method. Semantic scope and noun-phrase binding remain unresolved.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -247,5 +263,6 @@
     "report_anchor": "compilation-methods",
     "status": "experimental common logical form; not ready as the default automatic compiler"
   },
-  "full_compilation_run": "full_compilation_20261029"
+  "full_compilation_run": "full_compilation_20261029",
+  "srl_revision_run": "srl_revision_20261029"
 }
