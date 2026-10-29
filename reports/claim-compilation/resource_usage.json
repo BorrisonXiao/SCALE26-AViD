@@ -1,0 +1,114 @@
+{
+  "jobs": [
+    {
+      "JobIDRaw": "1147467",
+      "State": "COMPLETED",
+      "ElapsedRaw": "218",
+      "AllocTRES": "billing=356,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=64G,node=1",
+      "Start": "2026-10-29T05:18:07",
+      "End": "2026-10-29T05:21:45",
+      "gpus": 1,
+      "allocated_gpu_hours": 0.06055555555555556
+    },
+    {
+      "JobIDRaw": "1147468",
+      "State": "COMPLETED",
+      "ElapsedRaw": "260",
+      "AllocTRES": "billing=356,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=64G,node=1",
+      "Start": "2026-10-29T05:18:07",
+      "End": "2026-10-29T05:22:27",
+      "gpus": 1,
+      "allocated_gpu_hours": 0.07222222222222222
+    },
+    {
+      "JobIDRaw": "1147469",
+      "State": "COMPLETED",
+      "ElapsedRaw": "258",
+      "AllocTRES": "billing=356,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=64G,node=1",
+      "Start": "2026-10-29T05:18:07",
+      "End": "2026-10-29T05:22:25",
+      "gpus": 1,
+      "allocated_gpu_hours": 0.07166666666666667
+    },
+    {
+      "JobIDRaw": "1147470",
+      "State": "COMPLETED",
+      "ElapsedRaw": "259",
+      "AllocTRES": "billing=356,cpu=6,gres/gpu:v100=1,gres/gpu=1,mem=64G,node=1",
+      "Start": "2026-10-29T05:18:07",
+      "End": "2026-10-29T05:22:26",
+      "gpus": 1,
+      "allocated_gpu_hours": 0.07194444444444445
+    },
+    {
+      "JobIDRaw": "1147477",
+      "State": "CANCELLED by 1906",
+      "ElapsedRaw": "0",
+      "AllocTRES": "",
+      "Start": "None",
+      "End": "2026-10-29T05:39:05",
+      "gpus": 0,
+      "allocated_gpu_hours": 0.0
+    },
+    {
+      "JobIDRaw": "1147479",
+      "State": "COMPLETED",
+      "ElapsedRaw": "895",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1",
+      "Start": "2026-10-29T05:39:08",
+      "End": "2026-10-29T05:54:03",
+      "gpus": 1,
+      "allocated_gpu_hours": 0.24861111111111112
+    },
+    {
+      "JobIDRaw": "1147489",
+      "State": "CANCELLED by 1906",
+      "ElapsedRaw": "361",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1",
+      "Start": "2026-10-29T05:54:09",
+      "End": "2026-10-29T06:00:10",
+      "gpus": 1,
+      "allocated_gpu_hours": 0.10027777777777777
+    },
+    {
+      "JobIDRaw": "1147493",
+      "State": "CANCELLED by 1906",
+      "ElapsedRaw": "1870",
+      "AllocTRES": "billing=692,cpu=8,gres/gpu:a100=2,gres/gpu=2,mem=120G,node=1",
+      "Start": "2026-10-29T05:58:39",
+      "End": "2026-10-29T06:29:49",
+      "gpus": 2,
+      "allocated_gpu_hours": 1.038888888888889
+    },
+    {
+      "JobIDRaw": "1147513",
+      "State": "COMPLETED",
+      "ElapsedRaw": "168",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1",
+      "Start": "2026-10-29T06:22:41",
+      "End": "2026-10-29T06:25:29",
+      "gpus": 1,
+      "allocated_gpu_hours": 0.04666666666666667
+    },
+    {
+      "JobIDRaw": "1147515",
+      "State": "COMPLETED",
+      "ElapsedRaw": "559",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1",
+      "Start": "2026-10-29T06:30:11",
+      "End": "2026-10-29T06:39:30",
+      "gpus": 1,
+      "allocated_gpu_hours": 0.15527777777777776
+    }
+  ],
+  "total_allocated_gpu_hours": 1.8661111111111113,
+  "peak_concurrent_gpus": 4,
+  "limit": 4,
+  "accounting": "Slurm elapsed allocation, including loading and cancelled allocated jobs. Timestamps use cluster local time. Peak does not exceed the four-GPU limit.",
+  "amr_claims": 2375,
+  "amr_reused": 109,
+  "neural_original_claims": 2375,
+  "bounded_reparses": 1180,
+  "media_models_run": false,
+  "relation_training_run": false
+}

@@ -1,0 +1,283 @@
+{
+  "description": "All accepted programs were serialized and parsed by ProbLog. A deterministic 16-case sample restricted to at most 14 predicates, plus uncovered small scope/quantity/reference categories, was attempted with the actual DeepProbLog ExactEngine and a 15-second subprocess limit. An initial unrestricted-size sample was interrupted after a slow case. Every observation is deliberately unknown; no media verdict or full-corpus backend throughput is measured.",
+  "counts": {
+    "regression_tests": 134,
+    "regression_failures": 0,
+    "all_corpus_claims": 2375,
+    "accepted_program_syntax_checks": 1934,
+    "actual_deepproblog_attempts": 19,
+    "actual_deepproblog_queries": 17,
+    "backend_failures_or_timeouts": 2,
+    "unknown_as_expected": 17
+  },
+  "cpu_seconds": 175.91414679214358,
+  "outcomes": [
+    {
+      "claim_id": "TzzhcBIczf_M_2087",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.2224578857421875,
+        "compile_seconds": 0.08684420585632324,
+        "evaluate_seconds": 0.08096909523010254
+      },
+      "wall_seconds": 0.39052010513842106
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_514",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.022753477096557617,
+        "compile_seconds": 0.011802434921264648,
+        "evaluate_seconds": 0.008407115936279297
+      },
+      "wall_seconds": 0.0431145578622818
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_853",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.3992583751678467,
+        "compile_seconds": 0.9791312217712402,
+        "evaluate_seconds": 1.0178306102752686
+      },
+      "wall_seconds": 2.397932691499591
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2157",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.060526371002197266,
+        "compile_seconds": 0.35923123359680176,
+        "evaluate_seconds": 0.5657947063446045
+      },
+      "wall_seconds": 0.9859255533665419
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_650",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.038021087646484375,
+        "compile_seconds": 0.03220796585083008,
+        "evaluate_seconds": 0.019908905029296875
+      },
+      "wall_seconds": 0.09059430286288261
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1015",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.0352025032043457,
+        "compile_seconds": 0.024900197982788086,
+        "evaluate_seconds": 0.019015073776245117
+      },
+      "wall_seconds": 0.07931330427527428
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1462",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.22118139266967773,
+        "compile_seconds": 0.3429429531097412,
+        "evaluate_seconds": 0.5488901138305664
+      },
+      "wall_seconds": 1.1132649425417185
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_931",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.023562908172607422,
+        "compile_seconds": 0.012072563171386719,
+        "evaluate_seconds": 0.009101152420043945
+      },
+      "wall_seconds": 0.04488541558384895
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1165",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.20023679733276367,
+        "compile_seconds": 0.0254666805267334,
+        "evaluate_seconds": 0.019518613815307617
+      },
+      "wall_seconds": 0.2453931514173746
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_135",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.32105493545532227,
+        "compile_seconds": 0.012460947036743164,
+        "evaluate_seconds": 0.0098876953125
+      },
+      "wall_seconds": 0.3438379745930433
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1720",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.02939915657043457,
+        "compile_seconds": 0.019640684127807617,
+        "evaluate_seconds": 0.017182111740112305
+      },
+      "wall_seconds": 0.06637269631028175
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_242",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.3195195198059082,
+        "compile_seconds": 0.08988332748413086,
+        "evaluate_seconds": 0.08237910270690918
+      },
+      "wall_seconds": 0.49214637838304043
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1912",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.36794614791870117,
+        "compile_seconds": 0.11420297622680664,
+        "evaluate_seconds": 0.16649723052978516
+      },
+      "wall_seconds": 0.648906858637929
+    },
+    {
+      "claim_id": "TInVWzp25aIM_10",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.21639609336853027,
+        "compile_seconds": 0.017508745193481445,
+        "evaluate_seconds": 0.013981819152832031
+      },
+      "wall_seconds": 0.24807470105588436
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1338",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.3958895206451416,
+        "compile_seconds": 0.019901275634765625,
+        "evaluate_seconds": 0.01455545425415039
+      },
+      "wall_seconds": 0.4307331871241331
+    },
+    {
+      "claim_id": "TInVWzp25aIM_8",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.27204179763793945,
+        "compile_seconds": 0.08099651336669922,
+        "evaluate_seconds": 0.07938051223754883
+      },
+      "wall_seconds": 0.4326562751084566
+    },
+    {
+      "claim_id": "TInVWzp25aIM_54",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.29507970809936523,
+        "compile_seconds": 0.012375593185424805,
+        "evaluate_seconds": 0.00856637954711914
+      },
+      "wall_seconds": 0.316262423992157
+    }
+  ],
+  "failures": [
+    {
+      "claim_id": "TMrQshDs8aH0_744",
+      "error": "TimeoutExpired",
+      "message": "Command '['/exp/cxiao/scale26/avid/envs/probabilistic-verification/bin/python', '/exp/cxiao/scale26/avid/scripts/check_full_compilation_execution.py', '--single', '/tmp/avid-backend-census-j4ng2jwk/case.json']' timed out after 15 seconds"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_12",
+      "error": "TimeoutExpired",
+      "message": "Command '['/exp/cxiao/scale26/avid/envs/probabilistic-verification/bin/python', '/exp/cxiao/scale26/avid/scripts/check_full_compilation_execution.py', '--single', '/tmp/avid-backend-census-j4ng2jwk/case.json']' timed out after 15 seconds"
+    }
+  ]
+}

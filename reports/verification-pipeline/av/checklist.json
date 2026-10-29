@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "steps": [
     {
       "id": 6,
@@ -28,7 +28,7 @@
     {
       "id": 7,
       "title": "Make original-claim compilation reliable",
-      "status": "first implementation/evaluation round complete; keep the compiler opt-in",
+      "status": "full-corpus run and review completed; compiler remains opt-in",
       "items": [
         {
           "text": "Specify semantic requirements for 25 real diagnostic claims and 21 controls; flag uncertain readings separately",
@@ -60,19 +60,35 @@
         },
         {
           "text": "Define context requirements for bare names, labels, omitted subjects and underspecified measurements",
-          "done": false
+          "done": true
         },
         {
           "text": "Complete wider modifier/reference coverage and rerun a frozen source-disjoint evaluation before selecting a default parser",
           "done": false
+        },
+        {
+          "text": "Freeze all 2,375 original texts; run the prior SRL/AMR compiler over every claim and retain every rejection reason",
+          "done": true
+        },
+        {
+          "text": "Parse all original claims with the larger frozen text model; add scoped proposition arguments, group quantities, measurements, noun-phrase relations and explicit context requirements",
+          "done": true
+        },
+        {
+          "text": "Run the revised compiler on all 2,375 claims; validate generated programs and review accepted outputs and refusals separately",
+          "done": true
+        },
+        {
+          "text": "Publish per-claim outputs, full-corpus statistics and semantic failure examples; do not equate compilation with correctness",
+          "done": true
         }
       ],
-      "note": "LLM sentence rewriting is explicitly reserved as a last resort and must NOT be implemented yet. New run: logical_form_20261028. The final ten-source check compiled 8/10 under the selection policy, but qualitative review found scope errors and context-dependent fragments; this is not 80% semantic accuracy. No media verification or new relation-model training."
+      "note": "Final full_compilation_20261029: 1934/2,375 compiled, versus 1,544 previously. These are not correctness counts. Fresh 20-case assistant review: 4 faithful (one mention), 7 partial, 6 incorrect, 3 refused. Source videos overlap development. Sentence rewriting remains prohibited; no new media verification or relation training."
     },
     {
       "id": 8,
       "title": "Keep meaning and executability checks separate",
-      "status": "96 regression checks; broader semantic reliability remains unresolved",
+      "status": "134 regression checks; full-corpus CPU replay; semantic reliability still unresolved",
       "items": [
         {
           "text": "Check paraphrases and active/passive forms for equivalent meaning",
@@ -97,9 +113,17 @@
         {
           "text": "Develop fixes on development sources, then freeze the compiler for evaluation on separate sources",
           "done": false
+        },
+        {
+          "text": "Use complete logical-form references to evaluate source scope, roles, modifiers, quote integrity, numeric identifiers and event phases before expanding automatic acceptance",
+          "done": false
+        },
+        {
+          "text": "Profile loading, grounding and inference separately for the timed-out checks before weak-label training",
+          "done": false
         }
       ],
-      "note": "The prior 77 checks plus 19 logical-form tests pass. Tests include recursive source scope, shared participants, nominal parents, canonical relations and actual DeepProbLog execution with artificial unknown observations. They do not certify generated-parser semantic accuracy. Source-relative temporal interpretation remains limited."
+      "note": "All selected programs parse as ProbLog. Seventeen of nineteen bounded small DeepProbLog checks complete with the expected unknown output; two exceed the 15-second end-to-end limit. These include startup overhead and do not establish whole-corpus inference throughput."
     },
     {
       "id": 1,
@@ -123,7 +147,7 @@
           "done": true
         },
         {
-          "text": "Confirm audio labels by listening and check feature usefulness across 10\u201320 reviewed examples",
+          "text": "Confirm audio labels by listening and check feature usefulness across 10–20 reviewed examples",
           "done": false
         }
       ],
@@ -163,7 +187,7 @@
       "status": "planned",
       "items": [
         "Review existing generated candidates",
-        "Target 40\u201360 checked pairs plus controls",
+        "Target 40–60 checked pairs plus controls",
         "Reserve test videos before generating edits"
       ]
     },
@@ -188,7 +212,7 @@
       ]
     }
   ],
-  "intro": "Current priority: get claim-to-DeepProbLog compilation working. Compare syntax/SRL rules, neural transformation and direct semantic parsing before media verification or relation-classifier training.",
+  "intro": "Current priority: make original-claim logical forms reliable. The full 2,375-claim census is complete; accepted programs still have semantic errors, so media verification and relation training remain deferred.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -222,5 +246,6 @@
     "source_path": "exp/probabilistic_verification/logical_form_20261028",
     "report_anchor": "compilation-methods",
     "status": "experimental common logical form; not ready as the default automatic compiler"
-  }
+  },
+  "full_compilation_run": "full_compilation_20261029"
 }

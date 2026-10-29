@@ -1,0 +1,491 @@
+{
+  "transitions": {
+    "both_compiled": 1336,
+    "previous_only": 208,
+    "newly_compiled": 598,
+    "both_refused": 233
+  },
+  "length_groups": {
+    "1–10 words": {
+      "total": 1293,
+      "compiled": 1183,
+      "unsupported": 110
+    },
+    "11–20 words": {
+      "total": 920,
+      "compiled": 688,
+      "unsupported": 232
+    },
+    "21–40 words": {
+      "total": 141,
+      "compiled": 57,
+      "unsupported": 84
+    },
+    "41+ words": {
+      "total": 21,
+      "compiled": 6,
+      "unsupported": 15
+    }
+  },
+  "overlapping_text_features": {
+    "Numeral": {
+      "total": 576,
+      "compiled": 455,
+      "previous_compiled": 143,
+      "unsupported": 121
+    },
+    "Two or more verbal predicates": {
+      "total": 923,
+      "compiled": 610,
+      "previous_compiled": 502,
+      "unsupported": 313
+    },
+    "Pronoun": {
+      "total": 350,
+      "compiled": 230,
+      "previous_compiled": 74,
+      "unsupported": 120
+    },
+    "Coordination": {
+      "total": 446,
+      "compiled": 307,
+      "previous_compiled": 213,
+      "unsupported": 139
+    },
+    "Negation word": {
+      "total": 53,
+      "compiled": 30,
+      "previous_compiled": 21,
+      "unsupported": 23
+    },
+    "Modal auxiliary": {
+      "total": 174,
+      "compiled": 113,
+      "previous_compiled": 6,
+      "unsupported": 61
+    },
+    "Explicit quotation": {
+      "total": 66,
+      "compiled": 56,
+      "previous_compiled": 39,
+      "unsupported": 10
+    }
+  },
+  "rejection_reasons": {
+    "neural:unlicensed_condition": {
+      "count": 157,
+      "examples": [
+        {
+          "claim_id": "TInVWzp25aIM_61",
+          "text": "People are stuck in their homes during a major storm at night.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: stuck in their homes; neural_v2: unlicensed_condition — The source does not license a conditional clause. A relative clause or an ongoing event is not an IF condition."
+        },
+        {
+          "claim_id": "TInVWzp25aIM_77",
+          "text": "Homes are damaged and flooded during the storm.",
+          "reason": "srl_v2: argument — No content remains in the SRL argument.; neural_v2: unlicensed_condition — The source does not license a conditional clause. A relative clause or an ongoing event is not an IF condition."
+        },
+        {
+          "claim_id": "TbJqMFkNxARY_124",
+          "text": "The Mississippi is a Madeira-registered cargo vessel.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: Madeira-registered cargo vessel; neural_v2: unlicensed_condition — The source does not license a conditional clause. A relative clause or an ongoing event is not an IF condition."
+        },
+        {
+          "claim_id": "TbJqMFkNxARY_133",
+          "text": "Many containers begin to fall off the back of the ship into the water.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: fall off the back of the ship into the water; neural_v2: unlicensed_condition — The source does not license a conditional clause. A relative clause or an ongoing event is not an IF condition."
+        },
+        {
+          "claim_id": "TbJqMFkNxARY_137",
+          "text": "Many containers begin to fall off of a ship.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: fall off of a ship; neural_v2: unlicensed_condition — The source does not license a conditional clause. A relative clause or an ongoing event is not an IF condition."
+        }
+      ]
+    },
+    "neural:unknown_entity": {
+      "count": 78,
+      "examples": [
+        {
+          "claim_id": "TInVWzp25aIM_103",
+          "text": "The footage asks for prayers to support those affected by Typhoon Halong.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: those affected by Typhoon Halong; neural_v2: unknown_entity — Undeclared entity support"
+        },
+        {
+          "claim_id": "TbJqMFkNxARY_131",
+          "text": "The windy conditions may have played a role in the the containers falling off The Mississippi ",
+          "reason": "srl_v2: argument — No content remains in the SRL argument.; neural_v2: unknown_entity — Undeclared entity f"
+        },
+        {
+          "claim_id": "TbJqMFkNxARY_134",
+          "text": "The trucks stop to avoid the falling containers.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: avoid the falling containers; neural_v2: unknown_entity — Undeclared entity avoid_falling"
+        },
+        {
+          "claim_id": "Tg0UxWYuPeJ0_342",
+          "text": "The man gives the signal for the other 2 robots to start sparring",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: signal for the other 2 robots to start sparring; neural_v2: unknown_entity — Undeclared entity s"
+        },
+        {
+          "claim_id": "Tg0UxWYuPeJ0_355",
+          "text": "Robot is able to balance itself after getting pushed.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: able to balance itself after getting pushed; neural_v2: unknown_entity — Undeclared entity unknown"
+        }
+      ]
+    },
+    "neural:unused_entities": {
+      "count": 53,
+      "examples": [
+        {
+          "claim_id": "T2EE72iNELEs_181",
+          "text": "Staship Flight test, T-13 to liftoff.",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: unused_entities — Declared but unused entities: l"
+        },
+        {
+          "claim_id": "TzF9M4kZ3Pys_218",
+          "text": "A haboob, or an intense, massive wall of dust and sand created by the downdrafts of a collapsing thunderstorm. ",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: downdrafts of a collapsing thunderstorm; neural_v2: unused_entities — Declared but unused entities: d"
+        },
+        {
+          "claim_id": "TzF9M4kZ3Pys_268",
+          "text": "Sky Harbor International Airport, Phoenix Arizona.",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: unused_entities — Declared but unused entities: c"
+        },
+        {
+          "claim_id": "TzF9M4kZ3Pys_282",
+          "text": "Tik Tok misswong_1204",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: unused_entities — Declared but unused entities: u"
+        },
+        {
+          "claim_id": "Tg0UxWYuPeJ0_340",
+          "text": "He lightly kicks Robot 1 again to build more distance between him and the robot.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: build more distance between him and the robot; neural_v2: unused_entities — Declared but unused entities: r"
+        }
+      ]
+    },
+    "neural:quantity_type": {
+      "count": 28,
+      "examples": [
+        {
+          "claim_id": "TbJqMFkNxARY_169",
+          "text": "There has been a 500-yard perimeter set during the recovery operation.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: 500-yard perimeter set during the recovery operation; neural_v2: quantity_type — A numeric group operator needs a cardinal value, not 500-yard"
+        },
+        {
+          "claim_id": "T3HTSBW42QaY_776",
+          "text": "A large wave at 8:58:09 douses the pier with water.",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: quantity_type — A time value or amount is not a counted group. Use a typed time/measurement literal or an amount property: 8:58:09"
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_865",
+          "text": "Shows news article from CBC News backing this up: Headline is 'Mark Carney to run for seat in Ottawa's Nepean riding.' Subheading is: 'Previously held by Liberal MP Chandra Arya, it borders riding where Poilievre is seeking re-election'; Posted Mar 22, 2025 at 8:19 PM EDT (5 hours ago).",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: news article from CBC News backing this; neural_v2: quantity_type — A numeric group operator needs a cardinal value, not 5 hours ago"
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_907",
+          "text": "Shows same bar graph as earlier, highlighting the steep increase since Jan 2025 with an arrow.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: highlighting the steep increase since Jan 2025 with an arrow; neural_v2: quantity_type — A time value or amount is not a counted group. Use a typed time/measurement literal or an amount property: Jan 2025"
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_926",
+          "text": "Shows table picture of various polls in April: multiple national polls show the Liberals leading at roughly 41-44%, with the Conservatives close behind at about 37-41%, The NDP polls mostly between 6-11%, well below earlier levels; the Bloc Québécois is stable around 6% nationally; Greens sit near 1-3%; PPC and others remain around 1-2%.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: Liberals leading at roughly 41-44%, with the Conservatives close behind at about 37-41%, The NDP polls mostly between 6-11%, well below earlier levels; neural_v2: quantity_type — A time value or amount is not a counted group. Use a typed time/measurement literal or an amount property: April"
+        }
+      ]
+    },
+    "neural:predicate_alignment": {
+      "count": 26,
+      "examples": [
+        {
+          "claim_id": "T2EE72iNELEs_189",
+          "text": "Text on the screen: \"Views by Starlink\".",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: predicate_alignment — A function word does not license this event predicate: on -> occur"
+        },
+        {
+          "claim_id": "T2EE72iNELEs_197",
+          "text": "Loud sounds of combustion as rocket moves through the air.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: as rocket moves through the air; neural_v2: predicate_alignment — A function word does not license this event predicate: of -> produce"
+        },
+        {
+          "claim_id": "TzF9M4kZ3Pys_221",
+          "text": "Aerial footage of dust storm.",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: predicate_alignment — A function word does not license this event predicate: of -> occur"
+        },
+        {
+          "claim_id": "TzF9M4kZ3Pys_240",
+          "text": "News report in the background about rain and the weather.",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: predicate_alignment — A function word does not license this event predicate: about -> report"
+        },
+        {
+          "claim_id": "TzF9M4kZ3Pys_252",
+          "text": "Aerial footage of incoming dust storm.",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: predicate_alignment — A function word does not license this event predicate: of -> visualize"
+        }
+      ]
+    },
+    "neural:unlicensed_qualification": {
+      "count": 24,
+      "examples": [
+        {
+          "claim_id": "TzF9M4kZ3Pys_241",
+          "text": "Power seems to be working in the city.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: be working in the city; neural_v2: unlicensed_qualification — The source does not license likely qualification. Do not add a modal/future/conditional event."
+        },
+        {
+          "claim_id": "Tsuk2uoYj-kc_621",
+          "text": "The tent seems to fit about 77 men.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: fit about 77 men; neural_v2: unlicensed_qualification — The source does not license likely qualification. Do not add a modal/future/conditional event."
+        },
+        {
+          "claim_id": "Tsuk2uoYj-kc_641",
+          "text": "QR code seems to lead to their personal profile.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: lead to their personal profile; neural_v2: unlicensed_qualification — The source does not license likely qualification. Do not add a modal/future/conditional event."
+        },
+        {
+          "claim_id": "TMrQshDs8aH0_741",
+          "text": "There's a crowd of people gathered around on both sides of the street.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: crowd of people gathered around on both sides of the street; neural_v2: unlicensed_qualification — The source does not license uncertain qualification. Do not add a modal/future/conditional event."
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_805",
+          "text": "NDP received only 6% of the popular vote, compared to 18% four years ago, a drop of about two-thirds of their vote share.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: compared to 18% four years ago; neural_v2: unlicensed_qualification — The source does not license likely qualification. Do not add a modal/future/conditional event."
+        }
+      ]
+    },
+    "neural:anchor_alignment": {
+      "count": 15,
+      "examples": [
+        {
+          "claim_id": "TzF9M4kZ3Pys_298",
+          "text": "Zero visibility in Phoenix Arizona.",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: anchor_alignment — Predicate anchor is absent from source: have"
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_909",
+          "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: image of Carney standing at podium that says Liberal on it with Canada's maple leaf; neural_v2: anchor_alignment — Predicate anchor is absent from source: be"
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_993",
+          "text": "+17 Liberal pickups in Quebec (at that moment).",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: anchor_alignment — Predicate anchor is absent from source: have"
+        },
+        {
+          "claim_id": "T2G_ACMxR_I4_1354",
+          "text": "A goal of the lunar planet vac is to extract information from samples.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: extract information from samples; neural_v2: anchor_alignment — Predicate anchor is absent from source: have"
+        },
+        {
+          "claim_id": "TFgw4IaR9R8s_1605",
+          "text": "US Futures: DOW 42,638.00, +468.00, +1.1%.",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: anchor_alignment — Predicate anchor is absent from source: have"
+        }
+      ]
+    },
+    "neural:duplicate_field": {
+      "count": 12,
+      "examples": [
+        {
+          "claim_id": "TQEmEycTI0RQ_875",
+          "text": "Address begins with 'To my fellow Conservatives' — he is speaking to party members/supporters.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: my fellow Conservatives' — he is speaking to party members/supporters; neural_v2: duplicate_field — Repeated JSON field: recipient"
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_891",
+          "text": "Shows graph of parliament polling for CON, LIB, NDP, BLOC, and GREEN in percentages of the vote across Jan 2023-Jan 2025.",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: duplicate_field — Repeated JSON field: recipient"
+        },
+        {
+          "claim_id": "T2G_ACMxR_I4_1208",
+          "text": "LISTER is a pneumatic, gas-powered drill developed by Texas Tech University and Honeybee Robotics.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: pneumatic, gas-powered drill developed by Texas Tech University and Honeybee Robotics; neural_v2: duplicate_field — Repeated JSON field: instrument"
+        },
+        {
+          "claim_id": "T2G_ACMxR_I4_1265",
+          "text": "Mission 2 payloads aim to enable communications for future missions and provide geological and mineralogical data to support lunar infrastructure development.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: enable communications for future missions and provide geological and mineralogical data to support lunar infrastructure development; neural_v2: duplicate_field — Repeated JSON field: purpose"
+        },
+        {
+          "claim_id": "TgR_u37mCoQ4_1886",
+          "text": "As of January 23, 2025, law enforcement, National Guardsmen, disaster cleanup companies, and utility companies (like SoCal Edison) are still working on burned power poles.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: burned power poles; neural_v2: duplicate_field — Repeated JSON field: agent"
+        }
+      ]
+    },
+    "neural:indirect_verbatim": {
+      "count": 11,
+      "examples": [
+        {
+          "claim_id": "TInVWzp25aIM_5",
+          "text": "A woman comments that the conditions are dangerous.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: that the conditions are dangerous; neural_v2: indirect_verbatim — An indirect report does not certify exact spoken wording. Parse its content as a proposition, without a verbatim-text argument."
+        },
+        {
+          "claim_id": "TFgw4IaR9R8s_1523",
+          "text": "Trump says that in a few moments, he will sign a historic Executive Order instituting reciprocal tariffs on countries throughout the world.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: historic Executive Order instituting reciprocal tariffs on countries throughout the world; neural_v2: indirect_verbatim — An indirect report does not certify exact spoken wording. Parse its content as a proposition, without a verbatim-text argument."
+        },
+        {
+          "claim_id": "TFgw4IaR9R8s_1653",
+          "text": "Onscreen text indicates that the woman is Rachana Shanbhogue, a business affairs editor at The Economist.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: that the woman is Rachana Shanbhogue, a business affairs editor at The Economist; neural_v2: indirect_verbatim — An indirect report does not certify exact spoken wording. Parse its content as a proposition, without a verbatim-text argument."
+        },
+        {
+          "claim_id": "TFgw4IaR9R8s_1654",
+          "text": "The woman says that Trump's plan is to make America wealthy again.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: make America wealthy again; neural_v2: indirect_verbatim — An indirect report does not certify exact spoken wording. Parse its content as a proposition, without a verbatim-text argument."
+        },
+        {
+          "claim_id": "TFgw4IaR9R8s_1655",
+          "text": "She claims that Trump wants America to return to the late 19th century, when America had no income tax and state spending was instead funded by tariff revenue; Rachana says that this is a fantasy.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: America to return to the late 19th century, when America had no income tax and state spending was instead funded by tariff revenue; neural_v2: indirect_verbatim — An indirect report does not certify exact spoken wording. Parse its content as a proposition, without a verbatim-text argument."
+        }
+      ]
+    },
+    "neural:negative_quantifier": {
+      "count": 11,
+      "examples": [
+        {
+          "claim_id": "TbJqMFkNxARY_160",
+          "text": "There are no containers fully in the water.",
+          "reason": "srl_v2: negative_quantifier — A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.; neural_v2: negative_quantifier — A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented."
+        },
+        {
+          "claim_id": "TbJqMFkNxARY_161",
+          "text": "No containers in the water implies this was potentially recorded after cleanup already began.",
+          "reason": "srl_v2: negative_quantifier — A negative existential needs joint entity/event scope; SRL alone does not provide it.; neural_v2: negative_quantifier — A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented."
+        },
+        {
+          "claim_id": "TbJqMFkNxARY_167",
+          "text": "There were no injuries during the spill.",
+          "reason": "srl_v2: negative_quantifier — A negative existential needs joint entity/event scope; SRL alone does not provide it.; neural_v2: negative_quantifier — A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented."
+        },
+        {
+          "claim_id": "Tsuk2uoYj-kc_638",
+          "text": "There were no issues with Hajj.",
+          "reason": "srl_v2: negative_quantifier — A negative existential needs joint entity/event scope; SRL alone does not provide it.; neural_v2: negative_quantifier — A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented."
+        },
+        {
+          "claim_id": "T8u81WMIyj18_758",
+          "text": "The setting is a dark and calm night, with no notable weather.",
+          "reason": "srl_v2: negative_quantifier — A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.; neural_v2: negative_quantifier — A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented."
+        }
+      ]
+    },
+    "neural:polarity_omission": {
+      "count": 9,
+      "examples": [
+        {
+          "claim_id": "Tg0UxWYuPeJ0_328",
+          "text": "The man lightly pushes Robot 1away saying, \"Don't move\"",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: saying, \"Don't move; neural_v2: polarity_omission — A source negation is absent from the logical operators. Preserve the intended negated clause."
+        },
+        {
+          "claim_id": "TFOEIehBwT8Q_449",
+          "text": "National rally protesters chanting \"will never be defeated\".",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: will never be defeated; neural_v2: polarity_omission — A source negation is absent from the logical operators. Preserve the intended negated clause."
+        },
+        {
+          "claim_id": "TFOEIehBwT8Q_467",
+          "text": "\"Watch the man holding the Mexican flag. I'm going to press play. I don't know what is happening, ok, but suddenly someone pushes him and all the police move towards him, I don't know why. I mean, hello? And from there, everything began to escalate, you know? Watch that.\"",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: man holding the Mexican flag. I'm going to press play; neural_v2: polarity_omission — A source negation is absent from the logical operators. Preserve the intended negated clause."
+        },
+        {
+          "claim_id": "TFOEIehBwT8Q_509",
+          "text": "Protester hold sign that says \"Not from the left, not from the right, I am Mexican and I love my homeland.\"",
+          "reason": "srl_v2: polarity_omission — A source negation is absent from the logical operators. Preserve the intended negated clause.; neural_v2: polarity_omission — A source negation is absent from the logical operators. Preserve the intended negated clause."
+        },
+        {
+          "claim_id": "TFOEIehBwT8Q_510",
+          "text": "Protesters chant \"we are not afraid.\"",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: we are not afraid; neural_v2: polarity_omission — A source negation is absent from the logical operators. Preserve the intended negated clause."
+        }
+      ]
+    },
+    "neural:literal_role_type": {
+      "count": 9,
+      "examples": [
+        {
+          "claim_id": "T3HTSBW42QaY_788",
+          "text": "Other passengers with luggage begin to disembark off the large boat at 12:13:20.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: disembark off the large boat at 12:13:20; neural_v2: literal_role_type — An agent must refer to an entity, not a measurement/text literal."
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_806",
+          "text": "Notes that not all lost NDP votes went to the Liberals.",
+          "reason": "srl_v2: argument — No content remains in the SRL argument.; neural_v2: literal_role_type — An agent must refer to an entity, not a measurement/text literal."
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_869",
+          "text": "Displays an emoji for each requirement.",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: literal_role_type — An agent must refer to an entity, not a measurement/text literal."
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_880",
+          "text": "Says they denied the NDP and Liberals enough seats to form a coalition government.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: enough seats to form a coalition government; neural_v2: literal_role_type — An agent must refer to an entity, not a measurement/text literal."
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_883",
+          "text": "Says that change is needed, but emphasizes change is difficult.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: change is difficult; neural_v2: literal_role_type — An agent must refer to an entity, not a measurement/text literal."
+        }
+      ]
+    },
+    "neural:mention_alignment": {
+      "count": 4,
+      "examples": [
+        {
+          "claim_id": "Tg0UxWYuPeJ0_333",
+          "text": "Robot 1paces up behind the man",
+          "reason": "srl_v2: missing_srl — The trained SRL model returned no complete frame.; neural_v2: mention_alignment — Entity is not an exact source mention: Robot 1"
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_889",
+          "text": "Shows scene of people in street holding signs protesting against America acquiring Canada: woman in Canada mask holds sign that says 'Canada is Already Great' and waves at camera while wearing an 'I voted' sticker; another woman in the back holds two flags: Canada's and Ukraine's.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: scene of people in street holding signs protesting against America acquiring Canada: woman in Canada mask holds sign that says 'Canada is Already Great' and waves at camera while wearing an 'I voted' sticker; another woman in the back holds two flags: Canada's and Ukraine's; neural_v2: mention_alignment — Entity is not an exact source mention: I voted sticker"
+        },
+        {
+          "claim_id": "T2G_ACMxR_I4_1205",
+          "text": "LMS works by measuring changes in electric and magnetic fields caused by variations in the solar wind and the effects of Earth's magnetosphere on the Moon.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: by measuring changes in electric and magnetic fields caused by variations in the solar wind and the effects of Earth's magnetosphere on the Moon; neural_v2: mention_alignment — Entity is not an exact source mention: electric fields"
+        },
+        {
+          "claim_id": "Txf2EdqOg1SQ_2402",
+          "text": "The collapsed lamp post on Ting Kau Bridge blocked the fast and middle traffic lanes.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: collapsed lamp post on Ting Kau Bridge; neural_v2: mention_alignment — Entity is not an exact source mention: fast traffic lanes"
+        }
+      ]
+    },
+    "neural:parser_refusal": {
+      "count": 3,
+      "examples": [
+        {
+          "claim_id": "TzF9M4kZ3Pys_309",
+          "text": "Timelapse video of airplanes racing to leave airport ahead of incoming dust storm.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: leave airport ahead of incoming dust storm; neural_v2: parser_refusal — Parser declined."
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_929",
+          "text": "Election focus shifted from domestic issues (like economy) to ability to handle Trump.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: ability to handle Trump; neural_v2: parser_refusal — Parser declined."
+        },
+        {
+          "claim_id": "TQEmEycTI0RQ_932",
+          "text": "Poilievre's aggressive rhetoric, effective against unpopular Trudeau, looked divisive given Trump's actions.",
+          "reason": "srl_v2: event_argument — SRL argument contains an event/clause that needs semantic parsing: given Trump's actions; neural_v2: parser_refusal — Parser declined."
+        }
+      ]
+    },
+    "neural:duplicate_event": {
+      "count": 1,
+      "examples": [
+        {
+          "claim_id": "TQEmEycTI0RQ_896",
+          "text": "Present day has Libs at about 45%, Cons at 40%, NDPs at 8%, Green at 5%, and Bloc at 6%.",
+          "reason": "srl_v2: quantity_type — Several separate numeric values are not a single cardinality. Preserve a range, ratio or separate measurements.; neural_v2: duplicate_event — Declare an event once within each clause context: have"
+        }
+      ]
+    }
+  }
+}

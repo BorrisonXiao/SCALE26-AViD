@@ -1,0 +1,152 @@
+{
+  "previous": {
+    "srl": {
+      "compiled": 1427,
+      "quantity": 327,
+      "argument": 36,
+      "scope": 195,
+      "unused_entities": 41,
+      "reference": 144,
+      "missing_srl": 150,
+      "alignment": 27,
+      "polarity": 9,
+      "cross_scope_reference": 4,
+      "role_frame": 6,
+      "clause_type": 1,
+      "TypeError": 6,
+      "source": 2
+    },
+    "amr": {
+      "compiled": 671,
+      "event_scope": 978,
+      "entity_coordination": 335,
+      "name": 52,
+      "scope": 118,
+      "quantity": 107,
+      "reference": 40,
+      "roles": 8,
+      "source_scope": 9,
+      "duplicate_event": 4,
+      "polarity": 10,
+      "source_content": 37,
+      "role_frame": 4,
+      "cross_scope_reference": 2
+    },
+    "selected": {
+      "compiled": 1544,
+      "all_parsers_refused": 831
+    }
+  },
+  "initial": {
+    "total": 2375,
+    "attempted": 2375,
+    "counts": {
+      "compiled": 1437,
+      "claim": 1408,
+      "no_diagnostic_flags": 907,
+      "indirect_verbatim": 15,
+      "quantity_type": 66,
+      "literal_role_type": 24,
+      "requires_context": 136,
+      "unlicensed_qualification": 73,
+      "unknown_entity": 191,
+      "unlicensed_condition": 305,
+      "predicate_alignment": 49,
+      "duplicate_field": 38,
+      "parser_refusal": 6,
+      "anchor_alignment": 30,
+      "duplicate_event": 5,
+      "negative_quantifier": 11,
+      "unused_entities": 103,
+      "mention": 29,
+      "polarity_omission": 11,
+      "mention_alignment": 8,
+      "JSONDecodeError": 2,
+      "quote_alignment": 1
+    },
+    "diagnostics": {
+      "context_required": 136,
+      "possible_omission": 376,
+      "qualification_missing": 57,
+      "phrase_argument": 19,
+      "standalone_mention": 29,
+      "clause_in_entity": 12,
+      "long_literal": 15,
+      "source_content_missing": 20,
+      "role_frame": 6
+    },
+    "prolog_syntax_checked": 1437,
+    "selection": {
+      "initial": 2375
+    },
+    "cpu_seconds": 10.526745764538646,
+    "raw_sha256": "f8557e0de9df8ade1581fb7c6519b932e4753e39f7f7216a22a6a6d39bd4c8cf",
+    "interpretation": "Full-corpus development census; syntactic acceptance and word-coverage diagnostics do not establish semantic accuracy.",
+    "prompt_versions": [
+      "logical-form-v2-r3-original-constrained-20261029"
+    ],
+    "compiler_sha256": "45f6ef4f82da544275c4a2bb07c3963c14312e121f612ebfffd4bca4e45a292c",
+    "diagnostics_sha256": "2f34cc56264d91e2c0ca5a0dd2c1bce78b6ec69b4902e72a19a06f966fabe6ce"
+  },
+  "selected": {
+    "total": 2375,
+    "attempted": 2375,
+    "counts": {
+      "compiled": 1934,
+      "claim": 1907,
+      "no_diagnostic_flags": 1389,
+      "requires_context": 167,
+      "mention": 27,
+      "all_candidates_refused": 441
+    },
+    "diagnostics": {
+      "context_required": 167,
+      "possible_omission": 342,
+      "phrase_argument": 60,
+      "long_literal": 14,
+      "standalone_mention": 27,
+      "qualification_missing": 48,
+      "clause_in_entity": 10,
+      "source_content_missing": 9,
+      "role_frame": 2
+    },
+    "selected_methods": {
+      "srl_v2": 1228,
+      "neural_v2": 706
+    },
+    "refused_candidate_reasons": {
+      "srl:event_argument": 329,
+      "neural:indirect_verbatim": 11,
+      "neural:unlicensed_condition": 157,
+      "srl:argument": 22,
+      "neural:unknown_entity": 78,
+      "srl:negative_quantifier": 10,
+      "neural:negative_quantifier": 11,
+      "neural:quantity_type": 28,
+      "srl:missing_srl": 58,
+      "neural:unused_entities": 53,
+      "neural:predicate_alignment": 26,
+      "neural:unlicensed_qualification": 24,
+      "neural:anchor_alignment": 15,
+      "neural:parser_refusal": 3,
+      "neural:polarity_omission": 9,
+      "neural:mention_alignment": 4,
+      "srl:polarity_omission": 2,
+      "neural:literal_role_type": 9,
+      "srl:modal_scope": 10,
+      "neural:duplicate_field": 12,
+      "srl:quantity_type": 3,
+      "neural:duplicate_event": 1,
+      "srl:missing_srl_span": 6,
+      "srl:source": 1
+    },
+    "prolog_syntax_checked": 1934,
+    "interpretation": "Within-corpus development census. Fixed diagnostic selection is not a semantic correctness certificate."
+  },
+  "review_counts": {
+    "faithful": 4,
+    "incorrect": 6,
+    "partial": 7,
+    "refused": 3
+  }
+}

@@ -1,0 +1,1656 @@
+{
+  "protocol": "One hundred claim IDs were sampled uniformly from all 2,375 original texts. These became development diagnostics: their review informed late compiler fixes. After freezing the compiler, twenty additional claim IDs, disjoint from those 100 and the initial 24-claim pilot, were sampled and reviewed against both old and new outputs. Two bugfixes followed that review: dead-declaration cleanup motivated by a development quote (all twenty program hashes unchanged), and claim-specific scope IDs to prevent different contexts sharing an evidence-cache entry. The latter changes raw program hashes but preserves every single-claim program after renaming scope IDs; this was checked on all accepted programs and all fresh compiled structures. Fresh statuses, diagnostics, selections and judgments are unchanged. The same assistant judged all cases from text and logical forms, without media/truth labels or independent human gold. Source videos can overlap; this is not a held-out generalization study. Fresh-case counts are descriptive checks, not a full-corpus accuracy estimate.",
+  "definitions": {
+    "faithful": "The stated meaning and principal bindings are retained under the stated reading; this includes separately identified mentions. No media truth or independent gold annotation is implied.",
+    "partial": "Some information survives, but a modifier, relation, type, event phase or internal binding is missing/opaque.",
+    "incorrect": "The proposal changes roles, scope, polarity, quantities or asserted events.",
+    "ambiguous": "The original wording admits readings that this text-only review cannot resolve.",
+    "refused": "No selected program; this is separate from a claim being false or unsupported by media."
+  },
+  "pattern_definitions": {
+    "source_scope": "Source content is omitted, flattened or attached to an unsuitable source context.",
+    "proposition_scope": "Purpose, condition, reason or asserted content is assigned the wrong status.",
+    "role_binding": "Who did what to whom, or a source/destination/location, is changed.",
+    "noun_phrase_binding": "A complex noun phrase hides relationships that should be explicit for binding verification.",
+    "literal_type": "Numbers, durations, percentages or quoted words are treated as unsuitable entity/group candidates.",
+    "omission": "A source component is absent from the selected output.",
+    "modality_scope": "Possibility, ability, prediction, purpose or obligation is lost/added.",
+    "coordination": "Coordinated participants or clauses are not connected with the intended interpretation.",
+    "temporal_binding": "Time values, reference events or ordering relations are missing or misattached.",
+    "quote_integrity": "Exact quoted content is shortened, absent or confused with an indirect report.",
+    "coreference": "Pronouns, possessors or reflexive identities remain hidden or insufficiently linked.",
+    "quantifier_attachment": "A quantifier is attached to the wrong object or loses its distribution.",
+    "quantifier_strength": "A quantity word is weakened to an insufficient numeric/plural condition.",
+    "proper_name": "A name or numeric identifier is treated as an ordinary modifier/count.",
+    "event_phase": "An onset, repetition or phase distinction is omitted.",
+    "event_state": "An event/state description is incompletely represented.",
+    "event_nominalization": "A noun modifier is incorrectly treated as an event, or an event nominal is not resolved.",
+    "parser_reference_error": "A parser-generated entity/event identifier is undeclared.",
+    "nested_clauses": "Nested clauses, control or source complements exceed the current frontend interpretation.",
+    "missing_context": "An omitted or context-dependent argument lacks an explicit interpretation requirement.",
+    "source_ambiguity": "The source wording admits multiple plausible readings.",
+    "guard_overrefusal": "A source guard is narrower than a legitimate construction.",
+    "modifier_attachment": "A modifier is attached to the wrong participant/group.",
+    "credit_attachment": "Image authorship/source credits are mixed with other roles.",
+    "tokenization": "Spacing or tokenization errors corrupt a predicate or identifier."
+  },
+  "cases": [
+    {
+      "index": 0,
+      "judgment": "incorrect",
+      "note": "Flooding is an outer participant of show, while only tools are inside depiction scope; the basket is also labeled as a source rather than a container/location.",
+      "patterns": [
+        "source_scope",
+        "role_binding"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2257",
+      "text": "Severe flooding is shown indoors in Zhongshan, with tools submerged in a blue basket.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 1,
+      "judgment": "refused",
+      "note": "Long reported content with causal and temporal clauses leaves a declared participant disconnected.",
+      "patterns": [
+        "nested_clauses"
+      ],
+      "claim_id": "TgR_u37mCoQ4_1868",
+      "text": "Andy Riesmeyer describes how January 7 'changed the landscape of Southern California,' causing loss of life and destruction of hundreds of years of California history in a matter of hours.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 2,
+      "judgment": "partial",
+      "note": "The resignation and full identifying phrase survive, but NDP leadership is hidden inside a single person description.",
+      "patterns": [
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TQEmEycTI0RQ_958",
+      "text": "NDP leader Jagmeet Singh has resigned.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 3,
+      "judgment": "partial",
+      "note": "The final normalization retains speed ranges as measurements and corrects ramped to ramp; overnight and central Texas remain omitted.",
+      "patterns": [
+        "omission"
+      ],
+      "claim_id": "TgPh_fzHTCm4_1471",
+      "text": "The knots of flow ramped up overnight on the 3rd and into the 4th from 10-20 knots to 25-30 knots across central Texas.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 4,
+      "judgment": "refused",
+      "note": "The control construction securing an area is not translated completely; the neural proposal also mis-types the date.",
+      "patterns": [
+        "nested_clauses",
+        "literal_type"
+      ],
+      "claim_id": "TgR_u37mCoQ4_1939",
+      "text": "Crews did a good job securing an area around Mulholland Dr on January 11.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 5,
+      "judgment": "refused",
+      "note": "The neural proposal made the actual wire connections conditional, and the source checks now refuse that change. Each electrode also needs explicit treatment.",
+      "patterns": [
+        "proposition_scope",
+        "quantifier_attachment"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1203",
+      "text": "The LMS setup includes wires connecting each electrode back to a central electronics box.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 6,
+      "judgment": "refused",
+      "note": "Hazard, likelihood and the ships' ability to dock are not composed into a valid complete structure.",
+      "patterns": [
+        "modality_scope"
+      ],
+      "claim_id": "T3HTSBW42QaY_775",
+      "text": "It is likely too hazardous for ships to safely dock.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 7,
+      "judgment": "faithful",
+      "note": "The update is the delivered item and Jeremiah Wittwer is its deliverer; passive voice preserves these roles.",
+      "patterns": [],
+      "claim_id": "TgR_u37mCoQ4_1932",
+      "text": "The update is delivered by Jeremiah Wittwer.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 8,
+      "judgment": "faithful",
+      "note": "The final caption normalization puts smoke coming from the building inside the clips' depiction, retaining multiple, aerial and the bottom/building relation.",
+      "patterns": [],
+      "claim_id": "TW4OYA3RN-Hw_1784",
+      "text": "Multiple aerial clips of the smoke coming from the bottom of the building.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 9,
+      "judgment": "faithful",
+      "note": "The Lane 4 identifier, overtaking direction, other modifier and count of three other robots are retained.",
+      "patterns": [],
+      "claim_id": "Tg0UxWYuPeJ0_368",
+      "text": "Lane 4 Robot overtakes the other 3 robots",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 10,
+      "judgment": "faithful",
+      "note": "The final name normalization preserves Blue Ghost as a name; the 16-day duration and lunar orbit remain explicit.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1153",
+      "text": "Blue Ghost spent 16 days in lunar orbit.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 11,
+      "judgment": "faithful",
+      "note": "Apollo 11 is a name, the landing theme is retained, and the moon is its on-location.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1111",
+      "text": "Apollo 11 landed on the moon.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 12,
+      "judgment": "faithful",
+      "note": "The man, talking event and about-Arafat topic are retained without inventing a separate assertion about Arafat's actions.",
+      "patterns": [],
+      "claim_id": "Tsuk2uoYj-kc_637",
+      "text": "A man talking about Arafat.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 13,
+      "judgment": "refused",
+      "note": "The fragmented conjunction, possessives, quantities and burning observation do not yield a complete accepted parse.",
+      "patterns": [
+        "nested_clauses"
+      ],
+      "claim_id": "TW4OYA3RN-Hw_1782",
+      "text": "All politicians' houses on same block and all lit on fire: at least 5 houses burning seen.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 14,
+      "judgment": "partial",
+      "note": "The description and modifiers survive, but the omitted thing being described has no explicit context requirement or argument.",
+      "patterns": [
+        "missing_context"
+      ],
+      "claim_id": "TQEmEycTI0RQ_980",
+      "text": "Described as a pivotal moment in an unprecedented campaign.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 15,
+      "judgment": "faithful",
+      "note": "The Shaolin Temple, passive exposure, recent time and scandal circumstance are retained.",
+      "patterns": [],
+      "claim_id": "TzzhcBIczf_M_2123",
+      "text": "The Shaolin Temple has recently been exposed in a scandal.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 16,
+      "judgment": "partial",
+      "note": "Giving roles are correct, but the employee's affiliation and the fan/son relationship remain compound descriptions rather than explicit bindings.",
+      "patterns": [
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TLO3smKI67PM_581",
+      "text": "The Marlins female employee gave the Phillies fan son a gift package.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 17,
+      "judgment": "faithful",
+      "note": "The earthquake occurrence and complete date are preserved as an event and temporal value.",
+      "patterns": [],
+      "claim_id": "TjHepwuhkYFA_1079",
+      "text": "The earthquake occurred on March 28, 2025.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 18,
+      "judgment": "partial",
+      "note": "The outer pronoun is marked for resolution, but its authority remains an opaque possessive phrase and this ruling loses its demonstrative reference.",
+      "patterns": [
+        "coreference"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1532",
+      "text": "With this ruling it is 'flexing its authority in a big way'.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 19,
+      "judgment": "partial",
+      "note": "The helper and robot survive, but fallen is omitted and the posture description is only partially represented.",
+      "patterns": [
+        "omission",
+        "event_state"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_441",
+      "text": "Referee helps fallen robot to a laying down position.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 20,
+      "judgment": "partial",
+      "note": "The magnitude value is retained through an of relation, but 7.7 is an entity candidate rather than a typed scalar value.",
+      "patterns": [
+        "literal_type"
+      ],
+      "claim_id": "TjHepwuhkYFA_1035",
+      "text": "The earthquake had a magnitude of 7.7.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 21,
+      "judgment": "ambiguous",
+      "note": "The source says laying off rather than lying; the intended resting posture versus a placement action cannot be settled confidently from this wording.",
+      "patterns": [
+        "source_ambiguity"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_358",
+      "text": "3 other quadrupedal robots are laying off to the side",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 22,
+      "judgment": "incorrect",
+      "note": "The output makes mass itself important, omits looking and optimizing, and loses the vehicle's ability qualification.",
+      "patterns": [
+        "role_binding",
+        "omission",
+        "modality_scope"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1322",
+      "text": "Looking at how far a launch vehicle can send you is important for optimizing mass.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 23,
+      "judgment": "faithful",
+      "note": "Nominal power and ongoing charging remain separate conjuncts with their intended participants.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1189",
+      "text": "Power is nominal and vehicle is charging.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 24,
+      "judgment": "incorrect",
+      "note": "Notes is omitted and the Governor General's agreement becomes an unqualified outer assertion rather than reported content.",
+      "patterns": [
+        "source_scope",
+        "omission"
+      ],
+      "claim_id": "TQEmEycTI0RQ_834",
+      "text": "Notes that the Governor General has agreed.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 25,
+      "judgment": "faithful",
+      "note": "Walking, the man and the toward-camera direction are retained.",
+      "patterns": [],
+      "claim_id": "TgR_u37mCoQ4_1852",
+      "text": "A man walks toward the camera.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 26,
+      "judgment": "incorrect",
+      "note": "Future qualification is missing and caused price increases become purposes; the affected businesses/households are attached poorly.",
+      "patterns": [
+        "modality_scope",
+        "proposition_scope",
+        "role_binding"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1669",
+      "text": "The tariffs will cause prices to rise for American businesses and households.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 27,
+      "judgment": "partial",
+      "note": "The image and named people/sources survive, but the credits are mixed with location and depiction scope is not explicit.",
+      "patterns": [
+        "source_scope",
+        "credit_attachment"
+      ],
+      "claim_id": "TQEmEycTI0RQ_861",
+      "text": "Shows image of Charles Tupper from Elliott and Fry/Library and Archives Canada.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 28,
+      "judgment": "incorrect",
+      "note": "Canadians are invented as the callers, and coming together and being strong are nested purposes rather than the coordinated requested content.",
+      "patterns": [
+        "role_binding",
+        "coordination",
+        "source_scope"
+      ],
+      "claim_id": "TQEmEycTI0RQ_848",
+      "text": "Calls for Canadians to come together and be strong.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 29,
+      "judgment": "refused",
+      "note": "Expected weather states and their shared location/time do not compile because an unknown agent is introduced.",
+      "patterns": [
+        "parser_reference_error",
+        "modality_scope"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2214",
+      "text": "Northern Taiwan is expected to remain generally hotter and drier over the weekend.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 30,
+      "judgment": "partial",
+      "note": "The complaint target and corruption allegations remain in one source-content referent, without separate target and reason bindings.",
+      "patterns": [
+        "noun_phrase_binding",
+        "source_scope"
+      ],
+      "claim_id": "TzzhcBIczf_M_2144",
+      "text": "Many disciples reported Shi Yongxin for a series of corruption issues.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 31,
+      "judgment": "incorrect",
+      "note": "The repeated chant loses the final out and is treated as an entity rather than complete spoken words.",
+      "patterns": [
+        "quote_integrity",
+        "literal_type"
+      ],
+      "claim_id": "TFOEIehBwT8Q_512",
+      "text": "Protesters chant \"Claudia out, Claudia out\".",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 32,
+      "judgment": "refused",
+      "note": "The after-clause is labeled as a condition; the temporal correction cannot align the multiword child anchor.",
+      "patterns": [
+        "temporal_binding",
+        "nested_clauses"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_425",
+      "text": "Robot 2 collapses after getting caught in the ropes.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 33,
+      "judgment": "faithful",
+      "note": "The tram's stopping and the named rail station with at-location are retained.",
+      "patterns": [],
+      "claim_id": "T1JQ-aG78Zuc_797",
+      "text": "The tram stops at the Monstersestraat rail station.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 34,
+      "judgment": "partial",
+      "note": "The final duration normalization preserves almost two years; the manufacturing/integration group still lacks explicit member structure.",
+      "patterns": [
+        "coordination"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1302",
+      "text": "The manufacturing and integration phases took almost two years.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 35,
+      "judgment": "faithful",
+      "note": "Robot 2 remains an identifier and the fall-over direction is retained.",
+      "patterns": [],
+      "claim_id": "Tg0UxWYuPeJ0_430",
+      "text": "Robot 2 falls over.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 36,
+      "judgment": "refused",
+      "note": "The crowd's activities become a condition and the omitted camera/editor subject is not resolved.",
+      "patterns": [
+        "proposition_scope",
+        "missing_context"
+      ],
+      "claim_id": "TQEmEycTI0RQ_910",
+      "text": "Cuts to the crowd who is giving him a standing ovation, all holding red signs (assume supporters).",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 37,
+      "judgment": "partial",
+      "note": "The claim stays inside speech scope and he requires resolution, but accountable to himself is one literal rather than an explicit reflexive binding.",
+      "patterns": [
+        "coreference",
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TzzhcBIczf_M_2065",
+      "text": "Shi Yongxin claims that he is accountable to himself.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 38,
+      "judgment": "refused",
+      "note": "The SRL route cannot interpret would, and the source guard fails to license the once construction; this is an overly narrow supported fragment.",
+      "patterns": [
+        "modality_scope",
+        "guard_overrefusal",
+        "temporal_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1237",
+      "text": "Firefly said the lander would gradually return to full power once surface temperatures dropped.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 39,
+      "judgment": "incorrect",
+      "note": "The speaker and content are reversed in says Trump, and percentage values are treated poorly. Future reciprocation alone is retained.",
+      "patterns": [
+        "role_binding",
+        "source_scope",
+        "literal_type"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1758",
+      "text": "Vietnam, great negotiators says Trump, tariffs the USA 90%, USA will reciprocate with 46%.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 40,
+      "judgment": "faithful",
+      "note": "The copular relation preserves the game, home attribute and for-Phillies relation.",
+      "patterns": [],
+      "claim_id": "TLO3smKI67PM_544",
+      "text": "This game is a home game for the Philadelphia Phillies.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 41,
+      "judgment": "partial",
+      "note": "Giving roles survive, but the fan/son relationship is flattened into compound modifiers.",
+      "patterns": [
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TLO3smKI67PM_589",
+      "text": "Harrison Bader gave the bat to the Phillies fan son.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 42,
+      "judgment": "partial",
+      "note": "The crushing participants, fallen branch and city survive; the company's association with the delivery tricycle stays inside a complex noun phrase.",
+      "patterns": [
+        "noun_phrase_binding"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2287",
+      "text": "A fallen tree branch in Jiangmen crushed an SF Express delivery tricycle.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 43,
+      "judgment": "partial",
+      "note": "Damage and the PCH survive, but miles and miles is a group-like source-content entity rather than the span's extent value.",
+      "patterns": [
+        "literal_type",
+        "proposition_scope"
+      ],
+      "claim_id": "TgR_u37mCoQ4_1892",
+      "text": "The damage spans 'miles and miles' of the PCH.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 44,
+      "judgment": "refused",
+      "note": "ATF is declared but unused, and the speaker/press-conference structure is not fully attached inside the clip.",
+      "patterns": [
+        "nested_clauses",
+        "omission"
+      ],
+      "claim_id": "TgR_u37mCoQ4_1997",
+      "text": "A clip of Special Agent Kenny Cooper from the ATF speaking at a press conference is shown.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 45,
+      "judgment": "refused",
+      "note": "The wearing state is incorrectly made conditional; the handshake and hand/person bindings also need work.",
+      "patterns": [
+        "proposition_scope",
+        "role_binding"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1695",
+      "text": "Shows image of Trump shaking Elon Musk's hand at some kind of rally (Elon Musk wearing SpaceX sweatshirt).",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 46,
+      "judgment": "faithful",
+      "note": "A song playing in the background is retained; the report makes no claim about an actual audio verdict.",
+      "patterns": [],
+      "claim_id": "TW4OYA3RN-Hw_1775",
+      "text": "Song plays in background.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 47,
+      "judgment": "faithful",
+      "note": "The home, submersion, water and nearly-completely qualification are retained.",
+      "patterns": [],
+      "claim_id": "TInVWzp25aIM_63",
+      "text": "A home was nearly completely submerged in water.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 48,
+      "judgment": "faithful",
+      "note": "The video is related to a video description carrying unofficial and commentary attributes.",
+      "patterns": [],
+      "claim_id": "TzzhcBIczf_M_2071",
+      "text": "The video is an unofficial commentary video.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 49,
+      "judgment": "incorrect",
+      "note": "Affected becomes the main predicate with goods as an argument, and containment/examples are attached through inappropriate assertion scopes.",
+      "patterns": [
+        "role_binding",
+        "proposition_scope"
+      ],
+      "claim_id": "TbJqMFkNxARY_173",
+      "text": "The containers affected contained imported goods such as clothing, electronics, and furniture.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 50,
+      "judgment": "partial",
+      "note": "The featuring relation and person name survive, but the anchor occupation stays inside the person description.",
+      "patterns": [
+        "noun_phrase_binding"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2179",
+      "text": "The segment features anchor Qin Lingqian.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 51,
+      "judgment": "refused",
+      "note": "Design purpose, alternative destinations and absence of gravity reliance are not represented completely; to move remains an undeclared argument.",
+      "patterns": [
+        "nested_clauses",
+        "coordination"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1216",
+      "text": "PlanetVac is designed to move soil efficiently to sample containers or other scientific instruments without relying on gravity.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 52,
+      "judgment": "faithful",
+      "note": "The hotel name, Kathmandu location and on-fire state are retained.",
+      "patterns": [],
+      "claim_id": "TW4OYA3RN-Hw_1776",
+      "text": "Hilton hotel in Kathmandu on fire.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 53,
+      "judgment": "partial",
+      "note": "The superlative comparison and California-history reference are retained only as a large entity description, without comparison arguments.",
+      "patterns": [
+        "comparison_binding",
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TgR_u37mCoQ4_1968",
+      "text": "The Palisades Fire is one of the most destructive in California's history.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 54,
+      "judgment": "partial",
+      "note": "The relative-time wording survives, but the craft's separation and the launch reference are not separate event arguments.",
+      "patterns": [
+        "temporal_binding",
+        "noun_phrase_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1388",
+      "text": "Blue Ghost's separation occurred 65 minutes after launch.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 55,
+      "judgment": "refused",
+      "note": "The final polarity guard refuses the proposal that omitted not; the question and exile condition were also incomplete.",
+      "patterns": [
+        "polarity",
+        "source_scope",
+        "omission"
+      ],
+      "claim_id": "TFOEIehBwT8Q_531",
+      "text": "Woman says that if you are a proud Mexican why are you not standing up against the government that forced your family into exile.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 56,
+      "judgment": "faithful",
+      "note": "The affected area, broader modifier and of-Kenneth relation are retained; the comparison reference is unspecified in the original too.",
+      "patterns": [],
+      "claim_id": "TgR_u37mCoQ4_1840",
+      "text": "The broader area of Kenneth was also affected.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 57,
+      "judgment": "refused",
+      "note": "The second-shot reference is an undeclared event/entity ID, while the flashing-light relation is not correctly attached.",
+      "patterns": [
+        "parser_reference_error",
+        "nested_clauses"
+      ],
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "text": "In the second shot, an emergency vehicle is visible on the side of the road with emergency lights flashing.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 58,
+      "judgment": "partial",
+      "note": "Ordering is visible in come_after, but designing the vehicle is an opaque entity in a location role rather than a temporal event argument.",
+      "patterns": [
+        "temporal_binding",
+        "noun_phrase_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1301",
+      "text": "The integration phase comes after designing the vehicle.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 59,
+      "judgment": "partial",
+      "note": "The police-to-vest relation is explicit, but yellow and reflective remain inside the vest description rather than separate attributes.",
+      "patterns": [
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TKCfkoNUssZI_725",
+      "text": "There are police in yellow reflective vests. ",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 60,
+      "judgment": "incorrect",
+      "note": "Could is hidden in an overly broad verbatim literal while the structured saving content loses its modality and reflexive source.",
+      "patterns": [
+        "modality_scope",
+        "quote_integrity",
+        "coreference"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1560",
+      "text": "Axelrod claims the ruling could in the long term 'save him [Trump] from himself'.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 61,
+      "judgment": "refused",
+      "note": "The wind's blowing of the cabinet is incorrectly labeled as a condition of yelling.",
+      "patterns": [
+        "proposition_scope"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2272",
+      "text": "Someone is yelling at a cabinet that the wind blew away in Shenzhen.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 62,
+      "judgment": "faithful",
+      "note": "The final compiler retains the complete exact OCR quote and removes only unused declarations whose every source mention is inside that quote; its contents are not world assertions.",
+      "patterns": [],
+      "claim_id": "Tg0UxWYuPeJ0_392",
+      "text": "black box text reads \"On the morning of August 17, in the preliminary round of the 4×100m relay at the 2025 World Humanoid Robot Games, the long-legged robot from Gaoyi Technology Team, one of the favorites to win the championship and the previous 400m champion, competed against two teams of short-legged robots. However, one of the runners from the Gao Yi Technology team knocked down several opponents after the start. Other athletes also fell down, and some staff members also fell down. Although the Gao Yi Technology team rallied and crossed the finish line first, they still managed to catch up. However, due to violations such as crossing lanes, they were still penalized and finished at the bottom of the group, resulting in their elimination.\"",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 63,
+      "judgment": "partial",
+      "note": "Declaration, targeting and being struck down survive, but the three target countries are one unsplit referent rather than explicit group members.",
+      "patterns": [
+        "coordination"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1581",
+      "text": "Trafficking tariffs were declared on first day (Jan 20), primarily target Canada, Mexico, and China, and are now struck down.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 64,
+      "judgment": "partial",
+      "note": "Intended purpose is retained, but the drill's downward relation to the lunar surface is an opaque manner literal and outer roles are underspecified.",
+      "patterns": [
+        "noun_phrase_binding",
+        "role_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1349",
+      "text": "The pneumatic drill is meant to go down the surface of the moon.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 65,
+      "judgment": "faithful",
+      "note": "The existential contraction is normalized to be, with the laboratory-in-control-center relation intact.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1098",
+      "text": "There's a laboratory in the Firefly Mission Control Center.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 66,
+      "judgment": "faithful",
+      "note": "The named motel is the destroyed participant, with the fire circumstance retained.",
+      "patterns": [],
+      "claim_id": "TgR_u37mCoQ4_1880",
+      "text": "The Topanga Ranch Motel was destroyed in the fire.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 67,
+      "judgment": "refused",
+      "note": "The fire entity is unused and the relative clause identifying the traced area is missing.",
+      "patterns": [
+        "nested_clauses",
+        "omission"
+      ],
+      "claim_id": "TgR_u37mCoQ4_1988",
+      "text": "A federal complaint alleges that Rinderknecht's phone was traced to the area where the Lachman Fire broke out on New Year's Eve.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 68,
+      "judgment": "refused",
+      "note": "The parser invents likely qualification for lots of horns instead of retaining a quantity and audible event.",
+      "patterns": [
+        "modality_scope"
+      ],
+      "claim_id": "TW4OYA3RN-Hw_1828",
+      "text": "Can hear lots of honking horns.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 69,
+      "judgment": "faithful",
+      "note": "The final SRL adapter keeps Falcon 9 as an identifier and SpaceX as developer, without a count of nine rockets.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1128",
+      "text": "The Falcon 9 rocket was developed by SpaceX.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 70,
+      "judgment": "faithful",
+      "note": "The two-recording group and depiction of Topanga Beach are retained.",
+      "patterns": [],
+      "claim_id": "TgR_u37mCoQ4_1876",
+      "text": "Both recordings depict Topanga Beach.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 71,
+      "judgment": "refused",
+      "note": "Both timestamps are misrepresented as counted entities; the guard refuses them rather than treating times as groups.",
+      "patterns": [
+        "literal_type"
+      ],
+      "claim_id": "TzzhcBIczf_M_2152",
+      "text": "The relevant segment runs from 0:00 to 1:00.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 72,
+      "judgment": "incorrect",
+      "note": "Detection and reliability are omitted, can is lost, and later missions become agents of using the signals.",
+      "patterns": [
+        "omission",
+        "modality_scope",
+        "role_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1251",
+      "text": "Results show that Earth-based GNSS signals can be detected reliably at lunar distance, and can use these signals in later missions.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 73,
+      "judgment": "incorrect",
+      "note": "Every is attached to the lights as well as floors, and the output does not express a light-on condition for each floor.",
+      "patterns": [
+        "quantifier_attachment",
+        "proposition_scope"
+      ],
+      "claim_id": "TKCfkoNUssZI_728",
+      "text": "There are lights on at every floor of the building. ",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 74,
+      "judgment": "faithful",
+      "note": "The people, many quantity, waiting event and on-evacuation argument remain; the compiler does not add an evacuation-occurrence event.",
+      "patterns": [],
+      "claim_id": "TInVWzp25aIM_44",
+      "text": "Many people are waiting on evacuation.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 75,
+      "judgment": "incorrect",
+      "note": "The apparent-government-building qualification is lost, and outside is reversed between the building and group.",
+      "patterns": [
+        "modality_scope",
+        "role_binding"
+      ],
+      "claim_id": "TW4OYA3RN-Hw_1813",
+      "text": "Footage of large groups of people gathered outside of what appears to be a government building.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 76,
+      "judgment": "incorrect",
+      "note": "Points becomes an extra pointing event, while score differences and prediction content have weak typing/scope. The numeric name also required correction.",
+      "patterns": [
+        "literal_type",
+        "proposition_scope",
+        "role_binding"
+      ],
+      "claim_id": "TQEmEycTI0RQ_944",
+      "text": "Example: 338Canada aggregator had Conservatives +3 points in mid-March but still predicted more Liberal seats due to distribution efficiency.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 77,
+      "judgment": "faithful",
+      "note": "The final adapter preserves Mission 1 as an identifier and retains launching in the early morning hours.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1127",
+      "text": "Blue Ghost Mission 1 launched in the early morning hours.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 78,
+      "judgment": "incorrect",
+      "note": "Velocity is counted as 6086 entities, units and 11 minutes disappear, and before is put in a predicate-sense field.",
+      "patterns": [
+        "literal_type",
+        "temporal_binding",
+        "omission"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1436",
+      "text": "Blue Ghost had a velocity of 6,086 km per hour 11 minutes before landing.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 79,
+      "judgment": "faithful",
+      "note": "The craft's inclusion relation and full instrument name/acronym survive; the missing closing parenthesis does not change this meaning.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1421",
+      "text": "Blue Ghost includes Electrodynamic Dust Shield (EDC).",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 80,
+      "judgment": "ambiguous",
+      "note": "Behind a gate can modify the filming/people or the fireworks; the output chooses event location without representing this attachment ambiguity.",
+      "patterns": [
+        "source_ambiguity"
+      ],
+      "claim_id": "TQKCK6-tRaoE_650",
+      "text": "People filming fireworks behind a gate.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 81,
+      "judgment": "faithful",
+      "note": "The named craft, Earth orbit, past state and for-25-days temporal value are retained.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1146",
+      "text": "Blue Ghost was in Earth orbit for 25 days.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 82,
+      "judgment": "faithful",
+      "note": "The official statement, from-temple relation, confirmation and earlier-rumor object are retained without expanding the rumors into invented facts.",
+      "patterns": [],
+      "claim_id": "TzzhcBIczf_M_2149",
+      "text": "An official statement from the Shaolin Temple confirmed the earlier rumors.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 83,
+      "judgment": "faithful",
+      "note": "Current investigation is represented through under and by relations, retaining the named person and multiple departments.",
+      "patterns": [],
+      "claim_id": "TzzhcBIczf_M_2034",
+      "text": "Shi Yongxin is currently under investigation by multiple departments.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 84,
+      "judgment": "faithful",
+      "note": "Possible determination is explicitly qualified, with Quebec performance and majority outcome retained.",
+      "patterns": [],
+      "claim_id": "TQEmEycTI0RQ_996",
+      "text": "Quebec performance may determine majority outcome.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 85,
+      "judgment": "faithful",
+      "note": "The image is a depiction source; the boat's large/white attributes, complete overturning description and water location stay inside that context.",
+      "patterns": [],
+      "claim_id": "Txf2EdqOg1SQ_2229",
+      "text": "An image shows a large white boat completely overturned in the water.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 86,
+      "judgment": "partial",
+      "note": "The dot count and composition survive, but shape-of is a showing manner rather than an explicit map-to-country shape relation, and the route is underspecified.",
+      "patterns": [
+        "noun_phrase_binding",
+        "source_scope"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1712",
+      "text": "Shows map composed of 343 dots in shape of Canada.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 87,
+      "judgment": "incorrect",
+      "note": "Needs and preparations are lost; the result asserts making a typhoon rather than an obligation to prepare for one.",
+      "patterns": [
+        "modality_scope",
+        "role_binding",
+        "omission"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2367",
+      "text": "Guangxi needs to make early preparations for typhoon precautions.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 88,
+      "judgment": "partial",
+      "note": "Speech content is scoped, but ownership and hand/possessor bindings are opaque; the conjunction also admits reported-versus-outer-event readings.",
+      "patterns": [
+        "coreference",
+        "source_ambiguity",
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TLO3smKI67PM_566",
+      "text": "The Phillies fan Karen tells the Phillies fan father that the ball was actually hers, and he took it out of her hands.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 89,
+      "judgment": "faithful",
+      "note": "The labeling event, video and Sensitive label are explicit.",
+      "patterns": [],
+      "claim_id": "TjHepwuhkYFA_1023",
+      "text": "The video is labeled as Sensitive.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 90,
+      "judgment": "faithful",
+      "note": "Arrest is linked to suspicion of the named offense; the output adds no separate event asserting that the offense occurred.",
+      "patterns": [],
+      "claim_id": "TzzhcBIczf_M_2090",
+      "text": "Shi Yongxin was arrested on suspicion of duty encroachment (embezzlement).",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 91,
+      "judgment": "partial",
+      "note": "The initiative name survives, but Commercial is also emitted as an ordinary modifier of an already complete proper name.",
+      "patterns": [
+        "proper_name"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1381",
+      "text": "NASA runs the Commercial Lunar Payload Services initiative.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 92,
+      "judgment": "refused",
+      "note": "The final guard refuses the no-NP construction rather than accepting the earlier positive existence translation. Joint entity/event negation remains unsupported.",
+      "patterns": [
+        "polarity"
+      ],
+      "claim_id": "TbJqMFkNxARY_160",
+      "text": "There are no containers fully in the water.",
+      "cohort": "development",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 93,
+      "judgment": "incorrect",
+      "note": "The man becomes the seer of damage instead of the person seen inspecting it, and inspection becomes purpose rather than observed content.",
+      "patterns": [
+        "role_binding",
+        "proposition_scope"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2399",
+      "text": "A man suspected to be the taxi driver was seen inspecting the damage in the rain.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 94,
+      "judgment": "partial",
+      "note": "The poster's country and two percentages remain in one opaque referent, without separate OCR-content and rate bindings.",
+      "patterns": [
+        "source_scope",
+        "literal_type",
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1592",
+      "text": "Tariff poster shows: Taiwan 64% / 32%.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 95,
+      "judgment": "faithful",
+      "note": "The storm name, origin event and named bay with in-relation are retained.",
+      "patterns": [],
+      "claim_id": "TgPh_fzHTCm4_1476",
+      "text": "Tropical storm Barry originated in the Bay of Campeche.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 96,
+      "judgment": "incorrect",
+      "note": "Driving into a haboob becomes its own agent, and the demonstrative depiction/experience framing is lost.",
+      "patterns": [
+        "role_binding",
+        "source_scope"
+      ],
+      "claim_id": "TzF9M4kZ3Pys_284",
+      "text": "This is what it is like driving into a haboob.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 97,
+      "judgment": "partial",
+      "note": "Next to the large boat is a manner literal; the boat and the crane-to-boat relation are not explicit candidates/bindings.",
+      "patterns": [
+        "noun_phrase_binding",
+        "role_binding"
+      ],
+      "claim_id": "T3HTSBW42QaY_783",
+      "text": "A crane is stationed next to the large boat.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 98,
+      "judgment": "partial",
+      "note": "Clapping survives but its onset is omitted, so an already-clapping scene would be indistinguishable.",
+      "patterns": [
+        "event_phase",
+        "omission"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_435",
+      "text": "Spectators start clapping.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 99,
+      "judgment": "partial",
+      "note": "TikTok stays inside commentary on TikTok rather than a separate platform argument of sharing; the attachment is not resolved.",
+      "patterns": [
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TInVWzp25aIM_51",
+      "text": "@upaiyaq shared commentary on TikTok.",
+      "cohort": "development",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 0,
+      "judgment": "faithful",
+      "note": "A bare label remains a context-dependent mention rather than a complete assertion.",
+      "previous_judgment": "partial",
+      "previous_note": "The label is represented, but an added broadcast-program type and no mention/context distinction make its intended certification unclear.",
+      "patterns": [
+        "missing_context"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_403",
+      "text": "Sansha TV",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 1,
+      "judgment": "incorrect",
+      "note": "The complete intensity clause is omitted, and the robot group is made both fighter and target.",
+      "previous_judgment": "refused",
+      "previous_note": "Neither earlier route compiled this claim.",
+      "patterns": [
+        "omission",
+        "role_binding"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_445",
+      "text": "It got really intense; I saw robots fighting.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 2,
+      "judgment": "partial",
+      "note": "The return direction and timestamp survive, but the second occurrence is omitted.",
+      "previous_judgment": "refused",
+      "previous_note": "The earlier number/scope restrictions refused this claim.",
+      "patterns": [
+        "event_phase",
+        "omission"
+      ],
+      "claim_id": "T3HTSBW42QaY_769",
+      "text": "The cargo crane comes back around a second time at 9:20:33am.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 3,
+      "judgment": "refused",
+      "note": "Joint negative existence is explicitly unsupported; the compiler refuses rather than asserting positive injuries.",
+      "previous_judgment": "incorrect",
+      "previous_note": "The earlier program positively asserts injuries during the spill, losing no.",
+      "patterns": [
+        "polarity"
+      ],
+      "claim_id": "TbJqMFkNxARY_167",
+      "text": "There were no injuries during the spill.",
+      "cohort": "fresh",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 4,
+      "judgment": "incorrect",
+      "note": "The background becomes a location instead of a second shifting terrain region, and the relative-to/interval structure is incomplete.",
+      "previous_judgment": "refused",
+      "previous_note": "Neither earlier route compiled this claim.",
+      "patterns": [
+        "role_binding",
+        "temporal_binding",
+        "omission"
+      ],
+      "claim_id": "TjHepwuhkYFA_1016",
+      "text": "Beginning at video timestamp 2025-03-28 12:46:35 and ending at video timestamp 12:46:37, the midground and background terrain in the video shift relative to the foreground of the video.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 5,
+      "judgment": "incorrect",
+      "note": "A malformed 1raises predicate and an extra gloving event are emitted; the numeric identifier is not recovered.",
+      "previous_judgment": "partial",
+      "previous_note": "The earlier AMR recovered raising and possession, but treated up as an entity-like direction.",
+      "patterns": [
+        "tokenization",
+        "role_binding"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_335",
+      "text": "Robot 1raises his boxing gloves up.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 6,
+      "judgment": "faithful",
+      "note": "The alias relation and as-marker survive, with also represented as a modifier value rather than an entity.",
+      "previous_judgment": "partial",
+      "previous_note": "The earlier route kept the alias but introduced a separate also entity.",
+      "patterns": [
+        "literal_type"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1393",
+      "text": "IM-1 is also known as Odysseus.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 7,
+      "judgment": "partial",
+      "note": "Ten payloads are explicit, but their for-mission assignment becomes an unqualified location without the for relation.",
+      "previous_judgment": "refused",
+      "previous_note": "The earlier numeric restriction refused the group count.",
+      "patterns": [
+        "role_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1357",
+      "text": "There are 10 payloads for the Blue Ghost mission.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 8,
+      "judgment": "partial",
+      "note": "The two populations are one opaque group, with military also attached to the whole mixed group rather than only personnel.",
+      "previous_judgment": "partial",
+      "previous_note": "The earlier program has the same grouping/modifier limitation.",
+      "patterns": [
+        "coordination",
+        "modifier_attachment"
+      ],
+      "claim_id": "TKCfkoNUssZI_717",
+      "text": "There are military personnel and civilians in the video.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 9,
+      "judgment": "refused",
+      "note": "The exact sign content is absent; its people/hero declarations are unused.",
+      "previous_judgment": "refused",
+      "previous_note": "Neither earlier route compiled this relative-clause source description.",
+      "patterns": [
+        "quote_integrity",
+        "source_scope"
+      ],
+      "claim_id": "TFOEIehBwT8Q_506",
+      "text": "Protester is holding a sign that says \"Carlos Manzo, Mexican hero\".",
+      "cohort": "fresh",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 10,
+      "judgment": "refused",
+      "note": "One member of mist-or-rain is unused; the accepted disjunction is not constructed.",
+      "previous_judgment": "refused",
+      "previous_note": "Neither earlier route compiled this event description.",
+      "patterns": [
+        "coordination"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2168",
+      "text": "Extremely high winds are visible, blowing mist or rain horizontally across the screen.",
+      "cohort": "fresh",
+      "compiler_status": "unsupported",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 11,
+      "judgment": "incorrect",
+      "note": "The two-side spatial relation is omitted and the crowd becomes a source of supporting the barrier.",
+      "previous_judgment": "refused",
+      "previous_note": "Neither earlier route compiled the attempt and spatial description.",
+      "patterns": [
+        "role_binding",
+        "omission"
+      ],
+      "claim_id": "TW4OYA3RN-Hw_1773",
+      "text": "Giant crowd of protestors on one side, large military force on other trying to support the barrier.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 12,
+      "judgment": "partial",
+      "note": "Running/following participants are clearer, but concurrent following becomes a reason and the track-side relation is only a manner literal.",
+      "previous_judgment": "incorrect",
+      "previous_note": "The earlier output used following the robots as the target of following, rather than the robots alone.",
+      "patterns": [
+        "proposition_scope",
+        "noun_phrase_binding"
+      ],
+      "claim_id": "Tg0UxWYuPeJ0_383",
+      "text": "People are running along the side of the track following the robots",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 13,
+      "judgment": "incorrect",
+      "note": "Roaring is an outer event rather than content tied to the first shot's depiction.",
+      "previous_judgment": "incorrect",
+      "previous_note": "The earlier program also emits roaring and visibility outside the showing scope.",
+      "patterns": [
+        "source_scope"
+      ],
+      "claim_id": "TgR_u37mCoQ4_1846",
+      "text": "The first shot shows a roaring blaze with poor visibility.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 14,
+      "judgment": "partial",
+      "note": "The luxurious-life proposition remains scoped as rumor content, but various is omitted and the source carrier is only indirectly linked.",
+      "previous_judgment": "incorrect",
+      "previous_note": "The earlier program asserts living a luxurious life as an independent outer conjunct.",
+      "patterns": [
+        "source_scope",
+        "omission"
+      ],
+      "claim_id": "TzzhcBIczf_M_2080",
+      "text": "There are various rumors that Shi Yongxin lived a luxurious life.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 15,
+      "judgment": "partial",
+      "note": "Parking and around-building attachment are clearer, but many is weakened to only more than one.",
+      "previous_judgment": "partial",
+      "previous_note": "The earlier route retained many in an opaque parked-cars phrase rather than a decomposed structure.",
+      "patterns": [
+        "quantifier_strength"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1290",
+      "text": "There are many cars parked around the Firefly building.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 16,
+      "judgment": "faithful",
+      "note": "People, control room and applauding are preserved, with control kept as a noun modifier.",
+      "previous_judgment": "incorrect",
+      "previous_note": "The earlier AMR introduces an unsupported controlling event from control room.",
+      "patterns": [
+        "event_nominalization"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1400",
+      "text": "People in the control room are applauding.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 17,
+      "judgment": "incorrect",
+      "note": "Build and the coordinated intended outcomes are not represented; fluency becomes a recipient.",
+      "previous_judgment": "incorrect",
+      "previous_note": "The earlier output asserts actual building as an outer event instead of retaining it under aim.",
+      "patterns": [
+        "role_binding",
+        "proposition_scope",
+        "omission"
+      ],
+      "claim_id": "TQEmEycTI0RQ_969",
+      "text": "Courses aim to build mathematical intuition and real-world fluency.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "neural_v2"
+    },
+    {
+      "index": 18,
+      "judgment": "partial",
+      "note": "Service duration and role phrase are retained, but Abbot-of-Temple remains one opaque title description.",
+      "previous_judgment": "refused",
+      "previous_note": "The earlier number restriction refused the duration.",
+      "patterns": [
+        "noun_phrase_binding"
+      ],
+      "claim_id": "TzzhcBIczf_M_2027",
+      "text": "Shi Yongxin has served as the Abbot of the Shaolin Temple for over 30 years.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    },
+    {
+      "index": 19,
+      "judgment": "faithful",
+      "note": "Damaged buildings remain inside the photos' visual-depiction context.",
+      "previous_judgment": "faithful",
+      "previous_note": "The earlier source-content compiler already preserved this case.",
+      "patterns": [],
+      "claim_id": "TjHepwuhkYFA_1087",
+      "text": "Photos show damaged buildings.",
+      "cohort": "fresh",
+      "compiler_status": "compiled",
+      "selected_method": "srl_v2"
+    }
+  ],
+  "development_counts": {
+    "incorrect": 17,
+    "refused": 19,
+    "partial": 28,
+    "faithful": 34,
+    "ambiguous": 2
+  },
+  "fresh_counts": {
+    "faithful": 4,
+    "incorrect": 6,
+    "partial": 7,
+    "refused": 3
+  },
+  "previous_fresh_counts": {
+    "partial": 5,
+    "refused": 8,
+    "incorrect": 6,
+    "faithful": 1
+  }
+}
