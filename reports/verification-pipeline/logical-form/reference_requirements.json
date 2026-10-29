@@ -1,0 +1,1028 @@
+{
+  "author": "Codex assistant",
+  "independent_human_gold": false,
+  "purpose": "Specified semantic diagnostic requirements, not complete truth-conditional equivalence judgments.",
+  "uncertain_readings_excluded": true,
+  "requirements": [
+    {
+      "claim_id": "TjHepwuhkYFA_1001",
+      "text": "The earthquake occurred in Myanmar.",
+      "predicate": "occur",
+      "roles": {
+        "ARG1": [
+          "earthquake"
+        ],
+        "location": [
+          "Myanmar"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "past",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1396",
+      "text": "IM-1 landed on the moon.",
+      "predicate": "land",
+      "roles": {
+        "ARG1": [
+          "IM-1"
+        ],
+        "location": [
+          "moon"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "past",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_715",
+      "text": "Martial law troops storm the parliament building. ",
+      "predicate": "storm",
+      "roles": {
+        "ARG0": [
+          "troop"
+        ],
+        "ARG1": [
+          "parliament",
+          "building"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Martial law modifies troops; storm is the assault reading, not a weather event."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1087",
+      "text": "Photos show damaged buildings.",
+      "predicate": "show",
+      "roles": {
+        "ARG0": [
+          "photo"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [
+        [
+          "building",
+          "damaged",
+          "visual_depiction"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Compile building and its state inside depiction scope, without requiring a filmed damage/collapse event."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1088",
+      "text": "Photos show collapsed buildings.",
+      "predicate": "show",
+      "roles": {
+        "ARG0": [
+          "photo"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [
+        [
+          "building",
+          "collapsed",
+          "visual_depiction"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Compile building and its state inside depiction scope, without requiring a filmed damage/collapse event."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1080",
+      "text": "The earthquake's impact was devastating.",
+      "predicate": "be",
+      "roles": {
+        "ARG1": [
+          "earthquake",
+          "impact"
+        ],
+        "ARG2": [
+          "devastating"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": true,
+      "notes": "The genitive relationship needs interpretation; do not infer ownership. A state predication of impact is an alternative acceptable form."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_588",
+      "text": "The Phillies fan son received a bat.",
+      "predicate": "receive",
+      "roles": {
+        "ARG0": [
+          "Phillies",
+          "fan",
+          "son"
+        ],
+        "ARG1": [
+          "bat"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "past",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": true,
+      "notes": "Nested noun phrase is ambiguous. Retain all lexical content; no definitive full-meaning score."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_198",
+      "text": "People whistling.",
+      "predicate": "whistle",
+      "roles": {
+        "ARG0": [
+          "person"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "unspecified",
+        "progressive"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_700",
+      "text": "People are shouting.",
+      "predicate": "shout",
+      "roles": {
+        "ARG0": [
+          "person"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "progressive"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2073",
+      "text": "Shi Yongxin has been arrested.",
+      "predicate": "arrest",
+      "roles": {
+        "ARG1": [
+          "Shi",
+          "Yongxin"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "perfect"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "No agent or negation is supplied by the original claim."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_13",
+      "text": "The typhoon is causing massive flooding.",
+      "predicate": "cause",
+      "roles": {
+        "ARG0": [
+          "typhoon"
+        ],
+        "ARG1": [
+          "flood"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "progressive"
+      ],
+      "properties": [
+        [
+          "flood",
+          "massive",
+          "world"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "TInVWzp25aIM_76",
+      "text": "The storm is bringing heavy winds.",
+      "predicate": "bring",
+      "roles": {
+        "ARG0": [
+          "storm"
+        ],
+        "ARG1": [
+          "wind"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "progressive"
+      ],
+      "properties": [
+        [
+          "wind",
+          "heavy",
+          "world"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "TInVWzp25aIM_90",
+      "text": "The storm impacted the Alaskan coast.",
+      "predicate": "impact",
+      "roles": {
+        "ARG0": [
+          "storm"
+        ],
+        "ARG1": [
+          "coast"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "past",
+        "simple"
+      ],
+      "properties": [
+        [
+          "coast",
+          "Alaskan",
+          "world"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1403",
+      "text": "Stephen Altemus congratulates the IM team.",
+      "predicate": "congratulate",
+      "roles": {
+        "ARG0": [
+          "Stephen",
+          "Altemus"
+        ],
+        "ARG1": [
+          "IM",
+          "team"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_720",
+      "text": "Protestors are holding flags.",
+      "predicate": "hold",
+      "roles": {
+        "ARG0": [
+          "protest"
+        ],
+        "ARG1": [
+          "flag"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "progressive"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1000",
+      "text": "Text reads 'Myanmar earthquake death toll reaches 1600'.",
+      "predicate": "read",
+      "roles": {
+        "ARG1": [
+          "text"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [
+        [
+          "toll",
+          "1600",
+          "ocr_assertion"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "The OCR content must include Myanmar, earthquake, death toll, reach and 1600 inside source scope; exact noun-phrase decomposition is reviewed separately."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_289",
+      "text": "Haboob coming towards airport.",
+      "predicate": "come",
+      "roles": {
+        "ARG1": [
+          "Haboob"
+        ],
+        "destination": [
+          "airport"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "unspecified",
+        "progressive"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Haboob is not a city-name reading; preserve approach direction."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_635",
+      "text": "People walking in the background.",
+      "predicate": "walk",
+      "roles": {
+        "ARG0": [
+          "person"
+        ],
+        "location": [
+          "background"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "unspecified",
+        "progressive"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_633",
+      "text": "People gathered together in Mecca.",
+      "predicate": "gather",
+      "roles": {
+        "participant": [
+          "person"
+        ],
+        "location": [
+          "Mecca"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "past",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Retain together as an event property; do not require a direct-object Mecca."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1086",
+      "text": "Photos show flooding.",
+      "predicate": "show",
+      "roles": {
+        "ARG0": [
+          "photo"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [
+        [
+          "flood",
+          "",
+          "visual_depiction"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1089",
+      "text": "Photos show rubble.",
+      "predicate": "show",
+      "roles": {
+        "ARG0": [
+          "photo"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [
+        [
+          "rubble",
+          "",
+          "visual_depiction"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "TInVWzp25aIM_81",
+      "text": "The initial footage is shared by Matthew Morgan.",
+      "predicate": "share",
+      "roles": {
+        "ARG0": [
+          "Matthew",
+          "Morgan"
+        ],
+        "ARG1": [
+          "footage"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "simple"
+      ],
+      "properties": [
+        [
+          "footage",
+          "initial",
+          "world"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "TInVWzp25aIM_84",
+      "text": "The initial footage was shared by Seth LaCount.",
+      "predicate": "share",
+      "roles": {
+        "ARG0": [
+          "Seth",
+          "LaCount"
+        ],
+        "ARG1": [
+          "footage"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "past",
+        "simple"
+      ],
+      "properties": [
+        [
+          "footage",
+          "initial",
+          "world"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2313",
+      "text": "The infrared satellite imagery depicts cloud top temperatures.",
+      "predicate": "depict",
+      "roles": {
+        "ARG0": [
+          "infrared",
+          "satellite",
+          "imagery"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [
+        [
+          "temperature",
+          "cloud",
+          "visual_depiction"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": true,
+      "notes": "Cloud-top temperature and instrument/source relationships need fuller noun-phrase analysis."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_591",
+      "text": "Harrison Bader hit the home run.",
+      "predicate": "hit",
+      "roles": {
+        "ARG0": [
+          "Harrison",
+          "Bader"
+        ],
+        "ARG1": [
+          "home",
+          "run"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "past",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": true,
+      "notes": "Idiomatic home-run reading needs lexical review; do not certify a literal physical-object interpretation."
+    },
+    {
+      "claim_id": "contrast_00",
+      "text": "Apollo 11 landed on the moon.",
+      "predicate": "land",
+      "roles": {
+        "ARG1": [
+          "Apollo",
+          "11"
+        ],
+        "location": [
+          "moon"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "past",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "contrast_01",
+      "text": "Apollo 11 is landing on the moon.",
+      "predicate": "land",
+      "roles": {
+        "ARG1": [
+          "Apollo",
+          "11"
+        ],
+        "location": [
+          "moon"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "progressive"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "contrast_02",
+      "text": "The spacecraft landed on the moon.",
+      "predicate": "land",
+      "roles": {
+        "ARG1": [
+          "spacecraft"
+        ],
+        "location": [
+          "moon"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "past",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "contrast_03",
+      "text": "The spacecraft is landing on the moon.",
+      "predicate": "land",
+      "roles": {
+        "ARG1": [
+          "spacecraft"
+        ],
+        "location": [
+          "moon"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "progressive"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "contrast_04",
+      "text": "The spacecraft was landing on the moon.",
+      "predicate": "land",
+      "roles": {
+        "ARG1": [
+          "spacecraft"
+        ],
+        "location": [
+          "moon"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "past",
+        "progressive"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "contrast_05",
+      "text": "The spacecraft has landed on the moon.",
+      "predicate": "land",
+      "roles": {
+        "ARG1": [
+          "spacecraft"
+        ],
+        "location": [
+          "moon"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "perfect"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "contrast_06",
+      "text": "Alice hugs Bob.",
+      "predicate": "hug",
+      "roles": {
+        "ARG0": [
+          "Alice"
+        ],
+        "ARG1": [
+          "Bob"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Positive hug; passive wording preserves roles."
+    },
+    {
+      "claim_id": "contrast_07",
+      "text": "Bob is hugged by Alice.",
+      "predicate": "hug",
+      "roles": {
+        "ARG0": [
+          "Alice"
+        ],
+        "ARG1": [
+          "Bob"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Positive hug; passive wording preserves roles."
+    },
+    {
+      "claim_id": "contrast_08",
+      "text": "Bob hugs Alice.",
+      "predicate": "hug",
+      "roles": {
+        "ARG0": [
+          "Bob"
+        ],
+        "ARG1": [
+          "Alice"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Positive hug; passive wording preserves roles."
+    },
+    {
+      "claim_id": "contrast_09",
+      "text": "Alice does not hug Bob.",
+      "predicate": "hug",
+      "roles": {
+        "ARG0": [
+          "Alice"
+        ],
+        "ARG1": [
+          "Bob"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Negated hug only."
+    },
+    {
+      "claim_id": "contrast_10",
+      "text": "Alice hugs Bob and waves.",
+      "predicate": "hug",
+      "roles": {
+        "ARG0": [
+          "Alice"
+        ],
+        "ARG1": [
+          "Bob"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "simple"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Hug and wave must share Alice."
+    },
+    {
+      "claim_id": "contrast_11",
+      "text": "A gray car passes a red truck.",
+      "predicate": "pass",
+      "roles": {
+        "ARG0": [
+          "car"
+        ],
+        "ARG1": [
+          "truck"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [
+        [
+          "car",
+          "gray",
+          "world"
+        ],
+        [
+          "truck",
+          "red",
+          "world"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "contrast_12",
+      "text": "A red car passes a gray truck.",
+      "predicate": "pass",
+      "roles": {
+        "ARG0": [
+          "car"
+        ],
+        "ARG1": [
+          "truck"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [
+        [
+          "car",
+          "red",
+          "world"
+        ],
+        [
+          "truck",
+          "gray",
+          "world"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "contrast_13",
+      "text": "Photos show collapsed buildings.",
+      "predicate": "show",
+      "roles": {
+        "ARG0": [
+          "photo"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [
+        [
+          "building",
+          "collapsed",
+          "visual_depiction"
+        ]
+      ],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "contrast_14",
+      "text": "Buildings have collapsed.",
+      "predicate": "collapse",
+      "roles": {
+        "ARG1": [
+          "building"
+        ]
+      },
+      "scope": "world",
+      "temporal": [
+        "pres",
+        "perfect"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": ""
+    },
+    {
+      "claim_id": "contrast_15",
+      "text": "The narrator says the spacecraft has landed.",
+      "predicate": "land",
+      "roles": {
+        "ARG1": [
+          "spacecraft"
+        ]
+      },
+      "scope": "speech_assertion",
+      "temporal": [
+        "pres",
+        "perfect"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "Landing belongs inside speech content."
+    },
+    {
+      "claim_id": "contrast_16",
+      "text": "The narrator says the spacecraft has not landed.",
+      "predicate": "land",
+      "roles": {
+        "ARG1": [
+          "spacecraft"
+        ]
+      },
+      "scope": "speech_assertion",
+      "temporal": [
+        "pres",
+        "perfect"
+      ],
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": false,
+      "notes": "The narrator says this proposition; negation belongs inside speech content."
+    },
+    {
+      "claim_id": "contrast_17",
+      "text": "The earthquake's impact was devastating.",
+      "predicate": "be",
+      "roles": {
+        "ARG1": [
+          "earthquake",
+          "impact"
+        ],
+        "ARG2": [
+          "devastating"
+        ]
+      },
+      "scope": "world",
+      "temporal": null,
+      "properties": [],
+      "expected_refusal": null,
+      "uncertain": true,
+      "notes": "Genitive interpretation is not uniquely specified; no ownership assumption."
+    },
+    {
+      "claim_id": "contrast_18",
+      "text": "Two spacecraft landed on the moon.",
+      "predicate": null,
+      "roles": {},
+      "scope": "world",
+      "temporal": null,
+      "properties": [],
+      "expected_refusal": "quantity",
+      "uncertain": false,
+      "notes": "Counting is not implemented; refusal is the intended behavior for this iteration."
+    },
+    {
+      "claim_id": "contrast_19",
+      "text": "The spacecraft might land on the moon.",
+      "predicate": null,
+      "roles": {},
+      "scope": "world",
+      "temporal": null,
+      "properties": [],
+      "expected_refusal": "scope",
+      "uncertain": false,
+      "notes": "Do not assert the possible landing as an actual event."
+    },
+    {
+      "claim_id": "contrast_20",
+      "text": "She hugs Bob.",
+      "predicate": null,
+      "roles": {},
+      "scope": "world",
+      "temporal": null,
+      "properties": [],
+      "expected_refusal": "reference",
+      "uncertain": false,
+      "notes": "Resolve She from discourse before compiling a grounded claim."
+    }
+  ]
+}

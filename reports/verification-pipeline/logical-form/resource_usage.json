@@ -1,0 +1,65 @@
+{
+  "jobs": [
+    {
+      "id": 1146518,
+      "elapsed_seconds": 419,
+      "gpus": 1,
+      "type": "V100",
+      "state": "COMPLETED"
+    },
+    {
+      "id": 1146519,
+      "elapsed_seconds": 514,
+      "gpus": 1,
+      "type": "V100",
+      "state": "COMPLETED"
+    },
+    {
+      "id": 1146520,
+      "elapsed_seconds": 562,
+      "gpus": 1,
+      "type": "V100",
+      "state": "COMPLETED"
+    },
+    {
+      "id": 1146521,
+      "elapsed_seconds": 652,
+      "gpus": 1,
+      "type": "V100",
+      "state": "COMPLETED"
+    },
+    {
+      "id": 1146534,
+      "elapsed_seconds": 23,
+      "gpus": 1,
+      "type": "V100",
+      "state": "COMPLETED"
+    },
+    {
+      "id": 1146535,
+      "elapsed_seconds": 170,
+      "gpus": 1,
+      "type": "V100",
+      "state": "COMPLETED"
+    },
+    {
+      "id": 1146542,
+      "elapsed_seconds": 20,
+      "gpus": 1,
+      "type": "V100",
+      "state": "COMPLETED"
+    },
+    {
+      "id": 1146543,
+      "elapsed_seconds": 84,
+      "gpus": 1,
+      "type": "V100",
+      "state": "COMPLETED"
+    }
+  ],
+  "peak_gpus": 4,
+  "gpu_hours": 0.6788888888888889,
+  "media_verification": false,
+  "rewriting": false,
+  "new_relation_training": false
+}

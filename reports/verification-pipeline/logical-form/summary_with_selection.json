@@ -1,0 +1,166 @@
+{
+  "task": "Original-claim compilation only; no rewriting or media verification",
+  "reference_cases": 46,
+  "reference_author": "Codex assistant; not independent human gold",
+  "methods": {
+    "srl": {
+      "real": {
+        "total": 79,
+        "compiled": 56,
+        "without_phrase_arguments": 24,
+        "diagnostic_cases": 21,
+        "diagnostic_requirements_pass": 21,
+        "refusals": {
+          "argument": 3,
+          "quantity": 5,
+          "reference": 5,
+          "scope": 4,
+          "polarity": 1,
+          "missing_srl": 3,
+          "unused_entities": 1,
+          "alignment": 1
+        }
+      },
+      "controls": {
+        "total": 21,
+        "compiled": 17,
+        "without_phrase_arguments": 16,
+        "diagnostic_cases": 20,
+        "diagnostic_requirements_pass": 19,
+        "refusals": {
+          "missing_srl": 1,
+          "quantity": 1,
+          "scope": 1,
+          "reference": 1
+        }
+      }
+    },
+    "amr": {
+      "real": {
+        "total": 79,
+        "compiled": 38,
+        "without_phrase_arguments": 38,
+        "diagnostic_cases": 21,
+        "diagnostic_requirements_pass": 20,
+        "refusals": {
+          "event_scope": 21,
+          "scope": 7,
+          "entity_coordination": 7,
+          "roles": 1,
+          "source_scope": 1,
+          "quantity": 3,
+          "name": 1
+        }
+      },
+      "controls": {
+        "total": 21,
+        "compiled": 18,
+        "without_phrase_arguments": 18,
+        "diagnostic_cases": 20,
+        "diagnostic_requirements_pass": 20,
+        "refusals": {
+          "quantity": 1,
+          "scope": 1,
+          "reference": 1
+        }
+      }
+    },
+    "direct": {
+      "real": {
+        "total": 79,
+        "compiled": 36,
+        "without_phrase_arguments": 32,
+        "diagnostic_cases": 21,
+        "diagnostic_requirements_pass": 12,
+        "refusals": {
+          "parser_refusal": 9,
+          "unused_entities": 11,
+          "quantity": 6,
+          "reference": 4,
+          "source_frame": 4,
+          "ValueError": 1,
+          "KeyError": 1,
+          "temporal": 1,
+          "cross_scope_reference": 1,
+          "JSONDecodeError": 2,
+          "source_route": 1,
+          "scope": 1,
+          "argument_format": 1
+        }
+      },
+      "controls": {
+        "total": 21,
+        "compiled": 17,
+        "without_phrase_arguments": 17,
+        "diagnostic_cases": 20,
+        "diagnostic_requirements_pass": 20,
+        "refusals": {
+          "unused_entities": 1,
+          "quantity": 1,
+          "scope": 1,
+          "reference": 1
+        }
+      }
+    },
+    "assisted": {
+      "real": {
+        "total": 79,
+        "compiled": 34,
+        "without_phrase_arguments": 26,
+        "diagnostic_cases": 21,
+        "diagnostic_requirements_pass": 18,
+        "refusals": {
+          "unused_entities": 9,
+          "cross_scope_reference": 2,
+          "quantity": 4,
+          "ValueError": 2,
+          "reference": 6,
+          "scope": 2,
+          "source_route": 1,
+          "polarity": 1,
+          "parser_refusal": 2,
+          "temporal": 1,
+          "unknown_entity": 5,
+          "argument_format": 4,
+          "JSONDecodeError": 3,
+          "source_content": 1,
+          "source_frame": 2
+        }
+      },
+      "controls": {
+        "total": 21,
+        "compiled": 17,
+        "without_phrase_arguments": 13,
+        "diagnostic_cases": 20,
+        "diagnostic_requirements_pass": 20,
+        "refusals": {
+          "unused_entities": 1,
+          "quantity": 1,
+          "scope": 1,
+          "reference": 1
+        }
+      }
+    },
+    "selected": {
+      "real": {
+        "total": 79,
+        "compiled": 57,
+        "diagnostic_cases": 21,
+        "diagnostic_requirements_pass": 21
+      },
+      "controls": {
+        "total": 21,
+        "compiled": 18,
+        "diagnostic_cases": 20,
+        "diagnostic_requirements_pass": 20
+      }
+    }
+  },
+  "input_sha256": "424504582e6169e7a56799c40e2410daeaef5bfa50a84554cffcb90575595af0",
+  "tests": {
+    "tests": 96,
+    "failures": 0,
+    "errors": 0
+  },
+  "rewrite_implemented": false
+}

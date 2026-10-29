@@ -1,0 +1,67 @@
+{
+  "reviewer": "Codex assistant; not independent human gold",
+  "compiler_changed_after_review": false,
+  "interpretation": "Eight compiled does not mean eight faithful. These qualitative judgments do not define a held-out accuracy score.",
+  "cases": [
+    {
+      "claim_id": "TzF9M4kZ3Pys_227",
+      "text": "Sunny day turns dark due to dust storm.",
+      "judgment": "partly_preserved",
+      "note": "The transition and dust-storm cause are present, but sunny is an ordinary day property rather than an explicitly earlier state. The dynamic reading needs review."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_530",
+      "text": "Lady on the screen is criticizing exiled Mexicans for not standing up to the Narco State.",
+      "judgment": "incorrect_scope",
+      "note": "The criticism reason is partly kept as a phrase, but the program separately asserts a negative stand event in world scope. This is not a faithful criticism-content translation."
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_698",
+      "text": "Man giving a speech is using a microphone. ",
+      "judgment": "preserved_for_review",
+      "note": "The speak and use events share the same man, and the microphone is attached to use. This satisfies the specified basic role/identity reading; full lexical equivalence is not certified."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_484",
+      "text": "Cannon/explosives blasting in the background.",
+      "judgment": "partial",
+      "note": "Cannon/explosives remains one opaque phrase. The program retains blasting/background but does not resolve the noun-phrase alternatives."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_249",
+      "text": "FOX News.",
+      "judgment": "context_required",
+      "note": "FOX News is compiled as an existing broadcast-program referent. The fragment alone does not identify whether the intended claim is about a logo, written label or organization."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1784",
+      "text": "Multiple aerial clips of the smoke coming from the bottom of the building.",
+      "judgment": "incorrect_scope",
+      "note": "Clip/topic, aerial, smoke and building-bottom relations survive, but the coming-smoke event is in world scope rather than clearly inside depiction. Multiple is not a defined group quantifier."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_308",
+      "text": "Power outages likely in residential area.",
+      "judgment": "refused",
+      "note": "Both baselines refuse the likely-outages description; no actual outage is asserted. Modality remains unsupported."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1487",
+      "text": "Made landfall on the east coast of Mexico with winds at 45mph.",
+      "judgment": "refused",
+      "note": "Both baselines refuse this fragment with a speed measurement and omitted subject. The numeric guard is broader than counting; it also declines this scalar measurement."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1491",
+      "text": "Evening of the third shows values at 2.5.",
+      "judgment": "context_required",
+      "note": "Date, ordinal and numeric value appear in the graph, but what is being measured and what shows the value are unspecified. The original context is needed."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_304",
+      "text": "Tik Tok Meganmarples",
+      "judgment": "context_required",
+      "note": "The visible label/handle is turned into a person referent. The fragment lacks the context needed to decide the intended OCR/profile assertion."
+    }
+  ]
+}

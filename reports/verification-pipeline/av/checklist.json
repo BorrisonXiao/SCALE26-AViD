@@ -27,52 +27,52 @@
     },
     {
       "id": 7,
-      "title": "Get claim-to-DeepProbLog compilation working",
-      "status": "comparison completed; common representation and semantic review still in progress",
+      "title": "Make original-claim compilation reliable",
+      "status": "first implementation/evaluation round complete; keep the compiler opt-in",
       "items": [
         {
-          "text": "Research existing syntax-to-logic, SRL, AMR and recent clause-level logical-form generation methods",
+          "text": "Specify semantic requirements for 25 real diagnostic claims and 21 controls; flag uncertain readings separately",
           "done": true
         },
         {
-          "text": "Run syntax/SRL rules, pretrained AMR, direct neural graphs and syntax/SRL-assisted neural graphs on the same 79 development claims and 21 controls",
+          "text": "Implement a common JSON logical form and deterministic compiler, including recursive source content, shared referents, predicate senses and source-aligned temporal fields",
           "done": true
         },
         {
-          "text": "Inspect generated graphs and compiled predicates; revise source-scope handling where trained SRL and AMR use different argument slots",
+          "text": "Expose simple noun-phrase modifiers and keep opaque phrases explicitly marked",
           "done": true
         },
         {
-          "text": "Validate generated Prolog syntax and execute a bounded compilation diagnostic in DeepProbLog, without media verification",
+          "text": "Compare trained SRL, pretrained AMR and direct/SRL-assisted frozen logical-form generation on the fixed development inputs",
           "done": true
         },
         {
-          "text": "Finish a reviewed reference set for 25 selected real claims and 21 controls; check roles, modifiers, shared identity, source scope, polarity and tense separately",
+          "text": "Freeze before checking new source videos; preserve the first 20-source results, fix structural bugs, and evaluate on ten additional disjoint sources",
+          "done": true
+        },
+        {
+          "text": "Review accepted programs as well as refusals; keep executability, diagnostic checks and meaning judgments separate",
+          "done": true
+        },
+        {
+          "text": "Fix remaining criticism/reporting scope and nominal media descriptions; require complete original-claim coverage before automatic acceptance",
           "done": false
         },
         {
-          "text": "Freeze a common logical-form schema: predicate signatures and senses, recursive source content, noun-phrase decomposition, and one temporal interface",
+          "text": "Define context requirements for bare names, labels, omitted subjects and underspecified measurements",
           "done": false
         },
         {
-          "text": "Fix shared translation defects and explicit refusals; retain trained SRL and pretrained AMR as the two low-cost baselines",
-          "done": false
-        },
-        {
-          "text": "Test one small clause-level logical-form generator with deterministic serialization; compare text-only and SRL assistance on the same references",
-          "done": false
-        },
-        {
-          "text": "Freeze the parser/compiler and evaluate compilation plus meaning preservation on unseen source videos before more media verification",
+          "text": "Complete wider modifier/reference coverage and rerun a frozen source-disjoint evaluation before selecting a default parser",
           "done": false
         }
       ],
-      "note": "Immediate priority confirmed by user: compilation first. New source: compilation_methods_20261028. Higher acceptance is not semantic accuracy: SRL retains opaque phrases; AMR loses some details; prompted 8B graphs can invent polarity or roles. Ten examples have assistant qualitative reviews; the full reference review is pending. Planning proposal: one or two focused working days, then choose a bounded supported fragment. No new relation model was trained."
+      "note": "LLM sentence rewriting is explicitly reserved as a last resort and must NOT be implemented yet. New run: logical_form_20261028. The final ten-source check compiled 8/10 under the selection policy, but qualitative review found scope errors and context-dependent fragments; this is not 80% semantic accuracy. No media verification or new relation-model training."
     },
     {
       "id": 8,
       "title": "Keep meaning and executability checks separate",
-      "status": "77 regression checks; parser-reference and held-out compilation evaluation remain pending",
+      "status": "96 regression checks; broader semantic reliability remains unresolved",
       "items": [
         {
           "text": "Check paraphrases and active/passive forms for equivalent meaning",
@@ -99,7 +99,7 @@
           "done": false
         }
       ],
-      "note": "Historical tests use hand-authored inputs; the new regression tests also cover trained-SRL written-content scope, inverse AMR roles, shared variables, branch-local quantifiers and explicit refusals. Automatic parsing is assessed separately. New temporal atoms are compilation outputs and are not connected to the older interval-checking interface."
+      "note": "The prior 77 checks plus 19 logical-form tests pass. Tests include recursive source scope, shared participants, nominal parents, canonical relations and actual DeepProbLog execution with artificial unknown observations. They do not certify generated-parser semantic accuracy. Source-relative temporal interpretation remains limited."
     },
     {
       "id": 1,
@@ -213,5 +213,14 @@
     "source_path": "exp/probabilistic_verification/compilation_methods_20261028",
     "report_anchor": "compilation-methods",
     "status": "fixed-input comparison and focused qualitative review; not a selected production parser"
+  },
+  "rewrite_fallback": {
+    "status": "reserved; explicitly not to be implemented yet",
+    "policy": "Improve compilation of original claims first. Consider information-preserving LLM rewriting only later for difficult edge cases or unseen patterns, with semantic checks."
+  },
+  "logical_form_run": {
+    "source_path": "exp/probabilistic_verification/logical_form_20261028",
+    "report_anchor": "compilation-methods",
+    "status": "experimental common logical form; not ready as the default automatic compiler"
   }
 }

@@ -1,0 +1,107 @@
+{
+  "author": "Codex assistant",
+  "independent_human_gold": false,
+  "prepared_before_inspecting_model_outputs": true,
+  "requirements": [
+    {
+      "claim_id": "TFOEIehBwT8Q_453",
+      "text": "\"Narco government\" written in graffiti on the barricades surrounding the National Palace ",
+      "requirement": "Preserve Narco government as written graffiti content, OCR scope, and the barricades/National Palace location. Do not assert a narco government exists as an unqualified world fact."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1777",
+      "text": "Multiple aerial footage clips around the Hilton as it smokes.",
+      "requirement": "Preserve multiple aerial clips, Hilton, smoke and the depicted footage/source relationship. Do not drop aerial or the source scope."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_68",
+      "text": "Angupaul1 is relying on a portable charger to livestream.",
+      "requirement": "Angupaul1 relies on a portable charger for the purpose of livestreaming. The purpose must not become an independent assertion that livestreaming occurs."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1508",
+      "text": "Notice that the clouds take on a more eastward motion in an anti-cyclonic swirl.",
+      "requirement": "Clouds have more eastward motion in an anti-cyclonic swirl. Notice is a discourse instruction; the descriptive content must remain. A refusal is preferable to a changed event."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_310",
+      "text": "Timelapse of incoming massive dust storm.",
+      "requirement": "The timelapse depicts an incoming massive dust storm. Preserve source, approach and size; the nominal fragment does not supply an absolute event time."
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_694",
+      "text": "Tent says covid 19 vaccine victims ",
+      "requirement": "The tent carries written covid 19 vaccine victims text. Use OCR content, not a speaking-tent interpretation; 19 belongs to the name rather than a group count."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_459",
+      "text": "Thousands of people are rallying and protesting in Mexico.",
+      "requirement": "Preserve thousands of people, rallying, protesting and Mexico, with the same participants. Explicit refusal is acceptable while quantified groups are unsupported."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_529",
+      "text": "Police arrive with detained students inside van.",
+      "requirement": "Police arrive with detained students inside a van. Preserve accompaniment, detention state and location without inventing who detained the students."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_600",
+      "text": "People wearing full white clothing are walking between the tents.",
+      "requirement": "People in full white clothing walk between tents. The same people wear and walk; white modifies clothing; between relates the walking/people to tents."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_449",
+      "text": "National rally protesters chanting \"will never be defeated\".",
+      "requirement": "National rally protesters chant the quoted future-negative slogan. The quotation is speech content; never must not negate the chanting event or assert the slogan as world truth."
+    },
+    {
+      "claim_id": "T8u81WMIyj18_753",
+      "text": "A car is parked on the grass in a park.",
+      "requirement": "A car is in a parked state on grass in a park. Do not invent a parking agent or require that a parking maneuver is currently occurring."
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_774",
+      "text": "Heavy fog makes it difficult to see.",
+      "requirement": "Heavy fog makes seeing difficult. Do not independently assert that seeing occurs; difficulty is not successful perception."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_651",
+      "text": "Fireworks in the distance.",
+      "requirement": "Fireworks are in the distance. This nominal fragment can state existence/location without inventing a named actor or exact time."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_234",
+      "text": "Massive dust storm is closing in.",
+      "requirement": "A massive dust storm is approaching. Preserve size and progressive aspect; closing in is the approach reading."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_229",
+      "text": "Arizona dust storm.",
+      "requirement": "Preserve an Arizona dust storm, including Arizona and dust; the fragment has no explicit finite tense."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_667",
+      "text": "Celebratory fireworks over river.",
+      "requirement": "Preserve celebratory fireworks over a river. Retain the celebratory qualifier and spatial relation; do not require a separate observed celebration event."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_180",
+      "text": "Rocket is launched successfully.",
+      "requirement": "A rocket is launched successfully. The rocket is the launch participant, not a named agent; preserve success and the passive auxiliary sequence."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_619",
+      "text": "The tent has an air conditioning unit.",
+      "requirement": "The tent has an air-conditioning unit. Preserve the tent/unit relationship and the unit type."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_52",
+      "text": "Akiak, Alaska has not had electricity for 22 days and counting due to Typhoon Halong.",
+      "requirement": "Akiak, Alaska has lacked electricity for 22 days and counting because of Typhoon Halong. Preserve negation, duration and cause; refusal is acceptable while this scope/duration is unsupported."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_238",
+      "text": "Power services is working in home.",
+      "requirement": "Power services is working in home is ambiguous about subject and location. Preserve the wording or refuse; do not certify a particular company/household interpretation without context."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "frozen_at": "2026-10-29T01:11:14.198789+00:00",
+  "files": {
+    "scripts/probabilistic_verification/__init__.py": "2a04e48e76316ea6494a6b1fc16c5376d8fea082306ba88018a657777dffdbb8",
+    "scripts/probabilistic_verification/representation.py": "a4329ccf0a3bd66b37fe92bfbae2dbe762883346f133f58a470220ee860efab6",
+    "scripts/probabilistic_verification/compiler.py": "a0c33a187e05df7610385ab279962d9e3505c15c08ceb309e689e8722f4761c8",
+    "scripts/probabilistic_verification/parsing.py": "c5623d06475ae453d700eae6e133b6a0eb65a8e431efc024cdf33c0c4999d5e4",
+    "scripts/probabilistic_verification/logic.py": "21885304608b896045db81175c2d1fb3b8a1bd3a137d86df32f775ff2bfcd182",
+    "scripts/probabilistic_verification/backend.py": "be3101746529d9f582e959dd918330541ace2c6329222a3997575f09b07b177e",
+    "scripts/probabilistic_verification/multimodal.py": "b3ba93da917ebb3628659c0fb4adb723bb3ff6648902b21bf93c3c9f82cbbac3",
+    "scripts/probabilistic_verification/semantic.py": "31a8cb9c7ecfa5be1e99749827c1d9afb95398792a0d05febb1956a3689338de",
+    "scripts/probabilistic_verification/temporal.py": "857be015b3fb55b16ebab54216d9c0c8a4a7d66a7775c062ccb82837471ce095",
+    "scripts/probabilistic_verification/predicate_compilation.py": "0cb0f9e0e71f558512c617116012f6ec8c7456bd874ee93c64d3f2f97b392fdc",
+    "scripts/probabilistic_verification/compilation_frontends.py": "8e814cafa3fd7e920b5e8dff1f6b1340c47bf9a3412347debc27f335b199d6f2",
+    "scripts/probabilistic_verification/logical_form.py": "2e85597e4bd6045a81c8fa24c05b036f76b4c48c7cb4ff4d41be87573d153c6e",
+    "scripts/probabilistic_verification/logical_form_adapters.py": "b20e92970331e3b18c67fea40227058145c26211f6e6f4c54a1b35021a107d52",
+    "scripts/probabilistic_verification/logical_form_review.py": "9eae292441ce7a2dab1d4a964c345b9c720015f3a8637a408760ef0556f20183",
+    "scripts/probabilistic_verification/compilation_selection.py": "5f7cf6c7b150625335f49c28456a41f713cf95e7b1e77b97aa10a0d709fc33df",
+    "scripts/prompts_phase2.py": "2f5214b94899672d907d2c4116b839b17a1feb947ae6d865744fb9b7a6ed999d",
+    "scripts/analyze_logical_forms.py": "1edd8dcad2a1d6ac5b3dd220fb23aeabc9e7fd4932307179bd694facecfea05b",
+    "scripts/run_logical_form_models.py": "947a8f1a7719ae959bb60d5bd703e357b94a5342ab2b2f3d2fe42d8d1d1df7ab"
+  },
+  "holdout_selection_sha256": "7f0bf7aff70f67625f9f960dad52251f9e1aa2116728111307cdf62f7bbb8412",
+  "policy": "No compiler or prompt tuning after source-disjoint evaluation. References may be reviewed but code changes require a new iteration."
+}

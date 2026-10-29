@@ -1,0 +1,49 @@
+{
+  "claims": 20,
+  "source_disjoint": true,
+  "reserved_sources_used": false,
+  "compiler_and_prompts_frozen": true,
+  "media_verification": false,
+  "rewriting": false,
+  "methods": {
+    "srl": {
+      "compiled": 11,
+      "total": 20,
+      "refusals": {
+        "unused_entities": 1,
+        "reference": 1,
+        "missing_srl": 4,
+        "quantity": 2,
+        "scope": 1
+      }
+    },
+    "amr": {
+      "compiled": 6,
+      "total": 20,
+      "refusals": {
+        "event_scope": 7,
+        "entity_coordination": 6,
+        "quantity": 1
+      }
+    },
+    "direct": {
+      "compiled": 7,
+      "total": 20,
+      "refusals": {
+        "source_frame": 1,
+        "reference": 1,
+        "unused_entities": 4,
+        "parser_refusal": 5,
+        "unknown_entity": 1,
+        "quantity": 1
+      }
+    },
+    "selected": {
+      "compiled": 14,
+      "total": 20,
+      "refusals": {
+        "all_parsers_refused": 6
+      }
+    }
+  }
+}

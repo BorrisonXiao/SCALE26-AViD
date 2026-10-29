@@ -1,0 +1,53 @@
+{
+  "claims": 20,
+  "source_disjoint": true,
+  "used_for_fixes": true,
+  "independent_after_freeze": false,
+  "reserved_sources_used": false,
+  "compiler_and_prompts_frozen": true,
+  "media_verification": false,
+  "rewriting": false,
+  "methods": {
+    "srl": {
+      "compiled": 9,
+      "total": 20,
+      "refusals": {
+        "unused_entities": 1,
+        "reference": 1,
+        "clause_type": 1,
+        "missing_srl": 4,
+        "quantity": 3,
+        "scope": 1
+      }
+    },
+    "amr": {
+      "compiled": 6,
+      "total": 20,
+      "refusals": {
+        "event_scope": 7,
+        "entity_coordination": 6,
+        "quantity": 1
+      }
+    },
+    "direct": {
+      "compiled": 6,
+      "total": 20,
+      "refusals": {
+        "source_frame": 1,
+        "reference": 1,
+        "clause_type": 1,
+        "parser_refusal": 5,
+        "quantity": 2,
+        "unused_entities": 3,
+        "unknown_entity": 1
+      }
+    },
+    "selected": {
+      "compiled": 12,
+      "total": 20,
+      "refusals": {
+        "all_parsers_refused": 8
+      }
+    }
+  }
+}
