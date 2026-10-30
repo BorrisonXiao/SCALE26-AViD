@@ -1,0 +1,1046 @@
+{
+  "protocol": "Within-corpus development using cached trained SRL and dependency inputs. Twenty-four previously reviewed claims received manually specified complete reference readings and development inspection; ambiguous readings and a remaining event-nominal identity requirement are explicit. Twenty fresh IDs were sampled before changes, excluding earlier reviewed/pilot IDs. Compiler and reference hashes were frozen before fresh review and are checked. The same assistant judged original text and both graphs, without media/truth labels or independent human gold. This is not source-disjoint generalization or a corpus semantic accuracy estimate.",
+  "counts": {
+    "development": {
+      "baseline": {
+        "refused": 4,
+        "faithful": 7,
+        "partial": 9,
+        "incorrect": 4
+      },
+      "revised": {
+        "refused": 3,
+        "faithful": 13,
+        "partial": 7,
+        "incorrect": 1
+      }
+    },
+    "fresh": {
+      "baseline": {
+        "incorrect": 4,
+        "faithful": 7,
+        "refused": 5,
+        "partial": 4
+      },
+      "revised": {
+        "incorrect": 2,
+        "faithful": 8,
+        "refused": 5,
+        "partial": 5
+      }
+    }
+  },
+  "cases": [
+    {
+      "method": "baseline",
+      "index": 0,
+      "judgment": "refused",
+      "note": "Repeated ARG1 on gone remains unresolved.",
+      "patterns": [
+        "duplicate_role"
+      ],
+      "cohort": "development",
+      "claim_id": "TQEmEycTI0RQ_827",
+      "text": "2021 map shows more NDP seats, many of which have since gone Liberal."
+    },
+    {
+      "method": "baseline",
+      "index": 1,
+      "judgment": "faithful",
+      "note": "Passive rebroadcast retains the footage and named broadcaster. ",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "TInVWzp25aIM_88",
+      "text": "Footage is being rebroadcast by The Weather Channel."
+    },
+    {
+      "method": "baseline",
+      "index": 2,
+      "judgment": "partial",
+      "note": "Depicted person is explicit, but the photographer/library credit structure is incomplete and the output is unnecessarily classified as a mention.",
+      "patterns": [
+        "credit_attachment",
+        "nominal_description"
+      ],
+      "cohort": "development",
+      "claim_id": "TFgw4IaR9R8s_1720",
+      "text": "Shows image of Charles Tupper from Elliott and Fry/Library and Archives Canada."
+    },
+    {
+      "method": "baseline",
+      "index": 3,
+      "judgment": "partial",
+      "note": "The final descent is retained but typed as a location rather than a phase/time.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "cohort": "development",
+      "claim_id": "T2EE72iNELEs_210",
+      "text": "Burning of thrusters in the final descent."
+    },
+    {
+      "method": "baseline",
+      "index": 4,
+      "judgment": "incorrect",
+      "note": "Under the natural reading of this malformed source, sailing is an event; the output treats ship sail as a manner object and omits that event.",
+      "patterns": [
+        "clause_attachment",
+        "source_ambiguity"
+      ],
+      "cohort": "development",
+      "claim_id": "TQKCK6-tRaoE_663",
+      "text": "Music plays as ship sail."
+    },
+    {
+      "method": "baseline",
+      "index": 5,
+      "judgment": "partial",
+      "note": "Possessive reference is explicit, but likely is a text adjunct and the organization name is split into a head and modifier.",
+      "patterns": [
+        "modality_scope",
+        "proper_name"
+      ],
+      "cohort": "development",
+      "claim_id": "TFgw4IaR9R8s_1746",
+      "text": "The Trump appeals to the International Trade Foundation will likely go to their Supreme Court."
+    },
+    {
+      "method": "baseline",
+      "index": 6,
+      "judgment": "faithful",
+      "note": "The referee is shared across stop/start, their count/fight targets are retained, and again is attached to start. Activity nouns remain referents, without invented participants.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "Tg0UxWYuPeJ0_431",
+      "text": "Referee stops the count and starts the fight again."
+    },
+    {
+      "method": "baseline",
+      "index": 7,
+      "judgment": "refused",
+      "note": "The podium/content phrase still has no usable attached clause frame.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "cohort": "development",
+      "claim_id": "TQEmEycTI0RQ_909",
+      "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf."
+    },
+    {
+      "method": "baseline",
+      "index": 8,
+      "judgment": "refused",
+      "note": "The robot-perform complement still lacks a linked frame.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "cohort": "development",
+      "claim_id": "Tg0UxWYuPeJ0_364",
+      "text": "People are watching the robot perform."
+    },
+    {
+      "method": "baseline",
+      "index": 9,
+      "judgment": "partial",
+      "note": "Take place remains take with a separate place participant; its idiomatic occurrence reading is unresolved.",
+      "patterns": [
+        "idiom"
+      ],
+      "cohort": "development",
+      "claim_id": "TFOEIehBwT8Q_466",
+      "text": "The protest is taking place in front of National Palace."
+    },
+    {
+      "method": "baseline",
+      "index": 10,
+      "judgment": "incorrect",
+      "note": "Registered vessel and the named Mississippi are represented by different referents; their identity is not enforced.",
+      "patterns": [
+        "coreference",
+        "modifier_scope"
+      ],
+      "cohort": "development",
+      "claim_id": "TbJqMFkNxARY_124",
+      "text": "The Mississippi is a Madeira-registered cargo vessel."
+    },
+    {
+      "method": "baseline",
+      "index": 11,
+      "judgment": "faithful",
+      "note": "Existence of a helicopter sound is retained; actual helicopter existence is not asserted.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "TKCfkoNUssZI_681",
+      "text": "There is a helicopter sound."
+    },
+    {
+      "method": "baseline",
+      "index": 12,
+      "judgment": "faithful",
+      "note": "Possible/multiple route modifiers, spacecraft ability, the route reference and Moon destination are retained in the relative description.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "T2G_ACMxR_I4_1162",
+      "text": "There are multiple possible routes spacecrafts can take to the Moon."
+    },
+    {
+      "method": "baseline",
+      "index": 13,
+      "judgment": "partial",
+      "note": "The source descents wording is retained as a nominal relation, but its temporal/event interpretation remains unresolved.",
+      "patterns": [
+        "temporal_binding",
+        "source_ambiguity"
+      ],
+      "cohort": "development",
+      "claim_id": "T2EE72iNELEs_205",
+      "text": "Combustion sound as rocket descents."
+    },
+    {
+      "method": "baseline",
+      "index": 14,
+      "judgment": "partial",
+      "note": "Visit and purpose learn are correctly nested with shared contestants, but the Miss Tourism World name is split into separate modifiers.",
+      "patterns": [
+        "proper_name"
+      ],
+      "cohort": "development",
+      "claim_id": "TzzhcBIczf_M_2059",
+      "text": "Miss Tourism World contestants visited the Shaolin Temple to learn Kung Fu."
+    },
+    {
+      "method": "baseline",
+      "index": 15,
+      "judgment": "faithful",
+      "note": "Causation, eruption description, pressure, flooding source and Dongguan relation survive. Flooding is a nominal referent; no additional actor was stated.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "Txf2EdqOg1SQ_2279",
+      "text": "The geyser-like eruptions are caused by high pressure from flooding in Dongguan."
+    },
+    {
+      "method": "baseline",
+      "index": 16,
+      "judgment": "partial",
+      "note": "Prior to landing is preserved as a time string without explicitly binding the landing event to Blue Ghost.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "cohort": "development",
+      "claim_id": "T2G_ACMxR_I4_1155",
+      "text": "Prior to landing, Blue Ghost entered a low lunar orbit."
+    },
+    {
+      "method": "baseline",
+      "index": 17,
+      "judgment": "incorrect",
+      "note": "Localization is asserted outside the prediction and the following-day time is omitted.",
+      "patterns": [
+        "source_scope",
+        "omission"
+      ],
+      "cohort": "development",
+      "claim_id": "Txf2EdqOg1SQ_2188",
+      "text": "The heaviest localized rain the following day is predicted for southern regions and mountain areas."
+    },
+    {
+      "method": "baseline",
+      "index": 18,
+      "judgment": "faithful",
+      "note": "Could scopes over impact, with the haboob and airport operations in the intended roles.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "TzF9M4kZ3Pys_281",
+      "text": "Haboob could impact airport operations."
+    },
+    {
+      "method": "baseline",
+      "index": 19,
+      "judgment": "refused",
+      "note": "Nested scheduled capture, eclipse and viewing clauses are refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "cohort": "development",
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon."
+    },
+    {
+      "method": "baseline",
+      "index": 20,
+      "judgment": "faithful",
+      "note": "The building, exact six-floor group and inclusion of the bottom floor are linked; the same group/floor references are reused.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "TKCfkoNUssZI_683",
+      "text": "The building has 6 floors, including the bottom floor. "
+    },
+    {
+      "method": "baseline",
+      "index": 21,
+      "judgment": "incorrect",
+      "note": "Damage is asserted outside the depicted image content. The unclear-damage concession is nested as generic content, with a duplicate opaque adjunct.",
+      "patterns": [
+        "source_scope",
+        "modifier_scope"
+      ],
+      "cohort": "development",
+      "claim_id": "TjHepwuhkYFA_1007",
+      "text": "A satellite image shows damaged residential areas, although the nature of the damage is not very clear."
+    },
+    {
+      "method": "baseline",
+      "index": 22,
+      "judgment": "partial",
+      "note": "Nailbiter is retained as a property value, but IM-to-landing identity remains hidden inside a modifier.",
+      "patterns": [
+        "noun_phrase_binding",
+        "metaphor"
+      ],
+      "cohort": "development",
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "text": "IM's moon landing was a nailbiter."
+    },
+    {
+      "method": "baseline",
+      "index": 23,
+      "judgment": "partial",
+      "note": "The whole spatial complement is a text literal; northeast, quadrant, near side and Moon have no explicit internal bindings.",
+      "patterns": [
+        "noun_phrase_binding",
+        "spatial_binding"
+      ],
+      "cohort": "development",
+      "claim_id": "T2G_ACMxR_I4_1278",
+      "text": "The Mare Crisium is in the northeast quadrant of the moon's near side."
+    },
+    {
+      "method": "revised",
+      "index": 0,
+      "judgment": "refused",
+      "note": "Repeated ARG1 on gone remains unresolved.",
+      "patterns": [
+        "duplicate_role"
+      ],
+      "cohort": "development",
+      "claim_id": "TQEmEycTI0RQ_827",
+      "text": "2021 map shows more NDP seats, many of which have since gone Liberal."
+    },
+    {
+      "method": "revised",
+      "index": 1,
+      "judgment": "faithful",
+      "note": "Passive rebroadcast retains the footage and named broadcaster. ",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "TInVWzp25aIM_88",
+      "text": "Footage is being rebroadcast by The Weather Channel."
+    },
+    {
+      "method": "revised",
+      "index": 2,
+      "judgment": "partial",
+      "note": "Depicted person is explicit, but the photographer/library credit structure is incomplete and the output is unnecessarily classified as a mention.",
+      "patterns": [
+        "credit_attachment",
+        "nominal_description"
+      ],
+      "cohort": "development",
+      "claim_id": "TFgw4IaR9R8s_1720",
+      "text": "Shows image of Charles Tupper from Elliott and Fry/Library and Archives Canada."
+    },
+    {
+      "method": "revised",
+      "index": 3,
+      "judgment": "partial",
+      "note": "The final descent is retained but typed as a location rather than a phase/time.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "cohort": "development",
+      "claim_id": "T2EE72iNELEs_210",
+      "text": "Burning of thrusters in the final descent."
+    },
+    {
+      "method": "revised",
+      "index": 4,
+      "judgment": "incorrect",
+      "note": "Under the natural reading of this malformed source, sailing is an event; the output treats ship sail as a manner object and omits that event.",
+      "patterns": [
+        "clause_attachment",
+        "source_ambiguity"
+      ],
+      "cohort": "development",
+      "claim_id": "TQKCK6-tRaoE_663",
+      "text": "Music plays as ship sail."
+    },
+    {
+      "method": "revised",
+      "index": 5,
+      "judgment": "partial",
+      "note": "Possessive reference is explicit, but likely is a text adjunct and the organization name is split into a head and modifier.",
+      "patterns": [
+        "modality_scope",
+        "proper_name"
+      ],
+      "cohort": "development",
+      "claim_id": "TFgw4IaR9R8s_1746",
+      "text": "The Trump appeals to the International Trade Foundation will likely go to their Supreme Court."
+    },
+    {
+      "method": "revised",
+      "index": 6,
+      "judgment": "faithful",
+      "note": "The referee is shared across stop/start, their count/fight targets are retained, and again is attached to start. Activity nouns remain referents, without invented participants.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "Tg0UxWYuPeJ0_431",
+      "text": "Referee stops the count and starts the fight again."
+    },
+    {
+      "method": "revised",
+      "index": 7,
+      "judgment": "refused",
+      "note": "The podium/content phrase still has no usable attached clause frame.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "cohort": "development",
+      "claim_id": "TQEmEycTI0RQ_909",
+      "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf."
+    },
+    {
+      "method": "revised",
+      "index": 8,
+      "judgment": "faithful",
+      "note": "The robot is explicitly linked as the embedded subject, while the people remain watchers.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "Tg0UxWYuPeJ0_364",
+      "text": "People are watching the robot perform."
+    },
+    {
+      "method": "revised",
+      "index": 9,
+      "judgment": "partial",
+      "note": "Take place remains take with a separate place participant; its idiomatic occurrence reading is unresolved.",
+      "patterns": [
+        "idiom"
+      ],
+      "cohort": "development",
+      "claim_id": "TFOEIehBwT8Q_466",
+      "text": "The protest is taking place in front of National Palace."
+    },
+    {
+      "method": "revised",
+      "index": 10,
+      "judgment": "faithful",
+      "note": "Vessel type, cargo modifier and registration all constrain the named Mississippi referent.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "TbJqMFkNxARY_124",
+      "text": "The Mississippi is a Madeira-registered cargo vessel."
+    },
+    {
+      "method": "revised",
+      "index": 11,
+      "judgment": "faithful",
+      "note": "Existence of a helicopter sound is retained; actual helicopter existence is not asserted.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "TKCfkoNUssZI_681",
+      "text": "There is a helicopter sound."
+    },
+    {
+      "method": "revised",
+      "index": 12,
+      "judgment": "faithful",
+      "note": "Possible/multiple route modifiers, spacecraft ability, the route reference and Moon destination are retained in the relative description.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "T2G_ACMxR_I4_1162",
+      "text": "There are multiple possible routes spacecrafts can take to the Moon."
+    },
+    {
+      "method": "revised",
+      "index": 13,
+      "judgment": "partial",
+      "note": "The source descents wording is retained as a nominal relation, but its temporal/event interpretation remains unresolved.",
+      "patterns": [
+        "temporal_binding",
+        "source_ambiguity"
+      ],
+      "cohort": "development",
+      "claim_id": "T2EE72iNELEs_205",
+      "text": "Combustion sound as rocket descents."
+    },
+    {
+      "method": "revised",
+      "index": 14,
+      "judgment": "faithful",
+      "note": "The complete Miss Tourism World name is preserved as one modifier; visit/learn share contestants in purpose scope.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "TzzhcBIczf_M_2059",
+      "text": "Miss Tourism World contestants visited the Shaolin Temple to learn Kung Fu."
+    },
+    {
+      "method": "revised",
+      "index": 15,
+      "judgment": "faithful",
+      "note": "Causation, eruption description, pressure, flooding source and Dongguan relation survive. Flooding is a nominal referent; no additional actor was stated.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "Txf2EdqOg1SQ_2279",
+      "text": "The geyser-like eruptions are caused by high pressure from flooding in Dongguan."
+    },
+    {
+      "method": "revised",
+      "index": 16,
+      "judgment": "partial",
+      "note": "Prior to landing is preserved as a time string without explicitly binding the landing event to Blue Ghost.",
+      "patterns": [
+        "temporal_binding"
+      ],
+      "cohort": "development",
+      "claim_id": "T2G_ACMxR_I4_1155",
+      "text": "Prior to landing, Blue Ghost entered a low lunar orbit."
+    },
+    {
+      "method": "revised",
+      "index": 17,
+      "judgment": "faithful",
+      "note": "Rain, degree/localization and following-day description remain inside prediction; regions retain their group/member structure.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "Txf2EdqOg1SQ_2188",
+      "text": "The heaviest localized rain the following day is predicted for southern regions and mountain areas."
+    },
+    {
+      "method": "revised",
+      "index": 18,
+      "judgment": "faithful",
+      "note": "Could scopes over impact, with the haboob and airport operations in the intended roles.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "TzF9M4kZ3Pys_281",
+      "text": "Haboob could impact airport operations."
+    },
+    {
+      "method": "revised",
+      "index": 19,
+      "judgment": "refused",
+      "note": "Nested scheduled capture, eclipse and viewing clauses are refused.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "cohort": "development",
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon."
+    },
+    {
+      "method": "revised",
+      "index": 20,
+      "judgment": "faithful",
+      "note": "The building, exact six-floor group and inclusion of the bottom floor are linked; the same group/floor references are reused.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "TKCfkoNUssZI_683",
+      "text": "The building has 6 floors, including the bottom floor. "
+    },
+    {
+      "method": "revised",
+      "index": 21,
+      "judgment": "partial",
+      "note": "Depicted damage now remains inside the image, and the negated clarity concession is separate. The nominal damage being qualified is not explicitly equated to that depicted state.",
+      "patterns": [
+        "event_nominal_reference"
+      ],
+      "cohort": "development",
+      "claim_id": "TjHepwuhkYFA_1007",
+      "text": "A satellite image shows damaged residential areas, although the nature of the damage is not very clear."
+    },
+    {
+      "method": "revised",
+      "index": 22,
+      "judgment": "faithful",
+      "note": "IM is an explicit possessor of the moon-landing referent; nailbiter is a predicative value.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "text": "IM's moon landing was a nailbiter."
+    },
+    {
+      "method": "revised",
+      "index": 23,
+      "judgment": "faithful",
+      "note": "Location, northeast quadrant, near side and Moon possession are explicit linked conditions.",
+      "patterns": [],
+      "cohort": "development",
+      "claim_id": "T2G_ACMxR_I4_1278",
+      "text": "The Mare Crisium is in the northeast quadrant of the moon's near side."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 0,
+      "judgment": "incorrect",
+      "note": "The mast is treated as a location alongside the surface rather than another deployed object; the deck relationship is absent.",
+      "patterns": [
+        "role_binding",
+        "coordination",
+        "omission"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1199",
+      "text": "Shortly after landing, Blue Ghost deployed the four tethered LMS (Lunar Magnetotelluric Sounder) electrodes across the lunar surface and 8ft mast above the top deck."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 1,
+      "judgment": "faithful",
+      "note": "Promoter, promoted temple, success and perfect aspect are retained.",
+      "patterns": [],
+      "claim_id": "TzzhcBIczf_M_2061",
+      "text": "Shi Yongxin has successfully promoted the Shaolin Temple."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 2,
+      "judgment": "faithful",
+      "note": "Named speaker and complete exact utterance remain linked; quoted events are not world assertions.",
+      "patterns": [],
+      "claim_id": "TFOEIehBwT8Q_502",
+      "text": "Adolfo Becerril says \"today we are marching because we demand justice and because young people are fed up and want a good future for our children, and for future generations. Perhaps the previous generation did not do things in the best way, but we are ready and I believe that now is our time too.\""
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 3,
+      "judgment": "faithful",
+      "note": "Recording of this video and its night-time condition survive.",
+      "patterns": [],
+      "claim_id": "TKCfkoNUssZI_722",
+      "text": "The video is recorded at night. "
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 4,
+      "judgment": "incorrect",
+      "note": "The imagery is made the actor conducting the study, rather than a resource helping an unspecified researcher.",
+      "patterns": [
+        "role_binding",
+        "control"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1245",
+      "text": "Sunset imagery will help study dust levitation and the resulting horizon glow caused by solar charging effects."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 5,
+      "judgment": "refused",
+      "note": "The crowd/cheering clauses remain unresolved.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1193",
+      "text": "Cut to larger crowd of what is likely members of the public cheering; this event was almost certainly broadcasted live."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 6,
+      "judgment": "refused",
+      "note": "No usable SRL frame or nominal root for the cloud/storm description.",
+      "patterns": [
+        "missing_srl"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2295",
+      "text": "A massive dark shelf cloud or storm front looms over the ocean near a beach."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 7,
+      "judgment": "partial",
+      "note": "First occurrence and fourth mandate survive as text/modifiers without explicit event-history bindings.",
+      "patterns": [
+        "temporal_binding",
+        "ordinal"
+      ],
+      "claim_id": "TQEmEycTI0RQ_986",
+      "text": "First time in approximately 20 years the party has won a fourth mandate."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 8,
+      "judgment": "incorrect",
+      "note": "The named LISTER and the developed/powered drill are different referents, so their identity is not enforced.",
+      "patterns": [
+        "identity"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1208",
+      "text": "LISTER is a pneumatic, gas-powered drill developed by Texas Tech University and Honeybee Robotics."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 9,
+      "judgment": "faithful",
+      "note": "The protesting group and full exact chant are retained.",
+      "patterns": [],
+      "claim_id": "TFOEIehBwT8Q_449",
+      "text": "National rally protesters chanting \"will never be defeated\"."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 10,
+      "judgment": "refused",
+      "note": "The credited predicate is missing from the linked SRL graph.",
+      "patterns": [
+        "missing_predicate"
+      ],
+      "claim_id": "TQEmEycTI0RQ_963",
+      "text": "Conclusion: Carney's success credited largely to Trump's rhetoric and threats."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 11,
+      "judgment": "faithful",
+      "note": "The protesters are shared across the coordinated waving and blowing events.",
+      "patterns": [],
+      "claim_id": "TW4OYA3RN-Hw_1814",
+      "text": "Protestors are waving hats and blowing whistles."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 12,
+      "judgment": "partial",
+      "note": "The over-a-year duration is represented by a year entity/preposition, without a typed duration bound.",
+      "patterns": [
+        "literal_type"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1303",
+      "text": "Testing the vehicle takes over a year."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 13,
+      "judgment": "refused",
+      "note": "Nested podium, rally and sweatshirt clauses remain unlinked.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TQEmEycTI0RQ_836",
+      "text": "Shows image of Trump shaking Elon Musk's hand at some kind of rally (Elon Musk wearing SpaceX sweatshirt)."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 14,
+      "judgment": "incorrect",
+      "note": "Bad economic policy is required outside Axelrod's asserted content; the actual tariffs need not be bad policy.",
+      "patterns": [
+        "source_scope"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1561",
+      "text": "Axelrod claims the tariffs are bad economic policy."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 15,
+      "judgment": "refused",
+      "note": "The blame/reason complement cannot be attached.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1761",
+      "text": "Trump blames people sitting at the oval office for making poor decisions."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 16,
+      "judgment": "faithful",
+      "note": "The protesting group and three repeated Mexico tokens remain one exact utterance.",
+      "patterns": [],
+      "claim_id": "TFOEIehBwT8Q_463",
+      "text": "Protesters are chanting \"Mexico, Mexico, Mexico\"."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 17,
+      "judgment": "faithful",
+      "note": "Passive sharing retains this video and the complete ABC 7 name.",
+      "patterns": [],
+      "claim_id": "TbJqMFkNxARY_138",
+      "text": "This video is shared by ABC 7."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 18,
+      "judgment": "partial",
+      "note": "The deals/policy noun-phrase structure is missing although the main significance/reason relationship survives.",
+      "patterns": [
+        "noun_phrase_binding",
+        "omission"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1624",
+      "text": "This ruling is significant because Trump uses tariffs as a key part of his international trade 'deals' and policy."
+    },
+    {
+      "method": "baseline",
+      "cohort": "fresh",
+      "index": 19,
+      "judgment": "partial",
+      "note": "Expectation and shared mission survive, but four days is a counted group rather than a typed duration, and the ending condition stays opaque.",
+      "patterns": [
+        "literal_type",
+        "temporal_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1243",
+      "text": "The mission was expected to last about four more days until sunset and loss of power."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 0,
+      "judgment": "incorrect",
+      "note": "The mast is treated as a location alongside the surface rather than another deployed object; the deck relationship is absent.",
+      "patterns": [
+        "role_binding",
+        "coordination",
+        "omission"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1199",
+      "text": "Shortly after landing, Blue Ghost deployed the four tethered LMS (Lunar Magnetotelluric Sounder) electrodes across the lunar surface and 8ft mast above the top deck."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 1,
+      "judgment": "faithful",
+      "note": "Promoter, promoted temple, success and perfect aspect are retained.",
+      "patterns": [],
+      "claim_id": "TzzhcBIczf_M_2061",
+      "text": "Shi Yongxin has successfully promoted the Shaolin Temple."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 2,
+      "judgment": "faithful",
+      "note": "Named speaker and complete exact utterance remain linked; quoted events are not world assertions.",
+      "patterns": [],
+      "claim_id": "TFOEIehBwT8Q_502",
+      "text": "Adolfo Becerril says \"today we are marching because we demand justice and because young people are fed up and want a good future for our children, and for future generations. Perhaps the previous generation did not do things in the best way, but we are ready and I believe that now is our time too.\""
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 3,
+      "judgment": "faithful",
+      "note": "Recording of this video and its night-time condition survive.",
+      "patterns": [],
+      "claim_id": "TKCfkoNUssZI_722",
+      "text": "The video is recorded at night. "
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 4,
+      "judgment": "incorrect",
+      "note": "The imagery is made the actor conducting the study, rather than a resource helping an unspecified researcher.",
+      "patterns": [
+        "role_binding",
+        "control"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1245",
+      "text": "Sunset imagery will help study dust levitation and the resulting horizon glow caused by solar charging effects."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 5,
+      "judgment": "refused",
+      "note": "The crowd/cheering clauses remain unresolved.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1193",
+      "text": "Cut to larger crowd of what is likely members of the public cheering; this event was almost certainly broadcasted live."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 6,
+      "judgment": "refused",
+      "note": "No usable SRL frame or nominal root for the cloud/storm description.",
+      "patterns": [
+        "missing_srl"
+      ],
+      "claim_id": "Txf2EdqOg1SQ_2295",
+      "text": "A massive dark shelf cloud or storm front looms over the ocean near a beach."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 7,
+      "judgment": "partial",
+      "note": "First occurrence and fourth mandate survive as text/modifiers without explicit event-history bindings.",
+      "patterns": [
+        "temporal_binding",
+        "ordinal"
+      ],
+      "claim_id": "TQEmEycTI0RQ_986",
+      "text": "First time in approximately 20 years the party has won a fourth mandate."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 8,
+      "judgment": "faithful",
+      "note": "LISTER is the single referent for drill classification, gas power and development; the university/company remain explicit group members.",
+      "patterns": [],
+      "claim_id": "T2G_ACMxR_I4_1208",
+      "text": "LISTER is a pneumatic, gas-powered drill developed by Texas Tech University and Honeybee Robotics."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 9,
+      "judgment": "faithful",
+      "note": "The protesting group and full exact chant are retained.",
+      "patterns": [],
+      "claim_id": "TFOEIehBwT8Q_449",
+      "text": "National rally protesters chanting \"will never be defeated\"."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 10,
+      "judgment": "refused",
+      "note": "The credited predicate is missing from the linked SRL graph.",
+      "patterns": [
+        "missing_predicate"
+      ],
+      "claim_id": "TQEmEycTI0RQ_963",
+      "text": "Conclusion: Carney's success credited largely to Trump's rhetoric and threats."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 11,
+      "judgment": "faithful",
+      "note": "The protesters are shared across the coordinated waving and blowing events.",
+      "patterns": [],
+      "claim_id": "TW4OYA3RN-Hw_1814",
+      "text": "Protestors are waving hats and blowing whistles."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 12,
+      "judgment": "partial",
+      "note": "The over-a-year duration is represented by a year entity/preposition, without a typed duration bound.",
+      "patterns": [
+        "literal_type"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1303",
+      "text": "Testing the vehicle takes over a year."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 13,
+      "judgment": "refused",
+      "note": "Nested podium, rally and sweatshirt clauses remain unlinked.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TQEmEycTI0RQ_836",
+      "text": "Shows image of Trump shaking Elon Musk's hand at some kind of rally (Elon Musk wearing SpaceX sweatshirt)."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 14,
+      "judgment": "partial",
+      "note": "Bad economic policy now stays within Axelrod's assertion, but the bare mass-noun copular complement still uses a separate policy referent.",
+      "patterns": [
+        "copular_identity"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1561",
+      "text": "Axelrod claims the tariffs are bad economic policy."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 15,
+      "judgment": "refused",
+      "note": "The blame/reason complement cannot be attached.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1761",
+      "text": "Trump blames people sitting at the oval office for making poor decisions."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 16,
+      "judgment": "faithful",
+      "note": "The protesting group and three repeated Mexico tokens remain one exact utterance.",
+      "patterns": [],
+      "claim_id": "TFOEIehBwT8Q_463",
+      "text": "Protesters are chanting \"Mexico, Mexico, Mexico\"."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 17,
+      "judgment": "faithful",
+      "note": "Passive sharing retains this video and the complete ABC 7 name.",
+      "patterns": [],
+      "claim_id": "TbJqMFkNxARY_138",
+      "text": "This video is shared by ABC 7."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 18,
+      "judgment": "partial",
+      "note": "The deals/policy noun-phrase structure is missing although the main significance/reason relationship survives.",
+      "patterns": [
+        "noun_phrase_binding",
+        "omission"
+      ],
+      "claim_id": "TFgw4IaR9R8s_1624",
+      "text": "This ruling is significant because Trump uses tariffs as a key part of his international trade 'deals' and policy."
+    },
+    {
+      "method": "revised",
+      "cohort": "fresh",
+      "index": 19,
+      "judgment": "partial",
+      "note": "Expectation and shared mission survive, but four days is a counted group rather than a typed duration, and the ending condition stays opaque.",
+      "patterns": [
+        "literal_type",
+        "temporal_binding"
+      ],
+      "claim_id": "T2G_ACMxR_I4_1243",
+      "text": "The mission was expected to last about four more days until sunset and loss of power."
+    }
+  ]
+}

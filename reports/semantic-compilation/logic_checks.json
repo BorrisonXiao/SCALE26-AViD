@@ -1,0 +1,177 @@
+{
+  "logical_checks": [
+    {
+      "index": 8,
+      "reference": false,
+      "counterexample": false,
+      "expected": "supported",
+      "actual": "supported"
+    },
+    {
+      "index": 8,
+      "reference": false,
+      "counterexample": true,
+      "expected": "refuted",
+      "actual": "refuted"
+    },
+    {
+      "index": 8,
+      "reference": true,
+      "counterexample": false,
+      "expected": "supported",
+      "actual": "supported"
+    },
+    {
+      "index": 8,
+      "reference": true,
+      "counterexample": true,
+      "expected": "refuted",
+      "actual": "refuted"
+    },
+    {
+      "index": 10,
+      "reference": false,
+      "counterexample": false,
+      "expected": "supported",
+      "actual": "supported"
+    },
+    {
+      "index": 10,
+      "reference": false,
+      "counterexample": true,
+      "expected": "refuted",
+      "actual": "refuted"
+    },
+    {
+      "index": 10,
+      "reference": true,
+      "counterexample": false,
+      "expected": "supported",
+      "actual": "supported"
+    },
+    {
+      "index": 10,
+      "reference": true,
+      "counterexample": true,
+      "expected": "refuted",
+      "actual": "refuted"
+    },
+    {
+      "index": 17,
+      "reference": false,
+      "counterexample": false,
+      "expected": "supported",
+      "actual": "supported"
+    },
+    {
+      "index": 17,
+      "reference": false,
+      "counterexample": true,
+      "expected": "refuted",
+      "actual": "refuted"
+    },
+    {
+      "index": 17,
+      "reference": true,
+      "counterexample": false,
+      "expected": "supported",
+      "actual": "supported"
+    },
+    {
+      "index": 17,
+      "reference": true,
+      "counterexample": true,
+      "expected": "refuted",
+      "actual": "refuted"
+    },
+    {
+      "index": 21,
+      "reference": false,
+      "counterexample": false,
+      "expected": "supported",
+      "actual": "supported"
+    },
+    {
+      "index": 21,
+      "reference": false,
+      "counterexample": true,
+      "expected": "refuted",
+      "actual": "refuted"
+    },
+    {
+      "index": 21,
+      "reference": true,
+      "counterexample": false,
+      "expected": "supported",
+      "actual": "supported"
+    },
+    {
+      "index": 21,
+      "reference": true,
+      "counterexample": true,
+      "expected": "refuted",
+      "actual": "refuted"
+    }
+  ],
+  "baseline_counterexamples": [
+    {
+      "index": 10,
+      "baseline_accepts_counterexample": true
+    },
+    {
+      "index": 17,
+      "baseline_accepts_counterexample": true
+    },
+    {
+      "index": 21,
+      "baseline_accepts_counterexample": true
+    }
+  ],
+  "native_checks": [
+    {
+      "index": 8,
+      "status": "passed",
+      "result": {
+        "claim_id": "Tg0UxWYuPeJ0_364",
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 1.0,
+          "unknown": 0.0
+        },
+        "prediction": "refuted",
+        "timing": {
+          "ground_seconds": 0.05092811584472656,
+          "compile_seconds": 0.11475944519042969,
+          "evaluate_seconds": 0.09353756904602051
+        },
+        "wall_seconds": 0.2595065161585808
+      }
+    },
+    {
+      "index": 10,
+      "status": "passed",
+      "result": {
+        "claim_id": "TbJqMFkNxARY_124",
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 1.0,
+          "unknown": 0.0
+        },
+        "prediction": "refuted",
+        "timing": {
+          "ground_seconds": 0.09494304656982422,
+          "compile_seconds": 0.7436501979827881,
+          "evaluate_seconds": 1.0920097827911377
+        },
+        "wall_seconds": 1.9312588945031166
+      }
+    },
+    {
+      "index": 21,
+      "status": "failed_or_timeout",
+      "reason": "Command '['/exp/cxiao/scale26/avid/envs/probabilistic-verification/bin/python', '/exp/cxiao/scale26/avid/scripts/check_semantic_srl_logic.py', '--native-one', '21']' timed out after 30 seconds"
+    }
+  ],
+  "reference_sha256": "8ae46ce552f353a118dbf485d70b2158e11e8ecc42a2f88394cbb47cbb1f1194",
+  "description": "Only constructed point-mass evidence. Matching facts support; wrong performer, another registered vessel, world rain without forecast support, and world damage without depicted damage refute. Reference graphs and parsed graphs are checked independently. No media verification."
+}

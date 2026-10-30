@@ -28,7 +28,7 @@
     {
       "id": 7,
       "title": "Make original-claim compilation reliable",
-      "status": "SRL-only census and separate parse-editing experiments complete; semantic reliability still open",
+      "status": "bounded semantic SRL revision complete; general semantic reliability remains open",
       "items": [
         {
           "text": "Specify semantic requirements for 25 real diagnostic claims and 21 controls; flag uncertain readings separately",
@@ -91,20 +91,71 @@
           "done": true
         },
         {
-          "text": "Keep nominal objects and participial modifiers inside their source or prediction context",
+          "text": "Complete the bounded nominal source/prediction-scope changes and inspect remaining event-nominal identity errors",
+          "done": true
+        },
+        {
+          "text": "Implement structured a/an copular/location complements and selected explicit/lexically licensed event controllers; retain broader limitations",
+          "done": true
+        }
+      ],
+      "note": "srl_semantics_20261029: prior SRL 1,997/2,375 compiled; revised 2,042 (1,870 claims and 172 nominal descriptions). Development 24 faithful: 7 to 13; fresh 20: 7 to 8, incorrect 4 to 2. Same-assistant review, no independent gold or corpus accuracy estimate. Source/identity/controller rules improved selected cases; existing SRL role errors, event-nominal identity and duration types remain open. No LLM calls or rewriting."
+    },
+    {
+      "id": 9,
+      "title": "Complete the bounded semantic compilation revision",
+      "status": "completed; five accepted actions checked",
+      "items": [
+        {
+          "text": "Write 24 reference readings and reserve 20 fresh IDs before changes — separate intended meaning from program validity",
+          "done": true
+        },
+        {
+          "text": "Fix selected source/prediction scope and modifier attachment — preserve evidence context",
+          "done": true
+        },
+        {
+          "text": "Fix a/an predicational identity and structured spatial complements — share entity references",
+          "done": true
+        },
+        {
+          "text": "Complete selected embedded subjects with explicit links or lexical control classes — avoid a universal subject assumption",
+          "done": true
+        },
+        {
+          "text": "Freeze and rerun all 2,375 inputs, review fresh cases and test reference compilation — measure acceptance and meaning separately",
+          "done": true
+        }
+      ],
+      "note": "Completed bounded work does not imply every claim now compiles correctly. All 44 paired reviews and all per-claim outputs are in the new report."
+    },
+    {
+      "id": 10,
+      "title": "Address remaining meaning errors and inference cost",
+      "status": "proposed next work; not implemented",
+      "items": [
+        {
+          "text": "Fix event/nominal references, bare mass-noun predication and duration types — preserve remaining identity and value relationships",
           "done": false
         },
         {
-          "text": "Preserve structured copular/location complements and resolve event controllers before selecting a default compiler",
+          "text": "Audit missing/wrong SRL frames and recover explicit participants — address missing predicates and wrong actors",
+          "done": false
+        },
+        {
+          "text": "Profile DeepProbLog startup, grounding, compilation and evaluation — locate the nested-case timeout before weak-label training",
+          "done": false
+        },
+        {
+          "text": "Freeze the next compiler and obtain independent review on new source videos — measure meaning beyond development cases",
           "done": false
         }
-      ],
-      "note": "srl_revision_20261029: earlier SRL 1,344/2,375 compiled; new SRL graph 1,997 (1,819 claims and 178 nominal descriptions). Same 24 random-case assistant review: earlier 5 faithful; new SRL and both LLM editors 7 each. These are development checks, not corpus accuracy. Current LLM editing gives no observed faithful-output gain. Sentence rewriting remains unimplemented; verification/training are deferred."
+      ]
     },
     {
       "id": 8,
       "title": "Keep meaning and executability checks separate",
-      "status": "148 regression tests pass; cached replay covers the full SRL census and both editor conditions",
+      "status": "156 tests pass; full cached replay and 16 constructed logical checks pass; native nested-case timeout remains",
       "items": [
         {
           "text": "Check paraphrases and active/passive forms for equivalent meaning",
@@ -131,15 +182,15 @@
           "done": false
         },
         {
-          "text": "Use complete logical-form references to evaluate source scope, roles, modifiers, quote integrity, numeric identifiers and event phases before expanding automatic acceptance",
-          "done": false
+          "text": "Write and compile 24 manual development reference readings; freeze before the reserved fresh review, with ambiguity notes",
+          "done": true
         },
         {
           "text": "Profile loading, grounding and inference separately for the timed-out checks before weak-label training",
           "done": false
         }
       ],
-      "note": "Source-token bounds and unchanged-role guarantees are limited. New frames can still assign the wrong subject, and syntactically valid outputs can lose source scope. Use the complete reference structures and accepted-error examples; never equate acceptance with semantic correctness."
+      "note": "Reference-to-logic and SRL-to-graph checks are separate. Native DeepProbLog passes two constructed checks; image/damage times out after 30 seconds including startup. Whole-corpus inference and training performance are unmeasured. Fresh IDs are within-corpus, not source-disjoint gold."
     },
     {
       "id": 1,
@@ -228,7 +279,7 @@
       ]
     }
   ],
-  "intro": "Current priority: one SRL/dependency-to-logic pipeline. The complete 2,375-input SRL follow-up and separate 48-claim LLM edit experiments are complete. Do not use per-claim SRL/neural selection as the main method. Semantic scope and noun-phrase binding remain unresolved.",
+  "intro": "Current priority: original-claim compilation. The bounded semantic SRL revision is complete: 2,042/2,375 inputs compile, but accepted meaning errors remain. Fresh 20-case review has 8 faithful, 5 partial, 2 incorrect and 5 refused outputs. Keep media verification and relation training deferred.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -264,5 +315,6 @@
     "status": "experimental common logical form; not ready as the default automatic compiler"
   },
   "full_compilation_run": "full_compilation_20261029",
-  "srl_revision_run": "srl_revision_20261029"
+  "srl_revision_run": "srl_revision_20261029",
+  "srl_semantics_run": "srl_semantics_20261029"
 }

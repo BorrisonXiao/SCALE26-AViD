@@ -1,0 +1,1638 @@
+{
+  "author": "Assistant manual specification from original text, audited during development and frozen before fresh review. Not independent human gold.",
+  "references": [
+    {
+      "index": 0,
+      "claim_id": "TQEmEycTI0RQ_827",
+      "text": "2021 map shows more NDP seats, many of which have since gone Liberal.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "map",
+            "text": "map",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "2021"
+              }
+            ]
+          },
+          {
+            "id": "seats",
+            "text": "seats",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "NDP"
+              },
+              {
+                "role": "mod",
+                "value": "more"
+              },
+              {
+                "role": "mod",
+                "value": "many"
+              }
+            ]
+          },
+          {
+            "id": "lib",
+            "text": "Liberal",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "show",
+              "predicate": "show",
+              "anchor": "shows",
+              "arguments": {
+                "ARG0": "map"
+              },
+              "propositions": [
+                {
+                  "role": "ARG1",
+                  "kind": "depiction",
+                  "route": "visual_depiction",
+                  "body": {
+                    "op": "entity",
+                    "ref": "seats"
+                  }
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "id": "change",
+              "predicate": "go",
+              "anchor": "gone",
+              "arguments": {
+                "ARG1": "seats",
+                "ARG2": "lib"
+              },
+              "properties": [
+                {
+                  "role": "time",
+                  "value": "since"
+                }
+              ]
+            }
+          ]
+        },
+        "requires_context": true,
+        "warnings": [
+          "Assumes the many seats changed party after the mapped result. The comparison baseline for more and the exact map/relative-clause scope need context."
+        ]
+      },
+      "reading_note": "Assumes the many seats changed party after the mapped result. The comparison baseline for more and the exact map/relative-clause scope need context.",
+      "ambiguous": true
+    },
+    {
+      "index": 1,
+      "claim_id": "TInVWzp25aIM_88",
+      "text": "Footage is being rebroadcast by The Weather Channel.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "f",
+            "text": "Footage",
+            "type": "entity"
+          },
+          {
+            "id": "w",
+            "text": "The Weather Channel",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "r",
+          "predicate": "rebroadcast",
+          "anchor": "rebroadcast",
+          "arguments": {
+            "ARG1": "f",
+            "ARG0": "w"
+          }
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 2,
+      "claim_id": "TFgw4IaR9R8s_1720",
+      "text": "Shows image of Charles Tupper from Elliott and Fry/Library and Archives Canada.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "i",
+            "text": "image",
+            "type": "entity",
+            "propositions": [
+              {
+                "role": "content",
+                "kind": "depiction",
+                "route": "visual_depiction",
+                "body": {
+                  "op": "entity",
+                  "ref": "c"
+                }
+              }
+            ],
+            "properties": [
+              {
+                "role": "credit",
+                "value": "Elliott and Fry/Library and Archives Canada"
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "text": "Charles Tupper",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "s",
+          "predicate": "show",
+          "anchor": "Shows",
+          "arguments": {},
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "entity",
+                "ref": "i"
+              }
+            }
+          ]
+        },
+        "requires_context": true,
+        "warnings": [
+          "The image depicts Charles Tupper and has the source credit Elliott and Fry/Library and Archives Canada. The slash does not uniquely identify authorship versus archive roles."
+        ]
+      },
+      "reading_note": "The image depicts Charles Tupper and has the source credit Elliott and Fry/Library and Archives Canada. The slash does not uniquely identify authorship versus archive roles.",
+      "ambiguous": true
+    },
+    {
+      "index": 3,
+      "claim_id": "T2EE72iNELEs_210",
+      "text": "Burning of thrusters in the final descent.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "t",
+            "text": "thrusters",
+            "type": "group"
+          },
+          {
+            "id": "d",
+            "text": "descent",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "final"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "b",
+          "predicate": "burn",
+          "anchor": "Burning",
+          "arguments": {
+            "ARG1": "t",
+            "time": "d"
+          },
+          "properties": [
+            {
+              "role": "preposition:time",
+              "value": "in"
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 4,
+      "claim_id": "TQKCK6-tRaoE_663",
+      "text": "Music plays as ship sail.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "m",
+            "text": "Music",
+            "type": "entity"
+          },
+          {
+            "id": "s",
+            "text": "ship",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "p",
+          "predicate": "play",
+          "anchor": "plays",
+          "arguments": {
+            "ARG0": "m"
+          },
+          "propositions": [
+            {
+              "role": "as",
+              "kind": "temporal",
+              "route": "unspecified",
+              "body": {
+                "op": "event",
+                "id": "sail",
+                "predicate": "sail",
+                "anchor": "sail",
+                "arguments": {
+                  "ARG0": "s"
+                }
+              }
+            }
+          ]
+        },
+        "requires_context": true,
+        "warnings": [
+          "Assumes ship sail means that a ship is sailing; the source is grammatically incomplete."
+        ]
+      },
+      "reading_note": "Assumes ship sail means that a ship is sailing; the source is grammatically incomplete.",
+      "ambiguous": true
+    },
+    {
+      "index": 5,
+      "claim_id": "TFgw4IaR9R8s_1746",
+      "text": "The Trump appeals to the International Trade Foundation will likely go to their Supreme Court.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "a",
+            "text": "appeals",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Trump"
+              }
+            ],
+            "relations": [
+              {
+                "role": "to",
+                "target": "f"
+              }
+            ]
+          },
+          {
+            "id": "f",
+            "text": "International Trade Foundation",
+            "type": "entity"
+          },
+          {
+            "id": "c",
+            "text": "Supreme Court",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "possessor",
+                "target": "p"
+              }
+            ]
+          },
+          {
+            "id": "p",
+            "text": "their",
+            "type": "pronoun"
+          }
+        ],
+        "formula": {
+          "op": "qualified",
+          "operator": "future",
+          "body": {
+            "op": "qualified",
+            "operator": "likely",
+            "body": {
+              "op": "event",
+              "id": "g",
+              "predicate": "go",
+              "anchor": "go",
+              "arguments": {
+                "ARG1": "a",
+                "ARG2": "c"
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARG2",
+                  "value": "to"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 6,
+      "claim_id": "Tg0UxWYuPeJ0_431",
+      "text": "Referee stops the count and starts the fight again.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "r",
+            "text": "Referee",
+            "type": "entity"
+          },
+          {
+            "id": "c",
+            "text": "count",
+            "type": "entity"
+          },
+          {
+            "id": "f",
+            "text": "fight",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "stop",
+              "predicate": "stop",
+              "anchor": "stops",
+              "arguments": {
+                "ARG0": "r",
+                "ARG1": "c"
+              }
+            },
+            {
+              "op": "event",
+              "id": "start",
+              "predicate": "start",
+              "anchor": "starts",
+              "arguments": {
+                "ARG0": "r",
+                "ARG1": "f",
+                "ARGM-TMP": {
+                  "value": "again",
+                  "kind": "time"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 7,
+      "claim_id": "TQEmEycTI0RQ_909",
+      "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "i",
+            "text": "image",
+            "type": "entity",
+            "propositions": [
+              {
+                "role": "content",
+                "kind": "depiction",
+                "route": "visual_depiction",
+                "body": {
+                  "op": "event",
+                  "id": "stand",
+                  "predicate": "stand",
+                  "anchor": "standing",
+                  "arguments": {
+                    "ARG0": "c",
+                    "location": "p"
+                  },
+                  "properties": [
+                    {
+                      "role": "preposition:location",
+                      "value": "at"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "text": "Carney",
+            "type": "entity"
+          },
+          {
+            "id": "p",
+            "text": "podium",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "with",
+                "target": "l"
+              }
+            ],
+            "propositions": [
+              {
+                "role": "acl:relcl",
+                "kind": "relative",
+                "route": "unspecified",
+                "body": {
+                  "op": "event",
+                  "id": "say",
+                  "predicate": "say",
+                  "anchor": "says",
+                  "arguments": {
+                    "ARG0": "p",
+                    "ARG1": {
+                      "value": "Liberal",
+                      "kind": "verbatim_text"
+                    },
+                    "location": "it"
+                  },
+                  "properties": [
+                    {
+                      "role": "source_route",
+                      "value": "ocr_assertion"
+                    },
+                    {
+                      "role": "preposition:location",
+                      "value": "on"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "it",
+            "text": "it",
+            "type": "pronoun"
+          },
+          {
+            "id": "l",
+            "text": "leaf",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "maple"
+              }
+            ],
+            "relations": [
+              {
+                "role": "possessor",
+                "target": "can"
+              }
+            ]
+          },
+          {
+            "id": "can",
+            "text": "Canada",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "show",
+          "predicate": "show",
+          "anchor": "Shows",
+          "arguments": {},
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "entity",
+                "ref": "i"
+              }
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 8,
+      "claim_id": "Tg0UxWYuPeJ0_364",
+      "text": "People are watching the robot perform.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "p",
+            "text": "People",
+            "type": "group"
+          },
+          {
+            "id": "r",
+            "text": "robot",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "watch",
+          "predicate": "watch",
+          "anchor": "watching",
+          "arguments": {
+            "ARG0": "p"
+          },
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "event",
+                "id": "perform",
+                "predicate": "perform",
+                "anchor": "perform",
+                "arguments": {
+                  "ARG0": "r"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 9,
+      "claim_id": "TFOEIehBwT8Q_466",
+      "text": "The protest is taking place in front of National Palace.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "p",
+            "text": "protest",
+            "type": "entity"
+          },
+          {
+            "id": "f",
+            "text": "front",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "of",
+                "target": "n"
+              }
+            ]
+          },
+          {
+            "id": "n",
+            "text": "National Palace",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "occur",
+          "predicate": "take_place",
+          "anchor": "taking",
+          "arguments": {
+            "ARG1": "p",
+            "location": "f"
+          },
+          "properties": [
+            {
+              "role": "preposition:location",
+              "value": "in"
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 10,
+      "claim_id": "TbJqMFkNxARY_124",
+      "text": "The Mississippi is a Madeira-registered cargo vessel.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "s",
+            "text": "Mississippi",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "cargo"
+              }
+            ]
+          },
+          {
+            "id": "m",
+            "text": "Madeira",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "be",
+              "predicate": "be",
+              "anchor": "is",
+              "arguments": {
+                "ARG1": "s",
+                "ARG2": {
+                  "value": "vessel",
+                  "kind": "text"
+                }
+              }
+            },
+            {
+              "op": "event",
+              "id": "reg",
+              "predicate": "register",
+              "anchor": "registered",
+              "arguments": {
+                "ARG1": "s",
+                "ARG2": "m"
+              }
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 11,
+      "claim_id": "TKCfkoNUssZI_681",
+      "text": "There is a helicopter sound.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "s",
+            "text": "sound",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "helicopter"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "be",
+          "predicate": "be",
+          "anchor": "is",
+          "arguments": {
+            "ARG1": "s"
+          }
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 12,
+      "claim_id": "T2G_ACMxR_I4_1162",
+      "text": "There are multiple possible routes spacecrafts can take to the Moon.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "r",
+            "text": "routes",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "multiple"
+              },
+              {
+                "role": "mod",
+                "value": "possible"
+              }
+            ],
+            "propositions": [
+              {
+                "role": "acl:relcl",
+                "kind": "relative",
+                "route": "unspecified",
+                "body": {
+                  "op": "qualified",
+                  "operator": "ability",
+                  "body": {
+                    "op": "event",
+                    "id": "take",
+                    "predicate": "take",
+                    "anchor": "take",
+                    "arguments": {
+                      "ARG0": "s",
+                      "ARG1": "r",
+                      "ARGM-GOL": "m"
+                    },
+                    "properties": [
+                      {
+                        "role": "preposition:ARGM-GOL",
+                        "value": "to"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "s",
+            "text": "spacecrafts",
+            "type": "group"
+          },
+          {
+            "id": "m",
+            "text": "Moon",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "be",
+          "predicate": "be",
+          "anchor": "are",
+          "arguments": {
+            "ARG1": "r"
+          }
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 13,
+      "claim_id": "T2EE72iNELEs_205",
+      "text": "Combustion sound as rocket descents.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "s",
+            "text": "sound",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Combustion"
+              }
+            ]
+          },
+          {
+            "id": "r",
+            "text": "rocket",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "sound",
+          "predicate": "sound",
+          "anchor": "sound",
+          "arguments": {
+            "theme": "s"
+          },
+          "propositions": [
+            {
+              "role": "as",
+              "kind": "temporal",
+              "route": "unspecified",
+              "body": {
+                "op": "event",
+                "id": "d",
+                "predicate": "descent",
+                "anchor": "descents",
+                "arguments": {
+                  "theme": "r"
+                }
+              }
+            }
+          ]
+        },
+        "requires_context": true,
+        "warnings": [
+          "Assumes descents denotes the rocket descending and as indicates concurrency."
+        ]
+      },
+      "reading_note": "Assumes descents denotes the rocket descending and as indicates concurrency.",
+      "ambiguous": true
+    },
+    {
+      "index": 14,
+      "claim_id": "TzzhcBIczf_M_2059",
+      "text": "Miss Tourism World contestants visited the Shaolin Temple to learn Kung Fu.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "c",
+            "text": "contestants",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Miss Tourism World"
+              }
+            ]
+          },
+          {
+            "id": "t",
+            "text": "Shaolin Temple",
+            "type": "entity"
+          },
+          {
+            "id": "k",
+            "text": "Kung Fu",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "v",
+          "predicate": "visit",
+          "anchor": "visited",
+          "arguments": {
+            "ARG0": "c",
+            "ARG1": "t"
+          },
+          "propositions": [
+            {
+              "role": "ARGM-PRP",
+              "kind": "purpose",
+              "route": "unspecified",
+              "body": {
+                "op": "event",
+                "id": "learn",
+                "predicate": "learn",
+                "anchor": "learn",
+                "arguments": {
+                  "ARG0": "c",
+                  "ARG1": "k"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 15,
+      "claim_id": "Txf2EdqOg1SQ_2279",
+      "text": "The geyser-like eruptions are caused by high pressure from flooding in Dongguan.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "e",
+            "text": "eruptions",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "geyser-like"
+              }
+            ]
+          },
+          {
+            "id": "p",
+            "text": "pressure",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "high"
+              }
+            ],
+            "relations": [
+              {
+                "role": "from",
+                "target": "f"
+              }
+            ]
+          },
+          {
+            "id": "f",
+            "text": "flooding",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "in",
+                "target": "d"
+              }
+            ]
+          },
+          {
+            "id": "d",
+            "text": "Dongguan",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "cause",
+          "predicate": "cause",
+          "anchor": "caused",
+          "arguments": {
+            "ARG1": "e",
+            "ARG0": "p"
+          }
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 16,
+      "claim_id": "T2G_ACMxR_I4_1155",
+      "text": "Prior to landing, Blue Ghost entered a low lunar orbit.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "b",
+            "text": "Blue Ghost",
+            "type": "entity"
+          },
+          {
+            "id": "o",
+            "text": "orbit",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "low"
+              },
+              {
+                "role": "mod",
+                "value": "lunar"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "enter",
+          "predicate": "enter",
+          "anchor": "entered",
+          "arguments": {
+            "ARG0": "b",
+            "ARG1": "o"
+          },
+          "propositions": [
+            {
+              "role": "Prior to",
+              "kind": "temporal",
+              "route": "unspecified",
+              "body": {
+                "op": "event",
+                "id": "land",
+                "predicate": "land",
+                "anchor": "landing",
+                "arguments": {
+                  "ARG1": "b"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 17,
+      "claim_id": "Txf2EdqOg1SQ_2188",
+      "text": "The heaviest localized rain the following day is predicted for southern regions and mountain areas.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "r",
+            "text": "rain",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "heaviest"
+              },
+              {
+                "role": "mod",
+                "value": "localized"
+              }
+            ],
+            "relations": [
+              {
+                "role": "time",
+                "target": "d"
+              }
+            ]
+          },
+          {
+            "id": "d",
+            "text": "day",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "following"
+              }
+            ]
+          },
+          {
+            "id": "regions",
+            "text": "regions and mountain areas",
+            "type": "group",
+            "relations": [
+              {
+                "role": "member",
+                "target": "south"
+              },
+              {
+                "role": "member",
+                "target": "mount"
+              }
+            ]
+          },
+          {
+            "id": "south",
+            "text": "regions",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "southern"
+              }
+            ]
+          },
+          {
+            "id": "mount",
+            "text": "areas",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "mountain"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "predict",
+          "predicate": "predict",
+          "anchor": "predicted",
+          "arguments": {
+            "ARGM-GOL": "regions"
+          },
+          "properties": [
+            {
+              "role": "preposition:ARGM-GOL",
+              "value": "for"
+            }
+          ],
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "assertion",
+              "route": "unspecified",
+              "body": {
+                "op": "entity",
+                "ref": "r"
+              }
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 18,
+      "claim_id": "TzF9M4kZ3Pys_281",
+      "text": "Haboob could impact airport operations.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "h",
+            "text": "Haboob",
+            "type": "entity"
+          },
+          {
+            "id": "o",
+            "text": "operations",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "airport"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "qualified",
+          "operator": "possible",
+          "body": {
+            "op": "event",
+            "id": "impact",
+            "predicate": "impact",
+            "anchor": "impact",
+            "arguments": {
+              "ARG0": "h",
+              "ARG1": "o"
+            }
+          }
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 19,
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "b",
+            "text": "Blue Ghost",
+            "type": "entity"
+          },
+          {
+            "id": "i",
+            "text": "imagery",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "high-definition"
+              }
+            ],
+            "propositions": [
+              {
+                "role": "content",
+                "kind": "depiction",
+                "route": "visual_depiction",
+                "body": {
+                  "op": "entity",
+                  "ref": "e"
+                }
+              }
+            ]
+          },
+          {
+            "id": "e",
+            "text": "eclipse",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "total"
+              },
+              {
+                "role": "mod",
+                "value": "Earth"
+              }
+            ],
+            "propositions": [
+              {
+                "role": "where",
+                "kind": "relative",
+                "route": "unspecified",
+                "body": {
+                  "op": "event",
+                  "id": "block",
+                  "predicate": "block",
+                  "anchor": "blocks",
+                  "arguments": {
+                    "ARG0": "earth",
+                    "ARG1": "sun"
+                  },
+                  "propositions": [
+                    {
+                      "role": "as viewed",
+                      "kind": "depiction",
+                      "route": "visual_depiction",
+                      "body": {
+                        "op": "event",
+                        "id": "view",
+                        "predicate": "view",
+                        "anchor": "viewed",
+                        "arguments": {
+                          "ARG1": "earth",
+                          "source": "moon"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "earth",
+            "text": "Earth",
+            "type": "entity"
+          },
+          {
+            "id": "sun",
+            "text": "Sun",
+            "type": "entity"
+          },
+          {
+            "id": "moon",
+            "text": "Moon",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "schedule",
+          "predicate": "schedule",
+          "anchor": "scheduled",
+          "arguments": {
+            "ARG1": "b"
+          },
+          "properties": [
+            {
+              "role": "time",
+              "value": "Before mission end"
+            }
+          ],
+          "propositions": [
+            {
+              "role": "ARG2",
+              "kind": "purpose",
+              "route": "unspecified",
+              "body": {
+                "op": "event",
+                "id": "capture",
+                "predicate": "capture",
+                "anchor": "capture",
+                "arguments": {
+                  "ARG0": "b",
+                  "ARG1": "i",
+                  "time": {
+                    "value": "on March 14",
+                    "kind": "date"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 20,
+      "claim_id": "TKCfkoNUssZI_683",
+      "text": "The building has 6 floors, including the bottom floor. ",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "b",
+            "text": "building",
+            "type": "entity"
+          },
+          {
+            "id": "f",
+            "text": "floors",
+            "type": "group",
+            "quantity": {
+              "operator": "exact",
+              "value": "6"
+            },
+            "relations": [
+              {
+                "role": "including",
+                "target": "bottom"
+              }
+            ]
+          },
+          {
+            "id": "bottom",
+            "text": "floor",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "bottom"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "have",
+          "predicate": "have",
+          "anchor": "has",
+          "arguments": {
+            "ARG0": "b",
+            "ARG1": "f"
+          }
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 21,
+      "claim_id": "TjHepwuhkYFA_1007",
+      "text": "A satellite image shows damaged residential areas, although the nature of the damage is not very clear.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "i",
+            "text": "image",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "satellite"
+              }
+            ]
+          },
+          {
+            "id": "a",
+            "text": "areas",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "residential"
+              }
+            ],
+            "propositions": [
+              {
+                "role": "amod",
+                "kind": "relative",
+                "route": "unspecified",
+                "body": {
+                  "op": "event",
+                  "id": "damage",
+                  "predicate": "damage",
+                  "anchor": "damaged",
+                  "arguments": {
+                    "ARG1": "a",
+                    "state": "d"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "n",
+            "text": "nature",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "of",
+                "target": "d"
+              }
+            ]
+          },
+          {
+            "id": "d",
+            "text": "damage",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "show",
+              "predicate": "show",
+              "anchor": "shows",
+              "arguments": {
+                "ARG0": "i"
+              },
+              "propositions": [
+                {
+                  "role": "ARG1",
+                  "kind": "depiction",
+                  "route": "visual_depiction",
+                  "body": {
+                    "op": "entity",
+                    "ref": "a"
+                  }
+                }
+              ]
+            },
+            {
+              "op": "not",
+              "child": {
+                "op": "event",
+                "id": "clear",
+                "predicate": "be",
+                "anchor": "is",
+                "arguments": {
+                  "ARG1": "n",
+                  "ARG2": {
+                    "value": "very clear",
+                    "kind": "text"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 22,
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "text": "IM's moon landing was a nailbiter.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "l",
+            "text": "landing",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "moon"
+              }
+            ],
+            "relations": [
+              {
+                "role": "possessor",
+                "target": "im"
+              }
+            ]
+          },
+          {
+            "id": "im",
+            "text": "IM",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "be",
+          "predicate": "be",
+          "anchor": "was",
+          "arguments": {
+            "ARG1": "l",
+            "ARG2": {
+              "value": "nailbiter",
+              "kind": "text"
+            }
+          }
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    },
+    {
+      "index": 23,
+      "claim_id": "T2G_ACMxR_I4_1278",
+      "text": "The Mare Crisium is in the northeast quadrant of the moon's near side.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "m",
+            "text": "Mare Crisium",
+            "type": "entity"
+          },
+          {
+            "id": "q",
+            "text": "quadrant",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "northeast"
+              }
+            ],
+            "relations": [
+              {
+                "role": "of",
+                "target": "side"
+              }
+            ]
+          },
+          {
+            "id": "side",
+            "text": "side",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "near"
+              }
+            ],
+            "relations": [
+              {
+                "role": "possessor",
+                "target": "moon"
+              }
+            ]
+          },
+          {
+            "id": "moon",
+            "text": "moon",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "be",
+          "predicate": "be",
+          "anchor": "is",
+          "arguments": {
+            "ARG1": "m",
+            "ARG2": "q"
+          },
+          "properties": [
+            {
+              "role": "preposition:ARG2",
+              "value": "in"
+            }
+          ]
+        }
+      },
+      "reading_note": "",
+      "ambiguous": false
+    }
+  ]
+}

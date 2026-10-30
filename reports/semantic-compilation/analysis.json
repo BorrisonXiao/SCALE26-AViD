@@ -1,0 +1,84 @@
+{
+  "conditions": {
+    "baseline": {
+      "total": 2375,
+      "compiled": 1997,
+      "refused": 378,
+      "kinds": {
+        "mention": 178,
+        "claim": 1819
+      },
+      "failures": {
+        "negative_quantifier": 10,
+        "unresolved_clause": 148,
+        "missing_predicate": 82,
+        "duplicate_role": 52,
+        "missing_srl": 53,
+        "mention_alignment": 3,
+        "predicate_type": 8,
+        "quantity_type": 3,
+        "modal_scope": 17,
+        "polarity_omission": 2
+      }
+    },
+    "revised": {
+      "total": 2375,
+      "compiled": 2042,
+      "refused": 333,
+      "kinds": {
+        "mention": 172,
+        "claim": 1870
+      },
+      "failures": {
+        "negative_quantifier": 11,
+        "unresolved_clause": 112,
+        "missing_predicate": 71,
+        "duplicate_role": 51,
+        "missing_srl": 52,
+        "mention_alignment": 4,
+        "predicate_type": 8,
+        "quantity_type": 3,
+        "modal_scope": 17,
+        "polarity_omission": 2,
+        "unresolved_controller": 2
+      }
+    }
+  },
+  "reviews": {
+    "development": {
+      "baseline": {
+        "refused": 4,
+        "faithful": 7,
+        "partial": 9,
+        "incorrect": 4
+      },
+      "revised": {
+        "refused": 3,
+        "faithful": 13,
+        "partial": 7,
+        "incorrect": 1
+      }
+    },
+    "fresh": {
+      "baseline": {
+        "incorrect": 4,
+        "faithful": 7,
+        "refused": 5,
+        "partial": 4
+      },
+      "revised": {
+        "incorrect": 2,
+        "faithful": 8,
+        "refused": 5,
+        "partial": 5
+      }
+    }
+  },
+  "transitions": {
+    "both_compiled": 1971,
+    "both_refused": 307,
+    "new_only": 71,
+    "previous_only": 26
+  },
+  "protocol": "Within-corpus development using cached trained SRL and dependency inputs. Twenty-four previously reviewed claims received manually specified complete reference readings and development inspection; ambiguous readings and a remaining event-nominal identity requirement are explicit. Twenty fresh IDs were sampled before changes, excluding earlier reviewed/pilot IDs. Compiler and reference hashes were frozen before fresh review and are checked. The same assistant judged original text and both graphs, without media/truth labels or independent human gold. This is not source-disjoint generalization or a corpus semantic accuracy estimate."
+}
