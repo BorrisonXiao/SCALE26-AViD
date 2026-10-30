@@ -1,0 +1,134 @@
+[
+  {
+    "index": 8,
+    "mode": "direct",
+    "status": "passed",
+    "limit_seconds": 35,
+    "wall_seconds": 9.884824143722653,
+    "stages": [
+      {
+        "stage": "imports",
+        "elapsed_seconds": 0.03820556215941906
+      },
+      {
+        "stage": "claim_and_ground",
+        "elapsed_seconds": 4.990686630830169,
+        "observations": 8,
+        "expected": "refuted"
+      },
+      {
+        "stage": "model_initialization",
+        "elapsed_seconds": 3.717316584661603,
+        "program_bytes": 5217
+      },
+      {
+        "stage": "inference",
+        "elapsed_seconds": 0.054441267624497414,
+        "result": {
+          "claim_id": "Tg0UxWYuPeJ0_364",
+          "distribution": {
+            "supported": 0.0,
+            "refuted": 1.0,
+            "unknown": 0.0
+          },
+          "prediction": "refuted",
+          "timing": {
+            "ground_seconds": 0.02365279197692871,
+            "compile_seconds": 0.013547897338867188,
+            "evaluate_seconds": 0.01706099510192871
+          },
+          "wall_seconds": 0.054406553506851196
+        }
+      }
+    ],
+    "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n"
+  },
+  {
+    "index": 10,
+    "mode": "direct",
+    "status": "passed",
+    "limit_seconds": 35,
+    "wall_seconds": 9.965779703110456,
+    "stages": [
+      {
+        "stage": "imports",
+        "elapsed_seconds": 0.035938480868935585
+      },
+      {
+        "stage": "claim_and_ground",
+        "elapsed_seconds": 4.163323558866978,
+        "observations": 15,
+        "expected": "refuted"
+      },
+      {
+        "stage": "model_initialization",
+        "elapsed_seconds": 3.5636142659932375,
+        "program_bytes": 10428
+      },
+      {
+        "stage": "inference",
+        "elapsed_seconds": 1.0355821754783392,
+        "result": {
+          "claim_id": "TbJqMFkNxARY_124",
+          "distribution": {
+            "supported": 0.0,
+            "refuted": 1.0,
+            "unknown": 0.0
+          },
+          "prediction": "refuted",
+          "timing": {
+            "ground_seconds": 0.05135321617126465,
+            "compile_seconds": 0.30280447006225586,
+            "evaluate_seconds": 0.6810801029205322
+          },
+          "wall_seconds": 1.0354762747883797
+        }
+      }
+    ],
+    "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n"
+  },
+  {
+    "index": 21,
+    "mode": "direct",
+    "status": "passed",
+    "limit_seconds": 35,
+    "wall_seconds": 8.615347292274237,
+    "stages": [
+      {
+        "stage": "imports",
+        "elapsed_seconds": 0.03749903850257397
+      },
+      {
+        "stage": "claim_and_ground",
+        "elapsed_seconds": 4.2096045315265656,
+        "observations": 16,
+        "expected": "refuted"
+      },
+      {
+        "stage": "model_initialization",
+        "elapsed_seconds": 3.2213596161454916,
+        "program_bytes": 10850
+      },
+      {
+        "stage": "inference",
+        "elapsed_seconds": 0.1348391529172659,
+        "result": {
+          "claim_id": "TjHepwuhkYFA_1007",
+          "distribution": {
+            "supported": 0.0,
+            "refuted": 1.0,
+            "unknown": 0.0
+          },
+          "prediction": "refuted",
+          "timing": {
+            "ground_seconds": 0.0474390983581543,
+            "compile_seconds": 0.034233808517456055,
+            "evaluate_seconds": 0.052950382232666016
+          },
+          "wall_seconds": 0.1347893700003624
+        }
+      }
+    ],
+    "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n"
+  }
+]

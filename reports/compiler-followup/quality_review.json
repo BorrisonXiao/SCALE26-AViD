@@ -1,0 +1,1667 @@
+{
+  "protocol": "Twenty claims fixed before implementation, one per source-video group with no overlap with sources in the saved prior reviews/pilot IDs. Source identity uses source_videos, not the claim-ID prefix. All 2375 texts were already processed in earlier compiler development. This is a new-source semantic review, not a fully held-out corpus. Original media/truth labels unused.",
+  "cases": [
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 0,
+      "claim_id": "TQEmEycTI0RQ_827",
+      "text": "2021 map shows more NDP seats, many of which have since gone Liberal.",
+      "judgment": "refused",
+      "note": "Repeated ARG1 on gone remains unresolved.",
+      "patterns": [
+        "duplicate_role"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 0,
+      "claim_id": "TQEmEycTI0RQ_827",
+      "text": "2021 map shows more NDP seats, many of which have since gone Liberal.",
+      "judgment": "refused",
+      "note": "Repeated ARG1 on gone remains unresolved.",
+      "patterns": [
+        "duplicate_role"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 1,
+      "claim_id": "TInVWzp25aIM_88",
+      "text": "Footage is being rebroadcast by The Weather Channel.",
+      "judgment": "faithful",
+      "note": "Passive rebroadcast retains the footage and named broadcaster. ",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 1,
+      "claim_id": "TInVWzp25aIM_88",
+      "text": "Footage is being rebroadcast by The Weather Channel.",
+      "judgment": "faithful",
+      "note": "Passive rebroadcast retains the footage and named broadcaster. ",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 2,
+      "claim_id": "TFgw4IaR9R8s_1720",
+      "text": "Shows image of Charles Tupper from Elliott and Fry/Library and Archives Canada.",
+      "judgment": "partial",
+      "note": "Depicted person is explicit, but the photographer/library credit structure is incomplete and the output is unnecessarily classified as a mention.",
+      "patterns": [
+        "credit_attachment",
+        "nominal_description"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 2,
+      "claim_id": "TFgw4IaR9R8s_1720",
+      "text": "Shows image of Charles Tupper from Elliott and Fry/Library and Archives Canada.",
+      "judgment": "partial",
+      "note": "Depicted person is explicit, but the photographer/library credit structure is incomplete and the output is unnecessarily classified as a mention.",
+      "patterns": [
+        "credit_attachment",
+        "nominal_description"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 3,
+      "claim_id": "T2EE72iNELEs_210",
+      "text": "Burning of thrusters in the final descent.",
+      "judgment": "partial",
+      "note": "The final descent is retained but typed as a location rather than a phase/time.",
+      "patterns": [
+        "temporal_binding"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 3,
+      "claim_id": "T2EE72iNELEs_210",
+      "text": "Burning of thrusters in the final descent.",
+      "judgment": "partial",
+      "note": "The final descent is retained but typed as a location rather than a phase/time.",
+      "patterns": [
+        "temporal_binding"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 4,
+      "claim_id": "TQKCK6-tRaoE_663",
+      "text": "Music plays as ship sail.",
+      "judgment": "incorrect",
+      "note": "Under the natural reading of this malformed source, sailing is an event; the output treats ship sail as a manner object and omits that event.",
+      "patterns": [
+        "clause_attachment",
+        "source_ambiguity"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 4,
+      "claim_id": "TQKCK6-tRaoE_663",
+      "text": "Music plays as ship sail.",
+      "judgment": "incorrect",
+      "note": "Under the natural reading of this malformed source, sailing is an event; the output treats ship sail as a manner object and omits that event.",
+      "patterns": [
+        "clause_attachment",
+        "source_ambiguity"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 5,
+      "claim_id": "TFgw4IaR9R8s_1746",
+      "text": "The Trump appeals to the International Trade Foundation will likely go to their Supreme Court.",
+      "judgment": "partial",
+      "note": "Possessive reference is explicit, but likely is a text adjunct and the organization name is split into a head and modifier.",
+      "patterns": [
+        "modality_scope",
+        "proper_name"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 5,
+      "claim_id": "TFgw4IaR9R8s_1746",
+      "text": "The Trump appeals to the International Trade Foundation will likely go to their Supreme Court.",
+      "judgment": "partial",
+      "note": "Possessive reference is explicit, but likely is a text adjunct and the organization name is split into a head and modifier.",
+      "patterns": [
+        "modality_scope",
+        "proper_name"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 6,
+      "claim_id": "Tg0UxWYuPeJ0_431",
+      "text": "Referee stops the count and starts the fight again.",
+      "judgment": "faithful",
+      "note": "The referee is shared across stop/start, their count/fight targets are retained, and again is attached to start. Activity nouns remain referents, without invented participants.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 6,
+      "claim_id": "Tg0UxWYuPeJ0_431",
+      "text": "Referee stops the count and starts the fight again.",
+      "judgment": "faithful",
+      "note": "The referee is shared across stop/start, their count/fight targets are retained, and again is attached to start. Activity nouns remain referents, without invented participants.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 7,
+      "claim_id": "TQEmEycTI0RQ_909",
+      "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf.",
+      "judgment": "refused",
+      "note": "The podium/content phrase still has no usable attached clause frame.",
+      "patterns": [
+        "clause_attachment"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 7,
+      "claim_id": "TQEmEycTI0RQ_909",
+      "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf.",
+      "judgment": "refused",
+      "note": "The podium/content phrase still has no usable attached clause frame.",
+      "patterns": [
+        "clause_attachment"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 8,
+      "claim_id": "Tg0UxWYuPeJ0_364",
+      "text": "People are watching the robot perform.",
+      "judgment": "faithful",
+      "note": "The robot is explicitly linked as the embedded subject, while the people remain watchers.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 8,
+      "claim_id": "Tg0UxWYuPeJ0_364",
+      "text": "People are watching the robot perform.",
+      "judgment": "faithful",
+      "note": "The robot is explicitly linked as the embedded subject, while the people remain watchers.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 9,
+      "claim_id": "TFOEIehBwT8Q_466",
+      "text": "The protest is taking place in front of National Palace.",
+      "judgment": "partial",
+      "note": "Take place remains take with a separate place participant; its idiomatic occurrence reading is unresolved.",
+      "patterns": [
+        "idiom"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 9,
+      "claim_id": "TFOEIehBwT8Q_466",
+      "text": "The protest is taking place in front of National Palace.",
+      "judgment": "partial",
+      "note": "Take place remains take with a separate place participant; its idiomatic occurrence reading is unresolved.",
+      "patterns": [
+        "idiom"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 10,
+      "claim_id": "TbJqMFkNxARY_124",
+      "text": "The Mississippi is a Madeira-registered cargo vessel.",
+      "judgment": "faithful",
+      "note": "Vessel type, cargo modifier and registration all constrain the named Mississippi referent.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 10,
+      "claim_id": "TbJqMFkNxARY_124",
+      "text": "The Mississippi is a Madeira-registered cargo vessel.",
+      "judgment": "faithful",
+      "note": "Vessel type, cargo modifier and registration all constrain the named Mississippi referent.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 11,
+      "claim_id": "TKCfkoNUssZI_681",
+      "text": "There is a helicopter sound.",
+      "judgment": "faithful",
+      "note": "Existence of a helicopter sound is retained; actual helicopter existence is not asserted.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 11,
+      "claim_id": "TKCfkoNUssZI_681",
+      "text": "There is a helicopter sound.",
+      "judgment": "faithful",
+      "note": "Existence of a helicopter sound is retained; actual helicopter existence is not asserted.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 12,
+      "claim_id": "T2G_ACMxR_I4_1162",
+      "text": "There are multiple possible routes spacecrafts can take to the Moon.",
+      "judgment": "faithful",
+      "note": "Possible/multiple route modifiers, spacecraft ability, the route reference and Moon destination are retained in the relative description.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 12,
+      "claim_id": "T2G_ACMxR_I4_1162",
+      "text": "There are multiple possible routes spacecrafts can take to the Moon.",
+      "judgment": "faithful",
+      "note": "Possible/multiple route modifiers, spacecraft ability, the route reference and Moon destination are retained in the relative description.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 13,
+      "claim_id": "T2EE72iNELEs_205",
+      "text": "Combustion sound as rocket descents.",
+      "judgment": "partial",
+      "note": "The source descents wording is retained as a nominal relation, but its temporal/event interpretation remains unresolved.",
+      "patterns": [
+        "temporal_binding",
+        "source_ambiguity"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 13,
+      "claim_id": "T2EE72iNELEs_205",
+      "text": "Combustion sound as rocket descents.",
+      "judgment": "partial",
+      "note": "The source descents wording is retained as a nominal relation, but its temporal/event interpretation remains unresolved.",
+      "patterns": [
+        "temporal_binding",
+        "source_ambiguity"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 14,
+      "claim_id": "TzzhcBIczf_M_2059",
+      "text": "Miss Tourism World contestants visited the Shaolin Temple to learn Kung Fu.",
+      "judgment": "faithful",
+      "note": "The complete Miss Tourism World name is preserved as one modifier; visit/learn share contestants in purpose scope.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 14,
+      "claim_id": "TzzhcBIczf_M_2059",
+      "text": "Miss Tourism World contestants visited the Shaolin Temple to learn Kung Fu.",
+      "judgment": "faithful",
+      "note": "The complete Miss Tourism World name is preserved as one modifier; visit/learn share contestants in purpose scope.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 15,
+      "claim_id": "Txf2EdqOg1SQ_2279",
+      "text": "The geyser-like eruptions are caused by high pressure from flooding in Dongguan.",
+      "judgment": "faithful",
+      "note": "Causation, eruption description, pressure, flooding source and Dongguan relation survive. Flooding is a nominal referent; no additional actor was stated.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 15,
+      "claim_id": "Txf2EdqOg1SQ_2279",
+      "text": "The geyser-like eruptions are caused by high pressure from flooding in Dongguan.",
+      "judgment": "faithful",
+      "note": "Causation, eruption description, pressure, flooding source and Dongguan relation survive. Flooding is a nominal referent; no additional actor was stated.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 16,
+      "claim_id": "T2G_ACMxR_I4_1155",
+      "text": "Prior to landing, Blue Ghost entered a low lunar orbit.",
+      "judgment": "partial",
+      "note": "Prior to landing is preserved as a time string without explicitly binding the landing event to Blue Ghost.",
+      "patterns": [
+        "temporal_binding"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 16,
+      "claim_id": "T2G_ACMxR_I4_1155",
+      "text": "Prior to landing, Blue Ghost entered a low lunar orbit.",
+      "judgment": "partial",
+      "note": "Prior to landing is preserved as a time string without explicitly binding the landing event to Blue Ghost.",
+      "patterns": [
+        "temporal_binding"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 17,
+      "claim_id": "Txf2EdqOg1SQ_2188",
+      "text": "The heaviest localized rain the following day is predicted for southern regions and mountain areas.",
+      "judgment": "faithful",
+      "note": "Rain, degree/localization and following-day description remain inside prediction; regions retain their group/member structure.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 17,
+      "claim_id": "Txf2EdqOg1SQ_2188",
+      "text": "The heaviest localized rain the following day is predicted for southern regions and mountain areas.",
+      "judgment": "faithful",
+      "note": "Rain, degree/localization and following-day description remain inside prediction; regions retain their group/member structure.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 18,
+      "claim_id": "TzF9M4kZ3Pys_281",
+      "text": "Haboob could impact airport operations.",
+      "judgment": "faithful",
+      "note": "Could scopes over impact, with the haboob and airport operations in the intended roles.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 18,
+      "claim_id": "TzF9M4kZ3Pys_281",
+      "text": "Haboob could impact airport operations.",
+      "judgment": "faithful",
+      "note": "Could scopes over impact, with the haboob and airport operations in the intended roles.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 19,
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon.",
+      "judgment": "refused",
+      "note": "Nested scheduled capture, eclipse and viewing clauses are refused.",
+      "patterns": [
+        "clause_attachment"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 19,
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon.",
+      "judgment": "refused",
+      "note": "Nested scheduled capture, eclipse and viewing clauses are refused.",
+      "patterns": [
+        "clause_attachment"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 20,
+      "claim_id": "TKCfkoNUssZI_683",
+      "text": "The building has 6 floors, including the bottom floor. ",
+      "judgment": "faithful",
+      "note": "The building, exact six-floor group and inclusion of the bottom floor are linked; the same group/floor references are reused.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 20,
+      "claim_id": "TKCfkoNUssZI_683",
+      "text": "The building has 6 floors, including the bottom floor. ",
+      "judgment": "faithful",
+      "note": "The building, exact six-floor group and inclusion of the bottom floor are linked; the same group/floor references are reused.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 21,
+      "claim_id": "TjHepwuhkYFA_1007",
+      "text": "A satellite image shows damaged residential areas, although the nature of the damage is not very clear.",
+      "judgment": "partial",
+      "note": "Depicted damage now remains inside the image, and the negated clarity concession is separate. The nominal damage being qualified is not explicitly equated to that depicted state.",
+      "patterns": [
+        "event_nominal_reference"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 21,
+      "claim_id": "TjHepwuhkYFA_1007",
+      "text": "A satellite image shows damaged residential areas, although the nature of the damage is not very clear.",
+      "judgment": "faithful",
+      "note": "The definite damage nominal and depicted damage event share one executable variable; the image route and negated clarity are retained.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 22,
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "text": "IM's moon landing was a nailbiter.",
+      "judgment": "faithful",
+      "note": "IM is an explicit possessor of the moon-landing referent; nailbiter is a predicative value.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 22,
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "text": "IM's moon landing was a nailbiter.",
+      "judgment": "faithful",
+      "note": "IM is an explicit possessor of the moon-landing referent; nailbiter is a predicative value.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 23,
+      "claim_id": "T2G_ACMxR_I4_1278",
+      "text": "The Mare Crisium is in the northeast quadrant of the moon's near side.",
+      "judgment": "faithful",
+      "note": "Location, northeast quadrant, near side and Moon possession are explicit linked conditions.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 23,
+      "claim_id": "T2G_ACMxR_I4_1278",
+      "text": "The Mare Crisium is in the northeast quadrant of the moon's near side.",
+      "judgment": "faithful",
+      "note": "Location, northeast quadrant, near side and Moon possession are explicit linked conditions.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 24,
+      "claim_id": "T2G_ACMxR_I4_1199",
+      "text": "Shortly after landing, Blue Ghost deployed the four tethered LMS (Lunar Magnetotelluric Sounder) electrodes across the lunar surface and 8ft mast above the top deck.",
+      "judgment": "incorrect",
+      "note": "The mast is treated as a location alongside the surface rather than another deployed object; the deck relationship is absent.",
+      "patterns": [
+        "role_binding",
+        "coordination",
+        "omission"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 24,
+      "claim_id": "T2G_ACMxR_I4_1199",
+      "text": "Shortly after landing, Blue Ghost deployed the four tethered LMS (Lunar Magnetotelluric Sounder) electrodes across the lunar surface and 8ft mast above the top deck.",
+      "judgment": "incorrect",
+      "note": "The mast is treated as a location alongside the surface rather than another deployed object; the deck relationship is absent.",
+      "patterns": [
+        "role_binding",
+        "coordination",
+        "omission"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 25,
+      "claim_id": "TzzhcBIczf_M_2061",
+      "text": "Shi Yongxin has successfully promoted the Shaolin Temple.",
+      "judgment": "faithful",
+      "note": "Promoter, promoted temple, success and perfect aspect are retained.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 25,
+      "claim_id": "TzzhcBIczf_M_2061",
+      "text": "Shi Yongxin has successfully promoted the Shaolin Temple.",
+      "judgment": "faithful",
+      "note": "Promoter, promoted temple, success and perfect aspect are retained.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 26,
+      "claim_id": "TFOEIehBwT8Q_502",
+      "text": "Adolfo Becerril says \"today we are marching because we demand justice and because young people are fed up and want a good future for our children, and for future generations. Perhaps the previous generation did not do things in the best way, but we are ready and I believe that now is our time too.\"",
+      "judgment": "faithful",
+      "note": "Named speaker and complete exact utterance remain linked; quoted events are not world assertions.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 26,
+      "claim_id": "TFOEIehBwT8Q_502",
+      "text": "Adolfo Becerril says \"today we are marching because we demand justice and because young people are fed up and want a good future for our children, and for future generations. Perhaps the previous generation did not do things in the best way, but we are ready and I believe that now is our time too.\"",
+      "judgment": "faithful",
+      "note": "Named speaker and complete exact utterance remain linked; quoted events are not world assertions.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 27,
+      "claim_id": "TKCfkoNUssZI_722",
+      "text": "The video is recorded at night. ",
+      "judgment": "faithful",
+      "note": "Recording of this video and its night-time condition survive.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 27,
+      "claim_id": "TKCfkoNUssZI_722",
+      "text": "The video is recorded at night. ",
+      "judgment": "faithful",
+      "note": "Recording of this video and its night-time condition survive.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 28,
+      "claim_id": "T2G_ACMxR_I4_1245",
+      "text": "Sunset imagery will help study dust levitation and the resulting horizon glow caused by solar charging effects.",
+      "judgment": "incorrect",
+      "note": "The imagery is made the actor conducting the study, rather than a resource helping an unspecified researcher.",
+      "patterns": [
+        "role_binding",
+        "control"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 28,
+      "claim_id": "T2G_ACMxR_I4_1245",
+      "text": "Sunset imagery will help study dust levitation and the resulting horizon glow caused by solar charging effects.",
+      "judgment": "partial",
+      "note": "The imagery is no longer the person studying. The implicit subject is left unspecified with a context requirement; the remaining descriptions are still complex.",
+      "patterns": [
+        "implicit_subject"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 29,
+      "claim_id": "T2G_ACMxR_I4_1193",
+      "text": "Cut to larger crowd of what is likely members of the public cheering; this event was almost certainly broadcasted live.",
+      "judgment": "refused",
+      "note": "The crowd/cheering clauses remain unresolved.",
+      "patterns": [
+        "clause_attachment"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 29,
+      "claim_id": "T2G_ACMxR_I4_1193",
+      "text": "Cut to larger crowd of what is likely members of the public cheering; this event was almost certainly broadcasted live.",
+      "judgment": "refused",
+      "note": "The crowd/cheering clauses remain unresolved.",
+      "patterns": [
+        "clause_attachment"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 30,
+      "claim_id": "Txf2EdqOg1SQ_2295",
+      "text": "A massive dark shelf cloud or storm front looms over the ocean near a beach.",
+      "judgment": "refused",
+      "note": "No usable SRL frame or nominal root for the cloud/storm description.",
+      "patterns": [
+        "missing_srl"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 30,
+      "claim_id": "Txf2EdqOg1SQ_2295",
+      "text": "A massive dark shelf cloud or storm front looms over the ocean near a beach.",
+      "judgment": "refused",
+      "note": "No usable SRL frame or nominal root for the cloud/storm description.",
+      "patterns": [
+        "missing_srl"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 31,
+      "claim_id": "TQEmEycTI0RQ_986",
+      "text": "First time in approximately 20 years the party has won a fourth mandate.",
+      "judgment": "partial",
+      "note": "First occurrence and fourth mandate survive as text/modifiers without explicit event-history bindings.",
+      "patterns": [
+        "temporal_binding",
+        "ordinal"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 31,
+      "claim_id": "TQEmEycTI0RQ_986",
+      "text": "First time in approximately 20 years the party has won a fourth mandate.",
+      "judgment": "partial",
+      "note": "First occurrence and fourth mandate survive as text/modifiers without explicit event-history bindings.",
+      "patterns": [
+        "temporal_binding",
+        "ordinal"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 32,
+      "claim_id": "T2G_ACMxR_I4_1208",
+      "text": "LISTER is a pneumatic, gas-powered drill developed by Texas Tech University and Honeybee Robotics.",
+      "judgment": "faithful",
+      "note": "LISTER is the single referent for drill classification, gas power and development; the university/company remain explicit group members.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 32,
+      "claim_id": "T2G_ACMxR_I4_1208",
+      "text": "LISTER is a pneumatic, gas-powered drill developed by Texas Tech University and Honeybee Robotics.",
+      "judgment": "faithful",
+      "note": "LISTER is the single referent for drill classification, gas power and development; the university/company remain explicit group members.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 33,
+      "claim_id": "TFOEIehBwT8Q_449",
+      "text": "National rally protesters chanting \"will never be defeated\".",
+      "judgment": "faithful",
+      "note": "The protesting group and full exact chant are retained.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 33,
+      "claim_id": "TFOEIehBwT8Q_449",
+      "text": "National rally protesters chanting \"will never be defeated\".",
+      "judgment": "faithful",
+      "note": "The protesting group and full exact chant are retained.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 34,
+      "claim_id": "TQEmEycTI0RQ_963",
+      "text": "Conclusion: Carney's success credited largely to Trump's rhetoric and threats.",
+      "judgment": "refused",
+      "note": "The credited predicate is missing from the linked SRL graph.",
+      "patterns": [
+        "missing_predicate"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 34,
+      "claim_id": "TQEmEycTI0RQ_963",
+      "text": "Conclusion: Carney's success credited largely to Trump's rhetoric and threats.",
+      "judgment": "refused",
+      "note": "The credited predicate is missing from the linked SRL graph.",
+      "patterns": [
+        "missing_predicate"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 35,
+      "claim_id": "TW4OYA3RN-Hw_1814",
+      "text": "Protestors are waving hats and blowing whistles.",
+      "judgment": "faithful",
+      "note": "The protesters are shared across the coordinated waving and blowing events.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 35,
+      "claim_id": "TW4OYA3RN-Hw_1814",
+      "text": "Protestors are waving hats and blowing whistles.",
+      "judgment": "faithful",
+      "note": "The protesters are shared across the coordinated waving and blowing events.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 36,
+      "claim_id": "T2G_ACMxR_I4_1303",
+      "text": "Testing the vehicle takes over a year.",
+      "judgment": "partial",
+      "note": "The over-a-year duration is represented by a year entity/preposition, without a typed duration bound.",
+      "patterns": [
+        "literal_type"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 36,
+      "claim_id": "T2G_ACMxR_I4_1303",
+      "text": "Testing the vehicle takes over a year.",
+      "judgment": "faithful",
+      "note": "The testing activity and vehicle survive, with an executable strict duration bound of more than one year.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 37,
+      "claim_id": "TQEmEycTI0RQ_836",
+      "text": "Shows image of Trump shaking Elon Musk's hand at some kind of rally (Elon Musk wearing SpaceX sweatshirt).",
+      "judgment": "refused",
+      "note": "Nested podium, rally and sweatshirt clauses remain unlinked.",
+      "patterns": [
+        "clause_attachment"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 37,
+      "claim_id": "TQEmEycTI0RQ_836",
+      "text": "Shows image of Trump shaking Elon Musk's hand at some kind of rally (Elon Musk wearing SpaceX sweatshirt).",
+      "judgment": "refused",
+      "note": "Nested podium, rally and sweatshirt clauses remain unlinked.",
+      "patterns": [
+        "clause_attachment"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 38,
+      "claim_id": "TFgw4IaR9R8s_1561",
+      "text": "Axelrod claims the tariffs are bad economic policy.",
+      "judgment": "partial",
+      "note": "Bad economic policy now stays within Axelrod's assertion, but the bare mass-noun copular complement still uses a separate policy referent.",
+      "patterns": [
+        "copular_identity"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 38,
+      "claim_id": "TFgw4IaR9R8s_1561",
+      "text": "Axelrod claims the tariffs are bad economic policy.",
+      "judgment": "faithful",
+      "note": "The tariffs themselves receive the bad economic policy description inside the assertion, without a second policy candidate.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 39,
+      "claim_id": "TFgw4IaR9R8s_1761",
+      "text": "Trump blames people sitting at the oval office for making poor decisions.",
+      "judgment": "refused",
+      "note": "The blame/reason complement cannot be attached.",
+      "patterns": [
+        "clause_attachment"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 39,
+      "claim_id": "TFgw4IaR9R8s_1761",
+      "text": "Trump blames people sitting at the oval office for making poor decisions.",
+      "judgment": "refused",
+      "note": "The blame/reason complement cannot be attached.",
+      "patterns": [
+        "clause_attachment"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 40,
+      "claim_id": "TFOEIehBwT8Q_463",
+      "text": "Protesters are chanting \"Mexico, Mexico, Mexico\".",
+      "judgment": "faithful",
+      "note": "The protesting group and three repeated Mexico tokens remain one exact utterance.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 40,
+      "claim_id": "TFOEIehBwT8Q_463",
+      "text": "Protesters are chanting \"Mexico, Mexico, Mexico\".",
+      "judgment": "faithful",
+      "note": "The protesting group and three repeated Mexico tokens remain one exact utterance.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 41,
+      "claim_id": "TbJqMFkNxARY_138",
+      "text": "This video is shared by ABC 7.",
+      "judgment": "faithful",
+      "note": "Passive sharing retains this video and the complete ABC 7 name.",
+      "patterns": []
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 41,
+      "claim_id": "TbJqMFkNxARY_138",
+      "text": "This video is shared by ABC 7.",
+      "judgment": "faithful",
+      "note": "Passive sharing retains this video and the complete ABC 7 name.",
+      "patterns": []
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 42,
+      "claim_id": "TFgw4IaR9R8s_1624",
+      "text": "This ruling is significant because Trump uses tariffs as a key part of his international trade 'deals' and policy.",
+      "judgment": "partial",
+      "note": "The deals/policy noun-phrase structure is missing although the main significance/reason relationship survives.",
+      "patterns": [
+        "noun_phrase_binding",
+        "omission"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 42,
+      "claim_id": "TFgw4IaR9R8s_1624",
+      "text": "This ruling is significant because Trump uses tariffs as a key part of his international trade 'deals' and policy.",
+      "judgment": "partial",
+      "note": "The deals/policy noun-phrase structure is missing although the main significance/reason relationship survives.",
+      "patterns": [
+        "noun_phrase_binding",
+        "omission"
+      ]
+    },
+    {
+      "method": "baseline",
+      "cohort": "development",
+      "index": 43,
+      "claim_id": "T2G_ACMxR_I4_1243",
+      "text": "The mission was expected to last about four more days until sunset and loss of power.",
+      "judgment": "partial",
+      "note": "Expectation and shared mission survive, but four days is a counted group rather than a typed duration, and the ending condition stays opaque.",
+      "patterns": [
+        "literal_type",
+        "temporal_binding"
+      ]
+    },
+    {
+      "method": "revised",
+      "cohort": "development",
+      "index": 43,
+      "claim_id": "T2G_ACMxR_I4_1243",
+      "text": "The mission was expected to last about four more days until sunset and loss of power.",
+      "judgment": "partial",
+      "note": "The expected remaining duration is typed and scoped, but the sunset/power-loss endpoint remains a literal.",
+      "patterns": [
+        "temporal_endpoint"
+      ]
+    },
+    {
+      "cohort": "new_sources",
+      "index": 0,
+      "claim_id": "TzF9M4kZ3Pys_300",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The nominal ground-stop order retains its airport relation and requires context as a mention.",
+      "patterns": [
+        "nominal_description"
+      ],
+      "text": "Ground stop order at Sky Harbor Airport."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 0,
+      "claim_id": "TzF9M4kZ3Pys_300",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The nominal ground-stop order retains its airport relation and requires context as a mention.",
+      "patterns": [
+        "nominal_description"
+      ],
+      "text": "Ground stop order at Sky Harbor Airport."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 1,
+      "claim_id": "TKCfkoNUssZI_703",
+      "method": "baseline",
+      "judgment": "partial",
+      "note": "The attempted entry and blocking participants survive, but the definite entrance is not linked to the same building.",
+      "patterns": [
+        "definite_reference"
+      ],
+      "text": "People are trying to get into a building and police are blocking the entrance. "
+    },
+    {
+      "cohort": "new_sources",
+      "index": 1,
+      "claim_id": "TKCfkoNUssZI_703",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The attempted entry and blocking participants survive, but the definite entrance is not linked to the same building.",
+      "patterns": [
+        "definite_reference"
+      ],
+      "text": "People are trying to get into a building and police are blocking the entrance. "
+    },
+    {
+      "cohort": "new_sources",
+      "index": 2,
+      "claim_id": "Txf2EdqOg1SQ_2335",
+      "method": "baseline",
+      "judgment": "partial",
+      "note": "The bending and angle survive, but Visuals is not assigned a depiction route and wind attaches to angle rather than bending.",
+      "patterns": [
+        "source_route"
+      ],
+      "text": "Visuals show trees bending at approximately a 45-degree angle in the wind."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 2,
+      "claim_id": "Txf2EdqOg1SQ_2335",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The bending and angle survive, but Visuals is not assigned a depiction route and wind attaches to angle rather than bending.",
+      "patterns": [
+        "source_route"
+      ],
+      "text": "Visuals show trees bending at approximately a 45-degree angle in the wind."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 3,
+      "claim_id": "TW4OYA3RN-Hw_1810",
+      "method": "baseline",
+      "judgment": "incorrect",
+      "note": "The footage description becomes a world burning event and omits the different viewing angles.",
+      "patterns": [
+        "source_scope"
+      ],
+      "text": "Footage of burning building at different angles/perspectives."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 3,
+      "claim_id": "TW4OYA3RN-Hw_1810",
+      "method": "revised",
+      "judgment": "incorrect",
+      "note": "The footage description becomes a world burning event and omits the different viewing angles.",
+      "patterns": [
+        "source_scope"
+      ],
+      "text": "Footage of burning building at different angles/perspectives."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 4,
+      "claim_id": "TInVWzp25aIM_112",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The Guard uses helicopters for the purpose of rescuing people, with the Guard shared as the rescuer.",
+      "patterns": [],
+      "text": "The Alaska National Guard is using helicopters to rescue people."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 4,
+      "claim_id": "TInVWzp25aIM_112",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The Guard uses helicopters for the purpose of rescuing people, with the Guard shared as the rescuer.",
+      "patterns": [],
+      "text": "The Alaska National Guard is using helicopters to rescue people."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 5,
+      "claim_id": "TFOEIehBwT8Q_455",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The same journalists are on the scene and take photographs; the scene and photograph arguments remain explicit.",
+      "patterns": [],
+      "text": "Journalists are on the scene taking photographs."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 5,
+      "claim_id": "TFOEIehBwT8Q_455",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The same journalists are on the scene and take photographs; the scene and photograph arguments remain explicit.",
+      "patterns": [],
+      "text": "Journalists are on the scene taking photographs."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 6,
+      "claim_id": "TzF9M4kZ3Pys_245",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Traffic flowing is constrained to the stated dust-storm time condition.",
+      "patterns": [],
+      "text": "Traffic is flowing during dust storm."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 6,
+      "claim_id": "TzF9M4kZ3Pys_245",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Traffic flowing is constrained to the stated dust-storm time condition.",
+      "patterns": [],
+      "text": "Traffic is flowing during dust storm."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 7,
+      "claim_id": "TgPh_fzHTCm4_1496",
+      "method": "baseline",
+      "judgment": "partial",
+      "note": "The video/spin association is retained, but these systems has no explicit demonstrative reference-resolution requirement.",
+      "patterns": [
+        "definite_reference"
+      ],
+      "text": "The video basically shows the spin associated with these systems."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 7,
+      "claim_id": "TgPh_fzHTCm4_1496",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The video/spin association is retained, but these systems has no explicit demonstrative reference-resolution requirement.",
+      "patterns": [
+        "definite_reference"
+      ],
+      "text": "The video basically shows the spin associated with these systems."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 8,
+      "claim_id": "Txf2EdqOg1SQ_2305",
+      "method": "baseline",
+      "judgment": "incorrect",
+      "note": "VIS inside the exact label is invented as an event, and the daytime-use description is attached through the label.",
+      "patterns": [
+        "quoted_label"
+      ],
+      "text": "The video includes a clip of satellite imagery labeled 'HIMAWARI-9 Pseudo-VIS ROI-FLOATER' used for daytime."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 8,
+      "claim_id": "Txf2EdqOg1SQ_2305",
+      "method": "revised",
+      "judgment": "incorrect",
+      "note": "VIS inside the exact label is invented as an event, and the daytime-use description is attached through the label.",
+      "patterns": [
+        "quoted_label"
+      ],
+      "text": "The video includes a clip of satellite imagery labeled 'HIMAWARI-9 Pseudo-VIS ROI-FLOATER' used for daytime."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 9,
+      "claim_id": "TInVWzp25aIM_47",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The flooded homes, Many modifier and storm-water participant remain explicit with the by relation.",
+      "patterns": [],
+      "text": "Many homes have been flooded by storm waters."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 9,
+      "claim_id": "TInVWzp25aIM_47",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The flooded homes, Many modifier and storm-water participant remain explicit with the by relation.",
+      "patterns": [],
+      "text": "Many homes have been flooded by storm waters."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 10,
+      "claim_id": "TFOEIehBwT8Q_525",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Helmets and the bullet-proof vest remain group members worn by the police.",
+      "patterns": [],
+      "text": "Police are wearing helmets and bullet proof vest."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 10,
+      "claim_id": "TFOEIehBwT8Q_525",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Helmets and the bullet-proof vest remain group members worn by the police.",
+      "patterns": [],
+      "text": "Police are wearing helmets and bullet proof vest."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 11,
+      "claim_id": "TInVWzp25aIM_59",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The footage is the compiled object and Al Jazeera the compiler in the passive clause.",
+      "patterns": [],
+      "text": "The footage was compiled by Al Jazeera."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 11,
+      "claim_id": "TInVWzp25aIM_59",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The footage is the compiled object and Al Jazeera the compiler in the passive clause.",
+      "patterns": [],
+      "text": "The footage was compiled by Al Jazeera."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 12,
+      "claim_id": "TQEmEycTI0RQ_880",
+      "method": "baseline",
+      "judgment": "partial",
+      "note": "The denial and source assertion survive, but enough seats is missing from what was denied; the coalition relation alone does not retain the threshold.",
+      "patterns": [
+        "threshold_omission"
+      ],
+      "text": "Says they denied the NDP and Liberals enough seats to form a coalition government."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 12,
+      "claim_id": "TQEmEycTI0RQ_880",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The denial and source assertion survive, but enough seats is missing from what was denied; the coalition relation alone does not retain the threshold.",
+      "patterns": [
+        "threshold_omission"
+      ],
+      "text": "Says they denied the NDP and Liberals enough seats to form a coalition government."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 13,
+      "claim_id": "TgPh_fzHTCm4_1514",
+      "method": "baseline",
+      "judgment": "partial",
+      "note": "The flow and indicative ridge/pressure relations survive, but this and the flow description are separate referents.",
+      "patterns": [
+        "copular_identity"
+      ],
+      "text": "This is clear anti-cyclonic clockwise flow indicating a ridge of high pressure."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 13,
+      "claim_id": "TgPh_fzHTCm4_1514",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The resolved demonstrative referent is itself the described clockwise anticyclonic flow and the indicator of the pressure ridge.",
+      "patterns": [],
+      "text": "This is clear anti-cyclonic clockwise flow indicating a ridge of high pressure."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 14,
+      "claim_id": "TzF9M4kZ3Pys_239",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The covered-in-dust complement cannot be attached safely.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "text": "People are covered in dust."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 14,
+      "claim_id": "TzF9M4kZ3Pys_239",
+      "method": "revised",
+      "judgment": "refused",
+      "note": "The covered-in-dust complement cannot be attached safely.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "text": "People are covered in dust."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 15,
+      "claim_id": "TFOEIehBwT8Q_458",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The deployed police retain the shield relation and passive participant.",
+      "patterns": [],
+      "text": "Police with shields were deployed."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 15,
+      "claim_id": "TFOEIehBwT8Q_458",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The deployed police retain the shield relation and passive participant.",
+      "patterns": [],
+      "text": "Police with shields were deployed."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 16,
+      "claim_id": "TFgw4IaR9R8s_1682",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The cost/rate clause cannot be attached safely.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "text": "It will break down to .09 cents per day it will cost consumers."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 16,
+      "claim_id": "TFgw4IaR9R8s_1682",
+      "method": "revised",
+      "judgment": "refused",
+      "note": "The cost/rate clause cannot be attached safely.",
+      "patterns": [
+        "clause_attachment"
+      ],
+      "text": "It will break down to .09 cents per day it will cost consumers."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 17,
+      "claim_id": "TFOEIehBwT8Q_480",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The smoky air retains the causal explosives participant and going-off description.",
+      "patterns": [],
+      "text": "The air is smokey due to explosives going off."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 17,
+      "claim_id": "TFOEIehBwT8Q_480",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The smoky air retains the causal explosives participant and going-off description.",
+      "patterns": [],
+      "text": "The air is smokey due to explosives going off."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 18,
+      "claim_id": "Tsuk2uoYj-kc_612",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The nominal description preserves people climbing up the hill; standalone interpretation is explicitly contextual.",
+      "patterns": [
+        "nominal_description"
+      ],
+      "text": "People climbing up a hill."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 18,
+      "claim_id": "Tsuk2uoYj-kc_612",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The nominal description preserves people climbing up the hill; standalone interpretation is explicitly contextual.",
+      "patterns": [
+        "nominal_description"
+      ],
+      "text": "People climbing up a hill."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 19,
+      "claim_id": "TInVWzp25aIM_76",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The storm brings winds with the heavy modifier and ongoing aspect.",
+      "patterns": [],
+      "text": "The storm is bringing heavy winds."
+    },
+    {
+      "cohort": "new_sources",
+      "index": 19,
+      "claim_id": "TInVWzp25aIM_76",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The storm brings winds with the heavy modifier and ongoing aspect.",
+      "patterns": [],
+      "text": "The storm is bringing heavy winds."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 0,
+      "claim_id": "Txf2EdqOg1SQ_2271",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The prior compiler refused this claim.",
+      "patterns": [
+        "compiler_refusal"
+      ],
+      "text": "A sandwich board is blown away and spins as it goes in Shenzhen."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 0,
+      "claim_id": "Txf2EdqOg1SQ_2271",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The recovered spin shares the board but inherits a passive subject label, while it and the concurrent/location clause remain separately resolved.",
+      "patterns": [
+        "subject_and_reference"
+      ],
+      "text": "A sandwich board is blown away and spins as it goes in Shenzhen."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 1,
+      "claim_id": "T2EE72iNELEs_203",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The prior compiler refused this claim.",
+      "patterns": [
+        "compiler_refusal"
+      ],
+      "text": "Rocket decelerates into a calculated landing on the ocean."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 1,
+      "claim_id": "T2EE72iNELEs_203",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The deceleration and ocean landing description survive, but the nominal landing is not an explicit event/phase tied to the rocket.",
+      "patterns": [
+        "event_nominal"
+      ],
+      "text": "Rocket decelerates into a calculated landing on the ocean."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 2,
+      "claim_id": "TQEmEycTI0RQ_869",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The prior compiler refused this claim.",
+      "patterns": [
+        "compiler_refusal"
+      ],
+      "text": "Displays an emoji for each requirement."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 2,
+      "claim_id": "TQEmEycTI0RQ_869",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The displayed emoji and each requirement survive as words, but the missing subject/context and per-requirement mapping are not explicit.",
+      "patterns": [
+        "quantifier_and_context"
+      ],
+      "text": "Displays an emoji for each requirement."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 3,
+      "claim_id": "T3HTSBW42QaY_776",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The prior compiler refused this claim.",
+      "patterns": [
+        "compiler_refusal"
+      ],
+      "text": "A large wave at 8:58:09 douses the pier with water."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 3,
+      "claim_id": "T3HTSBW42QaY_776",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The wave, pier and water bindings survive, but the exact 8:58:09 time is dropped.",
+      "patterns": [
+        "time_omission"
+      ],
+      "text": "A large wave at 8:58:09 douses the pier with water."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 4,
+      "claim_id": "TMrQshDs8aH0_740",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The prior compiler refused this claim.",
+      "patterns": [
+        "compiler_refusal"
+      ],
+      "text": "Cars are having to take turns in the one unblocked lane."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 4,
+      "claim_id": "TMrQshDs8aH0_740",
+      "method": "revised",
+      "judgment": "incorrect",
+      "note": "Having to is compiled as have with a complement rather than obligation; take turns remains an opaque take/turns relation.",
+      "patterns": [
+        "obligation_and_idiom"
+      ],
+      "text": "Cars are having to take turns in the one unblocked lane."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 5,
+      "claim_id": "TgPh_fzHTCm4_1502",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The prior compiler refused this claim.",
+      "patterns": [
+        "compiler_refusal"
+      ],
+      "text": "On the 5th it moves slightly to southeast Texas and dissipates."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 5,
+      "claim_id": "TgPh_fzHTCm4_1502",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The same it moves and dissipates, but On the 5th only constrains moving and is not shared with the second event.",
+      "patterns": [
+        "temporal_scope"
+      ],
+      "text": "On the 5th it moves slightly to southeast Texas and dissipates."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 6,
+      "claim_id": "Tg0UxWYuPeJ0_320",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The prior compiler refused this claim.",
+      "patterns": [
+        "compiler_refusal"
+      ],
+      "text": "A person running along side of the robot stops to hand what looks like a controller to another person."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 6,
+      "claim_id": "Tg0UxWYuPeJ0_320",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "Running, stopping and handing retain their participants and apparent-controller description, but another person is not required to differ from the first.",
+      "patterns": [
+        "distinct_reference"
+      ],
+      "text": "A person running along side of the robot stops to hand what looks like a controller to another person."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 7,
+      "claim_id": "T2G_ACMxR_I4_1211",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The prior compiler refused this claim.",
+      "patterns": [
+        "compiler_refusal"
+      ],
+      "text": "LISTER measures thermal gradient (temperature changes at different depths)."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 7,
+      "claim_id": "T2G_ACMxR_I4_1211",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The instrument measures the thermal gradient, but temperature changes at different depths is absent from the structure.",
+      "patterns": [
+        "parenthetical_detail"
+      ],
+      "text": "LISTER measures thermal gradient (temperature changes at different depths)."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 8,
+      "claim_id": "T3HTSBW42QaY_768",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The prior compiler refused this claim.",
+      "patterns": [
+        "compiler_refusal"
+      ],
+      "text": "The central pipe of the container releases pressure."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 8,
+      "claim_id": "T3HTSBW42QaY_768",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The central pipe is linked to its container and is the subject releasing pressure.",
+      "patterns": [],
+      "text": "The central pipe of the container releases pressure."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 9,
+      "claim_id": "TgR_u37mCoQ4_1959",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "The prior compiler refused this claim.",
+      "patterns": [
+        "compiler_refusal"
+      ],
+      "text": "Micah Ohlman and Cher Calvin report from a news station in Hollywood."
+    },
+    {
+      "cohort": "newly_accepted",
+      "index": 9,
+      "claim_id": "TgR_u37mCoQ4_1959",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Both named reporters are group members reporting from a news station located in Hollywood.",
+      "patterns": [],
+      "text": "Micah Ohlman and Cher Calvin report from a news station in Hollywood."
+    }
+  ]
+}

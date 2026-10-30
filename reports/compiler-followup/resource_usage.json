@@ -1,0 +1,31 @@
+{
+  "jobs": [
+    {
+      "job_id": 1150080,
+      "state": "CANCELLED_PENDING",
+      "elapsed_seconds": 0,
+      "gpus": 0
+    },
+    {
+      "job_id": 1150081,
+      "state": "FAILED",
+      "elapsed_seconds": 97,
+      "gpus": 2,
+      "note": "L40S CUDA smoke check failed before checkpoint loading"
+    },
+    {
+      "job_id": 1150087,
+      "state": "COMPLETED",
+      "elapsed_seconds": 421,
+      "gpus": 3,
+      "note": "V100 32GB; twenty blinded review requests, forty condition judgments"
+    }
+  ],
+  "allocated_gpu_seconds": 1457,
+  "allocated_gpu_hours": 0.4047222222222222,
+  "peak_concurrent_gpus": 3,
+  "accounting": "sacct -X elapsed seconds times allocated GPUs, including failed setup; pending requests use zero GPUs",
+  "no_media_calls": true,
+  "no_relation_training": true,
+  "no_model_downloads": true
+}

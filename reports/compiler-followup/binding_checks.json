@@ -1,0 +1,82 @@
+[
+  {
+    "case": "identity",
+    "counterexample": false,
+    "expected": "supported",
+    "result": {
+      "claim_id": "TjHepwuhkYFA_1007",
+      "distribution": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      },
+      "prediction": "supported",
+      "timing": {
+        "ground_seconds": 0.08121967315673828,
+        "compile_seconds": 3.4211809635162354,
+        "evaluate_seconds": 10.475007057189941
+      },
+      "wall_seconds": 13.977703860029578
+    }
+  },
+  {
+    "case": "identity",
+    "counterexample": true,
+    "expected": "refuted",
+    "result": {
+      "claim_id": "TjHepwuhkYFA_1007",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 1.0,
+        "unknown": 0.0
+      },
+      "prediction": "refuted",
+      "timing": {
+        "ground_seconds": 0.08179998397827148,
+        "compile_seconds": 3.4212117195129395,
+        "evaluate_seconds": 11.048979997634888
+      },
+      "wall_seconds": 14.552243810147047
+    }
+  },
+  {
+    "case": "duration",
+    "counterexample": false,
+    "expected": "supported",
+    "result": {
+      "claim_id": "T2G_ACMxR_I4_1303",
+      "distribution": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      },
+      "prediction": "supported",
+      "timing": {
+        "ground_seconds": 0.023441553115844727,
+        "compile_seconds": 0.14527440071105957,
+        "evaluate_seconds": 0.002518177032470703
+      },
+      "wall_seconds": 0.17137056216597557
+    }
+  },
+  {
+    "case": "duration",
+    "counterexample": true,
+    "expected": "refuted",
+    "result": {
+      "claim_id": "T2G_ACMxR_I4_1303",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 1.0,
+        "unknown": 0.0
+      },
+      "prediction": "refuted",
+      "timing": {
+        "ground_seconds": 0.023185253143310547,
+        "compile_seconds": 0.00502777099609375,
+        "evaluate_seconds": 0.003070354461669922
+      },
+      "wall_seconds": 0.031403353437781334
+    }
+  }
+]

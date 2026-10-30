@@ -1,0 +1,405 @@
+{
+  "counts": {
+    "baseline": {
+      "faithful": 18,
+      "refused": 1,
+      "incorrect": 1
+    },
+    "revised": {
+      "faithful": 17,
+      "partial": 1,
+      "refused": 1,
+      "incorrect": 1
+    }
+  },
+  "judgments": 40,
+  "agreements": 24,
+  "disagreements": [
+    {
+      "claim_id": "TKCfkoNUssZI_703",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Preserves original participants, actions, spatial relationship (into the building), and polarity; 'trying to get into' correctly represented as purpose clause with 'get into'.",
+      "manual_judgment": "partial",
+      "manual_note": "The attempted entry and blocking participants survive, but the definite entrance is not linked to the same building."
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_703",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Accurately captures all entities, actions, and spatial relationship; 'trying to get into' is correctly encoded as a purpose clause with 'get into' and proper ARG2 preposition.",
+      "manual_judgment": "partial",
+      "manual_note": "The attempted entry and blocking participants survive, but the definite entrance is not linked to the same building."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2335",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The logical form accurately captures the visual depiction of trees bending at approximately a 45-degree angle in the wind, preserving the subject (Visuals), the action (show), the object (trees bending), the modifier (approximately a 45-degree), and the prepositional relation (at...in the wind).",
+      "manual_judgment": "partial",
+      "manual_note": "The bending and angle survive, but Visuals is not assigned a depiction route and wind attaches to angle rather than bending."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2335",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The logical form correctly represents the original claim with the same entities, relations, and modifiers, maintaining the core meaning that visuals show trees bending at a 45-degree angle due to wind.",
+      "manual_judgment": "partial",
+      "manual_note": "The bending and angle survive, but Visuals is not assigned a depiction route and wind attaches to angle rather than bending."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1810",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Preserves the core claim of a building burning, with correct entity and event structure.",
+      "manual_judgment": "incorrect",
+      "manual_note": "The footage description becomes a world burning event and omits the different viewing angles."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1810",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Matches A in capturing the burning building event with accurate entity and predicate binding.",
+      "manual_judgment": "incorrect",
+      "manual_note": "The footage description becomes a world burning event and omits the different viewing angles."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1496",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The form correctly captures the video as the subject showing the spin associated with the systems, with 'basically' as an adverbial modifier and 'spin' as the depicted entity, preserving the original meaning and structure.",
+      "manual_judgment": "partial",
+      "manual_note": "The video/spin association is retained, but these systems has no explicit demonstrative reference-resolution requirement."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1496",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The form accurately represents the video showing the spin linked to the systems, with 'basically' modifying the action and 'spin' as the visual depiction, maintaining the original claim's core meaning and logical structure.",
+      "manual_judgment": "partial",
+      "manual_note": "The video/spin association is retained, but these systems has no explicit demonstrative reference-resolution requirement."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2305",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The logical form correctly preserves the original claim's structure, including the satellite imagery clip labeled 'HIMAWARI-9 Pseudo-VIS ROI-FLOATER' being used for daytime, with proper entity and event bindings.",
+      "manual_judgment": "incorrect",
+      "manual_note": "VIS inside the exact label is invented as an event, and the daytime-use description is attached through the label."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2305",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The logical form accurately represents the original claim, maintaining the correct relationships between the video, clip, satellite imagery, labeling, and its use for daytime, with no meaningful omissions or distortions.",
+      "manual_judgment": "incorrect",
+      "manual_note": "VIS inside the exact label is invented as an event, and the daytime-use description is attached through the label."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_880",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Preserves the original claim's structure, including the pronoun 'they' denying the NDP and Liberals enough seats to form a coalition government, with correct event hierarchy and ARG roles.",
+      "manual_judgment": "partial",
+      "manual_note": "The denial and source assertion survive, but enough seats is missing from what was denied; the coalition relation alone does not retain the threshold."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_880",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Accurately represents the claim with the same entities, group structure, and logical form, maintaining the speech assertion and nested event of denying the ability to form a coalition government.",
+      "manual_judgment": "partial",
+      "manual_note": "The denial and source assertion survive, but enough seats is missing from what was denied; the coalition relation alone does not retain the threshold."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1514",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The entity 'flow' correctly inherits all modifiers (clear, anti-cyclonic, clockwise) and properly links to 'ridge of high pressure' via the indicating relation, preserving the original claim's meaning and structure.",
+      "manual_judgment": "partial",
+      "manual_note": "The flow and indicative ridge/pressure relations survive, but this and the flow description are separate referents."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1514",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The pronoun 'This' incorrectly inherits the modifiers (clear, anti-cyclonic, clockwise) instead of the 'flow', leading to a misattribution of attributes and altering the intended meaning.",
+      "manual_judgment": "faithful",
+      "manual_note": "The resolved demonstrative referent is itself the described clockwise anticyclonic flow and the indicator of the pressure ridge."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1682",
+      "method": "revised",
+      "judgment": "incorrect",
+      "note": "The clause 'to .09 cents per day it will cost consumers' lacks a proper SRL frame, indicating the core predicate and its arguments are not identified, so the logical form fails to preserve the original claim's meaning.",
+      "manual_judgment": "refused",
+      "manual_note": "The cost/rate clause cannot be attached safely."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1682",
+      "method": "baseline",
+      "judgment": "incorrect",
+      "note": "The clause 'to .09 cents per day it will cost consumers' lacks a proper SRL frame, indicating the core predicate and its arguments are not identified, so the logical form fails to preserve the original claim's meaning.",
+      "manual_judgment": "refused",
+      "manual_note": "The cost/rate clause cannot be attached safely."
+    }
+  ],
+  "status_mismatches": [
+    {
+      "claim_id": "TFgw4IaR9R8s_1682",
+      "method": "revised",
+      "judgment": "incorrect",
+      "note": "The clause 'to .09 cents per day it will cost consumers' lacks a proper SRL frame, indicating the core predicate and its arguments are not identified, so the logical form fails to preserve the original claim's meaning."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1682",
+      "method": "baseline",
+      "judgment": "incorrect",
+      "note": "The clause 'to .09 cents per day it will cost consumers' lacks a proper SRL frame, indicating the core predicate and its arguments are not identified, so the logical form fails to preserve the original claim's meaning."
+    }
+  ],
+  "errors": [],
+  "limitations": "Separate frozen Qwen review with randomized anonymous A/B order and no assistant labels. Not human gold or an independent accuracy estimate; retain disagreements without replacing the prewritten assistant judgments.",
+  "cases": [
+    {
+      "claim_id": "TzF9M4kZ3Pys_300",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The nominal description 'Ground stop order at Sky Harbor Airport' is preserved with correct entity and modifier relationships, including the 'mod' role for 'Ground stop' and 'at' relation to 'Sky Harbor Airport'."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_300",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The nominal description 'Ground stop order at Sky Harbor Airport' is preserved with correct entity and modifier relationships, including the 'mod' role for 'Ground stop' and 'at' relation to 'Sky Harbor Airport'."
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_703",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Preserves original participants, actions, spatial relationship (into the building), and polarity; 'trying to get into' correctly represented as purpose clause with 'get into'."
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_703",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Accurately captures all entities, actions, and spatial relationship; 'trying to get into' is correctly encoded as a purpose clause with 'get into' and proper ARG2 preposition."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2335",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The logical form accurately captures the visual depiction of trees bending at approximately a 45-degree angle in the wind, preserving the subject (Visuals), the action (show), the object (trees bending), the modifier (approximately a 45-degree), and the prepositional relation (at...in the wind)."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2335",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The logical form correctly represents the original claim with the same entities, relations, and modifiers, maintaining the core meaning that visuals show trees bending at a 45-degree angle due to wind."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1810",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Preserves the core claim of a building burning, with correct entity and event structure."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1810",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Matches A in capturing the burning building event with accurate entity and predicate binding."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_112",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The logical form correctly captures the Alaska National Guard as the agent using helicopters, with the purpose of rescuing people, preserving the original claim's meaning, participants, and purpose clause."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_112",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The logical form accurately represents the original claim with the Alaska National Guard as the user of helicopters for rescuing people, maintaining the correct participants, predicate, and purpose relationship."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_455",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The logical form preserves the original claim's participants (journalists, scene, photographs), polarity (affirmative), and event structure (journalists are on the scene, taking photographs), with correct ARG roles and prepositional attachment."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_455",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The logical form matches the original claim in all key aspects: participants, event sequence, prepositional phrase 'on the scene', and the action of taking photographs, with accurate predicate-argument structure."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_245",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The logical form correctly preserves the original claim's subject (Traffic), predicate (flow), temporal modifier (during dust storm), and overall polarity."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_245",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The logical form accurately represents the original claim with the same subject, predicate, temporal context, and syntactic structure."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1496",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The form correctly captures the video as the subject showing the spin associated with the systems, with 'basically' as an adverbial modifier and 'spin' as the depicted entity, preserving the original meaning and structure."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1496",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The form accurately represents the video showing the spin linked to the systems, with 'basically' modifying the action and 'spin' as the visual depiction, maintaining the original claim's core meaning and logical structure."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2305",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The logical form correctly preserves the original claim's structure, including the satellite imagery clip labeled 'HIMAWARI-9 Pseudo-VIS ROI-FLOATER' being used for daytime, with proper entity and event bindings."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2305",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The logical form accurately represents the original claim, maintaining the correct relationships between the video, clip, satellite imagery, labeling, and its use for daytime, with no meaningful omissions or distortions."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_47",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Preserves original claim's participants (many homes, storm waters), polarity (flooded), and causal structure (by storm waters)."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_47",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Preserves original claim's participants (many homes, storm waters), polarity (flooded), and causal structure (by storm waters)."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_525",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The entity 'helmets and bullet proof vest' correctly combines both items as worn by Police, preserving the original claim's meaning, participants, and modifiers."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_525",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The entity 'helmets and bullet proof vest' correctly combines both items as worn by Police, preserving the original claim's meaning, participants, and modifiers."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_59",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The event 'compile' with Al Jazeera as ARG0 and 'footage' as ARG1 accurately reflects the original claim's meaning, participants, and polarity."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_59",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The event 'compile' with Al Jazeera as ARG0 and 'footage' as ARG1 accurately reflects the original claim's meaning, participants, and polarity."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_880",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Preserves the original claim's structure, including the pronoun 'they' denying the NDP and Liberals enough seats to form a coalition government, with correct event hierarchy and ARG roles."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_880",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Accurately represents the claim with the same entities, group structure, and logical form, maintaining the speech assertion and nested event of denying the ability to form a coalition government."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1514",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The entity 'flow' correctly inherits all modifiers (clear, anti-cyclonic, clockwise) and properly links to 'ridge of high pressure' via the indicating relation, preserving the original claim's meaning and structure."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1514",
+      "method": "revised",
+      "judgment": "partial",
+      "note": "The pronoun 'This' incorrectly inherits the modifiers (clear, anti-cyclonic, clockwise) instead of the 'flow', leading to a misattribution of attributes and altering the intended meaning."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_239",
+      "method": "baseline",
+      "judgment": "refused",
+      "note": "No SRL frame attached to clausal argument"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_239",
+      "method": "revised",
+      "judgment": "refused",
+      "note": "No SRL frame attached to clausal argument"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_458",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The logical form correctly captures the police (ARG1) being deployed with shields as a modifying attribute, preserving the original claim's meaning, participants, and polarity."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_458",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The logical form accurately represents the deployment of police with shields, maintaining the original claim's participants, modifiers, and event structure."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1682",
+      "method": "revised",
+      "judgment": "incorrect",
+      "note": "The clause 'to .09 cents per day it will cost consumers' lacks a proper SRL frame, indicating the core predicate and its arguments are not identified, so the logical form fails to preserve the original claim's meaning."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1682",
+      "method": "baseline",
+      "judgment": "incorrect",
+      "note": "The clause 'to .09 cents per day it will cost consumers' lacks a proper SRL frame, indicating the core predicate and its arguments are not identified, so the logical form fails to preserve the original claim's meaning."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_480",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Preserves original claim's participants (air, explosives), modifiers (smokey, going off), polarity (is), causal relationship (due to), and scope (air being smokey as a result of explosives going off)."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_480",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Identical to A in structure and content, preserving all key elements including causal link, event sequence, and semantic roles."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_612",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "Preserves the core meaning: people as climbers, hill as destination, and upward direction via 'up' particle."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_612",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "Matches A exactly; same entities, roles, and directional modifier 'up' correctly encoded."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_76",
+      "method": "revised",
+      "judgment": "faithful",
+      "note": "The logical form preserves the original claim's participants (storm as agent, heavy winds as theme), modifier (heavy), polarity, and event structure, with correct ARG0/ARG1 roles and anchor 'bringing'."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_76",
+      "method": "baseline",
+      "judgment": "faithful",
+      "note": "The logical form matches the original claim in all key aspects: storm as subject, heavy winds as object, 'bringing' as the ongoing action, and correct event structure with proper ARG roles."
+    }
+  ]
+}

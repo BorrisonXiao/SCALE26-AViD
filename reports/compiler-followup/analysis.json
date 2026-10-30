@@ -1,0 +1,287 @@
+{
+  "conditions": {
+    "baseline": {
+      "total": 2375,
+      "compiled": 2042,
+      "refused": 333,
+      "kinds": {
+        "mention": 172,
+        "claim": 1870
+      },
+      "failures": {
+        "negative_quantifier": 11,
+        "unresolved_clause": 112,
+        "missing_predicate": 71,
+        "duplicate_role": 51,
+        "missing_srl": 52,
+        "mention_alignment": 4,
+        "predicate_type": 8,
+        "quantity_type": 3,
+        "modal_scope": 17,
+        "polarity_omission": 2,
+        "unresolved_controller": 2
+      }
+    },
+    "revised": {
+      "total": 2375,
+      "compiled": 2108,
+      "refused": 267,
+      "kinds": {
+        "mention": 174,
+        "claim": 1934
+      },
+      "failures": {
+        "negative_quantifier": 11,
+        "unresolved_clause": 110,
+        "duplicate_role": 59,
+        "missing_srl": 13,
+        "mention_alignment": 5,
+        "predicate_type": 8,
+        "quantity_type": 3,
+        "missing_predicate": 37,
+        "modal_scope": 17,
+        "polarity_omission": 2,
+        "unresolved_controller": 2
+      }
+    }
+  },
+  "transitions": {
+    "both_compiled": 2042,
+    "both_refused": 267,
+    "new_only": 66
+  },
+  "reviews": {
+    "development": {
+      "baseline": {
+        "refused": 8,
+        "faithful": 21,
+        "partial": 12,
+        "incorrect": 3
+      },
+      "revised": {
+        "refused": 8,
+        "faithful": 24,
+        "partial": 10,
+        "incorrect": 2
+      }
+    },
+    "new_sources": {
+      "baseline": {
+        "faithful": 11,
+        "partial": 5,
+        "incorrect": 2,
+        "refused": 2
+      },
+      "revised": {
+        "faithful": 12,
+        "partial": 4,
+        "incorrect": 2,
+        "refused": 2
+      }
+    },
+    "newly_accepted": {
+      "baseline": {
+        "refused": 10
+      },
+      "revised": {
+        "partial": 7,
+        "incorrect": 1,
+        "faithful": 2
+      }
+    }
+  },
+  "new_source_failure_patterns": {
+    "baseline": {
+      "definite_reference": 2,
+      "source_route": 1,
+      "source_scope": 1,
+      "quoted_label": 1,
+      "threshold_omission": 1,
+      "copular_identity": 1,
+      "clause_attachment": 2
+    },
+    "revised": {
+      "definite_reference": 2,
+      "source_route": 1,
+      "source_scope": 1,
+      "quoted_label": 1,
+      "threshold_omission": 1,
+      "clause_attachment": 2
+    }
+  },
+  "changes": {
+    "predication": 60,
+    "recovered_frame": 69,
+    "bare_predication": 7,
+    "controller": 2,
+    "event_reference": 1,
+    "duration": 5,
+    "implicit_subject": 1
+  },
+  "elapsed_seconds": 24.381995759904385,
+  "protocol": "Twenty claims fixed before implementation, one per source-video group with no overlap with sources in the saved prior reviews/pilot IDs. Source identity uses source_videos, not the claim-ID prefix. All 2375 texts were already processed in earlier compiler development. This is a new-source semantic review, not a fully held-out corpus. Original media/truth labels unused.",
+  "manual_review_sha256": "5e94f9f84585f2ec4a7f311ecaf15261fd92379534a66be2a78063f49f221135",
+  "model_review": {
+    "counts": {
+      "baseline": {
+        "faithful": 18,
+        "refused": 1,
+        "incorrect": 1
+      },
+      "revised": {
+        "faithful": 17,
+        "partial": 1,
+        "refused": 1,
+        "incorrect": 1
+      }
+    },
+    "judgments": 40,
+    "agreements": 24,
+    "disagreements": [
+      {
+        "claim_id": "TKCfkoNUssZI_703",
+        "method": "revised",
+        "judgment": "faithful",
+        "note": "Preserves original participants, actions, spatial relationship (into the building), and polarity; 'trying to get into' correctly represented as purpose clause with 'get into'.",
+        "manual_judgment": "partial",
+        "manual_note": "The attempted entry and blocking participants survive, but the definite entrance is not linked to the same building."
+      },
+      {
+        "claim_id": "TKCfkoNUssZI_703",
+        "method": "baseline",
+        "judgment": "faithful",
+        "note": "Accurately captures all entities, actions, and spatial relationship; 'trying to get into' is correctly encoded as a purpose clause with 'get into' and proper ARG2 preposition.",
+        "manual_judgment": "partial",
+        "manual_note": "The attempted entry and blocking participants survive, but the definite entrance is not linked to the same building."
+      },
+      {
+        "claim_id": "Txf2EdqOg1SQ_2335",
+        "method": "baseline",
+        "judgment": "faithful",
+        "note": "The logical form accurately captures the visual depiction of trees bending at approximately a 45-degree angle in the wind, preserving the subject (Visuals), the action (show), the object (trees bending), the modifier (approximately a 45-degree), and the prepositional relation (at...in the wind).",
+        "manual_judgment": "partial",
+        "manual_note": "The bending and angle survive, but Visuals is not assigned a depiction route and wind attaches to angle rather than bending."
+      },
+      {
+        "claim_id": "Txf2EdqOg1SQ_2335",
+        "method": "revised",
+        "judgment": "faithful",
+        "note": "The logical form correctly represents the original claim with the same entities, relations, and modifiers, maintaining the core meaning that visuals show trees bending at a 45-degree angle due to wind.",
+        "manual_judgment": "partial",
+        "manual_note": "The bending and angle survive, but Visuals is not assigned a depiction route and wind attaches to angle rather than bending."
+      },
+      {
+        "claim_id": "TW4OYA3RN-Hw_1810",
+        "method": "baseline",
+        "judgment": "faithful",
+        "note": "Preserves the core claim of a building burning, with correct entity and event structure.",
+        "manual_judgment": "incorrect",
+        "manual_note": "The footage description becomes a world burning event and omits the different viewing angles."
+      },
+      {
+        "claim_id": "TW4OYA3RN-Hw_1810",
+        "method": "revised",
+        "judgment": "faithful",
+        "note": "Matches A in capturing the burning building event with accurate entity and predicate binding.",
+        "manual_judgment": "incorrect",
+        "manual_note": "The footage description becomes a world burning event and omits the different viewing angles."
+      },
+      {
+        "claim_id": "TgPh_fzHTCm4_1496",
+        "method": "revised",
+        "judgment": "faithful",
+        "note": "The form correctly captures the video as the subject showing the spin associated with the systems, with 'basically' as an adverbial modifier and 'spin' as the depicted entity, preserving the original meaning and structure.",
+        "manual_judgment": "partial",
+        "manual_note": "The video/spin association is retained, but these systems has no explicit demonstrative reference-resolution requirement."
+      },
+      {
+        "claim_id": "TgPh_fzHTCm4_1496",
+        "method": "baseline",
+        "judgment": "faithful",
+        "note": "The form accurately represents the video showing the spin linked to the systems, with 'basically' modifying the action and 'spin' as the visual depiction, maintaining the original claim's core meaning and logical structure.",
+        "manual_judgment": "partial",
+        "manual_note": "The video/spin association is retained, but these systems has no explicit demonstrative reference-resolution requirement."
+      },
+      {
+        "claim_id": "Txf2EdqOg1SQ_2305",
+        "method": "revised",
+        "judgment": "faithful",
+        "note": "The logical form correctly preserves the original claim's structure, including the satellite imagery clip labeled 'HIMAWARI-9 Pseudo-VIS ROI-FLOATER' being used for daytime, with proper entity and event bindings.",
+        "manual_judgment": "incorrect",
+        "manual_note": "VIS inside the exact label is invented as an event, and the daytime-use description is attached through the label."
+      },
+      {
+        "claim_id": "Txf2EdqOg1SQ_2305",
+        "method": "baseline",
+        "judgment": "faithful",
+        "note": "The logical form accurately represents the original claim, maintaining the correct relationships between the video, clip, satellite imagery, labeling, and its use for daytime, with no meaningful omissions or distortions.",
+        "manual_judgment": "incorrect",
+        "manual_note": "VIS inside the exact label is invented as an event, and the daytime-use description is attached through the label."
+      },
+      {
+        "claim_id": "TQEmEycTI0RQ_880",
+        "method": "revised",
+        "judgment": "faithful",
+        "note": "Preserves the original claim's structure, including the pronoun 'they' denying the NDP and Liberals enough seats to form a coalition government, with correct event hierarchy and ARG roles.",
+        "manual_judgment": "partial",
+        "manual_note": "The denial and source assertion survive, but enough seats is missing from what was denied; the coalition relation alone does not retain the threshold."
+      },
+      {
+        "claim_id": "TQEmEycTI0RQ_880",
+        "method": "baseline",
+        "judgment": "faithful",
+        "note": "Accurately represents the claim with the same entities, group structure, and logical form, maintaining the speech assertion and nested event of denying the ability to form a coalition government.",
+        "manual_judgment": "partial",
+        "manual_note": "The denial and source assertion survive, but enough seats is missing from what was denied; the coalition relation alone does not retain the threshold."
+      },
+      {
+        "claim_id": "TgPh_fzHTCm4_1514",
+        "method": "baseline",
+        "judgment": "faithful",
+        "note": "The entity 'flow' correctly inherits all modifiers (clear, anti-cyclonic, clockwise) and properly links to 'ridge of high pressure' via the indicating relation, preserving the original claim's meaning and structure.",
+        "manual_judgment": "partial",
+        "manual_note": "The flow and indicative ridge/pressure relations survive, but this and the flow description are separate referents."
+      },
+      {
+        "claim_id": "TgPh_fzHTCm4_1514",
+        "method": "revised",
+        "judgment": "partial",
+        "note": "The pronoun 'This' incorrectly inherits the modifiers (clear, anti-cyclonic, clockwise) instead of the 'flow', leading to a misattribution of attributes and altering the intended meaning.",
+        "manual_judgment": "faithful",
+        "manual_note": "The resolved demonstrative referent is itself the described clockwise anticyclonic flow and the indicator of the pressure ridge."
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1682",
+        "method": "revised",
+        "judgment": "incorrect",
+        "note": "The clause 'to .09 cents per day it will cost consumers' lacks a proper SRL frame, indicating the core predicate and its arguments are not identified, so the logical form fails to preserve the original claim's meaning.",
+        "manual_judgment": "refused",
+        "manual_note": "The cost/rate clause cannot be attached safely."
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1682",
+        "method": "baseline",
+        "judgment": "incorrect",
+        "note": "The clause 'to .09 cents per day it will cost consumers' lacks a proper SRL frame, indicating the core predicate and its arguments are not identified, so the logical form fails to preserve the original claim's meaning.",
+        "manual_judgment": "refused",
+        "manual_note": "The cost/rate clause cannot be attached safely."
+      }
+    ],
+    "status_mismatches": [
+      {
+        "claim_id": "TFgw4IaR9R8s_1682",
+        "method": "revised",
+        "judgment": "incorrect",
+        "note": "The clause 'to .09 cents per day it will cost consumers' lacks a proper SRL frame, indicating the core predicate and its arguments are not identified, so the logical form fails to preserve the original claim's meaning."
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1682",
+        "method": "baseline",
+        "judgment": "incorrect",
+        "note": "The clause 'to .09 cents per day it will cost consumers' lacks a proper SRL frame, indicating the core predicate and its arguments are not identified, so the logical form fails to preserve the original claim's meaning."
+      }
+    ],
+    "errors": [],
+    "limitations": "Separate frozen Qwen review with randomized anonymous A/B order and no assistant labels. Not human gold or an independent accuracy estimate; retain disagreements without replacing the prewritten assistant judgments."
+  }
+}

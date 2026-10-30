@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "steps": [
     {
       "id": 6,
@@ -132,22 +132,42 @@
     {
       "id": 10,
       "title": "Address remaining meaning errors and inference cost",
+      "status": "bounded follow-up completed; source descriptions, quoted labels and semantic coverage remain open",
+      "items": [
+        {
+          "text": "Implement narrow event references, bare noun predication and duration constraints — retain selected identity/value conditions",
+          "done": true
+        },
+        {
+          "text": "Recover selected missing frames and remove a resource-as-person error — preserve explicit participants without parser selection",
+          "done": true
+        },
+        {
+          "text": "Profile setup, grounding, compilation and evaluation; test explicit-state rules — complete the earlier nested-case inference",
+          "done": true
+        },
+        {
+          "text": "Freeze before 20 new-source reviews, add blinded frozen-model judgments and inspect 10 newly accepted outputs — separate acceptance from meaning",
+          "done": true
+        }
+      ],
+      "note": "All 167 tests pass; full CPU replay matches all 2,375 outcomes. The twenty-input blinded model review is complete, with raw reasons and disagreements kept separate from the assistant review. Native inference completes the former nested-case timeout. Ten newly accepted cases have 2 faithful, 7 partial, 1 incorrect. The separate model rates 18 prior and 17 revised faithful, agrees on 24/40 ratings and misses visible omissions; it does not confirm the assistant’s small gain."
+    },
+    {
+      "id": 11,
+      "title": "Address the remaining semantic failures",
       "status": "proposed next work; not implemented",
       "items": [
         {
-          "text": "Fix event/nominal references, bare mass-noun predication and duration types — preserve remaining identity and value relationships",
+          "text": "Fix nominal media descriptions and quoted labels — keep depicted content and label text in the right scope",
           "done": false
         },
         {
-          "text": "Audit missing/wrong SRL frames and recover explicit participants — address missing predicates and wrong actors",
+          "text": "Define refusal conditions or explicit constraints for thresholds, nominal OR, omitted modifiers and shared times — reduce silently partial programs",
           "done": false
         },
         {
-          "text": "Profile DeepProbLog startup, grounding, compilation and evaluation — locate the nested-case timeout before weak-label training",
-          "done": false
-        },
-        {
-          "text": "Freeze the next compiler and obtain independent review on new source videos — measure meaning beyond development cases",
+          "text": "Obtain human reference judgments for a bounded new-source sample, including model disagreements — validate evaluation reliability",
           "done": false
         }
       ]
@@ -279,7 +299,7 @@
       ]
     }
   ],
-  "intro": "Current priority: original-claim compilation. The bounded semantic SRL revision is complete: 2,042/2,375 inputs compile, but accepted meaning errors remain. Fresh 20-case review has 8 faithful, 5 partial, 2 incorrect and 5 refused outputs. Keep media verification and relation training deferred.",
+  "intro": "Current priority: semantic compilation. The frozen follow-up accepts 2,108/2,375 inputs. New-source assistant review: 12 faithful, 4 partial, 2 incorrect and 2 refused. Ten newly accepted cases contain only 2 faithful outputs. Native inference now completes the earlier nested-case check; broad semantic reliability remains open.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -316,5 +336,6 @@
   },
   "full_compilation_run": "full_compilation_20261029",
   "srl_revision_run": "srl_revision_20261029",
-  "srl_semantics_run": "srl_semantics_20261029"
+  "srl_semantics_run": "srl_semantics_20261029",
+  "compiler_followup_run": "compiler_followup_20261030"
 }
