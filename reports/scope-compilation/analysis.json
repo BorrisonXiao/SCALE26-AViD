@@ -1,0 +1,89 @@
+{
+  "conditions": {
+    "baseline": {
+      "total": 2375,
+      "compiled": 2108,
+      "refused": 267,
+      "kinds": {
+        "mention": 174,
+        "claim": 1934
+      },
+      "failures": {
+        "negative_quantifier": 11,
+        "unresolved_clause": 110,
+        "duplicate_role": 59,
+        "missing_srl": 13,
+        "mention_alignment": 5,
+        "predicate_type": 8,
+        "quantity_type": 3,
+        "missing_predicate": 37,
+        "modal_scope": 17,
+        "polarity_omission": 2,
+        "unresolved_controller": 2
+      }
+    },
+    "revised": {
+      "total": 2375,
+      "compiled": 2095,
+      "refused": 280,
+      "kinds": {
+        "mention": 171,
+        "claim": 1924
+      },
+      "failures": {
+        "negative_quantifier": 10,
+        "unresolved_clause": 109,
+        "duplicate_role": 59,
+        "missing_srl": 12,
+        "nominal_disjunction": 11,
+        "mention_alignment": 4,
+        "predicate_type": 8,
+        "quantity_type": 3,
+        "missing_predicate": 37,
+        "modal_scope": 16,
+        "threshold_scope": 2,
+        "polarity_omission": 2,
+        "temporal_scope": 2,
+        "unresolved_controller": 2,
+        "media_modifier": 3
+      }
+    }
+  },
+  "transitions": {
+    "both_compiled": 2093,
+    "both_refused": 265,
+    "previous_only": 15,
+    "new_only": 2
+  },
+  "changes": {
+    "depiction_route": 64,
+    "predication": 56,
+    "recovered_frame": 68,
+    "bare_predication": 7,
+    "nominal_clock_time": 8,
+    "nominal_or": 7,
+    "controller": 2,
+    "sufficiency": 1,
+    "event_reference": 1,
+    "quoted_label": 10,
+    "duration": 5,
+    "implicit_subject": 1,
+    "shared_time": 1,
+    "nominal_media_scope": 3,
+    "nominal_or_frame": 1,
+    "label_modifier": 2
+  },
+  "unexpected_exceptions": [],
+  "human_review": {
+    "status": "awaiting_human_review",
+    "reserved_claims": 20,
+    "reference_readings_received": 0,
+    "comparisons_received": 0,
+    "response_files": [],
+    "packet_id": "c19946843b3d4437d55a",
+    "statement": "The assistant has not supplied human readings or ratings. The browser form saves locally; exported reviews must be returned before any human evaluation is reported."
+  },
+  "review_protocol": "Twenty claim IDs and actual source-video groups fixed before compiler changes. Targeted text-pattern selection (up to eight claims) plus random selection; one per source group absent from saved prior semantic reviews/pilots. Not a uniform sample or a fully held-out corpus: all 2375 texts were processed earlier. No human ratings or reference readings are supplied by the assistant.",
+  "elapsed_seconds": 24.756199467927217,
+  "interpretation": "Compilation counts and constructed logical checks are measured. Human semantic correctness is not measured until actual human readings/ratings are returned. No assistant or model judgments are substituted for that reference set."
+}

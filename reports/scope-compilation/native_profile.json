@@ -1,0 +1,121 @@
+[
+  {
+    "mode": "previous",
+    "status": "timeout",
+    "limit_seconds": 30,
+    "wall_seconds": 30.176817942410707,
+    "stages": [
+      {
+        "stage": "input",
+        "seconds": 6.675258843228221,
+        "observations": 19
+      },
+      {
+        "stage": "initialization",
+        "seconds": 1.6957174241542816
+      },
+      {
+        "stage": "supported_ground",
+        "seconds": 0.013523422181606293,
+        "nodes": 37
+      },
+      {
+        "stage": "supported_compile",
+        "seconds": 0.0015936102718114853
+      },
+      {
+        "stage": "supported_evaluate",
+        "seconds": 0.0005904752761125565,
+        "probability": 0.0
+      },
+      {
+        "stage": "refuted_ground",
+        "seconds": 0.013445165008306503,
+        "nodes": 37
+      },
+      {
+        "stage": "refuted_compile",
+        "seconds": 0.0016681607812643051
+      },
+      {
+        "stage": "refuted_evaluate",
+        "seconds": 0.0005383379757404327,
+        "probability": 0.0
+      },
+      {
+        "stage": "unknown_ground",
+        "seconds": 0.028285203501582146,
+        "nodes": 146
+      }
+    ],
+    "error": "Explicit subprocess limit reached."
+  },
+  {
+    "mode": "balanced",
+    "status": "passed",
+    "limit_seconds": 30,
+    "wall_seconds": 9.02191997691989,
+    "stages": [
+      {
+        "stage": "input",
+        "seconds": 6.46939673833549,
+        "observations": 19
+      },
+      {
+        "stage": "initialization",
+        "seconds": 1.417322464287281
+      },
+      {
+        "stage": "supported_ground",
+        "seconds": 0.013554275035858154,
+        "nodes": 37
+      },
+      {
+        "stage": "supported_compile",
+        "seconds": 0.0015561003237962723
+      },
+      {
+        "stage": "supported_evaluate",
+        "seconds": 0.0006065033376216888,
+        "probability": 0.0
+      },
+      {
+        "stage": "refuted_ground",
+        "seconds": 0.013545921072363853,
+        "nodes": 37
+      },
+      {
+        "stage": "refuted_compile",
+        "seconds": 0.0014794543385505676
+      },
+      {
+        "stage": "refuted_evaluate",
+        "seconds": 0.0005433354526758194,
+        "probability": 0.0
+      },
+      {
+        "stage": "unknown_ground",
+        "seconds": 0.028527023270726204,
+        "nodes": 146
+      },
+      {
+        "stage": "unknown_compile",
+        "seconds": 0.021100012585520744
+      },
+      {
+        "stage": "unknown_evaluate",
+        "seconds": 0.05952855013310909,
+        "probability": 1.0
+      },
+      {
+        "stage": "result",
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        }
+      }
+    ],
+    "error": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n"
+  }
+]

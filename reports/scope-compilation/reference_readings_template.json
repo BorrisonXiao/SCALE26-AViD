@@ -1,0 +1,206 @@
+{
+  "protocol": "Twenty claim IDs and actual source-video groups fixed before compiler changes. Targeted text-pattern selection (up to eight claims) plus random selection; one per source group absent from saved prior semantic reviews/pilots. Not a uniform sample or a fully held-out corpus: all 2375 texts were processed earlier. No human ratings or reference readings are supplied by the assistant.",
+  "reviewer": "",
+  "cases": [
+    {
+      "claim_id": "TQKCK6-tRaoE_677",
+      "claim": "A video overlay reading \"news 76\" is visible.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1522",
+      "claim": "The video opens with Trump speaking at a podium.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TInVWzp25aIM_22",
+      "claim": "At least one person has died from the typhoon.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1507",
+      "claim": "The clockwise motion indicates a ridge or high-pressure anti-cyclone over the region.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_218",
+      "claim": "A haboob, or an intense, massive wall of dust and sand created by the downdrafts of a collapsing thunderstorm. ",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1907",
+      "claim": "On-screen text confirms the still shows 'Actual fire spread, four hours after ignition'.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_798",
+      "claim": "The tram is driving at night, in mostly clear weather.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1797",
+      "claim": "Oli's government lifted the social media restrictions after protests intensified, with police firing tear gas and rubber bullets at protesters attempting to storm parliament.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_473",
+      "claim": "Police and protesters are facing each other in the Zócalo  in front of the National Palace  in Mexico City.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TInVWzp25aIM_0",
+      "claim": "Emmonak, Alaska is being affected by the typhoon.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2433",
+      "claim": "Citizens were urged to stop all water activities.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_240",
+      "claim": "News report in the background about rain and the weather.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_421",
+      "claim": "100m- final lineup",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_312",
+      "claim": "Wind is starting to pick up.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_292",
+      "claim": "Timelapse footage of haboob taking over apron.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TLO3smKI67PM_554",
+      "claim": "The home run lands in the stands, right next to Phillies fan Karen.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_150",
+      "claim": "The Mississippi entered the area around 11:20 UTC.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_274",
+      "claim": "Strong winds in commercial area.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1686",
+      "claim": "The US has already implemented steel and aluminum tariffs at 25%.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_669",
+      "claim": "People singing and dancing.",
+      "intended_meaning": "",
+      "participants_and_relations": "",
+      "source_context": "",
+      "quantity_and_time": "",
+      "ambiguity": "",
+      "readings_complete": false
+    }
+  ]
+}

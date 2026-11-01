@@ -1,0 +1,9 @@
+{
+  "status": "awaiting_human_review",
+  "reserved_claims": 20,
+  "reference_readings_received": 0,
+  "comparisons_received": 0,
+  "response_files": [],
+  "packet_id": "c19946843b3d4437d55a",
+  "statement": "The assistant has not supplied human readings or ratings. The browser form saves locally; exported reviews must be returned before any human evaluation is reported."
+}
