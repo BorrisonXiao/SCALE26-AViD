@@ -1,0 +1,165 @@
+{
+  "reviewer_type": "independent_agent_draft",
+  "cases": [
+    {
+      "claim_id": "TQKCK6-tRaoE_677",
+      "intended_meaning": "A visible video overlay contains the literal text \"news 76\".",
+      "participants_and_relations": "The overlay is part of the video and displays \"news 76\".",
+      "source_context": "Explicitly a visible overlay in a video.",
+      "quantity_and_time": "At least one such overlay; no time stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1522",
+      "intended_meaning": "The beginning of the video depicts Trump speaking at a podium.",
+      "participants_and_relations": "Trump is the speaker and is located at a podium.",
+      "source_context": "Explicitly the opening of a video.",
+      "quantity_and_time": "Speaking occurs at the video's opening; no date or duration stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_22",
+      "intended_meaning": "The typhoon has caused the death of at least one person.",
+      "participants_and_relations": "One or more people died; the typhoon caused their deaths.",
+      "source_context": "None stated.",
+      "quantity_and_time": "At least one death has occurred by the reference time; no date stated.",
+      "ambiguity": "The particular typhoon is not identified in the claim alone."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1507",
+      "intended_meaning": "Clockwise motion is interpreted as indicating either a ridge or a high-pressure anti-cyclone over the region.",
+      "participants_and_relations": "Clockwise motion indicates a ridge or high-pressure anti-cyclone; the indicated weather feature is over the region.",
+      "source_context": "An interpretation of motion; no particular medium or speaker stated.",
+      "quantity_and_time": "None stated.",
+      "ambiguity": "The moving entity and region are unspecified; ridge and anti-cyclone are alternatives, with no definite choice asserted."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_218",
+      "intended_meaning": "A nominal description of a haboob as an intense, massive wall of dust and sand created by downdrafts from a collapsing thunderstorm.",
+      "participants_and_relations": "A collapsing thunderstorm produces downdrafts that create the haboob, described as a massive, intense wall of dust and sand.",
+      "source_context": "None stated; wording is a descriptive fragment.",
+      "quantity_and_time": "Thunderstorm collapse is part of the description; no date, duration, or event count stated.",
+      "ambiguity": "Could define haboobs generally or describe a particular haboob; the fragment does not independently assert a specific occurrence."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1907",
+      "intended_meaning": "On-screen text identifies the still as showing 'Actual fire spread, four hours after ignition'.",
+      "participants_and_relations": "On-screen text identifies what the still shows; the described fire spread is temporally related to ignition.",
+      "source_context": "The identification is attributed to on-screen text, including the quoted label 'Actual fire spread, four hours after ignition'.",
+      "quantity_and_time": "Four hours after ignition describes the fire spread shown, not an elapsed video timestamp.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_798",
+      "intended_meaning": "The tram is moving at night while the weather is mostly clear.",
+      "participants_and_relations": "The tram is moving; nighttime and mostly clear weather characterize the same event.",
+      "source_context": "None stated.",
+      "quantity_and_time": "At night; weather is mostly, rather than completely, clear; no date or duration stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1797",
+      "intended_meaning": "Oli's government removed social media restrictions after protests intensified; police fired tear gas and rubber bullets at protesters who were attempting to storm parliament.",
+      "participants_and_relations": "Oli's government lifted restrictions; protests intensified; police fired tear gas and rubber bullets at protesters; those protesters attempted to storm parliament.",
+      "source_context": "None stated.",
+      "quantity_and_time": "Restriction removal follows intensified protests; police action accompanies the unrest, with no exact date stated.",
+      "ambiguity": "The precise timing of police action relative to lifting the restrictions is unspecified; attempting to storm parliament does not establish success."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_473",
+      "intended_meaning": "Police and protesters face one another in the Zócalo, in front of the National Palace in Mexico City.",
+      "participants_and_relations": "Police face protesters reciprocally; both groups are in the Zócalo, in front of the National Palace, in Mexico City.",
+      "source_context": "None stated.",
+      "quantity_and_time": "Multiple police and protesters; the facing relation is ongoing, with no date stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_0",
+      "intended_meaning": "The typhoon is currently affecting Emmonak, Alaska.",
+      "participants_and_relations": "The typhoon affects Emmonak, a place identified as being in Alaska.",
+      "source_context": "None stated.",
+      "quantity_and_time": "Effects are ongoing at the reference time; no date or duration stated.",
+      "ambiguity": "The particular typhoon and nature of its effects are unspecified."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2433",
+      "intended_meaning": "Citizens were urged to cease all water activities; the claim does not establish that they complied.",
+      "participants_and_relations": "An unspecified party urged citizens; the requested action was stopping all water activities.",
+      "source_context": "An urging is reported, but its source and medium are unspecified.",
+      "quantity_and_time": "All water activities; the urging occurred in the past, with no date stated.",
+      "ambiguity": "What counts as 'water activities' is not specified."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_240",
+      "intended_meaning": "A background news report concerns rain and weather.",
+      "participants_and_relations": "The news report has rain and weather as its topics and occupies the background of an unspecified context.",
+      "source_context": "Explicitly a news report in the background.",
+      "quantity_and_time": "None stated.",
+      "ambiguity": "The background report could be audible, visible, or both; no specific weather event is asserted by this fragment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_421",
+      "intended_meaning": "A lineup for a 100-metre final.",
+      "participants_and_relations": "A lineup is associated with the final of a 100-metre event; participants are unnamed.",
+      "source_context": "None stated; wording is a nominal fragment.",
+      "quantity_and_time": "100 metres is the event distance; final denotes the competition stage; no date stated.",
+      "ambiguity": "May denote a caption, listed competitors, or competitors physically lined up; the sport is unspecified."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_312",
+      "intended_meaning": "The wind is beginning to strengthen.",
+      "participants_and_relations": "Wind strength is increasing.",
+      "source_context": "None stated.",
+      "quantity_and_time": "The increase is beginning at the reference time; no wind speed or date stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_292",
+      "intended_meaning": "Time-lapse footage depicts a haboob spreading over an apron.",
+      "participants_and_relations": "A haboob spreads over an apron; footage depicts this progression.",
+      "source_context": "Explicitly time-lapse footage.",
+      "quantity_and_time": "Progression is shown with time compressed; no real duration is stated.",
+      "ambiguity": "'Apron' likely means an airport aircraft area, but the location and intended sense are not explicit."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_554",
+      "intended_meaning": "A home-run ball lands in the stands immediately beside Karen, a Phillies fan.",
+      "participants_and_relations": "The home-run ball lands beside Karen; Karen is identified as a Phillies fan; the landing location is the stands.",
+      "source_context": "None stated.",
+      "quantity_and_time": "One landing, immediately beside Karen; no date stated.",
+      "ambiguity": "'Home run' naturally refers to the hit ball here; Karen's identity is supplied only by name and team affiliation."
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_150",
+      "intended_meaning": "The entity called 'the Mississippi' entered an unspecified area at approximately 11:20 UTC.",
+      "participants_and_relations": "The Mississippi is the entering entity; the area is its destination.",
+      "source_context": "None stated.",
+      "quantity_and_time": "Entry occurred around 11:20 UTC; no date is stated.",
+      "ambiguity": "A named vessel or the Mississippi River or its water are plausible readings; the entity and area are unspecified."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_274",
+      "intended_meaning": "A description of strong winds in a commercial area.",
+      "participants_and_relations": "Strong winds are located in a commercial area.",
+      "source_context": "None stated; wording is a descriptive fragment.",
+      "quantity_and_time": "Wind strength is described qualitatively as strong; no speed or time stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1686",
+      "intended_meaning": "The US has already put a 25% tariff rate into effect for both steel and aluminum.",
+      "participants_and_relations": "The US implemented tariffs applying to steel and aluminum; the stated tariff rate is 25%.",
+      "source_context": "None stated.",
+      "quantity_and_time": "25% applies to both steel and aluminum tariffs; implementation precedes the reference time, with no date stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_669",
+      "intended_meaning": "People engaged in singing and dancing.",
+      "participants_and_relations": "People are participants in singing and dancing activities.",
+      "source_context": "None stated; wording is a descriptive fragment.",
+      "quantity_and_time": "Multiple people; activities are ongoing, with no count or date stated.",
+      "ambiguity": "The group may collectively include singers and dancers, or the same individuals may do both."
+    }
+  ]
+}

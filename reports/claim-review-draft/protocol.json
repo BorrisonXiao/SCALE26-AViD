@@ -1,0 +1,13 @@
+{
+  "task": "Independent agent draft for user review",
+  "claims_sha256": "80305700198946a6817e2a73c8bcf96bdedebfa6081f9dbf7196b0c7ac51b84c",
+  "packet_id": "c19946843b3d4437d55a",
+  "compiler_freeze": "1c8bd7e213ef31f7a1b2df6686c26229882ec224c387b725e7bf5f9127a2b1a2",
+  "model_requested": "gpt-6-astra",
+  "reasoning_effort_requested": "xhigh",
+  "phases": [
+    "Claim-only readings, frozen before any outputs are provided",
+    "Anonymous A/B graph review, with no method mapping or previous ratings"
+  ],
+  "human_review_status": "Agent output is a draft; no human ratings are created by generating or opening it."
+}

@@ -176,7 +176,7 @@
     {
       "id": 12,
       "title": "Human reference review of 20 reserved claims",
-      "status": "review packet prepared; actual human judgments pending",
+      "status": "independent agent draft completed; user review pending",
       "items": [
         {
           "text": "Reserve the review set before compiler changes — separate reference judgments from development examples",
@@ -187,7 +187,11 @@
           "done": true
         },
         {
-          "text": "Collect returned human readings and judgments — measure meaning preservation using actual human evidence",
+          "text": "Draft answers with a strong independent agent, first claims only and then anonymous outputs — reduce user review effort",
+          "done": true
+        },
+        {
+          "text": "Review and return human-confirmed readings and judgments — establish human feedback with agent assistance recorded",
           "done": false
         },
         {
@@ -195,7 +199,7 @@
           "done": false
         }
       ],
-      "note": "The browser asks for intended readings before anonymous A/B comparisons, saves locally and exports JSON. Zero readings and zero comparisons received. Refusals are assessed separately from semantic correctness."
+      "note": "Twenty GPT-6 Astra/xhigh draft readings and A/B assessments are complete. Readings were frozen before outputs were supplied; no prior reviews or method mapping were supplied. The editable draft starts with zero user confirmations. The separate blank form remains available. Zero actual human readings/comparisons received."
     },
     {
       "id": 8,
@@ -324,7 +328,7 @@
       ]
     }
   ],
-  "intro": "Current priority: preserve claim meaning and obtain actual human references. The scoped revision compiles 2,095/2,375 inputs, versus 2,108 previously; 15 old accepts are now refused and 2 old refusals compile. These are coverage outcomes, not accuracy. The 20-claim human packet starts empty; no human ratings have been received.",
+  "intro": "Current priority: preserve claim meaning and obtain human feedback. The scoped revision compiles 2,095/2,375 inputs, versus 2,108 previously; 15 old accepts are now refused and 2 old refusals compile. These are coverage outcomes, not accuracy. An independent agent has drafted the twenty reserved reviews for user correction; no human ratings have been received.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -363,5 +367,6 @@
   "srl_revision_run": "srl_revision_20261029",
   "srl_semantics_run": "srl_semantics_20261029",
   "compiler_followup_run": "compiler_followup_20261030",
-  "scope_compilation_run": "scope_compilation_20261101"
+  "scope_compilation_run": "scope_compilation_20261101",
+  "agent_review_run": "exp/probabilistic_verification/agent_review_20261101"
 }

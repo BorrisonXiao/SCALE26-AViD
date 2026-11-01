@@ -1,0 +1,6 @@
+{
+  "sha256": "13fdea660093a8705bec64a5a8c8a0ceb2df9bb44a061d56acdf7eda32a9772d",
+  "frozen_at": "2026-11-01T18:51:04.680587+00:00",
+  "claims_only_sha256": "80305700198946a6817e2a73c8bcf96bdedebfa6081f9dbf7196b0c7ac51b84c",
+  "statement": "Claim-only readings fixed before anonymous outputs were provided. Initial readings will not be overwritten by phase-2 judgments."
+}
