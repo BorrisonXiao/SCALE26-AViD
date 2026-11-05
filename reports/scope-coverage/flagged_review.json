@@ -1,0 +1,86 @@
+{
+  "seed": 202611053,
+  "selection": "Twelve uniformly sampled coverage-flagged candidates; diagnostic assistant review, not corpus accuracy.",
+  "claim_ids": [
+    "TzzhcBIczf_M_2109",
+    "TzF9M4kZ3Pys_268",
+    "Tg0UxWYuPeJ0_342",
+    "TgR_u37mCoQ4_1873",
+    "TFgw4IaR9R8s_1645",
+    "TgPh_fzHTCm4_1471",
+    "TFgw4IaR9R8s_1697",
+    "TLO3smKI67PM_569",
+    "T2G_ACMxR_I4_1156",
+    "TFgw4IaR9R8s_1596",
+    "TQEmEycTI0RQ_995",
+    "TgR_u37mCoQ4_1869"
+  ],
+  "provenance": "Compiler-author assistant diagnostic inspection after freeze; no code updates from this review.",
+  "cases": [
+    {
+      "claim_id": "TzzhcBIczf_M_2109",
+      "judgment": "real omission",
+      "reason": "Drops expulsion, monk and monastery; it does not preserve the term definition."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_268",
+      "judgment": "real omission",
+      "reason": "Drops the Phoenix Arizona location information attached to the airport."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_342",
+      "judgment": "real omission",
+      "reason": "Drops the signal object; also projects sparring beyond the start/purpose content."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1873",
+      "judgment": "real omission",
+      "reason": "Drops both dates and their left/right/first/second correspondence."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1645",
+      "judgment": "real omission",
+      "reason": "Drops the inference annotation and compiles its content as a separate assertion; flags a real missing qualification."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1471",
+      "judgment": "real omission",
+      "reason": "Drops numeric range endpoints and central Texas, and treats speed units as counted groups."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1697",
+      "judgment": "real omission",
+      "reason": "Drops outer Claims attribution, asserting the embedded saying more directly."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_569",
+      "judgment": "real omission",
+      "reason": "Drops Karen and the second arguing participant."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1156",
+      "judgment": "real omission",
+      "reason": "Drops roughly and uses exact100, removing approximation."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1596",
+      "judgment": "real omission",
+      "reason": "Drops both poster percentages."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_995",
+      "judgment": "real omission",
+      "reason": "Drops seat loss, quantity and Quebec."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1869",
+      "judgment": "real omission",
+      "reason": "Drops the news-anchor description; also treats transitions as a noun."
+    }
+  ],
+  "counts": {
+    "real omission": 12,
+    "false alert": 0
+  },
+  "limitation": "Twelve selected alerts do not establish precision for all260, and the check misses structural failures whose words survive."
+}

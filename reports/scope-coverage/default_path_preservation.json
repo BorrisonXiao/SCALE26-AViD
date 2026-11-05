@@ -1,0 +1,5 @@
+{
+  "exact_records": 2375,
+  "seconds": 26.288147462531924,
+  "statement": "Adding the optional form-transform callback changes none of the default compiled records, programs or diagnostics."
+}

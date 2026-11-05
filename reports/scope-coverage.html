@@ -1,0 +1,173 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="How the compiler preserves embedded claim scope and detects missing content, with a full2375 census and readable examples."><title>Claim scope and missing content · AViD</title><link rel="stylesheet" href="../assets/site.css"><style>.cv-figure{margin:12px 0 24px;padding:0;min-width:0;overflow-wrap:anywhere}
+.cv-output-kind{font-weight:600;color:var(--accent);margin:8px 0}
+.cv-node{border:1px solid var(--border);border-radius:8px;padding:12px;background:var(--surface);min-width:0}
+.cv-node-title{display:flex;gap:7px;align-items:baseline;flex-wrap:wrap;line-height:1.5}
+.cv-node-title b{font-size:16px}
+.cv-kind{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.cv-code{font:11px/1.5 ui-monospace,monospace;color:var(--muted);font-weight:400}
+.cv-event{border-top:3px solid var(--accent)}
+.cv-entity{background:var(--surface-2)}
+.cv-row{margin-top:10px;padding-left:12px;border-left:2px solid var(--border);min-width:0}
+.cv-edge{font-size:12px;font-weight:600;color:var(--accent);margin-bottom:5px;line-height:1.6}
+.cv-target{min-width:0;line-height:1.6}
+.cv-time,.cv-source,.cv-repeated{font-size:12px;line-height:1.6;margin:7px 0;color:var(--muted)}
+.cv-time{color:var(--text);background:var(--surface-2);border-radius:4px;padding:5px 8px}
+.cv-scope{margin:12px 0 0;padding:10px 0 0 12px;border-left:3px solid var(--accent);min-width:0}
+.cv-scope-title{line-height:1.7;font-size:13px}
+.cv-scope-title small{display:block}
+.cv-literal small{display:block;color:var(--muted);font-size:12px}
+.cv-literal span{font-size:12px}
+.cv-context,.cv-refusal{margin:14px 0;padding:12px;background:var(--surface-2);border-radius:7px;font-size:13px}
+.cv-context ul{margin:8px 0;padding-left:20px}
+.cv-figure figcaption{font-size:12px;color:var(--muted);line-height:1.7;margin:14px 0}
+.cv-legend{font-size:13px;line-height:1.8;color:var(--muted)}
+.output-grid{align-items:start}
+.output-grid .output{margin-top:0}
+.output textarea,textarea{font-weight:400}
+@media(max-width:520px){.cv-node{padding:9px}.cv-row{padding-left:8px}.cv-scope{padding-left:8px}}
+.container{max-width:1100px}section{margin:32px 0}.table-wrap{overflow:auto;margin:24px 0}table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:12px;text-align:left;vertical-align:top;border:1px solid var(--border);min-width:90px}caption{text-align:left;font-weight:600;margin:12px 0}label{display:block;font-weight:600;margin:12px 0}input,select,button{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:10px;max-width:100%}select{display:block;width:100%;box-sizing:border-box}button{cursor:pointer}button:disabled{opacity:.5}.toolbar{display:flex;gap:18px;flex-wrap:wrap}.toolbar label{min-width:0}.output-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.output{min-width:0;border:1px solid var(--border);border-radius:9px;padding:16px}pre{font:12px/1.7 ui-monospace,monospace;white-space:pre-wrap;overflow-wrap:anywhere;max-height:450px;overflow:auto}blockquote,.note{padding:15px;border-left:4px solid var(--accent);background:var(--surface-2);margin:18px 0}.review-note{font-size:13px}#claim-id{overflow-wrap:anywhere}@media(max-width:760px){.output-grid{grid-template-columns:1fr}}</style></head><body><nav class="site-nav" aria-label="Primary navigation"><div class="nav-inner"><a class="brand" href="../index.html">SCALE 2026 · AViD</a><div class="nav-links"><a href="../index.html">Home</a><a href="./" aria-current="page">Reports</a><a href="../proposals/">Proposals</a></div></div></nav><header class="hero"><div class="container"><p class="eyebrow">Compiler follow-up · 5 November 2026</p><h1>Claim scope and missing content</h1><p class="lede">Eleven programs change. The new coverage audit flags 260 candidates for review; passing it does not certify correct meaning.</p><p><a href="#examples">Inspect readable outputs</a> · <a href="verification-pipeline.html#next-steps">Checklist</a> · <a href="./">All reports</a></p></div></header><main class="container prose"><section><h2>What changed, and what the counts mean</h2><p>The compiler now keeps three reviewed embedded clauses in their intended contexts and restores selected missing content. <b>Eleven programs change.</b> All six discussed development cases meet their targeted scope/content checks; the dolly pronoun and the dialogue pronoun still need reference resolution.</p><div class="table-wrap"><table><caption>Table 1. Full inventory of 2,375 original claims. The new audit changes acceptance, not whether a candidate can execute.</caption><thead><tr><th>Outcome</th><th>Previous compiler</th><th>Scope/coverage revision</th></tr></thead><tbody><tr><td>Executable candidate programs</td><td>2,099</td><td>2,099</td></tr><tr><td>Accepted after the current checks</td><td>2,099</td><td>1,839</td></tr><tr><td>Coverage alerts requiring review</td><td>No new gate</td><td>260</td></tr><tr><td>Earlier parser/compiler refusals</td><td>276</td><td>276</td></tr></tbody></table></div><p>The same 2,099 claims have executable candidates. The new audit flags 260 because content words are unaccounted for; their saved programs remain visible for diagnosis. A flagged claim is neither false nor necessarily impossible to compile. The remaining 1,839 pass a <b>necessary lexical coverage check</b>, which does not certify correct meaning. All 11 programs previously rated faithful by the user remain unchanged and pass this check.</p></section><section><h2>1. Keep an event in the context the sentence gives it</h2><p><b>Scope</b> means whether an event is independently asserted, depicted, planned, investigated or discussed. The existing logical form already supports nested propositions. The fix changes attachment before predicates are emitted; it does not change how DeepProbLog multiplies or sums probabilities.</p><div class="table-wrap"><table><caption>Table 2. The three reviewed scope errors and their repairs. Links show the actual saved predicates and structures.</caption><thead><tr><th>Original example</th><th>Earlier error</th><th>Current structure</th></tr></thead><tbody><tr><td><a href="#examples" data-claim="T2G_ACMxR_I4_1367">Video depicts Blue Ghost preparing for landing</a></td><td>Landing also appears outside depiction and preparation.</td><td>Video depicts → preparation → goal: landing on the moon.</td></tr><tr><td><a href="#examples" data-claim="TzzhcBIczf_M_2108">Investigation into Shi Yongxin violating religious precepts</a></td><td>Violation is a relative description of the person.</td><td>Investigation → investigated content: violation; the reported conclusion stays attributed to the results.</td></tr><tr><td><a href="#examples" data-claim="TFOEIehBwT8Q_483">Dialogue of why they are there</a></td><td>The presence clause becomes a separate world assertion.</td><td>Dialogue → question content: why they are there; no reason or pronoun referent is invented.</td></tr></tbody></table></div><p><b>How the code decides:</b> it uses the governing word, preposition and dependency path. For <em>prepare for</em>, an existing nominal event moves into a purpose proposition; without an event frame, the goal stays a noun phrase and no actor is invented. For <em>investigation into</em>, a subject-plus-gerund construction moves under the investigation. For a question under <em>dialogue/discussion/question</em>, the WH word follows that noun’s dependency path and stays inside question content.</p><p>The lexical entries are deliberately limited. Ordinary <em>prepare dinner</em> remains an argument, and ordinary relatives are not all reinterpreted as allegations. Nested negation and existing source routes remain attached to their event. This is a bounded repair, not a general solution to every embedded clause.</p></section><section><h2>2. Retain content, then make remaining omissions explicit</h2><p><a href="#examples" data-claim="TMrQshDs8aH0_752">A small dolly creaks while a man uses it to move large stacks of chairs.</a> previously lost the dolly, its size and its sound. The parser called <em>creaks</em> a plural noun. The repair requires an adjacent singular nominal, a verb-lexicon match and a finite temporal clause; it then restores the grammatical subject and uses the existing frame builder. The sound and use are linked by <em>while</em>; movement remains a purpose. <b>It is still unresolved</b>, with that requirement visible in the output.</p><p>Connected proper-name spans repair <a href="#examples" data-claim="TInVWzp25aIM_18">Bering Straight</a> and four <em>Sagaing Fault</em> cases. An identifier property retains <a href="#examples" data-claim="TQKCK6-tRaoE_671">76 in news 76</a> and 120 in one highway-sign example. An existing complete name must never be shortened. A number already retained in <em>Apollo 11</em> gains no redundant constraint. Original spellings are preserved.</p><p><b>The audit</b> compares source nouns, names, predicates, modifiers and numbers with the values reachable in the final logical form. It allows ordinary inflection and existing numeric operators such as <em>at least</em>. Schema keys, warnings, unused entities and graph IDs cannot hide an omission. Failed cases keep a diagnostic candidate but are refused by the strict entry point with a list of missing tokens.</p><div class="table-wrap"><table><caption>Table 3. Categories among 260 coverage-flagged claims. One claim can occur in several rows.</caption><thead><tr><th>Missing content category</th><th>Flagged claims</th></tr></thead><tbody><tr><td>modifiers</td><td>100</td></tr><tr><td>names</td><td>93</td></tr><tr><td>nouns</td><td>106</td></tr><tr><td>numbers</td><td>78</td></tr><tr><td>predicates</td><td>6</td></tr></tbody></table></div><p>Lexical coverage does not check all functional words, role assignments or internal relationships. It can pass a clause hidden inside an opaque string, and it may flag a legitimate paraphrase outside its normalization rules. It must not be reported as a semantic accuracy score.</p></section><section><h2>Evaluation and limits</h2><p><b>228 regression checks pass.</b> These include all earlier checks, real-case requirements, complete-name and quantity controls, input immutability, and actual native DeepProbLog supported/refuted/unknown tests. The native goal test supplies an absent world landing while varying the scoped goal evidence: verification follows the goal evidence, without requiring an actual world landing. These are constructed evidence checks, not media measurements or training results.</p><p>The compiler was frozen before examining a newly reserved 20-case review. The compiler-author assistant saved intended readings before output inspection. Sampling excludes 150 recorded review sources; all corpus texts had been parsed previously. These are assistant judgments on a nonuniform fresh review sample, not human gold or corpus accuracy.</p><div class="table-wrap"><table><caption>Table 4. All twenty fresh programs and acceptance statuses are unchanged; the new rules show no fresh semantic gain here.</caption><thead><tr><th>Condition</th><th>Faithful</th><th>Partial</th><th>Incorrect</th><th>Refused</th></tr></thead><tbody><tr><td>Previous compiler</td><td>9</td><td>5</td><td>2</td><td>4</td></tr><tr><td>Scope/coverage revision</td><td>9</td><td>5</td><td>2</td><td>4</td></tr></tbody></table></div><p>Remaining examples include <a href="#examples" data-claim="TzF9M4kZ3Pys_310">timelapse content outside a depiction context</a>, <a href="#examples" data-claim="TLO3smKI67PM_595">a personal name mixed with a label</a>, <a href="#examples" data-claim="T2EE72iNELEs_209">rocket landing retained only inside a time string</a>, and <a href="#examples" data-claim="TInVWzp25aIM_82">storm aftermath classified as a location</a>. Passing lexical coverage does not catch these structural errors. The full program comparison also finds an identifier repair in a source group excluded from development; that street-sign case still has an earlier speech-versus-OCR route error.</p><p>A separate seeded sample of twelve alerts was inspected after the freeze. Each has an actual omission in the assistant’s assessment (Table 5). This small diagnostic sample does not establish precision for all 260 alerts, and no compiler change followed these reviews.</p><div class="table-wrap"><table><caption>Table 5. Twelve sampled alerts, with the assistant’s reasons and links to retained diagnostic candidates.</caption><thead><tr><th>Claim</th><th>Observed omission</th></tr></thead><tbody><tr><td><a href="#examples" data-claim="TzzhcBIczf_M_2109">&#x27;Qian Dan&#x27; refers to the expulsion of a monk from a monastery for violating religious vows.</a></td><td>Drops expulsion, monk and monastery; it does not preserve the term definition.</td></tr><tr><td><a href="#examples" data-claim="TzF9M4kZ3Pys_268">Sky Harbor International Airport, Phoenix Arizona.</a></td><td>Drops the Phoenix Arizona location information attached to the airport.</td></tr><tr><td><a href="#examples" data-claim="Tg0UxWYuPeJ0_342">The man gives the signal for the other 2 robots to start sparring</a></td><td>Drops the signal object; also projects sparring beyond the start/purpose content.</td></tr><tr><td><a href="#examples" data-claim="TgR_u37mCoQ4_1873">The video shows side-by-side footage of the PCH on April 21, 2020 (on the left; the first filming) and on January 23, 2025 (on the right; the second filming).</a></td><td>Drops both dates and their left/right/first/second correspondence.</td></tr><tr><td><a href="#examples" data-claim="TFgw4IaR9R8s_1645">A pause on the ruling will bring back the pre-ruling conditions (inference: allow tariffs to resume as before).</a></td><td>Drops the inference annotation and compiles its content as a separate assertion; flags a real missing qualification.</td></tr><tr><td><a href="#examples" data-claim="TgPh_fzHTCm4_1471">The knots of flow ramped up overnight on the 3rd and into the 4th from 10-20 knots to 25-30 knots across central Texas.</a></td><td>Drops numeric range endpoints and central Texas, and treats speed units as counted groups.</td></tr><tr><td><a href="#examples" data-claim="TFgw4IaR9R8s_1697">Claims that Trump has said Canada is not a real country.</a></td><td>Drops outer Claims attribution, asserting the embedded saying more directly.</td></tr><tr><td><a href="#examples" data-claim="TLO3smKI67PM_569">The Phillies fan Karen and the Phillies fan father are arguing at a Philadelphia Phillies baseball game.</a></td><td>Drops Karen and the second arguing participant.</td></tr><tr><td><a href="#examples" data-claim="T2G_ACMxR_I4_1156">A low lunar orbit is roughly 100 km above the Moon.</a></td><td>Drops roughly and uses exact100, removing approximation.</td></tr><tr><td><a href="#examples" data-claim="TFgw4IaR9R8s_1596">Tariff poster shows: Thailand 72% / 36%.</a></td><td>Drops both poster percentages.</td></tr><tr><td><a href="#examples" data-claim="TQEmEycTI0RQ_995">Conservatives: -5 seats in Quebec.</a></td><td>Drops seat loss, quantity and Quebec.</td></tr><tr><td><a href="#examples" data-claim="TgR_u37mCoQ4_1869">The video transitions to footage of PCH and its environs with a new voiceover from Andy Riesmeyer, the news anchor.</a></td><td>Drops the news-anchor description; also treats transitions as a noun.</td></tr></tbody></table></div><div class="table-wrap"><table><caption>Table 6. The earlier 276 parser/compiler refusals remain. Coverage alerts are counted separately in Table 1.</caption><thead><tr><th>Reason</th><th>Claims</th></tr></thead><tbody><tr><td>unresolved clause</td><td>109</td></tr><tr><td>duplicate role</td><td>59</td></tr><tr><td>missing predicate</td><td>37</td></tr><tr><td>modal scope</td><td>16</td></tr><tr><td>missing srl</td><td>12</td></tr><tr><td>negative quantifier</td><td>10</td></tr><tr><td>nominal disjunction</td><td>8</td></tr><tr><td>predicate type</td><td>8</td></tr><tr><td>mention alignment</td><td>4</td></tr><tr><td>quantity type</td><td>3</td></tr><tr><td>media modifier</td><td>3</td></tr><tr><td>threshold scope</td><td>2</td></tr><tr><td>polarity omission</td><td>2</td></tr><tr><td>temporal scope</td><td>2</td></tr><tr><td>unresolved controller</td><td>1</td></tr></tbody></table></div><p>The cached full loop took about 28 seconds, excluding upstream parsing and input loading. The default earlier path exactly reproduces all 2,375 saved records after adding the optional logical-form transformation hook. No model calls, GPUs, sentence rewriting, media inference or new relation-training experiment were used. Larger native inference cost remains open; the earlier long-protest timeout was not retested or solved in this round.</p></section><section id="examples"><h2>Inspect the saved before/after outputs</h2><p><a href="#examples" data-claim="T2G_ACMxR_I4_1367">Preparation goal</a> · <a href="#examples" data-claim="TzzhcBIczf_M_2108">Investigation content</a> · <a href="#examples" data-claim="TMrQshDs8aH0_752">Restored sound</a> · <a href="#examples" data-claim="TQKCK6-tRaoE_671">Identifier</a></p><div class="toolbar"><label>Subset<select id="filter"><option value="all">All claims</option><option value="accepted">Accepted after coverage check</option><option value="review">Coverage alerts</option><option value="refused">Earlier parser/compiler refusals</option><option value="changed">Changed programs</option><option value="target">Six development examples</option><option value="fresh">Fresh twenty cases</option><option value="alert_sample">Twelve inspected alerts</option></select></label><label>Search<input id="search" type="search" placeholder="Claim text or ID"></label></div><p id="match-count" role="status">Loading inventory…</p><label>Claim<select id="claim-select"></select></label><div class="toolbar"><button id="previous">Previous</button><button id="next">Next</button></div><h3 id="claim-id"></h3><blockquote id="claim-text"></blockquote><p id="reading"></p><p id="audit-note" class="note"></p><p id="diagnosis"></p><div id="outputs" class="output-grid"></div><p id="notes"></p></section><section><h2>Next steps and intended goals</h2><ol><li>Repair recurrent alert families such as appositions, numbers and nominal descriptions — recover useful coverage instead of accumulating refusals.</li><li>Handle opaque clauses and source/label boundaries — catch the structural errors that word coverage cannot detect; preserve the current examples as development evidence.</li><li>Resolve local pronouns and profile larger programs — preserve participant identity and establish practical inference cost before media training.</li></ol><p><a href="verification-pipeline.html#next-steps">Current checklist</a> · <a href="reviewed-compilation.html">Previous compiler report</a> · <a href="scope-coverage/README.md">Implementation details</a> · <a href="scope-coverage/source.zip">Source, saved inputs and exact replay</a> · <a href="scope-coverage/analysis.json">Statistics</a> · <a href="scope-coverage/coverage_alerts.json">All 260 alerts</a> · <a href="scope-coverage/fresh_review.json">Fresh judgments</a> · <a href="scope-coverage/tests.xml">Tests</a></p></section></main><footer class="site-footer"><div class="container">Generated from frozen original inputs and saved outputs; no model inference runs while building this page.</div></footer><script>/* Render only the saved logical form and compiler metadata, never the claim or review. */
+window.ClaimOutputView = (() => {
+  const esc = value => String(value ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+  const roles = {nsubj:'Subject',obj:'Object',iobj:'Indirect object',obl:'Oblique complement',
+    'ARGM-LOC':'Location','ARGM-TMP':'Time','ARGM-MNR':'Manner','ARGM-CAU':'Cause',
+    'ARGM-PRP':'Purpose','ARGM-DIR':'Direction','ARGM-EXT':'Extent',
+    mod:'Modifier',member:'Group member',of:'of',in:'in',about:'about',particle:'Verb particle',
+    quantifier:'Quantifier',source_route:'Evidence source',acl:'Attached clause',amod:'Adjectival modifier',content:'Content'};
+  const routes = {visual_depiction:'Visual depiction',audio_event:'Sound',speech_assertion:'Speech',
+    ocr_assertion:'On-screen text (OCR)',unspecified:'Source not specified'};
+  const kinds = {complement:'Complement clause',relative:'Attached description',depiction:'Depicted content',
+    assertion:'Source assertion',question:'Question content',reason:'Reason',purpose:'Purpose',
+    belief:'Belief content',condition:'Condition',temporal:'Time condition',sufficiency:'Sufficient for the following goal'};
+  const human = value => String(value ?? '').replaceAll('_',' ');
+  function role(value){
+    const name = roles[value] || (/^ARG\d+$/.test(value) ? 'Participant '+value.slice(3) : human(value));
+    return esc(name) + (name !== value ? ' <small class="cv-code">'+esc(value)+'</small>' : '');
+  }
+  function valueText(value){
+    if(value === null || value === undefined)return 'Not specified';
+    if(typeof value !== 'object')return String(value);
+    if(Array.isArray(value))return value.map(valueText).join(', ');
+    return Object.entries(value).map(([k,v])=>human(k)+': '+valueText(v)).join('; ');
+  }
+  function literal(value){
+    if(typeof value !== 'object' || value === null)return esc(value);
+    const labels={verbatim_text:'Exact text',text:'Text',time:'Time expression',measurement:'Measurement'};
+    const content=value.kind==='verbatim_text'?'“'+valueText(value.value)+'”':valueText(value.value);
+    const extras=Object.entries(value).filter(([k])=>!['kind','value'].includes(k)).map(([k,v])=>human(k)+': '+valueText(v));
+    return '<span class="cv-literal"><small>'+esc(labels[value.kind]||human(value.kind||'Value'))+'</small> '+esc(content)+(extras.length?' <span>'+esc(extras.join('; '))+'</span>':'')+'</span>';
+  }
+  function row(label,body){return '<div class="cv-row"><div class="cv-edge">'+label+'</div><div class="cv-target">'+body+'</div></div>';}
+  function timeDescription(t){
+    if(!t)return '';
+    const tense={pres:'present tense',past:'past tense',fut:'future tense',unspecified:'tense not specified'}[t.tense]||human(t.tense);
+    const aspect={simple:'simple aspect',progressive:'progressive aspect (ongoing)',perfect:'perfect aspect',perfect_progressive:'perfect progressive aspect',unspecified:'aspect not specified'}[t.aspect]||human(t.aspect);
+    return [tense,aspect,t.completion && t.completion!=='unspecified'?'completion: '+human(t.completion):''].filter(Boolean).join(' · ');
+  }
+  function render(output,metadata={},number=1){
+    if(output.status!=='compiled')return '<figure class="cv-figure"><div class="cv-refusal"><b>No compiled output</b><p>'+esc(output.reason||output.code||'No reason recorded.')+'</p></div><figcaption>Figure '+number+'. This version refused compilation.</figcaption></figure>';
+    const form=output.form, entities=Object.fromEntries((form?.entities||[]).map(e=>[e.id,e]));
+    const seen=new Set();
+    const metaEvents=Object.entries(metadata.events||{});
+    const eventInfo=node=>metaEvents.filter(([,e])=>e.id===node.id&&e.predicate===node.predicate);
+    function properties(items){
+      return (items||[]).map(p=>row(role(p.role),esc(p.role==='source_route'?(routes[p.value]||human(p.value)):valueText(p.value)))).join('');
+    }
+    function entity(id){
+      const e=entities[id];
+      if(!e)return '<span class="cv-unresolved">Unresolved reference: '+esc(id)+'</span>';
+      const repeated=seen.has(id);seen.add(id);
+      let html='<div class="cv-node cv-entity" data-entity="'+esc(id)+'"><div class="cv-node-title"><span class="cv-kind">'+(e.type==='group'?'Group':'Entity')+'</span> <b>'+esc(e.text)+'</b> <small class="cv-code">'+esc(id)+'</small></div>';
+      if(repeated)return html+'<p class="cv-repeated">Same participant as above.</p></div>';
+      html+=properties(e.properties);
+      if(e.quantity)html+=row('Quantity',esc(human(e.quantity.operator)+' '+valueText(e.quantity.value)));
+      for(const r of e.relations||[])html+=row(role(r.role),entity(r.target));
+      for(const p of e.propositions||[])html+=proposition(p);
+      return html+'</div>';
+    }
+    function proposition(p){
+      return '<div class="cv-scope"><div class="cv-scope-title"><b>'+esc(kinds[p.kind]||human(p.kind))+'</b> <small>'+role(p.role)+'</small></div><p class="cv-source">'+esc(routes[p.route]||human(p.route||'unspecified'))+'</p>'+node(p.body)+'</div>';
+    }
+    function node(n){
+      if(!n)return '<p>No formula saved.</p>';
+      if(n.op==='entity')return entity(n.ref);
+      if(n.op==='and'||n.op==='or')return '<div class="cv-scope"><b>'+(n.op==='and'?'All of the following (AND)':'At least one alternative (OR)')+'</b>'+n.children.map(node).join('')+'</div>';
+      if(n.op==='not')return '<div class="cv-scope"><b>Negation (NOT)</b>'+node(n.child)+'</div>';
+      if(n.op==='qualified')return '<div class="cv-scope"><b>Condition: '+esc(human(n.operator))+'</b>'+node(n.body)+'</div>';
+      if(n.op!=='event')return '<p>Unrecognized node: '+esc(valueText(n))+'</p>';
+      const infos=eventInfo(n), info=infos.length===1?infos[0]:null;
+      const particles=(n.properties||[]).filter(p=>p.role==='particle').map(p=>p.value);
+      let html='<div class="cv-node cv-event" data-event="'+esc(n.id)+'"><div class="cv-node-title"><span class="cv-kind">Event / state</span> <b>'+esc([n.predicate,...particles].join(' '))+'</b> <small class="cv-code">'+esc(n.id)+'</small></div>';
+      if(info){
+        const [compiledId,data]=info;
+        const time=timeDescription(metadata.temporal?.[compiledId]);
+        if(time)html+='<p class="cv-time">'+esc(time)+'</p>';
+        html+='<p class="cv-source">'+esc(routes[data.route]||human(data.route))+(data.scope==='world'?' · Main assertion':' · Nested content')+'</p>';
+      }
+      if(infos.length>1)html+='<div class="cv-context">This event appears in several compiled contexts.'+infos.map(([id,data])=>'<p>'+esc(id)+': '+esc(timeDescription(metadata.temporal?.[id]))+' · '+esc(routes[data.route]||human(data.route))+'</p>').join('')+'</div>';
+      for(const [r,v] of Object.entries(n.arguments||{}))html+=row(role(r),typeof v==='string'?entity(v):literal(v));
+      html+=properties(n.properties);
+      for(const p of n.propositions||[])html+=proposition(p);
+      return html+'</div>';
+    }
+    let graph=node(form?.formula);
+    const unused=Object.keys(entities).filter(id=>!seen.has(id));
+    if(unused.length)graph+='<details><summary>Declared entities outside this structure ('+unused.length+')</summary><p>These declarations have no link from the formula shown above.</p>'+unused.map(entity).join('')+'</details>';
+    let html='<figure class="cv-figure"><p class="cv-output-kind">'+(form?.kind==='mention'?'Noun phrase description':'Claim structure')+'</p>'+graph;
+    if(output.event_references?.length)html+='<div class="cv-context"><b>Shared event references</b>'+output.event_references.map(r=>'<p>'+esc(r.mention)+' and '+esc(r.event)+' refer to the same event ('+esc(r.variable)+').</p>').join('')+'</div>';
+    if(output.runtime_requirements?.length)html+='<div class="cv-context"><b>Context still required</b><ul>'+output.runtime_requirements.map(r=>'<li>'+esc(human(r))+'</li>').join('')+'</ul></div>';
+    return html+'<figcaption>Figure '+number+'. Saved compiler output. Indented boxes show attachment and source scope; repeated IDs identify the same participant or event.</figcaption></figure>';
+  }
+  function sameOutputs(a,b){
+    if(a.status!==b.status)return false;
+    if(a.status!=='compiled')return a.code===b.code&&a.reason===b.reason;
+    const structure=o=>({kind:o.form?.kind,entities:o.form?.entities,formula:o.form?.formula,predicates:o.predicates,runtime:o.runtime_requirements});
+    return JSON.stringify(structure(a))===JSON.stringify(structure(b));
+  }
+  return {render,sameOutputs,timeDescription};
+})();
+</script><script>const $=id=>document.getElementById(id);
+const esc=v=>String(v??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+let inventory=[],visible=[],current='',sequence=0;
+const chunks=new Map();
+function output(label,data,review,n){
+ let s='<section class="output"><h3>'+label+'</h3>';
+ if(review)s+='<p class="review-note">'+esc(review)+'</p>';
+ s+=ClaimOutputView.render(data,data.metadata,n);
+ if(data.status==='compiled')s+='<details><summary>Exact predicates and logical form</summary><pre>'+esc(data.predicates.join('\n'))+'</pre><pre>'+esc(JSON.stringify(data.form,null,2))+'</pre></details>';
+ return s+'</section>';
+}
+async function show(cid){
+ current=cid;const ticket=++sequence,meta=inventory.find(c=>c.claim_id===cid);if(!meta)return;
+ $('claim-select').value=cid;$('claim-id').textContent=cid;$('claim-text').textContent=meta.text;$('outputs').innerHTML='<p>Loading saved outputs…</p>';
+ if(!chunks.has(meta.chunk))chunks.set(meta.chunk,fetch('scope-coverage/'+meta.chunk).then(r=>{if(!r.ok)throw Error('Could not load outputs.');return r.json();}));
+ try{
+  const rows=await chunks.get(meta.chunk);if(ticket!==sequence)return;
+  const row=rows.find(r=>r.claim_id===cid),after=row.after||row.before;
+  $('reading').textContent=row.reading?'Assistant intended reading, saved before output inspection: '+row.reading.intended_meaning:'';
+  $('audit-note').textContent=row.code==='coverage_omission'?'Review required: '+row.reason+'. The diagnostic program is shown below; it is not accepted as complete.':row.accepted?'Accepted after the coverage check. This is not a semantic correctness certificate.':row.reason;
+  $('diagnosis').textContent=row.diagnosis||(row.alert_review?'Assistant alert review: '+row.alert_review.reason:'');
+  let before='',later='';
+  if(row.fresh){before='Assistant judgment: '+row.fresh.before.judgment+'. '+row.fresh.before.reason;later='Assistant judgment: '+row.fresh.after.judgment+'. '+row.fresh.after.reason;}
+  else if(!row.changed)later='The executable program is unchanged.';
+  $('outputs').innerHTML=output('Previous compiler',row.before,before,1)+output(row.code==='coverage_omission'?'Current diagnostic candidate':'Scope/coverage revision',after,later,2);
+  $('notes').textContent=row.notes.length?'Recorded repairs: '+row.notes.map(n=>n.kind.replaceAll('_',' ')).join('; ')+'.':'No structural repair is recorded for this case.';
+  const i=visible.findIndex(c=>c.claim_id===cid);$('previous').disabled=i<=0;$('next').disabled=i>=visible.length-1;
+ }catch(e){$('outputs').textContent=e.message;}
+}
+function filter(){
+ const mode=$('filter').value,term=$('search').value.toLowerCase();
+ visible=inventory.filter(c=>(!term||(c.claim_id+' '+c.text).toLowerCase().includes(term))&&(mode==='all'||c[mode]));
+ $('match-count').textContent=visible.length+' of '+inventory.length+' claims';
+ $('claim-select').innerHTML=visible.map(c=>'<option value="'+esc(c.claim_id)+'">'+esc(c.claim_id+' · '+c.text.slice(0,120))+'</option>').join('');
+ if(visible.length)show(visible.some(c=>c.claim_id===current)?current:visible[0].claim_id);
+ else{$('claim-id').textContent='No matching claims';$('claim-text').textContent='';$('outputs').innerHTML='';}
+}
+function pick(cid){$('filter').value='all';$('search').value='';current=cid;filter();}
+$('filter').addEventListener('change',filter);let timer;
+$('search').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(filter,150);});
+$('claim-select').addEventListener('change',e=>show(e.target.value));
+$('previous').addEventListener('click',()=>show(visible[visible.findIndex(c=>c.claim_id===current)-1].claim_id));
+$('next').addEventListener('click',()=>show(visible[visible.findIndex(c=>c.claim_id===current)+1].claim_id));
+document.querySelectorAll('[data-claim]').forEach(a=>a.addEventListener('click',()=>pick(a.dataset.claim)));
+fetch('scope-coverage/index.json').then(r=>r.json()).then(data=>{inventory=data;pick(new URLSearchParams(location.search).get('claim')||'T2G_ACMxR_I4_1367');}).catch(e=>{$('outputs').textContent=e.message;});
+</script></body></html>

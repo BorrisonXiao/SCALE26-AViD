@@ -1,0 +1,251 @@
+{
+  "provenance": "Compiler-author assistant qualitative judgments, not independent human references. Claim-only readings were saved before output inspection. No compiler changes follow this review.",
+  "counts": {
+    "refused": 4,
+    "partial": 5,
+    "faithful": 9,
+    "incorrect": 2
+  },
+  "cases": [
+    {
+      "claim_id": "T2EE72iNELEs_189",
+      "before": {
+        "judgment": "refused",
+        "reason": "No output for a straightforward on-screen text label; this is an unresolved parser refusal."
+      },
+      "after": {
+        "judgment": "refused",
+        "reason": "No output for a straightforward on-screen text label; this is an unresolved parser refusal."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_270",
+      "before": {
+        "judgment": "partial",
+        "reason": "Causal turning/driving content is retained, but haboob occupies drive ARG1, ordinarily the driven vehicle, rather than an explicit directional argument."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "Causal turning/driving content is retained, but haboob occupies drive ARG1, ordinarily the driven vehicle, rather than an explicit directional argument."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_477",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains the crowd, cheering target, entering people and National Palace in linked descriptions."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains the crowd, cheering target, entering people and National Palace in linked descriptions."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TInVWzp25aIM_82",
+      "before": {
+        "judgment": "partial",
+        "reason": "Dogs, airlifting, safety and storm aftermath are retained, but aftermath is labeled as a location instead of temporal context."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "Dogs, airlifting, safety and storm aftermath are retained, but aftermath is labeled as a location instead of temporal context."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_468",
+      "before": {
+        "judgment": "refused",
+        "reason": "The perception/holding/attack construction remains an unresolved clausal argument."
+      },
+      "after": {
+        "judgment": "refused",
+        "reason": "The perception/holding/attack construction remains an unresolved clausal argument."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_601",
+      "before": {
+        "judgment": "partial",
+        "reason": "Retains tents and setting up, but organized is promoted to a separate organize event instead of a clear layout/resulting-state description."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "Retains tents and setting up, but organized is promoted to a separate organize event instead of a clear layout/resulting-state description."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_656",
+      "before": {
+        "judgment": "refused",
+        "reason": "The banner reading predicate is not linked; no compiled output."
+      },
+      "after": {
+        "judgment": "refused",
+        "reason": "The banner reading predicate is not linked; no compiled output."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_603",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains gathered people and Mount Arafat; follows the current tolerance for passive/result descriptions."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains gathered people and Mount Arafat; follows the current tolerance for passive/result descriptions."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_310",
+      "before": {
+        "judgment": "incorrect",
+        "reason": "Timelapse is not recognized as a media context; the incoming massive dust storm is linked by a world-level of relation rather than depicted content."
+      },
+      "after": {
+        "judgment": "incorrect",
+        "reason": "Timelapse is not recognized as a media context; the incoming massive dust storm is linked by a world-level of relation rather than depicted content."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_687",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains the two black helicopters and the same-direction/close-proximity conditions on their shared flight. Requires the declared group-relation verifier."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains the two black helicopters and the same-direction/close-proximity conditions on their shared flight. Requires the declared group-relation verifier."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1767",
+      "before": {
+        "judgment": "partial",
+        "reason": "Both names remain in one exact argument, but its coordination is not exposed as multiple targets or marked as a coarse group."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "Both names remain in one exact argument, but its coordination is not exposed as multiple targets or marked as a coarse group."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "T8u81WMIyj18_755",
+      "before": {
+        "judgment": "refused",
+        "reason": "Clock tokenization is treated as a group cardinality; the time-type guard refuses it."
+      },
+      "after": {
+        "judgment": "refused",
+        "reason": "Clock tokenization is treated as a group cardinality; the time-type guard refuses it."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TLO3smKI67PM_595",
+      "before": {
+        "judgment": "incorrect",
+        "reason": "The label argument is Karen a Karen as an entity, mixing the target name with the label; labeling content is not correctly represented."
+      },
+      "after": {
+        "judgment": "incorrect",
+        "reason": "The label argument is Karen a Karen as an entity, mixing the target name with the label; labeling content is not correctly represented."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_225",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains a man driving a vehicle; predicate inflection does not remove the meaning."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains a man driving a vehicle; predicate inflection does not remove the meaning."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "T2EE72iNELEs_209",
+      "before": {
+        "judgment": "partial",
+        "reason": "Rocket lands remains only inside a typed time string. Lexical coverage passes, but no separate rocket/landing binding is exposed."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "Rocket lands remains only inside a typed time string. Lexical coverage passes, but no separate rocket/landing binding is exposed."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_256",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Cancellation remains possible; flights and the dust-storm cause are retained."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Cancellation remains possible; flights and the dust-storm cause are retained."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_668",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains loud explosive sound and its fireworks cause as a nominal description, without inventing visibility."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains loud explosive sound and its fireworks cause as a nominal description, without inventing visibility."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_216",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Possible storm effect and the exact electric-service noun phrase are retained; internal phrase relations stay coarse."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Possible storm effect and the exact electric-service noun phrase are retained; internal phrase relations stay coarse."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_610",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains visible man, worn vest and exact text in an OCR context owned by the vest description."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains visible man, worn vest and exact text in an OCR context owned by the vest description."
+      },
+      "program_unchanged": true
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_632",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains bright sun, the praying man and their over relation."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains bright sun, the praying man and their over relation."
+      },
+      "program_unchanged": true
+    }
+  ]
+}

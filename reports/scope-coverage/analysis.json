@@ -1,0 +1,132 @@
+{
+  "total": 2375,
+  "before_executable": 2099,
+  "after_executable": 2099,
+  "accepted": 1839,
+  "coverage_review_required": 260,
+  "earlier_refusals": 276,
+  "changed_programs": 11,
+  "unchanged_user_faithful": 11,
+  "accepted_kinds": {
+    "mention": 141,
+    "claim": 1698
+  },
+  "refusal_reasons": {
+    "negative_quantifier": 10,
+    "coverage_omission": 260,
+    "unresolved_clause": 109,
+    "duplicate_role": 59,
+    "missing_srl": 12,
+    "nominal_disjunction": 8,
+    "mention_alignment": 4,
+    "predicate_type": 8,
+    "quantity_type": 3,
+    "missing_predicate": 37,
+    "modal_scope": 16,
+    "threshold_scope": 2,
+    "polarity_omission": 2,
+    "temporal_scope": 2,
+    "unresolved_controller": 1,
+    "media_modifier": 3
+  },
+  "flagged_claim_categories": {
+    "modifiers": 100,
+    "names": 93,
+    "nouns": 106,
+    "numbers": 78,
+    "predicates": 6
+  },
+  "frequent_missing_terms": [
+    [
+      "1",
+      14
+    ],
+    [
+      "Alaska",
+      12
+    ],
+    [
+      "2",
+      11
+    ],
+    [
+      "NDP",
+      6
+    ],
+    [
+      "only",
+      6
+    ],
+    [
+      "Conservatives",
+      5
+    ],
+    [
+      "Bloc",
+      5
+    ],
+    [
+      "Qu\u00e9b\u00e9cois",
+      5
+    ],
+    [
+      "second",
+      5
+    ],
+    [
+      "Quebec",
+      4
+    ],
+    [
+      "seats",
+      4
+    ],
+    [
+      "three",
+      3
+    ],
+    [
+      "Fortress",
+      3
+    ],
+    [
+      "Liberal",
+      3
+    ],
+    [
+      "33",
+      3
+    ],
+    [
+      "24",
+      3
+    ],
+    [
+      "Mark",
+      3
+    ],
+    [
+      "Carney",
+      3
+    ],
+    [
+      "Liberals",
+      3
+    ],
+    [
+      "Poilievre",
+      3
+    ]
+  ],
+  "fresh_count": 20,
+  "fresh_changed_programs": 0,
+  "fresh_changed_statuses": 0,
+  "fresh_assistant_judgments": {
+    "refused": 4,
+    "partial": 5,
+    "faithful": 9,
+    "incorrect": 2
+  },
+  "unexpected_errors": [],
+  "interpretation": "Acceptance after the coverage gate is not semantic accuracy. Candidates with alerts remain available for diagnosis."
+}

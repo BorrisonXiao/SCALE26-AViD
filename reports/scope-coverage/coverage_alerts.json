@@ -1,0 +1,5012 @@
+[
+  {
+    "claim_id": "TjHepwuhkYFA_1016",
+    "text": "Beginning at video timestamp 2025-03-28 12:46:35 and ending at video timestamp 12:46:37, the midground and background terrain in the video shift relative to the foreground of the video.",
+    "missing": [
+      {
+        "id": 15,
+        "text": "midground",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 17,
+        "text": "background",
+        "pos": "NOUN",
+        "relation": "conj"
+      },
+      {
+        "id": 18,
+        "text": "terrain",
+        "pos": "NOUN",
+        "relation": "conj"
+      },
+      {
+        "id": 22,
+        "text": "shift",
+        "pos": "NOUN",
+        "relation": "nmod"
+      },
+      {
+        "id": 23,
+        "text": "relative",
+        "pos": "ADV",
+        "relation": "amod"
+      },
+      {
+        "id": 26,
+        "text": "foreground",
+        "pos": "NOUN",
+        "relation": "obl"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_6",
+    "text": "The typhoon is impacting Kipnuk, Alaska.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_11",
+    "text": "People online are praying for other's safety during the Typhoon.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "online",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 6,
+        "text": "other",
+        "pos": "ADJ",
+        "relation": "nmod:poss"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_28",
+    "text": "The storm impacted Kipnuk, Alaska on October 12, 2025.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_31",
+    "text": "The typhoon impacted Kipnuk, Alaska on October 12, 2025.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_48",
+    "text": "Roads further inland are drivable for now.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "further",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 3,
+        "text": "inland",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_53",
+    "text": "Typhoon Halong hit Akiak, Alaska.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_54",
+    "text": "Akiak, Alaska may get power back the following weekend.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "back",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_55",
+    "text": "Residents of Akiak, Alaska hope prayers can help support those affected by Typhoon Halong.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_66",
+    "text": "The storm is affecting the west coast of Kipnuk, Alaska.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_70",
+    "text": "The storm is affecting Kipnuk, Alaska on October 12th, 2025.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_79",
+    "text": "Some roads further inland are drivable for now.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "further",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 4,
+        "text": "inland",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_80",
+    "text": "The storm is affecting Kipnuk, Alaska on October 15th, 2025.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_87",
+    "text": "People were evacuated to the Joint Base Elemendorf-Richardson, Alaska on October 15th, 2025.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "Richardson",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 12,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_94",
+    "text": "Typhoon Halong hit Kipnuk, Alaska.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_97",
+    "text": "Many homes in Kipnuk, Alaska were destroyed or moved off their foundations by Typhoon Halong.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_106",
+    "text": "Small motorized vehicles are able to survey the wreckage.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Small",
+        "pos": "ADJ",
+        "relation": "amod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_107",
+    "text": "Typhoon Halong impacted Kipnuk, Alaska.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "Alaska",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_142",
+    "text": "It was a cloudy day in Long Beach, California.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "California",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_164",
+    "text": "The container spill was from the ship The Mississippi.",
+    "missing": [
+      {
+        "id": 9,
+        "text": "Mississippi",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_165",
+    "text": "Between 67 and 75 boxes were spilled.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "75",
+        "pos": "NUM",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_176",
+    "text": "The U.S. Coast Guard 905 is one of the boats involved in the recovery operation.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "905",
+        "pos": "NUM",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2EE72iNELEs_190",
+    "text": "Rocket reaches Earth atmosphere and beyond.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "beyond",
+        "pos": "ADV",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2EE72iNELEs_192",
+    "text": "Video beginning velocity 17828 mph.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "beginning",
+        "pos": "VERB",
+        "relation": "amod"
+      },
+      {
+        "id": 3,
+        "text": "velocity",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 4,
+        "text": "17828",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 5,
+        "text": "mph",
+        "pos": "NOUN",
+        "relation": "nmod:npmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_223",
+    "text": "The physical integrity of the power lines seems intact.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "physical",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 3,
+        "text": "integrity",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      },
+      {
+        "id": 6,
+        "text": "power",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 7,
+        "text": "lines",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_234",
+    "text": "Massive dust storm is closing in.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "in",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_268",
+    "text": "Sky Harbor International Airport, Phoenix Arizona.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "Phoenix",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 7,
+        "text": "Arizona",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_271",
+    "text": "Street lights are coming on due to darkness from dust storm.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "on",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_308",
+    "text": "Power outages likely in residential area.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "likely",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_315",
+    "text": "A robot is running down lane 2.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_316",
+    "text": "The robot crosses over to lane 1 and collides with a bystander.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_330",
+    "text": "Robot 1 stumbles to the side.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_337",
+    "text": "Robot 3 kicks back at Robot 2 but stumbles",
+    "missing": [
+      {
+        "id": 4,
+        "text": "back",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_338",
+    "text": "Robot 1 comes back up behind the man to swing again.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_339",
+    "text": "The man pushes Robot 1 back again with both hands.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_341",
+    "text": "Robot 2 punches Robot 3 ",
+    "missing": [
+      {
+        "id": 2,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_342",
+    "text": "The man gives the signal for the other 2 robots to start sparring",
+    "missing": [
+      {
+        "id": 5,
+        "text": "signal",
+        "pos": "NOUN",
+        "relation": "obj"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_343",
+    "text": "man exclaims \"just like that!\"",
+    "missing": [
+      {
+        "id": 4,
+        "text": "just",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_345",
+    "text": "Robot 1 walks out of the ring",
+    "missing": [
+      {
+        "id": 2,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_360",
+    "text": "The robot repositions itself upright and starts walking backwards.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "upright",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_377",
+    "text": "Robot on lane 4 wins the race.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "4",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_378",
+    "text": "Robot on lane three comes in second place.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "three",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_379",
+    "text": "Robot race inside a running  track.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Robot",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 2,
+        "text": "race",
+        "pos": "NOUN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_380",
+    "text": "Weibo, People's daily",
+    "missing": [
+      {
+        "id": 3,
+        "text": "People",
+        "pos": "NOUN",
+        "relation": "nmod:poss"
+      },
+      {
+        "id": 5,
+        "text": "daily",
+        "pos": "ADJ",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_385",
+    "text": "Robot 1 collides with the smaller Robot 2 ",
+    "missing": [
+      {
+        "id": 2,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      },
+      {
+        "id": 8,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_388",
+    "text": "Robot 1 crosses over the lanes and falls again.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_395",
+    "text": "Robot running trips and falls.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "trips",
+        "pos": "NOUN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_407",
+    "text": "there are 2 robots with long legs and 2 with shorter legs.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "shorter",
+        "pos": "ADJ",
+        "relation": "amod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_424",
+    "text": "Robot 2 stumbles forward and gets caught in the ropes",
+    "missing": [
+      {
+        "id": 2,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_427",
+    "text": "The person lets Robot 2 fall on its back.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_429",
+    "text": "Robot 2 approaches Robot 1",
+    "missing": [
+      {
+        "id": 2,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_433",
+    "text": "Robot 1 sweep kicks Robot 2",
+    "missing": [
+      {
+        "id": 6,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_444",
+    "text": "game over",
+    "missing": [
+      {
+        "id": 2,
+        "text": "over",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_446",
+    "text": "Netizens: His courage to keep fighting despite repeated failures is commendable. ",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Netizens",
+        "pos": "NOUN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_447",
+    "text": "Beijing recently.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "recently",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_489",
+    "text": "\"Mexico: Violent clashes erupt during anti-government protests.\"",
+    "missing": [
+      {
+        "id": 2,
+        "text": "Mexico",
+        "pos": "PROPN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_490",
+    "text": "\"Clashes injure at least 120, including 100 police officers.\"",
+    "missing": [
+      {
+        "id": 5,
+        "text": "least",
+        "pos": "ADJ",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_495",
+    "text": " \"Mexico, Nov 15\".",
+    "missing": [
+      {
+        "id": 4,
+        "text": "Nov",
+        "pos": "PROPN",
+        "relation": "list"
+      },
+      {
+        "id": 5,
+        "text": "15",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_497",
+    "text": "\"Mexico City security chief: 20 arrested for theft and assault.\"",
+    "missing": [
+      {
+        "id": 2,
+        "text": "Mexico",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 3,
+        "text": "City",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 4,
+        "text": "security",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 5,
+        "text": "chief",
+        "pos": "NOUN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_517",
+    "text": "\"Sheinbaum: Movement promoted from abroad against our government.\"",
+    "missing": [
+      {
+        "id": 2,
+        "text": "Sheinbaum",
+        "pos": "PROPN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "TLO3smKI67PM_554",
+    "text": "The home run lands in the stands, right next to Phillies fan Karen.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "next",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TLO3smKI67PM_560",
+    "text": "The Phillies fan Karen and the Phillies fan father seem to get into a heated argument.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "Karen",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 9,
+        "text": "father",
+        "pos": "NOUN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TLO3smKI67PM_569",
+    "text": "The Phillies fan Karen and the Phillies fan father are arguing at a Philadelphia Phillies baseball game.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "Karen",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 9,
+        "text": "father",
+        "pos": "NOUN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TLO3smKI67PM_585",
+    "text": "The home run lands into the stands, right next to Phillies fan Karen.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "next",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_631",
+    "text": "Some people walking in road below.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "below",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQKCK6-tRaoE_660",
+    "text": "Scarlet Sails sail while fireworks go off in the background.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "off",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQKCK6-tRaoE_662",
+    "text": "Sound of fireworks exploding.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Sound",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_712",
+    "text": "The video was taken in seoul, south korea.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "south",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 9,
+        "text": "korea",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_732",
+    "text": "There are many chairs stacked on top of each other ready to be loaded into the large truck.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "other",
+        "pos": "ADJ",
+        "relation": "fixed"
+      }
+    ]
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_733",
+    "text": "There are not too many cars currently on the road, so traffic is not being obstructed too badly.",
+    "missing": [
+      {
+        "id": 12,
+        "text": "so",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_760",
+    "text": "The camera broadcasting this livestream is owned by IPC.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "livestream",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_779",
+    "text": "The large boat has a reminder about safety first.",
+    "missing": [
+      {
+        "id": 9,
+        "text": "first",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T1JQ-aG78Zuc_800",
+    "text": "The tram slows down substantially as it approaches the man laying near the tracks.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "down",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T1JQ-aG78Zuc_801",
+    "text": "The man laying down crawls away from the tracks as the tram passes him.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "away",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_803",
+    "text": "Host introduces David Aiken, chief political correspondent, at his touchscreen to explain how Liberals secured their minority government.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "chief",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 7,
+        "text": "political",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 8,
+        "text": "correspondent",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_807",
+    "text": "Example shown: Windsor West riding.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "Windsor",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 5,
+        "text": "West",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 6,
+        "text": "riding",
+        "pos": "NOUN",
+        "relation": "obj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_814",
+    "text": "Key geography: 'Fortress Vancouver, Fortress Montreal, and Fortress GTA.'",
+    "missing": [
+      {
+        "id": 5,
+        "text": "Fortress",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 6,
+        "text": "Vancouver",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 8,
+        "text": "Fortress",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 9,
+        "text": "Montreal",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 12,
+        "text": "Fortress",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 13,
+        "text": "GTA",
+        "pos": "PROPN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_821",
+    "text": "Moves to Fortress Montreal / Quebec.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "Montreal",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 6,
+        "text": "Quebec",
+        "pos": "PROPN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_822",
+    "text": "2025 Montreal map shows a lot of Liberal red.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "Liberal",
+        "pos": "ADJ",
+        "relation": "nmod"
+      },
+      {
+        "id": 9,
+        "text": "red",
+        "pos": "ADJ",
+        "relation": "amod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_829",
+    "text": "Special note: South Surrey-White Rock riding.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "South",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 5,
+        "text": "Surrey",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 7,
+        "text": "White",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 8,
+        "text": "Rock",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 9,
+        "text": "riding",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_838",
+    "text": "Claims that Trump has said Canada is not a real country.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Claims",
+        "pos": "NOUN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_851",
+    "text": "Mark Carney (Liberal leader) announces they have asked the Governor General to dissolve Parliament and call an election, which she has agreed to.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "Liberal",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 5,
+        "text": "leader",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_856",
+    "text": "They show the current House composition: Liberals hold 152 seats, Conservatives 120, Bloc Québécois 33, NDP 24, Greens 2, with 3 independents and 4 seats vacant.",
+    "missing": [
+      {
+        "id": 13,
+        "text": "Conservatives",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 14,
+        "text": "120",
+        "pos": "NUM",
+        "relation": "dep"
+      },
+      {
+        "id": 16,
+        "text": "Bloc",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 17,
+        "text": "Québécois",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 18,
+        "text": "33",
+        "pos": "NUM",
+        "relation": "flat"
+      },
+      {
+        "id": 20,
+        "text": "NDP",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 21,
+        "text": "24",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 23,
+        "text": "Greens",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 24,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_859",
+    "text": "Mark Carney has been Prime Minister for only about a week, after winning the Liberal leadership and after Justin Trudeau's resignation.",
+    "missing": [
+      {
+        "id": 20,
+        "text": "Justin",
+        "pos": "PROPN",
+        "relation": "nmod:poss"
+      },
+      {
+        "id": 21,
+        "text": "Trudeau",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 23,
+        "text": "resignation",
+        "pos": "NOUN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_863",
+    "text": "They list the main party leaders: Mark Carney of the Liberals, Pierre Poilievre of the Conservatives, Jagmeet Singh of the NDP, Yves-François Blanchet of the Bloc Québécois, and Green Party co-leaders Elizabeth May and Jonathan Pedneault, and show pictures of them.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "Mark",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 9,
+        "text": "Carney",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 12,
+        "text": "Liberals",
+        "pos": "PROPN",
+        "relation": "nmod"
+      },
+      {
+        "id": 14,
+        "text": "Pierre",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 15,
+        "text": "Poilievre",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 18,
+        "text": "Conservatives",
+        "pos": "PROPN",
+        "relation": "nmod"
+      },
+      {
+        "id": 20,
+        "text": "Jagmeet",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 21,
+        "text": "Singh",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 24,
+        "text": "NDP",
+        "pos": "PROPN",
+        "relation": "nmod"
+      },
+      {
+        "id": 26,
+        "text": "Yves",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 28,
+        "text": "François",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 29,
+        "text": "Blanchet",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 32,
+        "text": "Bloc",
+        "pos": "PROPN",
+        "relation": "nmod"
+      },
+      {
+        "id": 33,
+        "text": "Québécois",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 36,
+        "text": "Green",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 38,
+        "text": "co-leaders",
+        "pos": "NOUN",
+        "relation": "conj"
+      },
+      {
+        "id": 39,
+        "text": "Elizabeth",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 40,
+        "text": "May",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 42,
+        "text": "Jonathan",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 43,
+        "text": "Pedneault",
+        "pos": "PROPN",
+        "relation": "flat"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_878",
+    "text": "Claims the party gained well over 20 seats in the election.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "well",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_889",
+    "text": "Shows scene of people in street holding signs protesting against America acquiring Canada: woman in Canada mask holds sign that says 'Canada is Already Great' and waves at camera while wearing an 'I voted' sticker; another woman in the back holds two flags: Canada's and Ukraine's.",
+    "missing": [
+      {
+        "id": 30,
+        "text": "waves",
+        "pos": "NOUN",
+        "relation": "conj"
+      },
+      {
+        "id": 32,
+        "text": "camera",
+        "pos": "NOUN",
+        "relation": "nmod"
+      },
+      {
+        "id": 54,
+        "text": "Ukraine's",
+        "pos": "PROPN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_893",
+    "text": "NDP is flat at about 20% until Jan 2025 then it drops steeply to 8-9%.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "then",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_908",
+    "text": "Video topic: the Liberals' political revival, the election results, and the implications for Canada.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "Liberals",
+        "pos": "PROPN",
+        "relation": "nmod:poss"
+      },
+      {
+        "id": 7,
+        "text": "political",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 8,
+        "text": "revival",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 11,
+        "text": "election",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 12,
+        "text": "results",
+        "pos": "NOUN",
+        "relation": "conj"
+      },
+      {
+        "id": 16,
+        "text": "implications",
+        "pos": "NOUN",
+        "relation": "conj"
+      },
+      {
+        "id": 18,
+        "text": "Canada",
+        "pos": "PROPN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_914",
+    "text": "Six months earlier, a Conservative landslide seemed inevitable.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "Conservative",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 7,
+        "text": "landslide",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_915",
+    "text": "Then-incumbent PM Justin Trudeau was very unpopular: net approval rating -52 in December.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "net",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 12,
+        "text": "approval",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 13,
+        "text": "rating",
+        "pos": "NOUN",
+        "relation": "parataxis"
+      },
+      {
+        "id": 15,
+        "text": "52",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 17,
+        "text": "December",
+        "pos": "PROPN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_926",
+    "text": "Shows table picture of various polls in April: multiple national polls show the Liberals leading at roughly 41-44%, with the Conservatives close behind at about 37-41%, The NDP polls mostly between 6-11%, well below earlier levels; the Bloc Québécois is stable around 6% nationally; Greens sit near 1-3%; PPC and others remain around 1-2%.",
+    "missing": [
+      {
+        "id": 37,
+        "text": "NDP",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 39,
+        "text": "mostly",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 43,
+        "text": "11",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 46,
+        "text": "well",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 48,
+        "text": "earlier",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 49,
+        "text": "levels",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_927",
+    "text": "First major cause of reversal: Donald Trump.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "Donald",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 8,
+        "text": "Trump",
+        "pos": "PROPN",
+        "relation": "flat"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_930",
+    "text": "Polling: Ipsos showed 49% of Canadians preferred Carney to negotiate with Trump vs. 33% for Poilievre.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Polling",
+        "pos": "NOUN",
+        "relation": "root"
+      },
+      {
+        "id": 16,
+        "text": "33",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 19,
+        "text": "Poilievre",
+        "pos": "PROPN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_933",
+    "text": "Second cause of reversal: Mark Carney's personal popularity.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "Mark",
+        "pos": "PROPN",
+        "relation": "nmod:poss"
+      },
+      {
+        "id": 7,
+        "text": "Carney",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 9,
+        "text": "personal",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 10,
+        "text": "popularity",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_941",
+    "text": "Conservative support more geographically concentrated; Liberal support more evenly spread.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "Liberal",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 10,
+        "text": "evenly",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 11,
+        "text": "spread",
+        "pos": "VERB",
+        "relation": "parataxis"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_944",
+    "text": "Example: 338Canada aggregator had Conservatives +3 points in mid-March but still predicted more Liberal seats due to distribution efficiency.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Example",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_947",
+    "text": "Liberals beat Conservatives in popular vote but only by ~1.4 points: 43.1% vs. 41.7%.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "only",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 14,
+        "text": "43.1",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 17,
+        "text": "41.7",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_948",
+    "text": "With 96% counted: Liberals projected 48.1% of seats = 166 seats; Conservatives 42.9% = 146 seats (out of 343 total).",
+    "missing": [
+      {
+        "id": 16,
+        "text": "Conservatives",
+        "pos": "PROPN",
+        "relation": "nsubj"
+      },
+      {
+        "id": 17,
+        "text": "42.9",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 20,
+        "text": "146",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 25,
+        "text": "343",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 26,
+        "text": "total",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_951",
+    "text": "Remaining seats expected mainly for Bloc Québécois (Quebec-only nationalist party) and NDP (social democratic, left of Liberals).",
+    "missing": [
+      {
+        "id": 4,
+        "text": "mainly",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 6,
+        "text": "Bloc",
+        "pos": "PROPN",
+        "relation": "obl"
+      },
+      {
+        "id": 7,
+        "text": "Québécois",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 9,
+        "text": "Quebec",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 11,
+        "text": "only",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 12,
+        "text": "nationalist",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 13,
+        "text": "party",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 16,
+        "text": "NDP",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 18,
+        "text": "social",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 19,
+        "text": "democratic",
+        "pos": "ADJ",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_956",
+    "text": "NDP slightly underperformed polls: 6.1% vote share and only 7 seats.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "slightly",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 6,
+        "text": "6.1",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 8,
+        "text": "vote",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 9,
+        "text": "share",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 11,
+        "text": "only",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 12,
+        "text": "7",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 13,
+        "text": "seats",
+        "pos": "NOUN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_957",
+    "text": "Major drop from 2021: nearly 18% vote share and 25 seats then.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "2021",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 6,
+        "text": "nearly",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 7,
+        "text": "18",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 9,
+        "text": "vote",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 10,
+        "text": "share",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 12,
+        "text": "25",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 13,
+        "text": "seats",
+        "pos": "NOUN",
+        "relation": "conj"
+      },
+      {
+        "id": 14,
+        "text": "then",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_966",
+    "text": "Sponsor message: Brilliant offers interactive lessons in math, science, programming, data analysis, and AI.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Sponsor",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 2,
+        "text": "message",
+        "pos": "NOUN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_984",
+    "text": "Commentators reference anticipated celebration at HQ (supporters unaware of final call yet).",
+    "missing": [
+      {
+        "id": 8,
+        "text": "supporters",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 9,
+        "text": "unaware",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 11,
+        "text": "final",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 12,
+        "text": "call",
+        "pos": "NOUN",
+        "relation": "obl"
+      },
+      {
+        "id": 13,
+        "text": "yet",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_991",
+    "text": "Still unknown whether the government will be majority or minority.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Still",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 2,
+        "text": "unknown",
+        "pos": "ADJ",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_994",
+    "text": "Bloc Québécois: -11 seats in Quebec.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "11",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 6,
+        "text": "seats",
+        "pos": "NOUN",
+        "relation": "parataxis"
+      },
+      {
+        "id": 8,
+        "text": "Quebec",
+        "pos": "PROPN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_995",
+    "text": "Conservatives: -5 seats in Quebec.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "5",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 5,
+        "text": "seats",
+        "pos": "NOUN",
+        "relation": "parataxis"
+      },
+      {
+        "id": 7,
+        "text": "Quebec",
+        "pos": "PROPN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_997",
+    "text": "The video includes the logo for 7 News.com.au.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "7",
+        "pos": "NUM",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1022",
+    "text": "A logo 'storyful' appears in the video.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "storyful",
+        "pos": "ADJ",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1035",
+    "text": "The earthquake had a magnitude of 7.7.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "7.7",
+        "pos": "NUM",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1042",
+    "text": "The city of Mandalay has 1.2 million residents.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "1.2",
+        "pos": "NUM",
+        "relation": "compound"
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1047",
+    "text": "Sagaing is near Mandalay and also close to the epicenter of the earthquake.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "also",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 7,
+        "text": "close",
+        "pos": "ADV",
+        "relation": "conj"
+      },
+      {
+        "id": 10,
+        "text": "epicenter",
+        "pos": "NOUN",
+        "relation": "obl"
+      },
+      {
+        "id": 13,
+        "text": "earthquake",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1051",
+    "text": "The Indian Plate is moving northward, producing increased stress on the rocks beneath.",
+    "missing": [
+      {
+        "id": 14,
+        "text": "beneath",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1062",
+    "text": "Bago is slightly Northeast of Yangon.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "slightly",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1066",
+    "text": "The closer to the surface an earthquake is, the greater the damage.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "greater",
+        "pos": "ADJ",
+        "relation": "root"
+      },
+      {
+        "id": 13,
+        "text": "damage",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1093",
+    "text": "Firefly Mission Operations Center is located in Cedar Park, Texas.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "Texas",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1124",
+    "text": "Blue Ghost Mission 1 launched from launch complex 39A.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1125",
+    "text": "Blue Ghost Mission 1 launched on a Falcon 9 rocket.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1145",
+    "text": "Blue Ghost traveled roughly 2.8 million miles.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "roughly",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 5,
+        "text": "2.8",
+        "pos": "NUM",
+        "relation": "compound"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1148",
+    "text": "Blue Ghost had three and a half elliptical orbits around Earth.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "half",
+        "pos": "NOUN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1156",
+    "text": "A low lunar orbit is roughly 100 km above the Moon.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "roughly",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1163",
+    "text": "Firefly chose a more 'scenic route'.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "more",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1179",
+    "text": "Blue vector points toward Earth off to right of Blue Ghost and yellow vector points towards Sun off to left of Blue Ghost.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "off",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 8,
+        "text": "right",
+        "pos": "NOUN",
+        "relation": "obl"
+      },
+      {
+        "id": 13,
+        "text": "yellow",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 17,
+        "text": "Sun",
+        "pos": "PROPN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1184",
+    "text": "First redirect occurred 98 meters from original target.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "First",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1191",
+    "text": "Landing successful and everyone cheers.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "cheers",
+        "pos": "VERB",
+        "relation": "orphan"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1192",
+    "text": "Firefly Aerospace became first commercial company in history to complete a fully successful moon landing.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "history",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1196",
+    "text": "Overview of Firefly Aerospace's Blue Ghost lunar about 10 days after landing.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Overview",
+        "pos": "NOUN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1211",
+    "text": "LISTER measures thermal gradient (temperature changes at different depths).",
+    "missing": [
+      {
+        "id": 6,
+        "text": "temperature",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 7,
+        "text": "changes",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 9,
+        "text": "different",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 10,
+        "text": "depths",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1212",
+    "text": "LISTER also measures thermal conductivity (how effectively the lunar material transfers heat).",
+    "missing": [
+      {
+        "id": 7,
+        "text": "how",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 8,
+        "text": "effectively",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 10,
+        "text": "lunar",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 11,
+        "text": "material",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      },
+      {
+        "id": 12,
+        "text": "transfers",
+        "pos": "VERB",
+        "relation": "appos"
+      },
+      {
+        "id": 13,
+        "text": "heat",
+        "pos": "NOUN",
+        "relation": "obj"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1220",
+    "text": "Mons Littrow, a volcanic cone, appears in the bottom-right of the same image.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "volcanic",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 6,
+        "text": "cone",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1225",
+    "text": "The landing video had already hinted this because one lander leg was not fully in contact with the surface and the nearby shadow shape was unusual.",
+    "missing": [
+      {
+        "id": 14,
+        "text": "fully",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1233",
+    "text": "Firefly reported that lunar noon is the hottest part of the lunar day and temperatures can reach about 250°F or 121°C.",
+    "missing": [
+      {
+        "id": 22,
+        "text": "121°C",
+        "pos": "NUM",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1234",
+    "text": "To protect hardware, Blue Ghost began cycling power on and off to keep the lander as cool as possible.",
+    "missing": [
+      {
+        "id": 16,
+        "text": "lander",
+        "pos": "NOUN",
+        "relation": "obj"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1248",
+    "text": "Even though Blue Ghost will only operate for about 2 weeks total, they've been able to complete a few different firsts.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Even",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1249",
+    "text": "On March 3, NASA and the Italian Space Agency achieved a first-of-its-kind demonstration of acquiring and tracking Earth-based navigation signals (GNSS signals) from the Moon's surface.",
+    "missing": [
+      {
+        "id": 31,
+        "text": "GNSS",
+        "pos": "NOUN",
+        "relation": "compound"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1256",
+    "text": "Firefly was awarded 2 additional NASA commercial lunar payload services task orders to provide payload services in lunar orbit and on lunar surface in 2026.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 5,
+        "text": "additional",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 6,
+        "text": "NASA",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 7,
+        "text": "commercial",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 11,
+        "text": "task",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 12,
+        "text": "orders",
+        "pos": "NOUN",
+        "relation": "obj"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1268",
+    "text": "During lunar night, the Moon also blocks solar RF noise, making the region ideal for observing signals from the cosmic dark ages.",
+    "missing": [
+      {
+        "id": 15,
+        "text": "region",
+        "pos": "NOUN",
+        "relation": "obj"
+      },
+      {
+        "id": 16,
+        "text": "ideal",
+        "pos": "ADJ",
+        "relation": "xcomp"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1285",
+    "text": "Blue Ghost was developed outside of Austin, Texas.",
+    "missing": [
+      {
+        "id": 9,
+        "text": "Texas",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1298",
+    "text": "Designing the vehicle took a little over a year.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "little",
+        "pos": "ADJ",
+        "relation": "nmod:npmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1312",
+    "text": "Scientists work with complex manufacturing tools to build the spacecraft.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "complex",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 5,
+        "text": "manufacturing",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 6,
+        "text": "tools",
+        "pos": "NOUN",
+        "relation": "obl"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1392",
+    "text": "IM-1 is a lunar mission.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1396",
+    "text": "IM-1 landed on the moon.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1398",
+    "text": "IM-1 initiated the descent to the moon.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1402",
+    "text": "Hundreds of people are standing up and cheering.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "up",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1405",
+    "text": "IM-1 landed on the moon on February 22nd.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1407",
+    "text": "IM-1 is transmitting signals from the moon's surface.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "1",
+        "pos": "NUM",
+        "relation": "dep"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1408",
+    "text": "IM's moon landing was a nailbiter.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "IM's",
+        "pos": "PROPN",
+        "relation": "compound"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1416",
+    "text": "Blue Ghost includes instrumentation for subsurface thermal exploration with Rapidity (LISTER).",
+    "missing": [
+      {
+        "id": 12,
+        "text": "LISTER",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1417",
+    "text": "Blue Ghost includes Lunar PlanetVac (LPV).",
+    "missing": [
+      {
+        "id": 7,
+        "text": "LPV",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1418",
+    "text": "Blue Ghost includes Next Generation Lunar Retroreflector (NGLR).",
+    "missing": [
+      {
+        "id": 9,
+        "text": "NGLR",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1419",
+    "text": "Blue Ghost includes Regolith Adherence Characterization (RAC).",
+    "missing": [
+      {
+        "id": 8,
+        "text": "RAC",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1420",
+    "text": "Blue Ghost includes Radiation Tolerant Computer (RADPC).",
+    "missing": [
+      {
+        "id": 8,
+        "text": "RADPC",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1421",
+    "text": "Blue Ghost includes Electrodynamic Dust Shield (EDC).",
+    "missing": [
+      {
+        "id": 8,
+        "text": "EDC",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1422",
+    "text": "Blue Ghost includes Lunar Environment heliospheric X-ray Imager (LEXI).",
+    "missing": [
+      {
+        "id": 11,
+        "text": "LEXI",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1423",
+    "text": "Blue Ghost includes Lunar Magnetotelluric Sounder (LMS).",
+    "missing": [
+      {
+        "id": 8,
+        "text": "LMS",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1425",
+    "text": "Blue Ghost includes Stereo Camera for Lunar Plume-Surface Studies (SCALPSS).",
+    "missing": [
+      {
+        "id": 13,
+        "text": "SCALPSS",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1437",
+    "text": "The video shows a simulation of the landing as it occurred.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "simulation",
+        "pos": "NOUN",
+        "relation": "obj"
+      },
+      {
+        "id": 8,
+        "text": "landing",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1441",
+    "text": "The braking burn reduced Blue Ghost's orbital velocity to 40 meters/second.",
+    "missing": [
+      {
+        "id": 14,
+        "text": "second",
+        "pos": "ADJ",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1464",
+    "text": "After touchdown, Blue Ghost's legs send a signal to shutdown the engine.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "signal",
+        "pos": "NOUN",
+        "relation": "obj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1471",
+    "text": "The knots of flow ramped up overnight on the 3rd and into the 4th from 10-20 knots to 25-30 knots across central Texas.",
+    "missing": [
+      {
+        "id": 18,
+        "text": "20",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 23,
+        "text": "30",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 26,
+        "text": "central",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 27,
+        "text": "Texas",
+        "pos": "PROPN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1491",
+    "text": "Evening of the third shows values at 2.5.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "2.5",
+        "pos": "NUM",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1500",
+    "text": "This circulation then moves north-northeast and then parks itself over central Texas.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "north",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1505",
+    "text": "These remnants can also be called an MCV (mesoscale convective vortex).",
+    "missing": [
+      {
+        "id": 10,
+        "text": "mesoscale",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 11,
+        "text": "convective",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 12,
+        "text": "vortex",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1521",
+    "text": "Other text in the top left of the screen reports the date as April 2, 2025.",
+    "missing": [
+      {
+        "id": 14,
+        "text": "April",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 15,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 17,
+        "text": "2025",
+        "pos": "NUM",
+        "relation": "nmod:tmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1544",
+    "text": "The court ruling was 3-0 in favor of the injunction.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "0",
+        "pos": "NUM",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1549",
+    "text": "Congress can pass laws to delegate this authority to the president in certain instances.",
+    "missing": [
+      {
+        "id": 13,
+        "text": "certain",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 14,
+        "text": "instances",
+        "pos": "NOUN",
+        "relation": "obl"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1550",
+    "text": "The International Emergency Economic Powers Act (IEEPA) was passed years ago by Congress.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "IEEPA",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1556",
+    "text": "Axelrod claims Trump thinks tariffs are a cure-all for all of America's problems.",
+    "missing": [
+      {
+        "id": 14,
+        "text": "America",
+        "pos": "PROPN",
+        "relation": "nmod:poss"
+      },
+      {
+        "id": 16,
+        "text": "problems",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1574",
+    "text": "Declaring emergencies has given Trump legal pretext to expand executive power.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "legal",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 7,
+        "text": "pretext",
+        "pos": "NOUN",
+        "relation": "obj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1588",
+    "text": "Footage of Trump holding up and speaking about a poster listing reciprocal tariffs by country.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Footage",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1592",
+    "text": "Tariff poster shows: Taiwan 64% / 32%.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "64",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 9,
+        "text": "32",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1593",
+    "text": "Tariff poster shows: Japan 46% / 24%.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "46",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 9,
+        "text": "24",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1596",
+    "text": "Tariff poster shows: Thailand 72% / 36%.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "72",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 9,
+        "text": "36",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1597",
+    "text": "Tariff poster shows: Switzerland 61% / 31%.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "61",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 9,
+        "text": "31",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1602",
+    "text": "Dow Futures rose immediately by more than a percent, 1.1% / 500 points.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "more",
+        "pos": "ADJ",
+        "relation": "advmod"
+      },
+      {
+        "id": 11,
+        "text": "1.1",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 14,
+        "text": "500",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 15,
+        "text": "points",
+        "pos": "NOUN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1605",
+    "text": "US Futures: DOW 42,638.00, +468.00, +1.1%.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "DOW",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 5,
+        "text": "42,638.00",
+        "pos": "NUM",
+        "relation": "appos"
+      },
+      {
+        "id": 7,
+        "text": "+468.00",
+        "pos": "NUM",
+        "relation": "conj"
+      },
+      {
+        "id": 10,
+        "text": "1.1",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1606",
+    "text": "US Futures: S&P 500 5,989.00, +86.25, +1.46%.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "S&P",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 5,
+        "text": "500",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 6,
+        "text": "5,989.00",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 8,
+        "text": "+86.25",
+        "pos": "NUM",
+        "relation": "conj"
+      },
+      {
+        "id": 11,
+        "text": "1.46",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1607",
+    "text": "US Futures: NASDAQ 21,752.00, +372.25, +1.74%.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "NASDAQ",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 5,
+        "text": "21,752.00",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 7,
+        "text": "+372.25",
+        "pos": "NUM",
+        "relation": "conj"
+      },
+      {
+        "id": 10,
+        "text": "1.74",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1608",
+    "text": "US Futures (second reading): DOW 42,634.00, +464.00, +1.1%.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "second",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 5,
+        "text": "reading",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 8,
+        "text": "DOW",
+        "pos": "PROPN",
+        "relation": "list"
+      },
+      {
+        "id": 9,
+        "text": "42,634.00",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 11,
+        "text": "+464.00",
+        "pos": "NUM",
+        "relation": "conj"
+      },
+      {
+        "id": 14,
+        "text": "1.1",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1609",
+    "text": "US Futures (second reading): S&P 500 5,988.75, +86.00, +1.46%.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "second",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 5,
+        "text": "reading",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 8,
+        "text": "S&P",
+        "pos": "PROPN",
+        "relation": "list"
+      },
+      {
+        "id": 9,
+        "text": "500",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 10,
+        "text": "5,988.75",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 12,
+        "text": "+86.00",
+        "pos": "NUM",
+        "relation": "conj"
+      },
+      {
+        "id": 15,
+        "text": "1.46",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1610",
+    "text": "US Futures (second reading): NASDAQ 21,749.50, +369.75, +1.73%.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "second",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 5,
+        "text": "reading",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 8,
+        "text": "NASDAQ",
+        "pos": "PROPN",
+        "relation": "list"
+      },
+      {
+        "id": 9,
+        "text": "21,749.50",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 11,
+        "text": "+369.75",
+        "pos": "NUM",
+        "relation": "conj"
+      },
+      {
+        "id": 14,
+        "text": "1.73",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1612",
+    "text": "The court is a three judge panel.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "three",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1624",
+    "text": "This ruling is significant because Trump uses tariffs as a key part of his international trade 'deals' and policy.",
+    "missing": [
+      {
+        "id": 18,
+        "text": "deals",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 21,
+        "text": "policy",
+        "pos": "NOUN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1632",
+    "text": "Ryan Goodman is the Just Security Co-Editor-In-Chief.",
+    "missing": [
+      {
+        "id": 9,
+        "text": "In",
+        "pos": "PROPN",
+        "relation": "case"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1645",
+    "text": "A pause on the ruling will bring back the pre-ruling conditions (inference: allow tariffs to resume as before).",
+    "missing": [
+      {
+        "id": 13,
+        "text": "inference",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1648",
+    "text": "Footage from Monday in Arlington, VA of Trump speaking at podium with JD Vance and Pete Hegseth behind him clapping (muted).",
+    "missing": [
+      {
+        "id": 7,
+        "text": "VA",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 23,
+        "text": "muted",
+        "pos": "ADJ",
+        "relation": "parataxis"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1653",
+    "text": "Onscreen text indicates that the woman is Rachana Shanbhogue, a business affairs editor at The Economist.",
+    "missing": [
+      {
+        "id": 12,
+        "text": "business",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 13,
+        "text": "affairs",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 14,
+        "text": "editor",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 17,
+        "text": "Economist",
+        "pos": "PROPN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1659",
+    "text": "Trump announced a blanket 10% tariff on all of America's trading partners.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "America",
+        "pos": "PROPN",
+        "relation": "nmod:poss"
+      },
+      {
+        "id": 13,
+        "text": "trading",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 14,
+        "text": "partners",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1680",
+    "text": "Prices could go up; extra tariffs for $800 or less but only if shipped via the international postal service.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "extra",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 7,
+        "text": "tariffs",
+        "pos": "NOUN",
+        "relation": "parataxis"
+      },
+      {
+        "id": 10,
+        "text": "800",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 12,
+        "text": "less",
+        "pos": "ADJ",
+        "relation": "conj"
+      },
+      {
+        "id": 14,
+        "text": "only",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1681",
+    "text": "An additional 30% tariff or $25 per item as of time of video but could go up to $50 per item by June 1, 2025.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "25",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1683",
+    "text": "Yale says it will cost consumers across the USA a minimum of 10B a year.",
+    "missing": [
+      {
+        "id": 13,
+        "text": "10B",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 15,
+        "text": "year",
+        "pos": "NOUN",
+        "relation": "nmod:tmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1697",
+    "text": "Claims that Trump has said Canada is not a real country.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Claims",
+        "pos": "NOUN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1710",
+    "text": "Mark Carney (liberal leader) announces they have asked the Governor General to dissolve Parliament and call an election, which she has agreed to.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "liberal",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 5,
+        "text": "leader",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1715",
+    "text": "They show the current House composition: Liberals hold 152 seats, Conservatives 120, Bloc Québécois 33, NDP 24, Greens 2, with 3 independents and 4 seats vacant.",
+    "missing": [
+      {
+        "id": 13,
+        "text": "Conservatives",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 14,
+        "text": "120",
+        "pos": "NUM",
+        "relation": "dep"
+      },
+      {
+        "id": 16,
+        "text": "Bloc",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 17,
+        "text": "Québécois",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 18,
+        "text": "33",
+        "pos": "NUM",
+        "relation": "flat"
+      },
+      {
+        "id": 20,
+        "text": "NDP",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 21,
+        "text": "24",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 23,
+        "text": "Greens",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 24,
+        "text": "2",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1718",
+    "text": "Mark Carney has been Prime Minister for only about a week, after winning the Liberal leadership and after Justin Trudeau's resignation.",
+    "missing": [
+      {
+        "id": 20,
+        "text": "Justin",
+        "pos": "PROPN",
+        "relation": "nmod:poss"
+      },
+      {
+        "id": 21,
+        "text": "Trudeau",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 23,
+        "text": "resignation",
+        "pos": "NOUN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1722",
+    "text": "They list the main party leaders: Mark Carney of the Liberals, Pierre Poilievre of the Conservatives, Jagmeet Singh of the NDP, Yves-François Blanchet of the Bloc Québécois, and Green Party co-leaders Elizabeth May and Jonathan Pedneault and show pictures of them.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "Mark",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 9,
+        "text": "Carney",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 12,
+        "text": "Liberals",
+        "pos": "PROPN",
+        "relation": "nmod"
+      },
+      {
+        "id": 14,
+        "text": "Pierre",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 15,
+        "text": "Poilievre",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 18,
+        "text": "Conservatives",
+        "pos": "PROPN",
+        "relation": "nmod"
+      },
+      {
+        "id": 20,
+        "text": "Jagmeet",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 21,
+        "text": "Singh",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 24,
+        "text": "NDP",
+        "pos": "PROPN",
+        "relation": "nmod"
+      },
+      {
+        "id": 26,
+        "text": "Yves",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 28,
+        "text": "François",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 29,
+        "text": "Blanchet",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 32,
+        "text": "Bloc",
+        "pos": "PROPN",
+        "relation": "nmod"
+      },
+      {
+        "id": 33,
+        "text": "Québécois",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 36,
+        "text": "Green",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 38,
+        "text": "co-leaders",
+        "pos": "NOUN",
+        "relation": "conj"
+      },
+      {
+        "id": 39,
+        "text": "Elizabeth",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 40,
+        "text": "May",
+        "pos": "PROPN",
+        "relation": "flat"
+      },
+      {
+        "id": 42,
+        "text": "Jonathan",
+        "pos": "PROPN",
+        "relation": "conj"
+      },
+      {
+        "id": 43,
+        "text": "Pedneault",
+        "pos": "PROPN",
+        "relation": "flat"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1747",
+    "text": "Title of video: 'Trump announces 10% baseline tariff, reciprocal tariff on some nations'.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Title",
+        "pos": "NOUN",
+        "relation": "root"
+      },
+      {
+        "id": 3,
+        "text": "video",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1751",
+    "text": "President Trump mentions he could have implemented a full reciprocal but chose to do only half.",
+    "missing": [
+      {
+        "id": 15,
+        "text": "only",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1754",
+    "text": "China tariffs the USA 67%, USA will reciprocate with 34%; currency manipulation and trade barriers from China.",
+    "missing": [
+      {
+        "id": 15,
+        "text": "currency",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 16,
+        "text": "manipulation",
+        "pos": "NOUN",
+        "relation": "conj"
+      },
+      {
+        "id": 18,
+        "text": "trade",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 19,
+        "text": "barriers",
+        "pos": "NOUN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1756",
+    "text": "The President says the European Union (EU) is very friendly but they rip the USA off.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "EU",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1757",
+    "text": "EU tariffs the USA 39%, USA will reciprocate with 20%.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "EU",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 2,
+        "text": "tariffs",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      },
+      {
+        "id": 5,
+        "text": "39",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1759",
+    "text": "Taiwan, took USA computer chips and semiconductors says Trump, tariffs the USA 64%, USA will reciprocate with 32%.",
+    "missing": [
+      {
+        "id": 12,
+        "text": "tariffs",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 15,
+        "text": "64",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1762",
+    "text": "Video cuts and shows Trump without chart talking about how disproportionate and unfair the numbers are.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "cuts",
+        "pos": "NOUN",
+        "relation": "root"
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1763",
+    "text": "Trump says minimum baseline tariff of 10% to help rebuild the USA economy and prevent cheating; 10 year jail sentence for mishandling at the gate.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "10",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 19,
+        "text": "10",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 20,
+        "text": "year",
+        "pos": "NOUN",
+        "relation": "nmod:npmod"
+      },
+      {
+        "id": 21,
+        "text": "jail",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 22,
+        "text": "sentence",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 24,
+        "text": "mishandling",
+        "pos": "NOUN",
+        "relation": "nmod"
+      },
+      {
+        "id": 27,
+        "text": "gate",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1766",
+    "text": "Building housing Kantipur Publications in Kathmandu on fire.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "fire",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1769",
+    "text": "Kantipur Publications, the publisher of Kantipur and The Kathmandu Post, is based in the building.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "publisher",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 10,
+        "text": "Kathmandu",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 11,
+        "text": "Post",
+        "pos": "PROPN",
+        "relation": "conj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1779",
+    "text": "Lots of damage, all windows broken, but fire seems mostly put out except for 1 room.",
+    "missing": [
+      {
+        "id": 1,
+        "text": "Lots",
+        "pos": "NOUN",
+        "relation": "root"
+      },
+      {
+        "id": 3,
+        "text": "damage",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1816",
+    "text": "Footage in background of building Singha Durbar (the seat of the Nepali government) on fire.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "seat",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 13,
+        "text": "Nepali",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 14,
+        "text": "government",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1829",
+    "text": "Footage of burned debris, overturned and burned cars.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "debris",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1830",
+    "text": "The video depicts a map of Los Angeles and some of the surrounding area.",
+    "missing": [
+      {
+        "id": 13,
+        "text": "surrounding",
+        "pos": "VERB",
+        "relation": "amod"
+      },
+      {
+        "id": 14,
+        "text": "area",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1844",
+    "text": "The footage shows Los Angeles, CA.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "CA",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1867",
+    "text": "Video opens with a news anchor, Andy Riesmeyer, who describes putting a phone on the roof of his car on April 21, 2020 and then driving up PCH (Pacific Coast Highway) to record it.",
+    "missing": [
+      {
+        "id": 33,
+        "text": "Pacific",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 34,
+        "text": "Coast",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 35,
+        "text": "Highway",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1869",
+    "text": "The video transitions to footage of PCH and its environs with a new voiceover from Andy Riesmeyer, the news anchor.",
+    "missing": [
+      {
+        "id": 20,
+        "text": "news",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 21,
+        "text": "anchor",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1873",
+    "text": "The video shows side-by-side footage of the PCH on April 21, 2020 (on the left; the first filming) and on January 23, 2025 (on the right; the second filming).",
+    "missing": [
+      {
+        "id": 14,
+        "text": "April",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 15,
+        "text": "21",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 17,
+        "text": "2020",
+        "pos": "NUM",
+        "relation": "nmod:tmod"
+      },
+      {
+        "id": 21,
+        "text": "left",
+        "pos": "NOUN",
+        "relation": "nmod"
+      },
+      {
+        "id": 24,
+        "text": "first",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 25,
+        "text": "filming",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 29,
+        "text": "January",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 30,
+        "text": "23",
+        "pos": "NUM",
+        "relation": "conj"
+      },
+      {
+        "id": 32,
+        "text": "2025",
+        "pos": "NUM",
+        "relation": "nmod:tmod"
+      },
+      {
+        "id": 36,
+        "text": "right",
+        "pos": "NOUN",
+        "relation": "nmod"
+      },
+      {
+        "id": 39,
+        "text": "second",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 40,
+        "text": "filming",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1874",
+    "text": "In the earlier footage, the road is clear and the vegetation on the side of the road is healthy.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "earlier",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 4,
+        "text": "footage",
+        "pos": "NOUN",
+        "relation": "obl"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1875",
+    "text": "In the later footage, the road is covered in traffic cones and the vegetation looks burnt.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "later",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 4,
+        "text": "footage",
+        "pos": "NOUN",
+        "relation": "obl"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1885",
+    "text": "Homes starting at the block of 19000 PCH were destroyed by the fire.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "19000",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 8,
+        "text": "PCH",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1888",
+    "text": "Moonshadows, a restaurant along the PCH, was destroyed by the fire.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "restaurant",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 7,
+        "text": "PCH",
+        "pos": "PROPN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1900",
+    "text": "The heatmap covers a period of 4 hours on January 7, 2025.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "January",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 11,
+        "text": "7",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 13,
+        "text": "2025",
+        "pos": "NUM",
+        "relation": "nmod:tmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1905",
+    "text": "Different stills are shown, presumably from different time points.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "presumably",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1909",
+    "text": "On-screen text states fire grew from 2,921 acres to over 16,000 acres in less than 8 hours on January 8th, 2025.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "screen",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 4,
+        "text": "text",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 5,
+        "text": "states",
+        "pos": "NOUN",
+        "relation": "compound"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1913",
+    "text": "The before-to-after transitions show healthy, vibrant stretches of coast with homes scattering the beach.",
+    "missing": [
+      {
+        "id": 9,
+        "text": "healthy",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 11,
+        "text": "vibrant",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 12,
+        "text": "stretches",
+        "pos": "NOUN",
+        "relation": "obj"
+      },
+      {
+        "id": 14,
+        "text": "coast",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1945",
+    "text": "V-LATs (Very Large Air Tankers) are assisting ground crews in combatting the fire in Mandeville Canyon.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "Very",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 6,
+        "text": "Large",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 7,
+        "text": "Air",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 8,
+        "text": "Tankers",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1968",
+    "text": "The Palisades Fire is one of the most destructive in California's history.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "most",
+        "pos": "ADV",
+        "relation": "advmod"
+      },
+      {
+        "id": 9,
+        "text": "destructive",
+        "pos": "ADJ",
+        "relation": "nmod"
+      },
+      {
+        "id": 11,
+        "text": "California",
+        "pos": "PROPN",
+        "relation": "nmod:poss"
+      },
+      {
+        "id": 13,
+        "text": "history",
+        "pos": "NOUN",
+        "relation": "obl"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1989",
+    "text": "Rinderknecht's phone signal was attested seconds after the flames erupted.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "seconds",
+        "pos": "NOUN",
+        "relation": "obl:tmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1995",
+    "text": "The brush fire that Rinderknecht set was seemingly quickly extinguished by firefighters.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "Rinderknecht",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 6,
+        "text": "set",
+        "pos": "NOUN",
+        "relation": "acl:relcl"
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1999",
+    "text": "Kenny Cooper explains that a holdover fire is 'deeply seeded in vegetation and roots'.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "holdover",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 7,
+        "text": "fire",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2032",
+    "text": "Shaolin Cultural Centers have been established in Berlin, Germany.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "Germany",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2033",
+    "text": "Shaolin Cultural Centers have been established in London, UK.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "UK",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2040",
+    "text": "Shi Yongxin's income exceeds 100 million RMB.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "100",
+        "pos": "NUM",
+        "relation": "compound"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2090",
+    "text": "Shi Yongxin was arrested on suspicion of duty encroachment (embezzlement).",
+    "missing": [
+      {
+        "id": 11,
+        "text": "embezzlement",
+        "pos": "NOUN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2095",
+    "text": "Shi Yongxin is described as simply a business executive.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "simply",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2096",
+    "text": "Tourists are charged a fee for practically everything they do inside the temple.",
+    "missing": [
+      {
+        "id": 7,
+        "text": "practically",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2102",
+    "text": "After the Shaolin Temple movie exploded in popularity, people from all over the country flocked to the temple to visit.",
+    "missing": [
+      {
+        "id": 12,
+        "text": "all",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2109",
+    "text": "'Qian Dan' refers to the expulsion of a monk from a monastery for violating religious vows.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "expulsion",
+        "pos": "NOUN",
+        "relation": "obl"
+      },
+      {
+        "id": 11,
+        "text": "monk",
+        "pos": "NOUN",
+        "relation": "nmod"
+      },
+      {
+        "id": 14,
+        "text": "monastery",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2114",
+    "text": "Therefore, the expulsion of Shi Yongxin is considered invalid.",
+    "missing": [
+      {
+        "id": 4,
+        "text": "expulsion",
+        "pos": "NOUN",
+        "relation": "nsubj:pass"
+      },
+      {
+        "id": 6,
+        "text": "Shi",
+        "pos": "PROPN",
+        "relation": "nmod"
+      },
+      {
+        "id": 7,
+        "text": "Yongxin",
+        "pos": "PROPN",
+        "relation": "flat"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2138",
+    "text": "The Shaolin Temple scenic area generates annual revenue of 300 million RMB.",
+    "missing": [
+      {
+        "id": 10,
+        "text": "300",
+        "pos": "NUM",
+        "relation": "compound"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2139",
+    "text": "Shi Yongxin's business tactics earned him the nickname 'The CEO Abbot.'",
+    "missing": [
+      {
+        "id": 12,
+        "text": "CEO",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 13,
+        "text": "Abbot",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2148",
+    "text": "In 2022, a company under Shi Yongxin won a bid for a plot of commercial land for 450 million RMB.",
+    "missing": [
+      {
+        "id": 19,
+        "text": "450",
+        "pos": "NUM",
+        "relation": "compound"
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2161",
+    "text": "Shi Yongxin has been described as acting more like a corporate CEO.",
+    "missing": [
+      {
+        "id": 8,
+        "text": "more",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2176",
+    "text": "The wind speed appears sufficient to force adults to crawl.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "wind",
+        "pos": "NOUN",
+        "relation": "compound"
+      },
+      {
+        "id": 3,
+        "text": "speed",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2177",
+    "text": "The conditions appear dangerous to be outside in.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "conditions",
+        "pos": "NOUN",
+        "relation": "nsubj"
+      },
+      {
+        "id": 4,
+        "text": "dangerous",
+        "pos": "ADJ",
+        "relation": "xcomp"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2191",
+    "text": "Northern regions are expected to experience high temperatures of 35°C to 36°C the following day before afternoon rain begins.",
+    "missing": [
+      {
+        "id": 16,
+        "text": "following",
+        "pos": "VERB",
+        "relation": "amod"
+      },
+      {
+        "id": 17,
+        "text": "day",
+        "pos": "NOUN",
+        "relation": "obl:tmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2199",
+    "text": "A direct impact on Taiwan is considered unlikely.",
+    "missing": [
+      {
+        "id": 2,
+        "text": "direct",
+        "pos": "ADJ",
+        "relation": "amod"
+      },
+      {
+        "id": 3,
+        "text": "impact",
+        "pos": "NOUN",
+        "relation": "nsubj:pass"
+      },
+      {
+        "id": 5,
+        "text": "Taiwan",
+        "pos": "PROPN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2205",
+    "text": "The European Model (ECMWF) predicts a westward path for the storm.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "ECMWF",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2207",
+    "text": "The American Model (GFS) predicts a path curving closer to Taiwan.",
+    "missing": [
+      {
+        "id": 5,
+        "text": "GFS",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2215",
+    "text": "Western and Northern Taiwan are expected to see only occasional afternoon thunderstorms over the weekend.",
+    "missing": [
+      {
+        "id": 9,
+        "text": "only",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2240",
+    "text": "The narrator reports 49 people total were on board.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "total",
+        "pos": "ADJ",
+        "relation": "acl"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2265",
+    "text": "Scaffolding attached to a skyscraper peels off and collapses in North Point, Hong Kong.",
+    "missing": [
+      {
+        "id": 14,
+        "text": "Hong",
+        "pos": "PROPN",
+        "relation": "compound"
+      },
+      {
+        "id": 15,
+        "text": "Kong",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2283",
+    "text": "Typhoon Wipha made landfall with wind force level 12.",
+    "missing": [
+      {
+        "id": 9,
+        "text": "12",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2324",
+    "text": "The dashcam footage has a visible timestamp of 2025/07/20 09:54.",
+    "missing": [
+      {
+        "id": 9,
+        "text": "2025/07/20",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 10,
+        "text": "09:54",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2343",
+    "text": "A reporter in Zhuhai, Guangdong is shown wearing a white raincoat.",
+    "missing": [
+      {
+        "id": 6,
+        "text": "Guangdong",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2346",
+    "text": "The delays and cancellations at Shenzhen airport are expected to last two to three days.",
+    "missing": [
+      {
+        "id": 14,
+        "text": "three",
+        "pos": "NUM",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2347",
+    "text": "The video is reported by 'China Blue News' (ZMC).",
+    "missing": [
+      {
+        "id": 12,
+        "text": "ZMC",
+        "pos": "PROPN",
+        "relation": "appos"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2350",
+    "text": "Wipha is moving northwest at a speed of 20-25 km/h.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "25",
+        "pos": "NUM",
+        "relation": "nmod"
+      },
+      {
+        "id": 14,
+        "text": "h",
+        "pos": "NUM",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2362",
+    "text": "The reporter notes that rainfall intensity in some of these areas may be historically rare for this time of year.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "areas",
+        "pos": "NOUN",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2369",
+    "text": "2 to 3 more typhoons are expected to make landfall in China in the future.",
+    "missing": [
+      {
+        "id": 3,
+        "text": "3",
+        "pos": "NUM",
+        "relation": "nmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2371",
+    "text": "On-screen text at the end of the video names an upcoming storm as Typhoon No. 8 'Co-May.'",
+    "missing": [
+      {
+        "id": 17,
+        "text": "No.",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 18,
+        "text": "8",
+        "pos": "NUM",
+        "relation": "nummod"
+      },
+      {
+        "id": 20,
+        "text": "Co",
+        "pos": "PROPN",
+        "relation": "appos"
+      },
+      {
+        "id": 22,
+        "text": "May",
+        "pos": "PROPN",
+        "relation": "flat"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2377",
+    "text": "The collapsed scaffolding crushed multiple vehicles in a housing estate below.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "below",
+        "pos": "ADV",
+        "relation": "advmod"
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2428",
+    "text": "The forecast expected the signal to be lowered to Signal No. 3 after 7:00 PM.",
+    "missing": [
+      {
+        "id": 11,
+        "text": "No.",
+        "pos": "NOUN",
+        "relation": "appos"
+      },
+      {
+        "id": 12,
+        "text": "3",
+        "pos": "NUM",
+        "relation": "nummod"
+      }
+    ]
+  }
+]

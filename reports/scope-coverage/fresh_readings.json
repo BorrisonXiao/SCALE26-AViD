@@ -1,0 +1,166 @@
+{
+  "provenance": "Compiler-author assistant claim-only readings saved after code freeze and before inspecting fresh compiled outputs. Not human gold.",
+  "saved_at": "2026-11-05T07:09:51.516331+00:00",
+  "cases": [
+    {
+      "claim_id": "T2EE72iNELEs_189",
+      "text": "Text on the screen: \"Views by Starlink\".",
+      "intended_meaning": "The screen contains the exact text Views by Starlink.",
+      "participants_and_scope": "OCR wording is asserted, not the independent truth of a Starlink attribution.",
+      "quantity_and_time": "No date or quantity.",
+      "ambiguity": "Screen visibility/text is explicit."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_270",
+      "text": "Driving into haboob turns day into darkness.",
+      "intended_meaning": "Driving into a haboob causes daytime surroundings to become dark.",
+      "participants_and_scope": "Keep driving, entering the haboob and the resulting darkening linked; no driver identity supplied.",
+      "quantity_and_time": "Daytime changes to darkness; no clock time.",
+      "ambiguity": "May describe a generic effect or the current scene; do not invent a driver or literal nightfall."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_477",
+      "text": "There is crowd cheering at the people entering the National Palace .",
+      "intended_meaning": "A crowd cheers at people entering the National Palace.",
+      "participants_and_scope": "The entering people are the target of cheering; entry is linked to those people.",
+      "quantity_and_time": "Cheering and entering overlap in the described scene.",
+      "ambiguity": "No cheering words or identities specified."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_82",
+      "text": "Dogs were airlifted to safety in the storm's aftermath.",
+      "intended_meaning": "Dogs were transported by air to safety after the storm.",
+      "participants_and_scope": "Dogs are the transported participants; the storm aftermath supplies temporal context.",
+      "quantity_and_time": "Past passive airlifting.",
+      "ambiguity": "No carrier or rescuer is stated."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_468",
+      "text": "We can see a protester holding the Mexican flag suddenly get attacked by the police.",
+      "intended_meaning": "We see police suddenly attacking a protester who holds the Mexican flag.",
+      "participants_and_scope": "Police attack the flag-holding protester; the attack is visual content of see.",
+      "quantity_and_time": "Sudden attack; holding accompanies the described protester.",
+      "ambiguity": "No independent police identity or completed injury is stated."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_601",
+      "text": "There are organized tents set up.",
+      "intended_meaning": "Organized tents are present in a set-up state.",
+      "participants_and_scope": "The organization and set-up apply to the same tents.",
+      "quantity_and_time": "Plural tents; current resulting state.",
+      "ambiguity": "No organizer or precise count is given."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_656",
+      "text": "A banner reading \"Together with the SSS, Russia\" is visible.",
+      "intended_meaning": "A visible banner bears the exact text Together with the SSS, Russia.",
+      "participants_and_scope": "Banner visibility and its OCR text must both be retained.",
+      "quantity_and_time": "No time or quantity.",
+      "ambiguity": "The slogan does not certify a world relationship between named parties."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_603",
+      "text": "People are gathered in Mount Arafat.",
+      "intended_meaning": "People are gathered at Mount Arafat.",
+      "participants_and_scope": "Gathered people share the named location.",
+      "quantity_and_time": "Plural people; present state.",
+      "ambiguity": "No number or identities given."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_310",
+      "text": "Timelapse of incoming massive dust storm.",
+      "intended_meaning": "A timelapse depicts a massive dust storm approaching.",
+      "participants_and_scope": "The incoming storm is timelapse content and retains massive/dust.",
+      "quantity_and_time": "Incoming movement; no exact interval.",
+      "ambiguity": "No independent world claim beyond the depicted content is supplied."
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_687",
+      "text": "There are 2 black helicopters flying in the same direction in close proximity. ",
+      "intended_meaning": "Two black helicopters fly in the same direction close to one another.",
+      "participants_and_scope": "Count, black color, shared direction and mutual proximity concern those same helicopters.",
+      "quantity_and_time": "Two helicopters, ongoing flight.",
+      "ambiguity": "No absolute direction or distance is specified."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1767",
+      "text": "Kantipur and Kathmandu Post Office Building set on fire.",
+      "intended_meaning": "Kantipur and Kathmandu Post Office Building have been set on fire.",
+      "participants_and_scope": "Preserve both named targets and passive fire setting.",
+      "quantity_and_time": "The fragment leaves precise tense and progress unclear.",
+      "ambiguity": "Kantipur may be a named institution/building; do not invent arsonists or resolve that ambiguity silently."
+    },
+    {
+      "claim_id": "T8u81WMIyj18_755",
+      "text": "The car is parked at 1:53am on August 19th, 2025.",
+      "intended_meaning": "The car is parked at 1:53am on August 19th, 2025.",
+      "participants_and_scope": "The full clock and date modify the parked state.",
+      "quantity_and_time": "1:53am, August19th2025; timezone unspecified.",
+      "ambiguity": "No driver or location is supplied."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_595",
+      "text": "Fans are calling the Phillies fan Karen a Karen.",
+      "intended_meaning": "Fans call the Phillies fan named Karen a Karen.",
+      "participants_and_scope": "The same named fan is the target; a Karen is a label used by fans.",
+      "quantity_and_time": "Calling is ongoing; no count.",
+      "ambiguity": "Keep the personal name distinct from the label; do not assert that label as an independent trait."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_225",
+      "text": "Man driving vehicle.",
+      "intended_meaning": "A man is driving a vehicle.",
+      "participants_and_scope": "Man is driver, vehicle is driven.",
+      "quantity_and_time": "Present participial fragment.",
+      "ambiguity": "No medium, name or destination is stated."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_209",
+      "text": "Smoke erupts as rocket lands.",
+      "intended_meaning": "Smoke erupts while a rocket lands.",
+      "participants_and_scope": "Keep both events and their temporal as relationship.",
+      "quantity_and_time": "Concurrent events; no date.",
+      "ambiguity": "As need not imply that landing caused the smoke."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_256",
+      "text": "Flights might be cancelled due to dust storm.",
+      "intended_meaning": "Flights might be cancelled because of a dust storm.",
+      "participants_and_scope": "Possibility applies to cancellation; the storm supplies the proposed cause.",
+      "quantity_and_time": "Modal possible cancellation, not an asserted actual cancellation.",
+      "ambiguity": "No airline, actor or date is stated."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_668",
+      "text": "Loud explosive sound due to fireworks.",
+      "intended_meaning": "A loud explosive sound is caused by fireworks.",
+      "participants_and_scope": "Loud/explosive describe the sound; fireworks are its cause.",
+      "quantity_and_time": "No clock or count.",
+      "ambiguity": "A sound description does not by itself require visible fireworks."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_216",
+      "text": "Dust storm may affect electric service in the area.",
+      "intended_meaning": "A dust storm may affect electric service in the area.",
+      "participants_and_scope": "Possible effect relates that storm to local electric service.",
+      "quantity_and_time": "Possibility, not an asserted outage.",
+      "ambiguity": "The area and exact effect are unspecified."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_610",
+      "text": "A man wearing a vest reading \"Hajj and Umrah Services Association and Pilgrims\" is visible.",
+      "intended_meaning": "A visible man wears a vest bearing the exact text Hajj and Umrah Services Association and Pilgrims.",
+      "participants_and_scope": "Visibility, man-vest relation and vest OCR text all matter.",
+      "quantity_and_time": "No time or count.",
+      "ambiguity": "The text need not be spoken or independently true about an organization."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_632",
+      "text": "Bright sun over a man praying.",
+      "intended_meaning": "A bright sun is above a praying man.",
+      "participants_and_scope": "Brightness modifies the sun, praying modifies the man, and over supplies a spatial link.",
+      "quantity_and_time": "Ongoing praying; no clock.",
+      "ambiguity": "No location or independent speech is stated."
+    }
+  ]
+}
