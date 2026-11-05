@@ -247,7 +247,7 @@
           "done": true
         },
         {
-          "text": "Bound and profile larger programs \u2014 establish practical inference and learning cost before expanding media work",
+          "text": "Deferred: bound and profile larger programs \u2014 establish practical inference cost after the compilation work",
           "done": false
         }
       ],
@@ -256,22 +256,38 @@
     {
       "id": 15,
       "title": "Recover coverage and repair remaining structures",
-      "status": "proposed after the frozen scope/content review",
+      "status": "bounded omission and clause/source repairs completed; remaining cases and references stay explicit",
       "items": [
         {
-          "text": "Repair recurring apposition, numeric and nominal-description alerts \u2014 recover useful coverage instead of accumulating refusals",
-          "done": false
+          "text": "Implement and test recurring apposition/numeric recovery \u2014 retain qualifiers, bounds, ranges and source values",
+          "done": true
         },
         {
-          "text": "Handle opaque clauses and source/label boundaries \u2014 catch structural errors that lexical coverage misses",
-          "done": false
+          "text": "Repair selected hidden clauses and source/label boundaries \u2014 retain their relationships and request review for unresolved cases",
+          "done": true
         },
         {
-          "text": "Resolve local pronouns \u2014 retain the intended participant identity, including dolly/it",
+          "text": "Deferred: consider local references with a later rewrite layer \u2014 preserve participant identity after checking that the rewrite retains meaning",
           "done": false
         }
       ],
-      "note": "These are proposed next steps, not new experiments. Keep larger-program profiling pending in the preceding stage and media/training deferred. No LLM sentence rewriting."
+      "note": "content_recovery_20261105: all2,375 rerun;1,866 pass checks,2,103 executable candidates,35 newly pass and8 earlier accepts require structural review.259 tests pass;80 program hashes change.28 plain-language demos include14 earlier cases. New20 review programs/statuses unchanged; no generalization gain claimed. References, large-program profiling and rewriting remain deferred."
+    },
+    {
+      "id": 16,
+      "title": "Review the demos and bound the remaining compiler work",
+      "status": "proposed next steps; no new experiments started",
+      "items": [
+        {
+          "text": "Review the plain-language requirements and partial examples \u2014 agree what the current compiler can safely express",
+          "done": false
+        },
+        {
+          "text": "Choose a bounded next set from the remaining227 lexical alerts,8 hidden clauses and2 lists \u2014 recover useful coverage or retain an explicit refusal",
+          "done": false
+        }
+      ],
+      "note": "A future rewrite is an option for difficult cases, with meaning-preservation checks. It is not implemented or assumed to resolve every reference or inference-cost issue."
     },
     {
       "id": 8,
@@ -400,7 +416,7 @@
       ]
     }
   ],
-  "intro": "Current scope/content revision:11 programs changed across2,375 original claims. All2,099 executable candidates remain;1,839 pass lexical coverage,260 require review and276 earlier refusals remain. Passing coverage is not semantic accuracy; fresh review exposes remaining structural errors.",
+  "intro": "Current content recovery and demos:1,866/2,375 original claims pass compilation checks, versus1,839 before;2,103 executable candidates, versus2,099. Passing checks is not semantic accuracy. The28 simple demos include earlier fixes and show partial cases. References, large-program profiling and rewriting are deferred.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -443,5 +459,6 @@
   "agent_review_run": "exp/probabilistic_verification/agent_review_20261101",
   "review_followup_run": "exp/probabilistic_verification/review_followup_20261104",
   "reviewed_compilation_run": "exp/probabilistic_verification/compiler_revision_20261105",
-  "scope_coverage_run": "exp/probabilistic_verification/scope_coverage_20261105"
+  "scope_coverage_run": "exp/probabilistic_verification/scope_coverage_20261105",
+  "content_recovery_run": "exp/probabilistic_verification/content_recovery_20261105"
 }

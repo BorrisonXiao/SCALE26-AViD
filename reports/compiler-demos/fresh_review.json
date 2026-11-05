@@ -1,0 +1,275 @@
+{
+  "provenance": "Compiler-author assistant qualitative review, not human gold or corpus accuracy. Readings saved before current paired output inspection; one known prior diagnostic explicitly marked.",
+  "counts": {
+    "faithful": 17,
+    "partial": 2,
+    "incorrect": 1
+  },
+  "counts_excluding_known_diagnostic": {
+    "faithful": 16,
+    "partial": 2,
+    "incorrect": 1
+  },
+  "cases": [
+    {
+      "claim_id": "TW4OYA3RN-Hw_1788",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Full overlay wording remains exact OCR content; fire and crowd events are not separately projected."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Full overlay wording remains exact OCR content; fire and crowd events are not separately projected."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_249",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains the exact named fragment without inventing an event or evidence medium."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains the exact named fragment without inventing an event or evidence medium."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_251",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains the view-from-roof and roof-of-hospital relationships."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains the view-from-roof and roof-of-hospital relationships."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TInVWzp25aIM_30",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains floating home, away direction and the during-typhoon time condition."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains floating home, away direction and the during-typhoon time condition."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_263",
+      "before": {
+        "judgment": "partial",
+        "reason": "Keeps the location and appearance clause, but this/it/what remain separate unresolved references and the WH-content connection is incomplete."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "Keeps the location and appearance clause, but this/it/what remain separate unresolved references and the WH-content connection is incomplete."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_220",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains huge dust wall and its movement across a town."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains huge dust wall and its movement across a town."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_134",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Stopping stays asserted and avoidance stays a purpose; falling describes the containers."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Stopping stays asserted and avoidance stays a purpose; falling describes the containers."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_252",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Aerial footage owns the depicted incoming storm."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Aerial footage owns the depicted incoming storm."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_305",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains on as the particle of come and the storm time condition."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains on as the particle of come and the storm time condition."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_634",
+      "before": {
+        "judgment": "incorrect",
+        "reason": "With each other still becomes an unlinked other entity; the reciprocal fix does not cover this prepositional argument."
+      },
+      "after": {
+        "judgment": "incorrect",
+        "reason": "With each other still becomes an unlinked other entity; the reciprocal fix does not cover this prepositional argument."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_307",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains the intended storm-approach relationship and modifiers under the declared tentative interpretation of the malformed source."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains the intended storm-approach relationship and modifiers under the declared tentative interpretation of the malformed source."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_621",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Approximate77 remains under seem/fit capacity content, not actual occupancy. This case was inspected in an earlier diagnostic."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Approximate77 remains under seem/fit capacity content, not actual occupancy. This case was inspected in an earlier diagnostic."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": true
+    },
+    {
+      "claim_id": "T2EE72iNELEs_196",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Spectator speech keeps the exact original here is goes wording."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Spectator speech keeps the exact original here is goes wording."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_664",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains musical performance and its stage location as a nominal description."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains musical performance and its stage location as a nominal description."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_698",
+      "before": {
+        "judgment": "faithful",
+        "reason": "The speech giver and microphone user share the same man."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "The speech giver and microphone user share the same man."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "T2EE72iNELEs_195",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains rocket launch with clear-sky conditions without adding a success outcome."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains rocket launch with clear-sky conditions without adding a success outcome."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_228",
+      "before": {
+        "judgment": "partial",
+        "reason": "Inclusive alternatives remain explicit, but the haboob branch loses huge and does not encode the likely explanatory same-entity reading."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "Inclusive alternatives remain explicit, but the haboob branch loses huge and does not encode the likely explanatory same-entity reading."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_235",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains extremely low visibility and its dust-storm time condition."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains extremely low visibility and its dust-storm time condition."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_229",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains Arizona and dust as modifiers of the storm; the geographic interpretation still depends on the relation verifier."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains Arizona and dust as modifiers of the storm; the geographic interpretation still depends on the relation verifier."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_309",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Timelapse/video depiction contains racing with leaving as a goal and ahead-of-storm timing."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Timelapse/video depiction contains racing with leaving as a goal and ahead-of-storm timing."
+      },
+      "program_unchanged": true,
+      "previous_diagnostic": false
+    }
+  ]
+}

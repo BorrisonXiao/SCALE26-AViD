@@ -1,0 +1,13 @@
+{
+  "reason": "Legacy demo inspection found that next was already translated in obl:next_to but still flagged by the lexical audit.",
+  "development_case": "TLO3smKI67PM_554",
+  "change": "Credit source-anchored grammatical relation words on their actual governing event. No parse/semantic generation change.",
+  "fresh_outputs_used_for_change": false,
+  "first_freeze_preserved": true,
+  "affected_claims": [
+    "TLO3smKI67PM_554",
+    "TLO3smKI67PM_585"
+  ],
+  "all_program_hashes_unchanged": true,
+  "fresh_outputs_and_statuses_unchanged": true
+}

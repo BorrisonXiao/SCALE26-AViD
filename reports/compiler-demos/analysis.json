@@ -1,0 +1,79 @@
+{
+  "total": 2375,
+  "before_accepted": 1839,
+  "accepted": 1866,
+  "before_executable": 2099,
+  "executable": 2103,
+  "new_executable": [
+    "T2EE72iNELEs_189",
+    "T2G_ACMxR_I4_1430",
+    "TFgw4IaR9R8s_1582",
+    "TQKCK6-tRaoE_656"
+  ],
+  "lost_executable": 0,
+  "recovered": 35,
+  "new_review_flags": 8,
+  "changed_programs": 80,
+  "refusal_reasons": {
+    "negative_quantifier": 10,
+    "coverage_omission": 227,
+    "unresolved_clause": 109,
+    "duplicate_role": 59,
+    "missing_srl": 11,
+    "nominal_disjunction": 8,
+    "mention_alignment": 3,
+    "predicate_type": 8,
+    "quantity_type": 3,
+    "missing_predicate": 35,
+    "opaque_clause": 8,
+    "modal_scope": 16,
+    "threshold_scope": 2,
+    "polarity_omission": 2,
+    "incomplete_enumeration": 2,
+    "temporal_scope": 2,
+    "unresolved_controller": 1,
+    "media_modifier": 3
+  },
+  "kinds": {
+    "mention": 142,
+    "claim": 1724
+  },
+  "previous_alert_outcomes": {
+    "coverage_omission": 226,
+    "accepted": 32,
+    "incomplete_enumeration": 2
+  },
+  "unchanged_user_faithful": 11,
+  "fresh_changed": 0,
+  "fresh_review": {
+    "faithful": 17,
+    "partial": 2,
+    "incorrect": 1
+  },
+  "fresh_review_excluding_prior_diagnostic": {
+    "faithful": 16,
+    "partial": 2,
+    "incorrect": 1
+  },
+  "new_notes": {
+    "appositive_description": 24,
+    "visual_source_content": 2,
+    "temporal_clause_attachment": 10,
+    "on_screen_text_fragment": 1,
+    "explicit_temporal_as": 15,
+    "recovered_frame": 1,
+    "finite_temporal_clause": 1,
+    "exact_quotation": 2,
+    "printed_reading_frame": 2,
+    "elliptical_group_bound": 1,
+    "proper_name_apposition": 2,
+    "appositive_coordination": 4,
+    "predicative_label": 2,
+    "printed_source_route": 3,
+    "numeric_measurement": 9,
+    "predication": 1,
+    "printed_numeric_row": 9
+  },
+  "unexpected_errors": [],
+  "interpretation": "Passing compilation checks is distinct from semantic correctness. Recovered and changed outputs have no new human ratings."
+}

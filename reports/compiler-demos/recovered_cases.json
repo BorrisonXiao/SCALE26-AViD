@@ -1,0 +1,177 @@
+[
+  {
+    "claim_id": "TInVWzp25aIM_6",
+    "text": "The typhoon is impacting Kipnuk, Alaska.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_28",
+    "text": "The storm impacted Kipnuk, Alaska on October 12, 2025.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_31",
+    "text": "The typhoon impacted Kipnuk, Alaska on October 12, 2025.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_53",
+    "text": "Typhoon Halong hit Akiak, Alaska.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_55",
+    "text": "Residents of Akiak, Alaska hope prayers can help support those affected by Typhoon Halong.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_66",
+    "text": "The storm is affecting the west coast of Kipnuk, Alaska.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_70",
+    "text": "The storm is affecting Kipnuk, Alaska on October 12th, 2025.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_80",
+    "text": "The storm is affecting Kipnuk, Alaska on October 15th, 2025.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_94",
+    "text": "Typhoon Halong hit Kipnuk, Alaska.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_97",
+    "text": "Many homes in Kipnuk, Alaska were destroyed or moved off their foundations by Typhoon Halong.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_107",
+    "text": "Typhoon Halong impacted Kipnuk, Alaska.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_142",
+    "text": "It was a cloudy day in Long Beach, California.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "T2EE72iNELEs_189",
+    "text": "Text on the screen: \"Views by Starlink\".",
+    "before_code": "missing_srl"
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_268",
+    "text": "Sky Harbor International Airport, Phoenix Arizona.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_490",
+    "text": "\"Clashes injure at least 120, including 100 police officers.\"",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TLO3smKI67PM_554",
+    "text": "The home run lands in the stands, right next to Phillies fan Karen.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TLO3smKI67PM_560",
+    "text": "The Phillies fan Karen and the Phillies fan father seem to get into a heated argument.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TLO3smKI67PM_569",
+    "text": "The Phillies fan Karen and the Phillies fan father are arguing at a Philadelphia Phillies baseball game.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TLO3smKI67PM_585",
+    "text": "The home run lands into the stands, right next to Phillies fan Karen.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TQKCK6-tRaoE_656",
+    "text": "A banner reading \"Together with the SSS, Russia\" is visible.",
+    "before_code": "missing_predicate"
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_712",
+    "text": "The video was taken in seoul, south korea.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1093",
+    "text": "Firefly Mission Operations Center is located in Cedar Park, Texas.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1156",
+    "text": "A low lunar orbit is roughly 100 km above the Moon.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1285",
+    "text": "Blue Ghost was developed outside of Austin, Texas.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1430",
+    "text": "Blue Ghost's descent orbit insertion was around 100,000m from the moon's surface.",
+    "before_code": "mention_alignment"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1471",
+    "text": "The knots of flow ramped up overnight on the 3rd and into the 4th from 10-20 knots to 25-30 knots across central Texas.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1505",
+    "text": "These remnants can also be called an MCV (mesoscale convective vortex).",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1592",
+    "text": "Tariff poster shows: Taiwan 64% / 32%.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1593",
+    "text": "Tariff poster shows: Japan 46% / 24%.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1596",
+    "text": "Tariff poster shows: Thailand 72% / 36%.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1597",
+    "text": "Tariff poster shows: Switzerland 61% / 31%.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1888",
+    "text": "Moonshadows, a restaurant along the PCH, was destroyed by the fire.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2032",
+    "text": "Shaolin Cultural Centers have been established in Berlin, Germany.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2033",
+    "text": "Shaolin Cultural Centers have been established in London, UK.",
+    "before_code": "coverage_omission"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2265",
+    "text": "Scaffolding attached to a skyscraper peels off and collapses in North Point, Hong Kong.",
+    "before_code": "coverage_omission"
+  }
+]

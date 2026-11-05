@@ -1,0 +1,48 @@
+{
+  "claim_id": "TFgw4IaR9R8s_1596",
+  "provenance": "Actual DeepProbLog inference on constructed evidence. No media model or relation training was run.",
+  "cases": [
+    {
+      "ocr_state": "supported",
+      "speech_state": "supported",
+      "speech_only": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "combined": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      }
+    },
+    {
+      "ocr_state": "refuted",
+      "speech_state": "supported",
+      "speech_only": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "combined": {
+        "supported": 0.0,
+        "refuted": 1.0,
+        "unknown": 0.0
+      }
+    },
+    {
+      "ocr_state": "unknown",
+      "speech_state": "supported",
+      "speech_only": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "combined": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      }
+    }
+  ]
+}

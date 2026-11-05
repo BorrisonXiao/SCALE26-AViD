@@ -1,0 +1,108 @@
+{
+  "seed": 202611055,
+  "selection": "Twelve newly accepted cases sampled after the freeze; diagnostic assistant review, not semantic accuracy.",
+  "cases": [
+    {
+      "claim_id": "TLO3smKI67PM_560",
+      "text": "The Phillies fan Karen and the Phillies fan father seem to get into a heated argument.",
+      "before_code": "coverage_omission",
+      "judgment": "faithful",
+      "reason": "Both named/qualified participants now share the argument under seem; no actual argument is projected out of seem.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2032",
+      "text": "Shaolin Cultural Centers have been established in Berlin, Germany.",
+      "before_code": "coverage_omission",
+      "judgment": "faithful",
+      "reason": "Berlin/Germany qualifier restored; establishment and the center group remain linked.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1596",
+      "text": "Tariff poster shows: Thailand 72% / 36%.",
+      "before_code": "coverage_omission",
+      "judgment": "faithful",
+      "reason": "Both printed percentages retained under OCR, with no meanings assigned to the columns.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "TInVWzp25aIM_66",
+      "text": "The storm is affecting the west coast of Kipnuk, Alaska.",
+      "before_code": "coverage_omission",
+      "judgment": "faithful",
+      "reason": "Retains west coast of Kipnuk and its Alaska qualifier.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_712",
+      "text": "The video was taken in seoul, south korea.",
+      "before_code": "coverage_omission",
+      "judgment": "faithful",
+      "reason": "Retains the Seoul/South Korea qualifier on the video location.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1156",
+      "text": "A low lunar orbit is roughly 100 km above the Moon.",
+      "before_code": "coverage_omission",
+      "judgment": "faithful",
+      "reason": "Retains approximation,100km and the above-Moon relation without a group count.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1888",
+      "text": "Moonshadows, a restaurant along the PCH, was destroyed by the fire.",
+      "before_code": "coverage_omission",
+      "judgment": "faithful",
+      "reason": "Retains Moonshadows and its restaurant/along-PCH appositive description.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2265",
+      "text": "Scaffolding attached to a skyscraper peels off and collapses in North Point, Hong Kong.",
+      "before_code": "coverage_omission",
+      "judgment": "partial",
+      "reason": "Hong Kong is restored, but peeling/collapse remain inside a complement of the attached description rather than clearly representing the main assertion.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "TInVWzp25aIM_55",
+      "text": "Residents of Akiak, Alaska hope prayers can help support those affected by Typhoon Halong.",
+      "before_code": "coverage_omission",
+      "judgment": "faithful",
+      "reason": "Restores Alaska while keeping hope/ability content nested; those still requires context.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "TInVWzp25aIM_107",
+      "text": "Typhoon Halong impacted Kipnuk, Alaska.",
+      "before_code": "coverage_omission",
+      "judgment": "faithful",
+      "reason": "Retains the Kipnuk/Alaska qualifier on the impact target.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_268",
+      "text": "Sky Harbor International Airport, Phoenix Arizona.",
+      "before_code": "coverage_omission",
+      "judgment": "faithful",
+      "reason": "Retains the whole airport name and Phoenix Arizona qualifier; no unprovided city/state interpretation is hard-coded.",
+      "targeted_omission_retained": true
+    },
+    {
+      "claim_id": "TInVWzp25aIM_97",
+      "text": "Many homes in Kipnuk, Alaska were destroyed or moved off their foundations by Typhoon Halong.",
+      "before_code": "coverage_omission",
+      "judgment": "partial",
+      "reason": "Alaska is restored; the group-level OR still does not expose a mixed per-home destroyed/moved reading.",
+      "targeted_omission_retained": true
+    }
+  ],
+  "provenance": "Compiler-author assistant diagnostic review after freeze, not independent human accuracy. No compiler change follows.",
+  "counts": {
+    "faithful": 10,
+    "partial": 2
+  },
+  "targeted_omission_retained": 12
+}
