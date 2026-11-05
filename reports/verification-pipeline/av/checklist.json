@@ -176,7 +176,7 @@
     {
       "id": 12,
       "title": "Human reference review of 20 reserved claims",
-      "status": "independent agent draft completed; user review pending",
+      "status": "user reports twenty reviews completed; exported answers pending",
       "items": [
         {
           "text": "Reserve the review set before compiler changes — separate reference judgments from development examples",
@@ -191,7 +191,11 @@
           "done": true
         },
         {
-          "text": "Review and return human-confirmed readings and judgments — establish human feedback with agent assistance recorded",
+          "text": "Review all twenty reserved cases — user reports this is complete",
+          "done": true
+        },
+        {
+          "text": "Receive and validate the exported JSON — obtain the user’s actual answers from browser storage",
           "done": false
         },
         {
@@ -199,7 +203,35 @@
           "done": false
         }
       ],
-      "note": "Twenty GPT-6 Astra/xhigh draft readings and A/B assessments are complete. Readings were frozen before outputs were supplied; no prior reviews or method mapping were supplied. The editable draft starts with zero user confirmations. The separate blank form remains available. Zero actual human readings/comparisons received."
+      "note": "The user reports completing all20 cases. The export has not reached the project; do not repeat the review or substitute agent suggestions. Import and analysis await the actual JSON. Received human-response counts remain0."
+    },
+    {
+      "id": 13,
+      "title": "One focused compiler revision after the review",
+      "status": "preparation complete; fixes depend on the returned review",
+      "items": [
+        {
+          "text": "Reserve twenty fresh cases before changes — evaluate beyond the examples used for fixes",
+          "done": true
+        },
+        {
+          "text": "Validate paired analysis and refusal/uncertainty handling — prepare reliable review summaries",
+          "done": true
+        },
+        {
+          "text": "Analyze returned judgments and trace failures to parsing or conversion — select at most three recurring patterns",
+          "done": false
+        },
+        {
+          "text": "Implement focused fixes and contrasting checks; rerun all2,375 claims — measure coverage changes and remaining failures",
+          "done": false
+        },
+        {
+          "text": "Review the frozen fresh sample — decide whether compilation is ready for a small binding experiment",
+          "done": false
+        }
+      ],
+      "note": "Seeded selection:20 cases with mutually disjoint actual source-video groups, excluding129 recorded review sources and normalized duplicate texts;273 eligible claims. No semantic judgments, compiler changes or new corpus run yet. The analyzer preserves missing/uncertain answers and flags inconsistent ratings of identical outputs."
     },
     {
       "id": 8,
@@ -328,7 +360,7 @@
       ]
     }
   ],
-  "intro": "Current priority: preserve claim meaning and obtain human feedback. The scoped revision compiles 2,095/2,375 inputs, versus 2,108 previously; 15 old accepts are now refused and 2 old refusals compile. These are coverage outcomes, not accuracy. An independent agent has drafted the twenty reserved reviews for user correction; no human ratings have been received.",
+  "intro": "Current priority: use the completed user review to guide one focused compiler revision. The user reports reviewing all20 cases; the exported JSON is awaited. Twenty fresh cases and current outputs are frozen before fixes. The existing2,095/2,375 compilation count remains unchanged; preparation is not a new correctness result.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -368,5 +400,6 @@
   "srl_semantics_run": "srl_semantics_20261029",
   "compiler_followup_run": "compiler_followup_20261030",
   "scope_compilation_run": "scope_compilation_20261101",
-  "agent_review_run": "exp/probabilistic_verification/agent_review_20261101"
+  "agent_review_run": "exp/probabilistic_verification/agent_review_20261101",
+  "review_followup_run": "exp/probabilistic_verification/review_followup_20261104"
 }

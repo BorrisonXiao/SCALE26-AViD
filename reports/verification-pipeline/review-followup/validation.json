@@ -1,0 +1,12 @@
+{
+  "reserved": 20,
+  "reserved_source_groups": 21,
+  "eligible_claims": 273,
+  "excluded_review_sources": 129,
+  "source_overlaps": 0,
+  "compiler_changed": false,
+  "human_export_received": false,
+  "semantic_results": null,
+  "tests_passed": 6,
+  "analysis_cli_smoke_test": "Synthetic browser export, outputs kept only in /tmp; no human import performed."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "awaiting_review_export",
+  "user_reports_twenty_reviews_complete": true,
+  "human_export_received": false,
+  "fresh_cases_reserved": 20,
+  "compiler_changes_started": false,
+  "semantic_results": null,
+  "next_steps": [
+    "Receive and validate the completed export; analyze paired judgments and disagreements.",
+    "Trace confirmed failures and choose two or three recurring patterns.",
+    "Implement one bounded revision; rerun all 2375 claims and evaluate the reserved sample."
+  ]
+}
