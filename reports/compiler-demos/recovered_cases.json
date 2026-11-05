@@ -1,177 +1,466 @@
 [
   {
-    "claim_id": "TInVWzp25aIM_6",
-    "text": "The typhoon is impacting Kipnuk, Alaska.",
-    "before_code": "coverage_omission"
+    "claim_id": "TbJqMFkNxARY_165",
+    "text": "Between 67 and 75 boxes were spilled.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TInVWzp25aIM_28",
-    "text": "The storm impacted Kipnuk, Alaska on October 12, 2025.",
-    "before_code": "coverage_omission"
+    "claim_id": "TbJqMFkNxARY_176",
+    "text": "The U.S. Coast Guard 905 is one of the boats involved in the recovery operation.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TInVWzp25aIM_31",
-    "text": "The typhoon impacted Kipnuk, Alaska on October 12, 2025.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_315",
+    "text": "A robot is running down lane 2.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TInVWzp25aIM_53",
-    "text": "Typhoon Halong hit Akiak, Alaska.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_316",
+    "text": "The robot crosses over to lane 1 and collides with a bystander.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TInVWzp25aIM_55",
-    "text": "Residents of Akiak, Alaska hope prayers can help support those affected by Typhoon Halong.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_330",
+    "text": "Robot 1 stumbles to the side.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TInVWzp25aIM_66",
-    "text": "The storm is affecting the west coast of Kipnuk, Alaska.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_338",
+    "text": "Robot 1 comes back up behind the man to swing again.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TInVWzp25aIM_70",
-    "text": "The storm is affecting Kipnuk, Alaska on October 12th, 2025.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_339",
+    "text": "The man pushes Robot 1 back again with both hands.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TInVWzp25aIM_80",
-    "text": "The storm is affecting Kipnuk, Alaska on October 15th, 2025.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_341",
+    "text": "Robot 2 punches Robot 3 ",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TInVWzp25aIM_94",
-    "text": "Typhoon Halong hit Kipnuk, Alaska.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_345",
+    "text": "Robot 1 walks out of the ring",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TInVWzp25aIM_97",
-    "text": "Many homes in Kipnuk, Alaska were destroyed or moved off their foundations by Typhoon Halong.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_377",
+    "text": "Robot on lane 4 wins the race.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TInVWzp25aIM_107",
-    "text": "Typhoon Halong impacted Kipnuk, Alaska.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_385",
+    "text": "Robot 1 collides with the smaller Robot 2 ",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TbJqMFkNxARY_142",
-    "text": "It was a cloudy day in Long Beach, California.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_388",
+    "text": "Robot 1 crosses over the lanes and falls again.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "T2EE72iNELEs_189",
-    "text": "Text on the screen: \"Views by Starlink\".",
-    "before_code": "missing_srl"
+    "claim_id": "Tg0UxWYuPeJ0_424",
+    "text": "Robot 2 stumbles forward and gets caught in the ropes",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TzF9M4kZ3Pys_268",
-    "text": "Sky Harbor International Airport, Phoenix Arizona.",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_427",
+    "text": "The person lets Robot 2 fall on its back.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TFOEIehBwT8Q_490",
-    "text": "\"Clashes injure at least 120, including 100 police officers.\"",
-    "before_code": "coverage_omission"
+    "claim_id": "Tg0UxWYuPeJ0_429",
+    "text": "Robot 2 approaches Robot 1",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TLO3smKI67PM_554",
-    "text": "The home run lands in the stands, right next to Phillies fan Karen.",
-    "before_code": "coverage_omission"
+    "claim_id": "TQEmEycTI0RQ_803",
+    "text": "Host introduces David Aiken, chief political correspondent, at his touchscreen to explain how Liberals secured their minority government.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TLO3smKI67PM_560",
-    "text": "The Phillies fan Karen and the Phillies fan father seem to get into a heated argument.",
-    "before_code": "coverage_omission"
+    "claim_id": "TQEmEycTI0RQ_851",
+    "text": "Mark Carney (Liberal leader) announces they have asked the Governor General to dissolve Parliament and call an election, which she has agreed to.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TLO3smKI67PM_569",
-    "text": "The Phillies fan Karen and the Phillies fan father are arguing at a Philadelphia Phillies baseball game.",
-    "before_code": "coverage_omission"
+    "claim_id": "TQEmEycTI0RQ_863",
+    "text": "They list the main party leaders: Mark Carney of the Liberals, Pierre Poilievre of the Conservatives, Jagmeet Singh of the NDP, Yves-François Blanchet of the Bloc Québécois, and Green Party co-leaders Elizabeth May and Jonathan Pedneault, and show pictures of them.",
+    "before": "unsupported",
+    "before_code": "incomplete_enumeration",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TLO3smKI67PM_585",
-    "text": "The home run lands into the stands, right next to Phillies fan Karen.",
-    "before_code": "coverage_omission"
+    "claim_id": "TjHepwuhkYFA_1042",
+    "text": "The city of Mandalay has 1.2 million residents.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TQKCK6-tRaoE_656",
-    "text": "A banner reading \"Together with the SSS, Russia\" is visible.",
-    "before_code": "missing_predicate"
+    "claim_id": "TjHepwuhkYFA_1053",
+    "text": "The Sagaing Fault is where the Indian Plate (to the West) and the Eurasian Plate (to the East) meet.",
+    "before": "unsupported",
+    "before_code": "opaque_clause",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TKCfkoNUssZI_712",
-    "text": "The video was taken in seoul, south korea.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1124",
+    "text": "Blue Ghost Mission 1 launched from launch complex 39A.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "T2G_ACMxR_I4_1093",
-    "text": "Firefly Mission Operations Center is located in Cedar Park, Texas.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1125",
+    "text": "Blue Ghost Mission 1 launched on a Falcon 9 rocket.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "T2G_ACMxR_I4_1156",
-    "text": "A low lunar orbit is roughly 100 km above the Moon.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1145",
+    "text": "Blue Ghost traveled roughly 2.8 million miles.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "T2G_ACMxR_I4_1285",
-    "text": "Blue Ghost was developed outside of Austin, Texas.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1211",
+    "text": "LISTER measures thermal gradient (temperature changes at different depths).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "T2G_ACMxR_I4_1430",
-    "text": "Blue Ghost's descent orbit insertion was around 100,000m from the moon's surface.",
-    "before_code": "mention_alignment"
+    "claim_id": "T2G_ACMxR_I4_1220",
+    "text": "Mons Littrow, a volcanic cone, appears in the bottom-right of the same image.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TgPh_fzHTCm4_1471",
-    "text": "The knots of flow ramped up overnight on the 3rd and into the 4th from 10-20 knots to 25-30 knots across central Texas.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1392",
+    "text": "IM-1 is a lunar mission.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TgPh_fzHTCm4_1505",
-    "text": "These remnants can also be called an MCV (mesoscale convective vortex).",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1396",
+    "text": "IM-1 landed on the moon.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TFgw4IaR9R8s_1592",
-    "text": "Tariff poster shows: Taiwan 64% / 32%.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1398",
+    "text": "IM-1 initiated the descent to the moon.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TFgw4IaR9R8s_1593",
-    "text": "Tariff poster shows: Japan 46% / 24%.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1405",
+    "text": "IM-1 landed on the moon on February 22nd.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TFgw4IaR9R8s_1596",
-    "text": "Tariff poster shows: Thailand 72% / 36%.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1407",
+    "text": "IM-1 is transmitting signals from the moon's surface.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TFgw4IaR9R8s_1597",
-    "text": "Tariff poster shows: Switzerland 61% / 31%.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1416",
+    "text": "Blue Ghost includes instrumentation for subsurface thermal exploration with Rapidity (LISTER).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TgR_u37mCoQ4_1888",
-    "text": "Moonshadows, a restaurant along the PCH, was destroyed by the fire.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1417",
+    "text": "Blue Ghost includes Lunar PlanetVac (LPV).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TzzhcBIczf_M_2032",
-    "text": "Shaolin Cultural Centers have been established in Berlin, Germany.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1418",
+    "text": "Blue Ghost includes Next Generation Lunar Retroreflector (NGLR).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "TzzhcBIczf_M_2033",
-    "text": "Shaolin Cultural Centers have been established in London, UK.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1419",
+    "text": "Blue Ghost includes Regolith Adherence Characterization (RAC).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   },
   {
-    "claim_id": "Txf2EdqOg1SQ_2265",
-    "text": "Scaffolding attached to a skyscraper peels off and collapses in North Point, Hong Kong.",
-    "before_code": "coverage_omission"
+    "claim_id": "T2G_ACMxR_I4_1420",
+    "text": "Blue Ghost includes Radiation Tolerant Computer (RADPC).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1421",
+    "text": "Blue Ghost includes Electrodynamic Dust Shield (EDC).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1422",
+    "text": "Blue Ghost includes Lunar Environment heliospheric X-ray Imager (LEXI).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1423",
+    "text": "Blue Ghost includes Lunar Magnetotelluric Sounder (LMS).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1425",
+    "text": "Blue Ghost includes Stereo Camera for Lunar Plume-Surface Studies (SCALPSS).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1550",
+    "text": "The International Emergency Economic Powers Act (IEEPA) was passed years ago by Congress.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1653",
+    "text": "Onscreen text indicates that the woman is Rachana Shanbhogue, a business affairs editor at The Economist.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1710",
+    "text": "Mark Carney (liberal leader) announces they have asked the Governor General to dissolve Parliament and call an election, which she has agreed to.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1722",
+    "text": "They list the main party leaders: Mark Carney of the Liberals, Pierre Poilievre of the Conservatives, Jagmeet Singh of the NDP, Yves-François Blanchet of the Bloc Québécois, and Green Party co-leaders Elizabeth May and Jonathan Pedneault and show pictures of them.",
+    "before": "unsupported",
+    "before_code": "incomplete_enumeration",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1756",
+    "text": "The President says the European Union (EU) is very friendly but they rip the USA off.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1769",
+    "text": "Kantipur Publications, the publisher of Kantipur and The Kathmandu Post, is based in the building.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1816",
+    "text": "Footage in background of building Singha Durbar (the seat of the Nepali government) on fire.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1844",
+    "text": "The footage shows Los Angeles, CA.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1867",
+    "text": "Video opens with a news anchor, Andy Riesmeyer, who describes putting a phone on the roof of his car on April 21, 2020 and then driving up PCH (Pacific Coast Highway) to record it.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1868",
+    "text": "Andy Riesmeyer describes how January 7 'changed the landscape of Southern California,' causing loss of life and destruction of hundreds of years of California history in a matter of hours.",
+    "before": "unsupported",
+    "before_code": "opaque_clause",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1869",
+    "text": "The video transitions to footage of PCH and its environs with a new voiceover from Andy Riesmeyer, the news anchor.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2040",
+    "text": "Shi Yongxin's income exceeds 100 million RMB.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2090",
+    "text": "Shi Yongxin was arrested on suspicion of duty encroachment (embezzlement).",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2138",
+    "text": "The Shaolin Temple scenic area generates annual revenue of 300 million RMB.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2148",
+    "text": "In 2022, a company under Shi Yongxin won a bid for a plot of commercial land for 450 million RMB.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2205",
+    "text": "The European Model (ECMWF) predicts a westward path for the storm.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2207",
+    "text": "The American Model (GFS) predicts a path curving closer to Taiwan.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2346",
+    "text": "The delays and cancellations at Shenzhen airport are expected to last two to three days.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2369",
+    "text": "2 to 3 more typhoons are expected to make landfall in China in the future.",
+    "before": "unsupported",
+    "before_code": "coverage_omission",
+    "after": "compiled",
+    "code": null
   }
 ]

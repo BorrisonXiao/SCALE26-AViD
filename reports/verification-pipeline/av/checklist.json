@@ -275,19 +275,39 @@
     },
     {
       "id": 16,
-      "title": "Review the demos and bound the remaining compiler work",
-      "status": "proposed next steps; no new experiments started",
+      "title": "Recover the next bounded set of omissions and clauses",
+      "status": "completed; checks and semantic correctness remain separate",
       "items": [
         {
-          "text": "Review the plain-language requirements and partial examples \u2014 agree what the current compiler can safely express",
+          "text": "Repair explicit numeric labels, compound quantities and bounded appositions\u2014retain source content without confusing identifiers and counts",
+          "done": true
+        },
+        {
+          "text": "Expose both leader lists and selected how/where clauses; retain six difficult clause refusals\u2014preserve their relationships",
+          "done": true
+        },
+        {
+          "text": "Publish updated demos, all2,375 outputs and a linked daily log\u2014make each completed step reviewable",
+          "done": true
+        }
+      ],
+      "note": "content_relations_20261105:1,924 pass checks versus1,866;58 newly pass, no earlier pass lost;2,103 executable candidates unchanged;67 changed programs.291 tests pass. Twelve seeded recoveries retain their target, with other defects recorded; no human accuracy gain claimed. Final AND/OR guard leaves all corpus records unchanged; earlier freeze retained."
+    },
+    {
+      "id": 17,
+      "title": "Review recovered meanings before the next repair set",
+      "status": "proposed; not implemented",
+      "items": [
+        {
+          "text": "Review the recovered conditions and partial cases with the user\u2014check intended relationships rather than relying on coverage counts",
           "done": false
         },
         {
-          "text": "Choose a bounded next set from the remaining227 lexical alerts,8 hidden clauses and2 lists \u2014 recover useful coverage or retain an explicit refusal",
+          "text": "Inspect remaining measurements and mixed nominal/clausal objects\u2014choose another bounded repair set or retain explicit refusals",
           "done": false
         }
       ],
-      "note": "A future rewrite is an option for difficult cases, with meaning-preservation checks. It is not implemented or assumed to resolve every reference or inference-cost issue."
+      "note": "References, native cost profiling and sentence rewriting remain deferred. Update the compiler-demos daily log when a future job completes."
     },
     {
       "id": 8,
@@ -416,7 +436,7 @@
       ]
     }
   ],
-  "intro": "Current content recovery and demos:1,866/2,375 original claims pass compilation checks, versus1,839 before;2,103 executable candidates, versus2,099. Passing checks is not semantic accuracy. The28 simple demos include earlier fixes and show partial cases. References, large-program profiling and rewriting are deferred.",
+  "intro": "Current compiler:1,924/2,375 original claims pass checks, versus1,866 before;2,103 executable candidates unchanged.58 newly pass with no prior pass lost.291 tests pass. The41 demos and daily log link to completed work. Passing checks is not semantic accuracy; reference resolution, profiling and rewriting remain deferred.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -460,5 +480,6 @@
   "review_followup_run": "exp/probabilistic_verification/review_followup_20261104",
   "reviewed_compilation_run": "exp/probabilistic_verification/compiler_revision_20261105",
   "scope_coverage_run": "exp/probabilistic_verification/scope_coverage_20261105",
-  "content_recovery_run": "exp/probabilistic_verification/content_recovery_20261105"
+  "content_recovery_run": "exp/probabilistic_verification/content_recovery_20261105",
+  "content_relations_run": "exp/probabilistic_verification/content_relations_20261105"
 }

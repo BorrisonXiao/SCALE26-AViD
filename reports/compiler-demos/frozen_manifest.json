@@ -1,5 +1,4 @@
 {
-  "frozen_at": "2026-11-05T18:16:16.591240+00:00",
   "source_sha256": {
     "scripts/probabilistic_verification/__init__.py": "2a04e48e76316ea6494a6b1fc16c5376d8fea082306ba88018a657777dffdbb8",
     "scripts/probabilistic_verification/backend.py": "be3101746529d9f582e959dd918330541ace2c6329222a3997575f09b07b177e",
@@ -9,7 +8,8 @@
     "scripts/probabilistic_verification/compilation_frontends.py": "8e814cafa3fd7e920b5e8dff1f6b1340c47bf9a3412347debc27f335b199d6f2",
     "scripts/probabilistic_verification/compilation_selection.py": "5f7cf6c7b150625335f49c28456a41f713cf95e7b1e77b97aa10a0d709fc33df",
     "scripts/probabilistic_verification/compiler.py": "a0c33a187e05df7610385ab279962d9e3505c15c08ceb309e689e8722f4761c8",
-    "scripts/probabilistic_verification/content_recovery.py": "392e68216fa455b4b1da618dbb34337ac46f32fb921707035ef9318b4f578be2",
+    "scripts/probabilistic_verification/content_recovery.py": "55f2cbb517ad10422e3d273db355cc1c4a94ac40a35e81ddcbcf5de1e0218658",
+    "scripts/probabilistic_verification/content_relations.py": "8ad4bd6c067359dd896fe78a0e2e2b37d5d3640148ae896b91866dda4f246395",
     "scripts/probabilistic_verification/direct_backend.py": "a30d4dfb08a3a028607bb2a37f7b04f43b9d209d13d20d97af5eb4673a9d10f8",
     "scripts/probabilistic_verification/logic.py": "21885304608b896045db81175c2d1fb3b8a1bd3a137d86df32f775ff2bfcd182",
     "scripts/probabilistic_verification/logical_form.py": "9399ccd429301b92cd4db8d2463f3754ac56b9210d514470a7e804925272b0b5",
@@ -34,14 +34,14 @@
     "scripts/probabilistic_verification/srl_graph.py": "ad80c952f64556a004aa05c10160953f524727b26287f5f0bf00fd49c68b3f8b",
     "scripts/probabilistic_verification/srl_revision.py": "34d9026f6360e881ad25a4854c16d816ff837efc30a107fd3527e10cebd3f885",
     "scripts/probabilistic_verification/temporal.py": "857be015b3fb55b16ebab54216d9c0c8a4a7d66a7775c062ccb82837471ce095",
-    "scripts/run_content_recovery_census.py": "46327bbb71eaae19ab7d01e15b05b64f29acf6759edbb117b2bf64adf60b718b",
-    "scripts/run_reviewed_srl_census.py": "819322f7bedd41965e32a3e3ab921078cd1f408696d22756a605ef10bbc617b0",
     "scripts/run_scope_coverage_census.py": "b8bff3f241487c41239d0b91fe50f46af28056b56c9ef23130636833a332ebb6",
-    "scripts/run_scoped_srl_census.py": "8f2ddb5a89f4330285c42f588c377601fad6b67c72dd759271621c2ab3d52324",
-    "tests/test_content_recovery.py": "7fb4bca7341a8b688a17f5e8db9040042d026cda9f20ea4ee9471fadc224956a",
-    "tests/test_reviewed_srl.py": "64561019595170423ac802662f053afc090d552c053ee7e463f0af91eb9df7a9",
-    "tests/test_scope_coverage.py": "c9567b894ca0e758cef5ff3c9e15416c36771508b6c130054f8ca9674021fc70",
-    "tests/test_scoped_srl.py": "9ecdc1734c1af993d18f7f7ecd29ea50ab065dc73d81fbcd4ae9cbb4e4fce234"
+    "scripts/run_content_recovery_census.py": "46327bbb71eaae19ab7d01e15b05b64f29acf6759edbb117b2bf64adf60b718b",
+    "scripts/run_content_relations_census.py": "287cd3f6936dbe13ccb1525e0310be84b3c091e6036efdc6a223e07948207153",
+    "tests/test_content_relations.py": "fb9f19a052df94f0ecce588bb666a0d27d704f4439b61974e3d93f40e2f98930"
   },
-  "statement": "Final freeze follows a source-anchored lexical-audit correction from an older development demo. First freeze/census are retained; fresh programs/statuses must remain unchanged."
+  "source_count": 38,
+  "tests": 291,
+  "chronology": "Initial38-file freeze and290 tests preceded the12-case review. A later code audit restricted nominal coordination to AND; final291-test freeze follows that review. Exact full-record replay checks that no corpus program/status/review changes.",
+  "inputs_sha256": "cf0f8f8117c61034219725549031a5a25675f1c7bd683751d3c45f2ba2350fd1",
+  "results_sha256": "77d188658b4c88003e201b16c524b927fb29335cecdc4c4640491c0634b42f63"
 }

@@ -1,0 +1,147 @@
+{
+  "updated": "2026-11-05",
+  "timezone": "America/New_York",
+  "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
+  "days": [
+    {
+      "date": "2026-11-05",
+      "items": [
+        {
+          "text": "Completed the next two compiler steps: identifiers, quantities and appositions, followed by explicit lists and selected embedded clauses. Reran all 2,375 claims: 1,924 pass checks, 58 more than before, with no earlier pass lost.",
+          "href": "#step-omissions",
+          "label": "Numbers and appositions"
+        },
+        {
+          "text": "Recovered the two leader lists and two hidden clauses. Six difficult clause cases remain explicit refusals with reasons.",
+          "href": "#step-clauses",
+          "label": "Lists and clauses"
+        },
+        {
+          "text": "Passed 291 regression checks; reviewed 12 seeded recoveries and kept remaining whole-claim problems visible. No new human accuracy labels were collected.",
+          "href": "#results",
+          "label": "Results and limits"
+        },
+        {
+          "text": "A final code audit restricted recovered appositive groups to AND. The added OR control passes, and every saved corpus output remains unchanged.",
+          "href": "#step-omissions",
+          "label": "Repair boundaries"
+        },
+        {
+          "text": "Expanded the page to 41 demos, retained the earlier examples and added this daily log with links to the work shown in each tab.",
+          "href": "#walkthroughs",
+          "label": "Simple demos"
+        },
+        {
+          "text": "Earlier today: recovered selected bounds, ranges, participants and source routes; 1,866 claims passed checks and 259 tests passed.",
+          "href": "compiler-demos.html?claim=T2EE72iNELEs_209#walkthroughs",
+          "label": "Earlier temporal-clause demo"
+        },
+        {
+          "text": "Earlier today: preserved preparation, investigation and dialogue context and added original-word coverage checks. 1,839 claims passed coverage.",
+          "href": "scope-coverage.html",
+          "label": "Scope and coverage report"
+        },
+        {
+          "text": "Imported all 20 returned human reviews and completed a bounded compiler revision. 2,099 programs compiled; executability remained separate from semantic review.",
+          "href": "reviewed-compilation.html",
+          "label": "Reviewed revision"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "items": [
+        {
+          "text": "Prepared a new 20-case review sample and paired-analysis tools while awaiting the exported human answers.",
+          "href": "verification-pipeline.html#next-steps",
+          "label": "Checklist and review records"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "items": [
+        {
+          "text": "Added source-scope and claim-condition repairs and prepared 20 paired cases for human review.",
+          "href": "scope-compilation.html#human",
+          "label": "Scope work and review preparation"
+        },
+        {
+          "text": "Created an independent agent draft for the review form. The later returned user edits remain the human record.",
+          "href": "claim-review-draft.html",
+          "label": "Agent draft"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "items": [
+        {
+          "text": "Tested compiler follow-ups for phrase arguments, bindings and native inference; retained semantic errors and inference limits.",
+          "href": "compiler-followup.html#findings",
+          "label": "Compiler follow-up"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "items": [
+        {
+          "text": "Ran the SRL/dependency compiler on all 2,375 original claims and compared constrained logical-form editing approaches.",
+          "href": "srl-compilation.html#counts",
+          "label": "SRL census and comparison"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "items": [
+        {
+          "text": "Audited real dataset claims and compared semantic parsing approaches before further verification work.",
+          "href": "verification-pipeline.html#compilation-audit",
+          "label": "Real-claim audit"
+        },
+        {
+          "text": "Specified the common logical form and tested deterministic compilation of semantic parser output.",
+          "href": "semantic-compilation.html",
+          "label": "Semantic compiler"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "items": [
+        {
+          "text": "Implemented the end-to-end compiler and DeepProbLog prototype, including a small training demonstration.",
+          "href": "verification-pipeline.html#training",
+          "label": "Inference and training"
+        },
+        {
+          "text": "Cached frozen visual/audio features and built separate evidence trees for the two sources.",
+          "href": "verification-pipeline.html#audiovisual",
+          "label": "Visual and audio pilot"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "items": [
+        {
+          "text": "Prepared local-model claim structures and controlled edits, and inspected generated sample quality.",
+          "href": "verification-pilot.html",
+          "label": "Preparation pilot"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "items": [
+        {
+          "text": "Adopted probabilistic claim compilation with frozen perception models, small relation classifiers and alternative evidence assignments as the paper direction.",
+          "href": "../proposals/probabilistic-verification.html",
+          "label": "Accepted paper direction"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "provenance": "Compiler-author diagnosis, not human labels.",
+  "resolved": [
+    "TQEmEycTI0RQ_863",
+    "TFgw4IaR9R8s_1722",
+    "TjHepwuhkYFA_1053",
+    "TgR_u37mCoQ4_1868"
+  ],
+  "remaining": [
+    {
+      "claim_id": "TFOEIehBwT8Q_496",
+      "text": "\"Police fire smoke bombs and tear gas as protesters hurl stones.\"",
+      "reason": "The main verb fire is attached inside a noun phrase, and its SRL frame is missing. Recovering it needs a reliable sentence-level parse."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_999",
+      "text": "The video contains a compilation of short video scenes and images overlaid by a news broadcaster's audio description (which also appears in overlaid text).",
+      "reason": "The events are already represented, but the group description still includes a finite relative clause. The overlay and relative-clause attachments need review; retaining all words is insufficient."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "text": "Mare Crisium is a large basin created by ancient asteroid impact and volcanic eruptions that filled with basaltic lava about 3 billion years ago.",
+      "reason": "The fill event exists, but its subject is attached to the impact/eruptions group rather than clearly to the basin. Removing the long name alone would conceal this error."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1231",
+      "text": "Firefly and NASA described the site as uniquely suited for studying lunar regolith, geophysical behavior, and how solar wind interacts with Earth's magnetic field in this region.",
+      "reason": "The object mixes two noun phrases with how solar wind interacts. The interaction must be content of studying, rather than a separate asserted event."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "text": "America's trading partners will be thinking about how to engage with the White House and whether to retaliate against Trump's tariffs; these countries know that the more they retaliate, the more they hurt their own economies.",
+      "reason": "The more ... the more ... expresses a comparative relationship. A plain conjunction or temporal clause would lose that relationship."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2068",
+      "text": "Shi Yongxin claims that as long as he has a clear conscience, he is not afraid of criticism.",
+      "reason": "As long as can express a condition here. The old temporal reading plus duplicated literal is not a safe compilation."
+    }
+  ]
+}

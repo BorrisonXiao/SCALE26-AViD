@@ -1,0 +1,80 @@
+{
+  "provenance": "Post-freeze compiler-author review of12 seeded newly passing cases. All texts previously processed. Not independent human gold or a corpus accuracy estimate.",
+  "seed": 202611056,
+  "cases": [
+    {
+      "claim_id": "Tg0UxWYuPeJ0_429",
+      "text": "Robot 2 approaches Robot 1",
+      "target_retained": true,
+      "remaining_limit": "No additional issue identified in this targeted inspection; this is not an independent whole-claim rating."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1869",
+      "text": "The video transitions to footage of PCH and its environs with a new voiceover from Andy Riesmeyer, the news anchor.",
+      "target_retained": true,
+      "remaining_limit": "The news-anchor apposition is retained, but transitions is still a nominal description rather than a transition event. The possessive its also remains unresolved."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2090",
+      "text": "Shi Yongxin was arrested on suspicion of duty encroachment (embezzlement).",
+      "target_retained": true,
+      "remaining_limit": "The parenthetical embezzlement is retained. Suspicion is a nominal relation; its full source/content semantics still need review."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1422",
+      "text": "Blue Ghost includes Lunar Environment heliospheric X-ray Imager (LEXI).",
+      "target_retained": true,
+      "remaining_limit": "No additional issue identified in this targeted inspection; this is not an independent whole-claim rating."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1844",
+      "text": "The footage shows Los Angeles, CA.",
+      "target_retained": true,
+      "remaining_limit": "No additional issue identified in this targeted inspection; this is not an independent whole-claim rating."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2148",
+      "text": "In 2022, a company under Shi Yongxin won a bid for a plot of commercial land for 450 million RMB.",
+      "target_retained": true,
+      "remaining_limit": "No additional issue identified in this targeted inspection; this is not an independent whole-claim rating."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_427",
+      "text": "The person lets Robot 2 fall on its back.",
+      "target_retained": true,
+      "remaining_limit": "Robot2 is identified. The pronoun its remains an explicit context requirement."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_345",
+      "text": "Robot 1 walks out of the ring",
+      "target_retained": true,
+      "remaining_limit": "No additional issue identified in this targeted inspection; this is not an independent whole-claim rating."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1867",
+      "text": "Video opens with a news anchor, Andy Riesmeyer, who describes putting a phone on the roof of his car on April 21, 2020 and then driving up PCH (Pacific Coast Highway) to record it.",
+      "target_retained": true,
+      "remaining_limit": "The PCH expansion is retained. The compiler also retains an extra apposition to a name already recorded as a name property; his/it remain context requirements."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_330",
+      "text": "Robot 1 stumbles to the side.",
+      "target_retained": true,
+      "remaining_limit": "No additional issue identified in this targeted inspection; this is not an independent whole-claim rating."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_338",
+      "text": "Robot 1 comes back up behind the man to swing again.",
+      "target_retained": true,
+      "remaining_limit": "Robot1 is identified, but back up is still an opaque entity phrase. The purpose clause remains explicit."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2138",
+      "text": "The Shaolin Temple scenic area generates annual revenue of 300 million RMB.",
+      "target_retained": true,
+      "remaining_limit": "No additional issue identified in this targeted inspection; this is not an independent whole-claim rating."
+    }
+  ],
+  "target_retained": 12,
+  "whole_claim_accuracy": null
+}
