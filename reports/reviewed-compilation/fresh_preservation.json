@@ -1,0 +1,164 @@
+{
+  "final_compiler_sha256": {
+    "scripts/probabilistic_verification/__init__.py": "2a04e48e76316ea6494a6b1fc16c5376d8fea082306ba88018a657777dffdbb8",
+    "scripts/probabilistic_verification/representation.py": "a4329ccf0a3bd66b37fe92bfbae2dbe762883346f133f58a470220ee860efab6",
+    "scripts/probabilistic_verification/compiler.py": "a0c33a187e05df7610385ab279962d9e3505c15c08ceb309e689e8722f4761c8",
+    "scripts/probabilistic_verification/parsing.py": "c5623d06475ae453d700eae6e133b6a0eb65a8e431efc024cdf33c0c4999d5e4",
+    "scripts/probabilistic_verification/logic.py": "21885304608b896045db81175c2d1fb3b8a1bd3a137d86df32f775ff2bfcd182",
+    "scripts/probabilistic_verification/backend.py": "be3101746529d9f582e959dd918330541ace2c6329222a3997575f09b07b177e",
+    "scripts/probabilistic_verification/multimodal.py": "b3ba93da917ebb3628659c0fb4adb723bb3ff6648902b21bf93c3c9f82cbbac3",
+    "scripts/probabilistic_verification/semantic.py": "31a8cb9c7ecfa5be1e99749827c1d9afb95398792a0d05febb1956a3689338de",
+    "scripts/probabilistic_verification/temporal.py": "857be015b3fb55b16ebab54216d9c0c8a4a7d66a7775c062ccb82837471ce095",
+    "scripts/probabilistic_verification/predicate_compilation.py": "0cb0f9e0e71f558512c617116012f6ec8c7456bd874ee93c64d3f2f97b392fdc",
+    "scripts/probabilistic_verification/compilation_frontends.py": "8e814cafa3fd7e920b5e8dff1f6b1340c47bf9a3412347debc27f335b199d6f2",
+    "scripts/probabilistic_verification/logical_form.py": "9399ccd429301b92cd4db8d2463f3754ac56b9210d514470a7e804925272b0b5",
+    "scripts/probabilistic_verification/logical_form_adapters.py": "7f4c824722c34ce17ed733b927e361171f2f0e4281a93c54706423bc4ef98270",
+    "scripts/probabilistic_verification/logical_form_review.py": "9eae292441ce7a2dab1d4a964c345b9c720015f3a8637a408760ef0556f20183",
+    "scripts/probabilistic_verification/compilation_selection.py": "5f7cf6c7b150625335f49c28456a41f713cf95e7b1e77b97aa10a0d709fc33df",
+    "scripts/probabilistic_verification/logical_form_v2.py": "0eb73a495862e54279cf3bc426a264189358181d30a00683447d0f1ab21b2100",
+    "scripts/probabilistic_verification/compilation_checks_v2.py": "2f34cc56264d91e2c0ca5a0dd2c1bce78b6ec69b4902e72a19a06f966fabe6ce",
+    "scripts/probabilistic_verification/logical_form_schema_v2.py": "ebabc994a0262f0812fc0e5c5a574f4e7528d631d4d6d2f6d8032cd212833bb2",
+    "scripts/probabilistic_verification/source_checks_v2.py": "871534acbbc9e20cbd1c8c48fa63b49aa7450d6442b1ecc4d57ac22feb91027d",
+    "scripts/probabilistic_verification/normalize_form_v2.py": "df68f818da231fd0eb601891acdffe1b0dc1aba51d27fa913b3ad75bd0c32acc",
+    "scripts/probabilistic_verification/srl_form_v2.py": "efd673a735e67650200fee7b1853a7f0baac87ae98fe585ef7818b60f7c1bb8c",
+    "scripts/probabilistic_verification/srl_revision.py": "34d9026f6360e881ad25a4854c16d816ff837efc30a107fd3527e10cebd3f885",
+    "scripts/probabilistic_verification/srl_graph.py": "ad80c952f64556a004aa05c10160953f524727b26287f5f0bf00fd49c68b3f8b",
+    "scripts/probabilistic_verification/schema_logits.py": "11af39b5d96f995523afb40e1cf6c1a1b640ba9c1b0ce2fb5295ae6d66fd3217",
+    "scripts/probabilistic_verification/srl_edits.py": "0a3cfdac00625beae99a39ce615d6f2b14318e84fb3dbd0b3394cd54e4bd9106",
+    "scripts/probabilistic_verification/semantic_srl.py": "9c8447cec1697a81af59ff54319eded5556c8758ca0dc43197e5143b34cd3d02",
+    "scripts/probabilistic_verification/compilation_followup.py": "b9d5df1dbd6e74b61a9b639d52ab7fc536c0995a45ede6385482804453c81e3d",
+    "scripts/probabilistic_verification/direct_backend.py": "a30d4dfb08a3a028607bb2a37f7b04f43b9d209d13d20d97af5eb4673a9d10f8",
+    "scripts/probabilistic_verification/scoped_srl.py": "29d6c5a54c0bd1a32a742188b6debf92f39e56bd912c022a8e636e86d002754d",
+    "scripts/probabilistic_verification/balanced_logic.py": "f65f10a1bb5dbaa78b4bad48b883b95c72306946c3cb2daf0f7ba4dd775f816e",
+    "scripts/run_scoped_srl_census.py": "8f2ddb5a89f4330285c42f588c377601fad6b67c72dd759271621c2ab3d52324",
+    "tests/test_scoped_srl.py": "9ecdc1734c1af993d18f7f7ecd29ea50ab065dc73d81fbcd4ae9cbb4e4fce234",
+    "scripts/probabilistic_verification/reviewed_srl.py": "80057f222a04d69e3f45ace1e125671888c1df7d5f67ffdc7978dd00fd8fadcb",
+    "scripts/run_reviewed_srl_census.py": "819322f7bedd41965e32a3e3ab921078cd1f408696d22756a605ef10bbc617b0",
+    "tests/test_reviewed_srl.py": "64561019595170423ac802662f053afc090d552c053ee7e463f0af91eb9df7a9"
+  },
+  "fresh_cases": [
+    {
+      "claim_id": "TzzhcBIczf_M_2041",
+      "before": "d72dfaecbce45a1bbc23a454cc3bd97c9218e64f6722463600511e81c3a00ce1",
+      "first_frozen": "d72dfaecbce45a1bbc23a454cc3bd97c9218e64f6722463600511e81c3a00ce1",
+      "final": "d72dfaecbce45a1bbc23a454cc3bd97c9218e64f6722463600511e81c3a00ce1"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_623",
+      "before": "ac716fabe0ec723926d2b379c5ad4d81e5a3a30d96749dd1d92cd0556ded25b8",
+      "first_frozen": "ac716fabe0ec723926d2b379c5ad4d81e5a3a30d96749dd1d92cd0556ded25b8",
+      "final": "ac716fabe0ec723926d2b379c5ad4d81e5a3a30d96749dd1d92cd0556ded25b8"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_247",
+      "before": "6132f9795fd2d9d40fe81f214cf0a959f63bbd0e6f01d43a10c120755e0a662c",
+      "first_frozen": "6132f9795fd2d9d40fe81f214cf0a959f63bbd0e6f01d43a10c120755e0a662c",
+      "final": "6132f9795fd2d9d40fe81f214cf0a959f63bbd0e6f01d43a10c120755e0a662c"
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_671",
+      "before": "3f09ebb1cf37c55763fc9252be0362cf020a68c8aae1fcfd79363a91c4652fe0",
+      "first_frozen": "3f09ebb1cf37c55763fc9252be0362cf020a68c8aae1fcfd79363a91c4652fe0",
+      "final": "3f09ebb1cf37c55763fc9252be0362cf020a68c8aae1fcfd79363a91c4652fe0"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2108",
+      "before": "5002339c4c7f86078992145c266290187934f5ff44e7e784b2431dc7de9b77a3",
+      "first_frozen": "5002339c4c7f86078992145c266290187934f5ff44e7e784b2431dc7de9b77a3",
+      "final": "5002339c4c7f86078992145c266290187934f5ff44e7e784b2431dc7de9b77a3"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1367",
+      "before": "bcc74e122d7d8e8b0c40b13cfbeb09e7084f03a576283ed0bb606aada2c26c2a",
+      "first_frozen": "bcc74e122d7d8e8b0c40b13cfbeb09e7084f03a576283ed0bb606aada2c26c2a",
+      "final": "bcc74e122d7d8e8b0c40b13cfbeb09e7084f03a576283ed0bb606aada2c26c2a"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_10",
+      "before": "641b12ba06dbecc9e4fb0552fbeae960e9bc0efa6c91d9f996e45c30be97fbb8",
+      "first_frozen": "641b12ba06dbecc9e4fb0552fbeae960e9bc0efa6c91d9f996e45c30be97fbb8",
+      "final": "641b12ba06dbecc9e4fb0552fbeae960e9bc0efa6c91d9f996e45c30be97fbb8"
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_707",
+      "before": "b1acf1c337890409f268a9092064f18a3e3b55f5491849cd9151e9cb82b48081",
+      "first_frozen": "b1acf1c337890409f268a9092064f18a3e3b55f5491849cd9151e9cb82b48081",
+      "final": "b1acf1c337890409f268a9092064f18a3e3b55f5491849cd9151e9cb82b48081"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_626",
+      "before": "e9af05332de7fe4d56633f27cfdcb19d19380936f5391fe0b03610ee782cc06f",
+      "first_frozen": "e9af05332de7fe4d56633f27cfdcb19d19380936f5391fe0b03610ee782cc06f",
+      "final": "e9af05332de7fe4d56633f27cfdcb19d19380936f5391fe0b03610ee782cc06f"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_180",
+      "before": "bbac24fd2dec036f75f78b36002854be4da76911af2f05e27218d5706f239d9e",
+      "first_frozen": "bbac24fd2dec036f75f78b36002854be4da76911af2f05e27218d5706f239d9e",
+      "final": "bbac24fd2dec036f75f78b36002854be4da76911af2f05e27218d5706f239d9e"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_18",
+      "before": "781a1ad021de2e71ae46913c52a9d707a6c84ccae96ab355f0d68fda26a62b97",
+      "first_frozen": "781a1ad021de2e71ae46913c52a9d707a6c84ccae96ab355f0d68fda26a62b97",
+      "final": "781a1ad021de2e71ae46913c52a9d707a6c84ccae96ab355f0d68fda26a62b97"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_752",
+      "before": "5c65c5409a3cf6366b760faeeafb9e8df7974e467d97fc48067094190749e4f4",
+      "first_frozen": "5c65c5409a3cf6366b760faeeafb9e8df7974e467d97fc48067094190749e4f4",
+      "final": "5c65c5409a3cf6366b760faeeafb9e8df7974e467d97fc48067094190749e4f4"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_116",
+      "before": "31eb90f0324506b05ca891a2c2c94b02f50986afcb8b3d15febd20d5ad7ddb81",
+      "first_frozen": "31eb90f0324506b05ca891a2c2c94b02f50986afcb8b3d15febd20d5ad7ddb81",
+      "final": "31eb90f0324506b05ca891a2c2c94b02f50986afcb8b3d15febd20d5ad7ddb81"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_483",
+      "before": "052727504ac97b08a4fb07614d14b4e38dfe42dc9bd567d900060e4ab0eb9e43",
+      "first_frozen": "052727504ac97b08a4fb07614d14b4e38dfe42dc9bd567d900060e4ab0eb9e43",
+      "final": "052727504ac97b08a4fb07614d14b4e38dfe42dc9bd567d900060e4ab0eb9e43"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_629",
+      "before": "953c7e5c0f7d2257f9550b195adbaaf57e9f39dae739ee5cbcbac448d34d46c2",
+      "first_frozen": "953c7e5c0f7d2257f9550b195adbaaf57e9f39dae739ee5cbcbac448d34d46c2",
+      "final": "953c7e5c0f7d2257f9550b195adbaaf57e9f39dae739ee5cbcbac448d34d46c2"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2417",
+      "before": "ac009860dcc37ad2a56863c1a91575434e6b42e82798819c6bb3b11795ac542b",
+      "first_frozen": "ac009860dcc37ad2a56863c1a91575434e6b42e82798819c6bb3b11795ac542b",
+      "final": "ac009860dcc37ad2a56863c1a91575434e6b42e82798819c6bb3b11795ac542b"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_96",
+      "before": "cc7f0a34d8390335e3361d72f2c6bf0d6169bb5af200f2b5c3eb3923f59caa6f",
+      "first_frozen": "cc7f0a34d8390335e3361d72f2c6bf0d6169bb5af200f2b5c3eb3923f59caa6f",
+      "final": "cc7f0a34d8390335e3361d72f2c6bf0d6169bb5af200f2b5c3eb3923f59caa6f"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_253",
+      "before": "6f4a322080c051fd83abca33685d64bfd3c1581a615c6bd8f9472419bf44e20e",
+      "first_frozen": "6f4a322080c051fd83abca33685d64bfd3c1581a615c6bd8f9472419bf44e20e",
+      "final": "6f4a322080c051fd83abca33685d64bfd3c1581a615c6bd8f9472419bf44e20e"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2156",
+      "before": "ec24b191ade2cc6adc0b9c50165796d4f5430a7a123da1e065f9fe2bb6a52af6",
+      "first_frozen": "ec24b191ade2cc6adc0b9c50165796d4f5430a7a123da1e065f9fe2bb6a52af6",
+      "final": "ec24b191ade2cc6adc0b9c50165796d4f5430a7a123da1e065f9fe2bb6a52af6"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1488",
+      "before": "bf6a4c63c2ad91c9d9b42deebd04d02541889c74c225d14a6ef5607bb6a18b2c",
+      "first_frozen": "bf6a4c63c2ad91c9d9b42deebd04d02541889c74c225d14a6ef5607bb6a18b2c",
+      "final": "bf6a4c63c2ad91c9d9b42deebd04d02541889c74c225d14a6ef5607bb6a18b2c"
+    }
+  ],
+  "source_unchanged_since_final_freeze": true,
+  "claim_readings_unchanged": true,
+  "chronology": "First freeze preceded fresh output inspection. Final safety restrictions used non-reserved changed cases; all20 fresh programs remain identical to both the first freeze and the Nov1 baseline."
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "claim_id": "TgR_u37mCoQ4_1907",
+    "status": "passed",
+    "limit_seconds": 25,
+    "process_seconds": 10.191473621875048,
+    "stages": [
+      {
+        "stage": "input",
+        "seconds": 4.7317406721413136,
+        "observations": 7
+      },
+      {
+        "stage": "result",
+        "seconds": 1.7965840697288513,
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        }
+      }
+    ],
+    "error": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_473",
+    "status": "passed",
+    "limit_seconds": 25,
+    "process_seconds": 8.593949992209673,
+    "stages": [
+      {
+        "stage": "input",
+        "seconds": 4.048275064677,
+        "observations": 15
+      },
+      {
+        "stage": "result",
+        "seconds": 1.5342127420008183,
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        }
+      }
+    ],
+    "error": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n"
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_218",
+    "status": "passed",
+    "limit_seconds": 25,
+    "process_seconds": 9.327709779143333,
+    "stages": [
+      {
+        "stage": "input",
+        "seconds": 4.525620276108384,
+        "observations": 20
+      },
+      {
+        "stage": "result",
+        "seconds": 1.7187045812606812,
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        }
+      }
+    ],
+    "error": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1507",
+    "status": "passed",
+    "limit_seconds": 25,
+    "process_seconds": 8.999490458518267,
+    "stages": [
+      {
+        "stage": "input",
+        "seconds": 4.436494639143348,
+        "observations": 4
+      },
+      {
+        "stage": "result",
+        "seconds": 1.5325178187340498,
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        }
+      }
+    ],
+    "error": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1797",
+    "status": "timeout",
+    "limit_seconds": 25,
+    "process_seconds": 25.12816021963954,
+    "stages": [
+      {
+        "stage": "input",
+        "seconds": 4.395945597440004,
+        "observations": 36
+      }
+    ],
+    "error": "Explicit subprocess limit reached."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim_id": "TzF9M4kZ3Pys_218",
+    "text": "A haboob, or an intense, massive wall of dust and sand created by the downdrafts of a collapsing thunderstorm. ",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Mixed nominal AND/OR needs an explicit scope reading.",
+    "current_status": "compiled",
+    "current_code": null
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_255",
+    "text": "Dust storm or dust cloud approaching airport.",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Nominal alternatives have unresolved reference scope.",
+    "current_status": "compiled",
+    "current_code": null
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_277",
+    "text": "Dust or debris particle flying around in an orange tint sky.",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Nominal OR has no explicit alternative group.",
+    "current_status": "unsupported",
+    "current_code": "nominal_disjunction"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_532",
+    "text": "Six shots fired or the sound of explosions.",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Nominal OR has no explicit alternative group.",
+    "current_status": "unsupported",
+    "current_code": "nominal_disjunction"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_935",
+    "text": "Leadership approval snapshot (Angus Reid, March 17, 2025): Pierre Poilievre has approval around the mid-30% range with disapproval near 55-60%, Justin Trudeau shows higher approval near ~48-50% with disapproval around ~35%, Jagmeet Singh records approval near ~32-33% with disapproval close to ~60%, and Yves-François Blanchet (Quebec polling only) has approval around ~48-50% and disapproval near ~40-42%, indicating Trudeau and Blanchet with net-positive standings and Poilievre and Singh facing higher disapproval than approval.",
+    "november1_code": "temporal_scope",
+    "november1_reason": "Fronted time with a different coordinated subject needs an explicit scope reading.",
+    "current_status": "unsupported",
+    "current_code": "temporal_scope"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_983",
+    "text": "Only question is whether it will be a majority government or a minority government.",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Nominal OR has no explicit alternative group.",
+    "current_status": "unsupported",
+    "current_code": "nominal_disjunction"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1136",
+    "text": "Blue Ghost completed on-orbit commissioning.",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Nominal OR has no explicit alternative group.",
+    "current_status": "unsupported",
+    "current_code": "nominal_disjunction"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1137",
+    "text": "Blue Ghost began the journey to the moon after on-orbit commissioning.",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Nominal OR has no explicit alternative group.",
+    "current_status": "unsupported",
+    "current_code": "nominal_disjunction"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1507",
+    "text": "The clockwise motion indicates a ridge or high-pressure anti-cyclone over the region.",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Nominal OR has no explicit alternative group.",
+    "current_status": "compiled",
+    "current_code": null
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1569",
+    "text": "An example of this skepticism is the opinion that the US immigration situation is not an invasion or incursion and does not support invocation of the Alien Enemies Act.",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Nominal OR has no explicit alternative group.",
+    "current_status": "unsupported",
+    "current_code": "nominal_disjunction"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1586",
+    "text": "Image of Trump signing something (likely executive orders).",
+    "november1_code": "media_modifier",
+    "november1_reason": "A media-description modifier contains an unresolved clause.",
+    "current_status": "unsupported",
+    "current_code": "media_modifier"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1587",
+    "text": "Image of Trump holding up a signed document.",
+    "november1_code": "media_modifier",
+    "november1_reason": "A media-description modifier contains an unresolved clause.",
+    "current_status": "unsupported",
+    "current_code": "media_modifier"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1646",
+    "text": "Footage of Trump speaking in Washington DC this afternoon (muted).",
+    "november1_code": "media_modifier",
+    "november1_reason": "A media-description modifier contains an unresolved clause.",
+    "current_status": "unsupported",
+    "current_code": "media_modifier"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1976",
+    "text": "The man in the blue blazer is presumably a lawyer or member of law enforcement.",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Nominal OR has no explicit alternative group.",
+    "current_status": "unsupported",
+    "current_code": "nominal_disjunction"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2166",
+    "text": "The video takes place on a large, open paved pier or terminal area.",
+    "november1_code": "nominal_disjunction",
+    "november1_reason": "Nominal alternative must occupy one explicit event argument.",
+    "current_status": "unsupported",
+    "current_code": "nominal_disjunction"
+  }
+]

@@ -1,0 +1,183 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Returned human claim review, targeted compiler fixes, full 2375 census and fresh semantic failures."><title>Human review and compiler revision · AViD</title><link rel="stylesheet" href="../assets/site.css"><style>.cv-figure{margin:12px 0 24px;padding:0;min-width:0;overflow-wrap:anywhere}
+.cv-output-kind{font-weight:600;color:var(--accent);margin:8px 0}
+.cv-node{border:1px solid var(--border);border-radius:8px;padding:12px;background:var(--surface);min-width:0}
+.cv-node-title{display:flex;gap:7px;align-items:baseline;flex-wrap:wrap;line-height:1.5}
+.cv-node-title b{font-size:16px}
+.cv-kind{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.cv-code{font:11px/1.5 ui-monospace,monospace;color:var(--muted);font-weight:400}
+.cv-event{border-top:3px solid var(--accent)}
+.cv-entity{background:var(--surface-2)}
+.cv-row{margin-top:10px;padding-left:12px;border-left:2px solid var(--border);min-width:0}
+.cv-edge{font-size:12px;font-weight:600;color:var(--accent);margin-bottom:5px;line-height:1.6}
+.cv-target{min-width:0;line-height:1.6}
+.cv-time,.cv-source,.cv-repeated{font-size:12px;line-height:1.6;margin:7px 0;color:var(--muted)}
+.cv-time{color:var(--text);background:var(--surface-2);border-radius:4px;padding:5px 8px}
+.cv-scope{margin:12px 0 0;padding:10px 0 0 12px;border-left:3px solid var(--accent);min-width:0}
+.cv-scope-title{line-height:1.7;font-size:13px}
+.cv-scope-title small{display:block}
+.cv-literal small{display:block;color:var(--muted);font-size:12px}
+.cv-literal span{font-size:12px}
+.cv-context,.cv-refusal{margin:14px 0;padding:12px;background:var(--surface-2);border-radius:7px;font-size:13px}
+.cv-context ul{margin:8px 0;padding-left:20px}
+.cv-figure figcaption{font-size:12px;color:var(--muted);line-height:1.7;margin:14px 0}
+.cv-legend{font-size:13px;line-height:1.8;color:var(--muted)}
+.output-grid{align-items:start}
+.output-grid .output{margin-top:0}
+.output textarea,textarea{font-weight:400}
+@media(max-width:520px){.cv-node{padding:9px}.cv-row{padding-left:8px}.cv-scope{padding-left:8px}}
+.container{max-width:1100px}section{margin:32px 0}.table-wrap{overflow:auto;margin:24px 0}table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:12px;text-align:left;vertical-align:top;border:1px solid var(--border);min-width:90px}caption{text-align:left;font-weight:600;margin:12px 0}label{display:block;font-weight:600;margin:12px 0}input,select,button{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:10px;max-width:100%}select{display:block;width:100%;box-sizing:border-box}button{cursor:pointer}button:disabled{opacity:.5}.toolbar{display:flex;gap:18px;flex-wrap:wrap}.toolbar label{min-width:0}.output-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.output{min-width:0;border:1px solid var(--border);border-radius:9px;padding:16px}pre{font:12px/1.7 ui-monospace,monospace;white-space:pre-wrap;overflow-wrap:anywhere;max-height:450px;overflow:auto}blockquote,.note{padding:15px;border-left:4px solid var(--accent);background:var(--surface-2);margin:18px 0}.review-note{font-size:13px}#claim-id{overflow-wrap:anywhere}@media(max-width:760px){.output-grid{grid-template-columns:1fr}}</style></head><body><nav class="site-nav" aria-label="Primary navigation"><div class="nav-inner"><a class="brand" href="../index.html">SCALE 2026 · AViD</a><div class="nav-links"><a href="../index.html">Home</a><a href="./" aria-current="page">Reports</a><a href="../proposals/">Proposals</a></div></div></nav><header class="hero"><div class="container"><p class="eyebrow">Compiler revision · 5 November 2026</p><h1>Human review and compiler revision</h1><p class="lede">Targeted omissions and bindings improve. Coverage rises by four claims; the fresh sample still exposes scope and content failures.</p><p><a href="#examples">Inspect before/after structures</a> · <a href="verification-pipeline.html#next-steps">Checklist</a> · <a href="./">All reports</a></p></div></header><main class="container prose"><section><h2>What your review established</h2><p>All 20 readings and comparisons were returned and validated. The original file was moved into the experiment records with its bytes unchanged. Your review was assisted by an agent draft; the six changed ratings remain recorded separately from the original suggestions.</p><div class="table-wrap"><table><caption>Table 1. Your ratings of the two earlier compiler versions; refusals are assessed separately.</caption><thead><tr><th>Version</th><th>Faithful</th><th>Partial</th><th>Incorrect</th><th>Refused</th><th>Refusals judged appropriate / not appropriate</th></tr></thead><tbody><tr><td>30 October</td><td>11</td><td>6</td><td>1</td><td>2</td><td>1 / 1</td></tr><tr><td>1 November</td><td>11</td><td>4</td><td>1</td><td>4</td><td>1 / 3</td></tr></tbody></table></div><p>The 16 cases compiled by both versions have tied ratings. Two partial outputs became refusals you judged unnecessary; the earlier revision did not demonstrate a meaning improvement on this review. You accepted the passive-progressive simplification for now and allowed a difficult noun phrase to remain one verification argument.</p></section><section><h2>This revision: a small coverage increase and targeted structural fixes</h2><div class="table-wrap"><table><caption>Table 2. Full inventory of original texts. Compilation acceptance is distinct from meaning preservation.</caption><thead><tr><th>Condition</th><th>Compiled</th><th>Claim structures</th><th>Nominal descriptions</th><th>Refused</th></tr></thead><tbody><tr><td>Before fixes · 1 November</td><td>2095</td><td>1924</td><td>171</td><td>280</td></tr><tr><td>After fixes · 5 November</td><td>2099</td><td>1926</td><td>173</td><td>276</td></tr></tbody></table></div><p><b>4 additions; no earlier accepts lost; 29 programs changed.</b> All 11 current programs you rated faithful remain byte-identical. Three refusals you judged unnecessary now compile. Three of the 15 accepts lost in the previous revision are restored; the other 12 remain refused. None of these counts is a new human accuracy score.</p><div class="table-wrap"><table><caption>Table 3. Three families of changes, checked against saved annotations and programs.</caption><thead><tr><th>Family</th><th>Changes</th><th>Review examples</th></tr></thead><tbody><tr><td>Argument and modifier retention</td><td>Complete quoted text; next-to targets and names; report topics attached to the report.</td><td><a href="#examples" data-claim="TgR_u37mCoQ4_1907">Quoted time</a> · <a href="#examples" data-claim="TLO3smKI67PM_554">Karen and proximity</a> · <a href="#examples" data-claim="TzF9M4kZ3Pys_240">Report topic</a></td></tr><tr><td>Coordination and participant binding</td><td>Recover a participial conjunct with a shared subject; use explicit relative-clause controllers; retain a reciprocal target instead of an unrelated other entity.</td><td><a href="#examples" data-claim="TQKCK6-tRaoE_669">Singing and dancing</a> · <a href="#examples" data-claim="TW4OYA3RN-Hw_1797">Attempted storming</a> · <a href="#examples" data-claim="TFOEIehBwT8Q_473">Each other</a></td></tr><tr><td>Nominal alternatives and apposition</td><td>Retain an unresolved noun phrase whole; interpret a descriptive comma-or gloss as apposition, with that reading explicitly recorded.</td><td><a href="#examples" data-claim="TgPh_fzHTCm4_1507">Ridge or anti-cyclone</a> · <a href="#examples" data-claim="TzF9M4kZ3Pys_218">Haboob description</a></td></tr></tbody></table></div><p><b>New argument meanings:</b> <code>reciprocal</code> tells the relation verifier to interpret “each other” over the supplied group within the same event. <code>noun_phrase</code> keeps the exact phrase as one argument; it does not expose the internal bindings. Neither is a newly trained media model. The appositive reading is a recorded interpretation requiring context, rather than a claim of a complete general grammar.</p></section><section><h2>Fresh review: the important remaining limitation</h2><p>Twenty cases spanning 21 source videos were reserved before fixes, excluding 129 recorded review sources. All texts had been parsed earlier. The compiler-author assistant wrote intended readings before inspecting outputs, then reviewed the structures. These are qualitative assistant judgments, not independent human references or a uniform corpus accuracy estimate.</p><div class="table-wrap"><table><caption>Table 4. The fresh programs are unchanged in this round, so the paired judgments are identical.</caption><thead><tr><th>Condition</th><th>Faithful</th><th>Partial</th><th>Incorrect</th><th>Refused</th></tr></thead><tbody><tr><td>Before fixes</td><td>13</td><td>4</td><td>3</td><td>0</td></tr><tr><td>After fixes</td><td>13</td><td>4</td><td>3</td><td>0</td></tr></tbody></table></div><p>One faithful rating tolerates the passive-progressive simplification you accepted. Counting that case as partial gives 12 faithful, 5 partial and 3 incorrect. The sample shows <b>no fresh semantic gain</b>. It exposes recurring errors in scope and missing content that this bounded revision did not address.</p><div class="table-wrap"><table><caption>Table 5. All twenty fresh judgments, with links to the actual structures.</caption><thead><tr><th>Original claim</th><th>Assistant judgment</th><th>Reason</th></tr></thead><tbody><tr><td><a href="#examples" data-claim="TzzhcBIczf_M_2041">Shi Yongxin was arrested for corruption.</a></td><td>faithful</td><td>Preserves the arrested person, corruption as reason, and past passive arrest; it does not assert a conviction.</td></tr><tr><td><a href="#examples" data-claim="Tsuk2uoYj-kc_623">A man is praying.</a></td><td>faithful</td><td>Preserves the man, praying event and present progressive.</td></tr><tr><td><a href="#examples" data-claim="TzF9M4kZ3Pys_247">Dust storm approaching airport.</a></td><td>faithful</td><td>Retains dust storm, airport and the approach relation as a nominal description; arrival is not asserted.</td></tr><tr><td><a href="#examples" data-claim="TQKCK6-tRaoE_671">news 76</a></td><td>partial</td><td>The nominal label loses 76 and retains only news.</td></tr><tr><td><a href="#examples" data-claim="TzzhcBIczf_M_2108">Preliminary results from the investigation into Shi Yongxin violating religious precepts indicate that the accusations are unsubstantiated.</a></td><td>incorrect</td><td>Violation is a relative description of Shi Yongxin outside investigation content, requiring the alleged violation independently of the investigation.</td></tr><tr><td><a href="#examples" data-claim="T2G_ACMxR_I4_1367">The video depicts Blue Ghost preparing for landing on the moon.</a></td><td>incorrect</td><td>Landing appears as a separate world event, outside both the video depiction and the preparation goal.</td></tr><tr><td><a href="#examples" data-claim="TInVWzp25aIM_10">Multiple houses have been washed away.</a></td><td>faithful</td><td>Keeps multiple houses, washed-away content and present-perfect passive; no cause is invented.</td></tr><tr><td><a href="#examples" data-claim="TKCfkoNUssZI_707">The video was made by Ruptly.</a></td><td>faithful</td><td>Preserves Ruptly as maker, the video as product and past passive production.</td></tr><tr><td><a href="#examples" data-claim="Tsuk2uoYj-kc_626">A man speaking while driving down the road.</a></td><td>faithful</td><td>Keeps the same man in speaking and driving, with while and down the road retained.</td></tr><tr><td><a href="#examples" data-claim="T2EE72iNELEs_180">Rocket is launched successfully.</a></td><td>faithful</td><td>Keeps the rocket, successful launch and passive construction.</td></tr><tr><td><a href="#examples" data-claim="TInVWzp25aIM_18">The typhoon strengthened over the Bering Straight before hitting Alaska.</a></td><td>partial</td><td>Preserves strengthening, typhoon identity and before hitting Alaska, but reduces the named location Bering Straight to Bering.</td></tr><tr><td><a href="#examples" data-claim="TMrQshDs8aH0_752">A small dolly creaks while a man uses it to move large stacks of chairs.</a></td><td>partial</td><td>Drops the small dolly and its creaking, leaving only a man using an unresolved it to move chair stacks.</td></tr><tr><td><a href="#examples" data-claim="TInVWzp25aIM_116">Some of the emergency supplies include men&#x27;s shirts.</a></td><td>partial</td><td>The clothing category men’s shirts becomes a possessive link to a separate men referent; the partitive interpretation is not explicit.</td></tr><tr><td><a href="#examples" data-claim="TFOEIehBwT8Q_483">Protester wearing a cowboy hat is addressing the police in a dialogue of why they are there.</a></td><td>incorrect</td><td>Why they are there is detached from dialogue/question content and compiled as an independent world-level be event.</td></tr><tr><td><a href="#examples" data-claim="Tsuk2uoYj-kc_629">Sunny day over Saudi Arabia.</a></td><td>faithful</td><td>Retains sunny day and Saudi Arabia as a nominal weather description.</td></tr><tr><td><a href="#examples" data-claim="Txf2EdqOg1SQ_2417">The reporter says she can taste salty seawater in her mouth due to the strong waves and wind.</a></td><td>faithful</td><td>Retains reported taste, can, salty seawater, mouth and the causal weather group under speech; references explicitly require resolution.</td></tr><tr><td><a href="#examples" data-claim="TInVWzp25aIM_96">Footage of the wreckage is being shared by Anchorage Daily News.</a></td><td>faithful</td><td>Preserves publisher, sharing and depicted wreckage. The passive-progressive simplification is tolerated under the user’s current criterion.</td></tr><tr><td><a href="#examples" data-claim="TzF9M4kZ3Pys_253">Electric posts along the street are illuminated, </a></td><td>faithful</td><td>Keeps electric posts, along-street relation and illuminated state.</td></tr><tr><td><a href="#examples" data-claim="TzzhcBIczf_M_2156">Shi Yongxin is accused of maintaining improper relations with multiple women.</a></td><td>faithful</td><td>Keeps the accusation as parent and alleged maintaining as nested content, including improper relations and multiple women.</td></tr><tr><td><a href="#examples" data-claim="TgPh_fzHTCm4_1488">There is identifiable counter-clockwise circulation in the Bay of Campeche.</a></td><td>faithful</td><td>Retains identifiable, counter-clockwise, circulation and the Bay-of-Campeche location structure.</td></tr></tbody></table></div><p><b>Freeze chronology:</b> The first compiler freeze preceded fresh output inspection. An audit of other changed cases then exposed unsafe name/controller rules. Two safety restrictions were added and the first source/results retained. All 20 final fresh program hashes are unchanged from both the first freeze and the 1 November baseline; the readings and ratings were not rewritten. <a href="reviewed-compilation/fresh_preservation.json">Inspect the hash check</a>.</p></section><section id="examples"><h2>Inspect the actual compiled outputs</h2><p><a href="#examples" data-claim="TLO3smKI67PM_554">Retained proximity</a> · <a href="#examples" data-claim="TFOEIehBwT8Q_473">Reciprocal binding</a> · <a href="#examples" data-claim="T2G_ACMxR_I4_1367">Remaining landing-scope error</a> · <a href="#examples" data-claim="TMrQshDs8aH0_752">Missing sound event</a></p><div class="toolbar"><label>Subset<select id="filter"><option value="all">All claims</option><option value="compiled">Compiled</option><option value="refused">Refused</option><option value="new">Newly compiled</option><option value="changed">Changed programs</option><option value="human">User-reviewed development cases</option><option value="fresh">Fresh review cases</option></select></label><label>Search<input id="search" type="search" placeholder="Claim text or ID"></label></div><p id="match-count" role="status">Loading inventory…</p><label>Claim<select id="claim-select"></select></label><div class="toolbar"><button id="previous">Previous</button><button id="next">Next</button></div><h3 id="claim-id"></h3><blockquote id="claim-text"></blockquote><p id="reading"></p><p id="change-note" class="note"></p><p class="cv-legend">Numbered participant roles retain the parser’s labels; their meanings depend on the verb. Named and grammatical relations keep their source labels. Nested boxes show source/content attachment. Time labels come from compiled metadata. The outputs are visible before optional raw predicates.</p><div id="outputs" class="output-grid"></div><p id="notes"></p></section><section><h2>Remaining refusals and native execution</h2><div class="table-wrap"><table><caption>Table 6. Compiler refusal reasons across all 276 uncompiled claims. A refusal does not establish that a claim is false.</caption><thead><tr><th>Reason</th><th>Claims</th></tr></thead><tbody><tr><td>unresolved clause</td><td>109</td></tr><tr><td>duplicate role</td><td>59</td></tr><tr><td>missing predicate</td><td>37</td></tr><tr><td>modal scope</td><td>16</td></tr><tr><td>missing srl</td><td>12</td></tr><tr><td>negative quantifier</td><td>10</td></tr><tr><td>nominal disjunction</td><td>8</td></tr><tr><td>predicate type</td><td>8</td></tr><tr><td>mention alignment</td><td>4</td></tr><tr><td>quantity type</td><td>3</td></tr><tr><td>media modifier</td><td>3</td></tr><tr><td>threshold scope</td><td>2</td></tr><tr><td>polarity omission</td><td>2</td></tr><tr><td>temporal scope</td><td>2</td></tr><tr><td>unresolved controller</td><td>1</td></tr></tbody></table></div><div class="table-wrap"><table><caption>Table 7. Bounded native DeepProbLog checks on constructed unknown evidence. Process time includes loading.</caption><thead><tr><th>Case</th><th>Outcome</th><th>Process seconds</th><th>Limit</th></tr></thead><tbody><tr><td><a href="#examples" data-claim="TgR_u37mCoQ4_1907">TgR_u37mCoQ4_1907</a></td><td>passed</td><td>10.19</td><td>25 s</td></tr><tr><td><a href="#examples" data-claim="TFOEIehBwT8Q_473">TFOEIehBwT8Q_473</a></td><td>passed</td><td>8.59</td><td>25 s</td></tr><tr><td><a href="#examples" data-claim="TzF9M4kZ3Pys_218">TzF9M4kZ3Pys_218</a></td><td>passed</td><td>9.33</td><td>25 s</td></tr><tr><td><a href="#examples" data-claim="TgPh_fzHTCm4_1507">TgPh_fzHTCm4_1507</a></td><td>passed</td><td>9.00</td><td>25 s</td></tr><tr><td><a href="#examples" data-claim="TW4OYA3RN-Hw_1797">TW4OYA3RN-Hw_1797</a></td><td>timeout</td><td>25.13</td><td>25 s</td></tr></tbody></table></div><p>Four representative programs return unknown as intended; the long protest/controller example reaches the 25-second process limit. All 2,099 emitted programs parse as ProbLog, but whole-corpus native inference and training throughput are unmeasured. The 207 regression checks include reciprocal supported/refuted/unknown cases and existing probability/gradient checks. No GPU, media inference, sentence rewriting or new relation-training experiment was used.</p></section><section><h2>Next steps and intended goals</h2><ol><li>Address nominal event and question-content scope — prevent preparation, allegations and dialogue content from becoming independent world assertions.</li><li>Check original predicate and identifier coverage — retain sound events such as creaking and label details such as 76 before accepting a program.</li><li>Bound and profile larger programs — establish an efficient inference/training loop before expanding media experiments.</li></ol><p>The compiler remains experimental. This round supports targeted repairs and a clearer failure analysis; it does not establish general compilation reliability or a verification-method gain.</p><p><a href="verification-pipeline.html#next-steps">Project checklist</a> · <a href="reviewed-compilation/README.md">Implementation and reproduction</a> · <a href="reviewed-compilation/source.zip">Source and saved inputs</a> · <a href="reviewed-compilation/human_review_analysis.json">Returned review analysis</a> · <a href="reviewed-compilation/fresh_review.json">Fresh assistant judgments</a> · <a href="reviewed-compilation/census_analysis.json">Full-corpus statistics</a> · <a href="reviewed-compilation/tests.xml">Tests</a></p></section></main><footer class="site-footer"><div class="container">Generated from frozen inputs, the returned review and saved outputs. No model inference runs while this report builds.</div></footer><script>/* Render only the saved logical form and compiler metadata, never the claim or review. */
+window.ClaimOutputView = (() => {
+  const esc = value => String(value ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+  const roles = {nsubj:'Subject',obj:'Object',iobj:'Indirect object',obl:'Oblique complement',
+    'ARGM-LOC':'Location','ARGM-TMP':'Time','ARGM-MNR':'Manner','ARGM-CAU':'Cause',
+    'ARGM-PRP':'Purpose','ARGM-DIR':'Direction','ARGM-EXT':'Extent',
+    mod:'Modifier',member:'Group member',of:'of',in:'in',about:'about',particle:'Verb particle',
+    quantifier:'Quantifier',source_route:'Evidence source',acl:'Attached clause',amod:'Adjectival modifier',content:'Content'};
+  const routes = {visual_depiction:'Visual depiction',audio_event:'Sound',speech_assertion:'Speech',
+    ocr_assertion:'On-screen text (OCR)',unspecified:'Source not specified'};
+  const kinds = {complement:'Complement clause',relative:'Attached description',depiction:'Depicted content',
+    assertion:'Source assertion',question:'Question content',reason:'Reason',purpose:'Purpose',
+    belief:'Belief content',condition:'Condition',temporal:'Time condition',sufficiency:'Sufficient for the following goal'};
+  const human = value => String(value ?? '').replaceAll('_',' ');
+  function role(value){
+    const name = roles[value] || (/^ARG\d+$/.test(value) ? 'Participant '+value.slice(3) : human(value));
+    return esc(name) + (name !== value ? ' <small class="cv-code">'+esc(value)+'</small>' : '');
+  }
+  function valueText(value){
+    if(value === null || value === undefined)return 'Not specified';
+    if(typeof value !== 'object')return String(value);
+    if(Array.isArray(value))return value.map(valueText).join(', ');
+    return Object.entries(value).map(([k,v])=>human(k)+': '+valueText(v)).join('; ');
+  }
+  function literal(value){
+    if(typeof value !== 'object' || value === null)return esc(value);
+    const labels={verbatim_text:'Exact text',text:'Text',time:'Time expression',measurement:'Measurement'};
+    const content=value.kind==='verbatim_text'?'“'+valueText(value.value)+'”':valueText(value.value);
+    const extras=Object.entries(value).filter(([k])=>!['kind','value'].includes(k)).map(([k,v])=>human(k)+': '+valueText(v));
+    return '<span class="cv-literal"><small>'+esc(labels[value.kind]||human(value.kind||'Value'))+'</small> '+esc(content)+(extras.length?' <span>'+esc(extras.join('; '))+'</span>':'')+'</span>';
+  }
+  function row(label,body){return '<div class="cv-row"><div class="cv-edge">'+label+'</div><div class="cv-target">'+body+'</div></div>';}
+  function timeDescription(t){
+    if(!t)return '';
+    const tense={pres:'present tense',past:'past tense',fut:'future tense',unspecified:'tense not specified'}[t.tense]||human(t.tense);
+    const aspect={simple:'simple aspect',progressive:'progressive aspect (ongoing)',perfect:'perfect aspect',perfect_progressive:'perfect progressive aspect',unspecified:'aspect not specified'}[t.aspect]||human(t.aspect);
+    return [tense,aspect,t.completion && t.completion!=='unspecified'?'completion: '+human(t.completion):''].filter(Boolean).join(' · ');
+  }
+  function render(output,metadata={},number=1){
+    if(output.status!=='compiled')return '<figure class="cv-figure"><div class="cv-refusal"><b>No compiled output</b><p>'+esc(output.reason||output.code||'No reason recorded.')+'</p></div><figcaption>Figure '+number+'. This version refused compilation.</figcaption></figure>';
+    const form=output.form, entities=Object.fromEntries((form?.entities||[]).map(e=>[e.id,e]));
+    const seen=new Set();
+    const metaEvents=Object.entries(metadata.events||{});
+    const eventInfo=node=>metaEvents.filter(([,e])=>e.id===node.id&&e.predicate===node.predicate);
+    function properties(items){
+      return (items||[]).map(p=>row(role(p.role),esc(p.role==='source_route'?(routes[p.value]||human(p.value)):valueText(p.value)))).join('');
+    }
+    function entity(id){
+      const e=entities[id];
+      if(!e)return '<span class="cv-unresolved">Unresolved reference: '+esc(id)+'</span>';
+      const repeated=seen.has(id);seen.add(id);
+      let html='<div class="cv-node cv-entity" data-entity="'+esc(id)+'"><div class="cv-node-title"><span class="cv-kind">'+(e.type==='group'?'Group':'Entity')+'</span> <b>'+esc(e.text)+'</b> <small class="cv-code">'+esc(id)+'</small></div>';
+      if(repeated)return html+'<p class="cv-repeated">Same participant as above.</p></div>';
+      html+=properties(e.properties);
+      if(e.quantity)html+=row('Quantity',esc(human(e.quantity.operator)+' '+valueText(e.quantity.value)));
+      for(const r of e.relations||[])html+=row(role(r.role),entity(r.target));
+      for(const p of e.propositions||[])html+=proposition(p);
+      return html+'</div>';
+    }
+    function proposition(p){
+      return '<div class="cv-scope"><div class="cv-scope-title"><b>'+esc(kinds[p.kind]||human(p.kind))+'</b> <small>'+role(p.role)+'</small></div><p class="cv-source">'+esc(routes[p.route]||human(p.route||'unspecified'))+'</p>'+node(p.body)+'</div>';
+    }
+    function node(n){
+      if(!n)return '<p>No formula saved.</p>';
+      if(n.op==='entity')return entity(n.ref);
+      if(n.op==='and'||n.op==='or')return '<div class="cv-scope"><b>'+(n.op==='and'?'All of the following (AND)':'At least one alternative (OR)')+'</b>'+n.children.map(node).join('')+'</div>';
+      if(n.op==='not')return '<div class="cv-scope"><b>Negation (NOT)</b>'+node(n.child)+'</div>';
+      if(n.op==='qualified')return '<div class="cv-scope"><b>Condition: '+esc(human(n.operator))+'</b>'+node(n.body)+'</div>';
+      if(n.op!=='event')return '<p>Unrecognized node: '+esc(valueText(n))+'</p>';
+      const infos=eventInfo(n), info=infos.length===1?infos[0]:null;
+      const particles=(n.properties||[]).filter(p=>p.role==='particle').map(p=>p.value);
+      let html='<div class="cv-node cv-event" data-event="'+esc(n.id)+'"><div class="cv-node-title"><span class="cv-kind">Event / state</span> <b>'+esc([n.predicate,...particles].join(' '))+'</b> <small class="cv-code">'+esc(n.id)+'</small></div>';
+      if(info){
+        const [compiledId,data]=info;
+        const time=timeDescription(metadata.temporal?.[compiledId]);
+        if(time)html+='<p class="cv-time">'+esc(time)+'</p>';
+        html+='<p class="cv-source">'+esc(routes[data.route]||human(data.route))+(data.scope==='world'?' · Main assertion':' · Nested content')+'</p>';
+      }
+      if(infos.length>1)html+='<div class="cv-context">This event appears in several compiled contexts.'+infos.map(([id,data])=>'<p>'+esc(id)+': '+esc(timeDescription(metadata.temporal?.[id]))+' · '+esc(routes[data.route]||human(data.route))+'</p>').join('')+'</div>';
+      for(const [r,v] of Object.entries(n.arguments||{}))html+=row(role(r),typeof v==='string'?entity(v):literal(v));
+      html+=properties(n.properties);
+      for(const p of n.propositions||[])html+=proposition(p);
+      return html+'</div>';
+    }
+    let graph=node(form?.formula);
+    const unused=Object.keys(entities).filter(id=>!seen.has(id));
+    if(unused.length)graph+='<details><summary>Declared entities outside this structure ('+unused.length+')</summary><p>These declarations have no link from the formula shown above.</p>'+unused.map(entity).join('')+'</details>';
+    let html='<figure class="cv-figure"><p class="cv-output-kind">'+(form?.kind==='mention'?'Noun phrase description':'Claim structure')+'</p>'+graph;
+    if(output.event_references?.length)html+='<div class="cv-context"><b>Shared event references</b>'+output.event_references.map(r=>'<p>'+esc(r.mention)+' and '+esc(r.event)+' refer to the same event ('+esc(r.variable)+').</p>').join('')+'</div>';
+    if(output.runtime_requirements?.length)html+='<div class="cv-context"><b>Context still required</b><ul>'+output.runtime_requirements.map(r=>'<li>'+esc(human(r))+'</li>').join('')+'</ul></div>';
+    return html+'<figcaption>Figure '+number+'. Saved compiler output. Indented boxes show attachment and source scope; repeated IDs identify the same participant or event.</figcaption></figure>';
+  }
+  function sameOutputs(a,b){
+    if(a.status!==b.status)return false;
+    if(a.status!=='compiled')return a.code===b.code&&a.reason===b.reason;
+    const structure=o=>({kind:o.form?.kind,entities:o.form?.entities,formula:o.form?.formula,predicates:o.predicates,runtime:o.runtime_requirements});
+    return JSON.stringify(structure(a))===JSON.stringify(structure(b));
+  }
+  return {render,sameOutputs,timeDescription};
+})();
+</script><script>const $ = id => document.getElementById(id);
+const esc = value => String(value ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+let inventory=[],visible=[],current='',sequence=0;
+const chunks=new Map();
+function renderOutput(label,output,assessment,number){
+  let html='<section class="output"><h3>'+label+'</h3>';
+  if(assessment)html+='<p class="review-note">'+esc(assessment)+'</p>';
+  html+=ClaimOutputView.render(output,output.metadata,number);
+  if(output.status==='compiled')html+='<details><summary>Exact predicates and logical form</summary><pre>'+esc(output.predicates.join('\n'))+'</pre><pre>'+esc(JSON.stringify(output.form,null,2))+'</pre></details>';
+  return html+'</section>';
+}
+async function show(cid){
+  current=cid;const token=++sequence,meta=inventory.find(c=>c.claim_id===cid);if(!meta)return;
+  $('claim-select').value=cid;$('claim-id').textContent=cid;$('claim-text').textContent=meta.text;
+  $('outputs').innerHTML='<p>Loading the saved structures…</p>';
+  if(!chunks.has(meta.chunk))chunks.set(meta.chunk,fetch('reviewed-compilation/'+meta.chunk).then(r=>{if(!r.ok)throw Error('Could not load saved outputs.');return r.json();}));
+  try{
+    const rows=await chunks.get(meta.chunk);if(token!==sequence)return;
+    const row=rows.find(r=>r.claim_id===cid),after=row.after||row.before;
+    $('reading').textContent=row.reading?row.reading_source+': '+row.reading:'No separate intended-reading annotation exists for this claim.';
+    $('change-note').textContent=row.same?(after.status==='compiled'?'The saved compiled program is unchanged by this round.':'Both versions refused compilation for this claim.'):'The compiled output changed in this round.';
+    let beforeNote='',afterNote='';
+    if(row.human){
+      beforeNote='User review of the 1 November output: '+(row.human.status==='compiled'?row.human.rating:'refusal appropriate: '+row.human.rating)+'. '+row.human.reason;
+      afterNote=row.same?'Same program as the user-reviewed output.':'This changed program has no new human rating; inspect the retained conditions below.';
+    }
+    if(row.fresh){
+      beforeNote='Assistant assessment: '+row.fresh.before.judgment+'. '+row.fresh.before.reason;
+      afterNote='Assistant assessment: '+row.fresh.after.judgment+'. '+row.fresh.after.reason;
+    }
+    $('outputs').innerHTML=renderOutput('Before fixes · 1 November',row.before,beforeNote,1)+renderOutput('After fixes · 5 November',after,afterNote,2);
+    $('notes').textContent=row.new_notes.length?'Changes recorded: '+row.new_notes.map(n=>n.kind.replaceAll('_',' ')).join('; ')+'.':'No new annotation change is recorded.';
+    $('previous').disabled=visible.findIndex(c=>c.claim_id===cid)<=0;
+    $('next').disabled=visible.findIndex(c=>c.claim_id===cid)>=visible.length-1;
+  }catch(error){$('outputs').textContent=error.message;}
+}
+function filter(){
+  const mode=$('filter').value,term=$('search').value.toLowerCase();
+  visible=inventory.filter(c=>(!term||(c.claim_id+' '+c.text).toLowerCase().includes(term))&&(
+    mode==='all'||mode==='compiled'&&c.after==='compiled'||mode==='refused'&&c.after!=='compiled'||
+    mode==='new'&&c.before!=='compiled'&&c.after==='compiled'||mode==='changed'&&c.changed||
+    mode==='human'&&c.human||mode==='fresh'&&c.fresh));
+  $('match-count').textContent=visible.length+' of '+inventory.length+' claims';
+  $('claim-select').innerHTML=visible.map(c=>'<option value="'+esc(c.claim_id)+'">'+esc(c.claim_id+' · '+c.text.slice(0,120))+'</option>').join('');
+  if(visible.length)show(visible.some(c=>c.claim_id===current)?current:visible[0].claim_id);
+  else{$('claim-id').textContent='No matching claims';$('claim-text').textContent='';$('outputs').innerHTML='';}
+}
+function pick(cid){$('filter').value='all';$('search').value='';current=cid;filter();}
+$('filter').addEventListener('change',filter);let timer;
+$('search').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(filter,150);});
+$('claim-select').addEventListener('change',e=>show(e.target.value));
+$('previous').addEventListener('click',()=>show(visible[visible.findIndex(c=>c.claim_id===current)-1].claim_id));
+$('next').addEventListener('click',()=>show(visible[visible.findIndex(c=>c.claim_id===current)+1].claim_id));
+document.querySelectorAll('[data-claim]').forEach(a=>a.addEventListener('click',()=>pick(a.dataset.claim)));
+fetch('reviewed-compilation/index.json').then(r=>r.json()).then(data=>{inventory=data;pick(new URLSearchParams(location.search).get('claim')||'TLO3smKI67PM_554');}).catch(e=>{$('outputs').textContent=e.message;});
+</script></body></html>

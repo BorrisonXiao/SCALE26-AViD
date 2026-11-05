@@ -1,0 +1,186 @@
+{
+  "reviewer_type": "assistant_claim_only_reading",
+  "protocol": "Compiler frozen first. These readings were written from original text before inspecting either fresh compiled output; this is the compiler-author assistant, not an independent human reviewer.",
+  "cases": [
+    {
+      "claim_id": "TzzhcBIczf_M_2041",
+      "text": "Shi Yongxin was arrested for corruption.",
+      "intended_meaning": "Shi Yongxin was arrested, with corruption stated as the reason.",
+      "participants_and_relations": "Arrested person: Shi Yongxin; arresting actor unspecified; reason: corruption.",
+      "source_context": "No medium specified.",
+      "quantity_and_time": "Past arrest; no date or outcome of prosecution stated.",
+      "ambiguity": "Arrest for corruption does not establish guilt."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_623",
+      "text": "A man is praying.",
+      "intended_meaning": "A man is engaged in prayer.",
+      "participants_and_relations": "A man participates in an ongoing praying event.",
+      "source_context": "No medium specified.",
+      "quantity_and_time": "Present progressive; no duration stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_247",
+      "text": "Dust storm approaching airport.",
+      "intended_meaning": "A dust storm is approaching an airport.",
+      "participants_and_relations": "The storm approaches the airport.",
+      "source_context": "No medium specified.",
+      "quantity_and_time": "Ongoing approach; arrival is not asserted.",
+      "ambiguity": "A descriptive fragment; the airport and reference time are unspecified."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_671",
+      "text": "news 76",
+      "intended_meaning": "The label or name news 76.",
+      "participants_and_relations": "One named label or entity; no action or relationship is asserted.",
+      "source_context": "No medium or visibility claim specified.",
+      "quantity_and_time": "None stated.",
+      "ambiguity": "The fragment needs context to establish what the label names or where it appears."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2108",
+      "text": "Preliminary results from the investigation into Shi Yongxin violating religious precepts indicate that the accusations are unsubstantiated.",
+      "intended_meaning": "Preliminary investigation results indicate that the accusations against Shi Yongxin concerning religious-precept violations are unsubstantiated.",
+      "participants_and_relations": "Preliminary results come from an investigation into alleged violations; the results indicate that accusations lack substantiation.",
+      "source_context": "The conclusion is attributed to investigation results.",
+      "quantity_and_time": "Preliminary status matters; no date stated.",
+      "ambiguity": "Neither actual violations nor the independent falsity of every accusation is established."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1367",
+      "text": "The video depicts Blue Ghost preparing for landing on the moon.",
+      "intended_meaning": "The video depicts Blue Ghost preparing to land on the moon.",
+      "participants_and_relations": "Video depicts preparation; Blue Ghost is preparing; landing on the moon is the goal.",
+      "source_context": "Explicit visual depiction.",
+      "quantity_and_time": "Preparation is depicted; a completed landing is not asserted.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_10",
+      "text": "Multiple houses have been washed away.",
+      "intended_meaning": "More than one house has been washed away.",
+      "participants_and_relations": "Multiple houses are affected; the cause or agent is unspecified.",
+      "source_context": "No medium specified.",
+      "quantity_and_time": "Plural quantity and present-perfect passive matter.",
+      "ambiguity": "No exact count or flood cause is stated."
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_707",
+      "text": "The video was made by Ruptly.",
+      "intended_meaning": "Ruptly made the video.",
+      "participants_and_relations": "Ruptly is the maker; the video is the product.",
+      "source_context": "Media provenance, rather than the content depicted in the video.",
+      "quantity_and_time": "Past passive production.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_626",
+      "text": "A man speaking while driving down the road.",
+      "intended_meaning": "A man speaks while driving down a road.",
+      "participants_and_relations": "The same man speaks and drives; driving proceeds down the road.",
+      "source_context": "No particular evidence channel specified; speech content is absent.",
+      "quantity_and_time": "Speaking and driving overlap; no date stated.",
+      "ambiguity": "A descriptive fragment, with an understood shared subject."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_180",
+      "text": "Rocket is launched successfully.",
+      "intended_meaning": "A rocket is launched successfully.",
+      "participants_and_relations": "A rocket undergoes a successful launch; the launching actor is unspecified.",
+      "source_context": "No medium specified.",
+      "quantity_and_time": "Present passive; success is explicit.",
+      "ambiguity": "The exact reference time is unspecified."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_18",
+      "text": "The typhoon strengthened over the Bering Straight before hitting Alaska.",
+      "intended_meaning": "The typhoon strengthened over the Bering Straight before its Alaska impact.",
+      "participants_and_relations": "The same typhoon strengthens and is associated with a later hitting-Alaska event.",
+      "source_context": "No medium specified.",
+      "quantity_and_time": "Strengthening precedes hitting; preserve the before relation.",
+      "ambiguity": "The before clause may describe a realized or anticipated impact; do not project it without scope."
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_752",
+      "text": "A small dolly creaks while a man uses it to move large stacks of chairs.",
+      "intended_meaning": "A small dolly creaks while a man uses it to move large stacks of chairs.",
+      "participants_and_relations": "The dolly makes the sound; the man uses that dolly; moving the chair stacks is the purpose.",
+      "source_context": "The creaking is sound content; no explicit source medium is named.",
+      "quantity_and_time": "Creaking and use overlap; completed movement is not established.",
+      "ambiguity": "It refers to the dolly; large modifies the stacks."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_116",
+      "text": "Some of the emergency supplies include men's shirts.",
+      "intended_meaning": "Some emergency supplies include shirts for men.",
+      "participants_and_relations": "A subset of the supplies includes the clothing category men’s shirts.",
+      "source_context": "No medium specified.",
+      "quantity_and_time": "Some and plural shirts matter; no exact count stated.",
+      "ambiguity": "Men’s describes a clothing category, without requiring particular men to own the shirts."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_483",
+      "text": "Protester wearing a cowboy hat is addressing the police in a dialogue of why they are there.",
+      "intended_meaning": "A protester wearing a cowboy hat addresses police in a dialogue about why they are there.",
+      "participants_and_relations": "The protester wears the hat and addresses police; the dialogue concerns a reason for presence.",
+      "source_context": "Dialogue/question content is distinct from an asserted reason.",
+      "quantity_and_time": "Ongoing addressing and wearing; no date stated.",
+      "ambiguity": "They may refer to police or protesters; do not invent the reason for their presence."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_629",
+      "text": "Sunny day over Saudi Arabia.",
+      "intended_meaning": "A sunny day over Saudi Arabia.",
+      "participants_and_relations": "Sunny weather is associated with a day and the Saudi Arabia location.",
+      "source_context": "No medium specified.",
+      "quantity_and_time": "No exact date stated.",
+      "ambiguity": "A nominal weather description rather than an independent action."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2417",
+      "text": "The reporter says she can taste salty seawater in her mouth due to the strong waves and wind.",
+      "intended_meaning": "The reporter says she can taste salty seawater in her mouth because of strong waves and wind.",
+      "participants_and_relations": "The reporter is the speaker and experiencer; seawater is salty and in her mouth; waves and wind supply the stated cause.",
+      "source_context": "All taste/ability/causal content remains attributed to the reporter’s speech.",
+      "quantity_and_time": "Can and the causal relation matter; no date stated.",
+      "ambiguity": "The distribution of strong across the coordinated weather terms is not completely explicit."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_96",
+      "text": "Footage of the wreckage is being shared by Anchorage Daily News.",
+      "intended_meaning": "Anchorage Daily News is sharing footage depicting wreckage.",
+      "participants_and_relations": "The publisher shares footage; wreckage is its depicted content.",
+      "source_context": "Media sharing and depicted content must remain distinct.",
+      "quantity_and_time": "Present progressive passive sharing.",
+      "ambiguity": "The wreckage is described through footage; no separate source-world event is specified."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_253",
+      "text": "Electric posts along the street are illuminated, ",
+      "intended_meaning": "Electric posts along a street are illuminated.",
+      "participants_and_relations": "The posts are electric, located along the street and in a lit state.",
+      "source_context": "No explicit medium specified.",
+      "quantity_and_time": "Present state; no lighting actor or date stated.",
+      "ambiguity": "The trailing comma does not specify another clause."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2156",
+      "text": "Shi Yongxin is accused of maintaining improper relations with multiple women.",
+      "intended_meaning": "Shi Yongxin is accused of maintaining improper relations with multiple women.",
+      "participants_and_relations": "Shi Yongxin is the accused person; the alleged relations concern multiple women.",
+      "source_context": "Maintaining improper relations remains under accusation scope.",
+      "quantity_and_time": "Current accusation; multiple women; no exact count.",
+      "ambiguity": "No accuser is named and the underlying allegation is not independently asserted true."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1488",
+      "text": "There is identifiable counter-clockwise circulation in the Bay of Campeche.",
+      "intended_meaning": "Identifiable counter-clockwise circulation exists in the Bay of Campeche.",
+      "participants_and_relations": "Circulation is recognizable, has counter-clockwise direction and is located in the named bay.",
+      "source_context": "No particular image or audio source explicitly specified.",
+      "quantity_and_time": "Present existence; no exact date.",
+      "ambiguity": "Identifiable is a perceptibility condition; do not add an unstated storm identity."
+    }
+  ]
+}

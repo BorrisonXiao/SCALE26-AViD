@@ -1,10 +1,9 @@
 # Compiler revision after the twenty-case review
 
 The user reports completing all twenty reviews and authorized one focused compiler
-revision followed by a full-corpus run and a fresh review. The JSON export has not
-yet reached the shared project. The form stores it in the user's browser; the user
-must select **Download my review** and return that file. Their review need not be
-repeated. Agent suggestions are not a substitute for the returned answers.
+revision followed by a full-corpus run and a fresh review. The review was received and imported on5 November. The bounded revision and fresh
+review are reported in `site/reports/reviewed-compilation.html`. The original bytes
+are preserved with a receipt. The remaining text records the preparation protocol.
 
 Preparation is saved in `exp/probabilistic_verification/review_followup_20261104/`.
 Twenty fresh cases are reserved before code changes. Actual source-video IDs are

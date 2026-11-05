@@ -1,0 +1,881 @@
+{
+  "packet_id": "c19946843b3d4437d55a",
+  "compiler_freeze": "1c8bd7e213ef31f7a1b2df6686c26229882ec224c387b725e7bf5f9127a2b1a2",
+  "reviewer_type": "human_review_of_agent_draft",
+  "agent_assisted": true,
+  "reserved_cases": 20,
+  "received_readings": 20,
+  "complete_comparisons": 20,
+  "counts_by_condition": {
+    "baseline": {
+      "compiled": {
+        "faithful": 11,
+        "partial": 6,
+        "incorrect": 1
+      },
+      "refusal": {
+        "no": 1,
+        "yes": 1
+      },
+      "unrated": 0
+    },
+    "revised": {
+      "compiled": {
+        "faithful": 11,
+        "partial": 4,
+        "incorrect": 1
+      },
+      "refusal": {
+        "no": 3,
+        "yes": 1
+      },
+      "unrated": 0
+    }
+  },
+  "paired_outcomes": {
+    "tied": 16,
+    "newly_refused": 2,
+    "both_refused": 2
+  },
+  "definite_both_compiled_comparisons": 16,
+  "interpretation": "Descriptive review of reserved cases. Refusals and uncertainty are separate from definite semantic comparisons. Conflicting ratings of identical outputs require resolution. These cases become development data when used for fixes; no corpus accuracy estimate is implied.",
+  "cases": [
+    {
+      "claim_id": "TQKCK6-tRaoE_677",
+      "text": "A video overlay reading \"news 76\" is visible.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "revised": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves visibility, the video overlay, and the exact label \"news 76\" as text associated with that overlay.",
+          "program_sha256": "110b75bdac624445c54af007d82634578aa6067e08c1b2a14dfcedb4767ce3d2"
+        },
+        "baseline": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves visibility, the video overlay, and the exact label \"news 76\" as text associated with that overlay.",
+          "program_sha256": "d0a89ce363aaa3fd81bf5615dc02297339d2272c4786feebdd70c94138b1071e"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1522",
+      "text": "The video opens with Trump speaking at a podium.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves the video's opening and keeps Trump's ongoing speech at the podium inside the opening content.",
+          "program_sha256": "bd9d85c73c1c12e2abe4b0c24aa1ceaaf7d6daa3baafd398f36b49d06e8a4ffa"
+        },
+        "revised": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves the video's opening and keeps Trump's ongoing speech at the podium inside the opening content.",
+          "program_sha256": "86e874f3e2bb0be9381c6d6532cfa0405ac36346f47ecf1bc9d0d4b722da309f"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TInVWzp25aIM_22",
+      "text": "At least one person has died from the typhoon.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "revised": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves at least one death, the typhoon as its cause, and the present-perfect timing.",
+          "program_sha256": "b3326dab1718887de7fc1b37d25d2d8aada63e1afbb3a3136205be9f38862d17"
+        },
+        "baseline": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves at least one death, the typhoon as its cause, and the present-perfect timing.",
+          "program_sha256": "bab861e185615ab03ee2d831a909a980458fe2077ab56bd715be43f2a5fa9125"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1507",
+      "text": "The clockwise motion indicates a ridge or high-pressure anti-cyclone over the region.",
+      "reading_complete": true,
+      "edited_reading_fields": [
+        "ambiguity"
+      ],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "partial",
+          "reason": "The complete alternative description is retained as one entity label, which is okay in terms of our end goal, namely verification, as the generated sub-claim can just be verified as a single request.",
+          "program_sha256": "563c6515b88f0da146d0f4f7a8030638e46a66c3f73d15a2eb823688f7478ac4"
+        },
+        "revised": {
+          "letter": "B",
+          "status": "unsupported",
+          "rating": "no",
+          "reason": "An alternative reading makes refusal reasonable, but 'or' could also restate the weather feature; the wording alone does not establish which reading applies.",
+          "program_sha256": null
+        }
+      },
+      "comparison": "newly_refused",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_218",
+      "text": "A haboob, or an intense, massive wall of dust and sand created by the downdrafts of a collapsing thunderstorm. ",
+      "reading_complete": true,
+      "edited_reading_fields": [
+        "ambiguity"
+      ],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "partial",
+          "reason": "Preserves descriptive details, but having \"A haboob, or an intense, massive wall of dust and sand created by the downdrafts of a collapsing thunderstorm\" as a single argument for \"Event / state create\" doesn't seem right.",
+          "program_sha256": "11f248707711bb906d460cf8ef09be8b47cf8a82925cc4fc3767bf95a93bf664"
+        },
+        "revised": {
+          "letter": "B",
+          "status": "unsupported",
+          "rating": "no",
+          "reason": "It can be compiled, I think.",
+          "program_sha256": null
+        }
+      },
+      "comparison": "newly_refused",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1907",
+      "text": "On-screen text confirms the still shows 'Actual fire spread, four hours after ignition'.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "partial",
+          "reason": "Preserves text confirming a still's depiction, but drops 'four hours after ignition' and does not retain the full quoted label.",
+          "program_sha256": "d947e929d0264d7f4af96b3d60e3e9e69eef43fd6669e80420a848308054ffa1"
+        },
+        "revised": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "partial",
+          "reason": "Preserves text confirming a still's depiction, but drops 'four hours after ignition' and does not retain the full quoted label.",
+          "program_sha256": "a85a9edfdd3a96de730d1022b7bbb43fa14663b9e689bb7629641fa551a16201"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_798",
+      "text": "The tram is driving at night, in mostly clear weather.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves the moving tram, nighttime, mostly clear weather, and ongoing present activity.",
+          "program_sha256": "261c1b0798577a89533162c988441a2d1f1fb6f25b0e3a9bfbc3abf789c975b2"
+        },
+        "revised": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves the moving tram, nighttime, mostly clear weather, and ongoing present activity.",
+          "program_sha256": "be10a5526ca68378ff07a6d9e7eb3ef1367a82dd09a7bfc639dd585717c04420"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1797",
+      "text": "Oli's government lifted the social media restrictions after protests intensified, with police firing tear gas and rubber bullets at protesters attempting to storm parliament.",
+      "reading_complete": true,
+      "edited_reading_fields": [
+        "ambiguity"
+      ],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "unsupported",
+          "rating": "no",
+          "reason": "The protesters explicitly attempt to storm parliament; they supply the understood actor, so the stated unresolved-actor reason is unnecessary.",
+          "program_sha256": null
+        },
+        "revised": {
+          "letter": "B",
+          "status": "unsupported",
+          "rating": "no",
+          "reason": "The protesters explicitly attempt to storm parliament; they supply the understood actor, so the stated unresolved-actor reason is unnecessary.",
+          "program_sha256": null
+        }
+      },
+      "comparison": "both_refused",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_473",
+      "text": "Police and protesters are facing each other in the Zócalo  in front of the National Palace  in Mexico City.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "incorrect",
+          "reason": "Replaces mutual facing with the combined group facing an unlinked 'other' entity; the Zócalo is also assigned a manner role.",
+          "program_sha256": "faad99c29982808d77b508dbd767d6a37034ada1f7aaa1b6039d0a9436ec0001"
+        },
+        "revised": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "incorrect",
+          "reason": "Replaces mutual facing with the combined group facing an unlinked 'other' entity; the Zócalo is also assigned a manner role.",
+          "program_sha256": "49a3b030aeeeda6a8bb94834c5243d14620c4f38a7f5c791acf89826a8561877"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TInVWzp25aIM_0",
+      "text": "Emmonak, Alaska is being affected by the typhoon.",
+      "reading_complete": true,
+      "edited_reading_fields": [
+        "ambiguity"
+      ],
+      "by_condition": {
+        "revised": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves the typhoon as cause and Emmonak, Alaska as affected place, but changes the explicitly ongoing event to simple present. But I think this is ok for now.",
+          "program_sha256": "86e6c4a3266f5b5bc30cf56de95fff7a4d745db1453ce9484bbfd32d0a51c301"
+        },
+        "baseline": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves the typhoon as cause and Emmonak, Alaska as affected place, but changes the explicitly ongoing event to simple present. But I think this is ok for now.",
+          "program_sha256": "96bdf7000e913992116a385a8e9274c4114ab94c60232d251209dcba3015b204"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2433",
+      "text": "Citizens were urged to stop all water activities.",
+      "reading_complete": true,
+      "edited_reading_fields": [
+        "ambiguity"
+      ],
+      "by_condition": {
+        "revised": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves past urging, citizens as recipients and intended actors, and all water activities; stopping remains within the urging complement.",
+          "program_sha256": "496b90a6e0244414a2faa62433553c10d779c5306a2b1dfa2e34278227b3a5e8"
+        },
+        "baseline": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves past urging, citizens as recipients and intended actors, and all water activities; stopping remains within the urging complement.",
+          "program_sha256": "3f74cc33a6e905f319078d56bfb02c0e9182e69bf9926287ffb9d7066fc5868f"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_240",
+      "text": "News report in the background about rain and the weather.",
+      "reading_complete": true,
+      "edited_reading_fields": [
+        "ambiguity"
+      ],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "partial",
+          "reason": "Keeps the background news report and both topics, but attaches 'about rain and weather' to the background rather than the report.",
+          "program_sha256": "36ef7783c1eb404f53dba367362f3a5316726bf63b62f9bcd41447e5114a140f"
+        },
+        "revised": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "partial",
+          "reason": "Keeps the background news report and both topics, but attaches 'about rain and weather' to the background rather than the report.",
+          "program_sha256": "1cf5b0e3cb19e05263b36a6fd538192f505c0ff2a3d345d8117825ad34010050"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_421",
+      "text": "100m- final lineup",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "unsupported",
+          "rating": "yes",
+          "reason": "This claim doesn't make much sense.",
+          "program_sha256": null
+        },
+        "revised": {
+          "letter": "B",
+          "status": "unsupported",
+          "rating": "yes",
+          "reason": "This claim doesn't make much sense.",
+          "program_sha256": null
+        }
+      },
+      "comparison": "both_refused",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_312",
+      "text": "Wind is starting to pick up.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "revised": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Retains starting, the 'pick up' expression, ongoing aspect, and the same wind participant in both linked predicates.",
+          "program_sha256": "f540d5e45a6ca02c3e49397bd666c3f723e0008ac209b60da5de4a26415bebe7"
+        },
+        "baseline": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Retains starting, the 'pick up' expression, ongoing aspect, and the same wind participant in both linked predicates.",
+          "program_sha256": "aab0c5fcc17892f45b3062ad023ba0da524b4cd90f247ab60725cd738a262895"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_292",
+      "text": "Timelapse footage of haboob taking over apron.",
+      "reading_complete": true,
+      "edited_reading_fields": [
+        "ambiguity"
+      ],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "The full takeover is structurally nested under the footage's depiction context; time-lapse form, ongoing action, haboob, and apron are retained.",
+          "program_sha256": "911d0b5e3ca37e323326d39d460e5d14174849d2924e079aa06ebaa293a6e884"
+        },
+        "revised": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Keeps time-lapse footage, the haboob, apron, and ongoing takeover together within explicit visual depiction scope.",
+          "program_sha256": "ffed284e0f90c7ea26ec8d3d6d61fdcf975083813c17bc5a694c8468099bccd8"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TLO3smKI67PM_554",
+      "text": "The home run lands in the stands, right next to Phillies fan Karen.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "revised": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "partial",
+          "reason": "Preserves the home run landing in the stands, but omits Karen, her Phillies affiliation, and the landing's immediate proximity to her.",
+          "program_sha256": "0ae73e028d0648af49a55d7f6bd8d7ab073c52e2833d659b9b93b1c88418db78"
+        },
+        "baseline": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "partial",
+          "reason": "Preserves the home run landing in the stands, but omits Karen, her Phillies affiliation, and the landing's immediate proximity to her.",
+          "program_sha256": "917836196b7145a185f189b568670d94ced2245351cd563f23ce4c185cd800e7"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_150",
+      "text": "The Mississippi entered the area around 11:20 UTC.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves past entry and approximate 11:20 UTC timing, while leaving Mississippi's entity type and the area's identity unspecified as in the claim.",
+          "program_sha256": "09082206f0b22f1c330ecb6e59b912c3af697efe40a9b283453ac28d3a554aa8"
+        },
+        "revised": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves past entry and approximate 11:20 UTC timing, while leaving Mississippi's entity type and the area's identity unspecified as in the claim.",
+          "program_sha256": "6bd31bc6df91a627c6b302bc9fd04363a7c9580815f84bcd1bcc1e013b5824ca"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_274",
+      "text": "Strong winds in commercial area.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "revised": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves the nominal description, strong wind property, and location in a commercial area; no added event assertion is needed.",
+          "program_sha256": "8fd958e76f079d06921290a6131ae6d9cf0dedcc936dda619a086636855e9d28"
+        },
+        "baseline": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves the nominal description, strong wind property, and location in a commercial area; no added event assertion is needed.",
+          "program_sha256": "af6cafae39481d7e634e984536d43fc83d5b1a73855b76398160958d263d3222"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1686",
+      "text": "The US has already implemented steel and aluminum tariffs at 25%.",
+      "reading_complete": true,
+      "edited_reading_fields": [],
+      "by_condition": {
+        "baseline": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves the US, both steel and aluminum tariffs, their 25% rate, and implementation already completed by the reference time.",
+          "program_sha256": "57b975c76d657f7777a719ea99000be7053ee89af6e7cee76b6099c3b4a67e8e"
+        },
+        "revised": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "faithful",
+          "reason": "Preserves the US, both steel and aluminum tariffs, their 25% rate, and implementation already completed by the reference time.",
+          "program_sha256": "494b6bbafe11c28326a4000370f729afecfa7a47ce86f43432f362b9608ea779"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_669",
+      "text": "People singing and dancing.",
+      "reading_complete": true,
+      "edited_reading_fields": [
+        "ambiguity"
+      ],
+      "by_condition": {
+        "revised": {
+          "letter": "A",
+          "status": "compiled",
+          "rating": "partial",
+          "reason": "Preserves people singing with ongoing aspect, but entirely omits dancing.",
+          "program_sha256": "b01bfa72fdf29faae9d8cb9311a5e85ddcdad9824e905fa91a9afaac161d45df"
+        },
+        "baseline": {
+          "letter": "B",
+          "status": "compiled",
+          "rating": "partial",
+          "reason": "Preserves people singing with ongoing aspect, but entirely omits dancing.",
+          "program_sha256": "2c6516d4f8cffae3a7362600d9867ad48f3e4e1c1f062c4bf567851af3a971e3"
+        }
+      },
+      "comparison": "tied",
+      "identical_output_rating_conflict": false
+    }
+  ],
+  "human_agent_disagreements": [
+    {
+      "claim_id": "TgPh_fzHTCm4_1507",
+      "letter": "A",
+      "condition": "baseline",
+      "agent": "uncertain",
+      "human": "partial",
+      "human_reason": "The complete alternative description is retained as one entity label, which is okay in terms of our end goal, namely verification, as the generated sub-claim can just be verified as a single request."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1507",
+      "letter": "B",
+      "condition": "revised",
+      "agent": "unsure",
+      "human": "no",
+      "human_reason": "An alternative reading makes refusal reasonable, but 'or' could also restate the weather feature; the wording alone does not establish which reading applies."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_0",
+      "letter": "A",
+      "condition": "revised",
+      "agent": "partial",
+      "human": "faithful",
+      "human_reason": "Preserves the typhoon as cause and Emmonak, Alaska as affected place, but changes the explicitly ongoing event to simple present. But I think this is ok for now."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_0",
+      "letter": "B",
+      "condition": "baseline",
+      "agent": "partial",
+      "human": "faithful",
+      "human_reason": "Preserves the typhoon as cause and Emmonak, Alaska as affected place, but changes the explicitly ongoing event to simple present. But I think this is ok for now."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_421",
+      "letter": "A",
+      "condition": "baseline",
+      "agent": "no",
+      "human": "yes",
+      "human_reason": "This claim doesn't make much sense."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_421",
+      "letter": "B",
+      "condition": "revised",
+      "agent": "no",
+      "human": "yes",
+      "human_reason": "This claim doesn't make much sense."
+    }
+  ],
+  "failure_ledger": [
+    {
+      "claim_id": "TgPh_fzHTCm4_1507",
+      "condition": "baseline",
+      "letter": "A",
+      "judgment_type": "judgment",
+      "judgment": "partial",
+      "human_reason": "The complete alternative description is retained as one entity label, which is okay in terms of our end goal, namely verification, as the generated sub-claim can just be verified as a single request.",
+      "intended_reading": {
+        "intended_meaning": "Clockwise motion is interpreted as indicating either a ridge or a high-pressure anti-cyclone over the region.",
+        "participants_and_relations": "Clockwise motion indicates a ridge or high-pressure anti-cyclone; the indicated weather feature is over the region.",
+        "source_context": "An interpretation of motion; no particular medium or speaker stated.",
+        "quantity_and_time": "None stated.",
+        "ambiguity": "The moving entity is unspecified, yet likely refers to the cyclone. The region is unspecified, but it should not affect the compilation."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1507",
+      "condition": "revised",
+      "letter": "B",
+      "judgment_type": "refusal_appropriate",
+      "judgment": "no",
+      "human_reason": "An alternative reading makes refusal reasonable, but 'or' could also restate the weather feature; the wording alone does not establish which reading applies.",
+      "intended_reading": {
+        "intended_meaning": "Clockwise motion is interpreted as indicating either a ridge or a high-pressure anti-cyclone over the region.",
+        "participants_and_relations": "Clockwise motion indicates a ridge or high-pressure anti-cyclone; the indicated weather feature is over the region.",
+        "source_context": "An interpretation of motion; no particular medium or speaker stated.",
+        "quantity_and_time": "None stated.",
+        "ambiguity": "The moving entity is unspecified, yet likely refers to the cyclone. The region is unspecified, but it should not affect the compilation."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_218",
+      "condition": "baseline",
+      "letter": "A",
+      "judgment_type": "judgment",
+      "judgment": "partial",
+      "human_reason": "Preserves descriptive details, but having \"A haboob, or an intense, massive wall of dust and sand created by the downdrafts of a collapsing thunderstorm\" as a single argument for \"Event / state create\" doesn't seem right.",
+      "intended_reading": {
+        "intended_meaning": "A nominal description of a haboob as an intense, massive wall of dust and sand created by downdrafts from a collapsing thunderstorm.",
+        "participants_and_relations": "A collapsing thunderstorm produces downdrafts that create the haboob, described as a massive, intense wall of dust and sand.",
+        "source_context": "None stated; wording is a descriptive fragment.",
+        "quantity_and_time": "Thunderstorm collapse is part of the description; no date, duration, or event count stated.",
+        "ambiguity": "None."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_218",
+      "condition": "revised",
+      "letter": "B",
+      "judgment_type": "refusal_appropriate",
+      "judgment": "no",
+      "human_reason": "It can be compiled, I think.",
+      "intended_reading": {
+        "intended_meaning": "A nominal description of a haboob as an intense, massive wall of dust and sand created by downdrafts from a collapsing thunderstorm.",
+        "participants_and_relations": "A collapsing thunderstorm produces downdrafts that create the haboob, described as a massive, intense wall of dust and sand.",
+        "source_context": "None stated; wording is a descriptive fragment.",
+        "quantity_and_time": "Thunderstorm collapse is part of the description; no date, duration, or event count stated.",
+        "ambiguity": "None."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1907",
+      "condition": "baseline",
+      "letter": "A",
+      "judgment_type": "judgment",
+      "judgment": "partial",
+      "human_reason": "Preserves text confirming a still's depiction, but drops 'four hours after ignition' and does not retain the full quoted label.",
+      "intended_reading": {
+        "intended_meaning": "On-screen text identifies the still as showing 'Actual fire spread, four hours after ignition'.",
+        "participants_and_relations": "On-screen text identifies what the still shows; the described fire spread is temporally related to ignition.",
+        "source_context": "The identification is attributed to on-screen text, including the quoted label 'Actual fire spread, four hours after ignition'.",
+        "quantity_and_time": "Four hours after ignition describes the fire spread shown, not an elapsed video timestamp.",
+        "ambiguity": "No ambiguity identified."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1907",
+      "condition": "revised",
+      "letter": "B",
+      "judgment_type": "judgment",
+      "judgment": "partial",
+      "human_reason": "Preserves text confirming a still's depiction, but drops 'four hours after ignition' and does not retain the full quoted label.",
+      "intended_reading": {
+        "intended_meaning": "On-screen text identifies the still as showing 'Actual fire spread, four hours after ignition'.",
+        "participants_and_relations": "On-screen text identifies what the still shows; the described fire spread is temporally related to ignition.",
+        "source_context": "The identification is attributed to on-screen text, including the quoted label 'Actual fire spread, four hours after ignition'.",
+        "quantity_and_time": "Four hours after ignition describes the fire spread shown, not an elapsed video timestamp.",
+        "ambiguity": "No ambiguity identified."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1797",
+      "condition": "baseline",
+      "letter": "A",
+      "judgment_type": "refusal_appropriate",
+      "judgment": "no",
+      "human_reason": "The protesters explicitly attempt to storm parliament; they supply the understood actor, so the stated unresolved-actor reason is unnecessary.",
+      "intended_reading": {
+        "intended_meaning": "Oli's government removed social media restrictions after protests intensified; police fired tear gas and rubber bullets at protesters who were attempting to storm parliament.",
+        "participants_and_relations": "Oli's government lifted restrictions; protests intensified; police fired tear gas and rubber bullets at protesters; those protesters attempted to storm parliament.",
+        "source_context": "None stated.",
+        "quantity_and_time": "Restriction removal follows intensified protests; police action accompanies the unrest, with no exact date stated.",
+        "ambiguity": "None."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1797",
+      "condition": "revised",
+      "letter": "B",
+      "judgment_type": "refusal_appropriate",
+      "judgment": "no",
+      "human_reason": "The protesters explicitly attempt to storm parliament; they supply the understood actor, so the stated unresolved-actor reason is unnecessary.",
+      "intended_reading": {
+        "intended_meaning": "Oli's government removed social media restrictions after protests intensified; police fired tear gas and rubber bullets at protesters who were attempting to storm parliament.",
+        "participants_and_relations": "Oli's government lifted restrictions; protests intensified; police fired tear gas and rubber bullets at protesters; those protesters attempted to storm parliament.",
+        "source_context": "None stated.",
+        "quantity_and_time": "Restriction removal follows intensified protests; police action accompanies the unrest, with no exact date stated.",
+        "ambiguity": "None."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_473",
+      "condition": "baseline",
+      "letter": "A",
+      "judgment_type": "judgment",
+      "judgment": "incorrect",
+      "human_reason": "Replaces mutual facing with the combined group facing an unlinked 'other' entity; the Zócalo is also assigned a manner role.",
+      "intended_reading": {
+        "intended_meaning": "Police and protesters face one another in the Zócalo, in front of the National Palace in Mexico City.",
+        "participants_and_relations": "Police face protesters reciprocally; both groups are in the Zócalo, in front of the National Palace, in Mexico City.",
+        "source_context": "None stated.",
+        "quantity_and_time": "Multiple police and protesters; the facing relation is ongoing, with no date stated.",
+        "ambiguity": "No ambiguity identified."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_473",
+      "condition": "revised",
+      "letter": "B",
+      "judgment_type": "judgment",
+      "judgment": "incorrect",
+      "human_reason": "Replaces mutual facing with the combined group facing an unlinked 'other' entity; the Zócalo is also assigned a manner role.",
+      "intended_reading": {
+        "intended_meaning": "Police and protesters face one another in the Zócalo, in front of the National Palace in Mexico City.",
+        "participants_and_relations": "Police face protesters reciprocally; both groups are in the Zócalo, in front of the National Palace, in Mexico City.",
+        "source_context": "None stated.",
+        "quantity_and_time": "Multiple police and protesters; the facing relation is ongoing, with no date stated.",
+        "ambiguity": "No ambiguity identified."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_240",
+      "condition": "baseline",
+      "letter": "A",
+      "judgment_type": "judgment",
+      "judgment": "partial",
+      "human_reason": "Keeps the background news report and both topics, but attaches 'about rain and weather' to the background rather than the report.",
+      "intended_reading": {
+        "intended_meaning": "A background news report concerns rain and weather.",
+        "participants_and_relations": "The news report has rain and weather as its topics and occupies the background of an unspecified context.",
+        "source_context": "Explicitly a news report in the background.",
+        "quantity_and_time": "None stated.",
+        "ambiguity": "None."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_240",
+      "condition": "revised",
+      "letter": "B",
+      "judgment_type": "judgment",
+      "judgment": "partial",
+      "human_reason": "Keeps the background news report and both topics, but attaches 'about rain and weather' to the background rather than the report.",
+      "intended_reading": {
+        "intended_meaning": "A background news report concerns rain and weather.",
+        "participants_and_relations": "The news report has rain and weather as its topics and occupies the background of an unspecified context.",
+        "source_context": "Explicitly a news report in the background.",
+        "quantity_and_time": "None stated.",
+        "ambiguity": "None."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_554",
+      "condition": "revised",
+      "letter": "A",
+      "judgment_type": "judgment",
+      "judgment": "partial",
+      "human_reason": "Preserves the home run landing in the stands, but omits Karen, her Phillies affiliation, and the landing's immediate proximity to her.",
+      "intended_reading": {
+        "intended_meaning": "A home-run ball lands in the stands immediately beside Karen, a Phillies fan.",
+        "participants_and_relations": "The home-run ball lands beside Karen; Karen is identified as a Phillies fan; the landing location is the stands.",
+        "source_context": "None stated.",
+        "quantity_and_time": "One landing, immediately beside Karen; no date stated.",
+        "ambiguity": "'Home run' naturally refers to the hit ball here; Karen's identity is supplied only by name and team affiliation."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_554",
+      "condition": "baseline",
+      "letter": "B",
+      "judgment_type": "judgment",
+      "judgment": "partial",
+      "human_reason": "Preserves the home run landing in the stands, but omits Karen, her Phillies affiliation, and the landing's immediate proximity to her.",
+      "intended_reading": {
+        "intended_meaning": "A home-run ball lands in the stands immediately beside Karen, a Phillies fan.",
+        "participants_and_relations": "The home-run ball lands beside Karen; Karen is identified as a Phillies fan; the landing location is the stands.",
+        "source_context": "None stated.",
+        "quantity_and_time": "One landing, immediately beside Karen; no date stated.",
+        "ambiguity": "'Home run' naturally refers to the hit ball here; Karen's identity is supplied only by name and team affiliation."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_669",
+      "condition": "revised",
+      "letter": "A",
+      "judgment_type": "judgment",
+      "judgment": "partial",
+      "human_reason": "Preserves people singing with ongoing aspect, but entirely omits dancing.",
+      "intended_reading": {
+        "intended_meaning": "People engaged in singing and dancing.",
+        "participants_and_relations": "People are participants in singing and dancing activities.",
+        "source_context": "None stated; wording is a descriptive fragment.",
+        "quantity_and_time": "Multiple people; activities are ongoing, with no count or date stated.",
+        "ambiguity": "None."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_669",
+      "condition": "baseline",
+      "letter": "B",
+      "judgment_type": "judgment",
+      "judgment": "partial",
+      "human_reason": "Preserves people singing with ongoing aspect, but entirely omits dancing.",
+      "intended_reading": {
+        "intended_meaning": "People engaged in singing and dancing.",
+        "participants_and_relations": "People are participants in singing and dancing activities.",
+        "source_context": "None stated; wording is a descriptive fragment.",
+        "quantity_and_time": "Multiple people; activities are ongoing, with no count or date stated.",
+        "ambiguity": "None."
+      },
+      "cause_stage": "unassigned",
+      "failure_pattern": "unassigned",
+      "evidence": "Inspect the frozen SRL/dependency input and compiled output before assigning a cause."
+    }
+  ],
+  "review_file_sha256": "1a3a8fd47e72a50f4943c10ae129608b8e6187d57547810921716509f02d2e20"
+}

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-05",
   "steps": [
     {
       "id": 6,
@@ -156,7 +156,7 @@
     {
       "id": 11,
       "title": "Address the remaining semantic failures",
-      "status": "compiler revision and full census completed; actual human review pending",
+      "status": "human review imported; remaining scope and omission failures identified",
       "items": [
         {
           "text": "Fix nominal media descriptions and quoted labels — keep depicted content and label text in the right scope",
@@ -168,7 +168,7 @@
         },
         {
           "text": "Obtain human reference judgments for a bounded new-source sample, including model disagreements — validate evaluation reliability",
-          "done": false
+          "done": true
         }
       ],
       "note": "scope_compilation_20261101: 187 tests pass. Full run has no unexpected Python exceptions. Source/label scope, sufficiency, binary nominal alternatives and narrow temporal rules are implemented. New refusals are not automatically correctness improvements. All original claims and ten historical archives remain preserved."
@@ -176,7 +176,7 @@
     {
       "id": 12,
       "title": "Human reference review of 20 reserved claims",
-      "status": "user reports twenty reviews completed; exported answers pending",
+      "status": "all20 readings and comparisons imported and analyzed",
       "items": [
         {
           "text": "Reserve the review set before compiler changes — separate reference judgments from development examples",
@@ -196,19 +196,19 @@
         },
         {
           "text": "Receive and validate the exported JSON — obtain the user’s actual answers from browser storage",
-          "done": false
+          "done": true
         },
         {
           "text": "Reconcile ambiguous readings and reviewer disagreements — define which semantic claims the paper can support",
-          "done": false
+          "done": true
         }
       ],
-      "note": "The user reports completing all20 cases. The export has not reached the project; do not repeat the review or substitute agent suggestions. Import and analysis await the actual JSON. Received human-response counts remain0."
+      "note": "Original returned bytes preserved with receipt. Human review is agent-assisted. Previous16 jointly compiled cases tie; two partial outputs became inappropriate refusals. User criteria and disagreements are retained, not overwritten by model labels."
     },
     {
       "id": 13,
       "title": "One focused compiler revision after the review",
-      "status": "preparation complete; fixes depend on the returned review",
+      "status": "bounded revision and full census complete; compiler remains experimental",
       "items": [
         {
           "text": "Reserve twenty fresh cases before changes — evaluate beyond the examples used for fixes",
@@ -220,18 +220,38 @@
         },
         {
           "text": "Analyze returned judgments and trace failures to parsing or conversion — select at most three recurring patterns",
-          "done": false
+          "done": true
         },
         {
           "text": "Implement focused fixes and contrasting checks; rerun all2,375 claims — measure coverage changes and remaining failures",
-          "done": false
+          "done": true
         },
         {
           "text": "Review the frozen fresh sample — decide whether compilation is ready for a small binding experiment",
+          "done": true
+        }
+      ],
+      "note": "Final2,099/2,375 compiled,4 additions,0 lost accepts,29 changed programs.207 checks pass. All20 fresh programs are unchanged; assistant review13 faithful/4 partial/3 incorrect in both conditions, not human gold or a generalization gain. Four native examples pass; the long protest claim times out at25s. Two final safety restrictions leave fresh output hashes unchanged; first source/results preserved."
+    },
+    {
+      "id": 14,
+      "title": "Remaining compiler reliability and inference cost",
+      "status": "proposed next work; not implemented",
+      "items": [
+        {
+          "text": "Keep nominal event and question content under its source/goal — prevent independent world assertions",
+          "done": false
+        },
+        {
+          "text": "Audit root predicates, names and identifiers — retain omitted sound events and label material",
+          "done": false
+        },
+        {
+          "text": "Bound and profile larger programs — establish practical inference and learning cost before expanding media work",
           "done": false
         }
       ],
-      "note": "Seeded selection:20 cases with mutually disjoint actual source-video groups, excluding129 recorded review sources and normalized duplicate texts;273 eligible claims. No semantic judgments, compiler changes or new corpus run yet. The analyzer preserves missing/uncertain answers and flags inconsistent ratings of identical outputs."
+      "note": "The fresh sample exposes landing outside a preparation/video scope, alleged violations projected through a relative clause, a dialogue question becoming a world event, a dropped dolly/creaking clause and missing identifiers. Further media verification/training remain deferred."
     },
     {
       "id": 8,
@@ -360,7 +380,7 @@
       ]
     }
   ],
-  "intro": "Current priority: use the completed user review to guide one focused compiler revision. The user reports reviewing all20 cases; the exported JSON is awaited. Twenty fresh cases and current outputs are frozen before fixes. The existing2,095/2,375 compilation count remains unchanged; preparation is not a new correctness result.",
+  "intro": "All20 user readings and comparisons are imported. The bounded revision compiles2,099/2,375 original claims, versus2,095 previously;4 additions, no earlier accepts lost and29 changed programs. The fresh sample is unchanged and retains important scope/omission errors. Prioritize these remaining compiler limits and larger-program cost before expanding media experiments.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -401,5 +421,6 @@
   "compiler_followup_run": "compiler_followup_20261030",
   "scope_compilation_run": "scope_compilation_20261101",
   "agent_review_run": "exp/probabilistic_verification/agent_review_20261101",
-  "review_followup_run": "exp/probabilistic_verification/review_followup_20261104"
+  "review_followup_run": "exp/probabilistic_verification/review_followup_20261104",
+  "reviewed_compilation_run": "exp/probabilistic_verification/compiler_revision_20261105"
 }

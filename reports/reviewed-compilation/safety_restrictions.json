@@ -1,0 +1,14 @@
+{
+  "stage": "Restrictions added after the first full census and output inspection",
+  "cases": [
+    "TFgw4IaR9R8s_1677",
+    "Txf2EdqOg1SQ_2343",
+    "TFgw4IaR9R8s_1662"
+  ],
+  "changes": [
+    "Only recover an embedded controller from a participial relative, not an infinitival tool-purpose clause.",
+    "Require adjacent common-noun/proper-name apposition; reject intervening lexical material, colon lists and a following subjectless relative."
+  ],
+  "evidence_source": "Non-reserved changed-case audit, not the fresh sample error patterns.",
+  "fresh_case_outputs_must_remain_unchanged": true
+}

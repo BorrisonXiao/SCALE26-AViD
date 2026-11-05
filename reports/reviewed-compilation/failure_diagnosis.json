@@ -1,0 +1,109 @@
+{
+  "human_review_file_sha256": "1a3a8fd47e72a50f4943c10ae129608b8e6187d57547810921716509f02d2e20",
+  "human_review_cases": 20,
+  "analysis": {
+    "baseline": {
+      "compiled": {
+        "faithful": 11,
+        "partial": 6,
+        "incorrect": 1
+      },
+      "refusal": {
+        "no": 1,
+        "yes": 1
+      },
+      "unrated": 0
+    },
+    "revised": {
+      "compiled": {
+        "faithful": 11,
+        "partial": 4,
+        "incorrect": 1
+      },
+      "refusal": {
+        "no": 3,
+        "yes": 1
+      },
+      "unrated": 0
+    }
+  },
+  "pairs": {
+    "tied": 16,
+    "newly_refused": 2,
+    "both_refused": 2
+  },
+  "scope": "One bounded deterministic compiler revision in three families. No LLM rewrite, parser ensemble, media inference or relation training.",
+  "diagnoses": [
+    {
+      "claim_id": "TgR_u37mCoQ4_1907",
+      "family": "Argument and modifier retention",
+      "cause_stage": "conversion",
+      "evidence_status": "evidence-backed",
+      "evidence": "SRL show ARG1 includes the whole quote; nominal construction retains spread but drops the appositional four-hour text.",
+      "implemented_remedy": "Keep the complete marked quote as a literal argument of show, under the existing confirm complement."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_554",
+      "family": "Argument and modifier retention",
+      "cause_stage": "conversion",
+      "evidence_status": "evidence-backed",
+      "evidence": "Dependency next/advmod -> fan/obl -> Karen/appos is explicit; empty SRL recovery retains only the stands adjunct.",
+      "implemented_remedy": "Recover the next-to relation on land; keep right, Phillies and the proper-name apposition on the same target."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_240",
+      "family": "Argument and modifier retention",
+      "cause_stage": "upstream attachment",
+      "evidence_status": "evidence-backed",
+      "evidence": "UD rain/nmod is attached to background, while the confirmed reading attaches about rain/weather to report.",
+      "implemented_remedy": "Use the content-noun/background/topic construction to retain separate in and about relations."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_669",
+      "family": "Coordination and participant binding",
+      "cause_stage": "upstream POS plus recovery",
+      "evidence_status": "evidence-backed",
+      "evidence": "UD tags dancing as NOUN/conj of singing; SRL is empty, and old recovery only accepts VERB.",
+      "implemented_remedy": "Use a verb lexicon and explicit shared subject to recover the participial conjunct."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1797",
+      "family": "Coordination and participant binding",
+      "cause_stage": "controller resolution",
+      "evidence_status": "evidence-backed",
+      "evidence": "SRL attempting ARG0 explicitly names protesters, but basic UD omits a subject on the relative participle and storm/xcomp has no frame.",
+      "implemented_remedy": "Use the agreement of relative-clause owner and parent SRL actor; storm stays within the attempt/purpose context."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_473",
+      "family": "Coordination and participant binding",
+      "cause_stage": "conversion plus role typing",
+      "evidence_status": "evidence-backed",
+      "evidence": "The each-other object becomes an independent other entity; the named in-Zocalo adjunct is labeled MNR.",
+      "implemented_remedy": "Use a typed reciprocal argument tied to the same event/group; retain a grammatical in-relation without guessing a manner."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1507",
+      "family": "Nominal alternatives and apposition",
+      "cause_stage": "upstream nominal structure plus refusal guard",
+      "evidence_status": "evidence-backed",
+      "evidence": "Hyphenated high-pressure anti-cyclone has several nominal roots inside one SRL argument; OR expansion finds no explicit alternative group. The user accepts keeping the phrase whole for verification.",
+      "implemented_remedy": "Retain the exact noun phrase in its existing argument role, recording that its internal relations remain unexposed."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_218",
+      "family": "Nominal alternatives and apposition",
+      "cause_stage": "interpretation and conversion",
+      "evidence_status": "inferred",
+      "evidence": "UD encodes explanatory or as coordination; the old graph makes a two-member group the creation theme, and the next guard refuses the mixed structure.",
+      "implemented_remedy": "Under the declared appositive-gloss reading, give haboob the wall description and its modifiers; creation refers to that same entity."
+    }
+  ],
+  "limits": [
+    "The user accepts the passive-progressive simplification for now; that temporal distinction is not changed.",
+    "Coarse noun phrases are counted and exposed as coarse arguments, not complete internal parses.",
+    "The appositive OR interpretation is declared and remains a context/review requirement.",
+    "A reciprocal argument is a neural-predicate input contract, not a newly trained media verifier.",
+    "New outputs have not received new human ratings; the original twenty now serve as development diagnostics."
+  ]
+}

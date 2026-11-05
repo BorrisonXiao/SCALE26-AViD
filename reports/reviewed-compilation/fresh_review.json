@@ -1,0 +1,289 @@
+{
+  "reviewer_type": "compiler_author_assistant",
+  "reviewed_at": "2026-11-05T06:01:57.560015+00:00",
+  "claim_readings_sha256": "63220b1998630950fa8cc595e5ff2ff9f52d28828b51abc370e8829763186952",
+  "conditions": "Before and after outputs were anonymous in the saved packet and identical for every fresh case. This is an assistant qualitative review, not independent human gold.",
+  "counts": {
+    "before": {
+      "faithful": 13,
+      "partial": 4,
+      "incorrect": 3,
+      "refused": 0
+    },
+    "after": {
+      "faithful": 13,
+      "partial": 4,
+      "incorrect": 3,
+      "refused": 0
+    }
+  },
+  "cases": [
+    {
+      "claim_id": "TzzhcBIczf_M_2041",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Preserves the arrested person, corruption as reason, and past passive arrest; it does not assert a conviction."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Preserves the arrested person, corruption as reason, and past passive arrest; it does not assert a conviction."
+      },
+      "pattern": "participants and reason",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_623",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Preserves the man, praying event and present progressive."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Preserves the man, praying event and present progressive."
+      },
+      "pattern": "participants and action",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_247",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains dust storm, airport and the approach relation as a nominal description; arrival is not asserted."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains dust storm, airport and the approach relation as a nominal description; arrival is not asserted."
+      },
+      "pattern": "nominal description",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_671",
+      "before": {
+        "judgment": "partial",
+        "reason": "The nominal label loses 76 and retains only news."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "The nominal label loses 76 and retains only news."
+      },
+      "pattern": "identifier omission",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2108",
+      "before": {
+        "judgment": "incorrect",
+        "reason": "Violation is a relative description of Shi Yongxin outside investigation content, requiring the alleged violation independently of the investigation."
+      },
+      "after": {
+        "judgment": "incorrect",
+        "reason": "Violation is a relative description of Shi Yongxin outside investigation content, requiring the alleged violation independently of the investigation."
+      },
+      "pattern": "nonveridical nominal content",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1367",
+      "before": {
+        "judgment": "incorrect",
+        "reason": "Landing appears as a separate world event, outside both the video depiction and the preparation goal."
+      },
+      "after": {
+        "judgment": "incorrect",
+        "reason": "Landing appears as a separate world event, outside both the video depiction and the preparation goal."
+      },
+      "pattern": "depiction and goal scope",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TInVWzp25aIM_10",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Keeps multiple houses, washed-away content and present-perfect passive; no cause is invented."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Keeps multiple houses, washed-away content and present-perfect passive; no cause is invented."
+      },
+      "pattern": "quantity and passive event",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_707",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Preserves Ruptly as maker, the video as product and past passive production."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Preserves Ruptly as maker, the video as product and past passive production."
+      },
+      "pattern": "provenance",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_626",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Keeps the same man in speaking and driving, with while and down the road retained."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Keeps the same man in speaking and driving, with while and down the road retained."
+      },
+      "pattern": "shared participant and time",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "T2EE72iNELEs_180",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Keeps the rocket, successful launch and passive construction."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Keeps the rocket, successful launch and passive construction."
+      },
+      "pattern": "success modifier",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TInVWzp25aIM_18",
+      "before": {
+        "judgment": "partial",
+        "reason": "Preserves strengthening, typhoon identity and before hitting Alaska, but reduces the named location Bering Straight to Bering."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "Preserves strengthening, typhoon identity and before hitting Alaska, but reduces the named location Bering Straight to Bering."
+      },
+      "pattern": "name truncation",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_752",
+      "before": {
+        "judgment": "partial",
+        "reason": "Drops the small dolly and its creaking, leaving only a man using an unresolved it to move chair stacks."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "Drops the small dolly and its creaking, leaving only a man using an unresolved it to move chair stacks."
+      },
+      "pattern": "omitted sound event and antecedent",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TInVWzp25aIM_116",
+      "before": {
+        "judgment": "partial",
+        "reason": "The clothing category men’s shirts becomes a possessive link to a separate men referent; the partitive interpretation is not explicit."
+      },
+      "after": {
+        "judgment": "partial",
+        "reason": "The clothing category men’s shirts becomes a possessive link to a separate men referent; the partitive interpretation is not explicit."
+      },
+      "pattern": "nominal category and partitive interpretation",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_483",
+      "before": {
+        "judgment": "incorrect",
+        "reason": "Why they are there is detached from dialogue/question content and compiled as an independent world-level be event."
+      },
+      "after": {
+        "judgment": "incorrect",
+        "reason": "Why they are there is detached from dialogue/question content and compiled as an independent world-level be event."
+      },
+      "pattern": "question-content scope",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_629",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains sunny day and Saudi Arabia as a nominal weather description."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains sunny day and Saudi Arabia as a nominal weather description."
+      },
+      "pattern": "nominal description",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2417",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains reported taste, can, salty seawater, mouth and the causal weather group under speech; references explicitly require resolution."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains reported taste, can, salty seawater, mouth and the causal weather group under speech; references explicitly require resolution."
+      },
+      "pattern": "speech, modality and contextual references",
+      "reading_revision_note": "The surface pronouns can depend on discourse context. Explicit reference-resolution requirements are appropriate; no different experiencer was invented."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_96",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Preserves publisher, sharing and depicted wreckage. The passive-progressive simplification is tolerated under the user’s current criterion."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Preserves publisher, sharing and depicted wreckage. The passive-progressive simplification is tolerated under the user’s current criterion."
+      },
+      "pattern": "sharing and depiction",
+      "reading_revision_note": "",
+      "strict_temporal_caveat": "The compiled event is simple present rather than progressive. Counting this tolerated simplification as partial yields12 faithful/5 partial/3 incorrect."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_253",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Keeps electric posts, along-street relation and illuminated state."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Keeps electric posts, along-street relation and illuminated state."
+      },
+      "pattern": "modifier and state",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2156",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Keeps the accusation as parent and alleged maintaining as nested content, including improper relations and multiple women."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Keeps the accusation as parent and alleged maintaining as nested content, including improper relations and multiple women."
+      },
+      "pattern": "accusation scope",
+      "reading_revision_note": ""
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1488",
+      "before": {
+        "judgment": "faithful",
+        "reason": "Retains identifiable, counter-clockwise, circulation and the Bay-of-Campeche location structure."
+      },
+      "after": {
+        "judgment": "faithful",
+        "reason": "Retains identifiable, counter-clockwise, circulation and the Bay-of-Campeche location structure."
+      },
+      "pattern": "existence, direction and location",
+      "reading_revision_note": ""
+    }
+  ],
+  "limitations": [
+    "Twenty source-separated cases from a nonuniform new-review sample; all corpus texts had previously been parsed.",
+    "One faithful judgment tolerates the same passive-progressive simplification the user accepted for this stage.",
+    "Source/goal/question-scope errors remain; no fresh semantic gain is demonstrated.",
+    "Final safety restrictions are checked against original fresh program hashes rather than silently re-rating changed outputs."
+  ]
+}
