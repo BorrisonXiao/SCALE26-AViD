@@ -1,0 +1,70 @@
+{
+  "total": 2375,
+  "generated": 2103,
+  "pass_current_content_checks": 1924,
+  "candidate_alerts": 179,
+  "no_program": 272,
+  "strict_refusals": 451,
+  "strict_refusal_percent": 19.0,
+  "original_2099_still_generated": 2099,
+  "added_candidates": [
+    "T2EE72iNELEs_189",
+    "T2G_ACMxR_I4_1430",
+    "TFgw4IaR9R8s_1582",
+    "TQKCK6-tRaoE_656"
+  ],
+  "old_candidate_current_outcomes": {
+    "coverage_omission": 172,
+    "opaque_clause": 6,
+    "passes_current_checks": 1921
+  },
+  "alert_review": {
+    "needs_context": 8,
+    "overstrict_alert": 5,
+    "real_gap": 166
+  },
+  "alert_families": {
+    "Arguments, lists and noun phrases": 34,
+    "Embedded clauses": 6,
+    "Modifiers and scope": 24,
+    "Names and nominal descriptions": 25,
+    "Numbers, dates and units": 56,
+    "Phrasal verbs and direction": 16,
+    "Source and quotation context": 18
+  },
+  "refusal_sample": {
+    "total": 34,
+    "recommendations": {
+      "core_contract": 6,
+      "manual_or_unsupported": 9,
+      "rewrite_candidate": 19
+    }
+  },
+  "passing_controls": {
+    "total": 23,
+    "ratings": {
+      "faithful": 18,
+      "needs_context": 1,
+      "partial": 4
+    }
+  },
+  "passing_clause_search": {
+    "total": 22,
+    "ratings": {
+      "binding_gap": 5,
+      "needs_review": 2,
+      "not_clause_failure": 15
+    }
+  },
+  "compiler_source_files_unchanged": 38,
+  "new_compiler_runs": 0,
+  "new_models_or_gpu_jobs": 0,
+  "automatic_status_changes": 0,
+  "rewrite_implemented": false,
+  "limitations": [
+    "Assistant diagnostic judgments, not independent human gold",
+    "Refusal sample and targeted clause search do not estimate corpus rates",
+    "Passing controls cover23 original-video groups, not an independent held-out test",
+    "No rewrite-success or training/inference gain has been measured"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "provenance": "Compiler-author claim-only requirements written before inspecting the newly selected paired outputs. All texts previously processed; not independent human labels or held-out data.",
+  "cases": [
+    {
+      "claim_id": "T1JQ-aG78Zuc_789",
+      "requirement": "Tram passes through De La Reyweg rail station; retain the complete station name."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_210",
+      "requirement": "Nominal description of thruster burning during final descent; do not invent a completed descent."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1366",
+      "requirement": "Blue Ghost is characterized as a spacecraft."
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_782",
+      "requirement": "A group of many large blue containers is on the pier; modifiers stay with containers."
+    },
+    {
+      "claim_id": "T8u81WMIyj18_756",
+      "requirement": "Occasional flashes of light occur on the driver side of a parked car; retain occurrence frequency and local side relation."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_459",
+      "requirement": "Thousands of people rally and protest in Mexico; retain the shared group and both activities."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1690",
+      "requirement": "Trump reports a future result: tariffs generate much money and jobs; keep both outputs within the report/prediction."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_18",
+      "requirement": "Typhoon strengthens over Bering Straight before hitting Alaska; preserve the ordering and location."
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_727",
+      "requirement": "The video is at night; retain temporal characterization without inventing an extra event."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_555",
+      "requirement": "Philadelphia Phillies play Miami Marlins; keep both teams in the same playing event."
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_749",
+      "requirement": "Many drivers are frustrated about lane blockage and people crossing the street; retain both causes/themes and their scope."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_803",
+      "requirement": "Host introduces David Aiken, chief political correspondent, at his touchscreen, to explain how Liberals secured their minority government; retain the apposition and purpose/content context."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_655",
+      "requirement": "Nominal description of dusk during a music event; preserve both dusk and the event relation."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1805",
+      "requirement": "Printed overlay reads exactly Mob burns down Hotel Hilton; OCR wording does not assert an actual burning event."
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_170",
+      "requirement": "As of September15, salvage teams secured the containers that were stacked on board; keep date and the modifier on the containers."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_398",
+      "requirement": "Music plays while a robot runs; preserve both events and their temporal relation."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1486",
+      "requirement": "Tropical Storm Barry originated from the Bay of Campeche; keep the full storm name and source location."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1955",
+      "requirement": "Jeremiah Wittwer requests that residents not fly drones; negation belongs inside the request, not to its occurrence."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1079",
+      "requirement": "The earthquake occurs on March28,2025; retain the full date."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_630",
+      "requirement": "A view depicts an area filled with tents; preserve media depiction rather than inventing another source claim."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2197",
+      "requirement": "The system is predicted to enter the South China Sea; retain prediction scope rather than actual entry."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_301",
+      "requirement": "An airport roof is described as leaking; preserve the location/ownership relation and leakage."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2157",
+      "requirement": "Shi Yongxin is accused of fathering illegitimate children; keep the accusation context rather than asserting fatherhood."
+    }
+  ]
+}

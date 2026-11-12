@@ -1,0 +1,3145 @@
+{
+  "provenance": "Compiler-author structured diagnostic review of179 candidate alerts,34 stratified no-program cases and23 passing controls. Local alert judgments are distinct from whole-claim judgments. No independent human gold, corpus accuracy or rewrite success estimate.",
+  "alerts": [
+    {
+      "claim_id": "TjHepwuhkYFA_1016",
+      "text": "Beginning at video timestamp 2025-03-28 12:46:35 and ending at video timestamp 12:46:37, the midground and background terrain in the video shift relative to the foreground of the video.",
+      "code": "coverage_omission",
+      "missing": [
+        "midground",
+        "background",
+        "terrain",
+        "shift",
+        "relative",
+        "foreground"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "Only beginning/ending timestamp events remain; the actual terrain-shift event and foreground relationship are omitted.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_11",
+      "text": "People online are praying for other's safety during the Typhoon.",
+      "code": "coverage_omission",
+      "missing": [
+        "online",
+        "other"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit online, other. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_48",
+      "text": "Roads further inland are drivable for now.",
+      "code": "coverage_omission",
+      "missing": [
+        "further",
+        "inland"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit further, inland. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_54",
+      "text": "Akiak, Alaska may get power back the following weekend.",
+      "code": "coverage_omission",
+      "missing": [
+        "back"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit back. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_79",
+      "text": "Some roads further inland are drivable for now.",
+      "code": "coverage_omission",
+      "missing": [
+        "further",
+        "inland"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit further, inland. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_87",
+      "text": "People were evacuated to the Joint Base Elemendorf-Richardson, Alaska on October 15th, 2025.",
+      "code": "coverage_omission",
+      "missing": [
+        "Richardson",
+        "Alaska"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Richardson, Alaska. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_106",
+      "text": "Small motorized vehicles are able to survey the wreckage.",
+      "code": "coverage_omission",
+      "missing": [
+        "Small"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Small. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_164",
+      "text": "The container spill was from the ship The Mississippi.",
+      "code": "coverage_omission",
+      "missing": [
+        "Mississippi"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Mississippi. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_190",
+      "text": "Rocket reaches Earth atmosphere and beyond.",
+      "code": "coverage_omission",
+      "missing": [
+        "beyond"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit beyond. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_192",
+      "text": "Video beginning velocity 17828 mph.",
+      "code": "coverage_omission",
+      "missing": [
+        "beginning",
+        "velocity",
+        "17828",
+        "mph"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit beginning, velocity, 17828, mph. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "text": "The physical integrity of the power lines seems intact.",
+      "code": "coverage_omission",
+      "missing": [
+        "physical",
+        "integrity",
+        "power",
+        "lines"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit physical, integrity, power, lines. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_234",
+      "text": "Massive dust storm is closing in.",
+      "code": "coverage_omission",
+      "missing": [
+        "in"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "Close without in loses the approaching/closing-in reading of the dust storm.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_271",
+      "text": "Street lights are coming on due to darkness from dust storm.",
+      "code": "coverage_omission",
+      "missing": [
+        "on"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "Come without on does not encode lights switching on.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_308",
+      "text": "Power outages likely in residential area.",
+      "code": "coverage_omission",
+      "missing": [
+        "likely"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit likely. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_337",
+      "text": "Robot 3 kicks back at Robot 2 but stumbles",
+      "code": "coverage_omission",
+      "missing": [
+        "back"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit back. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_342",
+      "text": "The man gives the signal for the other 2 robots to start sparring",
+      "code": "coverage_omission",
+      "missing": [
+        "signal"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit signal. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_343",
+      "text": "man exclaims \"just like that!\"",
+      "code": "coverage_omission",
+      "missing": [
+        "just"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The quoted utterance is reduced to an argument that with a like preposition, rather than the stated wording.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_360",
+      "text": "The robot repositions itself upright and starts walking backwards.",
+      "code": "coverage_omission",
+      "missing": [
+        "upright"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit upright. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "text": "Robot on lane three comes in second place.",
+      "code": "coverage_omission",
+      "missing": [
+        "three"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit three. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "text": "Robot race inside a running  track.",
+      "code": "coverage_omission",
+      "missing": [
+        "Robot",
+        "race"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Robot, race. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_380",
+      "text": "Weibo, People's daily",
+      "code": "coverage_omission",
+      "missing": [
+        "People",
+        "daily"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit People, daily. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_395",
+      "text": "Robot running trips and falls.",
+      "code": "coverage_omission",
+      "missing": [
+        "trips"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The tripping activity is omitted; only a falls event remains.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_407",
+      "text": "there are 2 robots with long legs and 2 with shorter legs.",
+      "code": "coverage_omission",
+      "missing": [
+        "shorter"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit shorter. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "text": "Robot 1 sweep kicks Robot 2",
+      "code": "coverage_omission",
+      "missing": [
+        "2"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 2. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_444",
+      "text": "game over",
+      "code": "coverage_omission",
+      "missing": [
+        "over"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit over. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_446",
+      "text": "Netizens: His courage to keep fighting despite repeated failures is commendable. ",
+      "code": "coverage_omission",
+      "missing": [
+        "Netizens"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Netizens. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_447",
+      "text": "Beijing recently.",
+      "code": "coverage_omission",
+      "missing": [
+        "recently"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit recently. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_489",
+      "text": "\"Mexico: Violent clashes erupt during anti-government protests.\"",
+      "code": "coverage_omission",
+      "missing": [
+        "Mexico"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Mexico. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_495",
+      "text": " \"Mexico, Nov 15\".",
+      "code": "coverage_omission",
+      "missing": [
+        "Nov",
+        "15"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Nov, 15. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_496",
+      "text": "\"Police fire smoke bombs and tear gas as protesters hurl stones.\"",
+      "code": "opaque_clause",
+      "missing": [],
+      "family": "Embedded clauses",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit . This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_497",
+      "text": "\"Mexico City security chief: 20 arrested for theft and assault.\"",
+      "code": "coverage_omission",
+      "missing": [
+        "Mexico",
+        "City",
+        "security",
+        "chief"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Mexico, City, security, chief. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_517",
+      "text": "\"Sheinbaum: Movement promoted from abroad against our government.\"",
+      "code": "coverage_omission",
+      "missing": [
+        "Sheinbaum"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Sheinbaum. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_631",
+      "text": "Some people walking in road below.",
+      "code": "coverage_omission",
+      "missing": [
+        "below"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit below. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_660",
+      "text": "Scarlet Sails sail while fireworks go off in the background.",
+      "code": "coverage_omission",
+      "missing": [
+        "off"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "Go without off loses the fireworks-exploding reading.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_662",
+      "text": "Sound of fireworks exploding.",
+      "code": "coverage_omission",
+      "missing": [
+        "Sound"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Sound. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_732",
+      "text": "There are many chairs stacked on top of each other ready to be loaded into the large truck.",
+      "code": "coverage_omission",
+      "missing": [
+        "other"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit other. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_733",
+      "text": "There are not too many cars currently on the road, so traffic is not being obstructed too badly.",
+      "code": "coverage_omission",
+      "missing": [
+        "so"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The two negated clauses are conjoined, but their stated so consequence relation is not represented.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_760",
+      "text": "The camera broadcasting this livestream is owned by IPC.",
+      "code": "coverage_omission",
+      "missing": [
+        "livestream"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit livestream. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_779",
+      "text": "The large boat has a reminder about safety first.",
+      "code": "coverage_omission",
+      "missing": [
+        "first"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit first. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_800",
+      "text": "The tram slows down substantially as it approaches the man laying near the tracks.",
+      "code": "coverage_omission",
+      "missing": [
+        "down"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "overstrict_alert",
+      "reason": "The slow predicate already expresses slowing down. The separately missing down is redundant under this reading.",
+      "other_limit": "Explicit motion participants remain; the pronoun it still needs context.",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_801",
+      "text": "The man laying down crawls away from the tracks as the tram passes him.",
+      "code": "coverage_omission",
+      "missing": [
+        "away"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit away. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_807",
+      "text": "Example shown: Windsor West riding.",
+      "code": "coverage_omission",
+      "missing": [
+        "Windsor",
+        "West",
+        "riding"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Windsor, West, riding. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_814",
+      "text": "Key geography: 'Fortress Vancouver, Fortress Montreal, and Fortress GTA.'",
+      "code": "coverage_omission",
+      "missing": [
+        "Fortress",
+        "Vancouver",
+        "Fortress",
+        "Montreal",
+        "Fortress",
+        "GTA"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Fortress, Vancouver, Fortress, Montreal, Fortress, GTA. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_821",
+      "text": "Moves to Fortress Montreal / Quebec.",
+      "code": "coverage_omission",
+      "missing": [
+        "Montreal",
+        "Quebec"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Montreal, Quebec. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_822",
+      "text": "2025 Montreal map shows a lot of Liberal red.",
+      "code": "coverage_omission",
+      "missing": [
+        "Liberal",
+        "red"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Liberal, red. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_829",
+      "text": "Special note: South Surrey-White Rock riding.",
+      "code": "coverage_omission",
+      "missing": [
+        "South",
+        "Surrey",
+        "White",
+        "Rock",
+        "riding"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit South, Surrey, White, Rock, riding. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_838",
+      "text": "Claims that Trump has said Canada is not a real country.",
+      "code": "coverage_omission",
+      "missing": [
+        "Claims"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Claims. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_856",
+      "text": "They show the current House composition: Liberals hold 152 seats, Conservatives 120, Bloc Québécois 33, NDP 24, Greens 2, with 3 independents and 4 seats vacant.",
+      "code": "coverage_omission",
+      "missing": [
+        "Conservatives",
+        "120",
+        "Bloc",
+        "Québécois",
+        "33",
+        "NDP",
+        "24",
+        "Greens",
+        "2"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "Several party/count pairs are missing; preserving the full House-composition claim requires each local association.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_859",
+      "text": "Mark Carney has been Prime Minister for only about a week, after winning the Liberal leadership and after Justin Trudeau's resignation.",
+      "code": "coverage_omission",
+      "missing": [
+        "Justin",
+        "Trudeau",
+        "resignation"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Justin, Trudeau, resignation. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_878",
+      "text": "Claims the party gained well over 20 seats in the election.",
+      "code": "coverage_omission",
+      "missing": [
+        "well"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The candidate retains an over 20 reading but drops the strengthening well. The quantitative qualifier is not preserved.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_889",
+      "text": "Shows scene of people in street holding signs protesting against America acquiring Canada: woman in Canada mask holds sign that says 'Canada is Already Great' and waves at camera while wearing an 'I voted' sticker; another woman in the back holds two flags: Canada's and Ukraine's.",
+      "code": "coverage_omission",
+      "missing": [
+        "waves",
+        "camera",
+        "Ukraine's"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit waves, camera, Ukraine's. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_893",
+      "text": "NDP is flat at about 20% until Jan 2025 then it drops steeply to 8-9%.",
+      "code": "coverage_omission",
+      "missing": [
+        "then"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The later drop is conjoined with the until-January state without an explicit then ordering.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_908",
+      "text": "Video topic: the Liberals' political revival, the election results, and the implications for Canada.",
+      "code": "coverage_omission",
+      "missing": [
+        "Liberals",
+        "political",
+        "revival",
+        "election",
+        "results",
+        "implications",
+        "Canada"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Liberals, political, revival, election, results, implications, Canada. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_914",
+      "text": "Six months earlier, a Conservative landslide seemed inevitable.",
+      "code": "coverage_omission",
+      "missing": [
+        "Conservative",
+        "landslide"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Conservative, landslide. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_915",
+      "text": "Then-incumbent PM Justin Trudeau was very unpopular: net approval rating -52 in December.",
+      "code": "coverage_omission",
+      "missing": [
+        "net",
+        "approval",
+        "rating",
+        "52",
+        "December"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit net, approval, rating, 52, December. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_926",
+      "text": "Shows table picture of various polls in April: multiple national polls show the Liberals leading at roughly 41-44%, with the Conservatives close behind at about 37-41%, The NDP polls mostly between 6-11%, well below earlier levels; the Bloc Québécois is stable around 6% nationally; Greens sit near 1-3%; PPC and others remain around 1-2%.",
+      "code": "coverage_omission",
+      "missing": [
+        "NDP",
+        "mostly",
+        "11",
+        "well",
+        "earlier",
+        "levels"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit NDP, mostly, 11, well, earlier, levels. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_927",
+      "text": "First major cause of reversal: Donald Trump.",
+      "code": "coverage_omission",
+      "missing": [
+        "Donald",
+        "Trump"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Donald, Trump. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_930",
+      "text": "Polling: Ipsos showed 49% of Canadians preferred Carney to negotiate with Trump vs. 33% for Poilievre.",
+      "code": "coverage_omission",
+      "missing": [
+        "Polling",
+        "33",
+        "Poilievre"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Polling, 33, Poilievre. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_933",
+      "text": "Second cause of reversal: Mark Carney's personal popularity.",
+      "code": "coverage_omission",
+      "missing": [
+        "Mark",
+        "Carney",
+        "personal",
+        "popularity"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Mark, Carney, personal, popularity. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_941",
+      "text": "Conservative support more geographically concentrated; Liberal support more evenly spread.",
+      "code": "coverage_omission",
+      "missing": [
+        "Liberal",
+        "evenly",
+        "spread"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Liberal, evenly, spread. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_944",
+      "text": "Example: 338Canada aggregator had Conservatives +3 points in mid-March but still predicted more Liberal seats due to distribution efficiency.",
+      "code": "coverage_omission",
+      "missing": [
+        "Example"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "overstrict_alert",
+      "reason": "Example is a discourse label, rather than another condition on the described polling example.",
+      "other_limit": "The candidate still misreads338Canada as a group of 338 aggregators; this is not a safe whole-claim accept.",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_947",
+      "text": "Liberals beat Conservatives in popular vote but only by ~1.4 points: 43.1% vs. 41.7%.",
+      "code": "coverage_omission",
+      "missing": [
+        "only",
+        "43.1",
+        "41.7"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit only, 43.1, 41.7. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_948",
+      "text": "With 96% counted: Liberals projected 48.1% of seats = 166 seats; Conservatives 42.9% = 146 seats (out of 343 total).",
+      "code": "coverage_omission",
+      "missing": [
+        "Conservatives",
+        "42.9",
+        "146",
+        "343",
+        "total"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Conservatives, 42.9, 146, 343, total. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_951",
+      "text": "Remaining seats expected mainly for Bloc Québécois (Quebec-only nationalist party) and NDP (social democratic, left of Liberals).",
+      "code": "coverage_omission",
+      "missing": [
+        "mainly",
+        "Bloc",
+        "Québécois",
+        "Quebec",
+        "only",
+        "nationalist",
+        "party",
+        "NDP",
+        "social",
+        "democratic"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit mainly, Bloc, Québécois, Quebec, only, nationalist, party, NDP, social, democratic. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_956",
+      "text": "NDP slightly underperformed polls: 6.1% vote share and only 7 seats.",
+      "code": "coverage_omission",
+      "missing": [
+        "slightly",
+        "6.1",
+        "vote",
+        "share",
+        "only",
+        "7",
+        "seats"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit slightly, 6.1, vote, share, only, 7, seats. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_957",
+      "text": "Major drop from 2021: nearly 18% vote share and 25 seats then.",
+      "code": "coverage_omission",
+      "missing": [
+        "2021",
+        "nearly",
+        "18",
+        "vote",
+        "share",
+        "25",
+        "seats",
+        "then"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 2021, nearly, 18, vote, share, 25, seats, then. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_966",
+      "text": "Sponsor message: Brilliant offers interactive lessons in math, science, programming, data analysis, and AI.",
+      "code": "coverage_omission",
+      "missing": [
+        "Sponsor",
+        "message"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Sponsor, message. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_984",
+      "text": "Commentators reference anticipated celebration at HQ (supporters unaware of final call yet).",
+      "code": "coverage_omission",
+      "missing": [
+        "supporters",
+        "unaware",
+        "final",
+        "call",
+        "yet"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit supporters, unaware, final, call, yet. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_991",
+      "text": "Still unknown whether the government will be majority or minority.",
+      "code": "coverage_omission",
+      "missing": [
+        "Still",
+        "unknown"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The formula keeps a future majority/minority alternative but does not encode that the outcome is still unknown. Future is not an uncertainty condition.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_994",
+      "text": "Bloc Québécois: -11 seats in Quebec.",
+      "code": "coverage_omission",
+      "missing": [
+        "11",
+        "seats",
+        "Quebec"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 11, seats, Quebec. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_995",
+      "text": "Conservatives: -5 seats in Quebec.",
+      "code": "coverage_omission",
+      "missing": [
+        "5",
+        "seats",
+        "Quebec"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 5, seats, Quebec. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_997",
+      "text": "The video includes the logo for 7 News.com.au.",
+      "code": "coverage_omission",
+      "missing": [
+        "7"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 7. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_999",
+      "text": "The video contains a compilation of short video scenes and images overlaid by a news broadcaster's audio description (which also appears in overlaid text).",
+      "code": "opaque_clause",
+      "missing": [],
+      "family": "Embedded clauses",
+      "verdict": "needs_context",
+      "reason": "The appear event is already explicit under the audio-description entity. The long group label repeats a clause; the alert is not proof that the predicate is absent. Overlay/relative attachment needs review.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1022",
+      "text": "A logo 'storyful' appears in the video.",
+      "code": "coverage_omission",
+      "missing": [
+        "storyful"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit storyful. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1035",
+      "text": "The earthquake had a magnitude of 7.7.",
+      "code": "coverage_omission",
+      "missing": [
+        "7.7"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The program says the earthquake has a magnitude but drops the value 7.7.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1047",
+      "text": "Sagaing is near Mandalay and also close to the epicenter of the earthquake.",
+      "code": "coverage_omission",
+      "missing": [
+        "also",
+        "close",
+        "epicenter",
+        "earthquake"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit also, close, epicenter, earthquake. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1051",
+      "text": "The Indian Plate is moving northward, producing increased stress on the rocks beneath.",
+      "code": "coverage_omission",
+      "missing": [
+        "beneath"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit beneath. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1062",
+      "text": "Bago is slightly Northeast of Yangon.",
+      "code": "coverage_omission",
+      "missing": [
+        "slightly"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The northeast relation remains but the degree/distance qualifier slightly is omitted.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1066",
+      "text": "The closer to the surface an earthquake is, the greater the damage.",
+      "code": "coverage_omission",
+      "missing": [
+        "greater",
+        "damage"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit greater, damage. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "text": "Blue Ghost had three and a half elliptical orbits around Earth.",
+      "code": "coverage_omission",
+      "missing": [
+        "half"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The half portion of the three-and-a-half orbit count is omitted.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1163",
+      "text": "Firefly chose a more 'scenic route'.",
+      "code": "coverage_omission",
+      "missing": [
+        "more"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit more. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1179",
+      "text": "Blue vector points toward Earth off to right of Blue Ghost and yellow vector points towards Sun off to left of Blue Ghost.",
+      "code": "coverage_omission",
+      "missing": [
+        "off",
+        "right",
+        "yellow",
+        "Sun"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit off, right, yellow, Sun. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1184",
+      "text": "First redirect occurred 98 meters from original target.",
+      "code": "coverage_omission",
+      "missing": [
+        "First"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit First. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1191",
+      "text": "Landing successful and everyone cheers.",
+      "code": "coverage_omission",
+      "missing": [
+        "cheers"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit cheers. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1192",
+      "text": "Firefly Aerospace became first commercial company in history to complete a fully successful moon landing.",
+      "code": "coverage_omission",
+      "missing": [
+        "history"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The comparison domain in history is omitted; generic first does not specify that domain.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1196",
+      "text": "Overview of Firefly Aerospace's Blue Ghost lunar about 10 days after landing.",
+      "code": "coverage_omission",
+      "missing": [
+        "Overview"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "needs_context",
+      "reason": "Overview may be a document label, but the original is an incomplete nominal fragment and lunar is used as an event predicate. A faithful full reading needs clarification.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1212",
+      "text": "LISTER also measures thermal conductivity (how effectively the lunar material transfers heat).",
+      "code": "coverage_omission",
+      "missing": [
+        "how",
+        "effectively",
+        "lunar",
+        "material",
+        "transfers",
+        "heat"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The parenthetical how-effectively clause is absent, including the material, heat transfer and its roles.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1225",
+      "text": "The landing video had already hinted this because one lander leg was not fully in contact with the surface and the nearby shadow shape was unusual.",
+      "code": "coverage_omission",
+      "missing": [
+        "fully"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit fully. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "text": "Mare Crisium is a large basin created by ancient asteroid impact and volcanic eruptions that filled with basaltic lava about 3 billion years ago.",
+      "code": "opaque_clause",
+      "missing": [],
+      "family": "Embedded clauses",
+      "verdict": "needs_context",
+      "reason": "The fill event exists, but the antecedent of that is ambiguous in the supplied sentence. The impact/eruptions attachment and the intended basin reading need a reference decision.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1231",
+      "text": "Firefly and NASA described the site as uniquely suited for studying lunar regolith, geophysical behavior, and how solar wind interacts with Earth's magnetic field in this region.",
+      "code": "opaque_clause",
+      "missing": [],
+      "family": "Embedded clauses",
+      "verdict": "real_gap",
+      "reason": "Interact is emitted alongside study rather than as the interrogative object of studying how interaction happens.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1233",
+      "text": "Firefly reported that lunar noon is the hottest part of the lunar day and temperatures can reach about 250°F or 121°C.",
+      "code": "coverage_omission",
+      "missing": [
+        "121°C"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 121°C. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1234",
+      "text": "To protect hardware, Blue Ghost began cycling power on and off to keep the lander as cool as possible.",
+      "code": "coverage_omission",
+      "missing": [
+        "lander"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit lander. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1248",
+      "text": "Even though Blue Ghost will only operate for about 2 weeks total, they've been able to complete a few different firsts.",
+      "code": "coverage_omission",
+      "missing": [
+        "Even"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The clauses remain a conjunction without the stated even-though concession; this is more than a missing emphasis word.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1249",
+      "text": "On March 3, NASA and the Italian Space Agency achieved a first-of-its-kind demonstration of acquiring and tracking Earth-based navigation signals (GNSS signals) from the Moon's surface.",
+      "code": "coverage_omission",
+      "missing": [
+        "GNSS"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit GNSS. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1256",
+      "text": "Firefly was awarded 2 additional NASA commercial lunar payload services task orders to provide payload services in lunar orbit and on lunar surface in 2026.",
+      "code": "coverage_omission",
+      "missing": [
+        "2",
+        "additional",
+        "NASA",
+        "commercial",
+        "task",
+        "orders"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 2, additional, NASA, commercial, task, orders. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1268",
+      "text": "During lunar night, the Moon also blocks solar RF noise, making the region ideal for observing signals from the cosmic dark ages.",
+      "code": "coverage_omission",
+      "missing": [
+        "region",
+        "ideal"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit region, ideal. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1298",
+      "text": "Designing the vehicle took a little over a year.",
+      "code": "coverage_omission",
+      "missing": [
+        "little"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The source little-over duration becomes an over-year relation without the narrow-margin qualifier.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1312",
+      "text": "Scientists work with complex manufacturing tools to build the spacecraft.",
+      "code": "coverage_omission",
+      "missing": [
+        "complex",
+        "manufacturing",
+        "tools"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit complex, manufacturing, tools. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1402",
+      "text": "Hundreds of people are standing up and cheering.",
+      "code": "coverage_omission",
+      "missing": [
+        "up"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "needs_context",
+      "reason": "Standing up may describe an upright state or the act of rising. Stand retains the first reading but may lose the second; the source wording alone does not settle this.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "text": "IM's moon landing was a nailbiter.",
+      "code": "coverage_omission",
+      "missing": [
+        "IM's"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit IM's. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1437",
+      "text": "The video shows a simulation of the landing as it occurred.",
+      "code": "coverage_omission",
+      "missing": [
+        "simulation",
+        "landing"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The depicted simulation of the landing is replaced by an occur event with unresolved it.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "text": "The braking burn reduced Blue Ghost's orbital velocity to 40 meters/second.",
+      "code": "coverage_omission",
+      "missing": [
+        "second"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The per-second component of the velocity unit is omitted.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1464",
+      "text": "After touchdown, Blue Ghost's legs send a signal to shutdown the engine.",
+      "code": "coverage_omission",
+      "missing": [
+        "signal"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit signal. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1491",
+      "text": "Evening of the third shows values at 2.5.",
+      "code": "coverage_omission",
+      "missing": [
+        "2.5"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 2.5. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1500",
+      "text": "This circulation then moves north-northeast and then parks itself over central Texas.",
+      "code": "coverage_omission",
+      "missing": [
+        "north"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit north. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1521",
+      "text": "Other text in the top left of the screen reports the date as April 2, 2025.",
+      "code": "coverage_omission",
+      "missing": [
+        "April",
+        "2",
+        "2025"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit April, 2, 2025. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1544",
+      "text": "The court ruling was 3-0 in favor of the injunction.",
+      "code": "coverage_omission",
+      "missing": [
+        "0"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 0. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1549",
+      "text": "Congress can pass laws to delegate this authority to the president in certain instances.",
+      "code": "coverage_omission",
+      "missing": [
+        "certain",
+        "instances"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit certain, instances. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1556",
+      "text": "Axelrod claims Trump thinks tariffs are a cure-all for all of America's problems.",
+      "code": "coverage_omission",
+      "missing": [
+        "America",
+        "problems"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit America, problems. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1574",
+      "text": "Declaring emergencies has given Trump legal pretext to expand executive power.",
+      "code": "coverage_omission",
+      "missing": [
+        "legal",
+        "pretext"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit legal, pretext. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1582",
+      "text": "Worldwide and retaliatory tariffs were announced on 'Liberation Day' (April 2), including 10% worldwide and 11-50% imposed on some countries.",
+      "code": "coverage_omission",
+      "missing": [
+        "including",
+        "10"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit including, 10. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1588",
+      "text": "Footage of Trump holding up and speaking about a poster listing reciprocal tariffs by country.",
+      "code": "coverage_omission",
+      "missing": [
+        "Footage"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "Holding and speaking are emitted without the enclosing footage description.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1602",
+      "text": "Dow Futures rose immediately by more than a percent, 1.1% / 500 points.",
+      "code": "coverage_omission",
+      "missing": [
+        "more",
+        "1.1",
+        "500",
+        "points"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit more, 1.1, 500, points. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1605",
+      "text": "US Futures: DOW 42,638.00, +468.00, +1.1%.",
+      "code": "coverage_omission",
+      "missing": [
+        "DOW",
+        "42,638.00",
+        "+468.00",
+        "1.1"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit DOW, 42,638.00, +468.00, 1.1. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1606",
+      "text": "US Futures: S&P 500 5,989.00, +86.25, +1.46%.",
+      "code": "coverage_omission",
+      "missing": [
+        "S&P",
+        "500",
+        "5,989.00",
+        "+86.25",
+        "1.46"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit S&P, 500, 5,989.00, +86.25, 1.46. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1607",
+      "text": "US Futures: NASDAQ 21,752.00, +372.25, +1.74%.",
+      "code": "coverage_omission",
+      "missing": [
+        "NASDAQ",
+        "21,752.00",
+        "+372.25",
+        "1.74"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit NASDAQ, 21,752.00, +372.25, 1.74. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1608",
+      "text": "US Futures (second reading): DOW 42,634.00, +464.00, +1.1%.",
+      "code": "coverage_omission",
+      "missing": [
+        "DOW",
+        "42,634.00",
+        "+464.00",
+        "1.1"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit DOW, 42,634.00, +464.00, 1.1. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1609",
+      "text": "US Futures (second reading): S&P 500 5,988.75, +86.00, +1.46%.",
+      "code": "coverage_omission",
+      "missing": [
+        "S&P",
+        "500",
+        "5,988.75",
+        "+86.00",
+        "1.46"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit S&P, 500, 5,988.75, +86.00, 1.46. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1610",
+      "text": "US Futures (second reading): NASDAQ 21,749.50, +369.75, +1.73%.",
+      "code": "coverage_omission",
+      "missing": [
+        "NASDAQ",
+        "21,749.50",
+        "+369.75",
+        "1.73"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit NASDAQ, 21,749.50, +369.75, 1.73. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "text": "The court is a three judge panel.",
+      "code": "coverage_omission",
+      "missing": [
+        "three"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit three. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1624",
+      "text": "This ruling is significant because Trump uses tariffs as a key part of his international trade 'deals' and policy.",
+      "code": "coverage_omission",
+      "missing": [
+        "deals",
+        "policy"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit deals, policy. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1632",
+      "text": "Ryan Goodman is the Just Security Co-Editor-In-Chief.",
+      "code": "coverage_omission",
+      "missing": [
+        "In"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "overstrict_alert",
+      "reason": "In is already emitted as the entity-relation role linking Co-Editor to Chief; the word audit does not credit relation roles.",
+      "other_limit": "The job title is still split into an ordinary relation. Correct word coverage would not certify the title meaning.",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1645",
+      "text": "A pause on the ruling will bring back the pre-ruling conditions (inference: allow tariffs to resume as before).",
+      "code": "coverage_omission",
+      "missing": [
+        "inference"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "needs_context",
+      "reason": "Inference may annotate the author's reasoning rather than the video content. The candidate also projects allow/resume outside the main clause; its intended status needs clarification.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1648",
+      "text": "Footage from Monday in Arlington, VA of Trump speaking at podium with JD Vance and Pete Hegseth behind him clapping (muted).",
+      "code": "coverage_omission",
+      "missing": [
+        "muted"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit muted. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1659",
+      "text": "Trump announced a blanket 10% tariff on all of America's trading partners.",
+      "code": "coverage_omission",
+      "missing": [
+        "America",
+        "trading",
+        "partners"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit America, trading, partners. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "text": "America's trading partners will be thinking about how to engage with the White House and whether to retaliate against Trump's tariffs; these countries know that the more they retaliate, the more they hurt their own economies.",
+      "code": "opaque_clause",
+      "missing": [],
+      "family": "Embedded clauses",
+      "verdict": "real_gap",
+      "reason": "The the-more/the-more comparative relationship is not captured by the conjunction and long literal.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1680",
+      "text": "Prices could go up; extra tariffs for $800 or less but only if shipped via the international postal service.",
+      "code": "coverage_omission",
+      "missing": [
+        "extra",
+        "tariffs",
+        "800",
+        "less",
+        "only"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit extra, tariffs, 800, less, only. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1681",
+      "text": "An additional 30% tariff or $25 per item as of time of video but could go up to $50 per item by June 1, 2025.",
+      "code": "coverage_omission",
+      "missing": [
+        "25"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 25. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1683",
+      "text": "Yale says it will cost consumers across the USA a minimum of 10B a year.",
+      "code": "coverage_omission",
+      "missing": [
+        "10B",
+        "year"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 10B, year. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1697",
+      "text": "Claims that Trump has said Canada is not a real country.",
+      "code": "coverage_omission",
+      "missing": [
+        "Claims"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Claims. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1715",
+      "text": "They show the current House composition: Liberals hold 152 seats, Conservatives 120, Bloc Québécois 33, NDP 24, Greens 2, with 3 independents and 4 seats vacant.",
+      "code": "coverage_omission",
+      "missing": [
+        "Conservatives",
+        "120",
+        "Bloc",
+        "Québécois",
+        "33",
+        "NDP",
+        "24",
+        "Greens",
+        "2"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Conservatives, 120, Bloc, Québécois, 33, NDP, 24, Greens, 2. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1718",
+      "text": "Mark Carney has been Prime Minister for only about a week, after winning the Liberal leadership and after Justin Trudeau's resignation.",
+      "code": "coverage_omission",
+      "missing": [
+        "Justin",
+        "Trudeau",
+        "resignation"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Justin, Trudeau, resignation. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1747",
+      "text": "Title of video: 'Trump announces 10% baseline tariff, reciprocal tariff on some nations'.",
+      "code": "coverage_omission",
+      "missing": [
+        "Title",
+        "video"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The title is compiled as an announce event without the title/video source boundary.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1751",
+      "text": "President Trump mentions he could have implemented a full reciprocal but chose to do only half.",
+      "code": "coverage_omission",
+      "missing": [
+        "only"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "overstrict_alert",
+      "reason": "Only is plausibly emphatic because the half/full contrast and choosing half are retained. This is a stated reading, not a proved semantic equivalence.",
+      "other_limit": "The speaker/reference and modal interpretation still require their usual checks.",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1754",
+      "text": "China tariffs the USA 67%, USA will reciprocate with 34%; currency manipulation and trade barriers from China.",
+      "code": "coverage_omission",
+      "missing": [
+        "currency",
+        "manipulation",
+        "trade",
+        "barriers"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit currency, manipulation, trade, barriers. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1757",
+      "text": "EU tariffs the USA 39%, USA will reciprocate with 20%.",
+      "code": "coverage_omission",
+      "missing": [
+        "EU",
+        "tariffs",
+        "39"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit EU, tariffs, 39. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1759",
+      "text": "Taiwan, took USA computer chips and semiconductors says Trump, tariffs the USA 64%, USA will reciprocate with 32%.",
+      "code": "coverage_omission",
+      "missing": [
+        "64"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 64. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1762",
+      "text": "Video cuts and shows Trump without chart talking about how disproportionate and unfair the numbers are.",
+      "code": "coverage_omission",
+      "missing": [
+        "cuts"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The video-cut event is omitted while showing/talking content remains.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1763",
+      "text": "Trump says minimum baseline tariff of 10% to help rebuild the USA economy and prevent cheating; 10 year jail sentence for mishandling at the gate.",
+      "code": "coverage_omission",
+      "missing": [
+        "10",
+        "10",
+        "year",
+        "jail",
+        "sentence",
+        "mishandling",
+        "gate"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 10, 10, year, jail, sentence, mishandling, gate. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "text": "Building housing Kantipur Publications in Kathmandu on fire.",
+      "code": "coverage_omission",
+      "missing": [
+        "fire"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit fire. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1779",
+      "text": "Lots of damage, all windows broken, but fire seems mostly put out except for 1 room.",
+      "code": "coverage_omission",
+      "missing": [
+        "Lots",
+        "damage"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit Lots, damage. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "text": "Footage of burned debris, overturned and burned cars.",
+      "code": "coverage_omission",
+      "missing": [
+        "debris"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit debris. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1830",
+      "text": "The video depicts a map of Los Angeles and some of the surrounding area.",
+      "code": "coverage_omission",
+      "missing": [
+        "surrounding",
+        "area"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit surrounding, area. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1873",
+      "text": "The video shows side-by-side footage of the PCH on April 21, 2020 (on the left; the first filming) and on January 23, 2025 (on the right; the second filming).",
+      "code": "coverage_omission",
+      "missing": [
+        "April",
+        "21",
+        "2020",
+        "left",
+        "first",
+        "filming",
+        "January",
+        "23",
+        "2025",
+        "right",
+        "second",
+        "filming"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit April, 21, 2020, left, first, filming, January, 23, 2025, right, second, filming. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1874",
+      "text": "In the earlier footage, the road is clear and the vegetation on the side of the road is healthy.",
+      "code": "coverage_omission",
+      "missing": [
+        "earlier",
+        "footage"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit earlier, footage. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1875",
+      "text": "In the later footage, the road is covered in traffic cones and the vegetation looks burnt.",
+      "code": "coverage_omission",
+      "missing": [
+        "later",
+        "footage"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit later, footage. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1885",
+      "text": "Homes starting at the block of 19000 PCH were destroyed by the fire.",
+      "code": "coverage_omission",
+      "missing": [
+        "19000",
+        "PCH"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 19000, PCH. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1900",
+      "text": "The heatmap covers a period of 4 hours on January 7, 2025.",
+      "code": "coverage_omission",
+      "missing": [
+        "January",
+        "7",
+        "2025"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit January, 7, 2025. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1905",
+      "text": "Different stills are shown, presumably from different time points.",
+      "code": "coverage_omission",
+      "missing": [
+        "presumably"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit presumably. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1909",
+      "text": "On-screen text states fire grew from 2,921 acres to over 16,000 acres in less than 8 hours on January 8th, 2025.",
+      "code": "coverage_omission",
+      "missing": [
+        "screen",
+        "text",
+        "states"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The fire-growth event is projected as the main statement after dropping the on-screen text source.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1913",
+      "text": "The before-to-after transitions show healthy, vibrant stretches of coast with homes scattering the beach.",
+      "code": "coverage_omission",
+      "missing": [
+        "healthy",
+        "vibrant",
+        "stretches",
+        "coast"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit healthy, vibrant, stretches, coast. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1945",
+      "text": "V-LATs (Very Large Air Tankers) are assisting ground crews in combatting the fire in Mandeville Canyon.",
+      "code": "coverage_omission",
+      "missing": [
+        "Very"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "Very is part of the parenthetical aircraft-class name and is missing from that expansion.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1968",
+      "text": "The Palisades Fire is one of the most destructive in California's history.",
+      "code": "coverage_omission",
+      "missing": [
+        "most",
+        "destructive",
+        "California",
+        "history"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit most, destructive, California, history. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1989",
+      "text": "Rinderknecht's phone signal was attested seconds after the flames erupted.",
+      "code": "coverage_omission",
+      "missing": [
+        "seconds"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit seconds. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1995",
+      "text": "The brush fire that Rinderknecht set was seemingly quickly extinguished by firefighters.",
+      "code": "coverage_omission",
+      "missing": [
+        "Rinderknecht",
+        "set"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The brush-fire relative clause naming who set it is omitted.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1999",
+      "text": "Kenny Cooper explains that a holdover fire is 'deeply seeded in vegetation and roots'.",
+      "code": "coverage_omission",
+      "missing": [
+        "holdover",
+        "fire"
+      ],
+      "family": "Source and quotation context",
+      "verdict": "real_gap",
+      "reason": "The explanation text remains, but its subject holdover fire is lost.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2068",
+      "text": "Shi Yongxin claims that as long as he has a clear conscience, he is not afraid of criticism.",
+      "code": "opaque_clause",
+      "missing": [],
+      "family": "Embedded clauses",
+      "verdict": "real_gap",
+      "reason": "The as-long-as condition is treated as temporal and repeated inside a time literal.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2095",
+      "text": "Shi Yongxin is described as simply a business executive.",
+      "code": "coverage_omission",
+      "missing": [
+        "simply"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "needs_context",
+      "reason": "Simply may be emphasis or restrict the description to a business executive. The candidate keeps the executive description; the contrast is not explicit enough to declare the omission harmless.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2096",
+      "text": "Tourists are charged a fee for practically everything they do inside the temple.",
+      "code": "coverage_omission",
+      "missing": [
+        "practically"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "Practically qualifies everything. Dropping it changes an approximate generalization toward an unrestricted one.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2102",
+      "text": "After the Shaolin Temple movie exploded in popularity, people from all over the country flocked to the temple to visit.",
+      "code": "coverage_omission",
+      "missing": [
+        "all"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "real_gap",
+      "reason": "Country is retained, but the distributed all-over-country origin is not.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2109",
+      "text": "'Qian Dan' refers to the expulsion of a monk from a monastery for violating religious vows.",
+      "code": "coverage_omission",
+      "missing": [
+        "expulsion",
+        "monk",
+        "monastery"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit expulsion, monk, monastery. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2114",
+      "text": "Therefore, the expulsion of Shi Yongxin is considered invalid.",
+      "code": "coverage_omission",
+      "missing": [
+        "expulsion",
+        "Shi",
+        "Yongxin"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit expulsion, Shi, Yongxin. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2139",
+      "text": "Shi Yongxin's business tactics earned him the nickname 'The CEO Abbot.'",
+      "code": "coverage_omission",
+      "missing": [
+        "CEO",
+        "Abbot"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit CEO, Abbot. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2161",
+      "text": "Shi Yongxin has been described as acting more like a corporate CEO.",
+      "code": "coverage_omission",
+      "missing": [
+        "more"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "needs_context",
+      "reason": "More like is comparative, but its reference is unstated. The candidate keeps acting like a CEO; whether it preserves the intended comparison needs review.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "text": "The wind speed appears sufficient to force adults to crawl.",
+      "code": "coverage_omission",
+      "missing": [
+        "wind",
+        "speed"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit wind, speed. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2177",
+      "text": "The conditions appear dangerous to be outside in.",
+      "code": "coverage_omission",
+      "missing": [
+        "conditions",
+        "dangerous"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit conditions, dangerous. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2191",
+      "text": "Northern regions are expected to experience high temperatures of 35°C to 36°C the following day before afternoon rain begins.",
+      "code": "coverage_omission",
+      "missing": [
+        "following",
+        "day"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit following, day. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2199",
+      "text": "A direct impact on Taiwan is considered unlikely.",
+      "code": "coverage_omission",
+      "missing": [
+        "direct",
+        "impact",
+        "Taiwan"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit direct, impact, Taiwan. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2215",
+      "text": "Western and Northern Taiwan are expected to see only occasional afternoon thunderstorms over the weekend.",
+      "code": "coverage_omission",
+      "missing": [
+        "only"
+      ],
+      "family": "Modifiers and scope",
+      "verdict": "needs_context",
+      "reason": "Only occasional may just emphasize low frequency or exclude additional weather events. Occasional is retained but the intended only scope is unclear.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2240",
+      "text": "The narrator reports 49 people total were on board.",
+      "code": "coverage_omission",
+      "missing": [
+        "total"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "overstrict_alert",
+      "reason": "The exact group quantity 49 already expresses the stated total of 49 people.",
+      "other_limit": "The reported-content scope and on-board relation are retained.",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2283",
+      "text": "Typhoon Wipha made landfall with wind force level 12.",
+      "code": "coverage_omission",
+      "missing": [
+        "12"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The force level is retained without the numeric value 12.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2324",
+      "text": "The dashcam footage has a visible timestamp of 2025/07/20 09:54.",
+      "code": "coverage_omission",
+      "missing": [
+        "2025/07/20",
+        "09:54"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit 2025/07/20, 09:54. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "text": "A reporter in Zhuhai, Guangdong is shown wearing a white raincoat.",
+      "code": "coverage_omission",
+      "missing": [
+        "Guangdong"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "Guangdong is omitted from the place description. Earlier false-name guards prevent unsafe reattachment, so the omission should remain visible.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2347",
+      "text": "The video is reported by 'China Blue News' (ZMC).",
+      "code": "coverage_omission",
+      "missing": [
+        "ZMC"
+      ],
+      "family": "Names and nominal descriptions",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit ZMC. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2350",
+      "text": "Wipha is moving northwest at a speed of 20-25 km/h.",
+      "code": "coverage_omission",
+      "missing": [
+        "25",
+        "h"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The upper speed endpoint25 and the hour component of km/h are omitted.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2362",
+      "text": "The reporter notes that rainfall intensity in some of these areas may be historically rare for this time of year.",
+      "code": "coverage_omission",
+      "missing": [
+        "areas"
+      ],
+      "family": "Arguments, lists and noun phrases",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit areas. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2371",
+      "text": "On-screen text at the end of the video names an upcoming storm as Typhoon No. 8 'Co-May.'",
+      "code": "coverage_omission",
+      "missing": [
+        "No.",
+        "8",
+        "Co",
+        "May"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit No., 8, Co, May. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2377",
+      "text": "The collapsed scaffolding crushed multiple vehicles in a housing estate below.",
+      "code": "coverage_omission",
+      "missing": [
+        "below"
+      ],
+      "family": "Phrasal verbs and direction",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit below. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2428",
+      "text": "The forecast expected the signal to be lowered to Signal No. 3 after 7:00 PM.",
+      "code": "coverage_omission",
+      "missing": [
+        "No.",
+        "3"
+      ],
+      "family": "Numbers, dates and units",
+      "verdict": "real_gap",
+      "reason": "The reachable candidate conditions omit No., 3. This loses source content, even though a logic program was generated.",
+      "other_limit": "",
+      "reviewer": "compiler-author assistant",
+      "evidence": "Saved candidate logical form and emitted predicates; no media judgment."
+    }
+  ],
+  "refusals": [
+    {
+      "claim_id": "Txf2EdqOg1SQ_2185",
+      "text": "The highest rainfall accumulation of the day was in Meishan Township, Chiayi, which received 149.0 mm.",
+      "code": "duplicate_role",
+      "reason": "SRL repeats ARG0 on received",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2257",
+      "text": "Severe flooding is shown indoors in Zhongshan, with tools submerged in a blue basket.",
+      "code": "duplicate_role",
+      "reason": "SRL repeats ARGM-LOC on shown",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "text": "In the second shot, an emergency vehicle is visible on the side of the road with emergency lights flashing.",
+      "code": "duplicate_role",
+      "reason": "SRL repeats ARGM-LOC on is",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "text": "The video shows stills of Pete's Seafood, a restaurant at Topanga Beach, which has survived many fires.",
+      "code": "duplicate_role",
+      "reason": "SRL repeats ARG0 on survived",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "text": "Image of Trump signing something (likely executive orders).",
+      "code": "media_modifier",
+      "reason": "A media-description modifier contains an unresolved clause.",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1587",
+      "text": "Image of Trump holding up a signed document.",
+      "code": "media_modifier",
+      "reason": "A media-description modifier contains an unresolved clause.",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2344",
+      "text": "The reporter in Zhuhai states he weighs 90kg but is struggling to remain standing due to the wind.",
+      "code": "mention_alignment",
+      "reason": "Entity is not an exact source mention: kg",
+      "recommendation": "core_contract",
+      "review_reason": "The unit kg is rejected as a source mention inside 90kg; address source/measurement alignment rather than changing the meaning."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_333",
+      "text": "Robot 1paces up behind the man",
+      "code": "mention_alignment",
+      "reason": "Entity is not an exact source mention: paces",
+      "recommendation": "core_contract",
+      "review_reason": "The original has 1paces joined together. This is a token-boundary issue; any repair must keep Robot 1 and the pacing action."
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_750",
+      "text": "There are multiple additional police officers in the immediate vicinity of the police van helping and clearing space.",
+      "code": "missing_predicate",
+      "reason": "Explicit source clause predicates have no linked SRL frame: clearing",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_910",
+      "text": "Cuts to the crowd who is giving him a standing ovation, all holding red signs (assume supporters).",
+      "code": "missing_predicate",
+      "reason": "Explicit source clause predicates have no linked SRL frame: giving, holding",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1636",
+      "text": "The court ruling places with Congress the authority to set tariffs or delegate control of tariffs to the President in specific situations.",
+      "code": "missing_srl",
+      "reason": "No usable SRL frame or unambiguous nominal root.",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_181",
+      "text": "Staship Flight test, T-13 to liftoff.",
+      "code": "missing_srl",
+      "reason": "No usable SRL frame or unambiguous nominal root.",
+      "recommendation": "manual_or_unsupported",
+      "review_reason": "Fragment/typo and countdown notation need a reference reading; do not turn a title into an invented liftoff assertion."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_921",
+      "text": "It looked certain Poilievre would replace Trudeau; main question was margin of victory.",
+      "code": "modal_scope",
+      "reason": "Unresolved modal interpretation: would",
+      "recommendation": "manual_or_unsupported",
+      "review_reason": "Would replace expresses a past prediction/counterfactual context. Replacing it with will or an actual replacement would change meaning."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "text": "Protester holds a sign \"They shut down my voice without realizing that they would awaken the voice of all of Mexico.\"",
+      "code": "modal_scope",
+      "reason": "Unresolved modal interpretation: would",
+      "recommendation": "core_contract",
+      "review_reason": "Would occurs inside a quoted sign. Verbatim source content should be protected from outer modal analysis; the quote must not be rewritten."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1916",
+      "text": "The video features no narration.",
+      "code": "negative_quantifier",
+      "reason": "A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.",
+      "recommendation": "manual_or_unsupported",
+      "review_reason": "No narration requires correctly scoped absence. Rewriting to a positive narration entity plus absent is not a valid substitute for quantifier scope."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1901",
+      "text": "The video has no audio.",
+      "code": "negative_quantifier",
+      "reason": "A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.",
+      "recommendation": "manual_or_unsupported",
+      "review_reason": "No audio requires absence with the right existence scope; a paraphrase alone does not establish that contract."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_532",
+      "text": "Six shots fired or the sound of explosions.",
+      "code": "nominal_disjunction",
+      "reason": "Nominal OR has no explicit alternative group.",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1137",
+      "text": "Blue Ghost began the journey to the moon after on-orbit commissioning.",
+      "code": "nominal_disjunction",
+      "reason": "Nominal OR has no explicit alternative group.",
+      "recommendation": "core_contract",
+      "review_reason": "The sentence contains on-orbit, not a logical alternative. The nominal-OR refusal overreacts to the tokenization/guard; preserve the original compound meaning."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "text": "Not much to see with respect to spin until the 3rd.",
+      "code": "polarity_omission",
+      "reason": "A source negation is absent from the logical operators. Preserve the intended negated clause.",
+      "recommendation": "manual_or_unsupported",
+      "review_reason": "Not much is quantified negation. Removing not to obtain a parsable sentence would weaken the claim."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_823",
+      "text": "2021 map shows more Bloc Québécois seats (blue) — not as much red.",
+      "code": "polarity_omission",
+      "reason": "A source negation is absent from the logical operators. Preserve the intended negated clause.",
+      "recommendation": "manual_or_unsupported",
+      "review_reason": "Not as much red is comparative/negative; the target and comparison must be retained."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_373",
+      "text": "Robot 100m sprint.",
+      "code": "predicate_type",
+      "reason": "Predicate position is not a lexical/state predicate: 100m",
+      "recommendation": "manual_or_unsupported",
+      "review_reason": "Robot 100m sprint is a nominal fragment. A rewrite must not invent participation or completion."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1927",
+      "text": "There is a logo onscreen at the beginning of the video for the County of Los Angeles.",
+      "code": "predicate_type",
+      "reason": "Predicate position is not a lexical/state predicate: onscreen",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "T8u81WMIyj18_755",
+      "text": "The car is parked at 1:53am on August 19th, 2025.",
+      "code": "quantity_type",
+      "reason": "A time value or amount is not a counted group. Use a typed time/measurement literal or an amount property: am",
+      "recommendation": "core_contract",
+      "review_reason": "A clock is mistaken for a counted group. Time literals already exist in the representation."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2221",
+      "text": "The woman claims the current time is 7:00 PM on July 21st in Vietnam time.",
+      "code": "quantity_type",
+      "reason": "A time value or amount is not a counted group. Use a typed time/measurement literal or an amount property: PM",
+      "recommendation": "core_contract",
+      "review_reason": "The reported clock time is mistaken for a group quantity. Fix typing/alignment; do not change its date, zone or assertion scope."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1655",
+      "text": "She claims that Trump wants America to return to the late 19th century, when America had no income tax and state spending was instead funded by tariff revenue; Rachana says that this is a fantasy.",
+      "code": "temporal_scope",
+      "reason": "Fronted time with a different coordinated subject needs an explicit scope reading.",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_935",
+      "text": "Leadership approval snapshot (Angus Reid, March 17, 2025): Pierre Poilievre has approval around the mid-30% range with disapproval near 55-60%, Justin Trudeau shows higher approval near ~48-50% with disapproval around ~35%, Jagmeet Singh records approval near ~32-33% with disapproval close to ~60%, and Yves-François Blanchet (Quebec polling only) has approval around ~48-50% and disapproval near ~40-42%, indicating Trudeau and Blanchet with net-positive standings and Poilievre and Singh facing higher disapproval than approval.",
+      "code": "temporal_scope",
+      "reason": "Fronted time with a different coordinated subject needs an explicit scope reading.",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_960",
+      "text": "Carney now faces decision similar to Trudeau's in 2021: whether to form a support alliance with the NDP which would give him enough seats for a majority.",
+      "code": "threshold_scope",
+      "reason": "Enough-NP needs one explicit infinitival sufficiency goal.",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_820",
+      "text": "However, not enough gains, and failure to sufficiently weaken Fortress Toronto prevented Conservatives from forming government.",
+      "code": "threshold_scope",
+      "reason": "Enough-NP needs one explicit infinitival sufficiency goal.",
+      "recommendation": "manual_or_unsupported",
+      "review_reason": "Negative sufficiency and prevented-forming scope need explicit representation; do not replace them with a simple positive goal."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1572",
+      "text": "Axelrod claims Trump does not want to be constrained.",
+      "code": "unresolved_clause",
+      "reason": "A clausal argument has no attached SRL frame: constrained",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1354",
+      "text": "A goal of the lunar planet vac is to extract information from samples.",
+      "code": "unresolved_clause",
+      "reason": "A clausal argument has no attached SRL frame: to extract information from samples",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1782",
+      "text": "All politicians' houses on same block and all lit on fire: at least 5 houses burning seen.",
+      "code": "unresolved_clause",
+      "reason": "A clausal argument has no attached SRL frame: seen",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1513",
+      "text": "You can see this high pressure ridge through winds out west out of the south, westerly flow across the central plains, and northerly flow on the east side of the ridge in the southeast.",
+      "code": "unresolved_clause",
+      "reason": "A clausal argument has no attached SRL frame: see",
+      "recommendation": "manual_or_unsupported",
+      "review_reason": "The wind-direction description is complex and partly underspecified. A rewriter must not guess the intended geometric relationships."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1826",
+      "text": "Two boys have someone take a picture of themselves on bridge where fire and smoke can be seen in back.",
+      "code": "unresolved_clause",
+      "reason": "A clausal argument has no attached SRL frame: a picture of themselves on bridge where fire and smoke can be seen in back",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1263",
+      "text": "Elytra will remain in lunar orbit to provide long-haul communications relay and support RF calibration services for NASA's telescope systems.",
+      "code": "unresolved_controller",
+      "reason": "Embedded predicate has no explicit or licensed controller: relay",
+      "recommendation": "rewrite_candidate",
+      "review_reason": "A minimally simplified sentence may help the existing parser express the original arguments and clause boundaries. This is a proposed target, not a demonstrated rewrite recovery."
+    }
+  ],
+  "passing_controls": [
+    {
+      "claim_id": "T1JQ-aG78Zuc_789",
+      "text": "The tram passes through the De La Reyweg rail station.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_210",
+      "text": "Burning of thrusters in the final descent.",
+      "rating": "partial",
+      "reason": "The final-descent context is assigned a location role, rather than an explicit temporal relation."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1366",
+      "text": "Blue Ghost is a spacecraft.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_782",
+      "text": "Many large blue containers are on the pier.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "T8u81WMIyj18_756",
+      "text": "There is occasionally a flash of light on the driver's side of the parked car.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_459",
+      "text": "Thousands of people are rallying and protesting in Mexico.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1690",
+      "text": "Trump reports that the tariffs will generate lots of money and jobs.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_18",
+      "text": "The typhoon strengthened over the Bering Straight before hitting Alaska.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_727",
+      "text": "The video is at night. ",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_555",
+      "text": "The Philadelphia Phillies are playing the Miami Marlins.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_749",
+      "text": "Many drivers are frustrated with the lane blockage and people crossing the street.",
+      "rating": "partial",
+      "reason": "The emotion is represented both as a full text complement and a decomposed frustrated event; decomposition and probability-sharing are not clean."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_803",
+      "text": "Host introduces David Aiken, chief political correspondent, at his touchscreen to explain how Liberals secured their minority government.",
+      "rating": "needs_context",
+      "reason": "The to-explain controller can be read as David Aiken or the host. The candidate selects Aiken; the wording does not uniquely determine this."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_655",
+      "text": "Dusk during a music event.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1805",
+      "text": "Text overlay reads 'Mob burns down Hotel Hilton'.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_170",
+      "text": "As of September 15th, salvage teams secured the containers stacked on board.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_398",
+      "text": "Music plays while robot runs.",
+      "rating": "partial",
+      "reason": "While robot runs remains a time literal. The running event and its participant are not separately represented."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1486",
+      "text": "Tropical Storm Barry originated out of the Bay of Campeche.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1955",
+      "text": "Jeremiah Wittwer requests that residents not fly drones.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1079",
+      "text": "The earthquake occurred on March 28, 2025.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_630",
+      "text": "View of area filled with tents.",
+      "rating": "partial",
+      "reason": "View is an ordinary entity with an of relation; the content is not explicitly placed under visual depiction."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2197",
+      "text": "The system is predicted to enter the South China Sea.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_301",
+      "text": "Airport roof leaking.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2157",
+      "text": "Shi Yongxin is accused of fathering illegitimate children.",
+      "rating": "faithful",
+      "reason": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict."
+    }
+  ]
+}

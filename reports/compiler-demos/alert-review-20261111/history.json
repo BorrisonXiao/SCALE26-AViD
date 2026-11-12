@@ -1,0 +1,34 @@
+[
+  {
+    "run": "compiler_revision_20261105",
+    "generated": 2099,
+    "recorded_status_pass": 2099,
+    "content_check_pass": null,
+    "checks": "Schema/syntax checks; no content audit",
+    "note": "Recorded checks changed between stages; this column is not semantic accuracy."
+  },
+  {
+    "run": "scope_coverage_20261105",
+    "generated": 2099,
+    "recorded_status_pass": 1839,
+    "content_check_pass": 1839,
+    "checks": "Schema/syntax plus word coverage",
+    "note": "Recorded checks changed between stages; this column is not semantic accuracy."
+  },
+  {
+    "run": "content_recovery_20261105",
+    "generated": 2103,
+    "recorded_status_pass": 1866,
+    "content_check_pass": 1866,
+    "checks": "Word coverage plus clause/list checks",
+    "note": "Recorded checks changed between stages; this column is not semantic accuracy."
+  },
+  {
+    "run": "content_relations_20261105",
+    "generated": 2103,
+    "recorded_status_pass": 1924,
+    "content_check_pass": 1924,
+    "checks": "Word coverage plus clause/list checks",
+    "note": "Recorded checks changed between stages; this column is not semantic accuracy."
+  }
+]

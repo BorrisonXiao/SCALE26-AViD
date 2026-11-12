@@ -1,8 +1,33 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-11",
   "timezone": "America/New_York",
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
+    {
+      "date": "2026-11-11",
+      "items": [
+        {
+          "text": "Separated program generation from content-check counts across four saved runs. All 2,099 original candidates remain; current counts stay 2,103 generated and 1,924 passing.",
+          "href": "#metric-history",
+          "label": "Comparable metric definitions"
+        },
+        {
+          "text": "Reviewed all 179 candidate alerts: 166 apparent gaps, five likely overstrict word alerts and eight context-dependent cases. No compiler status was changed.",
+          "href": "#alert-review",
+          "label": "Alert review"
+        },
+        {
+          "text": "Reviewed 34 stratified refusals, 23 passing controls and 22 targeted clause-literal cases. Passing outputs can still miss event bindings and source scope.",
+          "href": "#alert-review",
+          "label": "Cases and limits"
+        },
+        {
+          "text": "Recommended freezing broad grammar expansion and developing a small checked rewrite pilot next. No rewrite, model call, training or new inference experiment was run.",
+          "href": "#stopping-point",
+          "label": "Stopping decision and pilot proposal"
+        }
+      ]
+    },
     {
       "date": "2026-11-05",
       "items": [

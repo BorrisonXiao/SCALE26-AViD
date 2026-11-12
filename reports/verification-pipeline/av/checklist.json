@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-11",
   "steps": [
     {
       "id": 6,
@@ -295,19 +295,47 @@
     },
     {
       "id": 17,
-      "title": "Review recovered meanings before the next repair set",
-      "status": "proposed; not implemented",
+      "title": "Clarify counts and review residual alerts",
+      "status": "completed; compiler and statuses unchanged",
       "items": [
         {
-          "text": "Review the recovered conditions and partial cases with the user\u2014check intended relationships rather than relying on coverage counts",
+          "text": "Report generation and content-check counts separately across saved runs\u2014make historical comparisons explicit",
+          "done": true
+        },
+        {
+          "text": "Review all179 candidate alerts and inspect refusals/passing controls\u2014distinguish omissions, overstrict checks and missed bindings",
+          "done": true
+        },
+        {
+          "text": "Assess a stopping point and document a bounded rewrite pilot\u2014avoid open-ended grammar expansion",
+          "done": true
+        }
+      ],
+      "note": "compiler_alert_review_20261111:166 apparent gaps,5 likely overstrict alerts,8 uncertain; assistant diagnostic judgments, not human gold. Passing controls18 faithful/4 partial/1 context-dependent. No compiler/model/rewrite/training experiment."
+    },
+    {
+      "id": 18,
+      "title": "Develop a checked rewrite pilot before new learning experiments",
+      "status": "proposed next implementation; not started",
+      "items": [
+        {
+          "text": "Keep the compiler fixed and reserve source groups before prompt tuning\u2014make a fair baseline comparison",
           "done": false
         },
         {
-          "text": "Inspect remaining measurements and mixed nominal/clausal objects\u2014choose another bounded repair set or retain explicit refusals",
+          "text": "Prepare24 failed targets,8 unchanged controls and8 guard cases\u2014check information preservation as well as compilation",
+          "done": false
+        },
+        {
+          "text": "Review original/rewrite/predicate triples\u2014preserve participants, quantities, time, modality, negation, quotes and source scope",
+          "done": false
+        },
+        {
+          "text": "Proceed to checked training examples only after the pilot gates\u2014avoid treating automatic passes as clean labels",
           "done": false
         }
       ],
-      "note": "References, native cost profiling and sentence rewriting remain deferred. Update the compiler-demos daily log when a future job completes."
+      "note": "Recommendation: stop broad grammar expansion now. Basic source/quote/typing bugs remain compiler maintenance; rewriting is not assumed to fix unsupported quantified absence or ambiguous meanings."
     },
     {
       "id": 8,
@@ -436,7 +464,7 @@
       ]
     }
   ],
-  "intro": "Current compiler:1,924/2,375 original claims pass checks, versus1,866 before;2,103 executable candidates unchanged.58 newly pass with no prior pass lost.291 tests pass. The41 demos and daily log link to completed work. Passing checks is not semantic accuracy; reference resolution, profiling and rewriting remain deferred.",
+  "intro": "Current frozen compiler:2,103 programs generated from2,375 claims;1,924 pass word/clause/list content checks. These metrics are separate from semantic accuracy. The11 November audit reviewed all179 candidate alerts,34 no-program cases and23 passing controls. The next proposed implementation is a small checked rewrite pilot, before relation training.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -481,5 +509,6 @@
   "reviewed_compilation_run": "exp/probabilistic_verification/compiler_revision_20261105",
   "scope_coverage_run": "exp/probabilistic_verification/scope_coverage_20261105",
   "content_recovery_run": "exp/probabilistic_verification/content_recovery_20261105",
-  "content_relations_run": "exp/probabilistic_verification/content_relations_20261105"
+  "content_relations_run": "exp/probabilistic_verification/content_relations_20261105",
+  "compiler_alert_review_run": "exp/probabilistic_verification/compiler_alert_review_20261111"
 }

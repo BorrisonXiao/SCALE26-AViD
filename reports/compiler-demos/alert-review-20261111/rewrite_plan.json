@@ -1,0 +1,40 @@
+{
+  "status": "proposal, not implemented",
+  "recommendation": "Freeze the current compiler as the comparison baseline now and make a small, checked rewrite pilot the next implementation phase. Continue fixing basic source-alignment/quotation bugs separately; stop open-ended grammar expansion.",
+  "reason": "The remaining 451 strict refusals are 19.0% of 2,375, not a handful of proven outliers. The audit also finds passing outputs with missing bindings. A fixed-baseline rewrite comparison is more useful for the intended method paper than another unbounded series of rules. No measured diminishing-return curve or rewrite success is claimed.",
+  "pilot": {
+    "failed_targets": 24,
+    "unchanged_controls": 8,
+    "guard_cases": 8,
+    "total": 40,
+    "model": "One frozen text model; minimal text edits, unchanged output or explicit refusal when meaning cannot be preserved. No fine-tuning. The rewriter receives the claim and existing text parses, not truth labels or media observations.",
+    "focus": [
+      "Phrasal verbs and implicit sentence boundaries",
+      "Long coordination and nonfinite clause attachment",
+      "Explicit lists, numeric/time formatting and nominal fragments with a clear reading"
+    ],
+    "checks": [
+      "Simplify wording without correcting the claim facts, including deliberately false claims",
+      "Preserve who did what to whom, shared participants and quantifier scope",
+      "Preserve names, quantities with their owners, dates, tense/aspect, polarity and modality",
+      "Preserve exact quotations and speech/OCR/depiction boundaries",
+      "Check compiled predicates against the ORIGINAL claim as well as the rewritten text",
+      "Reject added assertions, guessed references or unsupported comparison/negation semantics"
+    ],
+    "proposed_goals": [
+      "At least 12 of 24 failed development targets yield reviewed faithful compiled outputs",
+      "No regression on 8 unchanged controls",
+      "Zero accepted critical changes to participants, quantities, polarity, time, modality, quotations or source scope",
+      "Unsupported/ambiguous guard cases may remain refused; an increased syntax-pass count alone is not success"
+    ],
+    "evaluation_limit": "These are proposed development gates, not measured results or a statistical accuracy guarantee. Reserve source groups before prompt tuning; the current audit is development context.",
+    "target_selection": "Choose24 targets with a reviewed missing value/relation or a parser refusal with a clear reading. Keep likely overstrict-only alerts out of the semantic-recovery count; put ambiguous or unsupported cases in the guard set."
+  },
+  "do_not_force": [
+    "Quantified absence such as no audio/no narration when joint existence/negation is not supported",
+    "Would/counterfactual readings not covered by the current operators",
+    "Ambiguous relative-clause antecedents or unsupported the-more/the-more comparisons",
+    "Quotes: retain exact wording; fix compiler protection rather than paraphrasing them"
+  ],
+  "before_training": "Freeze compiler and rewrite prompts after the pilot, review original/rewrite/predicate triples, retain refusals and train only on checked structures. Broader accepted counts are not clean training labels."
+}

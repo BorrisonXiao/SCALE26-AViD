@@ -1,0 +1,203 @@
+{
+  "provenance": "Targeted heuristic follow-up, not a random failure-rate estimate. No status or compiler changes.",
+  "cases": [
+    {
+      "claim_id": "TbJqMFkNxARY_155",
+      "text": "Rescue Boat 126 stays around The Mississippi until around 00:00 UTC on September 10th, 2025.",
+      "literals": [
+        "until around 00:00 UTC on September 10th, 2025"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_156",
+      "text": "LBHP Boat 1 stays around The Mississippi until around 9:31 UTC on September 10th, 2025.",
+      "literals": [
+        "until around 9:31 UTC on September 10th, 2025"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_204",
+      "text": "Smoke visible as rocket lands.",
+      "literals": [
+        "as rocket lands"
+      ],
+      "verdict": "binding_gap",
+      "reason": "Rocket landing is a time string; no landing event/rocket participant is exposed."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_331",
+      "text": "The man explains how to fight with the robots.",
+      "literals": [
+        "how to fight with the robots"
+      ],
+      "verdict": "needs_review",
+      "reason": "Fighting is explicit inside the explanation, but a full how-clause string is also retained and its implicit actor remains unspecified."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_398",
+      "text": "Music plays while robot runs.",
+      "literals": [
+        "while robot runs"
+      ],
+      "verdict": "binding_gap",
+      "reason": "Robot runs is a time string; the running event and participant are not exposed."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_501",
+      "text": "\"Movement emerged after the Nov 1st assassination of the Uruapan mayor.\"",
+      "literals": [
+        "after the Nov 1st assassination of the Uruapan mayor"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_748",
+      "text": "A car loudly honks at a man crossing the street while pushing a baby stroller.",
+      "literals": [
+        "while pushing a baby stroller"
+      ],
+      "verdict": "binding_gap",
+      "reason": "Pushing is explicit, but the honk target at the man is absent and the while phrase is duplicated inside crossing."
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_793",
+      "text": "The tram driver did not remember how to change the switch using the board computer.",
+      "literals": [
+        "how to change the switch using the board computer"
+      ],
+      "verdict": "needs_review",
+      "reason": "Changing and using are explicit under remember, but the full instruction string is duplicated and actor links are unspecified."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1166",
+      "text": "Firefly calibrated the propulsion system before each maneuver.",
+      "literals": [
+        "before each maneuver"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1243",
+      "text": "The mission was expected to last about four more days until sunset and loss of power.",
+      "literals": [
+        "until sunset and loss of power"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1379",
+      "text": "Blue Ghost separated after the rocket's second stage.",
+      "literals": [
+        "after the rocket's second stage"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1386",
+      "text": "Firefly employees are clapping after the launch.",
+      "literals": [
+        "after the launch"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1431",
+      "text": "Blue Ghost's powered descent started before 10,000m from the moon's surface.",
+      "literals": [
+        "before 10,000m from"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1432",
+      "text": "Blue Ghost's D'Souza Guidance started before 10,000m from the moon's surface.",
+      "literals": [
+        "before 10,000m from the moon's surface"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1444",
+      "text": "The main engine was turned on after the other engines during powered descent.",
+      "literals": [
+        "after the other engines"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1457",
+      "text": "Three of the four contact sensors are tripped before the last one.",
+      "literals": [
+        "before the last one"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1510",
+      "text": "It shows how the steering currents were very weak.",
+      "literals": [
+        "how the steering currents were very weak"
+      ],
+      "verdict": "binding_gap",
+      "reason": "Weak currents are asserted as a separate main event instead of content of shows."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1790",
+      "text": "Stunning drone footage shows massive anti-corruption protests in Kathmandu as Gen Z rallies against social media bans and alleged govt misuse of power.",
+      "literals": [
+        "as Gen Z rallies against social media bans and alleged govt misuse of power"
+      ],
+      "verdict": "binding_gap",
+      "reason": "The Gen Z rally and its stated targets remain in a time string."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2074",
+      "text": "After Shi Yongxin's arrest, the atmosphere at the Shaolin Temple has improved.",
+      "literals": [
+        "After Shi Yongxin's arrest"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2195",
+      "text": "TD09 could strengthen into Typhoon Wipha as early as the following morning.",
+      "literals": [
+        "as early as the following morning"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2206",
+      "text": "The reporter describes the European Model as more stable and accurate recently.",
+      "literals": [
+        "as more stable and accurate recently"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2341",
+      "text": "After 1:00 PM, Typhoon Wipha began to move away from Hong Kong.",
+      "literals": [
+        "After 1:00 PM"
+      ],
+      "verdict": "not_clause_failure",
+      "reason": "This is an ordinary temporal/nominal reference or adjectival complement. The search hit alone does not establish a hidden clause."
+    }
+  ]
+}
