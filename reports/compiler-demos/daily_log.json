@@ -7,8 +7,23 @@
       "date": "2026-11-12",
       "items": [
         {
-          "text": "Completed all449 previous rejects:30 direct passes bypassed generation;419 frozen Qwen requests produced1437 clauses.207 cases fail component compilation,142 alignment,14 composition and2 model refusals.",
+          "text": "Tested shared temporal/quantity normalization, phrase relations and source alignments on36 authored constructions:10/36→34/36target checks. The same1437cachedclauses improve1140→1147passes; no newmodelrequests.",
+          "href": "#semantic-components",
+          "label": "Construction probes and examples"
+        },
+        {
+          "text": "Replayed449priorrejects and2375originals. Three date/time recoveries are balanced by three old passes withdrawn for opaque temporal content. Revised accepted pool stays1953/2375=82.23%,422remaining; compiler-author judgments, not accuracy.",
           "href": "#remaining-failures",
+          "label": "Current accounting and limits"
+        },
+        {
+          "text": "Terrainexample retains the full date and relative-to relation, but still refuses unresolved Duringthis time/event links.385tests pass; historical2375defaultoutputs unchanged. Initial checker errors and revisions are preserved.",
+          "href": "?component=TjHepwuhkYFA_1016__c3#component-example",
+          "label": "Remaining terrain failure"
+        },
+        {
+          "text": "Completed all449 previous rejects:30 direct passes bypassed generation;419 frozen Qwen requests produced1437 clauses.207 cases fail component compilation,142 alignment,14 composition and2 model refusals.",
+          "href": "#full-rewrite-before-components",
           "label": "Complete cohort and bottlenecks"
         },
         {

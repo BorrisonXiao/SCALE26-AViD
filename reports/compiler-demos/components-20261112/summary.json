@@ -1,0 +1,205 @@
+{
+  "probes": {
+    "previous": {
+      "total": 36,
+      "compiled": 32,
+      "target_checks": 10
+    },
+    "values": {
+      "total": 36,
+      "compiled": 34,
+      "target_checks": 24
+    },
+    "relations": {
+      "total": 36,
+      "compiled": 34,
+      "target_checks": 34
+    },
+    "checked": {
+      "total": 36,
+      "compiled": 34,
+      "target_checks": 34
+    }
+  },
+  "cohort": {
+    "previous": {
+      "total": 449,
+      "programs": 84,
+      "direct_passes": 30,
+      "stages": {
+        "direct_pass": 30,
+        "component_compilation": 207,
+        "alignment": 142,
+        "compiled_composed": 54,
+        "composition": 14,
+        "model_refuse": 2
+      }
+    },
+    "values": {
+      "total": 449,
+      "programs": 87,
+      "direct_passes": 33,
+      "stages": {
+        "direct_pass": 33,
+        "component_compilation": 203,
+        "alignment": 144,
+        "compiled_composed": 54,
+        "composition": 13,
+        "model_refuse": 2
+      }
+    },
+    "relations": {
+      "total": 449,
+      "programs": 87,
+      "direct_passes": 33,
+      "stages": {
+        "direct_pass": 33,
+        "alignment": 145,
+        "component_compilation": 202,
+        "compiled_composed": 54,
+        "composition": 13,
+        "model_refuse": 2
+      }
+    },
+    "checked": {
+      "total": 449,
+      "programs": 87,
+      "direct_passes": 33,
+      "stages": {
+        "direct_pass": 33,
+        "component_compilation": 203,
+        "alignment": 144,
+        "compiled_composed": 54,
+        "composition": 13,
+        "model_refuse": 2
+      }
+    }
+  },
+  "components": {
+    "previous": {
+      "total": 1437,
+      "passing": 1140,
+      "coverage_failures": 135,
+      "codes": {
+        "coverage_omission": 135,
+        "duplicate_role": 21,
+        "unresolved_clause": 84,
+        "negative_quantifier": 1,
+        "sentence_parse": 5,
+        "modal_scope": 24,
+        "polarity_omission": 3,
+        "threshold_negation": 1,
+        "missing_predicate": 13,
+        "threshold_scope": 1,
+        "unresolved_controller": 2,
+        "nominal_disjunction": 2,
+        "opaque_clause": 3,
+        "mention_alignment": 1,
+        "quantity_type": 1
+      }
+    },
+    "values": {
+      "total": 1437,
+      "passing": 1148,
+      "coverage_failures": 128,
+      "codes": {
+        "coverage_omission": 128,
+        "duplicate_role": 21,
+        "unresolved_clause": 84,
+        "negative_quantifier": 1,
+        "sentence_parse": 5,
+        "modal_scope": 24,
+        "polarity_omission": 3,
+        "threshold_negation": 1,
+        "missing_predicate": 13,
+        "threshold_scope": 1,
+        "unresolved_controller": 2,
+        "nominal_disjunction": 2,
+        "opaque_clause": 3,
+        "mention_alignment": 1
+      }
+    },
+    "relations": {
+      "total": 1437,
+      "passing": 1150,
+      "coverage_failures": 126,
+      "codes": {
+        "duplicate_role": 21,
+        "coverage_omission": 126,
+        "unresolved_clause": 84,
+        "negative_quantifier": 1,
+        "sentence_parse": 5,
+        "modal_scope": 24,
+        "polarity_omission": 3,
+        "threshold_negation": 1,
+        "missing_predicate": 13,
+        "threshold_scope": 1,
+        "unresolved_controller": 2,
+        "nominal_disjunction": 2,
+        "opaque_clause": 3,
+        "mention_alignment": 1
+      }
+    },
+    "checked": {
+      "total": 1437,
+      "passing": 1147,
+      "coverage_failures": 126,
+      "codes": {
+        "unresolved_time_reference": 2,
+        "duplicate_role": 21,
+        "coverage_omission": 126,
+        "unresolved_clause": 84,
+        "negative_quantifier": 1,
+        "sentence_parse": 5,
+        "modal_scope": 24,
+        "polarity_omission": 3,
+        "threshold_negation": 1,
+        "missing_predicate": 13,
+        "unlinked_temporal_value": 1,
+        "threshold_scope": 1,
+        "unresolved_controller": 2,
+        "nominal_disjunction": 2,
+        "opaque_clause": 3,
+        "mention_alignment": 1
+      }
+    }
+  },
+  "original_direct": {
+    "total": 2375,
+    "before": 1953,
+    "after": 1953,
+    "new_passes": [
+      "T8u81WMIyj18_755",
+      "TFgw4IaR9R8s_1521",
+      "Txf2EdqOg1SQ_2324"
+    ],
+    "new_refusals": [
+      "TgR_u37mCoQ4_1831",
+      "TgR_u37mCoQ4_1908",
+      "TgR_u37mCoQ4_1924"
+    ],
+    "changed_programs": 123
+  },
+  "fidelity": {
+    "previous_approved": 27,
+    "approved": 30,
+    "new_approved": 3,
+    "newly_inspected_programs": 9,
+    "reused_program_reviews": 78,
+    "withdrawn_old_passes": 3
+  },
+  "corpus": {
+    "total": 2375,
+    "previous_accepted": 1953,
+    "new_accepted": 1953,
+    "rate": 0.8223157894736842,
+    "remaining": 422
+  },
+  "new_model_requests": 0,
+  "limits": [
+    "Construction probes and nine changed-program reviews are compiler-author diagnostics, not independent held-out accuracy.",
+    "Three new date recoveries are balanced by three newly reviewed exclusions; no net accepted-count gain.",
+    "Original direct counts and reviewed combined-corpus counts have different membership despite both being1953.",
+    "Temporal values may be retained raw when normalization is unavailable. Bare time codes retain an unspecified scale; no video offsets/time zones are guessed."
+  ]
+}

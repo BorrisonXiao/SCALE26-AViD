@@ -1,0 +1,3165 @@
+{
+  "provenance": "Compiler-author development review. Nine changed/new programs inspected;78 unchanged programs reuse their exact prior program/form judgments. Three newly flagged old passes inspected and withdrawn.",
+  "cases": [
+    {
+      "claim_id": "TbJqMFkNxARY_167",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Injury and be-event witnesses are jointly negated within the spill time condition; no positive injury existence is introduced.",
+      "artifact_sha256": "f59c3ff055aec4fcce2eba6f00490781883724ec5e64a8d689b4795a6b1bc991"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1016",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A deictic time expression needs an explicit interval reference; a time noun alone is insufficient.",
+      "artifact_sha256": "a3e957751e0649d82575c60f15b40ff2f64ab9989acb6c8a6145860735a715bc"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2168",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/Rain",
+      "artifact_sha256": "f5e1e875104fda5ea1d4dc4aeb3b5da40a0e94ecfaa5165597e306d973b34c12"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_898",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "d4c418d925dad57634b55e473198f085fc0d8d9945ee65a953731202892de739"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1753",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c4: SRL repeats ARG2 on tariff",
+      "artifact_sha256": "e56baee1389814912f7dcb00d780906e2cb0a4df3cd444feb758d04e38d61497"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_11",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: online",
+      "artifact_sha256": "3d05eef8def0f817094d74255e02f9f023aabae40ab53106f0c79b92291c0a26"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_12",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: missing",
+      "artifact_sha256": "9e132170bf9fef86634abb99a78d1fc1192cd1c511056d53513cabc4e2008dfd"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_48",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: further, inland",
+      "artifact_sha256": "ee50ebf3e21f882aaebc153276f6c227117789709e429f1fa05c1723e686c979"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_54",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: back",
+      "artifact_sha256": "caf8ec2f73d1e909e492bdc95bca0cb8a9061799bd13914d3fbed7ebf516dfe3"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_61",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: stuck in their homes",
+      "artifact_sha256": "00e9cf358e78c5d955bbb9739bdadf19b74e17bad200273469a97d11c26c1fb6"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_63",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: nearly completely submerged in water",
+      "artifact_sha256": "79af4b672e2d03e51947e485b7cf071a90c3ded962280aca8e15963c22967cb3"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_68",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/reliance",
+      "artifact_sha256": "1b483d3a8e55d872acb10a0c3e0d539508feb59ae4c67993698fbbaf21b64faa"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_75",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: submerged",
+      "artifact_sha256": "6f8ebb7bf0292c48c7862c93023243676f6be4ba6ceca74e996bf43e46e220a7"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_77",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The same homes are damaged and flooded during the storm; both conditions and the shared storm-time phrase are retained.",
+      "artifact_sha256": "a55ae9474972826478fe9ea745a92dcdab146d28156e9be6e0472339651c617d"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_79",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "A shared property is not anchored in the original text.",
+      "artifact_sha256": "763aa5df5afadfa845cde5d3d71bb4f8fd79327ad8c6485e85adf4fc1c11ee25"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_87",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/evacuation",
+      "artifact_sha256": "901bb63f10fc94d03f5b8b73a1f6ad39242662dd978b6d770545d71c0a8cf8e3"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_106",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: Small",
+      "artifact_sha256": "854c4d00dbfa96806a719d0853812dcc722c70808f6b0caa2486a0f0e373f94e"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_127",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: other",
+      "artifact_sha256": "5a17e2b93b41b7a0178000c24d107a3a466613c549d7161fe456a6e63123e55a"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_131",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Possible windy-condition causation is split from an unqualified role/falling assertion; uncertainty and the causal binding are weakened.",
+      "artifact_sha256": "5e31baf7cc29c90f04f11f84827b957a4035f51854bb5f6acd9878d56b162635"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_132",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Both dock/along and ship/towards constrain the same driving event and the same two-truck group.",
+      "artifact_sha256": "043697f5ade9ef8c52b704ff0b1d820a5b094c6f720fe0e5d5daf4ff0469bba0"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_160",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Absence requires declared entity IDs.",
+      "artifact_sha256": "9cf35bff357c5d3871631b2f3bfa975402e6cd29fb34f957e546e0a93b7f524e"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_161",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.",
+      "artifact_sha256": "06fbac8756767bad75419506d911fc073a7b08dee574cbb47428f4acf794e637"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_164",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: Mississippi",
+      "artifact_sha256": "ba63c301cac64119915c3fddd3d02be71cae91ead6aef09503febae07d15a3b1"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_172",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: to keep the port open",
+      "artifact_sha256": "e3e1f7cbffb907058eb2742f4ab25653ea30e74b249f8f1753e594777d977541"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_181",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Supply exactly one sentence.",
+      "artifact_sha256": "fcdeeddbea0cdd10798e8121fe04d6013f9c58b58d92289604db0321cf2c7038"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_190",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Event identity aligned, but repeated-clause tense needs an original-token time attachment.",
+      "artifact_sha256": "127f9eb2c9a8e3cf682300ec738b3c79151b2caa6ca290a43102d1699e7d3dc0"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_192",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/beginning",
+      "artifact_sha256": "a98ffbaff61a780c5d6d42803c75a1eb261e17d208d3a18a709cb7972d54711d"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_200",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: excited",
+      "artifact_sha256": "8576a3af37264743dee0e52cfef9146b882c1b5c7863bc8cc8b19bf40e123b14"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/condition",
+      "artifact_sha256": "9c525f5092ae7eb921a75ad01fae84be9ed8509fcb4c858ccf4c278e0b3dd92c"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_234",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: in",
+      "artifact_sha256": "0d532755cbf9be1a84893a2b90545a0251a46ec2ced14596a7a99974bd162245"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_239",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: covered in dust",
+      "artifact_sha256": "a807b058658333b9eba614df6452ecfbf408839d10dfa902554510b114068e7d"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_271",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: on",
+      "artifact_sha256": "7d52fa38bc8bf07966fbd7955903ea4426f61334757768bc0a636744c992e64e"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_277",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "A shared property is not anchored in the original text.",
+      "artifact_sha256": "ea743fe516a8a6dbb70631d0b6249f4869089633ef5ba2107c2ec191ec7e653a"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_284",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: like driving into a haboob",
+      "artifact_sha256": "cf10da703fa982b19167b483304e474056a7f2ba27b67a0026609456bb4ef4c8"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_299",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The airport adjunct is restored, but away is treated as a location instead of a well-defined result/particle.",
+      "artifact_sha256": "799bea3d0cc137c0020f8e06a25ec592545e2db248ed7810aa6fdc875a304a14"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_308",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Likely is a text property of existing outages, while their residential location becomes an actual-world assertion; modal scope is not preserved.",
+      "artifact_sha256": "b8d442c219b9abf597f81cfe1992b58559142533a934adc697f26327718dbaa6"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_314",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/loss",
+      "artifact_sha256": "3b6701725c33b50f2d347f5da140fab415ae337498ff0ec45c740484beafbd5b"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_323",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/incident",
+      "artifact_sha256": "a2a228f89b025d9b8269bb0589b1e3901f346c02948586c74decae95a461e735"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_333",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Robot1 is paces is ungrammatical and paces becomes an object; moving up adds an interpretation of the malformed original rather than preserving pacing.",
+      "artifact_sha256": "42ee8c9cb39e128dc8b66c34c208cf778f8c2d718245f6beb3ff5afa376a6da6"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_337",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: back",
+      "artifact_sha256": "efb4ee9a1535db4a0156d27547f4997644ad76280ac79422bc8921f86c553a37"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_342",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: to start sparring",
+      "artifact_sha256": "49b5bccd6a52d44864baf080c5364e4fdf8d6c8785f47cdf8ea8514e50a2e356"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_343",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Exclaiming and saying the quote are separate events. The quote need not be what the man exclaimed; the speech-event binding is lost.",
+      "artifact_sha256": "3c2fd87965813f04409314b10399a6cbbf3efe60e24767049615896edb1b6bfc"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_346",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: man's",
+      "artifact_sha256": "f71b9ec48e951003f5c7f67fb1a8efe64a7aff60a6780b3286e568b8b464e4b3"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_355",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: pushed",
+      "artifact_sha256": "5ca7b216092d75f1c5975788f53c1bee3fe6434080876dd1a61cad17d81639c6"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_357",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The watch/ability content retains a generic what entity rather than a defined indirect-question/event relationship; reference/content interpretation is incomplete.",
+      "artifact_sha256": "f6281e90a46f2918268020bee289b0f3965f7747d3d04aabbdebe717b87b8e7f"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_360",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: upright",
+      "artifact_sha256": "96b7db6069f2f25ac2de9ecf334721b29be4302e88d5628e8e24d7e09bea75b6"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_373",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/event",
+      "artifact_sha256": "fbf4f64fe8a47920554921ff86bca26a5d42568a74f99e2752841f25d366054f"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: three",
+      "artifact_sha256": "de01da72d6e0fcc50698764acea06704e6f3911dbb0472844578f56b05028e9c"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/place",
+      "artifact_sha256": "e8475bdf075aa7db75bad45bab8a96545cf830168ba3992a9ef4280f6007b85d"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_380",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/publication",
+      "artifact_sha256": "596de50408d4b23ea0c25e0604445a998e7f4883289b3b0a596aacc9717ea216"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_395",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Trips becomes a nominal Robot trips entity instead of a tripping event. Running/falling remain but the tripping action is not compiled.",
+      "artifact_sha256": "5b71842c27fc99c26dfe531add6c5d8fe80e23013c376ffc95c0527bd6ae9894"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_407",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/legs",
+      "artifact_sha256": "339414f94034d72479faa7988da2e6e00e70f655fbc638bd941519a7cdda343d"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_417",
+      "faithful": true,
+      "review_type": "newly_inspected_program",
+      "reason": "Four remains the robot count;100m remains the dash measurement. Only canonical measurement serialization changes.",
+      "artifact_sha256": "7b61b50db2de9320dc756bf4cce825f2b8ea3205c0f5677ffecd97e0649e341f"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_421",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/event",
+      "artifact_sha256": "9208c20f338b5aaff0b51df2fbec2988d03a430be776e995fce748b34b3d6efd"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_423",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Event identity aligned, but repeated-clause tense needs an original-token time attachment.",
+      "artifact_sha256": "d3af189ea72f3cc888d475a8de296a0f34558d7f14e6f07f2b5ec66447fb7560"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_425",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: caught in the ropes",
+      "artifact_sha256": "2bf5003bafaadb72abf80b58395e8b38eccb43aaabc89f6a5906c96259cce079"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_432",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Robot2 attempts the knee action on Robot1 inside purpose scope and misses Robot1 outside it. Both numeric identities are preserved; a successful knee is not asserted.",
+      "artifact_sha256": "9b066b1d194023db4197675fa9ee8f72661246344e1576649c683cd2ea060eec"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/Robot 2",
+      "artifact_sha256": "46d84d7dc7f42c1e2e931109acfdd23b675369de8e7f6f6e653fb989c5c9b11e"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_444",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Saved model proposed no sentences.",
+      "artifact_sha256": "3b08370dba1be39ea3ac8dc44c74caf9ec1e456a74e8ca2775b4cfe8e7125c10"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_446",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/He",
+      "artifact_sha256": "97ae6b7812b97677ce6a395a4c02a6d44c1ed4ab3296146e655607ebb6d9848d"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_447",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Saved model proposed no sentences.",
+      "artifact_sha256": "2b35ee3d62eeb6e9ec0f9daa2b9df06bfebadf6fe91c40419f413797723cec56"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_453",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The written quote becomes a government entity; exact OCR content/source scope is not preserved.",
+      "artifact_sha256": "4ae2bfe5d80595d7a159353f4bd73236dfcdb5f217feaa9a9c3b27c572d8e1bc"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_454",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Using metal rails is attached under the attempted-breaking purpose/relative context instead of the actual ongoing method of attempting; actual-versus-goal binding is not retained.",
+      "artifact_sha256": "ae2276dfefdbbff90a6122874627eeb5968cfd10fce59aeb5ef2454deccf1715"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_467",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: I'm",
+      "artifact_sha256": "7fbefe327b2866a660e1153951b926774fab10a278d088f21f0ab3ecfba745dd"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_468",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: attacked by the police",
+      "artifact_sha256": "69b97309f53181f15a20d0ed7bfa1705cb939d22fef1dc5d100069a8a2cc1b23"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_469",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/protest",
+      "artifact_sha256": "6fdc8cf34fa5fa8072f19caeba868798a3f883213c957ce713ea32f4349d537e"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_470",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Event identity aligned, but repeated-clause tense needs an original-token time attachment.",
+      "artifact_sha256": "0b9e2acb9d736e1c488cb6d598e52a6245fa07f71346bd520c4f1fc2766f52f8"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_478",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/sign",
+      "artifact_sha256": "50d8a72c0da57a75b1a876cc2fe278ad6d2307ae34fecf63047a32df0457fe4b"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_489",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/statement",
+      "artifact_sha256": "7b77406e9f4024d690153931362d03c2774d7ec81c06b9c2e37e9c9aaa4160db"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_495",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: Mexico, Nov, 15",
+      "artifact_sha256": "8cc7448e64d4168e9fdf78db32993807adf2b1817ffb687cec216da79f6025f9"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_496",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/quote",
+      "artifact_sha256": "bbb6e603863f9b43d568b118cdf2e5622f7d49e1d2cff9c7081e0cfedcb47986"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_497",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/statement",
+      "artifact_sha256": "b0fdda53d16945ab2fe9d2032037573fde15b2661847bd62d02f23c132e412a6"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c4: Unresolved modal interpretation: would",
+      "artifact_sha256": "5f8dacafdf3d77acf457631619de5750d9ffcc17a75001c41916b15b89320af0"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_517",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Event identity aligned, but repeated-clause tense needs an original-token time attachment.",
+      "artifact_sha256": "e5dd92452abddcadb000756329178e9a3dd3f27d68d5921b0659dcd356c5a5eb"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_519",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: all they wanted",
+      "artifact_sha256": "3c39c56861b3110d53246324c7f881cd0f10d2f9889e5ef60008a17b9bd84871"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_530",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: up",
+      "artifact_sha256": "78523f4606f926d419b88cbecb0cc49600c844df3538994cc7039a3db3d6f07d"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_532",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The model retains Or as a discourse word, but composition uses AND. Shots and explosions are both required instead of alternatives.",
+      "artifact_sha256": "4a31ad50d2eeff97d0a13410670b1efcdcad2955dda95b4e3e86d3d5c1f9e953"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_535",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Unrepresented source content: Narco, state",
+      "artifact_sha256": "e9339586b918fbbb4b3331e16925e5999fc9349be7415f52dd4973e3039ca584"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_536",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/message",
+      "artifact_sha256": "40d206775469388dee103e3d542cf18471d29f1337d4b2bb772bea6f00499957"
+    },
+    {
+      "claim_id": "TLO3smKI67PM_556",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/lands",
+      "artifact_sha256": "5b536ec823e0b646a593f557b214ce8e70549afbfa3d098f5954901888f0d084"
+    },
+    {
+      "claim_id": "TLO3smKI67PM_580",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: almost, fan's",
+      "artifact_sha256": "0a9d186dcefe1161bb94cdf48a1c9a2f2804fc729f920fd9843be2050a1f6744"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_606",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "One visible video overlay owns the exact preserved quotation, verified on the OCR route. No event inside the quotation is asserted.",
+      "artifact_sha256": "e4d27733db29004e5367e1963fb858430ee66d47ec6ad1ac215af0c89931e2b2"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_609",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: dressed in white robes",
+      "artifact_sha256": "13340bd0d50c21917902707a1c193ab6a944ad0b7e58d2887712f7ec796ff2ba"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_618",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The fragment is ambiguous about floor-arranged cots. The rewrite chooses men arranged in cots without adequate original evidence.",
+      "artifact_sha256": "19c61801e5bc628a020095c5d9858b24e22bb7206e9d889ec8fb9fc1941b4f43"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_628",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c4: Unrepresented source content: only",
+      "artifact_sha256": "7e1c2bca1e37dbaf733a7f65da09288a842a0c9ae8d2eb39fffc9273da3b3ea4"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_631",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "A shared property is not anchored in the original text.",
+      "artifact_sha256": "d489e1e4ef77b61d06a41bf6e2e413fee39e85e0f3072f6e7aee521b32718f79"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_638",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "No issue-with-Hajj witness exists; the original broad absence is retained, subject to complete candidate evidence.",
+      "artifact_sha256": "c5c488f3e779f3bb6bce1e3c8e8b0a36356494ebf940e80a82046f7cb1622a0a"
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_660",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "While is lost. Sailing and fireworks can satisfy the composed conjunction at different times.",
+      "artifact_sha256": "123bdb744797e5603d99f4d7c73be95f682e3df29b5fcbe82b35356083b7a5cd"
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_662",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The sound is linked to a fireworks object while explosion is a separate world event; the heard sound need not come from that explosion.",
+      "artifact_sha256": "6d925c6d358a73d184a93c1e4512c76b1d1199bf211fb1c659acdf1b4fa3bbdf"
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_682",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The walking direction is restored, but a spurious track-toward-building relation remains inside the recreation-area description.",
+      "artifact_sha256": "a6ccb895f62a00de26ff4f01613dc0c962fe3f9abd623846431505f48e078477"
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_728",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Every floor is retained only as a property on one floor entity, without a universal floor condition.",
+      "artifact_sha256": "87dff9cc91abc99895b81e884184b475a245b85b952e8adf8c4e263e0a4b3d6e"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_732",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: other",
+      "artifact_sha256": "3aa01bb333ada0e0a4054b153f37c65a28eb3455a8c880053c2eedfd19e007af"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_733",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: currently",
+      "artifact_sha256": "e6d4725ad42b472bdef1e50cbcfae0895ad7946483575e3689e34434475d546e"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_741",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Both sides remains a lexical quantifier property and the gathered/crowd description has incomplete group semantics; the result is partial.",
+      "artifact_sha256": "3fb8b1048f538628c4b2a941ab38ed5eb370f3f4ac02da084e1116ee7d9ee96b"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_745",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: order",
+      "artifact_sha256": "b689bbd2537e655ceaf07c7eb1d2bc2f620ae2abf7d8785ea31ec4799686a972"
+    },
+    {
+      "claim_id": "T8u81WMIyj18_755",
+      "faithful": true,
+      "review_type": "newly_inspected_program",
+      "reason": "The same parking event retains its car, explicit01:53 clock time and August19,2025 date. The original SRL ARG2 label is retained for the typed clock value; no date or time zone is invented.",
+      "artifact_sha256": "4f78bd1dd9c0c92e4c634f4718a82d62193d1001269eaa277ffe0b2d55bd9dc5"
+    },
+    {
+      "claim_id": "T8u81WMIyj18_758",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "A shared property is not anchored in the original text.",
+      "artifact_sha256": "41b7668b383876c1828b6d961199bce36f0f6efc7f3c35bdfcbb04693742774d"
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_760",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The same camera broadcasts the source livestream and is owned by IPC; broadcaster and owner are not swapped.",
+      "artifact_sha256": "e142e55ecabdb4940001d9fe8658175d048e173011211c40add62757ef5ace3e"
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_770",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: SRL repeats obl on parks",
+      "artifact_sha256": "8873f0a8daf8f736c02561f7e1c19f51c3d3b9863116e39eb35578e437ef1c3d"
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_774",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: it difficult to see",
+      "artifact_sha256": "c32c5cea631d748f3cd645377e519c5d20e271d0c21ccff80133f74ea2aae0c6"
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_779",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: first",
+      "artifact_sha256": "d64a9a1dce74bfdb7e66318bbb6b105b4916b69e099e138a799ff0b39747a40b"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_791",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: to go right",
+      "artifact_sha256": "d6c698612b143b3e818c8cae6f80c9d024c8c321fb606e450f4463e7fa83b8de"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_796",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/condition",
+      "artifact_sha256": "39229b933b270e7ec43de827e6a58c46af67d192ec2cdb1468be06624b3feaa3"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_800",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: down",
+      "artifact_sha256": "59ed38d6a7e94fb74c6e1765a3b697176c7bb70beff9e83420e2f4666d3101fb"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_801",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Repeated original event has conflicting ARG1 arguments.",
+      "artifact_sha256": "6d2861a1ed3990b2762cf7823d7f8fcd8019fd510033c1a00ec4641872334aa1"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_806",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A source negation is absent from the logical operators. Preserve the intended negated clause.",
+      "artifact_sha256": "b96e1dd4a8f1641b1dced40de009e4e8a0378c8f11291554c477b52e81df6a7f"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_807",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Windsor West as a riding description and as a separate entity are not unified; depicted-label and world-classification contexts are also mixed.",
+      "artifact_sha256": "5d184dc836083e644101728f57fe366dd5567b38c420df471582ac18773a2fb1"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_808",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/39.1% of the vote",
+      "artifact_sha256": "93f6f6c3a314b7b51b776728aa8f6b0f25affaeb45f68ee8005faf5fb349c979"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_809",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/election",
+      "artifact_sha256": "df993ad9b0d67cf290acbafd6b06d74a5eb8c323168de5fc554afbb8575f006e"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_812",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c2/balance of power in the minority parliament",
+      "artifact_sha256": "4cb6f1dc452624bac85d82d42e7a58af6d10218f15dfda43cfe532f1bb15d33c"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_813",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/claim",
+      "artifact_sha256": "6d90c7c7982ca2e093e97b4d5e003509abda4b7f8dab8d1b840cf59baa90ebe5"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_814",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The quoted geographic labels are converted into ordinary inclusion assertions; exact label/source interpretation is not established.",
+      "artifact_sha256": "99a62e7220f1be6d187b46d82ff5f610fa8f53b2aabeb80c707526d9afe9c13e"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_820",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Negated sufficiency needs a separate quantified interpretation.",
+      "artifact_sha256": "45726dd1fc051ada97e6fce7c397fe3ad84af8bcc1bd3e18a0be22a3d8db68d1"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_821",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Two compiled entities in one clause map to one original mention.",
+      "artifact_sha256": "5ea467adf06117b162106600ffe60260c514eaeb6dce10368e9ec9ee32fcd599"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_822",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: Liberal, red",
+      "artifact_sha256": "59e228926148b3c4d53a9a656b5d2263261f126c6457bffab8006eed0067bdb7"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_823",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A source negation is absent from the logical operators. Preserve the intended negated clause.",
+      "artifact_sha256": "75012c09cb088780efb2b4a04baea8b83a050e9fcbf002df51af969d6ae82df7"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_824",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The contribution to government formation is assigned to the Liberals instead of the winning-seats event; Quebec/night scope is not carried into the win.",
+      "artifact_sha256": "dbb9bb6f6f8ed9bd679f25a0f2f569d9c8ac2fd6dad16a404972164e089d8c69"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_827",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Content must reuse the focal parent entity; do not assert an unrelated event.",
+      "artifact_sha256": "30ca1ff143cae639abc1055840d3db0a26e888e18ae6df13afde40a5736190cd"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_829",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Unrepresented source content: White, Rock",
+      "artifact_sha256": "2dea3a035b69b648606d48b64ec451245fbe6dfcc3dc413f2570b70eaa5b4b8a"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_836",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "fd7bdaf025f23a7ec2cbc5d9e3ab4ba278fd43bed5e5f565ce69589909d387a6"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_838",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: SRL repeats ARG0 on made",
+      "artifact_sha256": "8a7f1ed97394c0fbb09d87aa7d796b6bff4204ba3fe27c139ade30ba2aafa8b5"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_846",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: to build domestic strength",
+      "artifact_sha256": "5164918fac010d33bc5e3c5da0bf6c9f431734551df3e56269f60643931043a9"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_847",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: plan, right",
+      "artifact_sha256": "7541427771746190f226ab3ec9e9a1cae176edf21a062c224b55f69c138401de"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_854",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/+5",
+      "artifact_sha256": "90b33dbf1b56fe06770419f2852040d6df5f94c5d49f7b81d0e463528304cc26"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_856",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/seats",
+      "artifact_sha256": "5fbfff6b8f45f5813150f74b885d645c20865cbc59331d1558987f39d2fba580"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_858",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: 172",
+      "artifact_sha256": "ed3e5a4a3ff133f187f300276c96c2a0a3bbade9acd8d63d889baab38afb1ffe"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_859",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Repeated leadership/appointment events are not identified across temporal contexts; only-about-a-week remains an opaque phrase and the rewrite adds redundant became statements.",
+      "artifact_sha256": "00859bf64eb6a3ac06002de917232fc91f8f34cf5af9188e499f6da71acee877"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_860",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "2605633e8b836c2e9cfce2f1d6ae1732766dc2be03fa4b6294bc1bb86245557a"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_867",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c5: Unrepresented source content: such",
+      "artifact_sha256": "077a4e137c6d81c65878be23e20a761a699d9209b4b3d7ca5e9c9f2d2e37d3a3"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_868",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Explicit source clause predicates have no linked SRL frame: vote",
+      "artifact_sha256": "147af9a361f04ca352784cab87e95e5b0ffb38af8889a6f8b80a0726f3f33d69"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_870",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "d2779ef7f795f57164d172816a870ad0c7a352270519af6d638162a9a93952cd"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_871",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c4/options",
+      "artifact_sha256": "7a54bd43cf5c18fd1d9ead27c9afcecb4aab7338549021dc7678c5816d5928cd"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_875",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Repeated original event has conflicting ARG2 arguments.",
+      "artifact_sha256": "98fc48a690ee4423c583d19fe776ce5644e98661b2760c90a77532d1f8d94025"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_878",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: well",
+      "artifact_sha256": "c1acfaeaff3fda3e3535ce5044a7eba9f91a98b44970caadad016ce9ba01989d"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_883",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/person",
+      "artifact_sha256": "dd1b6523ddcf4ba7d3be02d5db0a7b82b66fe989dd34b8c1896bdf3dbc417b48"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_889",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c1/people in a street",
+      "artifact_sha256": "2bf4a45e0ddfd6ec6ba6e784ecfe36310c70a6deeab86cb53eb87c50a1c8c3b9"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_892",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: slightly",
+      "artifact_sha256": "7227c43370e8252a1dbbf77a90ef003d109a599a5990fc4ac7a9c5ceab83958d"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_893",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/level",
+      "artifact_sha256": "64b385be1fffda62d2cf0ad77147741ecf801311e2badfc5389ec28c8d98baba"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_894",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c5: Unrepresented source content: 45",
+      "artifact_sha256": "39fd339141754d9a48c0498be43231bbf58c9150cfda60e12cee16a2f974a563"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_900",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: The bar graph displays seats",
+      "artifact_sha256": "a0b83f18f7067294e00dcc6c56278223378b99d44b682aa290c3649e43f96866"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_906",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Unresolved modal interpretation: would",
+      "artifact_sha256": "74fd7933fb6173034e5a40cb563f2b87dfb072ffa91bbdd72d68359e0b35973f"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_908",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "414ead23eabd6ab013572d137269e8bbd19a094951d3c00267f39fed6af11e96"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_909",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "749406decfb55300574eef2073b657e5a1ef0b5675b907cfe08c00b734715f87"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_910",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c5/ones",
+      "artifact_sha256": "708df2a9302d8a41d634e9287ac232c237c362d863de928bf3096b1b73894522"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_912",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The campaign main-story description retains the Liberal revival paired with Conservative decline. Both nominal descriptions are linked; reciprocal pairing is redundant.",
+      "artifact_sha256": "64a19e844327e83883f62ffee95b499d8cbb174621a0a42f9f10d8c6740a3eb5"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_914",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: Conservative, landslide",
+      "artifact_sha256": "bce0d841104225d70fe8a8b9215c367ddce708751ac8d3cebe2a1b0fd6945775"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_915",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: 52",
+      "artifact_sha256": "984cbbb8ae45aa6f7a6d8737805b74fffd716da8f6e647e0d80b7be994ceb89b"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_916",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c9: Unrepresented source content: 2020",
+      "artifact_sha256": "11fa4f8e9e6de400dc79e1fd84a6b52cb0be6f5ba261494f796a270505746588"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_918",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: near",
+      "artifact_sha256": "5386335033d74e9f52dc9de7ad9a8ace153a47feb4b63d612027af384b9048b1"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_920",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: SRL repeats ARG3 on rose",
+      "artifact_sha256": "bb7ce620891e3dd9e06d01aea7b2c397accc125310356019573a1f96c306f7f3"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_921",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "842c4e90493f975f9871384728c1e8fdf6ee9ea9794581d11c3415c300caa378"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_924",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: SRL repeats ARG4 on drop",
+      "artifact_sha256": "13a1d3b92c54297c82ab87a498a01a7e9058dfb7f2f77d929112458201245ec5"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_926",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c5: Unrepresented source content: well",
+      "artifact_sha256": "434a208efb62a03a2ffb3baebd2a33ec1d677883c0644c092c42d0c0569c2cae"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_927",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Under the nominal-label reading, Donald Trump is identified as the first major cause of reversal. The repeated identification clause adds no different cause or participant.",
+      "artifact_sha256": "001409c9f803fdde97ab1120908b5da956fea39ef7384144cf202c5b659fbc48"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_930",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/result",
+      "artifact_sha256": "eab84e4570a262b5efc568410b6884b33983610c7e98b54406a3c5f883f030ff"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_933",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "79003ccfe249c5f887b92cde434c927af833a1d45f04a9668d0b5c4d2a604653"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_934",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Each comparison target remains inside an opaque more-popular-than string rather than an explicit comparison participant; word retention alone is not the intended relation compilation.",
+      "artifact_sha256": "d5aad966a9ac2295f4c373a21c13643324370ab389c978385aa0679b3a0766e6"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_935",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c7: A clausal argument has no attached SRL frame: based on Quebec polling only",
+      "artifact_sha256": "fe97360247ac2910b2f2d89f337418880e459646508dc07b3c62f40b3f0e7602"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_941",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: more geographically concentrated",
+      "artifact_sha256": "e381f322221f2a400a4ac0d19c51fd0652bd94876a1e210a8713b04f91f89f0c"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_944",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: Example",
+      "artifact_sha256": "e48fefb12234549fd4afff762995e0904ea0e9f16363a9f4338fcb402381f23e"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_947",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: only",
+      "artifact_sha256": "83dabffcca0f5e9f16f494aa733e2b89a40cc5d16fc2a99bf5190fd516f9fee5"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_948",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/48.1% of seats",
+      "artifact_sha256": "5fa8ed3e85d563ee11b6365146a5704369430e544c29a68b185a960fceeeb458"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_949",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The shared urban-centers group is the Liberals' strongest region and includes Toronto,Montreal,Vancouver; the named members are linked to that group.",
+      "artifact_sha256": "030d3acfa4bc4a5f2708af47ac01cda231c25a128190e9270ff649e0a21be37d"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_950",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The province statements are not linked as members of the rural southwestern region group, and strongest is weakened to especially strong for those provinces.",
+      "artifact_sha256": "1f27ee5d591e605f1b25c2b8c9db64b37d77e9181a8ad5c6e208e011a114a4a7"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_951",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: Bloc, Québécois",
+      "artifact_sha256": "71594520be0a635b231fdcb9eb52439de5baba2277814504d3986252e8dcec79"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_954",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: roughly",
+      "artifact_sha256": "63e19447fd2630242b8bdef228046fc1a310519efde6861463d4f90693914ec8"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_955",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/decline",
+      "artifact_sha256": "73cc6ea8800edbf7145c2320106ceec2c45dea2f493735af8756be94219a4bc6"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_956",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Unrepresented source content: only",
+      "artifact_sha256": "4edbffea14466cc3f7adc63aa74c0b2df2a4584c92157155eea2aa1fa9aeef6a"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_957",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/party",
+      "artifact_sha256": "7c0396231b60901a6d7e49172260f59191bc7bd406312f09150733f56be6141c"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_959",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Explicit source clause predicates have no linked SRL frame: needed",
+      "artifact_sha256": "658cd2d131a895e13d9422af63d435b7f039c828a0cae3c8c0f03f0b7aecde76"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_960",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Explicit source clause predicates have no linked SRL frame: faced",
+      "artifact_sha256": "de2046fd01f8805660322030d53da1558a64f20e39d933463710cc1c5ca6031d"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_962",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: left of the Liberals",
+      "artifact_sha256": "c0dc345c36f1cafebe12575af1331e85f0644b82f3e72604824040ee0f6abffd"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_963",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Two compiled entities in one clause map to one original mention.",
+      "artifact_sha256": "c40bc6f69674dfc70aeec403240b0eb64c036a4bd1ce47624304a7851165ddba"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_964",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: that the Liberal comeback would not have happened without Trump",
+      "artifact_sha256": "df40ea018aab11de60f0c4d7a59289cdb520161dd2a4172f85fa9ed955329dc1"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_966",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Sponsor-message content becomes world-level offer/lesson assertions, with Brilliant even stored as a text-valued agent; source and participant typing are incomplete.",
+      "artifact_sha256": "87dd52549393b8ef0259755c41a2d101720ffe50ead174fadc699630f9eedfca"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_967",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c1/hands-on problem solving",
+      "artifact_sha256": "c69a1b536785cdaef5e4480eb17ce1dcd7522b21f516eed391e16ad4561e5317"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_972",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: National, results, so, far",
+      "artifact_sha256": "63f7c38bdaff2fa4e5f348b17ad89d6b98545d088f4daa16306d75a0560f96f7"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_973",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c6: Unrepresented source content: 0",
+      "artifact_sha256": "8f719cc6d1881bd69a3202f1718f5282ef5d30d2a4d99f882098e6b5b7da7b13"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_975",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/candidate Rhonda Kirkland",
+      "artifact_sha256": "ed8cf7cec8f1b02099b998e32a25d712c602ca4afde015ff43ea35e4470cb2df"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_976",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: Peterborough",
+      "artifact_sha256": "4a7a3fb5489243a0391cfa2845395030d9b4aea86626170556050f88a3d4f4a3"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_977",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/candidate",
+      "artifact_sha256": "bebbeb7dd3fd3cdbea12a1faeaa1988bd8554e8cb2eb006fc61b6fba38d0b24c"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_978",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The announcement and future arrival are separated. What is about to happen is no longer inside the decision desk's reported content.",
+      "artifact_sha256": "c819767ac130a4d8c59805880378b359f719a4c30a53d93a25f3b0d51f3d6a11"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_983",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "A shared property is not anchored in the original text.",
+      "artifact_sha256": "ecfdafaa780fff33bd0e443b3c5082b12485c6305370967aa19bdd9252ba2b7a"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_984",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c5: Embedded predicate has no explicit or licensed controller: known",
+      "artifact_sha256": "a09e4fd5441b1b3554f6aa5a27e71f684f7313aa50fe0f60d48b1d70ef05c969"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_987",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/mention",
+      "artifact_sha256": "c2697b72eb85d56162c5354bc8d3d1f348fdac7d15fa90bd63daccbca20849c8"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_991",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/It",
+      "artifact_sha256": "bd5a87353addbf5695ef653f730582f19baba836083c9139d2a6484ab882ed54"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_994",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c1/11 seats in Quebec",
+      "artifact_sha256": "5250d50b42b698b9841627bc080dd6dbdfcf51a526fe216792f50958cf0ec1c6"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_995",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c1/5 seats in Quebec",
+      "artifact_sha256": "feacadc6797601121ec5e199fe884c75728369aff59ccb560e38533b4b219d92"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_997",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: 7",
+      "artifact_sha256": "bbb1a2d83dbc6cd8423f0ae6b62c2d2c2f8166166e692e469d6d56a2c75ff98d"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_999",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/video",
+      "artifact_sha256": "f5ea8e408d39c40151d988f409251a3b6e735a9e99db91e2ebad11cb78cf2bdb"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1003",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Explicit source clause predicates have no linked SRL frame: created",
+      "artifact_sha256": "d2d242ff4013e0f9b7f9bad0e691a3cf00ddd8312e294b2d9a95e352c3faa35d"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1005",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: more",
+      "artifact_sha256": "beb197f9d7d25ec369382c68f0c18857e2aa4aeb6981629b05337a6b9b284c73"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1018",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "64bbdf516eb6a59b084178b51b4cded9274451b3e9306b45aea2e82571b57c30"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1021",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique simple source sentence for the original media description.",
+      "artifact_sha256": "f178548d5772e7bf90c8481f840340f64cb57ef6a14a7ab78e285da57255f026"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1022",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique simple source sentence for the original media description.",
+      "artifact_sha256": "d9c90eee8c9131a7561a01183caabbe4c581d174e6f2afa9ba068b2cc8de1e52"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1026",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: more",
+      "artifact_sha256": "e89307091576e5efda5eb8d88f7e42752e1be4145e3609a6eb6a2a9bed885b22"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1035",
+      "faithful": true,
+      "review_type": "newly_inspected_program",
+      "reason": "Magnitude7.7 remains a typed scalar owned by the earthquake; raw source text moves to alignment metadata.",
+      "artifact_sha256": "6c43dd5e9a0fd9b072973c58b908cd65f0b7719150894b14ba83c381e02d70a6"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1041",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: heavily populated",
+      "artifact_sha256": "ba695723d9eab8451d539e5b08e6e892472aaaa0ff3529c0eb064468dcb1dc07"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1047",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The epicenter-of-earthquake relationship remains inside an opaque close-to string rather than linked location/event participants.",
+      "artifact_sha256": "1a20099ff008f420ace376e93e6fdfee638124ceeba4117f7be3e99b86664180"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1051",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: increased stress on the rocks beneath",
+      "artifact_sha256": "8f2248120713f1dd7d35f71f896f3e1bc21704474acc53b64af76047730d6553"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1062",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: slightly",
+      "artifact_sha256": "9cb10c490532d47ff50ebddd0054a516d46379262114ac2ec4c4d4ab9182eddd"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1066",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: greater, damage",
+      "artifact_sha256": "09eae658b60fb4d62267b3ef4a63b6eea0b0abf2583b1a2347e7406ea2739765"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1069",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/vulnerability",
+      "artifact_sha256": "80fcd7b4f3fc635c1f7780d7d14ddc562ff28af4dbc62d0c746a05f3831c99fb"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1070",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/event",
+      "artifact_sha256": "cb27afb4701773dc004eb6e23d2794a664453504ca5380b0fb613b5e6d0ee73f"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1136",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Nominal OR has no explicit alternative group.",
+      "artifact_sha256": "cedc2de01bfff849694d1a44df62dd5976a6af7b0f0567af427fd0096ab0c60e"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1137",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Nominal OR has no explicit alternative group.",
+      "artifact_sha256": "81e8ad22152aae0c65534d8d47966e42cf2c09fb8b904c77ac86ff7b054af820"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c2/half elliptical orbit around Earth",
+      "artifact_sha256": "fff28bedb078a881c3532d8900da1f0cacaef6447c72c8383355c228ce2cce40"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1163",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "A quoted/scare-quoted scenic-route description is changed into literal scenic comparison. Its source/ironic reading remains unresolved.",
+      "artifact_sha256": "a31c5bd5fe397ba7e7fdc267bf81b9d0228c3c822a75a86caacba1e2457f116f"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1179",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/points",
+      "artifact_sha256": "024bb2cacab4c2676dfd116f97f4e2093237b31607d7bd877fb9f02f97853e57"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1181",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Supply exactly one sentence.",
+      "artifact_sha256": "c640b2297e0c3fee222d2e9ed96988014eb74851cbf6f46280373333ceb3d12f"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1184",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "A shared property is not anchored in the original text.",
+      "artifact_sha256": "f993e04d885029e4b6370c6672ca8c51a7dd08fafcbdb5bc58d0b89c2c010f37"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1185",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "An implicit spacecraft/location subject becomes the phase itself at133m, and m is also treated as a predicate. The subject/type interpretation is changed.",
+      "artifact_sha256": "eeef7b89e60b9fae99b75cf8aa6e993337c9f249978457e726a1bbec839ae412"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1187",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/state",
+      "artifact_sha256": "cfbda7d85cd65d89ba75eafaabbd33e726aaf930b2dfc36e93e2a9dededb230d"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1191",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/Landing",
+      "artifact_sha256": "7205f490c5cb45b73b5530d82d5da3f55e7798fca05d630b9d453fef9cd304c7"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1192",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c4/event",
+      "artifact_sha256": "1b488bdbdf1f40abf72dacd794fb3b865e854c3e8b4d8cee505b0174b31b57b1"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1193",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/cut",
+      "artifact_sha256": "b21aa9a03a00bc3e6ad05dc7e8113555053fee058e5ae19f903ae23c1349f188"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1196",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/mission",
+      "artifact_sha256": "885d456f12a7dae7d4a65d0ce668d30f0fd8b839f2c321bf62d76be4398d6f1c"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1202",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/content",
+      "artifact_sha256": "c59b51cf13639187ac82a28ba695391f884beb8a430ba8c459f5943eaccf74e7"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1207",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "3454fa4bbece8cf2ac5682f3e3bc2a2ca670a009d78290c2eafde06c045c82fa"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1209",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c4/event",
+      "artifact_sha256": "21ee14099dc17133ac130a67c257addaa95d3ce41e72f83775470ad13026ff43"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1212",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: how, effectively",
+      "artifact_sha256": "e380641b19eba7570e9d69804df875779674538046331838ba1dd995b20ee5de"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1225",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: fully",
+      "artifact_sha256": "84c3dea60db799562c2a7cbfbad24941ff4da15d90ab55a1beb8d0f1a9169a61"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1227",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The same surface disturbances are visible, around the lander and caused by engine-plume activity; location and cause owners are explicit.",
+      "artifact_sha256": "08aba60572646dc52eb8cb3577ab554d5e1b752e3435045b61912d3811693080"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1228",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/person",
+      "artifact_sha256": "bab0e57fc85da46a1e38efd6d4c76559a48a7f3894207133b77984cf8262ed54"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1229",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/selection",
+      "artifact_sha256": "ed5310eba74c8255608f7f38450089404b17d2c0d243aed38468d01cb8bb17e9"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c5/filling",
+      "artifact_sha256": "9b2a1bd6cc14fc73c1bc111d69ac9c740c9ce4574aad0a2ddd504c100a7cd5b7"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1231",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c4: A finite clause remains inside a literal/entity instead of a linked clause.",
+      "artifact_sha256": "3c11f223971dfd97c0821277da3c232f9044041b213eee215a01fda175bedafe"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1233",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: 121°C",
+      "artifact_sha256": "e68d1da2ae60bccacaf3db8b372a9929d447607c448e794ed1e6d402aafcb288"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1234",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: to protect hardware",
+      "artifact_sha256": "00e6bb2f2f916437d77f47ad872772672391941c7effb046e1fb49640ec6930a"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1237",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "6effbb33f678dbfec46e7edcf7364ae3d90a5ba8b420ca21ce6cc60f3ae9b57a"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/Earth",
+      "artifact_sha256": "24c902cded59ab9fc6020f6ea15c12a71d3257fd76b694bb31b25c03d2daeed2"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1248",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Supply exactly one sentence.",
+      "artifact_sha256": "0f3ac868b1f299f89c22558b71d20894bc6bd07e92f18c9b50c2c09ffa2b479f"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1249",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/signals",
+      "artifact_sha256": "1368298ca732895b376d5a0d47f476f0f9c70544e4776b58f12c100af2da7885"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1256",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: for providing payload services in lunar orbit",
+      "artifact_sha256": "a98cc4b52f9cc949763be5c8eae9ab4222b452423be05eeb743cda8f6ae9ad64"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1263",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/relay",
+      "artifact_sha256": "e9879e428b5e1e9bdc4c3afc78aff44dd15aae97f04612298ed8bfbb7f19ebfe"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1268",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Unrepresented source content: region, ideal",
+      "artifact_sha256": "f97b3917e2718b87f62e04d8f8dcf99aa93c8aaabda2fe1688acbf4da89cc9d7"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1282",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: to advance lunar research",
+      "artifact_sha256": "0e6c42d0f6b26aaf6f189c7a33e04f098e78565453262c7e236e22b95e74637c"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1283",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: to enable sustainable presence on the moon",
+      "artifact_sha256": "f839db0d775b004fc406faafa70b18ed7541a904bb0622dc131e0f2d91de4ebe"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1297",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: SRL repeats ARG1 on stands",
+      "artifact_sha256": "2cfdf1a98dc51e858fa8a4a83fcc3fd34725df1767514600decde9637ed89fae"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1298",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: little",
+      "artifact_sha256": "a1051e653b852733487e1b465c80755f55d604c8acd772b9ea8371cddd608ef3"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1312",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Scientists work/use the same complex manufacturing tools with building the spacecraft remaining in purpose scope; no completed spacecraft construction is asserted.",
+      "artifact_sha256": "d52f90d0dac6a8cd1ffa4f55c1d79bfa3e842eada19122cec50d136cae882800"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1317",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: Will Coogan",
+      "artifact_sha256": "09dc5934998719e58d30f5945f5a429d46490a8d4b12f8c852a4c0845b87b74f"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1326",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "743a0304ade5ddfd25b7b2c5e156f34da723da6d791b869c18d8860f9be17033"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1335",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: rocket sized",
+      "artifact_sha256": "d636832014f245c575a4c2462b19d029f219a23b930d6790117d454250379c9c"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1340",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: qualified",
+      "artifact_sha256": "61e612c7f1861a67b644fa308ecf875c4236bba913cd67cacf06b863683721c9"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1350",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: to understand heat fluxes",
+      "artifact_sha256": "299d72258692a78d96312e4a19d70664f76bd20687bb4f982d3701dbbf108252"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1351",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: to take some temperature measurements",
+      "artifact_sha256": "bbd7af9b2ee09d000fdf1279af09540f30e7d12f842cb86da8a4ae4e87abdf36"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1354",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: to extract information",
+      "artifact_sha256": "243b192541eae4ac66dcdc866ca30163d624b119e065a9e3963e6c64867e3d6d"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1402",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Hundreds remains an ordinary noun/group linked to people, without an explicit cardinality condition; numeric meaning is not established.",
+      "artifact_sha256": "20d906fda88caa7ccb69a91b798c6bd9d15f50f1d3479ef70ec86c187f93edec"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: IM's",
+      "artifact_sha256": "db5b42871ac278070f49724e1ec0384b1ce18e7702110c2a1cd3b35072c49e4a"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1410",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The from-IM1 direction is restored, but its descent remains an opaque time string without an explicit event/reference link.",
+      "artifact_sha256": "233c6b7d481a5d4db7f44e89a467ce9172c1f437a5a414084bdf3e041ece4580"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1437",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Unrepresented source content: landing",
+      "artifact_sha256": "3c6248f45e0cd65cb83cea26eab38b3e7754fe21aeda674184d2befc328481dd"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "faithful": true,
+      "review_type": "newly_inspected_program",
+      "reason": "The braking burn, Blue Ghost velocity and40m/s endpoint remain bound as before; canonical measurement serialization only.",
+      "artifact_sha256": "51f11b360c6669b7b57b4677c0e7d33afb930f390727064171e65344dbaeaa93"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1463",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "During touchdown the same Blue Ghost legs contact the same sensors, and those sensors are on the footpads.",
+      "artifact_sha256": "08ce12ddff407665b30560abf28895a698b78b605af386a77f910055b6c2f498"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1464",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Repeated events with embedded contexts need separate alignment.",
+      "artifact_sha256": "ffd76994ad56952dd33fc1ae37421ba37cf90b876eff89c7201ae078155b3a6f"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1467",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: high",
+      "artifact_sha256": "e6e3009cef0fc104dbfc62c6a2f407fad097bcc53777f7d0687f0e30e0aac747"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1470",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unresolved modal interpretation: would",
+      "artifact_sha256": "fd095c6accdf094e91515d337b3b8e93e6c72830324a4056b90ac4017734b528"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1472",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unresolved modal interpretation: would",
+      "artifact_sha256": "cf2273b1c742d4119985716d20ec644d2e29f1283b486e348b85e4145923c70e"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1482",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/storm",
+      "artifact_sha256": "dd0a2abc19bb65c55aad361b76234791993d677cd9ff2bb7f982add85b1dda46"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1491",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: 2.5",
+      "artifact_sha256": "beadfd8693dda8dcc493f3ab2227c308d53462eef6dd208f670c8ec76b0d3990"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1497",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "4359f524fbec412f0a277fc2d683d666b7f1a1715b7c57dcecf1ac4ad7319636"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/observation",
+      "artifact_sha256": "14bcc45a76cadaceb43bee7491a68c40b066e1283ca8da641bad62315b04ae5e"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1500",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: north",
+      "artifact_sha256": "09c280ccacb9c76368ab15b3e20a34d8b53bd69eab9ac26fada0e9f629f3393c"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1511",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Entity is not an exact source mention: mb",
+      "artifact_sha256": "b37b68598b0e7f00212f3694b9604d7908fa5978e283d0ce18574943d765b3cc"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1512",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: see a big ridge",
+      "artifact_sha256": "d8c8560e5eb87f4ed46ea5b96348eed0ed07a407c29118622bbad785f73ae8d6"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1513",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/ridge",
+      "artifact_sha256": "812b4645f1a57176d2560702f6cf1e1b8f7a8e8cb98e47ba5144f9129067552a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1520",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: Text in the top left of the screen",
+      "artifact_sha256": "309b0bba7fb457df4142b0bda891af9ae9c3f2d982d5cba7bd89e85a3826b8d1"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1521",
+      "faithful": true,
+      "review_type": "newly_inspected_program",
+      "reason": "April2,2025 is a typed date of the reported screen content, inside OCR assertion scope; top-left location remains attached to the text.",
+      "artifact_sha256": "4b9ec13028fde0e9ebfffb66a907bb10501e4de3be07c1129d039d0b7f4c3b26"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1525",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/Executive Order",
+      "artifact_sha256": "ae2b42f1b7289cc50d5524c17772accb82ddb6b375ff948e998591050fe5f8f9"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1544",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: 0",
+      "artifact_sha256": "d4b4635229355ce93870827cd9b08ed3e3e48f3bc95eade6100a2b39af28963f"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1547",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: almost all of the tariffs the Trump administration has put in place",
+      "artifact_sha256": "98af511582574c95d56d2b2a28d4ac7640e51eb5abb8b7a5769ae836dfca5a44"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1549",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/delegation",
+      "artifact_sha256": "ffda2aa03a8d27b96b60a93de9fd6b8430cf05c98ecb806b68e3df7f0e87ddcd"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1554",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "6737f041272a3413e76e470f725c09fcca0cf2119ad8814375375646a7c80c18"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1556",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: America, problems",
+      "artifact_sha256": "b48b9ac0c79dc9e18b8c104b6947c397279bd346c40d8b53b7b58cdd31c32fcd"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1569",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c4: A clausal argument has no attached SRL frame: that the US immigration situation does not support invocation of the Alien Enemies Act",
+      "artifact_sha256": "745c12cc67dd18fdd38581f36a46c8dc2cb63e69d0c659f173b4161fd28a7dbf"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1570",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "d538e877f3dcedaa24119098164773918640c13a41734fdee5bf5ea0b87b4c79"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1572",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: constrained",
+      "artifact_sha256": "d6ed0958ddfcd1daadd05baecf996e6b5aae3c078d80a4ad9b13c9b934ee659d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1574",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Legal pretext becomes permission through allows, which is stronger than providing a pretext; the original justification/goal relationship is changed.",
+      "artifact_sha256": "6d3b8b945e8c7701673b6e2061b5462f5ab4572150ec945b4d1b532dacca0f8e"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1582",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c4: Explicit source clause predicates have no linked SRL frame: ranging",
+      "artifact_sha256": "d1213e55d697643d9cde025c9175c5bbce01da9c90808f6a33dd4ec57cddd653"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1585",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: struck down by SCOTUS",
+      "artifact_sha256": "e3c91b64844d4181d4f54a667c3bdb9352b0f6d7e0e15d2439bba185ed39682f"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "5e840d230f3ece59019777271304adfad86d5246543ca95164019e21c0730e94"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1588",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c4/reciprocal tariffs by country",
+      "artifact_sha256": "d6ecc831beba1c7ccff700a683a543e21fd0842985214d537ec8dfca8fe8195a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1589",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/tariffs",
+      "artifact_sha256": "def5d34d57e5d7e9974bf433a52b36ea26405c7440d1635d6ead26d8abfeb56a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1600",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: SRL repeats ARG0 on presents",
+      "artifact_sha256": "9b0e4b7d407843cc22531f42e15a8c3f786beebc2079dae3226fabdaccac891a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1602",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: more",
+      "artifact_sha256": "ba1a8538b53b5d722284b8a54ceaf9a258d4f03d8ee126416d7de332eb190456"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1605",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/468.00",
+      "artifact_sha256": "c88b56d2598a9c3a8547460b8403e79349ea9b3ebdb9277473aeb572e43350bd"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1606",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/The S&P 500",
+      "artifact_sha256": "40c5de80c191777888f19dc7d6cea0f3c3b8374c7942022098829ccbdc15cead"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1607",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/372.25",
+      "artifact_sha256": "68e94a83aa0274a1b759cbfdc1d2c53282986ff13108b4f24a31125a523c0d9e"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1608",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/value",
+      "artifact_sha256": "42f8442fe75c0f0e135180376b481822014b37232973bf7a061469c1d6aad1e9"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1609",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/index",
+      "artifact_sha256": "ab2936762e2c3a6d208757bd52f5cbf91a06477818620991febc5d4dbd7b4b03"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1610",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Unrepresented source content: +369.75",
+      "artifact_sha256": "4735007c0a48e7118dc479be7c1de7c1ba51677b76ea89c6d1fbd1c6623cc0e3"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Court is a panel compiles panel as a class string. The panel with three judges is a separate entity, so its three-judge condition need not hold of the court.",
+      "artifact_sha256": "d4d5702fa12370b264ea5665904b177b24161475eaa5ae9ab1caa1c9b9a01d69"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1624",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c4/approach",
+      "artifact_sha256": "88a42fa7723d0d8c3ed1cba1f280069b261509851701815ee9981429361509b3"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1632",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: In",
+      "artifact_sha256": "837053cf4c8976d443f4f60c43e5c36501449db8200a8d9b621ebac74e318bc0"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1634",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: just ruling for the plaintiff",
+      "artifact_sha256": "7432fee7fa8500b5d07d26c083ba469647f5fd2e789d13e86d213a6c8f67caac"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1636",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/tariffs",
+      "artifact_sha256": "ece4d738fc5770df8d47065da992aefc1c00deae4409e9e66e5a28e5cdc20ee0"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1639",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: unless the ruling is overturned",
+      "artifact_sha256": "385b390dd50e32f0b6f95cc6855c888e7d8fcfd3eee0a5ea462beb88373458e9"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1645",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The inference marker is lost, a spurious will predicate remains, and inferred tariff resumption is asserted as a condition fact.",
+      "artifact_sha256": "1b8d431e7484a39c6629e8e4fc72dd43fe7a9b92b23290af4388e79711155911"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1646",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Embedded predicate has no explicit or licensed controller: speaking",
+      "artifact_sha256": "06faaf69c13fa368e61f3674f74c579f90be90a394427a295c37946b61702363"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1647",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/event",
+      "artifact_sha256": "9e398cea672515b5e3168e46cc5ad8c4bd3e40f8672986cbfa889b53decff1f6"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1648",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: clapping",
+      "artifact_sha256": "41a0b3239a3aa0f5aa4baa147ac1946f77b7fbfe89a5e0aebf357ee9b33f4217"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1654",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: to make America wealthy again",
+      "artifact_sha256": "148618b92ae0b78464c21d99dcf368c1fc07a190d3c319997b4a3cd91f84757c"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1655",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/America",
+      "artifact_sha256": "7aff1ba287fbee6cc98656333fecc3f458876e2cd576868d874124db0e158904"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1657",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/markets",
+      "artifact_sha256": "164560b526bf02536bb2f9f680fd51a0add2c19333ed3958dd10ce8f363b09e7"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1658",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c2/plot of U.S. tariff rates from 1900 to the present",
+      "artifact_sha256": "641883d4672d44c5a1036d9e5fe400c0a569d8d133a68efc3078b30b34ffc11a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1659",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/recipients",
+      "artifact_sha256": "0d33d4d78511f6829106762f24d456f3280be40dabca5757f170e7d6bed50e14"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1664",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "362329c0b61d0049ac1d6f1b88e484fc124452be6c688487d2454316827d8897"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1665",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "e91b65d7e3e33b7a510afdc3e9be71392d1100700a54afe9460582e87844c402"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1666",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "4105172bf45e1c0a5c3ca464e25b878acfd358a8774d966af0db26f02fa826a0"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1667",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/Apple",
+      "artifact_sha256": "c8ce31b5f308c13e679be1e91b5585073e36079dd9234b8e797b9d7a80e21aed"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1668",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/drop",
+      "artifact_sha256": "0b59d396009646a4545d16d0e84e4184df8c2f3c2e7664733d1d0279c130ebb4"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/they",
+      "artifact_sha256": "e8658efddd74aac4ca60e0433fbd6697390977114aac9deeb3329ed47729a135"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1680",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Unrepresented source content: 800, less",
+      "artifact_sha256": "b3021cafa1f83fd3693970b7eb1b1ab351f92f3a0dd0b1e6c093f97fdc774133"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1681",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: 25, item",
+      "artifact_sha256": "8167eb85022bc8767d1a935db6264d0f5d88c397e8abe52046a59ffc264924b5"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1682",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: down",
+      "artifact_sha256": "800f122853ece10c953008479f7bfd9519f14dbc3bf8ee9b7cc9da0edb61c20d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1683",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: 10B, year",
+      "artifact_sha256": "aeb2ecd0c75350302da4b0a74dbc9a4e1304dd72f45850f0fcf9041834161ad1"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1695",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "2f0005fb9292618e091b4c5a29fc4c2497b40741a2f4c67899ad280cda9f4d00"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1697",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: SRL repeats ARG0 on made",
+      "artifact_sha256": "1e104a8090cc6159fda324e2cbc27a239db2bbcfbe02d9d71603e9754f845288"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1705",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: to build domestic strength",
+      "artifact_sha256": "6ebb0a1df46453d67c0f10a8ad42588b80665576bcae4e8bd222d4622ea97d59"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1706",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: plan, right",
+      "artifact_sha256": "3e7578e7d0d9335cee2c573181fe79e5e12315840457bb703f591cf11b2b3b0d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1713",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/+5",
+      "artifact_sha256": "bc3ca6853349d2c263cf4ee8e017d60d0f742267285e4f3bf77ab48db2a56ca4"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1715",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/seats",
+      "artifact_sha256": "75d92806ebde191f6835fc6d407feb63ec83c1ad84f3e143f37abd53d78b7eb5"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1717",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: 172",
+      "artifact_sha256": "e9f9a2378063066064992f0359a5f6ea1576416096ae974e8b9f5b7ab5d520ce"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1718",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Same duplicated Carney text as859: repeated leadership/appointment events and opaque duration/after relations remain unresolved.",
+      "artifact_sha256": "1cd4481230347d5062e992f61c2f9ac037cf1cc12dc6fd0676c4472310f60838"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1719",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "8746ba1066db9a888cd5a7ba5b0a068ea5db05e46b4f1e87cdcf65bafb1377cf"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1724",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: Previously held by Liberal MP Chandra Arya, it borders riding where Poilievre is seeking re-election",
+      "artifact_sha256": "23dc298ccfe0a559540fccada836ed9d575ed410af3cf73f8ab38c8960eb2483"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1726",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/you",
+      "artifact_sha256": "45443ff84a205d0e7abaf9482654d9cb30eb54018e5001323c43a49eaa2ef13d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1727",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Explicit source clause predicates have no linked SRL frame: vote",
+      "artifact_sha256": "388d8b6e067addd739b6bd5ef8eb2721878f01368a01166f378a5ec01ff075cb"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1729",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "319ddc7f0b411bfb37c96d00359be7d5aa9449b0c0a318b87d49e2ff34cb6879"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1730",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c4/options",
+      "artifact_sha256": "08ef4c89f0c3e00aec2edfd9558b47b83998bc03403b34cb011cbb69ff3c28ee"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1731",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/content",
+      "artifact_sha256": "40f1cf76e01c6dd75dd17f30128ad75f3c18e8ffdf728833dc40ffa2de46986a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1739",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "e5f56be77a19a102a543ba65103bac12193ff666b07f94600034ff0d9ce274c2"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1741",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Absence quantifies data satisfying the supporting relation to Trump's argument; supporting data are not asserted to exist.",
+      "artifact_sha256": "30c83c51c45ee302001fa474bb65cf58863bd173f907695502e1c53769959613"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1747",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: Trump announces 10% baseline tariff, reciprocal tariff on some nations",
+      "artifact_sha256": "a7ff5ce7451c375fb65bb15c455a4ddab225487d2c1a3f86c8d84c9acb1d5509"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1750",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: charge",
+      "artifact_sha256": "ea8bc85964bd473078ed576400bc19e06a2506b2fce100f46e18c96279f6644b"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1751",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: only",
+      "artifact_sha256": "979cd9795ef40d289f74ecd0fcd59a6ee0bf2e60ec042e46f0d6d23e939d6d19"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1754",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/China",
+      "artifact_sha256": "ccd6eea265f183ce015bd4c50cddce08edd424613fdda6a1b39bd2499572ef27"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1757",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/USA",
+      "artifact_sha256": "3e0f7ceadccf37c811255f50977280950dc941af534d758b4aa4b052b0409ced"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1759",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: 64",
+      "artifact_sha256": "adb11c4b558890fbaddfd03f6853698cdcaf58ca9a49c8bef0b8796087cbb768"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1761",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Repeated events with embedded contexts need separate alignment.",
+      "artifact_sha256": "e84cf3cca6223adde126e6dc5bb27cdeb1ffd948b8fc8959856b68cce79a356d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1762",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Trump's talking content becomes a world-level numbers-are-unfair assertion; without-chart also lacks proper absence scope.",
+      "artifact_sha256": "11feb045e401d4ef59839bba130cb41d47cffab51cb6cbf89480edc55d3b5ba5"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1763",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: 10",
+      "artifact_sha256": "092fd836315a5959bc7bb97c25a58e08bc2e7218d1028f96578dd9f7a59bbc5b"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Building housing a publisher becomes a building being constructed and for housing; construction is invented and the publisher relationship is weakened.",
+      "artifact_sha256": "2950f16aae9d3a30f3d7c0c9f92240b982cb0c1eab5071783acb0e697748b2bb"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1779",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "All windows is not a universal condition, and the one-room exception is asserted outside the original seems uncertainty.",
+      "artifact_sha256": "23409194a7e0ae5b4c58993b9a7e548058e9d4690f3dab4da94075e24a1db0f6"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1780",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/Nepal",
+      "artifact_sha256": "99a1bf37ff33df904da7311de13674e8d607fadf689d64bdcca849306b6d1e29"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1782",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/houses",
+      "artifact_sha256": "ea4e777f0e86280f41d289705b19b8f04283cbc45ddfa1336db3680f26df31ed"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1796",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "During demonstrations is moved to demonstrations during unrest; killings/injuries are no longer bound to that demonstration interval.",
+      "artifact_sha256": "4e8fd88996f4bd333e5bbf50253fed5c902411331610c8d6c62e37ba137c0032"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1800",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: a burned building on fire",
+      "artifact_sha256": "e935d47e8d7304ebf4a809df2d4174df93e2a51a6c2360b5535fbdea093ae6fc"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1812",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: Singing",
+      "artifact_sha256": "1a84f767ff4c045e2a5c1d34d1582cf2ba6e450622950c540241cd49af804239"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1813",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/location",
+      "artifact_sha256": "2ea602ee5fd519f91c1bc212cb9eac5ee4a54d396b40ec1375de7c9c80922d3f"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1819",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/chant",
+      "artifact_sha256": "4feacab05d94bfc6e00a363e29ff639339a872ac1e7652bd0e90b945eec6fc3c"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1820",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/vest",
+      "artifact_sha256": "f4a08b1193a76c803bbd7cce344a4285664de5be4c5cd7d29a7e17fb0b30553d"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1821",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c1/government building on fire",
+      "artifact_sha256": "de4e5253d6a20ce325de9e61cb7500c5ba266327b4e4ba7d7ab81507c2e18d14"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1824",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c1/pedestrians and motorcyclists on a street",
+      "artifact_sha256": "d57de050d57aae332b7ba0fb6a355395e901c8787f317dea584ef5ced0971a8e"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1826",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Themselves remains unresolved, picture-taking events are duplicated and the model chooses picture-background scope for the fire/smoke.",
+      "artifact_sha256": "92fc35c3b02b8114b846593c6330b53de9eb11d1a0f2449e3a2f9c6f06a1df03"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1828",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: hear lots of honking horns",
+      "artifact_sha256": "8160aaa7b101bad17fddfc9de05ed1250a3142d27a951552effc7cc90fc1a926"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Source sentence must precede its content.",
+      "artifact_sha256": "84747f3c8bcf677a78b3f827221fe6c6b8630d9f01e892d847d256af39d0e606"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1830",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: some of the surrounding area",
+      "artifact_sha256": "5dadf38a1e2557a6d4454ff688928358895809e67b0dca5ff13fbe73a8f1573f"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The locations are restored, but the second shot is treated as an event location; depicted context and vehicle/lights association remain unresolved.",
+      "artifact_sha256": "28d484a8fbd01f2e0d968460b51a16beb76c695ad8fb01af0f13a7ea0cb1615a"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1864",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Burning stays in a generic complement with unspecified route, rather than typed visual depiction; either-side scope is also incomplete.",
+      "artifact_sha256": "acc06c7b75269afcf2237bfa39c7cfb73c93ab091c4f767f248f4c3f5c99d46c"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1873",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/filming",
+      "artifact_sha256": "8bac253384f015c6d657fdfb85caf40e74d76c5b6f9dfd3052eb72930a542676"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1874",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/road",
+      "artifact_sha256": "8de98dbb891870ec3ee511d4c43aefe769c0eae155a6d068bf76803f5eb97c1f"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1875",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: covered in traffic cones",
+      "artifact_sha256": "e4dd50571a012c9a614ea57245b9d52802036966504e4313d63a4b9115a21739"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "fe7e15a4f6db3be09cac3fd583301f25b1ded9de52da52cade5390713cbdad72"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1878",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c4/fires",
+      "artifact_sha256": "2dbc93fd18abb0b8330c4f990b46816495f24155e4f8b736788091a84d3428e8"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1885",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: 19000",
+      "artifact_sha256": "a8a10e8950f8731b386c63bcc08f0a1aebc9cab6b8471c6cc2fe1265614a00de"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1889",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c5/street from the row of homes",
+      "artifact_sha256": "3eca5257279b6ded5350d8d40ae527b6d55f86c915d930a916c2a673a8270723"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1894",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: SRL repeats ARG1 on destroyed",
+      "artifact_sha256": "9f8317f4c4f1f434cb7df26a2f148f8559b45af4ded8ee887496fa44f1ba5d5d"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1900",
+      "faithful": false,
+      "review_type": "newly_inspected_program",
+      "reason": "Dates normalize, but the rewrite still invents explicit start/end conditions and leaves4hours long as text. It does not establish the intended interval/duration relationship.",
+      "artifact_sha256": "cc670a2ea1762d74141b65b4298a729f2435083b257c1730883ca43d8688369f"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1901",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Audio and have-event witnesses stay inside NOT EXISTS; the positive video stays outside. The audio evidence route is explicit.",
+      "artifact_sha256": "e926736f432c959aedf8822044a0586d15aa002ff76f79a5475aa8c09039de1e"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1905",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique simple source sentence for the original media description.",
+      "artifact_sha256": "a1674f1a37d778b28c05eb12fe8650300401516ef820b98aa665a44f35dc781e"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1909",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/acres",
+      "artifact_sha256": "14671431729b7b575637fd079122e9ff52f84498e754948c8f07f895731650ac"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1913",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Content must reuse the focal parent entity; do not assert an unrelated event.",
+      "artifact_sha256": "28964afee4c915d03091b96cf37f6719c43c4505d0db9fff27b3168df6a3a276"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1916",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Narration and feature-event witnesses stay inside NOT EXISTS; no positive narration is introduced and the audio route is explicit.",
+      "artifact_sha256": "8afb84dfefca3b834e4951c7d83e4e55abb9ea283b54e0a9b7e6c3049f3aa3f9"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1922",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The car viewpoint and locations remain, but burning stays a generic complement without visual depiction/either-side semantics.",
+      "artifact_sha256": "c77dc31ac1d5d21dcdbfdf8eb232aaeecbd8f5c7216c370798736091f099e0d4"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1925",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Department association is assigned to the video rather than preserving the original logo-for-department relationship; the full organization name is also split.",
+      "artifact_sha256": "89e79f7d8f108610bcec5904228b800752b4a6ea467e13b73ae56400e401adf9"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1926",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The video-for-department assertion does not bind the displayed logo to that department.",
+      "artifact_sha256": "f25c9267fd3d98d4e8bc7c4681105b06518ebd0c8f2d48321c9c2b3a6b76a08e"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1927",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The video-for-County assertion does not bind the displayed logo to the County.",
+      "artifact_sha256": "8a619a0eb7e90a6ece1f03bd7d6b7e38b1162d20d33c70d106a1f7831d81ff71"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1928",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Related-to the Sheriff weakens and shifts the original logo-for relationship to the video.",
+      "artifact_sha256": "b4a86b0d4f6c7e8e0a698f8875b9ecbf0606834f64352e8fe1deb74be6ee2ab9"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1929",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Video association with the Police Department is substituted for the logo's department relationship.",
+      "artifact_sha256": "6a61b9dbc11bd223a5bdd7af944ac6d1beea43d2ca07126d9053ce2d3a54413b"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1930",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The Team2 relationship remains inside a video assertion/time string rather than bound to the logo; redundant onscreen events remain.",
+      "artifact_sha256": "413ac6bb7de450119ba89b85f2bfff21d8d926b6e5edde9578cbdc7007c5e9bc"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1934",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A clausal argument has no attached SRL frame: some of the area surrounding Los Angeles",
+      "artifact_sha256": "fa6b0df8633505991e11f7d360327017bfd46ea0d12c33203ea8e863929e9d30"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1945",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c1/V-LATs",
+      "artifact_sha256": "88256fc5a627e65e470af1c648c5d2093e3fef7c81ffaa2680389ad9a6701d84"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1968",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Two compiled entities in one clause map to one original mention.",
+      "artifact_sha256": "c22f17f85fe280cea54158f631c6a8b4e611442709404d8aa052fb0ffeaf8cf4"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1971",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Reappearance remains inside prediction scope under expected, with court/Orlando and following-day constraints; no actual reappearance is asserted.",
+      "artifact_sha256": "fbcbb6d34133c90194055e1836775e4350fdae6a8f29643c5da1c9dde7d05bae"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1976",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "d3659566cfa734f487c3fcf79b70256dde09aa36526af77053d9d4b4940a600d"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1978",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "7d0db9ca8c6a6a57c054c48400a92adcaf79a7c9e9a8ec6da33c3cd1d3d22d1f"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1979",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Explicit source clause predicates have no linked SRL frame: broke",
+      "artifact_sha256": "8709edc7f1004be652fb32374b0cb4bc6842b8645793f40422e79791e07add54"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1989",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: seconds",
+      "artifact_sha256": "9ec20890924ff21e441d6ea29e36c9940ff485aeee1b0dd6b72b86aaa0fe46ce"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1995",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Seemingly is only an adverb string on an actual extinguish event, rather than uncertainty over whether it was extinguished.",
+      "artifact_sha256": "beecd77ce7582c9feb14dab3fb1ffe28fa6c713b7fb9ffdd34cf4fe847f60dc5"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1999",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: holdover, fire",
+      "artifact_sha256": "ac7303c49fedb51f3d59ad81587041bdb57eb19085d3b40839c45c7c3690f7d7"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_2002",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: obsessed with fire",
+      "artifact_sha256": "8068f8e1c55aafe84fdbd933e1c20bcfb99ac424631491b5f2a2d873f92676a8"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_2003",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Explicit source clause predicates have no linked SRL frame: leading",
+      "artifact_sha256": "57e52d211ba85061c3296d06a1032b481836d39537c8d727ff6137cd57d3e7e5"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2029",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: to perform Kung Fu abroad",
+      "artifact_sha256": "540ec9fe6f752980475ae4b4d9cfdac5313e8f06d90bc13cd2596987d37a4317"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2058",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unresolved modal interpretation: would",
+      "artifact_sha256": "815f46a7344324ebfab388f073c1f70e46b9143952503bbf6db9dc6c4794cc82"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2068",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: A finite clause remains inside a literal/entity instead of a linked clause.",
+      "artifact_sha256": "2ab2da571d253388b64f5faae5eab32fe863486a99a6704666cdd66e337537b4"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2078",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: accepting bribes",
+      "artifact_sha256": "0e7d4525c147c62bc37318715b4886b55dae078cd7ae6fbc0e50558f773151b8"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2095",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: simply",
+      "artifact_sha256": "c972b444bfad97ba0254840e50ca151330a8ad0c26aad6a517c7a62c3d2b23f5"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2096",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: practically",
+      "artifact_sha256": "b160e7ea38bfa357f5b62d547a5fcd9b8b62bbb9c10dee224b1d3cdd5e3d4770"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2102",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: all",
+      "artifact_sha256": "642fc58239c86c06969d018cc03ba87bb80ad2536860cf3c59e085fd105051f8"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2109",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: expulsion, monk, monastery",
+      "artifact_sha256": "90e11fd326a3ad7ee0f0170342d165694ac572ec4b97c25a2d895c5d616d44bf"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2114",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: expulsion, Shi, Yongxin",
+      "artifact_sha256": "03ca504b653f6088c1c07786949a7e929e63f8245204ed717c0f44fa447f7ce6"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2127",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c3/deviation",
+      "artifact_sha256": "be996d1e74de6339fa114c9f6e676d5d724583c4aa7d4103a23407d0c5fc1441"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2131",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Explicit source clause predicates have no linked SRL frame: became",
+      "artifact_sha256": "002494296715fe0400fd9f7e182ebd02a2d70a2f9ea8bec46733576251ea92bc"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2132",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Explicit source clause predicates have no linked SRL frame: became",
+      "artifact_sha256": "ae8a3eebb1a3bb45238278a65cf54d65a529962fe42810765692937c77093af3"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2139",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: CEO, Abbot",
+      "artifact_sha256": "371c32f138a3f836bdf8b49d4c72f8b08d985861b35c7550a5482e8b4b654be2"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2161",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: more",
+      "artifact_sha256": "f3da3a0f2bc781f21c3dde25f969aadb5c8bc041c50a86e9d854face128d1ecf"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2166",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Repeated original event has conflicting ARGM-LOC arguments.",
+      "artifact_sha256": "14117e1fdea16be422195ae0c2f5ba2cce58989a0d881fec31bc6690120be3b4"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2170",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Extra wind/direction content is restored, but movement under struggling remains generic complement content rather than an explicit unachieved goal.",
+      "artifact_sha256": "4657fc2c7b3b5c3923f8a9116604e980532f1c044f9e16fc2d9bbd2be0e5c0d4"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2173",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "A shared property is not anchored in the original text.",
+      "artifact_sha256": "be09fe5d0852ff762c269683fde8030e52a21b8cca1f50b6b973b92376039b11"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Repeated events with embedded contexts need separate alignment.",
+      "artifact_sha256": "d10905c298136e9fdfa2bf2194bccd8cd42e32a00d95f5b4549112723fa7ccc8"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2177",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Repeated events with embedded contexts need separate alignment.",
+      "artifact_sha256": "62b19ee6a1ad7a6106e06f7117290f68e01b818d5f7ece2ffe5110df80d773fc"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2185",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "No unique compiled noun head: c2/Meishan Township, Chiayi",
+      "artifact_sha256": "9130f6228a15f01a224494ff1948af55c902b9253878d0c3d54eb65efb93e51f"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2191",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: between, 36°C",
+      "artifact_sha256": "bf7a8ddb4825a77ab44a45e88e0efcf6479d4441915ad6e0a8f41e9a57de1034"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2199",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: direct, impact, Taiwan",
+      "artifact_sha256": "9341ac84b531f2c96ae2484709e84f4557be940e049dd33e0eb1cb90f469d373"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2215",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: only",
+      "artifact_sha256": "e98aa72be58f10dc0882b263162f2d33b6d213f103317741801e5fae3fbba414"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2221",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/time",
+      "artifact_sha256": "d64e881df98d0309f26314aee2775216bd247858f0f3f99be2e8d1a497a35828"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2230",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Tourists/walking/rain/umbrellas/harbor remain within depicted footage content, with shared tourists and correct extra location.",
+      "artifact_sha256": "7897e32da46abc12b53379a487d359937afec96d0448e0d0a7a8f2e638e88b69"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2234",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: because they had already paid",
+      "artifact_sha256": "7cbda38743bc2e51a621a39700e89d5322ae150be96eb392202d8d6d831c453f"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2236",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The same boat's capsizing remains inside the clip's visual depiction after the source-alignment correction; it is not a separate world assertion.",
+      "artifact_sha256": "a08308009506b32be6487cb15dc30f6e7c79a7ecb3472dd80fa1602a5780593c"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2240",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c2/number",
+      "artifact_sha256": "cb404047ff7f1a2d66367c3238e535206db1cd36617789dcc3135a5a22538508"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2243",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: missing",
+      "artifact_sha256": "f467e445fd61dc1f28316cc58b544764019904ee7f6689bb922112f399d355ff"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2256",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The sound/microphone/location words remain, but footage is treated as a physical event location instead of recording context.",
+      "artifact_sha256": "2e5e91c66c5243cae6ff0eaca31e65bbd1f0929041f71d921daa16d9e1df3f26"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2257",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The tools/submerged event remains outside the flooding depiction context.",
+      "artifact_sha256": "71cf9a87e77a3c6523fa3b05d4dba7872b668f345eac5fd07d390304b7ad3a85"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2258",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: A clausal argument has no attached SRL frame: submerged up to the middle of its tires",
+      "artifact_sha256": "cf63184d69767fb83867b468d6cbb8b66048ed46fdd7423a5f409879cdd48137"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2261",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: SRL repeats obl on crash",
+      "artifact_sha256": "1a869e9453b9ae0afeddb3d45dd06d4354c5e96cb2510c2b96a162dad94f88dc"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2262",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: violently",
+      "artifact_sha256": "c7d59eb1c280c5eafe792af812c88cf0990325fa19e653c94f7b6fdc7d492bf9"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2269",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Swaying remains in an unspecified generic complement instead of visual depiction.",
+      "artifact_sha256": "1d0adb88290452e97dc0087f959b49dc1a05110710aa8d8c7fba06daf5d3e0be"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2278",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "A geyser-from-grates entity relation is introduced instead of clearly binding the water's source to the grates.",
+      "artifact_sha256": "c9b81ac02260d3984fa3353264e450fd67189720800b5526377ccfd8e3ed13dd"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2281",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The coordinated branches/debris group is blown around in the street and in Dongguan; both locations constrain the same event.",
+      "artifact_sha256": "2079e88358c76197fc1affe7ca08f44da1a05a9730a2715ddabcc4d39189f37e"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2283",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c2: Unrepresented source content: 12",
+      "artifact_sha256": "a260d0b00c2d982bc5d5e2a059aa02ce7540eb929246f2c4d3daf6316a4dc8da"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2286",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The same fallen tree branches in Jiangmen crush the same cars group that includes taxis; the two clauses share the cars.",
+      "artifact_sha256": "2872919b5b9f0a273ae78b6469f30226cba5c107299dc5c560b0adacb7eccc0d"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2289",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c4/event",
+      "artifact_sha256": "7c653cba81bb06a160301326dbf39b8b8b7c5bc5bc603dd4b1c0afff9a4dd181"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2290",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c4/collapse",
+      "artifact_sha256": "13394675cd671ba5c5a5b54a07ba125ecd28417ad4e9da7c89cc6a378ed2beae"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2292",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "Original noun head is absent or ambiguous: c1/Pedestrians",
+      "artifact_sha256": "931ec5c8833a424daabc26107e3d2d46a3f90c864cc82a0fea67f8d21b8f64d5"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2297",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "A shared property is not anchored in the original text.",
+      "artifact_sha256": "55077d79d0ccf402fd4f61191628bdf6ad82e98a2234f71282da008a4a03d233"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2316",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: the coastal regions of Guangdong likely experienced severe heavy rainfall and high winds",
+      "artifact_sha256": "464cd14aac88a4cbc8a3d209572a9d1c5a4b3d4f557c0cbed8a8bf56c5fbe744"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2317",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: A clausal argument has no attached SRL frame: the coastal regions of Hainan likely experienced severe heavy rainfall and high winds during landfall",
+      "artifact_sha256": "6118978f79a0222cf3820e5f372693d194f415a120454bacddadb0b79024b2e1"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2324",
+      "faithful": true,
+      "review_type": "newly_inspected_program",
+      "reason": "The visible timestamp belongs to the same dashcam footage and preserves the complete2025-07-20T09:54:00 value. No offset or time zone is guessed.",
+      "artifact_sha256": "62c9c7ad20c521adda10e5d5fb5c27ca443a29e486a8f07567f53c6bd9215c09"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: reporter, Zhuhai",
+      "artifact_sha256": "75023dd815a2e144faac41a2b3cf98415c570809f279e509e2cd20b2cf9926b9"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2344",
+      "faithful": false,
+      "review_type": "newly_inspected_program",
+      "reason": "90kg canonicalizes, but unresolved he and the scope of the struggle remain. Quantity normalization does not repair these references.",
+      "artifact_sha256": "841cf76366dfd55db595507f9edc1022e9a1bfbcc5d78739cb4d45ad7c1c596c"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2347",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The parenthetical ZMC is forced into an alias statement, and the know-as form becomes belief content rather than a clear name/apposition relation.",
+      "artifact_sha256": "67b0da62bab4346363549a0d880b857b8b8351f4bd3c9f1b5c99019dc73207c7"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2350",
+      "faithful": true,
+      "review_type": "newly_inspected_program",
+      "reason": "Wipha movement still has northwest direction and a20–25km/h speed range; original spelling moves to alignment metadata.",
+      "artifact_sha256": "34d5670f75a2ea7af28d49c80c8ff61556cb0adaa79a22a8747cc8be71aa4c6d"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2362",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c1: Unrepresented source content: areas",
+      "artifact_sha256": "e4869391550d7387f272176bc3d805d6fd13ccd4c57c48533ea2aae7b1ab22c3"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2371",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Unrepresented source content: Typhoon, No., 8",
+      "artifact_sha256": "fc98968ac9d085b721f91ddaad133aeef455785aedd6a26e2a01df312465b0a8"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2377",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The same collapsed scaffolding crushes the multiple-vehicle group in the same housing estate located below that scaffolding.",
+      "artifact_sha256": "d56259dd7d76b8786b7eb0acd619682d8c643a11d1d1d1f9240e1362b6288409"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2383",
+      "faithful": false,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "The extra location is restored, but in-mid-air is incorrectly typed as time.",
+      "artifact_sha256": "c9c980bcc5425b1de90409dc08aa8b274168146f91cab8f40615bc1eb4c2c224"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2400",
+      "faithful": true,
+      "review_type": "unchanged_program_and_form_review_reused",
+      "reason": "Injuries and finding-event witnesses are jointly negated for the San Tin Highway incident; the incident itself remains positive.",
+      "artifact_sha256": "bf87d04ff86d335239bb49a0f09f65501fd397d117c277a73a0267c3b7250ad3"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2428",
+      "faithful": false,
+      "review_type": "pipeline_failure",
+      "reason": "c3: Unrepresented source content: No., 3",
+      "artifact_sha256": "713e350867202d44f48ee9d37c211e27802580f13964ea2d7ac0f2d81bab72ca"
+    }
+  ],
+  "withdrawals": [
+    {
+      "claim_id": "TgR_u37mCoQ4_1831",
+      "reason": "Fire spread and its two temporal endpoints remain an opaque entity phrase. There is no explicit spread event or linked interval.",
+      "artifact_sha256": "de38228e6681756c60b09714db77cffa9cc1dd653a0b272634d0c33738808994"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1908",
+      "reason": "Fire growth and January8,2025 remain inside one opaque entity phrase; the date is not linked to a growth event.",
+      "artifact_sha256": "0ea052961a6e9f6d3d0a62af6e80952b522833fc34f9b6999dc165b317c6dcf7"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1924",
+      "reason": "The update title and January12,2025 remain inside one opaque entity phrase; the date has no explicit link to the update.",
+      "artifact_sha256": "8829aaf89fc5c7d12ce0bc7b982703293bd7962aa8e3571168105f1ca624befc"
+    }
+  ]
+}

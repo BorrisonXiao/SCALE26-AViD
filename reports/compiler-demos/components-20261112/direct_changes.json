@@ -1,0 +1,1039 @@
+[
+  {
+    "claim_id": "T8u81WMIyj18_755",
+    "text": "The car is parked at 1:53am on August 19th, 2025.",
+    "before": {
+      "status": "unsupported",
+      "code": "quantity_type",
+      "reason": "A time value or amount is not a counted group. Use a typed time/measurement literal or an amount property: am",
+      "form": null,
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [],
+      "metadata": {
+        "events": {},
+        "temporal": {}
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "car",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e4",
+          "predicate": "park",
+          "anchor": "parked",
+          "arguments": {
+            "ARG1": "x2",
+            "ARG2": {
+              "kind": "time",
+              "value": "01:53:00"
+            },
+            "ARGM-TMP": {
+              "kind": "date",
+              "value": "2025-08-19"
+            }
+          },
+          "properties": [
+            {
+              "role": "preposition:ARG2",
+              "value": "at"
+            },
+            {
+              "role": "preposition:ARGM-TMP",
+              "value": "on"
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, car, scope, world, route, unspecified)",
+        "park(E1, ARG1, X1, ARG2, {\"kind\":\"time\",\"value\":\"01:53:00\"}, ARGM-TMP, {\"kind\":\"date\",\"value\":\"2025-08-19\"}, scope, world, route, unspecified)",
+        "property(E1, preposition:ARG2, at, scope, world, route, unspecified)",
+        "property(E1, preposition:ARGM-TMP, on, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e4",
+            "predicate": "park",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3,
+              4
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1521",
+    "text": "Other text in the top left of the screen reports the date as April 2, 2025.",
+    "before": {
+      "status": "unsupported",
+      "code": "coverage_omission",
+      "reason": "Unrepresented source content: April, 2, 2025",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "text",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Other"
+              }
+            ],
+            "relations": [
+              {
+                "role": "in",
+                "target": "x6"
+              }
+            ]
+          },
+          {
+            "id": "x6",
+            "text": "left",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "top"
+              }
+            ],
+            "relations": [
+              {
+                "role": "of",
+                "target": "x9"
+              }
+            ]
+          },
+          {
+            "id": "x9",
+            "text": "screen",
+            "type": "entity"
+          },
+          {
+            "id": "x12",
+            "text": "date",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e10",
+          "predicate": "report",
+          "anchor": "reports",
+          "arguments": {
+            "ARG0": "x2"
+          },
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "assertion",
+              "route": "ocr_assertion",
+              "body": {
+                "op": "entity",
+                "ref": "x12"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, text, scope, world, route, unspecified)",
+        "property(X1, mod, Other, scope, world, route, unspecified)",
+        "referent(X2, left, scope, world, route, unspecified)",
+        "property(X2, mod, top, scope, world, route, unspecified)",
+        "referent(X3, screen, scope, world, route, unspecified)",
+        "entity_relation(X2, of, X3, scope, world, route, unspecified)",
+        "entity_relation(X1, in, X2, scope, world, route, unspecified)",
+        "proposition(E1, ARG1, assertion, c1::TFgw4IaR9R8s_1521, scope, world, route, unspecified)",
+        "referent(X4, date, scope, c1::TFgw4IaR9R8s_1521, route, ocr_assertion, owner, E1)",
+        "report(E1, ARG0, X1, ARG1, c1::TFgw4IaR9R8s_1521, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e10",
+            "predicate": "report",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              10
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "text",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Other"
+              }
+            ],
+            "relations": [
+              {
+                "role": "in",
+                "target": "x6"
+              }
+            ]
+          },
+          {
+            "id": "x6",
+            "text": "left",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "top"
+              }
+            ],
+            "relations": [
+              {
+                "role": "of",
+                "target": "x9"
+              }
+            ]
+          },
+          {
+            "id": "x9",
+            "text": "screen",
+            "type": "entity"
+          },
+          {
+            "id": "x12",
+            "text": "date",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "time",
+                "value": "{\"kind\":\"date\",\"value\":\"2025-04-02\"}"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e10",
+          "predicate": "report",
+          "anchor": "reports",
+          "arguments": {
+            "ARG0": "x2"
+          },
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "assertion",
+              "route": "ocr_assertion",
+              "body": {
+                "op": "entity",
+                "ref": "x12"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, text, scope, world, route, unspecified)",
+        "property(X1, mod, Other, scope, world, route, unspecified)",
+        "referent(X2, left, scope, world, route, unspecified)",
+        "property(X2, mod, top, scope, world, route, unspecified)",
+        "referent(X3, screen, scope, world, route, unspecified)",
+        "entity_relation(X2, of, X3, scope, world, route, unspecified)",
+        "entity_relation(X1, in, X2, scope, world, route, unspecified)",
+        "proposition(E1, ARG1, assertion, c1::TFgw4IaR9R8s_1521, scope, world, route, unspecified)",
+        "referent(X4, date, scope, c1::TFgw4IaR9R8s_1521, route, ocr_assertion, owner, E1)",
+        "property(X4, time, {\"kind\":\"date\",\"value\":\"2025-04-02\"}, scope, c1::TFgw4IaR9R8s_1521, route, ocr_assertion, owner, E1)",
+        "report(E1, ARG0, X1, ARG1, c1::TFgw4IaR9R8s_1521, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e10",
+            "predicate": "report",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              10
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2324",
+    "text": "The dashcam footage has a visible timestamp of 2025/07/20 09:54.",
+    "before": {
+      "status": "unsupported",
+      "code": "coverage_omission",
+      "reason": "Unrepresented source content: 2025/07/20, 09:54",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x3",
+            "text": "footage",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "dashcam"
+              }
+            ]
+          },
+          {
+            "id": "x7",
+            "text": "timestamp",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "visible"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e4",
+          "predicate": "have",
+          "anchor": "has",
+          "arguments": {
+            "ARG0": "x3",
+            "ARG1": "x7"
+          }
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, footage, scope, world, route, unspecified)",
+        "property(X1, mod, dashcam, scope, world, route, unspecified)",
+        "referent(X2, timestamp, scope, world, route, unspecified)",
+        "property(X2, mod, visible, scope, world, route, unspecified)",
+        "have(E1, ARG0, X1, ARG1, X2, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e4",
+            "predicate": "have",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              4
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x3",
+            "text": "footage",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "dashcam"
+              }
+            ]
+          },
+          {
+            "id": "x7",
+            "text": "timestamp",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "visible"
+              },
+              {
+                "role": "time",
+                "value": "{\"kind\":\"time\",\"value\":\"2025-07-20T09:54:00\"}"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e4",
+          "predicate": "have",
+          "anchor": "has",
+          "arguments": {
+            "ARG0": "x3",
+            "ARG1": "x7"
+          }
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, footage, scope, world, route, unspecified)",
+        "property(X1, mod, dashcam, scope, world, route, unspecified)",
+        "referent(X2, timestamp, scope, world, route, unspecified)",
+        "property(X2, mod, visible, scope, world, route, unspecified)",
+        "property(X2, time, {\"kind\":\"time\",\"value\":\"2025-07-20T09:54:00\"}, scope, world, route, unspecified)",
+        "have(E1, ARG0, X1, ARG1, X2, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e4",
+            "predicate": "have",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              4
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1831",
+    "text": "The map shows the spread of the fire from 6:00am on January 6 to 12:00am on January 12.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "map",
+            "type": "entity"
+          },
+          {
+            "id": "span3_17",
+            "text": "spread of the fire from 6:00am on January 6 to 12:00am on January 12",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "show",
+          "anchor": "shows",
+          "arguments": {
+            "ARG0": "x2"
+          },
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "entity",
+                "ref": "span3_17"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, map, scope, world, route, unspecified)",
+        "proposition(E1, ARG1, depiction, c1::TgR_u37mCoQ4_1831, scope, world, route, unspecified)",
+        "referent(X2, spread of the fire from 6:00am on January 6 to 12:00am on January 12, scope, c1::TgR_u37mCoQ4_1831, route, visual_depiction, owner, E1)",
+        "show(E1, ARG0, X1, ARG1, c1::TgR_u37mCoQ4_1831, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "show",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "unsupported",
+      "code": "unlinked_temporal_value",
+      "reason": "An explicit time span has no normalized linked value.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "map",
+            "type": "entity"
+          },
+          {
+            "id": "span3_17",
+            "text": "spread of the fire from 6:00am on January 6 to 12:00am on January 12",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "show",
+          "anchor": "shows",
+          "arguments": {
+            "ARG0": "x2"
+          },
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "entity",
+                "ref": "span3_17"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, map, scope, world, route, unspecified)",
+        "proposition(E1, ARG1, depiction, c1::TgR_u37mCoQ4_1831, scope, world, route, unspecified)",
+        "referent(X2, spread of the fire from 6:00am on January 6 to 12:00am on January 12, scope, c1::TgR_u37mCoQ4_1831, route, visual_depiction, owner, E1)",
+        "show(E1, ARG0, X1, ARG1, c1::TgR_u37mCoQ4_1831, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "show",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1908",
+    "text": "Additional footage of the heatmap shows fire growth on January 8th, 2025.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "footage",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Additional"
+              }
+            ],
+            "relations": [],
+            "propositions": [
+              {
+                "role": "content",
+                "kind": "depiction",
+                "route": "visual_depiction",
+                "body": {
+                  "op": "entity",
+                  "ref": "x5"
+                }
+              }
+            ]
+          },
+          {
+            "id": "x5",
+            "text": "heatmap",
+            "type": "entity"
+          },
+          {
+            "id": "span6_12",
+            "text": "fire growth on January 8th, 2025",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e6",
+          "predicate": "show",
+          "anchor": "shows",
+          "arguments": {
+            "ARG0": "x2"
+          },
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "entity",
+                "ref": "span6_12"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, footage, scope, world, route, unspecified)",
+        "property(X1, mod, Additional, scope, world, route, unspecified)",
+        "proposition(X1, content, depiction, c1::TgR_u37mCoQ4_1908, scope, world, route, unspecified)",
+        "referent(X2, heatmap, scope, c1::TgR_u37mCoQ4_1908, route, visual_depiction, owner, X1)",
+        "proposition(E1, ARG1, depiction, c2::TgR_u37mCoQ4_1908, scope, world, route, unspecified)",
+        "referent(X3, fire growth on January 8th, 2025, scope, c2::TgR_u37mCoQ4_1908, route, visual_depiction, owner, E1)",
+        "show(E1, ARG0, X1, ARG1, c2::TgR_u37mCoQ4_1908, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e6",
+            "predicate": "show",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              6
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "unsupported",
+      "code": "unlinked_temporal_value",
+      "reason": "An explicit time span has no normalized linked value.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "footage",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Additional"
+              }
+            ],
+            "relations": [],
+            "propositions": [
+              {
+                "role": "content",
+                "kind": "depiction",
+                "route": "visual_depiction",
+                "body": {
+                  "op": "entity",
+                  "ref": "x5"
+                }
+              }
+            ]
+          },
+          {
+            "id": "x5",
+            "text": "heatmap",
+            "type": "entity"
+          },
+          {
+            "id": "span6_12",
+            "text": "fire growth on January 8th, 2025",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e6",
+          "predicate": "show",
+          "anchor": "shows",
+          "arguments": {
+            "ARG0": "x2"
+          },
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "entity",
+                "ref": "span6_12"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, footage, scope, world, route, unspecified)",
+        "property(X1, mod, Additional, scope, world, route, unspecified)",
+        "proposition(X1, content, depiction, c1::TgR_u37mCoQ4_1908, scope, world, route, unspecified)",
+        "referent(X2, heatmap, scope, c1::TgR_u37mCoQ4_1908, route, visual_depiction, owner, X1)",
+        "proposition(E1, ARG1, depiction, c2::TgR_u37mCoQ4_1908, scope, world, route, unspecified)",
+        "referent(X3, fire growth on January 8th, 2025, scope, c2::TgR_u37mCoQ4_1908, route, visual_depiction, owner, E1)",
+        "show(E1, ARG0, X1, ARG1, c2::TgR_u37mCoQ4_1908, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e6",
+            "predicate": "show",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              6
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1924",
+    "text": "The video depicts a 'Palisades Incident Operations Update' from January 12, 2025.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "video",
+            "type": "entity"
+          },
+          {
+            "id": "span3_14",
+            "text": "Palisades Incident Operations Update' from January 12, 2025",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "depict",
+          "anchor": "depicts",
+          "arguments": {
+            "ARG0": "x2"
+          },
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "entity",
+                "ref": "span3_14"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, video, scope, world, route, unspecified)",
+        "proposition(E1, ARG1, depiction, c1::TgR_u37mCoQ4_1924, scope, world, route, unspecified)",
+        "referent(X2, Palisades Incident Operations Update' from January 12, 2025, scope, c1::TgR_u37mCoQ4_1924, route, visual_depiction, owner, E1)",
+        "depict(E1, ARG0, X1, ARG1, c1::TgR_u37mCoQ4_1924, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "depict",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "unsupported",
+      "code": "unlinked_temporal_value",
+      "reason": "An explicit time span has no normalized linked value.",
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "video",
+            "type": "entity"
+          },
+          {
+            "id": "span3_14",
+            "text": "Palisades Incident Operations Update' from January 12, 2025",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "depict",
+          "anchor": "depicts",
+          "arguments": {
+            "ARG0": "x2"
+          },
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "entity",
+                "ref": "span3_14"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, video, scope, world, route, unspecified)",
+        "proposition(E1, ARG1, depiction, c1::TgR_u37mCoQ4_1924, scope, world, route, unspecified)",
+        "referent(X2, Palisades Incident Operations Update' from January 12, 2025, scope, c1::TgR_u37mCoQ4_1924, route, visual_depiction, owner, E1)",
+        "depict(E1, ARG0, X1, ARG1, c1::TgR_u37mCoQ4_1924, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "depict",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    }
+  }
+]

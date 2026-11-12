@@ -2,6 +2,53 @@
   "updated": "2026-11-12",
   "steps": [
     {
+      "id": 24,
+      "title": "Resolve event and interval references, then set a stopping point",
+      "status": "proposed; not implemented",
+      "items": [
+        {
+          "text": "Link During this time to the stated interval and the same event—resolve cross-clause temporal references",
+          "done": false
+        },
+        {
+          "text": "Test nominal events without inventing missing predicates—distinguish collapse/spread events from entity strings",
+          "done": false
+        },
+        {
+          "text": "Freeze shared components and evaluate new claims—measure bindings and source context before further expansion/training",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Test shared values, phrase relations and semantic checks",
+      "status": "experiment and review complete; publication checks recorded separately",
+      "items": [
+        {
+          "text": "Prepare36construction variants/contrasts before implementation and cache actual dependency/SRL predictions",
+          "done": true
+        },
+        {
+          "text": "Centralize values across argument positions; preserve typed repeated times, explicit zones and ambiguous time scales",
+          "done": true
+        },
+        {
+          "text": "Test contextual phrase relations and source alignments with preserved source/negation/modal context",
+          "done": true
+        },
+        {
+          "text": "Replay cached419responses and all2375originals; inspect new/changed programs and newly flagged old passes",
+          "done": true
+        },
+        {
+          "text": "Run385tests and exact2375historicaldefault comparison",
+          "done": true
+        }
+      ],
+      "note": "Three reviewed recoveries and three withdrawn legacy passes;1953/2375retained.34/36targetchecks are compiler-author diagnostics, not whole-claim accuracy."
+    },
+    {
       "id": 22,
       "title": "Preserve meaning during composition and reference resolution",
       "status": "proposed; not implemented",
@@ -568,7 +615,7 @@
       ]
     }
   ],
-  "intro": "All449 previous rejects tested:30 direct passes skip generation,419 final model requests.27 reviewed additions to previous1926 accepted rows give1953/2375=82.23%;422 remain.84 programs generated automatically;57 not approved. Compiler-author development review, not semantic accuracy.360 tests pass;2375 historical default outputs exact. Next work targets operator/context preservation and participant reference resolution using cached responses; empirical training remains deferred.",
+  "intro": "Shared-component experiment complete:36targetchecks10→34;1437cachedclauses1140→1147. Three date/time recoveries and three newly reviewed exclusions leave1953/2375retained(82.23%),422remaining. No netcoveragegain or independentsemanticaccuracy.385tests pass; historical2375defaultoutputs exact. Next:event/intervalreferences and boundednominaleventanalysis; newempiricaltraining remainsdeferred.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -618,5 +665,6 @@
   "claim_rewrite_run": "exp/probabilistic_verification/claim_rewrite_20261111",
   "claim_split_run": "exp/probabilistic_verification/claim_split_20261112",
   "split_alignment_run": "exp/probabilistic_verification/split_alignment_20261112",
-  "full_rewrite_run": "exp/probabilistic_verification/rewrite_all_20261112"
+  "full_rewrite_run": "exp/probabilistic_verification/rewrite_all_20261112",
+  "semantic_components_run": "exp/probabilistic_verification/semantic_components_20261112"
 }
