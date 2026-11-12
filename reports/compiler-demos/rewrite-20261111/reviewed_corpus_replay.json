@@ -1,0 +1,13 @@
+{
+  "total": 2375,
+  "generated": 2105,
+  "pass_content_checks": 1927,
+  "reviewed_replacement_ids": [
+    "TzF9M4kZ3Pys_223",
+    "TFOEIehBwT8Q_504",
+    "TMrQshDs8aH0_750"
+  ],
+  "exact_records_match": true,
+  "compiler_source_files_unchanged": 38,
+  "elapsed_seconds": 35.190037647262216
+}

@@ -1,0 +1,36 @@
+{
+  "protocol": "Same40 development cases and frozen compiler; revised prompt tuned on initial proposals and supplied baseline compiler diagnostics, not truth labels. Report complete conditions, no per-claim prompt selection. Both fail the predeclared gates.",
+  "conditions": [
+    {
+      "label": "Initial prompt: clarity",
+      "path": "initial_prompt",
+      "actual_text_changes": 9,
+      "identical_rewrite_actions": 7,
+      "faithful_target_recoveries": 1,
+      "rewritten_targets_pass_checks": 3,
+      "guard_acceptances": 0,
+      "control_regressions": 1,
+      "model_proposed_critical_changes": 3,
+      "pilot_gate_passed": false,
+      "recovered_ids": [
+        "TFgw4IaR9R8s_1612"
+      ]
+    },
+    {
+      "label": "Revised prompt: compiler diagnostic",
+      "path": "diagnostic_prompt",
+      "actual_text_changes": 29,
+      "identical_rewrite_actions": 4,
+      "faithful_target_recoveries": 2,
+      "rewritten_targets_pass_checks": 10,
+      "guard_acceptances": 1,
+      "control_regressions": 2,
+      "model_proposed_critical_changes": 11,
+      "pilot_gate_passed": false,
+      "recovered_ids": [
+        "TMrQshDs8aH0_750",
+        "TzF9M4kZ3Pys_223"
+      ]
+    }
+  ]
+}

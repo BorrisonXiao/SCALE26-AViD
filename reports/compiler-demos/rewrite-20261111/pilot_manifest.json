@@ -1,0 +1,363 @@
+{
+  "cases": [
+    {
+      "claim_id": "Txf2EdqOg1SQ_2185",
+      "group": "target",
+      "text": "The highest rainfall accumulation of the day was in Meishan Township, Chiayi, which received 149.0 mm.",
+      "reading": "Highest rainfall of the day is in Meishan Township, Chiayi; that township received149.0mm. Preserve the superlative, location and amount.",
+      "original_status": "unsupported",
+      "original_code": "duplicate_role"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2257",
+      "group": "target",
+      "text": "Severe flooding is shown indoors in Zhongshan, with tools submerged in a blue basket.",
+      "reading": "Shown content: severe indoor flooding in Zhongshan, with tools submerged in a blue basket. Do not assert an independent unseen event.",
+      "original_status": "unsupported",
+      "original_code": "duplicate_role"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "group": "target",
+      "text": "In the second shot, an emergency vehicle is visible on the side of the road with emergency lights flashing.",
+      "reading": "In the second shot an emergency vehicle is visible at the road side and its emergency lights are flashing.",
+      "original_status": "unsupported",
+      "original_code": "duplicate_role"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "group": "target",
+      "text": "The video shows stills of Pete's Seafood, a restaurant at Topanga Beach, which has survived many fires.",
+      "reading": "Video stills depict Pete's Seafood, a restaurant at Topanga Beach; the restaurant has survived many fires. Preserve scope/antecedent.",
+      "original_status": "unsupported",
+      "original_code": "duplicate_role"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "group": "target",
+      "text": "Image of Trump signing something (likely executive orders).",
+      "reading": "An image depicts Trump signing something; executive orders are only a likely identification.",
+      "original_status": "unsupported",
+      "original_code": "media_modifier"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1587",
+      "group": "target",
+      "text": "Image of Trump holding up a signed document.",
+      "reading": "An image depicts Trump holding up a document that is signed. Preserve the particle up and the signed modifier.",
+      "original_status": "unsupported",
+      "original_code": "media_modifier"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_750",
+      "group": "target",
+      "text": "There are multiple additional police officers in the immediate vicinity of the police van helping and clearing space.",
+      "reading": "Multiple additional police officers near the police van help and clear space. Preserve immediate vicinity and both activities.",
+      "original_status": "unsupported",
+      "original_code": "missing_predicate"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1636",
+      "group": "target",
+      "text": "The court ruling places with Congress the authority to set tariffs or delegate control of tariffs to the President in specific situations.",
+      "reading": "A court ruling places with Congress authority to set tariffs or delegate tariff control to the President in specific situations. Preserve alternative scope.",
+      "original_status": "unsupported",
+      "original_code": "missing_srl"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1927",
+      "group": "target",
+      "text": "There is a logo onscreen at the beginning of the video for the County of Los Angeles.",
+      "reading": "A logo for the County of Los Angeles is on screen at the beginning of the video.",
+      "original_status": "unsupported",
+      "original_code": "predicate_type"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1354",
+      "group": "target",
+      "text": "A goal of the lunar planet vac is to extract information from samples.",
+      "reading": "Extracting information from samples is a goal of the lunar planet vac, not an accomplished extraction.",
+      "original_status": "unsupported",
+      "original_code": "unresolved_clause"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1263",
+      "group": "target",
+      "text": "Elytra will remain in lunar orbit to provide long-haul communications relay and support RF calibration services for NASA's telescope systems.",
+      "reading": "Elytra will remain in lunar orbit for long-haul communications relay and RF calibration support for NASA telescope systems. Preserve future and purpose.",
+      "original_status": "unsupported",
+      "original_code": "unresolved_controller"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1826",
+      "group": "target",
+      "text": "Two boys have someone take a picture of themselves on bridge where fire and smoke can be seen in back.",
+      "reading": "Two boys arrange for someone to photograph the boys on a bridge; fire and smoke are visible in the background. Do not resolve any further reference.",
+      "original_status": "unsupported",
+      "original_code": "unresolved_clause"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_192",
+      "group": "target",
+      "text": "Video beginning velocity 17828 mph.",
+      "reading": "The video beginning has velocity17828mph. Preserve beginning and quantity; no named vehicle is supplied.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "group": "target",
+      "text": "The physical integrity of the power lines seems intact.",
+      "reading": "The physical integrity of the power lines seems intact; preserve apparent rather than certain condition.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "group": "target",
+      "text": "Robot race inside a running  track.",
+      "reading": "A robot race is inside a running track. Keep both race and location.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "group": "target",
+      "text": "Robot on lane three comes in second place.",
+      "reading": "The robot on lane three comes second. Bind lane and rank to that robot, not another participant.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "group": "target",
+      "text": "Robot 1 sweep kicks Robot 2",
+      "reading": "Robot1 performs a sweep kick on Robot2; identifiers and direction must survive.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1035",
+      "group": "target",
+      "text": "The earthquake had a magnitude of 7.7.",
+      "reading": "Earthquake magnitude is7.7; preserve value and quantity owner.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "group": "target",
+      "text": "Blue Ghost had three and a half elliptical orbits around Earth.",
+      "reading": "Blue Ghost had three and a half elliptical orbits around Earth. Preserve3.5 concept and past tense.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "group": "target",
+      "text": "The braking burn reduced Blue Ghost's orbital velocity to 40 meters/second.",
+      "reading": "The braking burn reduced Blue Ghost's orbital velocity to40meters/second. Preserve resulting velocity and rate unit.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "group": "target",
+      "text": "The court is a three judge panel.",
+      "reading": "The court consists of a panel of three judges. Preserve cardinality and panel relation.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "group": "target",
+      "text": "Building housing Kantipur Publications in Kathmandu on fire.",
+      "reading": "The building housing Kantipur Publications in Kathmandu is on fire. Keep occupants, location and fire state.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2350",
+      "group": "target",
+      "text": "Wipha is moving northwest at a speed of 20-25 km/h.",
+      "reading": "Wipha is moving northwest at20–25km/h; preserve range, rate, direction and progressive.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "group": "target",
+      "text": "A reporter in Zhuhai, Guangdong is shown wearing a white raincoat.",
+      "reading": "Depiction of a reporter in Zhuhai, Guangdong wearing a white raincoat. Preserve place apposition and depicted content.",
+      "original_status": "unsupported",
+      "original_code": "coverage_omission"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_789",
+      "group": "control",
+      "text": "The tram passes through the De La Reyweg rail station.",
+      "reading": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict.",
+      "original_status": "compiled",
+      "original_code": null
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1366",
+      "group": "control",
+      "text": "Blue Ghost is a spacecraft.",
+      "reading": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict.",
+      "original_status": "compiled",
+      "original_code": null
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_782",
+      "group": "control",
+      "text": "Many large blue containers are on the pier.",
+      "reading": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict.",
+      "original_status": "compiled",
+      "original_code": null
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1690",
+      "group": "control",
+      "text": "Trump reports that the tariffs will generate lots of money and jobs.",
+      "reading": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict.",
+      "original_status": "compiled",
+      "original_code": null
+    },
+    {
+      "claim_id": "TInVWzp25aIM_18",
+      "group": "control",
+      "text": "The typhoon strengthened over the Bering Straight before hitting Alaska.",
+      "reading": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict.",
+      "original_status": "compiled",
+      "original_code": null
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1805",
+      "group": "control",
+      "text": "Text overlay reads 'Mob burns down Hotel Hilton'.",
+      "reading": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict.",
+      "original_status": "compiled",
+      "original_code": null
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1079",
+      "group": "control",
+      "text": "The earthquake occurred on March 28, 2025.",
+      "reading": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict.",
+      "original_status": "compiled",
+      "original_code": null
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1955",
+      "group": "control",
+      "text": "Jeremiah Wittwer requests that residents not fly drones.",
+      "reading": "The stated participants, relevant modifiers and clause/source relationships are retained under the declared verifier contracts. This is a text-structure judgment, not a media verdict.",
+      "original_status": "compiled",
+      "original_code": null
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1916",
+      "group": "guard",
+      "text": "The video features no narration.",
+      "reading": "No narration is quantified absence; do not turn it into a positive entity with a negated property.",
+      "original_status": "unsupported",
+      "original_code": "negative_quantifier"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1901",
+      "group": "guard",
+      "text": "The video has no audio.",
+      "reading": "No audio is quantified absence; do not turn it into a positive audio entity.",
+      "original_status": "unsupported",
+      "original_code": "negative_quantifier"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_921",
+      "group": "guard",
+      "text": "It looked certain Poilievre would replace Trudeau; main question was margin of victory.",
+      "reading": "Preserve looked certain and would; do not assert a replacement or remove uncertainty.",
+      "original_status": "unsupported",
+      "original_code": "modal_scope"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_820",
+      "group": "guard",
+      "text": "However, not enough gains, and failure to sufficiently weaken Fortress Toronto prevented Conservatives from forming government.",
+      "reading": "Preserve insufficient gains and failure to sufficiently weaken, and their prevention relation.",
+      "original_status": "unsupported",
+      "original_code": "threshold_scope"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "group": "guard",
+      "text": "Not much to see with respect to spin until the 3rd.",
+      "reading": "Preserve not much, spin and until the third; do not supply an unspecified event or date.",
+      "original_status": "unsupported",
+      "original_code": "polarity_omission"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_823",
+      "group": "guard",
+      "text": "2021 map shows more Bloc Québécois seats (blue) — not as much red.",
+      "reading": "Preserve comparison and not-as-much-red scope in the map description.",
+      "original_status": "unsupported",
+      "original_code": "polarity_omission"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_803",
+      "group": "guard",
+      "text": "Host introduces David Aiken, chief political correspondent, at his touchscreen to explain how Liberals secured their minority government.",
+      "reading": "Do not choose whether host or David Aiken explains. Both possible controllers must remain unresolved.",
+      "original_status": "compiled",
+      "original_code": null
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "group": "guard",
+      "text": "Protester holds a sign \"They shut down my voice without realizing that they would awaken the voice of all of Mexico.\"",
+      "reading": "The full sign quotation is exact text, including would and without; do not interpret it as world assertions.",
+      "original_status": "unsupported",
+      "original_code": "modal_scope"
+    }
+  ],
+  "source_groups": [
+    "T1JQ-aG78Zuc",
+    "T2EE72iNELEs",
+    "T2G_ACMxR_I4",
+    "T3HTSBW42QaY",
+    "TFOEIehBwT8Q",
+    "TFgw4IaR9R8s",
+    "TInVWzp25aIM",
+    "TMrQshDs8aH0",
+    "TQEmEycTI0RQ",
+    "TW4OYA3RN-Hw",
+    "Tg0UxWYuPeJ0",
+    "TgPh_fzHTCm4",
+    "TgR_u37mCoQ4",
+    "TjHepwuhkYFA",
+    "Txf2EdqOg1SQ",
+    "TzF9M4kZ3Pys"
+  ],
+  "reserved_original_video_groups": [
+    "T8u81WMIyj18",
+    "TKCfkoNUssZI",
+    "TLO3smKI67PM",
+    "TQKCK6-tRaoE",
+    "TbJqMFkNxARY",
+    "Tsuk2uoYj-kc",
+    "TzzhcBIczf_M"
+  ],
+  "protocol": "Purposively selected development set from earlier inspected claims; not independent gold or an unseen test. Readings frozen before model generation. Reserved groups get no prompt tuning.",
+  "gates": {
+    "minimum_faithful_recoveries": 12,
+    "targets": 24,
+    "control_regressions": 0,
+    "accepted_critical_changes": 0
+  },
+  "baseline_sha256": {
+    "inputs.jsonl": "cf0f8f8117c61034219725549031a5a25675f1c7bd683751d3c45f2ba2350fd1",
+    "results.jsonl": "77d188658b4c88003e201b16c524b927fb29335cecdc4c4640491c0634b42f63",
+    "frozen_manifest.json": "a6e5990d3964b38edd80fba93c2d0e3f70db0909560264ec26968720fca25b34"
+  }
+}

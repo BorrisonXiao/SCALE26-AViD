@@ -316,26 +316,26 @@
     {
       "id": 18,
       "title": "Develop a checked rewrite pilot before new learning experiments",
-      "status": "proposed next implementation; not started",
+      "status": "pilot complete; both prompts fail fidelity/recovery gates; automatic expansion and learning deferred",
       "items": [
         {
           "text": "Keep the compiler fixed and reserve source groups before prompt tuning\u2014make a fair baseline comparison",
-          "done": false
+          "done": true
         },
         {
           "text": "Prepare24 failed targets,8 unchanged controls and8 guard cases\u2014check information preservation as well as compilation",
-          "done": false
+          "done": true
         },
         {
           "text": "Review original/rewrite/predicate triples\u2014preserve participants, quantities, time, modality, negation, quotes and source scope",
-          "done": false
+          "done": true
         },
         {
-          "text": "Proceed to checked training examples only after the pilot gates\u2014avoid treating automatic passes as clean labels",
+          "text": "Hold new training until a bounded preparation evaluation passes\u2014current pilot gates are not met",
           "done": false
         }
       ],
-      "note": "Recommendation: stop broad grammar expansion now. Basic source/quote/typing bugs remain compiler maintenance; rewriting is not assumed to fix unsupported quantified absence or ambiguous meanings."
+      "note": "Two fixed prompts on the same40 cases: faithful target recoveries1/24 then2/24; revised guard recovery1, proposed control regressions2/8. All80 triples reviewed by the compiler-author assistant. Full original replay2375 exact; three reviewed replacements give2105 generated/1927 content-check passes. No corpus-wide rewrite, media inference or new learning/inference experiment."
     },
     {
       "id": 8,
@@ -464,7 +464,7 @@
       ]
     }
   ],
-  "intro": "Current frozen compiler:2,103 programs generated from2,375 claims;1,924 pass word/clause/list content checks. These metrics are separate from semantic accuracy. The11 November audit reviewed all179 candidate alerts,34 no-program cases and23 passing controls. The next proposed implementation is a small checked rewrite pilot, before relation training.",
+  "intro": "Original-text compiler baseline remains2,103 generated programs and1,924 content-check passes on2,375 claims. The checked rewrite pilot is complete: two fixed prompts recover1/24 and2/24 targets under assistant semantic review; revised condition also recovers one exact-quote guard. It fails the predeclared gates. Three reviewed diagnostic replacements yield2,105 generated/1,927 passing; these are not semantic-accuracy or clean training-set counts.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -491,8 +491,8 @@
     "status": "fixed-input comparison and focused qualitative review; not a selected production parser"
   },
   "rewrite_fallback": {
-    "status": "reserved; explicitly not to be implemented yet",
-    "policy": "Improve compilation of original claims first. Consider information-preserving LLM rewriting only later for difficult edge cases or unseen patterns, with semantic checks."
+    "status": "implemented experimental pilot; manual review required; automatic expansion not enabled",
+    "policy": "Keep original claims and compiler frozen; preserve exact names/quotes and false facts. Both40-case prompt conditions fail the predeclared gates. Do not expand automatically or start new relation training based on generated counts."
   },
   "logical_form_run": {
     "source_path": "exp/probabilistic_verification/logical_form_20261028",
@@ -510,5 +510,6 @@
   "scope_coverage_run": "exp/probabilistic_verification/scope_coverage_20261105",
   "content_recovery_run": "exp/probabilistic_verification/content_recovery_20261105",
   "content_relations_run": "exp/probabilistic_verification/content_relations_20261105",
-  "compiler_alert_review_run": "exp/probabilistic_verification/compiler_alert_review_20261111"
+  "compiler_alert_review_run": "exp/probabilistic_verification/compiler_alert_review_20261111",
+  "claim_rewrite_run": "exp/probabilistic_verification/claim_rewrite_20261111"
 }

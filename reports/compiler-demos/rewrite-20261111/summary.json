@@ -1,0 +1,80 @@
+{
+  "total_cases": 40,
+  "targets": 24,
+  "controls": 8,
+  "guards": 8,
+  "faithful_target_recoveries": 2,
+  "recovered_ids": [
+    "TMrQshDs8aH0_750",
+    "TzF9M4kZ3Pys_223"
+  ],
+  "rewritten_targets_pass_checks": 10,
+  "actual_text_changes": 29,
+  "identical_rewrite_actions": 4,
+  "reviewed_recoveries_total": 3,
+  "guard_recovered_ids": [
+    "TFOEIehBwT8Q_504"
+  ],
+  "control_regressions": 2,
+  "operational_control_regressions": 0,
+  "guard_acceptances": 1,
+  "model_proposed_critical_changes": 11,
+  "accepted_critical_changes": 0,
+  "actions": {
+    "rewrite": 33,
+    "keep": 7
+  },
+  "target_outcomes": {
+    "rewrite_action_without_text_edit": 4,
+    "unjustified_spatial_attachment": 1,
+    "faithful_rewrite_still_refused": 3,
+    "added_metalinguistic_assertion": 1,
+    "changed_uncertain_object_number": 1,
+    "invented_signer": 1,
+    "faithful_recovery": 2,
+    "redundant_clause_still_refused": 1,
+    "invented_mission_context": 1,
+    "added_controller_statement": 1,
+    "changed_owner_and_time": 1,
+    "wrong_activity_binding": 1,
+    "wrong_actor_despite_identifier_recovery": 1,
+    "metalinguistic_gloss_does_not_fix_count": 1,
+    "rate_unit_split": 1,
+    "coarse_count_requires_contract": 1,
+    "changed_building_relationship": 1,
+    "speed_range_is_object_count": 1
+  },
+  "original_corpus": {
+    "total": 2375,
+    "generated": 2103,
+    "pass_content_checks": 1924
+  },
+  "reviewed_corpus": {
+    "total": 2375,
+    "generated": 2105,
+    "pass_content_checks": 1927,
+    "remaining_strict_refusals": 448,
+    "reviewed_replacements": 3
+  },
+  "pilot_gate_passed": false,
+  "compiler_changed": false,
+  "broader_rewrite_run": false,
+  "new_relation_training": false,
+  "new_deepproblog_inference": false,
+  "evidence": "Compiler-author assistant semantic judgments; no independent human gold or unseen-test accuracy.",
+  "decision": "Do not enable automatic rewriting or scale it to the remaining corpus: the revised pilot fails the predeclared gates.",
+  "interpretation": "The revised prompt improves local recoveries but also adds unsupported assertions. Two of24 targets yield reviewed faithful structures, plus one exact-sign-quotation guard. Ten targets pass automatic checks, which is not10 semantic recoveries. Two proposed controls regress; review rejects them. The initial prompt had one different faithful target recovery; results are not combined per claim.",
+  "failure_patterns": [
+    "Diagnostic text encourages repairs but can also prompt invented signers, mission context and comparative references.",
+    "The model sometimes claims a rewrite while emitting the exact original; its explanations are not evidence of successful repair.",
+    "Reparsing can recover a missing participant while assigning another role incorrectly, such as sweep as the kicking actor or track as a running actor.",
+    "Word coverage misses typed-quantity errors: a rate interval can become object-count bounds, and a fractional orbit count can remain exactly three.",
+    "Equivalent English negation does not repair the compiler's unsupported quantified-absence scope.",
+    "Exact names and quotations still change despite explicit instructions; surface checks and review reject those proposals."
+  ],
+  "next_steps": [
+    "Review the three retained diagnostic-prompt recoveries and rejected examples with the user—confirm the assistant fidelity judgments before treating them as training structures.",
+    "Keep the compiler and both prompts frozen; address only the identified quantity/scope contracts or test a stronger rewriter in a separate fixed comparison—avoid another open-ended series of grammar rules.",
+    "Repeat a bounded fidelity evaluation before any corpus-wide rewrite; prepare DeepProbLog training only from checked structures after that gate."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+  "dtype": "float16",
+  "temperature": 0,
+  "seed": 42,
+  "max_tokens": 768,
+  "vllm": "0.18.0",
+  "transformers": "4.57.6",
+  "slurm_job_id": "1225198",
+  "gpu_names": [
+    "NVIDIA A100 80GB PCIe"
+  ],
+  "input_sha256": "92c0647a4206df7864b5812e2ccd8ef2ec5f20aa084c18a63e3ddc97b4ca1135",
+  "source_sha256": {
+    "scripts/run_claim_rewrite_model.py": "d49fbed4cc7771689973a9643cebedfabaaf203b0d24efea6fa4ba8bb16d29ac",
+    "scripts/probabilistic_verification/claim_rewrite.py": "0ff3728a5a71d3d9ada4189a0f868381d113fd9b7cff2817492a2cf06cc9a568"
+  },
+  "model_sha256": {
+    "config.json": "a1ee086a68d0cbfc87316da00ba4b8507bd1292978108e2496201a30a450f438",
+    "tokenizer_config.json": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+    "generation_config.json": "19d306dd769db12a9d710b44cf7f83b635efbe5166b84fb4358a08fb7d88bb53"
+  },
+  "system_prompt": "Rewrite a claim for a fixed semantic-role parser and logic compiler. Its diagnostic describes a parsing failure, not whether the claim is true. If possible, repair the sentence structure responsible for that failure: turn fragments into complete clauses, make unambiguous subjects explicit, or replace a difficult attachment with explicit coordination. Use one sentence; change as little as needed. If no safe useful edit is possible, keep the original or refuse. The supplied parses can be wrong.\nPreserve all information, even false facts: names and spelling, numeric strings and number words, units, dates, tense/aspect, negation, uncertainty, comparison, and who does what to whom. Do not guess references or add participants. Keep exact quotation wording and keep depicted, planned or reported events within that context. Never turn absence into a positive assertion. Do not correct facts or spelling.\nReturn JSON: action (keep, rewrite, refuse), text, and a short reason. For keep/refuse copy the original exactly. Use rewrite only if the text actually changes. A useful rewrite must address the diagnostic; adding articles or punctuation alone usually will not. Do not invent evidence or logical predicates.\n",
+  "diagnostics_sha256": "56de9b7254a2299223cc9bb1103369e55d0467d14eeff92f4aac97dab3ea4909"
+}

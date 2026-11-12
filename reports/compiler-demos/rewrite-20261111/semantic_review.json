@@ -1,0 +1,420 @@
+{
+  "provenance": "Compiler-author assistant review of all40 original/proposal/compiled triples, against pre-generation readings. The revised prompt was motivated by initial proposal inspection and baseline diagnostics; this is development tuning, not independent human gold or an unseen test.",
+  "cases": [
+    {
+      "claim_id": "Txf2EdqOg1SQ_2185",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "rewrite_action_without_text_edit",
+      "reason": "No text edit was made; the original compiler failure remains: SRL repeats ARG0 on received",
+      "artifact_sha256": "5bfc5e7a98acb4b069b3542d0c2b59e8207e1d73e8ca560853df1e2bfe292352"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2257",
+      "rewrite_faithful": null,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "unjustified_spatial_attachment",
+      "reason": "The added relative clause assigns indoors specifically to the basket. The original locates the shown flooding indoors; this attachment is not explicitly established. Compilation still reports duplicate location roles. No faithful recovery is established.",
+      "artifact_sha256": "c2ee573ceb2e0424d3cdbdbfde39f186180222fc86a0983ec165f2f9cbefcc17"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "faithful_rewrite_still_refused",
+      "reason": "Its emergency lights makes the natural vehicle/light relationship explicit, preserving the frozen reading. Duplicate location roles still prevent compilation.",
+      "artifact_sha256": "7c0f7d02ac4ec3b7ee0f24e52803db641dbf5108e051e023b2142dc1ca950f9a"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "rewrite_faithful": false,
+      "compiled_faithful": null,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "added_metalinguistic_assertion",
+      "reason": "The restaurant is the subject of the survival claim is an added statement about language, rather than a simpler rendition of the event. The original relative clause remains, and its duplicate role remains unresolved.",
+      "artifact_sha256": "c389acc5460d3cbaa1356b70c17be84cf3fdbdb4779ceadd65ae681f9948189a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "rewrite_faithful": false,
+      "compiled_faithful": null,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "changed_uncertain_object_number",
+      "reason": "Likely executive orders becomes likely an executive order, narrowing an unspecified possibly plural object to a single order. Compilation still fails on repeated ARG1.",
+      "artifact_sha256": "b8e0cfbbb05d67b6430c95e08bc0585dc8f47edf9dbd7f8033c2f2feb99d5920"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1587",
+      "rewrite_faithful": false,
+      "compiled_faithful": null,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "invented_signer",
+      "reason": "A signed document does not establish that Trump signed it. Which he signed invents a participant binding, even though the model says it only clarifies the text. The media modifier also remains unresolved.",
+      "artifact_sha256": "f106182abf4c485e8d1a4be1aee57856f7a89acb46db3836776e4e57779e94d7"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_750",
+      "rewrite_faithful": true,
+      "compiled_faithful": true,
+      "critical_change": false,
+      "accepted": true,
+      "outcome": "faithful_recovery",
+      "reason": "The explicit who are clause binds helping and clearing space to the same officers. The officer group retains multiple, additional and police; immediate vicinity remains linked to the police van. The compiled relative context shares the officers across both events and preserves progressive aspect.",
+      "artifact_sha256": "3d69849c1f2f7451cf41117674c8e4191ac5228a452151545c924d2d0a42d34a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1636",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "faithful_rewrite_still_refused",
+      "reason": "Repeating to preserves the alternative infinitives and the authority relation. The semantic-role model still provides no usable main frame.",
+      "artifact_sha256": "506f4f5b9ce3f9ebd223f375563efdd6ba60549841e1b9d68639e43d1bcd6250"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1927",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "redundant_clause_still_refused",
+      "reason": "The added visibility clause is redundant with an onscreen logo and repeats the same beginning-of-video time. It does not replace the problematic onscreen predicate, which still causes refusal.",
+      "artifact_sha256": "71666b60cf6a3dfdf65c43b57d9fea50d105b205c477e2d292a432dd09590433"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1354",
+      "rewrite_faithful": false,
+      "compiled_faithful": null,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "invented_mission_context",
+      "reason": "The added mission is not in the original claim. Stating that the goal is part of its mission adds a new entity and relationship instead of repairing the extraction-goal clause. That clause remains unresolved.",
+      "artifact_sha256": "8124daa079aad3a3627501a29cb64be6f29487b9a03e6b4563afb158ec0ab15d"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1263",
+      "rewrite_faithful": false,
+      "compiled_faithful": null,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "added_controller_statement",
+      "reason": "Serving as the controller for the relay adds a statement about a controller rather than simply making Elytra the subject of the original purpose clause. The original relay frame still has no licensed controller.",
+      "artifact_sha256": "d16014009e9a9c14b19d85101ee99c14019497bddd3c76d1fc68c1b857defa7d"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1826",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "faithful_rewrite_still_refused",
+      "reason": "Articles make the original wording grammatical while retaining the boys as the intended photograph subjects and the bridge/background description. The reparsed seen frame repeats location roles and is still refused.",
+      "artifact_sha256": "d58c79c4e4573e6be1f9c0cf9b41bb486f42fae01633d307893c47121e35159e"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_192",
+      "rewrite_faithful": false,
+      "compiled_faithful": false,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "changed_owner_and_time",
+      "reason": "The video beginning is recast as the video's beginning velocity. The compiled output uses video's as the measured entity and beginning as a modifier; it does not express the beginning-of-video time context or a justified velocity owner. Passing coverage is insufficient.",
+      "artifact_sha256": "28ec74bc452500c8ae767e440350ee70d6aecfabb6d24766d3a8c00bb79897a1"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "rewrite_faithful": true,
+      "compiled_faithful": true,
+      "critical_change": false,
+      "accepted": true,
+      "outcome": "faithful_recovery",
+      "reason": "Seems to be intact retains apparent rather than certain integrity. The physical-integrity entity is linked to the power lines; the intact predication is kept inside the seem complement and shares the integrity entity. Previously those participants were absent.",
+      "artifact_sha256": "c0a0fcb5315acb895b2b13582d56b57ac72e3e0a9fb0b455578c62f9d65f7999"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "rewrite_faithful": true,
+      "compiled_faithful": false,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "wrong_activity_binding",
+      "reason": "Taking place makes the race fragment grammatical. The compiler nevertheless treats place as an entity and adds a running event whose actor is the track. A running track is a location, not an actor that runs; the compiled binding remains wrong.",
+      "artifact_sha256": "2164ce206865a5004411053b7dfdb3395e697a86edd38217aa8d0b89e8fec0d3"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "rewrite_action_without_text_edit",
+      "reason": "No text edit was made; the original compiler failure remains: Unrepresented source content: three",
+      "artifact_sha256": "1446284ad11d2735a3967e0ef3029c6979b2506c3c9f4b0d2a3c3dec2959936e"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "rewrite_faithful": true,
+      "compiled_faithful": false,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "wrong_actor_despite_identifier_recovery",
+      "reason": "A final period preserves the claim and lets Robot2 retain its full name. The actor of kick is still sweep, modified by Robot1, rather than Robot1 performing a sweep kick. The central participant binding is wrong despite passing checks.",
+      "artifact_sha256": "051d3f9df1fcc42b1a078ee025663ba758c60af7145387e532fbf851fde4926e"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1035",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "rewrite_action_without_text_edit",
+      "reason": "No text edit was made; the original compiler failure remains: Unrepresented source content: 7.7",
+      "artifact_sha256": "71a5d8e78b1a6be473bc645b9d5f4459612fc9ce4f9030aad99c0181f6ca9949"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "rewrite_faithful": false,
+      "compiled_faithful": false,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "metalinguistic_gloss_does_not_fix_count",
+      "reason": "The added clause about the word half is a metalinguistic assertion. The compiler still encodes exactly three orbits and a separate half entity/refers clause; it never binds a three-and-a-half orbit amount. The new quote also triggers the conservative quotation check.",
+      "artifact_sha256": "1673cfe5b4b460b1ef81fdcf0143a1336c96e2830c627b34712c5dfda1bbe2dd"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "rewrite_faithful": true,
+      "compiled_faithful": false,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "rate_unit_split",
+      "reason": "Meters/second to meters per second is a faithful unit paraphrase. The compiler encodes40meters and a separate second entity attached to reduce by per. This is not a typed40meters-per-second velocity and does not recover the required rate relationship.",
+      "artifact_sha256": "9d0df3a8e325cd3ceae7bccbf2863b6822717b4dbd47ee9660a9d68cbd7bd01a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "coarse_count_requires_contract",
+      "reason": "Hyphenation preserves the wording, and the compiler retains three-judge as one property of court plus panel as a copular value. It does not expose an exact three-judge group. This is a coarse retained modifier, not the explicit cardinality binding required for this pilot target; it is not counted as a fully reviewed recovery. The initial prompt produced a different, explicit group structure.",
+      "artifact_sha256": "8b8e3b1014012b3bd4d9f8c96f26cbe18c3cf1607054a05edc66e667e778ce08"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "rewrite_faithful": false,
+      "compiled_faithful": false,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "changed_building_relationship",
+      "reason": "Housing Kantipur Publications becomes housing for the publisher. The compiler treats Building as an activity and housing as the entity on fire; it never represents the original building containing the publisher. The added is repairs a clause but not its meaning.",
+      "artifact_sha256": "26b69bf51550b22772d336306c2fd34ac0e06e56a8cbc852e33d3dc7671e4cd0"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2350",
+      "rewrite_faithful": true,
+      "compiled_faithful": false,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "speed_range_is_object_count",
+      "reason": "20-25 to20to25 preserves the numerical interval but triggers an intentionally conservative numeric-string check. More importantly the compiler makes km/h an entity with minimum_count20/maximum_count25. Counting rate-unit entities is not a velocity interval, so this cannot be accepted even if the surface check were relaxed.",
+      "artifact_sha256": "315f5cc250ed271df320f3da221e362020c91f2f48b953e3c53307cecf666a69"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "rewrite_action_without_text_edit",
+      "reason": "No text edit was made; the original compiler failure remains: Unrepresented source content: Guangdong",
+      "artifact_sha256": "dfb4f27414cef78de7fd0a8d3dcf6065ddfdb2524afe230410ecb79a60120621"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_789",
+      "rewrite_faithful": true,
+      "compiled_faithful": true,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "unchanged_control",
+      "reason": "Original text and previously reviewed faithful compiled structure are unchanged.",
+      "artifact_sha256": "078b73d665bf952b6fad286753722120027651534d51473c2fd440c20aede106"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1366",
+      "rewrite_faithful": true,
+      "compiled_faithful": true,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "unchanged_control",
+      "reason": "Original text and previously reviewed faithful compiled structure are unchanged.",
+      "artifact_sha256": "e7941ce70cdda392fe15563f509275af093a4c2fe764b09b6abead1ff1ae06f8"
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_782",
+      "rewrite_faithful": true,
+      "compiled_faithful": true,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "unchanged_control",
+      "reason": "Original text and previously reviewed faithful compiled structure are unchanged.",
+      "artifact_sha256": "6bba8fe2c5dc6a503071cf935c7926853f288c5712b843d72e950c837c77a15d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1690",
+      "rewrite_faithful": true,
+      "compiled_faithful": true,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "unchanged_control",
+      "reason": "Original text and previously reviewed faithful compiled structure are unchanged.",
+      "artifact_sha256": "ed876d93d613d1f282d28c28aaaa0488f999c06aca2a56e8f2489fdb6ca39d0e"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_18",
+      "rewrite_faithful": false,
+      "compiled_faithful": false,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "control_name_and_reference_change",
+      "reason": "The model again corrects the exact name Bering Straight to Bering Strait. Replacing before hitting with before it hit introduces an unresolved it instead of a shared typhoon participant, and the parse adds a bering event. The original faithful control is retained.",
+      "artifact_sha256": "9e6857af013ecb57c397346a14d97003290cc66b4a55a68d95c2aefc5514f2c6"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1805",
+      "rewrite_faithful": false,
+      "compiled_faithful": false,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "control_exact_quote_removed",
+      "reason": "The exact quoted overlay text is replaced with an indirect assertion and extra articles. The compiled OCR assertion represents an event description rather than the original verbatim string. Both the quotation check and semantic review block this control regression.",
+      "artifact_sha256": "3b4e2c2b6974714767af3403de09e9f0c60b4c17b1754ee008613831a64579c8"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1079",
+      "rewrite_faithful": true,
+      "compiled_faithful": true,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "unchanged_control",
+      "reason": "Original text and previously reviewed faithful compiled structure are unchanged.",
+      "artifact_sha256": "d7c461d852d90e229494dc8625dac7df4fe90d68a90a7c17603f2fa7fcb13ae5"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1955",
+      "rewrite_faithful": true,
+      "compiled_faithful": true,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "unchanged_control",
+      "reason": "Original text and previously reviewed faithful compiled structure are unchanged.",
+      "artifact_sha256": "d6cc5bb7867c40340d45b74c1bfab244396a5fded616e586b5de26abfef06fe7"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1916",
+      "rewrite_faithful": true,
+      "compiled_faithful": false,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "quantified_absence_scope_wrong",
+      "reason": "Does not feature any narration is a faithful English paraphrase of no narration. The compiler nevertheless declares a narration referent outside the event negation. The original denies any such narration rather than requiring a narration entity and negating one feature relation. Surface marker checks also flag no→not; the semantic scope problem independently blocks acceptance.",
+      "artifact_sha256": "81da96748e7c089a9aa9094eb81ff6e2288565393595444bb500fac838639edf"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1901",
+      "rewrite_faithful": true,
+      "compiled_faithful": false,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "quantified_absence_scope_wrong",
+      "reason": "Does not have any audio is a faithful English paraphrase. The compiled audio referent is introduced outside the negated have event, leaving the unsupported quantified-absence scope unresolved. A syntactic pass is not a repair of that logical requirement.",
+      "artifact_sha256": "ad83bb2ae447e17dece226eae9208972c4f05861415de889cab952af5b400bce"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_921",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "guard_modal_still_refused",
+      "reason": "That and articles preserve looked certain and would; the compiler still explicitly refuses the would interpretation. No certainty or actual replacement is inferred.",
+      "artifact_sha256": "f20af75ee4ce8f6fa91af0f2bc9d82ae873e1f5cfd367be30d1637087d990798"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_820",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "guard_threshold_still_refused",
+      "reason": "Articles/punctuation preserve the insufficient-gains and failure-to-weaken reading. The enough-NP threshold construction still lacks an explicit supported scope and remains refused.",
+      "artifact_sha256": "8c5f16522d7c568c40339dcaaab5a48f9c1f5be5ca97cef4546a2b54a4a67203"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "rewrite_faithful": true,
+      "compiled_faithful": false,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "guard_comparison_scope_unestablished",
+      "reason": "There is makes the fragment grammatical, but much remains a text argument and see a separate complement with a reified respect entity. The negated amount and its relation to visibility until the third are not represented by a checked quantifier/comparison contract. This automatic pass is not accepted.",
+      "artifact_sha256": "9e454532d89f42cdc4a7bd982df6e6ecaf4b4bd6d9d753b4940ab30818ee3738"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_823",
+      "rewrite_faithful": false,
+      "compiled_faithful": null,
+      "critical_change": true,
+      "accepted": false,
+      "outcome": "invented_comparison_reference",
+      "reason": "As in previous years supplies a comparison reference not stated by the original. It is a new factual commitment; the negation diagnostic also remains.",
+      "artifact_sha256": "a487c474f6cb781f040f192a0064fdd60a57977e4e102d16cbfe58d0092d7d2f"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_803",
+      "rewrite_faithful": true,
+      "compiled_faithful": null,
+      "critical_change": false,
+      "accepted": false,
+      "outcome": "guard_ambiguity_retained",
+      "reason": "The wording is unchanged. The explaining subject remains ambiguous between host and Aiken; an automatic pass does not establish a unique interpretation.",
+      "artifact_sha256": "2a36d3ed42d96e1bdfa7ce727a8890a36983155084c43d7c28825071cdb0d3a6"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "rewrite_faithful": true,
+      "compiled_faithful": true,
+      "critical_change": false,
+      "accepted": true,
+      "outcome": "faithful_guard_recovery",
+      "reason": "That says makes the sign/text relationship explicit while retaining every quoted character. The compiler keeps the full quotation as verbatim_text on the same sign held by the protester, with OCR source routing. Would/without remain inside the quoted text rather than world-modal/negation operators. This is one legitimate guard recovery, separate from the24-target denominator.",
+      "artifact_sha256": "854207ac8bdaa45e26c0bcf7279a384e4330653e5102dba92a3e11991d4d07ad"
+    }
+  ],
+  "decision": "Do not enable automatic rewriting or scale it to the remaining corpus: the revised pilot fails the predeclared gates.",
+  "interpretation": "The revised prompt improves local recoveries but also adds unsupported assertions. Two of24 targets yield reviewed faithful structures, plus one exact-sign-quotation guard. Ten targets pass automatic checks, which is not10 semantic recoveries. Two proposed controls regress; review rejects them. The initial prompt had one different faithful target recovery; results are not combined per claim.",
+  "failure_patterns": [
+    "Diagnostic text encourages repairs but can also prompt invented signers, mission context and comparative references.",
+    "The model sometimes claims a rewrite while emitting the exact original; its explanations are not evidence of successful repair.",
+    "Reparsing can recover a missing participant while assigning another role incorrectly, such as sweep as the kicking actor or track as a running actor.",
+    "Word coverage misses typed-quantity errors: a rate interval can become object-count bounds, and a fractional orbit count can remain exactly three.",
+    "Equivalent English negation does not repair the compiler's unsupported quantified-absence scope.",
+    "Exact names and quotations still change despite explicit instructions; surface checks and review reject those proposals."
+  ],
+  "next_steps": [
+    "Review the three retained diagnostic-prompt recoveries and rejected examples with the user—confirm the assistant fidelity judgments before treating them as training structures.",
+    "Keep the compiler and both prompts frozen; address only the identified quantity/scope contracts or test a stronger rewriter in a separate fixed comparison—avoid another open-ended series of grammar rules.",
+    "Repeat a bounded fidelity evaluation before any corpus-wide rewrite; prepare DeepProbLog training only from checked structures after that gate."
+  ]
+}

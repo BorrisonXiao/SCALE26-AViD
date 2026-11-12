@@ -7,6 +7,16 @@
       "date": "2026-11-11",
       "items": [
         {
+          "text": "Completed two frozen-model rewrite conditions on the same40 cases. Assistant-reviewed faithful target recoveries1/24 then2/24, plus one revised exact-quote guard. Both conditions fail the proposed gates.",
+          "href": "#rewrite-pilot",
+          "label": "Both prompts and all40 comparisons"
+        },
+        {
+          "text": "Recompiled all2,375 original claims with exact saved-record equality, then reran all2,375 with only three reviewed replacements:2,105 generated and1,927 passing content checks. No automatic corpus-wide rewrite or new relation training.",
+          "href": "#rewrite-decision",
+          "label": "Decision, counts and remaining problems"
+        },
+        {
           "text": "Separated program generation from content-check counts across four saved runs. All 2,099 original candidates remain; current counts stay 2,103 generated and 1,924 passing.",
           "href": "#metric-history",
           "label": "Comparable metric definitions"
