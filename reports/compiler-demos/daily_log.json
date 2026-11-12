@@ -7,6 +7,16 @@
       "date": "2026-11-12",
       "items": [
         {
+          "text": "Consolidated Reports to two main entries and the compiler report from eight views to five. Current results/examples stay prominent; older comparisons share History and all old URLs remain valid.",
+          "href": "#history",
+          "label": "History and earlier reports"
+        },
+        {
+          "text": "Clarified the remaining449 claims:29 tested rewrite failures and420 untested. First checks group227 predicate-formation,173 content omission,43 operator/type and6 explicit alignment/context failures. No new model/compiler run.",
+          "href": "#remaining-failures",
+          "label": "Why the remaining claims fail"
+        },
+        {
           "text": "Separated sentence generation from original-mention alignment and repeated both31-case conditions. Each condition gives2 reviewed faithful recoveries; the sentences-only condition recovers Trump/image and police officers. No per-claim prompt union.",
           "href": "#split-alignment",
           "label": "Alignment comparison and limits"
@@ -23,7 +33,7 @@
         },
         {
           "text": "Tested sentence splitting on31 failed originals with one frozen Qwen prompt:65/77 clauses pass,20 cases have all components pass, but0 complete automatic results are approved as faithful. Passing originals bypass generation.",
-          "href": "#sentence-splitting",
+          "href": "#initial-splitting",
           "label": "Sentence splitting experiment"
         },
         {

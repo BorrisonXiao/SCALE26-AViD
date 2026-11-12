@@ -1,0 +1,110 @@
+{
+  "total": 2375,
+  "passes": 1926,
+  "remaining": 449,
+  "failure_rate": 0.18905263157894736,
+  "tested_remaining": 29,
+  "untested_remaining": 420,
+  "tested_originals": 31,
+  "recoveries": 2,
+  "with_flagged_program": 179,
+  "without_program": 270,
+  "groups": [
+    {
+      "name": "Parser or compiler cannot form all required predicates",
+      "count": 227,
+      "codes": {
+        "unresolved_clause": 109,
+        "duplicate_role": 59,
+        "missing_predicate": 34,
+        "missing_srl": 11,
+        "predicate_type": 8,
+        "opaque_clause": 6
+      }
+    },
+    {
+      "name": "Generated structure omits source content",
+      "count": 173,
+      "codes": {
+        "coverage_omission": 173
+      }
+    },
+    {
+      "name": "Unsupported operators or value types",
+      "count": 43,
+      "codes": {
+        "negative_quantifier": 10,
+        "modal_scope": 16,
+        "nominal_disjunction": 8,
+        "quantity_type": 3,
+        "threshold_scope": 2,
+        "polarity_omission": 2,
+        "temporal_scope": 2
+      }
+    },
+    {
+      "name": "Explicit reference or media-context checks",
+      "count": 6,
+      "codes": {
+        "mention_alignment": 3,
+        "unresolved_controller": 1,
+        "media_modifier": 2
+      }
+    }
+  ],
+  "first_failure_codes": {
+    "negative_quantifier": 10,
+    "coverage_omission": 173,
+    "unresolved_clause": 109,
+    "duplicate_role": 59,
+    "missing_srl": 11,
+    "nominal_disjunction": 8,
+    "mention_alignment": 3,
+    "predicate_type": 8,
+    "quantity_type": 3,
+    "missing_predicate": 34,
+    "opaque_clause": 6,
+    "modal_scope": 16,
+    "threshold_scope": 2,
+    "polarity_omission": 2,
+    "temporal_scope": 2,
+    "unresolved_controller": 1,
+    "media_modifier": 2
+  },
+  "prior_alert_review": {
+    "total": 179,
+    "families": {
+      "Arguments, lists and noun phrases": 34,
+      "Source and quotation context": 18,
+      "Modifiers and scope": 24,
+      "Phrasal verbs and direction": 16,
+      "Names and nominal descriptions": 25,
+      "Numbers, dates and units": 56,
+      "Embedded clauses": 6
+    },
+    "verdicts": {
+      "real_gap": 166,
+      "overstrict_alert": 5,
+      "needs_context": 8
+    },
+    "provenance": "Compiler-author structured diagnostic review of179 candidate alerts,34 stratified no-program cases and23 passing controls. Local alert judgments are distinct from whole-claim judgments. No independent human gold, corpus accuracy or rewrite success estimate."
+  },
+  "pilot_failure_stages": {
+    "entity_alignment": 10,
+    "source_alignment": 3,
+    "shared_description": 2,
+    "component_refusal": 12,
+    "review_rejection": 2
+  },
+  "limits": [
+    "Counts are first failing checks, not a complete semantic taxonomy.",
+    "Only31 original failures were rewritten;420 of449 remaining failures are untested.",
+    "The prior179-alert review was local compiler-author diagnosis, not independent whole-claim correctness.",
+    "No new model/GPU/compiler run or semantic accuracy measurement."
+  ],
+  "source_sha256": {
+    "exp/probabilistic_verification/split_alignment_20261112/corpus_reviewed.jsonl": "de9a931f4092f1012c5c8922a1f5119a6b5a2e98978fe56fb24c8bf9eb0ed39b",
+    "exp/probabilistic_verification/split_alignment_20261112/inputs.jsonl": "9c86422abdb5f6980ad43c40e1fef94a6bac67084f7ecba3861b0d37f9667429",
+    "exp/probabilistic_verification/split_alignment_20261112/summary.json": "2ec9bc6f9bdb2987e9f222b635a0dc6ec6643c7f48b74781068d35bba0825195"
+  }
+}

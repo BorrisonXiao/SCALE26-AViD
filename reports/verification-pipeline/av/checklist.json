@@ -520,7 +520,7 @@
       ]
     }
   ],
-  "intro": "Fresh full2375-claim run reproduces1924 direct content-check passes (81.01%). Two reviewed automatic sentences-only splits give1926 passes (81.09%);449 failures remain. Candidate generation is2105/2375 (88.63%) in that diagnostic composition, not semantic accuracy. Both31-case alignment comparisons recover2; automatic expansion/new learning remain deferred.",
+  "intro": "Fresh full2375-claim run reproduces1924 direct content-check passes (81.01%). Two reviewed automatic sentences-only splits give1926 passes (81.09%);449 failures remain. Candidate generation is2105/2375 (88.63%) in that diagnostic composition, not semantic accuracy. Both31-case alignment comparisons recover2; automatic expansion/new learning remain deferred. The remaining449 comprise29 tested rewrite failures and420 untested claims; the31-case diagnostic cannot estimate whole-corpus recovery.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
