@@ -2,6 +2,34 @@
   "updated": "2026-11-12",
   "steps": [
     {
+      "id": 19,
+      "title": "Split failed claims into simpler linked sentences",
+      "status": "bounded development experiment complete; automatic reliability remains unresolved",
+      "items": [
+        {
+          "text": "Run one frozen split-and-rephrase prompt on the31 original strict failures, excluding all passing originals before generation",
+          "done": true
+        },
+        {
+          "text": "Compare the same short sentences under flat AND and explicit context/shared-participant composition",
+          "done": true
+        },
+        {
+          "text": "Review all31 automatic results and8 assistant-written diagnostics separately; expose exact prompts, links, compiled forms and failures",
+          "done": true
+        },
+        {
+          "text": "Separate sentence generation from reference resolution using original entity/event mentions to reduce wrong identity groups",
+          "done": false
+        },
+        {
+          "text": "Repeat a fixed small fidelity comparison before corpus-wide fallback or new DeepProbLog learning",
+          "done": false
+        }
+      ],
+      "note": "Qwen65/77 component passes,20/31 all-component passes,0 approved complete results. Seven assistant-written splits yield18/18 component passes and4 faithful linked results; one separate guard is appropriately refused. These selected diagnostics are not automatic gains or independent gold. Core38 compiler files and full-corpus baseline unchanged. See compiler-demos.html#sentence-splitting."
+    },
+    {
       "id": 6,
       "title": "Audit compilation on real dataset claims",
       "status": "audit completed; compiler fixes remain separate",
@@ -107,23 +135,23 @@
       "status": "completed; five accepted actions checked",
       "items": [
         {
-          "text": "Write 24 reference readings and reserve 20 fresh IDs before changes \u2014 separate intended meaning from program validity",
+          "text": "Write 24 reference readings and reserve 20 fresh IDs before changes — separate intended meaning from program validity",
           "done": true
         },
         {
-          "text": "Fix selected source/prediction scope and modifier attachment \u2014 preserve evidence context",
+          "text": "Fix selected source/prediction scope and modifier attachment — preserve evidence context",
           "done": true
         },
         {
-          "text": "Fix a/an predicational identity and structured spatial complements \u2014 share entity references",
+          "text": "Fix a/an predicational identity and structured spatial complements — share entity references",
           "done": true
         },
         {
-          "text": "Complete selected embedded subjects with explicit links or lexical control classes \u2014 avoid a universal subject assumption",
+          "text": "Complete selected embedded subjects with explicit links or lexical control classes — avoid a universal subject assumption",
           "done": true
         },
         {
-          "text": "Freeze and rerun all 2,375 inputs, review fresh cases and test reference compilation \u2014 measure acceptance and meaning separately",
+          "text": "Freeze and rerun all 2,375 inputs, review fresh cases and test reference compilation — measure acceptance and meaning separately",
           "done": true
         }
       ],
@@ -135,23 +163,23 @@
       "status": "bounded follow-up completed; source descriptions, quoted labels and semantic coverage remain open",
       "items": [
         {
-          "text": "Implement narrow event references, bare noun predication and duration constraints \u2014 retain selected identity/value conditions",
+          "text": "Implement narrow event references, bare noun predication and duration constraints — retain selected identity/value conditions",
           "done": true
         },
         {
-          "text": "Recover selected missing frames and remove a resource-as-person error \u2014 preserve explicit participants without parser selection",
+          "text": "Recover selected missing frames and remove a resource-as-person error — preserve explicit participants without parser selection",
           "done": true
         },
         {
-          "text": "Profile setup, grounding, compilation and evaluation; test explicit-state rules \u2014 complete the earlier nested-case inference",
+          "text": "Profile setup, grounding, compilation and evaluation; test explicit-state rules — complete the earlier nested-case inference",
           "done": true
         },
         {
-          "text": "Freeze before 20 new-source reviews, add blinded frozen-model judgments and inspect 10 newly accepted outputs \u2014 separate acceptance from meaning",
+          "text": "Freeze before 20 new-source reviews, add blinded frozen-model judgments and inspect 10 newly accepted outputs — separate acceptance from meaning",
           "done": true
         }
       ],
-      "note": "All 167 tests pass; full CPU replay matches all 2,375 outcomes. The twenty-input blinded model review is complete, with raw reasons and disagreements kept separate from the assistant review. Native inference completes the former nested-case timeout. Ten newly accepted cases have 2 faithful, 7 partial, 1 incorrect. The separate model rates 18 prior and 17 revised faithful, agrees on 24/40 ratings and misses visible omissions; it does not confirm the assistant\u2019s small gain."
+      "note": "All 167 tests pass; full CPU replay matches all 2,375 outcomes. The twenty-input blinded model review is complete, with raw reasons and disagreements kept separate from the assistant review. Native inference completes the former nested-case timeout. Ten newly accepted cases have 2 faithful, 7 partial, 1 incorrect. The separate model rates 18 prior and 17 revised faithful, agrees on 24/40 ratings and misses visible omissions; it does not confirm the assistant’s small gain."
     },
     {
       "id": 11,
@@ -159,15 +187,15 @@
       "status": "human review imported; remaining scope and omission failures identified",
       "items": [
         {
-          "text": "Fix nominal media descriptions and quoted labels \u2014 keep depicted content and label text in the right scope",
+          "text": "Fix nominal media descriptions and quoted labels — keep depicted content and label text in the right scope",
           "done": true
         },
         {
-          "text": "Define refusal conditions or explicit constraints for thresholds, nominal OR, omitted modifiers and shared times \u2014 reduce silently partial programs",
+          "text": "Define refusal conditions or explicit constraints for thresholds, nominal OR, omitted modifiers and shared times — reduce silently partial programs",
           "done": true
         },
         {
-          "text": "Obtain human reference judgments for a bounded new-source sample, including model disagreements \u2014 validate evaluation reliability",
+          "text": "Obtain human reference judgments for a bounded new-source sample, including model disagreements — validate evaluation reliability",
           "done": true
         }
       ],
@@ -179,27 +207,27 @@
       "status": "all20 readings and comparisons imported and analyzed",
       "items": [
         {
-          "text": "Reserve the review set before compiler changes \u2014 separate reference judgments from development examples",
+          "text": "Reserve the review set before compiler changes — separate reference judgments from development examples",
           "done": true
         },
         {
-          "text": "Prepare intended-reading fields and anonymous A/B output comparisons \u2014 reduce anchoring from existing ratings",
+          "text": "Prepare intended-reading fields and anonymous A/B output comparisons — reduce anchoring from existing ratings",
           "done": true
         },
         {
-          "text": "Draft answers with a strong independent agent, first claims only and then anonymous outputs \u2014 reduce user review effort",
+          "text": "Draft answers with a strong independent agent, first claims only and then anonymous outputs — reduce user review effort",
           "done": true
         },
         {
-          "text": "Review all twenty reserved cases \u2014 user reports this is complete",
+          "text": "Review all twenty reserved cases — user reports this is complete",
           "done": true
         },
         {
-          "text": "Receive and validate the exported JSON \u2014 obtain the user\u2019s actual answers from browser storage",
+          "text": "Receive and validate the exported JSON — obtain the user’s actual answers from browser storage",
           "done": true
         },
         {
-          "text": "Reconcile ambiguous readings and reviewer disagreements \u2014 define which semantic claims the paper can support",
+          "text": "Reconcile ambiguous readings and reviewer disagreements — define which semantic claims the paper can support",
           "done": true
         }
       ],
@@ -211,23 +239,23 @@
       "status": "bounded revision and full census complete; compiler remains experimental",
       "items": [
         {
-          "text": "Reserve twenty fresh cases before changes \u2014 evaluate beyond the examples used for fixes",
+          "text": "Reserve twenty fresh cases before changes — evaluate beyond the examples used for fixes",
           "done": true
         },
         {
-          "text": "Validate paired analysis and refusal/uncertainty handling \u2014 prepare reliable review summaries",
+          "text": "Validate paired analysis and refusal/uncertainty handling — prepare reliable review summaries",
           "done": true
         },
         {
-          "text": "Analyze returned judgments and trace failures to parsing or conversion \u2014 select at most three recurring patterns",
+          "text": "Analyze returned judgments and trace failures to parsing or conversion — select at most three recurring patterns",
           "done": true
         },
         {
-          "text": "Implement focused fixes and contrasting checks; rerun all2,375 claims \u2014 measure coverage changes and remaining failures",
+          "text": "Implement focused fixes and contrasting checks; rerun all2,375 claims — measure coverage changes and remaining failures",
           "done": true
         },
         {
-          "text": "Review the frozen fresh sample \u2014 decide whether compilation is ready for a small binding experiment",
+          "text": "Review the frozen fresh sample — decide whether compilation is ready for a small binding experiment",
           "done": true
         }
       ],
@@ -239,15 +267,15 @@
       "status": "bounded scope/content revision complete; wider reliability and native cost remain pending",
       "items": [
         {
-          "text": "Implement and test bounded preparation/investigation/question scope repairs \u2014 keep the reviewed content in its context",
+          "text": "Implement and test bounded preparation/investigation/question scope repairs — keep the reviewed content in its context",
           "done": true
         },
         {
-          "text": "Restore selected sound/name/identifier content and audit every original claim \u2014 expose omissions before accepting a program",
+          "text": "Restore selected sound/name/identifier content and audit every original claim — expose omissions before accepting a program",
           "done": true
         },
         {
-          "text": "Deferred: bound and profile larger programs \u2014 establish practical inference cost after the compilation work",
+          "text": "Deferred: bound and profile larger programs — establish practical inference cost after the compilation work",
           "done": false
         }
       ],
@@ -259,15 +287,15 @@
       "status": "bounded omission and clause/source repairs completed; remaining cases and references stay explicit",
       "items": [
         {
-          "text": "Implement and test recurring apposition/numeric recovery \u2014 retain qualifiers, bounds, ranges and source values",
+          "text": "Implement and test recurring apposition/numeric recovery — retain qualifiers, bounds, ranges and source values",
           "done": true
         },
         {
-          "text": "Repair selected hidden clauses and source/label boundaries \u2014 retain their relationships and request review for unresolved cases",
+          "text": "Repair selected hidden clauses and source/label boundaries — retain their relationships and request review for unresolved cases",
           "done": true
         },
         {
-          "text": "Deferred: consider local references with a later rewrite layer \u2014 preserve participant identity after checking that the rewrite retains meaning",
+          "text": "Deferred: consider local references with a later rewrite layer — preserve participant identity after checking that the rewrite retains meaning",
           "done": false
         }
       ],
@@ -279,15 +307,15 @@
       "status": "completed; checks and semantic correctness remain separate",
       "items": [
         {
-          "text": "Repair explicit numeric labels, compound quantities and bounded appositions\u2014retain source content without confusing identifiers and counts",
+          "text": "Repair explicit numeric labels, compound quantities and bounded appositions—retain source content without confusing identifiers and counts",
           "done": true
         },
         {
-          "text": "Expose both leader lists and selected how/where clauses; retain six difficult clause refusals\u2014preserve their relationships",
+          "text": "Expose both leader lists and selected how/where clauses; retain six difficult clause refusals—preserve their relationships",
           "done": true
         },
         {
-          "text": "Publish updated demos, all2,375 outputs and a linked daily log\u2014make each completed step reviewable",
+          "text": "Publish updated demos, all2,375 outputs and a linked daily log—make each completed step reviewable",
           "done": true
         }
       ],
@@ -299,15 +327,15 @@
       "status": "completed; compiler and statuses unchanged",
       "items": [
         {
-          "text": "Report generation and content-check counts separately across saved runs\u2014make historical comparisons explicit",
+          "text": "Report generation and content-check counts separately across saved runs—make historical comparisons explicit",
           "done": true
         },
         {
-          "text": "Review all179 candidate alerts and inspect refusals/passing controls\u2014distinguish omissions, overstrict checks and missed bindings",
+          "text": "Review all179 candidate alerts and inspect refusals/passing controls—distinguish omissions, overstrict checks and missed bindings",
           "done": true
         },
         {
-          "text": "Assess a stopping point and document a bounded rewrite pilot\u2014avoid open-ended grammar expansion",
+          "text": "Assess a stopping point and document a bounded rewrite pilot—avoid open-ended grammar expansion",
           "done": true
         }
       ],
@@ -319,19 +347,19 @@
       "status": "pilot complete; both prompts fail fidelity/recovery gates; automatic expansion and learning deferred",
       "items": [
         {
-          "text": "Keep the compiler fixed and reserve source groups before prompt tuning\u2014make a fair baseline comparison",
+          "text": "Keep the compiler fixed and reserve source groups before prompt tuning—make a fair baseline comparison",
           "done": true
         },
         {
-          "text": "Prepare24 failed targets,8 unchanged controls and8 guard cases\u2014check information preservation as well as compilation",
+          "text": "Prepare24 failed targets,8 unchanged controls and8 guard cases—check information preservation as well as compilation",
           "done": true
         },
         {
-          "text": "Review original/rewrite/predicate triples\u2014preserve participants, quantities, time, modality, negation, quotes and source scope",
+          "text": "Review original/rewrite/predicate triples—preserve participants, quantities, time, modality, negation, quotes and source scope",
           "done": true
         },
         {
-          "text": "Hold new training until a bounded preparation evaluation passes\u2014current pilot gates are not met",
+          "text": "Hold new training until a bounded preparation evaluation passes—current pilot gates are not met",
           "done": false
         }
       ],
@@ -399,7 +427,7 @@
           "done": true
         },
         {
-          "text": "Confirm audio labels by listening and check feature usefulness across 10\u201320 reviewed examples",
+          "text": "Confirm audio labels by listening and check feature usefulness across 10–20 reviewed examples",
           "done": false
         }
       ],
@@ -439,7 +467,7 @@
       "status": "planned",
       "items": [
         "Review existing generated candidates",
-        "Target 40\u201360 checked pairs plus controls",
+        "Target 40–60 checked pairs plus controls",
         "Reserve test videos before generating edits"
       ]
     },
@@ -464,7 +492,7 @@
       ]
     }
   ],
-  "intro": "Original-text compiler baseline remains2,103 generated programs and1,924 content-check passes on2,375 claims. The checked rewrite pilot is complete: two fixed prompts recover1/24 and2/24 targets under assistant semantic review; revised condition also recovers one exact-quote guard. It fails the predeclared gates. Three reviewed diagnostic replacements yield2,105 generated/1,927 passing; these are not semantic-accuracy or clean training-set counts.",
+  "intro": "The intended fallback now splits complex failed claims into simpler linked sentences. A bounded31-case automatic experiment and8 assistant-written diagnostics are complete; automatic reliability remains open. Original baseline remains2,103 generated/1,924 content-check passes on2,375 claims. No new corpus-gain or training claim.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -491,8 +519,8 @@
     "status": "fixed-input comparison and focused qualitative review; not a selected production parser"
   },
   "rewrite_fallback": {
-    "status": "implemented experimental pilot; manual review required; automatic expansion not enabled",
-    "policy": "Direct compilation first. Rewrite only unsupported strict results, including rejected diagnostic candidates; skip every compiled result before model loading. Historical passing probes remain separate. Both40-case prompt conditions still fail recovery gates; no automatic expansion or new training."
+    "status": "experimental sentence splitting with context and shared mentions; automatic expansion not enabled",
+    "policy": "Direct compilation first; only strict unsupported originals reach generation. Preserve meaning, shared participants and context links when compiling the subclaims. Prior one-sentence paraphrases are historical comparisons. Current31-case automatic splitter has0 reviewed complete recoveries;4 faithful assistant-written diagnostics establish local feasibility only."
   },
   "logical_form_run": {
     "source_path": "exp/probabilistic_verification/logical_form_20261028",
@@ -511,5 +539,6 @@
   "content_recovery_run": "exp/probabilistic_verification/content_recovery_20261105",
   "content_relations_run": "exp/probabilistic_verification/content_relations_20261105",
   "compiler_alert_review_run": "exp/probabilistic_verification/compiler_alert_review_20261111",
-  "claim_rewrite_run": "exp/probabilistic_verification/claim_rewrite_20261111"
+  "claim_rewrite_run": "exp/probabilistic_verification/claim_rewrite_20261111",
+  "claim_split_run": "exp/probabilistic_verification/claim_split_20261112"
 }

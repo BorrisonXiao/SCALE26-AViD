@@ -1,0 +1,54 @@
+{
+  "qwen": {
+    "cases": 31,
+    "attempted_splits": 28,
+    "components": 77,
+    "component_passes": 65,
+    "all_components_pass": 20,
+    "proposal_validation_pass": 23,
+    "flat_programs": 7,
+    "linked_programs": 6,
+    "reviewed_flat_recoveries": 0,
+    "reviewed_linked_recoveries": 0,
+    "multi_clause_text_faithful": 16,
+    "actions": {
+      "split": 31
+    },
+    "remaining_reasons": {
+      "mention_alignment": 4,
+      "Shared mention groups must connect different clauses.": 4,
+      "shared_description": 6,
+      "A shared mention must occur in its clause.": 1,
+      "review_needed": 6,
+      "component_refusal": 6,
+      "missing_shared_participant": 1,
+      "A split needs at least two clauses.": 3
+    }
+  },
+  "supervised": {
+    "cases": 8,
+    "attempted_splits": 7,
+    "components": 18,
+    "component_passes": 18,
+    "all_components_pass": 7,
+    "proposal_validation_pass": 8,
+    "flat_programs": 6,
+    "linked_programs": 6,
+    "reviewed_flat_recoveries": 2,
+    "reviewed_linked_recoveries": 4,
+    "multi_clause_text_faithful": 7,
+    "actions": {
+      "split": 7,
+      "refuse": 1
+    },
+    "remaining_reasons": {
+      "review_needed": 3,
+      "mention_alignment": 1
+    }
+  },
+  "limits": [
+    "Compiler-author assistant review, not independent human gold",
+    "Supervised8 are purposive development diagnostics written after Qwen proposal inspection, not automatic generation gains",
+    "No whole-corpus or unseen-test gain; no new media/DeepProbLog training/inference experiment"
+  ]
+}

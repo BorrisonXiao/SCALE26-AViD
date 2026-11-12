@@ -1,0 +1,85 @@
+{
+  "provenance": "Compiler-author assistant judgments, not independent human gold. All are inspected development cases; short-text fidelity is separate from link/compiled fidelity.",
+  "cases": [
+    {
+      "claim_id": "TFgw4IaR9R8s_1587",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": true,
+      "outcome": "Faithful image-content composition",
+      "reason": "Both short clauses compile. The same Trump is the holding actor inside the image context; the signed constraint belongs to the same document, inherits visual evidence, and introduces no signing agent. Flat AND instead puts holding in the world.",
+      "artifact_sha256": "0282c4a450d37585ca9b7638d25716b3ad4601f7e74a1aac08470f5b5674c417"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2185",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Simplified structure, amount still encoded as counts",
+      "reason": "Both sentences compile and township/Chiayi identity is shared. The149.0mm amount is encoded as an exact count of mm entities, rather than the intended typed rainfall measurement. This remains partial under the current quantity contract.",
+      "artifact_sha256": "6ed46e95f2443f34dea700d23c29b8759fd8227bc43c7768df744c8cd6c0232b"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": true,
+      "outcome": "Faithful shot/location/light composition",
+      "reason": "The second shot is the source. A single emergency vehicle is bound to the road-side location and to its flashing emergency lights; all content stays in that shot's visual context. Flat AND asserts location/flashing outside the depiction context.",
+      "artifact_sha256": "6a4cef61524e15cd611423e7638d2f3be2487c568cc5ff14c582da59d00d7115"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_750",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": true,
+      "linked_faithful": true,
+      "outcome": "Faithful shared officer group",
+      "reason": "One multiple/additional police-officer group participates in helping, clearing space and the immediate-vicinity relation to the police van. Both conjunction conditions retain that shared group; no source-context wrapper is needed.",
+      "artifact_sha256": "0fb9e710c45401a8ea074c883072ba8b8e4ceb3553f049d196aad1901bf58e62"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Simple clause still mistagged",
+      "reason": "The assistant-written split retains publisher, building, Kathmandu and fire. However houses is tagged as a noun, producing a houses group modified by building and named Kantipur Publications. Building cannot align as the shared entity, so composition is refused.",
+      "artifact_sha256": "8c7745549b0f0ac07da3eb7d80d35d3e25c5380d9819f6ea51501599d402acaf"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2350",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Rate contract and event identity remain open",
+      "reason": "The two short sentences preserve direction/speed in English and share Wipha. The compiler still treats km as a counted group, and the motion events are separate. Neither flat nor linked compilation is approved as faithful.",
+      "artifact_sha256": "04b49f5f70ebc6925b3bc99b9cd3ed41515e277ebc5b45fdf7980236638e6e4a"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": true,
+      "linked_faithful": true,
+      "outcome": "Faithful exact quote on the held sign",
+      "reason": "One sign is held by the protester and carries the unchanged verbatim text through an OCR-routed read predicate. No quoted proposition is projected into world events. Flat conjunction also preserves the exact-text claim here because its sign identity and OCR literal remain explicit.",
+      "artifact_sha256": "189c25e213070b551e72242e046c7cb3258d39f5f69c60b263c8dd44f6bfd793"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1901",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Appropriate refusal of unsupported absence",
+      "reason": "The supervised diagnostic explicitly declines splitting no audio into positive assertions. It preserves the original refusal; this is not a recovered compilation.",
+      "artifact_sha256": "9ffa9b0f237b7dcc282d41da7f74413acded314804a3dfa06c1f7df4f580d180"
+    }
+  ]
+}

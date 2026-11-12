@@ -1,0 +1,315 @@
+{
+  "provenance": "Compiler-author assistant judgments, not independent human gold. All are inspected development cases; short-text fidelity is separate from link/compiled fidelity.",
+  "cases": [
+    {
+      "claim_id": "Txf2EdqOg1SQ_2185",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Place-mention alignment and measurement typing",
+      "reason": "The two sentences retain the highest-of-day location and149.0mm amount. The proposed township/Chiayi phrase is not one compiled entity, so shared-mention alignment fails. Amounts also remain vulnerable to counted-unit encoding.",
+      "artifact_sha256": "5b3a1fd308d8c7d6e8e6bccaa21c3360cc7353d35ab447a665c83a4f617ca4ce"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2257",
+      "text_faithful": true,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Wrong shared entities",
+      "reason": "The short sentences retain indoor flooding, Zhongshan and submerged tools, but the model equates flooding with tools and indoors with Zhongshan. Its basket group repeats a mention from the same clause. These links do not preserve identity.",
+      "artifact_sha256": "ecfc637997b7fc19b6659a40e99fca54907d33d56797e2a431c5e4c2eaa87775"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "text_faithful": null,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Vehicle equated with its lights",
+      "reason": "The location/visibility/action content is mostly present, but the group links emergency vehicle to emergency lights. They are related entities, not the same entity; the second-shot context and light ownership are not reliably preserved.",
+      "artifact_sha256": "44039fed1545ac7578b6f878d6c277fb8da5f7ec9b65f1a1fe7fb553e560db3d"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "text_faithful": true,
+      "links_faithful": null,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Restaurant reference is not aligned",
+      "reason": "The venue, restaurant description and surviving fires remain in the sentences. The compiled Pete's Seafood/restaurant mentions do not align as single shared entities. The two reference groups also do not establish a complete identity chain.",
+      "artifact_sha256": "96df8efcee409e2b87c1802d22ff589af320a0f2ccf7acab322b8359940fd225"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "text_faithful": false,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Changed uncertainty/object number",
+      "reason": "Likely executive orders becomes likely an executive order. The original unspecified object is narrowed to one order, and the something/thing descriptions and repeated Trump mentions are not consistently linked.",
+      "artifact_sha256": "c6a3ebcd8a1430c420d1f0befe1180ea009bc91ce8a3e20324314f4ca41344ed"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1587",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Faithful wording, redundant description exceeds adapter",
+      "reason": "The clauses preserve image depiction, holding up, a signed document, and an unspecified signer. The shared-person and shared-document links are sensible. The extra document-is-signed clause is redundant; the conservative adapter refuses different per-clause document descriptions across contexts rather than moving modifiers. The two-clause supervised version tests the same idea without that redundancy.",
+      "artifact_sha256": "e718fc55c42c146d4e438e9e0c9bb0245b988f63c256fa79413d01ff415bc839"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_750",
+      "text_faithful": true,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Nonexistent shared mention",
+      "reason": "The clauses retain the officers, location and actions, but a shared group mentions the police van in an action clause that contains no van. The proposed officer descriptions also differ. Text simplification is not sufficient to validate the links.",
+      "artifact_sha256": "0613a8fdd32826457d0c64d695cee3d118fbd2970af4c9f1275f68a4c5550a0d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1636",
+      "text_faithful": false,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Alternative not preserved",
+      "reason": "The original set-tariffs-or-delegate construction is replaced with separate AND assertions. No rule licensing distribution of that alternative is established. Two shared groups repeat single-clause mentions.",
+      "artifact_sha256": "46c7c425346f754c4029ba75d821c2f8988aff11ed0e30389460bb491984d6ea"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1927",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "County relationship hidden in time text",
+      "reason": "The logo is shared correctly, but the compiled temporal value absorbs for the County of Los Angeles. That does not explicitly bind the logo to the county; an extra onscreen predicate is also introduced. This is a partial compilation, not a faithful recovery.",
+      "artifact_sha256": "c7f2a756ff6fc37c002c20d1640860d49850741495316b3cf7bec932bc0a3d05"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1354",
+      "text_faithful": null,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Goal/device identity and purpose unclear",
+      "reason": "The proposal repeats the original difficult sentence, adds further goal/aim/extraction statements, and equates a goal with the lunar planet vac. Purpose scope is not reliably preserved. The original unresolved-clause failure remains in a component.",
+      "artifact_sha256": "7eae024acc3667709e63e18583201b4cd027d77553ffee4234d20e89555e90d0"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1263",
+      "text_faithful": false,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Purpose strengthened into promised operations",
+      "reason": "The original future orbital stay has relay/calibration purposes. Separate AND clauses now assert future provision/support, and extra purpose clauses change the NASA attachment. Shared telescope-system phrases cannot be aligned as single compiled entities.",
+      "artifact_sha256": "650ddb24e16f93c511ff14afd626527513894ed37d3650d861939fe6d8465f16"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1826",
+      "text_faithful": true,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Picture identity and reflexive reference missing",
+      "reason": "The sentences are plausible paraphrases under the frozen reading, but shared is empty. The picture taken on the bridge is a different compiled variable from the picture requested by the boys, and themselves remains unresolved. The background is not tied to that same picture.",
+      "artifact_sha256": "79eead1c4056b4be01bc9c38cbbbcffed748d36de9a1e89060ba1e59dad250b8"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_192",
+      "text_faithful": false,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Video beginning treated as a moving entity",
+      "reason": "The original beginning-of-video velocity fragment becomes a beginning entity possessing a velocity. No shared link even binds the two beginning mentions. The split adds an unjustified physical interpretation.",
+      "artifact_sha256": "97743b10ea289deed7778ff17f6e70f218af88ba40e18db93237461e17dd8f3e"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "text_faithful": true,
+      "links_faithful": null,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Not a split",
+      "reason": "The original sentence is returned as one clause while action is split. It preserves wording but does not perform the requested structural decomposition; the original content omission remains.",
+      "artifact_sha256": "7407871dcefb3c635dc6a16332b5f58d5aa20aa95d5ab627bb9b109a364f9368"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "text_faithful": true,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Race identity and track activity wrong",
+      "reason": "The race description and location are retained in the words, but the two races are not linked. The compiler also treats the running track as an actor that runs and reifies place from takes place.",
+      "artifact_sha256": "8c9a1710f400f873c6fde304ac0bb774843c221bd6a1b480a826b357fbbee340"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "text_faithful": true,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Lane equated with finishing place",
+      "reason": "The two sentences can express the original facts with a shared robot, but the model instead groups lane three with second place and omits the shared robot link.",
+      "artifact_sha256": "a49b0682d8102561ff8b016a5acc8bca1170cf6f52f67600c50cdd40f0866a9f"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "text_faithful": false,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "One sweep kick becomes two actions",
+      "reason": "A sweep kick is split into performing a sweep and kicking, without linking these as the same action or preserving the manner relation. A same-clause Robot2 group is redundant/invalid.",
+      "artifact_sha256": "9005e3903b166f6381aa1bd4607b5a5b1fb12d310175a0cb1819169345ae1feb"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1035",
+      "text_faithful": true,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Earthquake equated with its magnitude",
+      "reason": "The short sentences preserve7.7 and a magnitude owner at the language level. The proposed link identifies the earthquake with the magnitude instead of linking the two magnitude mentions.",
+      "artifact_sha256": "57849532dac3d507be1e1b7e470d95322fc2d41ecb07a33d14578d17d4418443"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "text_faithful": false,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Fractional total not preserved",
+      "reason": "Three-and-a-half orbits is split into an exact-three group and a half-orbit statement, with no total/addition relation and a proposed same-orbit-group link. This is not a faithful encoding of the original total.",
+      "artifact_sha256": "e8f43ed625815374c0d1479b402fa10f2322585de1d3ae461c6e8ddab90a5053"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "text_faithful": true,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Repeated burn/velocity not shared; rate still split",
+      "reason": "The second clause restates the full target with meters per second, but shared is empty. The compiled burns and velocities are distinct, and40meters plus a separate second entity is not a typed rate.",
+      "artifact_sha256": "c50d64632ac98c0dc293cbf159738493f2299d32a0ee0f340b758ef8f7cbcc4b"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "text_faithful": true,
+      "links_faithful": null,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Not a split",
+      "reason": "Only the original one-clause three-judge-panel wording is returned. It does not yield a new decomposition or recover the missing count.",
+      "artifact_sha256": "ab7946441e10a16781955311db2eeff468d07c61c27b783214bc733b0d1689c0"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "text_faithful": true,
+      "links_faithful": null,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "One-clause grammatical repair",
+      "reason": "Adding is is a plausible repair, but the model returns one clause while declaring split. That is a single-sentence edit rather than the requested decomposition; the current tagging of building/housing still needs inspection.",
+      "artifact_sha256": "485b8e60a21371350903aef48bb0c356a3600d8c269c7a9ef2c098c8cf7fcc56"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2350",
+      "text_faithful": true,
+      "links_faithful": null,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Rate type and shared movement event missing",
+      "reason": "Direction and speed remain in the text and Wipha is shared, but km is represented with object-count bounds and hour as a separate entity. The two moving events are also not identified as the same motion. This is not a faithful composed recovery.",
+      "artifact_sha256": "66768cbc76db1f9093816b8428c19f6effb482005a6f4677e2def3e488b34e6a"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Component still loses the reporter/location",
+      "reason": "The two sentences and depiction link express the intended reporter/raincoat reading, but the first component loses reporter and Zhuhai under the frozen parser/compiler. No combined program is accepted.",
+      "artifact_sha256": "38de256500ff07c971b9cc8dc07e4952cad8fc67d49bec39476d0d8d1f5c7461"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1916",
+      "text_faithful": false,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Added positive narration assertion",
+      "reason": "Features no narration becomes both features a narration and does not feature a narration. The positive assertion is new, the two narration/video mentions are unlinked, and the negated-existence meaning is not recovered.",
+      "artifact_sha256": "60c8d165f2e7a9bda6d18b6d8b900f006d127a7dbfb2635bed7b56d385f69cd5"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1901",
+      "text_faithful": true,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Unsupported absence retained; video not shared",
+      "reason": "The negative claim is retained alongside a redundant existence clause, but its quantified absence still cannot compile. The two video mentions also have no declared identity link.",
+      "artifact_sha256": "00bfa192339d182ee627c4ae0b58730cae35fa63fa5374a492ebec6b62ba92a8"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_921",
+      "text_faithful": true,
+      "links_faithful": null,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Would interpretation still unsupported",
+      "reason": "The split retains looked certain, would replace, and the margin-of-victory question. The first component remains refused for would; this does not establish a faithful executable scope.",
+      "artifact_sha256": "f6ad3fa6c15f0198a248b3f2431798b1384bc476d9559aa802814d2cde632f94"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_820",
+      "text_faithful": false,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Joint causal/threshold structure lost",
+      "reason": "The proposal inserts occurred events and separates insufficient gains from the prevention relation. It does not preserve the joint causal subject or the enough threshold construction, and has a same-clause Conservatives group.",
+      "artifact_sha256": "70822b88dc9e5e9103d9a0e143d9f3e9ab0ea653fc9f2365e7da5055e0b8c858"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "text_faithful": false,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Not much becomes absolute non-occurrence",
+      "reason": "Does not occur until the third is stronger than not much to see until the third. The proposal invents an event and changes the negated-amount meaning; a component is also refused.",
+      "artifact_sha256": "098cffdfc8bfa5d0df32a1ec1223c62e7938ed85e2ac53d95e64d50300d17b51"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_823",
+      "text_faithful": true,
+      "links_faithful": true,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Comparison and shared descriptions not supported",
+      "reason": "The words preserve the blue seats and the not-as-much-red contrast, without inventing previous years. The shared seat descriptions differ, and the original comparative/negative quantity has no checked executable contract.",
+      "artifact_sha256": "6d146c9491f821c5463e55e0c334dcc9cb0c08b6d73c8e2144d407e638446018"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "text_faithful": false,
+      "links_faithful": false,
+      "flat_faithful": false,
+      "linked_faithful": false,
+      "outcome": "Exact sign text expanded and participants guessed",
+      "reason": "The exact quote is retained once but then expanded into extra event clauses with speech/OCR/depiction links. A group equates the protester with They inside the quote. This does not preserve an exact-text claim or its speaker/reference scope.",
+      "artifact_sha256": "8875ee0e1a9977af1a2e5a6df6fe067acf8c802091a12f3e952c5172afa4d72b"
+    }
+  ]
+}

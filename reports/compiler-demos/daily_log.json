@@ -7,6 +7,21 @@
       "date": "2026-11-12",
       "items": [
         {
+          "text": "Tested sentence splitting on31 failed originals with one frozen Qwen prompt:65/77 clauses pass,20 cases have all components pass, but0 complete automatic results are approved as faithful. Passing originals bypass generation.",
+          "href": "#sentence-splitting",
+          "label": "Sentence splitting experiment"
+        },
+        {
+          "text": "Added8 assistant-written controlled cases, explicitly separate from model output:7 splits give18/18 passing clauses and4 faithful linked compositions; one no-audio guard stays refused. Image context matters; quantity and tagging errors remain.",
+          "href": "#split-example",
+          "label": "Inspect clean and automatic versions"
+        },
+        {
+          "text": "Kept the38 direct-compiler files unchanged. Added a separate tested composition adapter and retained initial/final sources, exact prompts, responses and failure explanations. Original corpus counts remain2,103 generated/1,924 passing; no new media or training.",
+          "href": "#split-method-limits",
+          "label": "Implementation and limits"
+        },
+        {
           "text": "Enforced direct compilation before model loading:31 historical failures eligible,9 direct passes skipped. A separate all-passing input exits with zero model requests. No new generation or compiler change.",
           "href": "#rewrite-routing",
           "label": "Failure-only routing"
