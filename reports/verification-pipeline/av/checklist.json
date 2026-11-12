@@ -15,7 +15,7 @@
           "done": false
         },
         {
-          "text": "Train small classifiers and compare with frozen-model/simpleaggregation baselines—measure heldoutbindinggain andruntime",
+          "text": "Train small classifiers and compare with frozen-model and simple aggregation baselines—measure binding improvements and runtime on held-out videos",
           "done": false
         }
       ]
@@ -30,19 +30,19 @@
           "done": true
         },
         {
-          "text": "Implement/test nominaleventvariables; keep lexicaltyping off after real noun-sense errors",
+          "text": "Implement and test nominal event variables; keep lexical typing off after real noun-sense errors",
           "done": true
         },
         {
-          "text": "Replayall2375originals/cached449cases and reviewall25changedprograms; retain1963/exclude412",
+          "text": "Replay all 2,375 originals and 449 cached cases; review all 25 changed programs; retain 1,963 and exclude 412",
           "done": true
         },
         {
-          "text": "Run411tests, historicaldefaultcomparison and nativefeature-basedtraininginterfacecheck",
+          "text": "Run 411 tests, the historical-default comparison and native training with frozen visual features",
           "done": true
         },
         {
-          "text": "Evaluate reviewedbindings on unseen sourcevideos before empiricalperformanceclaims",
+          "text": "Evaluate reviewed bindings on unseen source videos before empirical performance claims",
           "done": false
         }
       ]

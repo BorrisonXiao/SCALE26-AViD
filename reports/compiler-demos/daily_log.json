@@ -7,17 +7,17 @@
       "date": "2026-11-12",
       "items": [
         {
-          "text": "Replayed all2,375 originals and449cachedcases. Generalauxiliary/adverb/interval repairs yield1,978directautomaticpasses;25changedprograms reviewed,10newretainedoutputs. Currentpool1,963/2,375(82.65%),412excluded; developmentjudgments,notaccuracy.",
+          "text": "Replayed all 2,375 originals and 449 cached cases. General auxiliary, adverb and interval repairs yield 1,978 direct automatic passes. Reviewed 25 changed programs and retained 10 additions: 1,963/2,375 (82.65%), with 412 excluded. These are development judgments, not accuracy.",
           "href": "#remaining-failures",
           "label": "Compiler stopping point and full accounting"
         },
         {
-          "text": "Tested nominaleventvariables/sharedbindings, but left WordNettyping off after riding/shot senseerrors. Published38comparisons and all412exclusions.411tests pass; historical2,375defaultoutputs exact.",
+          "text": "Tested nominal event variables and shared bindings; left WordNet typing off after riding/shot sense errors. Published 38 comparisons and all 412 exclusions. All 411 tests pass; the 2,375 historical default outputs remain exact.",
           "href": "#ready-example",
           "label": "Current examples and failure inspector"
         },
         {
-          "text": "Ran nativeDeepProbLog training with actual4,096-dimensionalfrozenvisualfeatures and a270,595parameterMLP on4developmentcolorclauses. Gradient/interfacecheck only; no heldoutevaluation/audio/fullcorpusfeatureextraction.",
+          "text": "Ran native DeepProbLog training with actual 4,096-dimensional frozen visual features and a 270,595-parameter MLP on four development color clauses. This checks gradients and the training interface; no held-out evaluation, audio training or full-corpus feature extraction.",
           "href": "#feature-training-smoke",
           "label": "Feature-based training check and next goals"
         },
