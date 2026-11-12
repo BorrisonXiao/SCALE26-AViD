@@ -2,6 +2,34 @@
   "updated": "2026-11-12",
   "steps": [
     {
+      "id": 20,
+      "title": "Separate sentence generation from original-mention alignment",
+      "status": "fixed31-case experiment and full2375-claim census complete; reliability remains limited",
+      "items": [
+        {
+          "text": "Use one concise sentences-only prompt; exclude every passing original before model loading",
+          "done": true
+        },
+        {
+          "text": "Infer shared noun/event references from original mentions; compare the exact old sentences under the same alignment module",
+          "done": true
+        },
+        {
+          "text": "Review both31-case conditions and freshly rerun all2375 originals; count only exact reviewed automatic recoveries",
+          "done": true
+        },
+        {
+          "text": "Test explicit participant identifiers and routine source frames to reduce false refusals without guessing references",
+          "done": false
+        },
+        {
+          "text": "Define typed measurements and quantified absence before expanding failure-only evaluation or new DeepProbLog learning",
+          "done": false
+        }
+      ],
+      "note": "Direct1924/2375=81.01%; two reviewed new automatic splits give1926/2375=81.09%,449 failures. Candidates2105/2375=88.63% are a weaker measure. Old sentences+new alignment also recover2, with different membership; no per-claim union. Core38 compiler files unchanged."
+    },
+    {
       "id": 19,
       "title": "Split failed claims into simpler linked sentences",
       "status": "bounded development experiment complete; automatic reliability remains unresolved",
@@ -492,7 +520,7 @@
       ]
     }
   ],
-  "intro": "The intended fallback now splits complex failed claims into simpler linked sentences. A bounded31-case automatic experiment and8 assistant-written diagnostics are complete; automatic reliability remains open. Original baseline remains2,103 generated/1,924 content-check passes on2,375 claims. No new corpus-gain or training claim.",
+  "intro": "Fresh full2375-claim run reproduces1924 direct content-check passes (81.01%). Two reviewed automatic sentences-only splits give1926 passes (81.09%);449 failures remain. Candidate generation is2105/2375 (88.63%) in that diagnostic composition, not semantic accuracy. Both31-case alignment comparisons recover2; automatic expansion/new learning remain deferred.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -519,8 +547,8 @@
     "status": "fixed-input comparison and focused qualitative review; not a selected production parser"
   },
   "rewrite_fallback": {
-    "status": "experimental sentence splitting with context and shared mentions; automatic expansion not enabled",
-    "policy": "Direct compilation first; only strict unsupported originals reach generation. Preserve meaning, shared participants and context links when compiling the subclaims. Prior one-sentence paraphrases are historical comparisons. Current31-case automatic splitter has0 reviewed complete recoveries;4 faithful assistant-written diagnostics establish local feasibility only."
+    "status": "experimental sentences-only generation and original-mention alignment; exact-output review required",
+    "policy": "Compile original first; strict failures only. Same31 failures used in fixed comparison, with no per-claim prompt selection. Two reviewed sentences-only outputs may replace their exact failed originals; manual examples and historical prompt successes are not unioned. No unreviewed corpus-wide fallback."
   },
   "logical_form_run": {
     "source_path": "exp/probabilistic_verification/logical_form_20261028",
@@ -540,5 +568,6 @@
   "content_relations_run": "exp/probabilistic_verification/content_relations_20261105",
   "compiler_alert_review_run": "exp/probabilistic_verification/compiler_alert_review_20261111",
   "claim_rewrite_run": "exp/probabilistic_verification/claim_rewrite_20261111",
-  "claim_split_run": "exp/probabilistic_verification/claim_split_20261112"
+  "claim_split_run": "exp/probabilistic_verification/claim_split_20261112",
+  "split_alignment_run": "exp/probabilistic_verification/split_alignment_20261112"
 }

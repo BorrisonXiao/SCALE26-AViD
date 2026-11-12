@@ -1,0 +1,111 @@
+{
+  "old_sentences": {
+    "cases": 31,
+    "components": 77,
+    "component_passes": 65,
+    "all_components_pass": 20,
+    "programs": 4,
+    "faithful": 2,
+    "faithful_ids": [
+      "TMrQshDs8aH0_750",
+      "Tg0UxWYuPeJ0_378"
+    ],
+    "failures": {
+      "entity_alignment": 11,
+      "component_refusal": 7,
+      "source_alignment": 3,
+      "shared_description": 2,
+      "no_split": 3,
+      "review_rejection": 2,
+      "description_alignment": 1
+    }
+  },
+  "sentences": {
+    "cases": 31,
+    "components": 86,
+    "component_passes": 71,
+    "all_components_pass": 18,
+    "programs": 4,
+    "faithful": 2,
+    "faithful_ids": [
+      "TFgw4IaR9R8s_1587",
+      "TMrQshDs8aH0_750"
+    ],
+    "failures": {
+      "entity_alignment": 10,
+      "source_alignment": 3,
+      "shared_description": 2,
+      "component_refusal": 12,
+      "review_rejection": 2
+    }
+  },
+  "previous_all_links": {
+    "cases": 31,
+    "components": 77,
+    "component_passes": 65,
+    "all_components_pass": 20,
+    "programs": 6,
+    "faithful": 0
+  },
+  "corpus": {
+    "direct": {
+      "total": 2375,
+      "passes": 1924,
+      "candidates": 2103,
+      "failures": {
+        "negative_quantifier": 10,
+        "coverage_omission": 173,
+        "unresolved_clause": 109,
+        "duplicate_role": 59,
+        "missing_srl": 11,
+        "nominal_disjunction": 8,
+        "mention_alignment": 3,
+        "predicate_type": 8,
+        "quantity_type": 3,
+        "missing_predicate": 35,
+        "opaque_clause": 6,
+        "modal_scope": 16,
+        "threshold_scope": 2,
+        "polarity_omission": 2,
+        "temporal_scope": 2,
+        "unresolved_controller": 1,
+        "media_modifier": 3
+      },
+      "pass_rate": 0.8101052631578948,
+      "candidate_rate": 0.8854736842105263
+    },
+    "reviewed_fallback_additions": 2,
+    "combined": {
+      "total": 2375,
+      "passes": 1926,
+      "candidates": 2105,
+      "failures": {
+        "negative_quantifier": 10,
+        "coverage_omission": 173,
+        "unresolved_clause": 109,
+        "duplicate_role": 59,
+        "missing_srl": 11,
+        "nominal_disjunction": 8,
+        "mention_alignment": 3,
+        "predicate_type": 8,
+        "quantity_type": 3,
+        "missing_predicate": 34,
+        "opaque_clause": 6,
+        "modal_scope": 16,
+        "threshold_scope": 2,
+        "polarity_omission": 2,
+        "temporal_scope": 2,
+        "unresolved_controller": 1,
+        "media_modifier": 2
+      },
+      "pass_rate": 0.8109473684210526,
+      "candidate_rate": 0.8863157894736842
+    },
+    "limits": "Content checks are not semantic accuracy. Only the fixed31 failures receive this fallback; no extrapolation to untested failures. No manual clauses counted."
+  },
+  "limits": [
+    "Previously inspected development data; compiler-author review, not independent human gold.",
+    "One fixed sentences-only condition for corpus substitution, with exact-output review; no per-claim prompt selection.",
+    "No whole-corpus semantic accuracy, media verification, native DeepProbLog inference or relation training result."
+  ]
+}

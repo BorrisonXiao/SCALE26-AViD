@@ -7,6 +7,21 @@
       "date": "2026-11-12",
       "items": [
         {
+          "text": "Separated sentence generation from original-mention alignment and repeated both31-case conditions. Each condition gives2 reviewed faithful recoveries; the sentences-only condition recovers Trump/image and police officers. No per-claim prompt union.",
+          "href": "#split-alignment",
+          "label": "Alignment comparison and limits"
+        },
+        {
+          "text": "Freshly recompiled all2,375 originals with exact saved-record equality:1,924 passes (81.01%) and2,103 candidates (88.55%). Two reviewed automatic splits give1,926 passes (81.09%);449 failures remain.",
+          "href": "#current-corpus-rate",
+          "label": "Current full-corpus pass rate"
+        },
+        {
+          "text": "Published all62 case comparisons with inferred mention links, exact prompts/raw responses, compiled structures and failure reasons. Shorter text still fails on quantity, source scope, references and negation.",
+          "href": "#alignment-example",
+          "label": "Inspect automatic examples"
+        },
+        {
           "text": "Tested sentence splitting on31 failed originals with one frozen Qwen prompt:65/77 clauses pass,20 cases have all components pass, but0 complete automatic results are approved as faithful. Passing originals bypass generation.",
           "href": "#sentence-splitting",
           "label": "Sentence splitting experiment"

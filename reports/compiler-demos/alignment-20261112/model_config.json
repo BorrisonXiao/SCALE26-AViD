@@ -1,0 +1,23 @@
+{
+  "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+  "dtype": "float16",
+  "temperature": 0,
+  "seed": 42,
+  "max_tokens": 2048,
+  "vllm": "0.18.0",
+  "transformers": "4.57.6",
+  "job_id": "1226662",
+  "gpu_names": [
+    "NVIDIA H100 80GB HBM3"
+  ],
+  "source_sha256": {
+    "scripts/run_claim_split_model.py": "99bfc80f9cd7f933badef9483627b834896f706bd9328c44425ce32606192b16",
+    "scripts/probabilistic_verification/claim_split.py": "338827451982e0735c3ee4ac1bc556e7e14efab40981be9814c5ed1c7ac0213d",
+    "scripts/probabilistic_verification/sentence_simplification.py": "c04a09c8bfd1700cd3b93b7d478c0f000378b6e23c599f9788be79ec4e5ef671",
+    "scripts/prompts_phase2.py": "801e5fdc63d35b369462fbb27ed8aa6ed1c2406c9e04d84ad749debe5ed07e92"
+  },
+  "model_config_sha256": "a1ee086a68d0cbfc87316da00ba4b8507bd1292978108e2496201a30a450f438",
+  "input_sha256": "9c86422abdb5f6980ad43c40e1fef94a6bac67084f7ecba3861b0d37f9667429",
+  "eligible": 31,
+  "sentences_only": true
+}

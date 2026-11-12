@@ -1,0 +1,56 @@
+{
+  "direct": {
+    "total": 2375,
+    "passes": 1924,
+    "candidates": 2103,
+    "failures": {
+      "negative_quantifier": 10,
+      "coverage_omission": 173,
+      "unresolved_clause": 109,
+      "duplicate_role": 59,
+      "missing_srl": 11,
+      "nominal_disjunction": 8,
+      "mention_alignment": 3,
+      "predicate_type": 8,
+      "quantity_type": 3,
+      "missing_predicate": 35,
+      "opaque_clause": 6,
+      "modal_scope": 16,
+      "threshold_scope": 2,
+      "polarity_omission": 2,
+      "temporal_scope": 2,
+      "unresolved_controller": 1,
+      "media_modifier": 3
+    },
+    "pass_rate": 0.8101052631578948,
+    "candidate_rate": 0.8854736842105263
+  },
+  "reviewed_fallback_additions": 2,
+  "combined": {
+    "total": 2375,
+    "passes": 1926,
+    "candidates": 2105,
+    "failures": {
+      "negative_quantifier": 10,
+      "coverage_omission": 173,
+      "unresolved_clause": 109,
+      "duplicate_role": 59,
+      "missing_srl": 11,
+      "nominal_disjunction": 8,
+      "mention_alignment": 3,
+      "predicate_type": 8,
+      "quantity_type": 3,
+      "missing_predicate": 34,
+      "opaque_clause": 6,
+      "modal_scope": 16,
+      "threshold_scope": 2,
+      "polarity_omission": 2,
+      "temporal_scope": 2,
+      "unresolved_controller": 1,
+      "media_modifier": 2
+    },
+    "pass_rate": 0.8109473684210526,
+    "candidate_rate": 0.8863157894736842
+  },
+  "limits": "Content checks are not semantic accuracy. Only the fixed31 failures receive this fallback; no extrapolation to untested failures. No manual clauses counted."
+}

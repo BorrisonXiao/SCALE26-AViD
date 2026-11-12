@@ -1,0 +1,222 @@
+{
+  "provenance": "Compiler-author assistant reviewed all31 originals/short sentences and complete outputs or explicit failure reasons; not independent human gold.",
+  "cases": [
+    {
+      "claim_id": "Txf2EdqOg1SQ_2185",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "No unique compiled noun head: c2/Meishan Township, Chiayi",
+      "artifact_sha256": "ae64eca7cca0936b9e76649190e570054617be8983bdbc65be2414c8c02fb969"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2257",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "c3: A clausal argument has no attached SRL frame: submerged in a blue basket",
+      "artifact_sha256": "3c7be9fce745f6faaf05b8884e9a20c0a8794465519a8f3fd2f9969c41a38d6c"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "text_faithful": null,
+      "faithful": false,
+      "reason": "No unique simple source sentence for the original media description.",
+      "artifact_sha256": "bdfa90b7cbb8d089eba928692adf1e46dee87e75f18fa062c50bc9aff47aebb8"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "7e0bc3e7a5107b5a42dab01b14a5509e09bf7545b3f7d9c17aaebad0e54fea3c"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "Original noun head is absent or ambiguous: c3/thing",
+      "artifact_sha256": "570bee28114e9656ee801468dabe165592d21be326a82cfc721e1573ccc590c9"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1587",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "04800bf7dc9ec5dcd7a3e90d41aaeccea57336f77e51c0230b36fd85444ca7c8"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_750",
+      "text_faithful": true,
+      "faithful": true,
+      "reason": "Original head alignment now shares one officers group without the incorrect van/vicinity group.",
+      "artifact_sha256": "e47f5df8338f7e08e9ff0a15d3fd151339bcfe3df6a1c65c3925f08759463a52"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1636",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "Original noun head is absent or ambiguous: c2/tariffs",
+      "artifact_sha256": "b6e668e78ab533ec5e8848cb782c3174ac9b1816a10857a6393d67266dfa0a9d"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1927",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "No unique simple source sentence for the original media description.",
+      "artifact_sha256": "7891934a4e2c79b6452da9c4923e578ad47f7c9bf115418b43753c208c274440"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1354",
+      "text_faithful": null,
+      "faithful": false,
+      "reason": "c1: A clausal argument has no attached SRL frame: to extract information from samples",
+      "artifact_sha256": "86478e5637681ec660cd008d0c23f74e810853b19e469c48af9841f0d904510d"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1263",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "Original noun head is absent or ambiguous: c2/relay",
+      "artifact_sha256": "0d9cdf5153df41b375842309f1f7e60096ea0bbee52888982bfa0f3a700d9cba"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1826",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "No unique simple source sentence for the original media description.",
+      "artifact_sha256": "a74015945cdc5e25288607e53f6ad5e940d7e6b6075abcba67e06173fc6cf8c9"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_192",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "Original noun head is absent or ambiguous: c1/beginning",
+      "artifact_sha256": "3d7d3f0cc7bd329db48dce207636e78ec53e51b1556c04cfc76802cc4b9b5b30"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "No multi-sentence split proposed.",
+      "artifact_sha256": "0de31d20aac88dbc8753419cd10d9badd48be0ae865bcda208c3896824a9569f"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Original noun head is absent or ambiguous: c2/place",
+      "artifact_sha256": "487c51ccb0d44fa86e05807768464745404275fc22359847c24e311337db7288"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "text_faithful": true,
+      "faithful": true,
+      "reason": "The two simple clauses retain the same robot, lane3 and second-place result.",
+      "artifact_sha256": "5b820da543cbc67a6163fae06a8e4f776abc58813191335f8518b4c145a208d5"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "Original noun head is absent or ambiguous: c1/Robot",
+      "artifact_sha256": "e501c31bdcd7cc2eb47ef82b0464f708eab2ce4233a4e1abf85705fb5f640a9e"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1035",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "The earthquake and magnitude are distinct, but7.7 remains an untyped entity rather than a scalar magnitude.",
+      "artifact_sha256": "3499c919f65872a785d69e6ad5e5611ecb8081c402a070686ec1cd635a2e016a"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "No unique compiled noun head: c2/half elliptical orbit around Earth",
+      "artifact_sha256": "ba56d5b5a392f7522d635cfbb1b2128d11848225847148dd5a4c4d9d1f331a3a"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Original noun head is absent or ambiguous: c2/second",
+      "artifact_sha256": "82b45c230a2ba898c3620e227f75c97eb4d002e66eeed41aa6b44b570d56a543"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "No multi-sentence split proposed.",
+      "artifact_sha256": "d83244078c3160ea9531313b8aca8621a4fc04efe323527abe33bb5d11444e3e"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "No multi-sentence split proposed.",
+      "artifact_sha256": "44dcb33e992be38852643ed828a915d2997ceb79e5cb8e364e12030368b954e0"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2350",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Original noun head is absent or ambiguous: c1/northwest",
+      "artifact_sha256": "b64dfca3411db8407469af736e5dccc6ba6677e6703261a29074d57a17650346"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "c1: Unrepresented source content: reporter, Zhuhai",
+      "artifact_sha256": "2325f361cd5e53d61fc632470ea6710fbf8bf7f25bd131ed874cb46da023e2b3"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1916",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "Positive narration is introduced under an absence original; reject the composed source structure.",
+      "artifact_sha256": "d20a38256e446787c226b456f3c1f4d44c9b50e344de67fbce72bf8963adc350"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1901",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "c2: A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.",
+      "artifact_sha256": "406d2e3dbc5c6cf0f101bb7011f57bb413c9e865fedb40e750b19732597486f6"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_921",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "307a7fa4d8cb3de398b6ce223efdb9dc69519670e47229d3ad1b71fd06675348"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_820",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "c1: Enough-NP needs one explicit infinitival sufficiency goal.",
+      "artifact_sha256": "9048013e7a7111c8b8c4060b269e51775cd7d40a8536d6605d293beb71c7c369"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "c1: A clausal argument has no attached SRL frame: to see with respect to spin",
+      "artifact_sha256": "0755c5576da09ddb302bbdc755a7d73d10e265dc8e35b6a2c4a17e5f0b162fd3"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_823",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "A shared property is not anchored in the original text.",
+      "artifact_sha256": "c1d549c760faf021f4f3578e9dd28d18f9c6b238fe1752dc9fdeccc70bae340d"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "Original noun head is absent or ambiguous: c3/They",
+      "artifact_sha256": "e0f95042b628384d48b48055f025e7dd8654afe7c242a49be9b6e2bc2d750759"
+    }
+  ]
+}

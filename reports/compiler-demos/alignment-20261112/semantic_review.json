@@ -1,0 +1,222 @@
+{
+  "provenance": "Compiler-author assistant reviewed all31 originals/short sentences and complete outputs or explicit failure reasons; not independent human gold.",
+  "cases": [
+    {
+      "claim_id": "Txf2EdqOg1SQ_2185",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "The text preserves location and149.0mm, but the compiled name span cannot be aligned; no complete recovery.",
+      "artifact_sha256": "ebd0d9de36e4ceab6e3b21dd196015f5752add79a19a4c17db888f663bb97df3"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2257",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "The intended scene and submerged-tool reading is retained, but the introduced scene mention has no original noun anchor.",
+      "artifact_sha256": "ba30fae4632117b7dfec2c51225bb4dde132d95652e2eaaf061e06d40322b89f"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Short text retains vehicle, road and flashing lights; composition has no simple source clause for the second shot and remains refused.",
+      "artifact_sha256": "6db10dc14b4b8dc61783ae87dcf4b25c0ca80abd9f685b3ccd1b1e6be630325b"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "text_faithful": null,
+      "faithful": false,
+      "reason": "Restaurant reference and whether the historical relative is world or depicted content remain context-dependent; descriptions cannot safely merge.",
+      "artifact_sha256": "2b8c5ebc5e69a5224fe2713ecb5ccbef78d375ed24b23ff346914a92b99dd0e1"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "Something likely executive orders becomes a likely single executive order; the unanchored thing mention is also refused.",
+      "artifact_sha256": "30dfdd4664b1f321d3760982f346d304e92bb0d853ea25361e55f35449d04961"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1587",
+      "text_faithful": true,
+      "faithful": true,
+      "reason": "The same original Trump is shared across depiction and holding. Holding up and the signed-document attribute remain visual content; no signer is introduced.",
+      "artifact_sha256": "b1d6bb5dc6554007b837e34a859e998810aed8f670ee86424595c25c655cddd5"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_750",
+      "text_faithful": true,
+      "faithful": true,
+      "reason": "One group of multiple additional police officers supplies the location, helping and clearing-space clauses. The police van remains a separate entity; all intended conditions are retained.",
+      "artifact_sha256": "0e73c10d09b9fc4c8c668c9aaa8877d00a30d6c0e015a34e037ea20aed32c3d2"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1636",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "The original alternative set tariffs OR delegate control is expanded into jointly asserted authorities/outcomes and an added may clause.",
+      "artifact_sha256": "3d86ee7e5f67200b71e8b966ab7d2279165314f05a3123c2cc487f5938658085"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1927",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "The split assigns County of Los Angeles to the video rather than retaining the original logo/for relationship; source alignment is also refused.",
+      "artifact_sha256": "c89753ea6df3b21474517b1cd86406aec9c4e9effa92c5cd3ab59bf5e93a5a42"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1354",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Two redundant versions of the same purpose clause do not simplify its unsupported infinitival content.",
+      "artifact_sha256": "c53eba57eb243f05606720bc0b9a27f80d587258b57d2fdf00ba76fc68ea8454"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1263",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "The purpose of remaining in orbit becomes separate future provision/support assertions; the original goal relationship is lost.",
+      "artifact_sha256": "06ce4f224eb513a73b3569c4c8797bdea805d0e9c3cba57ca6701716a7cdaf17"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1826",
+      "text_faithful": null,
+      "faithful": false,
+      "reason": "Picture identity, reflexive reference and the scene relationship still need interpretation; an additional seen clause repeats location roles and fails.",
+      "artifact_sha256": "7bbf5dc56e605f4713917e7b35f98695d640b029bc8e8a7dbb910b03ed397bc5"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_192",
+      "text_faithful": null,
+      "faithful": false,
+      "reason": "The original video/velocity fragment has an unresolved source-display reading; the generated nominal context cannot be aligned.",
+      "artifact_sha256": "ad9029f7c1ae3cf660d5cbdbe61008a72d5f4126a9241dc4552990ceb3e4a0d0"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "An apparently intact condition is supplemented with a definite power-lines-have-integrity assertion; redundancy does not preserve uncertainty.",
+      "artifact_sha256": "8777b8ce7a42453ca54f7aba6621877cfd416665572c72433090fa3d9a11e683"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "The intended race and track reading is simple, but taking place introduces a nominal place not anchored in the original; the current aligner is overstrict here.",
+      "artifact_sha256": "724d5feeb1dfe08c6ae7afdd82ecd5fe2f1f69bd2495ae667748dde7d08db10f"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "The clauses redundantly retain robot/lane3/second-place content, but the unchanged original clause still fails the three content check; no complete recovery.",
+      "artifact_sha256": "8ee638f6e9fd8c9c78891afd7092ad3a5be49d71f1de434233fd2b91b4850786"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Under the intended same-kick reading the split retains sweep kick and Robot2 as target. Two Robot mentions are ambiguous under head-only alignment and are refused.",
+      "artifact_sha256": "5bd6c589a3a08ec756357a5040ebbb1ecda4b4f1d6c10fe90fbef25052166c10"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1035",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Identity now correctly separates earthquake and magnitude, but7.7 is still a generic entity in be rather than a typed scalar magnitude; partial compilation only.",
+      "artifact_sha256": "fb320b9c39534f6c90d1ff8cb998178cecf159858097b4fe8011515ae07c89fc"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "Splitting three-and-a-half orbits into separate3-orbit and half-orbit clauses needs quantity composition; independent object-group counts are not an equivalent representation.",
+      "artifact_sha256": "09dfb5d297f3701bd3ba2f86daf27127933d4c128a6950d5a25dbe5a2e1e0150"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "The two clauses repeat the same reduction event and retain40meters/second; an introduced second unit mention cannot be aligned, so no complete program is approved.",
+      "artifact_sha256": "82b45c230a2ba898c3620e227f75c97eb4d002e66eeed41aa6b44b570d56a543"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Text retains three judges and panel/court identity redundantly. A component drops three; this is not a successful cardinality compilation.",
+      "artifact_sha256": "bfb079a938639a965b7e4b32589e3e5e2d1043e7bb87b7f825434a5df4acd9ae"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "A building housing a publisher becomes a building being constructed for the publisher. This invents construction and changes housing into a goal.",
+      "artifact_sha256": "5676d010c339b5b0d84747f6ebea05051923c036aabf42716792965c87f4e735"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2350",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Direction and speed describe the same intended motion. A component nominalizes northwest, which cannot align to its original adverb; quantity semantics also remain unresolved.",
+      "artifact_sha256": "bfcfdc2fd4f36a80245deccf6bd604f96f1e914741cd94fcc572cc12390017a0"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "The intended depicted reporter/location/white-raincoat reading is retained in the short text; the source clause still loses reporter/Zhuhai and is refused.",
+      "artifact_sha256": "dd2a9cc461ec3314a5d2d9423d486a83455a382d74657a9259faedd0252688d7"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1916",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "The model introduces positive narration alongside a negative narration clause. Its compiled source structure is also wrong; reject the generated program.",
+      "artifact_sha256": "d20a38256e446787c226b456f3c1f4d44c9b50e344de67fbce72bf8963adc350"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1901",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Existing video plus no-audio keeps the intended absence reading; the compiler still lacks the required quantified negation. No positive audio claim is accepted.",
+      "artifact_sha256": "406d2e3dbc5c6cf0f101bb7011f57bb413c9e865fedb40e750b19732597486f6"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_921",
+      "text_faithful": true,
+      "faithful": false,
+      "reason": "Looked certain and would remain in text; the compiler cannot represent the modal interpretation and refuses.",
+      "artifact_sha256": "307a7fa4d8cb3de398b6ce223efdb9dc69519670e47229d3ad1b71fd06675348"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_820",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "The joint insufficient-gains/failure cause is changed into separate occurrence claims and a prevention relation attributed to the failure alone.",
+      "artifact_sha256": "e583b09439e20528cac322e47255a202f8a7feebffa083b97e77fbb4c7c8d941"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "An observation is invented and made to continue until the third; that changes the original limited visibility/until condition.",
+      "artifact_sha256": "dadd187ff549e67d152a84caa7fedae860d9c9a3da95a1900bf51a530bfcc768"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_823",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "The final sentence invents what red represents. The comparison/negation remains unsupported; reject.",
+      "artifact_sha256": "8d338292cb1bf670b3f27ec971380dce3812b2ea8dcd02d903aaedb22abc7966"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "text_faithful": false,
+      "faithful": false,
+      "reason": "The exact quotation is followed by assertions of its internal events; this projects quoted content into the world and violates the prompt.",
+      "artifact_sha256": "7b50716da05f9dfbc3a376223d45f3f115ed8a318fc4454fb0c89bae7b94878a"
+    }
+  ]
+}

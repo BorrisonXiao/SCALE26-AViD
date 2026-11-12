@@ -1,0 +1,2537 @@
+[
+  {
+    "claim_id": "TFgw4IaR9R8s_1587",
+    "original": "Image of Trump holding up a signed document.",
+    "clauses": [
+      {
+        "id": "c1",
+        "text": "An image depicts Trump.",
+        "parent": null,
+        "relation": "root",
+        "target": ""
+      },
+      {
+        "id": "c2",
+        "text": "Trump is holding up a signed document.",
+        "parent": "c1",
+        "relation": "and",
+        "target": ""
+      }
+    ],
+    "output": {
+      "status": "compiled",
+      "compilation": {
+        "claim_id": "TFgw4IaR9R8s_1587",
+        "text": "An image depicts Trump. Trump is holding up a signed document.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "An",
+            "lemma": "a",
+            "upos": "DET",
+            "head": 2,
+            "deprel": "det",
+            "start_char": 0,
+            "end_char": 2,
+            "feats": "Definite=Ind|PronType=Art"
+          },
+          {
+            "id": 2,
+            "text": "image",
+            "lemma": "image",
+            "upos": "NOUN",
+            "head": 3,
+            "deprel": "nsubj",
+            "start_char": 3,
+            "end_char": 8,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 3,
+            "text": "depicts",
+            "lemma": "depict",
+            "upos": "VERB",
+            "head": 0,
+            "deprel": "root",
+            "start_char": 9,
+            "end_char": 16,
+            "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+          },
+          {
+            "id": 4,
+            "text": "Trump",
+            "lemma": "Trump",
+            "upos": "PROPN",
+            "head": 3,
+            "deprel": "obj",
+            "start_char": 17,
+            "end_char": 22,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 5,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "head": 3,
+            "deprel": "punct",
+            "start_char": 22,
+            "end_char": 23,
+            "feats": null
+          },
+          {
+            "id": 6,
+            "text": "Trump",
+            "lemma": "Trump",
+            "upos": "PROPN",
+            "head": 8,
+            "deprel": "nsubj",
+            "start_char": 24,
+            "end_char": 29,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 7,
+            "text": "is",
+            "lemma": "be",
+            "upos": "AUX",
+            "head": 8,
+            "deprel": "aux",
+            "start_char": 30,
+            "end_char": 32,
+            "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+          },
+          {
+            "id": 8,
+            "text": "holding",
+            "lemma": "hold",
+            "upos": "VERB",
+            "head": 0,
+            "deprel": "root",
+            "start_char": 33,
+            "end_char": 40,
+            "feats": "Tense=Pres|VerbForm=Part"
+          },
+          {
+            "id": 9,
+            "text": "up",
+            "lemma": "up",
+            "upos": "ADP",
+            "head": 8,
+            "deprel": "compound:prt",
+            "start_char": 41,
+            "end_char": 43,
+            "feats": null
+          },
+          {
+            "id": 10,
+            "text": "a",
+            "lemma": "a",
+            "upos": "DET",
+            "head": 12,
+            "deprel": "det",
+            "start_char": 44,
+            "end_char": 45,
+            "feats": "Definite=Ind|PronType=Art"
+          },
+          {
+            "id": 11,
+            "text": "signed",
+            "lemma": "sign",
+            "upos": "VERB",
+            "head": 12,
+            "deprel": "amod",
+            "start_char": 46,
+            "end_char": 52,
+            "feats": "Tense=Past|VerbForm=Part"
+          },
+          {
+            "id": 12,
+            "text": "document",
+            "lemma": "document",
+            "upos": "NOUN",
+            "head": 8,
+            "deprel": "obj",
+            "start_char": 53,
+            "end_char": 61,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 13,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "head": 8,
+            "deprel": "punct",
+            "start_char": 61,
+            "end_char": 62,
+            "feats": null
+          }
+        ],
+        "variables": [
+          {
+            "name": "E1",
+            "kind": "event",
+            "description": "depict",
+            "token_ids": []
+          },
+          {
+            "name": "X1",
+            "kind": "entity",
+            "description": "image",
+            "token_ids": []
+          },
+          {
+            "name": "X2",
+            "kind": "entity",
+            "description": "Trump",
+            "token_ids": []
+          },
+          {
+            "name": "E2",
+            "kind": "event",
+            "description": "hold",
+            "token_ids": []
+          },
+          {
+            "name": "X3",
+            "kind": "entity",
+            "description": "document",
+            "token_ids": []
+          },
+          {
+            "name": "E3",
+            "kind": "event",
+            "description": "sign",
+            "token_ids": []
+          },
+          {
+            "name": "T0",
+            "kind": "context",
+            "description": "Reference time supplied by the caller",
+            "token_ids": []
+          }
+        ],
+        "atoms": [
+          {
+            "id": "a1",
+            "predicate": "referent",
+            "arguments": [
+              "X1",
+              "image",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a2",
+            "predicate": "proposition",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "depiction",
+              "c1::TFgw4IaR9R8s_1587",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "scope",
+            "roles": [],
+            "text": "proposition",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a3",
+            "predicate": "referent",
+            "arguments": [
+              "X2",
+              "Trump",
+              "scope",
+              "c1::TFgw4IaR9R8s_1587",
+              "route",
+              "visual_depiction",
+              "owner",
+              "E1"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a4",
+            "predicate": "referent",
+            "arguments": [
+              "X3",
+              "document",
+              "scope",
+              "c1::TFgw4IaR9R8s_1587",
+              "route",
+              "visual_depiction",
+              "owner",
+              "E1"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a5",
+            "predicate": "proposition",
+            "arguments": [
+              "X3",
+              "amod",
+              "relative",
+              "c2::TFgw4IaR9R8s_1587",
+              "scope",
+              "c1::TFgw4IaR9R8s_1587",
+              "route",
+              "visual_depiction",
+              "owner",
+              "E1"
+            ],
+            "kind": "scope",
+            "roles": [],
+            "text": "proposition",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a6",
+            "predicate": "reference",
+            "arguments": [
+              "X3",
+              "c2_x7",
+              "scope",
+              "c2::TFgw4IaR9R8s_1587",
+              "route",
+              "visual_depiction",
+              "owner",
+              "X3"
+            ],
+            "kind": "reference",
+            "roles": [],
+            "text": "reference",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a7",
+            "predicate": "sign",
+            "arguments": [
+              "E3",
+              "ARG1",
+              "X3",
+              "scope",
+              "c2::TFgw4IaR9R8s_1587",
+              "route",
+              "visual_depiction",
+              "owner",
+              "X3"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "sign",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a8",
+            "predicate": "hold",
+            "arguments": [
+              "E2",
+              "ARG0",
+              "X2",
+              "ARG1",
+              "X3",
+              "ARGM-DIR",
+              "{\"kind\":\"text\",\"value\":\"up\"}",
+              "scope",
+              "c1::TFgw4IaR9R8s_1587",
+              "route",
+              "visual_depiction",
+              "owner",
+              "E1"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "hold",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a9",
+            "predicate": "property",
+            "arguments": [
+              "E2",
+              "particle",
+              "up",
+              "scope",
+              "c1::TFgw4IaR9R8s_1587",
+              "route",
+              "visual_depiction",
+              "owner",
+              "E1"
+            ],
+            "kind": "property",
+            "roles": [],
+            "text": "property",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a10",
+            "predicate": "temporal",
+            "arguments": [
+              "E2",
+              "pres",
+              "progressive",
+              "T0",
+              "unspecified",
+              "scope",
+              "c1::TFgw4IaR9R8s_1587",
+              "route",
+              "visual_depiction",
+              "owner",
+              "E1"
+            ],
+            "kind": "temporal",
+            "roles": [],
+            "text": "temporal",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a11",
+            "predicate": "depict",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X1",
+              "ARG1",
+              "c1::TFgw4IaR9R8s_1587",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "depict",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a12",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "unspecified",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "temporal",
+            "roles": [],
+            "text": "temporal",
+            "token_ids": [],
+            "trainable": false
+          }
+        ],
+        "expression": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a11",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "and",
+                              "children": [
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a3",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "exists",
+                                  "children": [
+                                    {
+                                      "op": "and",
+                                      "children": [
+                                        {
+                                          "op": "atom",
+                                          "children": [],
+                                          "atom_id": "a3",
+                                          "variables": [],
+                                          "state": ""
+                                        },
+                                        {
+                                          "op": "atom",
+                                          "children": [],
+                                          "atom_id": "a4",
+                                          "variables": [],
+                                          "state": ""
+                                        },
+                                        {
+                                          "op": "atom",
+                                          "children": [],
+                                          "atom_id": "a5",
+                                          "variables": [],
+                                          "state": ""
+                                        },
+                                        {
+                                          "op": "and",
+                                          "children": [
+                                            {
+                                              "op": "atom",
+                                              "children": [],
+                                              "atom_id": "a6",
+                                              "variables": [],
+                                              "state": ""
+                                            },
+                                            {
+                                              "op": "exists",
+                                              "children": [
+                                                {
+                                                  "op": "atom",
+                                                  "children": [],
+                                                  "atom_id": "a7",
+                                                  "variables": [],
+                                                  "state": ""
+                                                }
+                                              ],
+                                              "atom_id": "",
+                                              "variables": [
+                                                "E3"
+                                              ],
+                                              "state": ""
+                                            }
+                                          ],
+                                          "atom_id": "",
+                                          "variables": [],
+                                          "state": ""
+                                        },
+                                        {
+                                          "op": "exists",
+                                          "children": [
+                                            {
+                                              "op": "and",
+                                              "children": [
+                                                {
+                                                  "op": "atom",
+                                                  "children": [],
+                                                  "atom_id": "a8",
+                                                  "variables": [],
+                                                  "state": ""
+                                                },
+                                                {
+                                                  "op": "atom",
+                                                  "children": [],
+                                                  "atom_id": "a9",
+                                                  "variables": [],
+                                                  "state": ""
+                                                },
+                                                {
+                                                  "op": "atom",
+                                                  "children": [],
+                                                  "atom_id": "a10",
+                                                  "variables": [],
+                                                  "state": ""
+                                                }
+                                              ],
+                                              "atom_id": "",
+                                              "variables": [],
+                                              "state": ""
+                                            }
+                                          ],
+                                          "atom_id": "",
+                                          "variables": [
+                                            "E2"
+                                          ],
+                                          "state": ""
+                                        }
+                                      ],
+                                      "atom_id": "",
+                                      "variables": [],
+                                      "state": ""
+                                    }
+                                  ],
+                                  "atom_id": "",
+                                  "variables": [
+                                    "X3"
+                                  ],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "X2"
+                          ],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a12",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E1",
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "X1"
+          ],
+          "state": ""
+        },
+        "coverage": [],
+        "warnings": [
+          "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+        ],
+        "version": "logical-form-v2",
+        "metadata": {
+          "logical_form": {
+            "version": "logical-form-v2",
+            "kind": "claim",
+            "entities": [
+              {
+                "id": "c1_x2",
+                "text": "image",
+                "type": "entity"
+              },
+              {
+                "id": "c1_x4",
+                "text": "Trump",
+                "type": "entity"
+              },
+              {
+                "id": "c2_x7",
+                "text": "document",
+                "type": "entity",
+                "propositions": [
+                  {
+                    "role": "amod",
+                    "kind": "relative",
+                    "route": "visual_depiction",
+                    "body": {
+                      "op": "event",
+                      "id": "e11",
+                      "predicate": "sign",
+                      "anchor": "signed",
+                      "arguments": {
+                        "ARG1": "c2_x7"
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "formula": {
+              "op": "event",
+              "id": "e3",
+              "predicate": "depict",
+              "anchor": "depicts",
+              "arguments": {
+                "ARG0": "c1_x2"
+              },
+              "propositions": [
+                {
+                  "role": "ARG1",
+                  "kind": "depiction",
+                  "route": "visual_depiction",
+                  "body": {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "entity",
+                        "ref": "c1_x4"
+                      },
+                      {
+                        "op": "event",
+                        "id": "e8",
+                        "predicate": "hold",
+                        "anchor": "holding",
+                        "arguments": {
+                          "ARG0": "c1_x4",
+                          "ARGM-DIR": {
+                            "kind": "text",
+                            "value": "up"
+                          },
+                          "ARG1": "c2_x7"
+                        },
+                        "properties": [
+                          {
+                            "role": "particle",
+                            "value": "up"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "warnings": [
+              "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+            ]
+          },
+          "normalizations": [],
+          "entities": {
+            "X1": {
+              "id": "c1_x2",
+              "text": "image",
+              "type": "entity"
+            },
+            "X2": {
+              "id": "c1_x4",
+              "text": "Trump",
+              "type": "entity"
+            },
+            "X3": {
+              "id": "c2_x7",
+              "text": "document",
+              "type": "entity",
+              "propositions": [
+                {
+                  "role": "amod",
+                  "kind": "relative",
+                  "route": "visual_depiction",
+                  "body": {
+                    "op": "event",
+                    "id": "e11",
+                    "predicate": "sign",
+                    "anchor": "signed",
+                    "arguments": {
+                      "ARG1": "c2_x7"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "events": {
+            "E1": {
+              "op": "event",
+              "id": "e3",
+              "predicate": "depict",
+              "anchor": "depicts",
+              "arguments": {
+                "ARG0": "c1_x2"
+              },
+              "propositions": [
+                {
+                  "role": "ARG1",
+                  "kind": "depiction",
+                  "route": "visual_depiction",
+                  "body": {
+                    "op": "and",
+                    "children": [
+                      {
+                        "op": "entity",
+                        "ref": "c1_x4"
+                      },
+                      {
+                        "op": "event",
+                        "id": "e8",
+                        "predicate": "hold",
+                        "anchor": "holding",
+                        "arguments": {
+                          "ARG0": "c1_x4",
+                          "ARGM-DIR": {
+                            "kind": "text",
+                            "value": "up"
+                          },
+                          "ARG1": "c2_x7"
+                        },
+                        "properties": [
+                          {
+                            "role": "particle",
+                            "value": "up"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "scope": "world",
+              "route": "unspecified",
+              "owner": null
+            },
+            "E2": {
+              "op": "event",
+              "id": "e8",
+              "predicate": "hold",
+              "anchor": "holding",
+              "arguments": {
+                "ARG0": "c1_x4",
+                "ARGM-DIR": {
+                  "kind": "text",
+                  "value": "up"
+                },
+                "ARG1": "c2_x7"
+              },
+              "properties": [
+                {
+                  "role": "particle",
+                  "value": "up"
+                }
+              ],
+              "scope": "c1::TFgw4IaR9R8s_1587",
+              "route": "visual_depiction",
+              "owner": "E1"
+            },
+            "E3": {
+              "op": "event",
+              "id": "e11",
+              "predicate": "sign",
+              "anchor": "signed",
+              "arguments": {
+                "ARG1": "c2_x7"
+              },
+              "scope": "c2::TFgw4IaR9R8s_1587",
+              "route": "visual_depiction",
+              "owner": "X3"
+            }
+          },
+          "scopes": {
+            "c1::TFgw4IaR9R8s_1587": {
+              "parent": "world",
+              "kind": "depiction",
+              "role": "ARG1",
+              "route": "visual_depiction",
+              "owner": "E1"
+            },
+            "c2::TFgw4IaR9R8s_1587": {
+              "parent": "c1::TFgw4IaR9R8s_1587",
+              "kind": "relative",
+              "role": "amod",
+              "route": "visual_depiction",
+              "owner": "X3"
+            }
+          },
+          "temporal": {
+            "E2": {
+              "tense": "pres",
+              "aspect": "progressive",
+              "reference": "context",
+              "token_ids": [
+                7,
+                8
+              ],
+              "finite": true,
+              "completion": "unspecified"
+            },
+            "E1": {
+              "tense": "pres",
+              "aspect": "simple",
+              "reference": "context",
+              "token_ids": [
+                3
+              ],
+              "finite": true,
+              "completion": "unspecified"
+            }
+          },
+          "allowed_routes": {
+            "a1": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a2": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a3": [
+              "visual_depiction"
+            ],
+            "a4": [
+              "visual_depiction"
+            ],
+            "a5": [
+              "visual_depiction"
+            ],
+            "a6": [
+              "visual_depiction"
+            ],
+            "a7": [
+              "visual_depiction"
+            ],
+            "a8": [
+              "visual_depiction"
+            ],
+            "a9": [
+              "visual_depiction"
+            ],
+            "a10": [
+              "visual_depiction"
+            ],
+            "a11": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a12": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ]
+          },
+          "kind": "claim",
+          "requires_context": false,
+          "runtime_requirements": [],
+          "uses_phrase_arguments": false,
+          "limitations": [
+            "Executable structure is not a certificate of semantic equivalence.",
+            "Scoped, group and reference predicates require evidence functions; missing functions return unknown.",
+            "Group descriptions preserve quantifier conditions; no general first-order quantifier theorem prover is implemented."
+          ],
+          "split_composition": {
+            "flat": false,
+            "clauses": [
+              {
+                "id": "c1",
+                "text": "An image depicts Trump.",
+                "parent": null,
+                "relation": "root",
+                "target": ""
+              },
+              {
+                "id": "c2",
+                "text": "Trump is holding up a signed document.",
+                "parent": "c1",
+                "relation": "depiction",
+                "target": "Trump"
+              }
+            ],
+            "shared": [
+              {
+                "mentions": [
+                  {
+                    "clause": "c1",
+                    "text": "Trump"
+                  },
+                  {
+                    "clause": "c2",
+                    "text": "Trump"
+                  }
+                ]
+              }
+            ]
+          },
+          "original_alignment": {
+            "entities": [
+              {
+                "original_token": 1,
+                "original_text": "Image",
+                "mentions": [
+                  {
+                    "clause": "c1",
+                    "entity": "x2",
+                    "text": "image"
+                  }
+                ]
+              },
+              {
+                "original_token": 3,
+                "original_text": "Trump",
+                "mentions": [
+                  {
+                    "clause": "c1",
+                    "entity": "x4",
+                    "text": "Trump"
+                  },
+                  {
+                    "clause": "c2",
+                    "entity": "x1",
+                    "text": "Trump"
+                  }
+                ]
+              },
+              {
+                "original_token": 8,
+                "original_text": "document",
+                "mentions": [
+                  {
+                    "clause": "c2",
+                    "entity": "x7",
+                    "text": "document"
+                  }
+                ]
+              }
+            ],
+            "events": [
+              {
+                "clause": "c1",
+                "event": "e3",
+                "predicate": "depict",
+                "original_token": null
+              },
+              {
+                "clause": "c2",
+                "event": "e6",
+                "predicate": "sign",
+                "original_token": 7
+              },
+              {
+                "clause": "c2",
+                "event": "e3",
+                "predicate": "hold",
+                "original_token": 4
+              }
+            ],
+            "event_merges": []
+          }
+        },
+        "status": "compiled",
+        "logical_form": "EXISTS X1: ((referent(X1, image, scope, world, route, unspecified) AND EXISTS E1, T0: ((depict(E1, ARG0, X1, ARG1, c1::TFgw4IaR9R8s_1587, scope, world, route, unspecified) AND proposition(E1, ARG1, depiction, c1::TFgw4IaR9R8s_1587, scope, world, route, unspecified) AND EXISTS X2: ((referent(X2, Trump, scope, c1::TFgw4IaR9R8s_1587, route, visual_depiction, owner, E1) AND EXISTS X3: ((referent(X2, Trump, scope, c1::TFgw4IaR9R8s_1587, route, visual_depiction, owner, E1) AND referent(X3, document, scope, c1::TFgw4IaR9R8s_1587, route, visual_depiction, owner, E1) AND proposition(X3, amod, relative, c2::TFgw4IaR9R8s_1587, scope, c1::TFgw4IaR9R8s_1587, route, visual_depiction, owner, E1) AND (reference(X3, c2_x7, scope, c2::TFgw4IaR9R8s_1587, route, visual_depiction, owner, X3) AND EXISTS E3: (sign(E3, ARG1, X3, scope, c2::TFgw4IaR9R8s_1587, route, visual_depiction, owner, X3))) AND EXISTS E2: ((hold(E2, ARG0, X2, ARG1, X3, ARGM-DIR, {\"kind\":\"text\",\"value\":\"up\"}, scope, c1::TFgw4IaR9R8s_1587, route, visual_depiction, owner, E1) AND property(E2, particle, up, scope, c1::TFgw4IaR9R8s_1587, route, visual_depiction, owner, E1) AND temporal(E2, pres, progressive, T0, unspecified, scope, c1::TFgw4IaR9R8s_1587, route, visual_depiction, owner, E1))))))) AND temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)))))"
+      },
+      "program": "% Explicit state heads; categorical observations remain shared.\n0::status(o_0548bfdb2bb4bbf4da66,supported); 0::status(o_0548bfdb2bb4bbf4da66,refuted); 1::status(o_0548bfdb2bb4bbf4da66,unknown).\n0::status(o_0d2e1c4202b40668c636,supported); 0::status(o_0d2e1c4202b40668c636,refuted); 1::status(o_0d2e1c4202b40668c636,unknown).\n0::status(o_1754dd4c5f40305723ea,supported); 0::status(o_1754dd4c5f40305723ea,refuted); 1::status(o_1754dd4c5f40305723ea,unknown).\n0::status(o_347c48f5a7615e7d0ebb,supported); 0::status(o_347c48f5a7615e7d0ebb,refuted); 1::status(o_347c48f5a7615e7d0ebb,unknown).\n0::status(o_4928945e40a9363d8f27,supported); 0::status(o_4928945e40a9363d8f27,refuted); 1::status(o_4928945e40a9363d8f27,unknown).\n0::status(o_51ef12cd420dd3eea861,supported); 0::status(o_51ef12cd420dd3eea861,refuted); 1::status(o_51ef12cd420dd3eea861,unknown).\n0::status(o_62efa1a729e9bc0bd5f3,supported); 0::status(o_62efa1a729e9bc0bd5f3,refuted); 1::status(o_62efa1a729e9bc0bd5f3,unknown).\n0::status(o_71b94ad9093c54c3b671,supported); 0::status(o_71b94ad9093c54c3b671,refuted); 1::status(o_71b94ad9093c54c3b671,unknown).\n0::status(o_797a9ca1e7e86a540629,supported); 0::status(o_797a9ca1e7e86a540629,refuted); 1::status(o_797a9ca1e7e86a540629,unknown).\n0::status(o_7f3611e4a05bd45d4490,supported); 0::status(o_7f3611e4a05bd45d4490,refuted); 1::status(o_7f3611e4a05bd45d4490,unknown).\n0::status(o_b5fa8b15fc884a6ed072,supported); 0::status(o_b5fa8b15fc884a6ed072,refuted); 1::status(o_b5fa8b15fc884a6ed072,unknown).\n0::status(o_c120a4779b2083b33965,supported); 0::status(o_c120a4779b2083b33965,refuted); 1::status(o_c120a4779b2083b33965,unknown).\nnode(n3,supported) :- status(o_0548bfdb2bb4bbf4da66,supported).\nnode(n3,refuted) :- status(o_0548bfdb2bb4bbf4da66,refuted).\nnode(n3,unknown) :- status(o_0548bfdb2bb4bbf4da66,unknown).\nnode(n5,supported) :- status(o_0d2e1c4202b40668c636,supported).\nnode(n5,refuted) :- status(o_0d2e1c4202b40668c636,refuted).\nnode(n5,unknown) :- status(o_0d2e1c4202b40668c636,unknown).\nnode(n6,supported) :- status(o_1754dd4c5f40305723ea,supported).\nnode(n6,refuted) :- status(o_1754dd4c5f40305723ea,refuted).\nnode(n6,unknown) :- status(o_1754dd4c5f40305723ea,unknown).\nnode(n4,refuted) :- node(n5,refuted).\nnode(n4,refuted) :- node(n6,refuted).\nnode(n4,supported) :- node(n5,supported), node(n6,supported).\nnode(n4,unknown) :- node(n5,unknown), node(n6,supported).\nnode(n4,unknown) :- node(n5,supported), node(n6,unknown).\nnode(n4,unknown) :- node(n5,unknown), node(n6,unknown).\nnode(n2,refuted) :- node(n3,refuted).\nnode(n2,refuted) :- node(n4,refuted).\nnode(n2,supported) :- node(n3,supported), node(n4,supported).\nnode(n2,unknown) :- node(n3,unknown), node(n4,supported).\nnode(n2,unknown) :- node(n3,supported), node(n4,unknown).\nnode(n2,unknown) :- node(n3,unknown), node(n4,unknown).\nnode(n8,supported) :- status(o_347c48f5a7615e7d0ebb,supported).\nnode(n8,refuted) :- status(o_347c48f5a7615e7d0ebb,refuted).\nnode(n8,unknown) :- status(o_347c48f5a7615e7d0ebb,unknown).\nnode(n10,supported) :- status(o_4928945e40a9363d8f27,supported).\nnode(n10,refuted) :- status(o_4928945e40a9363d8f27,refuted).\nnode(n10,unknown) :- status(o_4928945e40a9363d8f27,unknown).\nnode(n11,supported) :- status(o_51ef12cd420dd3eea861,supported).\nnode(n11,refuted) :- status(o_51ef12cd420dd3eea861,refuted).\nnode(n11,unknown) :- status(o_51ef12cd420dd3eea861,unknown).\nnode(n9,refuted) :- node(n10,refuted).\nnode(n9,refuted) :- node(n11,refuted).\nnode(n9,supported) :- node(n10,supported), node(n11,supported).\nnode(n9,unknown) :- node(n10,unknown), node(n11,supported).\nnode(n9,unknown) :- node(n10,supported), node(n11,unknown).\nnode(n9,unknown) :- node(n10,unknown), node(n11,unknown).\nnode(n7,refuted) :- node(n8,refuted).\nnode(n7,refuted) :- node(n9,refuted).\nnode(n7,supported) :- node(n8,supported), node(n9,supported).\nnode(n7,unknown) :- node(n8,unknown), node(n9,supported).\nnode(n7,unknown) :- node(n8,supported), node(n9,unknown).\nnode(n7,unknown) :- node(n8,unknown), node(n9,unknown).\nnode(n1,refuted) :- node(n2,refuted).\nnode(n1,refuted) :- node(n7,refuted).\nnode(n1,supported) :- node(n2,supported), node(n7,supported).\nnode(n1,unknown) :- node(n2,unknown), node(n7,supported).\nnode(n1,unknown) :- node(n2,supported), node(n7,unknown).\nnode(n1,unknown) :- node(n2,unknown), node(n7,unknown).\nnode(n14,supported) :- status(o_62efa1a729e9bc0bd5f3,supported).\nnode(n14,refuted) :- status(o_62efa1a729e9bc0bd5f3,refuted).\nnode(n14,unknown) :- status(o_62efa1a729e9bc0bd5f3,unknown).\nnode(n16,supported) :- status(o_71b94ad9093c54c3b671,supported).\nnode(n16,refuted) :- status(o_71b94ad9093c54c3b671,refuted).\nnode(n16,unknown) :- status(o_71b94ad9093c54c3b671,unknown).\nnode(n17,supported) :- status(o_797a9ca1e7e86a540629,supported).\nnode(n17,refuted) :- status(o_797a9ca1e7e86a540629,refuted).\nnode(n17,unknown) :- status(o_797a9ca1e7e86a540629,unknown).\nnode(n15,refuted) :- node(n16,refuted).\nnode(n15,refuted) :- node(n17,refuted).\nnode(n15,supported) :- node(n16,supported), node(n17,supported).\nnode(n15,unknown) :- node(n16,unknown), node(n17,supported).\nnode(n15,unknown) :- node(n16,supported), node(n17,unknown).\nnode(n15,unknown) :- node(n16,unknown), node(n17,unknown).\nnode(n13,refuted) :- node(n14,refuted).\nnode(n13,refuted) :- node(n15,refuted).\nnode(n13,supported) :- node(n14,supported), node(n15,supported).\nnode(n13,unknown) :- node(n14,unknown), node(n15,supported).\nnode(n13,unknown) :- node(n14,supported), node(n15,unknown).\nnode(n13,unknown) :- node(n14,unknown), node(n15,unknown).\nnode(n19,supported) :- status(o_7f3611e4a05bd45d4490,supported).\nnode(n19,refuted) :- status(o_7f3611e4a05bd45d4490,refuted).\nnode(n19,unknown) :- status(o_7f3611e4a05bd45d4490,unknown).\nnode(n21,supported) :- status(o_b5fa8b15fc884a6ed072,supported).\nnode(n21,refuted) :- status(o_b5fa8b15fc884a6ed072,refuted).\nnode(n21,unknown) :- status(o_b5fa8b15fc884a6ed072,unknown).\nnode(n22,supported) :- status(o_c120a4779b2083b33965,supported).\nnode(n22,refuted) :- status(o_c120a4779b2083b33965,refuted).\nnode(n22,unknown) :- status(o_c120a4779b2083b33965,unknown).\nnode(n20,refuted) :- node(n21,refuted).\nnode(n20,refuted) :- node(n22,refuted).\nnode(n20,supported) :- node(n21,supported), node(n22,supported).\nnode(n20,unknown) :- node(n21,unknown), node(n22,supported).\nnode(n20,unknown) :- node(n21,supported), node(n22,unknown).\nnode(n20,unknown) :- node(n21,unknown), node(n22,unknown).\nnode(n18,refuted) :- node(n19,refuted).\nnode(n18,refuted) :- node(n20,refuted).\nnode(n18,supported) :- node(n19,supported), node(n20,supported).\nnode(n18,unknown) :- node(n19,unknown), node(n20,supported).\nnode(n18,unknown) :- node(n19,supported), node(n20,unknown).\nnode(n18,unknown) :- node(n19,unknown), node(n20,unknown).\nnode(n12,refuted) :- node(n13,refuted).\nnode(n12,refuted) :- node(n18,refuted).\nnode(n12,supported) :- node(n13,supported), node(n18,supported).\nnode(n12,unknown) :- node(n13,unknown), node(n18,supported).\nnode(n12,unknown) :- node(n13,supported), node(n18,unknown).\nnode(n12,unknown) :- node(n13,unknown), node(n18,unknown).\nnode(n0,refuted) :- node(n1,refuted).\nnode(n0,refuted) :- node(n12,refuted).\nnode(n0,supported) :- node(n1,supported), node(n12,supported).\nnode(n0,unknown) :- node(n1,unknown), node(n12,supported).\nnode(n0,unknown) :- node(n1,supported), node(n12,unknown).\nnode(n0,unknown) :- node(n1,unknown), node(n12,unknown).\nverdict(c_158ad9ae8c5b6165,supported) :- node(n0,supported).\nquery(verdict(c_158ad9ae8c5b6165,supported)).\nverdict(c_158ad9ae8c5b6165,refuted) :- node(n0,refuted).\nquery(verdict(c_158ad9ae8c5b6165,refuted)).\nverdict(c_158ad9ae8c5b6165,unknown) :- node(n0,unknown).\nquery(verdict(c_158ad9ae8c5b6165,unknown)).\n",
+      "program_sha256": "1f1ab6ae2e4a0feda3383eb198b4cfa7599888a99b680ee42b30e2c9ebb0b0b6"
+    },
+    "review": {
+      "claim_id": "TFgw4IaR9R8s_1587",
+      "text_faithful": true,
+      "faithful": true,
+      "reason": "The same original Trump is shared across depiction and holding. Holding up and the signed-document attribute remain visual content; no signer is introduced.",
+      "artifact_sha256": "b1d6bb5dc6554007b837e34a859e998810aed8f670ee86424595c25c655cddd5"
+    }
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_750",
+    "original": "There are multiple additional police officers in the immediate vicinity of the police van helping and clearing space.",
+    "clauses": [
+      {
+        "id": "c1",
+        "text": "Multiple additional police officers are in the immediate vicinity of the police van.",
+        "parent": null,
+        "relation": "root",
+        "target": ""
+      },
+      {
+        "id": "c2",
+        "text": "Multiple additional police officers are helping.",
+        "parent": "c1",
+        "relation": "and",
+        "target": ""
+      },
+      {
+        "id": "c3",
+        "text": "Multiple additional police officers are clearing space.",
+        "parent": "c1",
+        "relation": "and",
+        "target": ""
+      }
+    ],
+    "output": {
+      "status": "compiled",
+      "compilation": {
+        "claim_id": "TMrQshDs8aH0_750",
+        "text": "Multiple additional police officers are in the immediate vicinity of the police van. Multiple additional police officers are helping. Multiple additional police officers are clearing space.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Multiple",
+            "lemma": "multiple",
+            "upos": "ADJ",
+            "head": 4,
+            "deprel": "amod",
+            "start_char": 0,
+            "end_char": 8,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 2,
+            "text": "additional",
+            "lemma": "additional",
+            "upos": "ADJ",
+            "head": 4,
+            "deprel": "amod",
+            "start_char": 9,
+            "end_char": 19,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 3,
+            "text": "police",
+            "lemma": "police",
+            "upos": "NOUN",
+            "head": 4,
+            "deprel": "compound",
+            "start_char": 20,
+            "end_char": 26,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 4,
+            "text": "officers",
+            "lemma": "officer",
+            "upos": "NOUN",
+            "head": 9,
+            "deprel": "nsubj",
+            "start_char": 27,
+            "end_char": 35,
+            "feats": "Number=Plur"
+          },
+          {
+            "id": 5,
+            "text": "are",
+            "lemma": "be",
+            "upos": "AUX",
+            "head": 9,
+            "deprel": "cop",
+            "start_char": 36,
+            "end_char": 39,
+            "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+          },
+          {
+            "id": 6,
+            "text": "in",
+            "lemma": "in",
+            "upos": "ADP",
+            "head": 9,
+            "deprel": "case",
+            "start_char": 40,
+            "end_char": 42,
+            "feats": null
+          },
+          {
+            "id": 7,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "head": 9,
+            "deprel": "det",
+            "start_char": 43,
+            "end_char": 46,
+            "feats": "Definite=Def|PronType=Art"
+          },
+          {
+            "id": 8,
+            "text": "immediate",
+            "lemma": "immediate",
+            "upos": "ADJ",
+            "head": 9,
+            "deprel": "amod",
+            "start_char": 47,
+            "end_char": 56,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 9,
+            "text": "vicinity",
+            "lemma": "vicinity",
+            "upos": "NOUN",
+            "head": 0,
+            "deprel": "root",
+            "start_char": 57,
+            "end_char": 65,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 10,
+            "text": "of",
+            "lemma": "of",
+            "upos": "ADP",
+            "head": 13,
+            "deprel": "case",
+            "start_char": 66,
+            "end_char": 68,
+            "feats": null
+          },
+          {
+            "id": 11,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "head": 13,
+            "deprel": "det",
+            "start_char": 69,
+            "end_char": 72,
+            "feats": "Definite=Def|PronType=Art"
+          },
+          {
+            "id": 12,
+            "text": "police",
+            "lemma": "police",
+            "upos": "NOUN",
+            "head": 13,
+            "deprel": "compound",
+            "start_char": 73,
+            "end_char": 79,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 13,
+            "text": "van",
+            "lemma": "van",
+            "upos": "NOUN",
+            "head": 9,
+            "deprel": "nmod",
+            "start_char": 80,
+            "end_char": 83,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 14,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "head": 9,
+            "deprel": "punct",
+            "start_char": 83,
+            "end_char": 84,
+            "feats": null
+          },
+          {
+            "id": 15,
+            "text": "Multiple",
+            "lemma": "multiple",
+            "upos": "ADJ",
+            "head": 18,
+            "deprel": "amod",
+            "start_char": 85,
+            "end_char": 93,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 16,
+            "text": "additional",
+            "lemma": "additional",
+            "upos": "ADJ",
+            "head": 18,
+            "deprel": "amod",
+            "start_char": 94,
+            "end_char": 104,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 17,
+            "text": "police",
+            "lemma": "police",
+            "upos": "NOUN",
+            "head": 18,
+            "deprel": "compound",
+            "start_char": 105,
+            "end_char": 111,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 18,
+            "text": "officers",
+            "lemma": "officer",
+            "upos": "NOUN",
+            "head": 20,
+            "deprel": "nsubj",
+            "start_char": 112,
+            "end_char": 120,
+            "feats": "Number=Plur"
+          },
+          {
+            "id": 19,
+            "text": "are",
+            "lemma": "be",
+            "upos": "AUX",
+            "head": 20,
+            "deprel": "aux",
+            "start_char": 121,
+            "end_char": 124,
+            "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+          },
+          {
+            "id": 20,
+            "text": "helping",
+            "lemma": "help",
+            "upos": "VERB",
+            "head": 0,
+            "deprel": "root",
+            "start_char": 125,
+            "end_char": 132,
+            "feats": "Tense=Pres|VerbForm=Part"
+          },
+          {
+            "id": 21,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "head": 20,
+            "deprel": "punct",
+            "start_char": 132,
+            "end_char": 133,
+            "feats": null
+          },
+          {
+            "id": 22,
+            "text": "Multiple",
+            "lemma": "multiple",
+            "upos": "ADJ",
+            "head": 25,
+            "deprel": "amod",
+            "start_char": 134,
+            "end_char": 142,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 23,
+            "text": "additional",
+            "lemma": "additional",
+            "upos": "ADJ",
+            "head": 25,
+            "deprel": "amod",
+            "start_char": 143,
+            "end_char": 153,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 24,
+            "text": "police",
+            "lemma": "police",
+            "upos": "NOUN",
+            "head": 25,
+            "deprel": "compound",
+            "start_char": 154,
+            "end_char": 160,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 25,
+            "text": "officers",
+            "lemma": "officer",
+            "upos": "NOUN",
+            "head": 27,
+            "deprel": "nsubj",
+            "start_char": 161,
+            "end_char": 169,
+            "feats": "Number=Plur"
+          },
+          {
+            "id": 26,
+            "text": "are",
+            "lemma": "be",
+            "upos": "AUX",
+            "head": 27,
+            "deprel": "aux",
+            "start_char": 170,
+            "end_char": 173,
+            "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+          },
+          {
+            "id": 27,
+            "text": "clearing",
+            "lemma": "clear",
+            "upos": "VERB",
+            "head": 0,
+            "deprel": "root",
+            "start_char": 174,
+            "end_char": 182,
+            "feats": "Tense=Pres|VerbForm=Part"
+          },
+          {
+            "id": 28,
+            "text": "space",
+            "lemma": "space",
+            "upos": "NOUN",
+            "head": 27,
+            "deprel": "obj",
+            "start_char": 183,
+            "end_char": 188,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 29,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "head": 27,
+            "deprel": "punct",
+            "start_char": 188,
+            "end_char": 189,
+            "feats": null
+          }
+        ],
+        "variables": [
+          {
+            "name": "E1",
+            "kind": "event",
+            "description": "be",
+            "token_ids": []
+          },
+          {
+            "name": "X1",
+            "kind": "group",
+            "description": "officers",
+            "token_ids": []
+          },
+          {
+            "name": "X2",
+            "kind": "entity",
+            "description": "vicinity",
+            "token_ids": []
+          },
+          {
+            "name": "X3",
+            "kind": "entity",
+            "description": "van",
+            "token_ids": []
+          },
+          {
+            "name": "E2",
+            "kind": "event",
+            "description": "help",
+            "token_ids": []
+          },
+          {
+            "name": "T0",
+            "kind": "context",
+            "description": "Reference time supplied by the caller",
+            "token_ids": []
+          },
+          {
+            "name": "E3",
+            "kind": "event",
+            "description": "clear",
+            "token_ids": []
+          },
+          {
+            "name": "X4",
+            "kind": "entity",
+            "description": "space",
+            "token_ids": []
+          }
+        ],
+        "atoms": [
+          {
+            "id": "a1",
+            "predicate": "referent",
+            "arguments": [
+              "X1",
+              "officers",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a2",
+            "predicate": "property",
+            "arguments": [
+              "X1",
+              "mod",
+              "Multiple",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "property",
+            "roles": [],
+            "text": "property",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a3",
+            "predicate": "property",
+            "arguments": [
+              "X1",
+              "mod",
+              "additional",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "property",
+            "roles": [],
+            "text": "property",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a4",
+            "predicate": "property",
+            "arguments": [
+              "X1",
+              "mod",
+              "police",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "property",
+            "roles": [],
+            "text": "property",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a5",
+            "predicate": "referent",
+            "arguments": [
+              "X2",
+              "vicinity",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a6",
+            "predicate": "property",
+            "arguments": [
+              "X2",
+              "mod",
+              "immediate",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "property",
+            "roles": [],
+            "text": "property",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a7",
+            "predicate": "referent",
+            "arguments": [
+              "X3",
+              "van",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a8",
+            "predicate": "property",
+            "arguments": [
+              "X3",
+              "mod",
+              "police",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "property",
+            "roles": [],
+            "text": "property",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a9",
+            "predicate": "entity_relation",
+            "arguments": [
+              "X2",
+              "of",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "entity_relation",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a10",
+            "predicate": "be",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X1",
+              "ARG2",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "be",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a11",
+            "predicate": "property",
+            "arguments": [
+              "E1",
+              "preposition:ARG2",
+              "in",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "property",
+            "roles": [],
+            "text": "property",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a12",
+            "predicate": "help",
+            "arguments": [
+              "E2",
+              "ARG0",
+              "X1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "help",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a13",
+            "predicate": "temporal",
+            "arguments": [
+              "E2",
+              "pres",
+              "progressive",
+              "T0",
+              "unspecified",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "temporal",
+            "roles": [],
+            "text": "temporal",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a14",
+            "predicate": "referent",
+            "arguments": [
+              "X4",
+              "space",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a15",
+            "predicate": "clear",
+            "arguments": [
+              "E3",
+              "ARG0",
+              "X1",
+              "ARG1",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "clear",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a16",
+            "predicate": "temporal",
+            "arguments": [
+              "E3",
+              "pres",
+              "progressive",
+              "T0",
+              "unspecified",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "temporal",
+            "roles": [],
+            "text": "temporal",
+            "token_ids": [],
+            "trainable": false
+          }
+        ],
+        "expression": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a1",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a3",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a6",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a7",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a8",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a9",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "and",
+                              "children": [
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a10",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a11",
+                                  "variables": [],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "E1"
+                          ],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X2",
+                    "X3"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a3",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a4",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "exists",
+                      "children": [
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a12",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a13",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [
+                        "E2"
+                      ],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a1",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a3",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a14",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "and",
+                              "children": [
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a15",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a16",
+                                  "variables": [],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "E3"
+                          ],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X4"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "T0",
+            "X1"
+          ],
+          "state": ""
+        },
+        "coverage": [],
+        "warnings": [
+          "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold.",
+          "Repeated predicate anchor: are; tense/aspect left unassigned."
+        ],
+        "version": "logical-form-v2",
+        "metadata": {
+          "logical_form": {
+            "version": "logical-form-v2",
+            "kind": "claim",
+            "entities": [
+              {
+                "id": "c1_x4",
+                "text": "officers",
+                "type": "group",
+                "properties": [
+                  {
+                    "role": "mod",
+                    "value": "Multiple"
+                  },
+                  {
+                    "role": "mod",
+                    "value": "additional"
+                  },
+                  {
+                    "role": "mod",
+                    "value": "police"
+                  }
+                ]
+              },
+              {
+                "id": "c1_x9",
+                "text": "vicinity",
+                "type": "entity",
+                "properties": [
+                  {
+                    "role": "mod",
+                    "value": "immediate"
+                  }
+                ],
+                "relations": [
+                  {
+                    "role": "of",
+                    "target": "c1_x13"
+                  }
+                ]
+              },
+              {
+                "id": "c1_x13",
+                "text": "van",
+                "type": "entity",
+                "properties": [
+                  {
+                    "role": "mod",
+                    "value": "police"
+                  }
+                ]
+              },
+              {
+                "id": "c3_x7",
+                "text": "space",
+                "type": "entity"
+              }
+            ],
+            "formula": {
+              "op": "and",
+              "children": [
+                {
+                  "op": "event",
+                  "id": "e5",
+                  "predicate": "be",
+                  "anchor": "are",
+                  "arguments": {
+                    "ARG1": "c1_x4",
+                    "ARG2": "c1_x9"
+                  },
+                  "properties": [
+                    {
+                      "role": "preposition:ARG2",
+                      "value": "in"
+                    }
+                  ]
+                },
+                {
+                  "op": "event",
+                  "id": "e20",
+                  "predicate": "help",
+                  "anchor": "helping",
+                  "arguments": {
+                    "ARG0": "c1_x4"
+                  }
+                },
+                {
+                  "op": "event",
+                  "id": "e27",
+                  "predicate": "clear",
+                  "anchor": "clearing",
+                  "arguments": {
+                    "ARG0": "c1_x4",
+                    "ARG1": "c3_x7"
+                  }
+                }
+              ]
+            },
+            "warnings": [
+              "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+            ]
+          },
+          "normalizations": [],
+          "entities": {
+            "X1": {
+              "id": "c1_x4",
+              "text": "officers",
+              "type": "group",
+              "properties": [
+                {
+                  "role": "mod",
+                  "value": "Multiple"
+                },
+                {
+                  "role": "mod",
+                  "value": "additional"
+                },
+                {
+                  "role": "mod",
+                  "value": "police"
+                }
+              ]
+            },
+            "X2": {
+              "id": "c1_x9",
+              "text": "vicinity",
+              "type": "entity",
+              "properties": [
+                {
+                  "role": "mod",
+                  "value": "immediate"
+                }
+              ],
+              "relations": [
+                {
+                  "role": "of",
+                  "target": "c1_x13"
+                }
+              ]
+            },
+            "X3": {
+              "id": "c1_x13",
+              "text": "van",
+              "type": "entity",
+              "properties": [
+                {
+                  "role": "mod",
+                  "value": "police"
+                }
+              ]
+            },
+            "X4": {
+              "id": "c3_x7",
+              "text": "space",
+              "type": "entity"
+            }
+          },
+          "events": {
+            "E1": {
+              "op": "event",
+              "id": "e5",
+              "predicate": "be",
+              "anchor": "are",
+              "arguments": {
+                "ARG1": "c1_x4",
+                "ARG2": "c1_x9"
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARG2",
+                  "value": "in"
+                }
+              ],
+              "scope": "world",
+              "route": "unspecified",
+              "owner": null
+            },
+            "E2": {
+              "op": "event",
+              "id": "e20",
+              "predicate": "help",
+              "anchor": "helping",
+              "arguments": {
+                "ARG0": "c1_x4"
+              },
+              "scope": "world",
+              "route": "unspecified",
+              "owner": null
+            },
+            "E3": {
+              "op": "event",
+              "id": "e27",
+              "predicate": "clear",
+              "anchor": "clearing",
+              "arguments": {
+                "ARG0": "c1_x4",
+                "ARG1": "c3_x7"
+              },
+              "scope": "world",
+              "route": "unspecified",
+              "owner": null
+            }
+          },
+          "scopes": {},
+          "temporal": {
+            "E2": {
+              "tense": "pres",
+              "aspect": "progressive",
+              "reference": "context",
+              "token_ids": [
+                19,
+                20
+              ],
+              "finite": true,
+              "completion": "unspecified"
+            },
+            "E3": {
+              "tense": "pres",
+              "aspect": "progressive",
+              "reference": "context",
+              "token_ids": [
+                26,
+                27
+              ],
+              "finite": true,
+              "completion": "unspecified"
+            }
+          },
+          "allowed_routes": {
+            "a1": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a2": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a3": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a4": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a5": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a6": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a7": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a8": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a9": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a10": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a11": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a12": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a13": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a14": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a15": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a16": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ]
+          },
+          "kind": "claim",
+          "requires_context": false,
+          "runtime_requirements": [],
+          "uses_phrase_arguments": false,
+          "limitations": [
+            "Executable structure is not a certificate of semantic equivalence.",
+            "Scoped, group and reference predicates require evidence functions; missing functions return unknown.",
+            "Group descriptions preserve quantifier conditions; no general first-order quantifier theorem prover is implemented."
+          ],
+          "split_composition": {
+            "flat": false,
+            "clauses": [
+              {
+                "id": "c1",
+                "text": "Multiple additional police officers are in the immediate vicinity of the police van.",
+                "parent": null,
+                "relation": "root",
+                "target": ""
+              },
+              {
+                "id": "c2",
+                "text": "Multiple additional police officers are helping.",
+                "parent": "c1",
+                "relation": "and",
+                "target": ""
+              },
+              {
+                "id": "c3",
+                "text": "Multiple additional police officers are clearing space.",
+                "parent": "c1",
+                "relation": "and",
+                "target": ""
+              }
+            ],
+            "shared": [
+              {
+                "mentions": [
+                  {
+                    "clause": "c1",
+                    "text": "officers"
+                  },
+                  {
+                    "clause": "c2",
+                    "text": "officers"
+                  },
+                  {
+                    "clause": "c3",
+                    "text": "officers"
+                  }
+                ]
+              }
+            ]
+          },
+          "original_alignment": {
+            "entities": [
+              {
+                "original_token": 6,
+                "original_text": "officers",
+                "mentions": [
+                  {
+                    "clause": "c1",
+                    "entity": "x4",
+                    "text": "officers"
+                  },
+                  {
+                    "clause": "c2",
+                    "entity": "x4",
+                    "text": "officers"
+                  },
+                  {
+                    "clause": "c3",
+                    "entity": "x4",
+                    "text": "officers"
+                  }
+                ]
+              },
+              {
+                "original_token": 10,
+                "original_text": "vicinity",
+                "mentions": [
+                  {
+                    "clause": "c1",
+                    "entity": "x9",
+                    "text": "vicinity"
+                  }
+                ]
+              },
+              {
+                "original_token": 14,
+                "original_text": "van",
+                "mentions": [
+                  {
+                    "clause": "c1",
+                    "entity": "x13",
+                    "text": "van"
+                  }
+                ]
+              },
+              {
+                "original_token": 18,
+                "original_text": "space",
+                "mentions": [
+                  {
+                    "clause": "c3",
+                    "entity": "x7",
+                    "text": "space"
+                  }
+                ]
+              }
+            ],
+            "events": [
+              {
+                "clause": "c1",
+                "event": "e5",
+                "predicate": "be",
+                "original_token": 2
+              },
+              {
+                "clause": "c2",
+                "event": "e6",
+                "predicate": "help",
+                "original_token": 15
+              },
+              {
+                "clause": "c3",
+                "event": "e6",
+                "predicate": "clear",
+                "original_token": 17
+              }
+            ],
+            "event_merges": []
+          }
+        },
+        "status": "compiled",
+        "logical_form": "EXISTS T0, X1: ((EXISTS X2, X3: ((referent(X1, officers, scope, world, route, unspecified) AND property(X1, mod, Multiple, scope, world, route, unspecified) AND property(X1, mod, additional, scope, world, route, unspecified) AND property(X1, mod, police, scope, world, route, unspecified) AND referent(X2, vicinity, scope, world, route, unspecified) AND property(X2, mod, immediate, scope, world, route, unspecified) AND referent(X3, van, scope, world, route, unspecified) AND property(X3, mod, police, scope, world, route, unspecified) AND entity_relation(X2, of, X3, scope, world, route, unspecified) AND EXISTS E1: ((be(E1, ARG1, X1, ARG2, X2, scope, world, route, unspecified) AND property(E1, preposition:ARG2, in, scope, world, route, unspecified))))) AND (referent(X1, officers, scope, world, route, unspecified) AND property(X1, mod, Multiple, scope, world, route, unspecified) AND property(X1, mod, additional, scope, world, route, unspecified) AND property(X1, mod, police, scope, world, route, unspecified) AND EXISTS E2: ((help(E2, ARG0, X1, scope, world, route, unspecified) AND temporal(E2, pres, progressive, T0, unspecified, scope, world, route, unspecified)))) AND EXISTS X4: ((referent(X1, officers, scope, world, route, unspecified) AND property(X1, mod, Multiple, scope, world, route, unspecified) AND property(X1, mod, additional, scope, world, route, unspecified) AND property(X1, mod, police, scope, world, route, unspecified) AND referent(X4, space, scope, world, route, unspecified) AND EXISTS E3: ((clear(E3, ARG0, X1, ARG1, X4, scope, world, route, unspecified) AND temporal(E3, pres, progressive, T0, unspecified, scope, world, route, unspecified)))))))"
+      },
+      "program": "% Explicit state heads; categorical observations remain shared.\n0::status(o_0bd4e74ee06c4ce8adaa,supported); 0::status(o_0bd4e74ee06c4ce8adaa,refuted); 1::status(o_0bd4e74ee06c4ce8adaa,unknown).\n0::status(o_3f3d7469796bfaed7465,supported); 0::status(o_3f3d7469796bfaed7465,refuted); 1::status(o_3f3d7469796bfaed7465,unknown).\n0::status(o_48d8a032659c8b6889f4,supported); 0::status(o_48d8a032659c8b6889f4,refuted); 1::status(o_48d8a032659c8b6889f4,unknown).\n0::status(o_49d5e340c2085d92f83f,supported); 0::status(o_49d5e340c2085d92f83f,refuted); 1::status(o_49d5e340c2085d92f83f,unknown).\n0::status(o_7be18759c707c747d470,supported); 0::status(o_7be18759c707c747d470,refuted); 1::status(o_7be18759c707c747d470,unknown).\n0::status(o_7fbdd39891de261338e3,supported); 0::status(o_7fbdd39891de261338e3,refuted); 1::status(o_7fbdd39891de261338e3,unknown).\n0::status(o_8007dd3517449539f8e6,supported); 0::status(o_8007dd3517449539f8e6,refuted); 1::status(o_8007dd3517449539f8e6,unknown).\n0::status(o_8a2c3b8949590daba460,supported); 0::status(o_8a2c3b8949590daba460,refuted); 1::status(o_8a2c3b8949590daba460,unknown).\n0::status(o_a40f7a5291cf6158cf52,supported); 0::status(o_a40f7a5291cf6158cf52,refuted); 1::status(o_a40f7a5291cf6158cf52,unknown).\n0::status(o_bebf0e4ffb46d9f3b04b,supported); 0::status(o_bebf0e4ffb46d9f3b04b,refuted); 1::status(o_bebf0e4ffb46d9f3b04b,unknown).\n0::status(o_d647995e8ad4b9600f50,supported); 0::status(o_d647995e8ad4b9600f50,refuted); 1::status(o_d647995e8ad4b9600f50,unknown).\n0::status(o_ec1fcb0de1f32c6817c1,supported); 0::status(o_ec1fcb0de1f32c6817c1,refuted); 1::status(o_ec1fcb0de1f32c6817c1,unknown).\n0::status(o_ee1edf8ad5dc5eb0a7c7,supported); 0::status(o_ee1edf8ad5dc5eb0a7c7,refuted); 1::status(o_ee1edf8ad5dc5eb0a7c7,unknown).\n0::status(o_f2b0fb7ffda6f1851a6e,supported); 0::status(o_f2b0fb7ffda6f1851a6e,refuted); 1::status(o_f2b0fb7ffda6f1851a6e,unknown).\n0::status(o_f432c8e80a5e1af46c45,supported); 0::status(o_f432c8e80a5e1af46c45,refuted); 1::status(o_f432c8e80a5e1af46c45,unknown).\n0::status(o_fff846128239561e69da,supported); 0::status(o_fff846128239561e69da,refuted); 1::status(o_fff846128239561e69da,unknown).\nnode(n4,supported) :- status(o_0bd4e74ee06c4ce8adaa,supported).\nnode(n4,refuted) :- status(o_0bd4e74ee06c4ce8adaa,refuted).\nnode(n4,unknown) :- status(o_0bd4e74ee06c4ce8adaa,unknown).\nnode(n5,supported) :- status(o_3f3d7469796bfaed7465,supported).\nnode(n5,refuted) :- status(o_3f3d7469796bfaed7465,refuted).\nnode(n5,unknown) :- status(o_3f3d7469796bfaed7465,unknown).\nnode(n3,refuted) :- node(n4,refuted).\nnode(n3,refuted) :- node(n5,refuted).\nnode(n3,supported) :- node(n4,supported), node(n5,supported).\nnode(n3,unknown) :- node(n4,unknown), node(n5,supported).\nnode(n3,unknown) :- node(n4,supported), node(n5,unknown).\nnode(n3,unknown) :- node(n4,unknown), node(n5,unknown).\nnode(n7,supported) :- status(o_48d8a032659c8b6889f4,supported).\nnode(n7,refuted) :- status(o_48d8a032659c8b6889f4,refuted).\nnode(n7,unknown) :- status(o_48d8a032659c8b6889f4,unknown).\nnode(n8,supported) :- status(o_49d5e340c2085d92f83f,supported).\nnode(n8,refuted) :- status(o_49d5e340c2085d92f83f,refuted).\nnode(n8,unknown) :- status(o_49d5e340c2085d92f83f,unknown).\nnode(n6,refuted) :- node(n7,refuted).\nnode(n6,refuted) :- node(n8,refuted).\nnode(n6,supported) :- node(n7,supported), node(n8,supported).\nnode(n6,unknown) :- node(n7,unknown), node(n8,supported).\nnode(n6,unknown) :- node(n7,supported), node(n8,unknown).\nnode(n6,unknown) :- node(n7,unknown), node(n8,unknown).\nnode(n2,refuted) :- node(n3,refuted).\nnode(n2,refuted) :- node(n6,refuted).\nnode(n2,supported) :- node(n3,supported), node(n6,supported).\nnode(n2,unknown) :- node(n3,unknown), node(n6,supported).\nnode(n2,unknown) :- node(n3,supported), node(n6,unknown).\nnode(n2,unknown) :- node(n3,unknown), node(n6,unknown).\nnode(n11,supported) :- status(o_7be18759c707c747d470,supported).\nnode(n11,refuted) :- status(o_7be18759c707c747d470,refuted).\nnode(n11,unknown) :- status(o_7be18759c707c747d470,unknown).\nnode(n12,supported) :- status(o_7fbdd39891de261338e3,supported).\nnode(n12,refuted) :- status(o_7fbdd39891de261338e3,refuted).\nnode(n12,unknown) :- status(o_7fbdd39891de261338e3,unknown).\nnode(n10,refuted) :- node(n11,refuted).\nnode(n10,refuted) :- node(n12,refuted).\nnode(n10,supported) :- node(n11,supported), node(n12,supported).\nnode(n10,unknown) :- node(n11,unknown), node(n12,supported).\nnode(n10,unknown) :- node(n11,supported), node(n12,unknown).\nnode(n10,unknown) :- node(n11,unknown), node(n12,unknown).\nnode(n14,supported) :- status(o_8007dd3517449539f8e6,supported).\nnode(n14,refuted) :- status(o_8007dd3517449539f8e6,refuted).\nnode(n14,unknown) :- status(o_8007dd3517449539f8e6,unknown).\nnode(n15,supported) :- status(o_8a2c3b8949590daba460,supported).\nnode(n15,refuted) :- status(o_8a2c3b8949590daba460,refuted).\nnode(n15,unknown) :- status(o_8a2c3b8949590daba460,unknown).\nnode(n13,refuted) :- node(n14,refuted).\nnode(n13,refuted) :- node(n15,refuted).\nnode(n13,supported) :- node(n14,supported), node(n15,supported).\nnode(n13,unknown) :- node(n14,unknown), node(n15,supported).\nnode(n13,unknown) :- node(n14,supported), node(n15,unknown).\nnode(n13,unknown) :- node(n14,unknown), node(n15,unknown).\nnode(n9,refuted) :- node(n10,refuted).\nnode(n9,refuted) :- node(n13,refuted).\nnode(n9,supported) :- node(n10,supported), node(n13,supported).\nnode(n9,unknown) :- node(n10,unknown), node(n13,supported).\nnode(n9,unknown) :- node(n10,supported), node(n13,unknown).\nnode(n9,unknown) :- node(n10,unknown), node(n13,unknown).\nnode(n1,refuted) :- node(n2,refuted).\nnode(n1,refuted) :- node(n9,refuted).\nnode(n1,supported) :- node(n2,supported), node(n9,supported).\nnode(n1,unknown) :- node(n2,unknown), node(n9,supported).\nnode(n1,unknown) :- node(n2,supported), node(n9,unknown).\nnode(n1,unknown) :- node(n2,unknown), node(n9,unknown).\nnode(n19,supported) :- status(o_a40f7a5291cf6158cf52,supported).\nnode(n19,refuted) :- status(o_a40f7a5291cf6158cf52,refuted).\nnode(n19,unknown) :- status(o_a40f7a5291cf6158cf52,unknown).\nnode(n20,supported) :- status(o_bebf0e4ffb46d9f3b04b,supported).\nnode(n20,refuted) :- status(o_bebf0e4ffb46d9f3b04b,refuted).\nnode(n20,unknown) :- status(o_bebf0e4ffb46d9f3b04b,unknown).\nnode(n18,refuted) :- node(n19,refuted).\nnode(n18,refuted) :- node(n20,refuted).\nnode(n18,supported) :- node(n19,supported), node(n20,supported).\nnode(n18,unknown) :- node(n19,unknown), node(n20,supported).\nnode(n18,unknown) :- node(n19,supported), node(n20,unknown).\nnode(n18,unknown) :- node(n19,unknown), node(n20,unknown).\nnode(n22,supported) :- status(o_d647995e8ad4b9600f50,supported).\nnode(n22,refuted) :- status(o_d647995e8ad4b9600f50,refuted).\nnode(n22,unknown) :- status(o_d647995e8ad4b9600f50,unknown).\nnode(n23,supported) :- status(o_ec1fcb0de1f32c6817c1,supported).\nnode(n23,refuted) :- status(o_ec1fcb0de1f32c6817c1,refuted).\nnode(n23,unknown) :- status(o_ec1fcb0de1f32c6817c1,unknown).\nnode(n21,refuted) :- node(n22,refuted).\nnode(n21,refuted) :- node(n23,refuted).\nnode(n21,supported) :- node(n22,supported), node(n23,supported).\nnode(n21,unknown) :- node(n22,unknown), node(n23,supported).\nnode(n21,unknown) :- node(n22,supported), node(n23,unknown).\nnode(n21,unknown) :- node(n22,unknown), node(n23,unknown).\nnode(n17,refuted) :- node(n18,refuted).\nnode(n17,refuted) :- node(n21,refuted).\nnode(n17,supported) :- node(n18,supported), node(n21,supported).\nnode(n17,unknown) :- node(n18,unknown), node(n21,supported).\nnode(n17,unknown) :- node(n18,supported), node(n21,unknown).\nnode(n17,unknown) :- node(n18,unknown), node(n21,unknown).\nnode(n26,supported) :- status(o_ee1edf8ad5dc5eb0a7c7,supported).\nnode(n26,refuted) :- status(o_ee1edf8ad5dc5eb0a7c7,refuted).\nnode(n26,unknown) :- status(o_ee1edf8ad5dc5eb0a7c7,unknown).\nnode(n27,supported) :- status(o_f2b0fb7ffda6f1851a6e,supported).\nnode(n27,refuted) :- status(o_f2b0fb7ffda6f1851a6e,refuted).\nnode(n27,unknown) :- status(o_f2b0fb7ffda6f1851a6e,unknown).\nnode(n25,refuted) :- node(n26,refuted).\nnode(n25,refuted) :- node(n27,refuted).\nnode(n25,supported) :- node(n26,supported), node(n27,supported).\nnode(n25,unknown) :- node(n26,unknown), node(n27,supported).\nnode(n25,unknown) :- node(n26,supported), node(n27,unknown).\nnode(n25,unknown) :- node(n26,unknown), node(n27,unknown).\nnode(n29,supported) :- status(o_f432c8e80a5e1af46c45,supported).\nnode(n29,refuted) :- status(o_f432c8e80a5e1af46c45,refuted).\nnode(n29,unknown) :- status(o_f432c8e80a5e1af46c45,unknown).\nnode(n30,supported) :- status(o_fff846128239561e69da,supported).\nnode(n30,refuted) :- status(o_fff846128239561e69da,refuted).\nnode(n30,unknown) :- status(o_fff846128239561e69da,unknown).\nnode(n28,refuted) :- node(n29,refuted).\nnode(n28,refuted) :- node(n30,refuted).\nnode(n28,supported) :- node(n29,supported), node(n30,supported).\nnode(n28,unknown) :- node(n29,unknown), node(n30,supported).\nnode(n28,unknown) :- node(n29,supported), node(n30,unknown).\nnode(n28,unknown) :- node(n29,unknown), node(n30,unknown).\nnode(n24,refuted) :- node(n25,refuted).\nnode(n24,refuted) :- node(n28,refuted).\nnode(n24,supported) :- node(n25,supported), node(n28,supported).\nnode(n24,unknown) :- node(n25,unknown), node(n28,supported).\nnode(n24,unknown) :- node(n25,supported), node(n28,unknown).\nnode(n24,unknown) :- node(n25,unknown), node(n28,unknown).\nnode(n16,refuted) :- node(n17,refuted).\nnode(n16,refuted) :- node(n24,refuted).\nnode(n16,supported) :- node(n17,supported), node(n24,supported).\nnode(n16,unknown) :- node(n17,unknown), node(n24,supported).\nnode(n16,unknown) :- node(n17,supported), node(n24,unknown).\nnode(n16,unknown) :- node(n17,unknown), node(n24,unknown).\nnode(n0,refuted) :- node(n1,refuted).\nnode(n0,refuted) :- node(n16,refuted).\nnode(n0,supported) :- node(n1,supported), node(n16,supported).\nnode(n0,unknown) :- node(n1,unknown), node(n16,supported).\nnode(n0,unknown) :- node(n1,supported), node(n16,unknown).\nnode(n0,unknown) :- node(n1,unknown), node(n16,unknown).\nverdict(c_2f60ecbb550a0977,supported) :- node(n0,supported).\nquery(verdict(c_2f60ecbb550a0977,supported)).\nverdict(c_2f60ecbb550a0977,refuted) :- node(n0,refuted).\nquery(verdict(c_2f60ecbb550a0977,refuted)).\nverdict(c_2f60ecbb550a0977,unknown) :- node(n0,unknown).\nquery(verdict(c_2f60ecbb550a0977,unknown)).\n",
+      "program_sha256": "2f8181ad45b7d7ed35b30e2e7a9fdad1c8cd568b5af27d8b54f0eb00a0681d3f"
+    },
+    "review": {
+      "claim_id": "TMrQshDs8aH0_750",
+      "text_faithful": true,
+      "faithful": true,
+      "reason": "One group of multiple additional police officers supplies the location, helping and clearing-space clauses. The police van remains a separate entity; all intended conditions are retained.",
+      "artifact_sha256": "0e73c10d09b9fc4c8c668c9aaa8877d00a30d6c0e015a34e037ea20aed32c3d2"
+    }
+  }
+]
