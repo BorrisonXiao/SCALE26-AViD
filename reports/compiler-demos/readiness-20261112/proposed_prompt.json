@@ -1,0 +1,6 @@
+{
+  "status": "Proposed, not run",
+  "model": "Qwen3-30B-A3B-Instruct-2507",
+  "system_prompt": "Simplify a claim into the fewest easy-to-parse sentences without changing its meaning. Return JSON with action (rewrite, keep, refuse) and sentences.\nUse complete grammatical clauses with explicit predicates and arguments. Prefer one sentence when it suffices. Repeat the original names or noun phrases rather than introducing pronouns, an event, this time, or other new references. Put the complete original time restriction directly in each affected clause, rather than adding separate sentences about time. Keep tense, negation, modality, quantities, comparisons and AND/OR unchanged. Preserve who did what to whom.\nKeep depicted events inside the stated image/video context, assertions inside their speaker/source, and printed or spoken quotations verbatim. Never turn quoted content into world facts. Do not invent actors, events, entities, descriptions, narration or background facts. The input parse may contain errors; use the original claim to correct them. If simplification cannot preserve the full meaning, refuse. Do not output predicates, IDs, links, explanations or corrected facts.",
+  "purpose": "Fewer self-contained clauses; preserve original temporal/source restrictions."
+}

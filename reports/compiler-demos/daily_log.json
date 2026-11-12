@@ -7,6 +7,21 @@
       "date": "2026-11-12",
       "items": [
         {
+          "text": "Replayed all2,375 originals and449cachedcases. Generalauxiliary/adverb/interval repairs yield1,978directautomaticpasses;25changedprograms reviewed,10newretainedoutputs. Currentpool1,963/2,375(82.65%),412excluded; developmentjudgments,notaccuracy.",
+          "href": "#remaining-failures",
+          "label": "Compiler stopping point and full accounting"
+        },
+        {
+          "text": "Tested nominaleventvariables/sharedbindings, but left WordNettyping off after riding/shot senseerrors. Published38comparisons and all412exclusions.411tests pass; historical2,375defaultoutputs exact.",
+          "href": "#ready-example",
+          "label": "Current examples and failure inspector"
+        },
+        {
+          "text": "Ran nativeDeepProbLog training with actual4,096-dimensionalfrozenvisualfeatures and a270,595parameterMLP on4developmentcolorclauses. Gradient/interfacecheck only; no heldoutevaluation/audio/fullcorpusfeatureextraction.",
+          "href": "#feature-training-smoke",
+          "label": "Feature-based training check and next goals"
+        },
+        {
           "text": "Tested shared temporal/quantity normalization, phrase relations and source alignments on36 authored constructions:10/36→34/36target checks. The same1437cachedclauses improve1140→1147passes; no newmodelrequests.",
           "href": "#semantic-components",
           "label": "Construction probes and examples"

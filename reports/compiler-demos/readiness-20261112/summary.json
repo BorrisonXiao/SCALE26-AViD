@@ -1,0 +1,105 @@
+{
+  "corpus": {
+    "total": 2375,
+    "previous_accepted": 1953,
+    "accepted": 1963,
+    "rate": 0.8265263157894737,
+    "remaining": 412,
+    "new_approved": 10,
+    "new_ids": [
+      "TInVWzp25aIM_54",
+      "TInVWzp25aIM_63",
+      "TInVWzp25aIM_75",
+      "TzF9M4kZ3Pys_234",
+      "TzF9M4kZ3Pys_239",
+      "TzF9M4kZ3Pys_271",
+      "Tg0UxWYuPeJ0_337",
+      "Tg0UxWYuPeJ0_444",
+      "Tsuk2uoYj-kc_631",
+      "TQKCK6-tRaoE_660"
+    ]
+  },
+  "direct": {
+    "before": 1953,
+    "auxiliary_only": 1960,
+    "final": 1978,
+    "total": 2375,
+    "failures": {
+      "coverage_omission": 156,
+      "unresolved_clause": 101,
+      "duplicate_role": 34,
+      "negative_quantifier": 4,
+      "missing_srl": 11,
+      "nominal_disjunction": 8,
+      "mention_alignment": 2,
+      "predicate_type": 8,
+      "missing_predicate": 36,
+      "opaque_clause": 7,
+      "modal_scope": 16,
+      "threshold_scope": 2,
+      "polarity_omission": 2,
+      "temporal_scope": 2,
+      "unresolved_controller": 1,
+      "media_modifier": 3,
+      "unlinked_temporal_value": 3,
+      "quantity_type": 1
+    }
+  },
+  "cached": {
+    "total": 449,
+    "before_programs": 87,
+    "programs": 108,
+    "stages": {
+      "direct_pass": 58,
+      "component_compilation": 179,
+      "alignment": 148,
+      "compiled_composed": 50,
+      "composition": 13,
+      "model_refuse": 1
+    },
+    "approved": 40,
+    "newly_reviewed": 25,
+    "reused_reviews": 83
+  },
+  "remaining": {
+    "stages": {
+      "component_compilation": 179,
+      "alignment": 148,
+      "meaning_review": 68,
+      "composition": 13,
+      "model_refuse": 1,
+      "direct_refusal_without_cached_rewrite": 3
+    },
+    "codes": {
+      "unresolved_time_reference": 1,
+      "entity_alignment": 126,
+      "duplicate_role": 11,
+      "coverage_omission": 77,
+      "meaning_review": 68,
+      "description_alignment": 7,
+      "quantifier": 1,
+      "negative_quantifier": 1,
+      "unresolved_clause": 51,
+      "sentence_parse": 3,
+      "event_time_alignment": 4,
+      "model_refuse": 1,
+      "modal_scope": 15,
+      "polarity_omission": 2,
+      "threshold_negation": 1,
+      "missing_shared_participant": 2,
+      "missing_predicate": 10,
+      "event_alignment": 6,
+      "shared_description": 10,
+      "unresolved_controller": 2,
+      "source_alignment": 5,
+      "nominal_disjunction": 2,
+      "opaque_clause": 2,
+      "mention_alignment": 1,
+      "unlinked_temporal_value": 3
+    }
+  },
+  "cases": 38,
+  "new_model_requests": 0,
+  "nominal_typing_default": false,
+  "training": "Four-case native frozen-feature engineering smoke only; not empirical binding evaluation or full-corpus training."
+}

@@ -1,0 +1,2232 @@
+{
+  "purpose": "Engineering smoke test and deliberate overfit, not an empirical method result.",
+  "source_video": "zlD_zgNiYJkRV1PS",
+  "examples": 4,
+  "feature_dim": 4096,
+  "hidden": 64,
+  "parameters": 270595,
+  "source_model": "Frozen Qwen3-VL-8B-Instruct",
+  "feature_description": "Last prompt-token decoder state conditioned on proposition and video frames; no answer probabilities or labels as classifier inputs.",
+  "network": "LayerNorm(4096) -> Linear(4096,64) -> GELU -> Linear(64,3) -> softmax",
+  "initial_mean_nll": 1.2225182538132224,
+  "final_mean_nll": 0.0005110062487840257,
+  "initial": [
+    {
+      "claim_id": "aircraft_original",
+      "distribution": {
+        "supported": 0.27080557029354285,
+        "refuted": 0.3075863658096686,
+        "unknown": 0.42160806389678873
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.009751558303833008,
+        "compile_seconds": 0.002332925796508789,
+        "evaluate_seconds": 0.0028095245361328125
+      },
+      "wall_seconds": 0.016587670892477036
+    },
+    {
+      "claim_id": "aircraft_edit",
+      "distribution": {
+        "supported": 0.25710597999813883,
+        "refuted": 0.31973360595490746,
+        "unknown": 0.42316041404695376
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.008780717849731445,
+        "compile_seconds": 0.0021080970764160156,
+        "evaluate_seconds": 0.002041339874267578
+      },
+      "wall_seconds": 0.0136870127171278
+    },
+    {
+      "claim_id": "bus_original",
+      "distribution": {
+        "supported": 0.2696679995766596,
+        "refuted": 0.29257627294799726,
+        "unknown": 0.437755727475343
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.01189565658569336,
+        "compile_seconds": 0.0025742053985595703,
+        "evaluate_seconds": 0.002042531967163086
+      },
+      "wall_seconds": 0.017271535471081734
+    },
+    {
+      "claim_id": "bus_edit",
+      "distribution": {
+        "supported": 0.24541239313245033,
+        "refuted": 0.3221016732689813,
+        "unknown": 0.4324859335985684
+      },
+      "prediction": "unknown",
+      "timing": {
+        "ground_seconds": 0.012077093124389648,
+        "compile_seconds": 0.002611875534057617,
+        "evaluate_seconds": 0.0020067691802978516
+      },
+      "wall_seconds": 0.017621448263525963
+    }
+  ],
+  "final": [
+    {
+      "claim_id": "aircraft_original",
+      "distribution": {
+        "supported": 0.9998430733943944,
+        "refuted": 0.00015604625863473712,
+        "unknown": 8.803469709024762e-07
+      },
+      "prediction": "supported",
+      "timing": {
+        "ground_seconds": 0.009751558303833008,
+        "compile_seconds": 0.002332925796508789,
+        "evaluate_seconds": 0.00185394287109375
+      },
+      "wall_seconds": 0.00255437009036541
+    },
+    {
+      "claim_id": "aircraft_edit",
+      "distribution": {
+        "supported": 0.0008155375333736212,
+        "refuted": 0.9991831171723096,
+        "unknown": 1.3452943168045394e-06
+      },
+      "prediction": "refuted",
+      "timing": {
+        "ground_seconds": 0.008780717849731445,
+        "compile_seconds": 0.0021080970764160156,
+        "evaluate_seconds": 0.0017971992492675781
+      },
+      "wall_seconds": 0.002424294129014015
+    },
+    {
+      "claim_id": "bus_original",
+      "distribution": {
+        "supported": 0.9999180107093517,
+        "refuted": 8.098529367893821e-05,
+        "unknown": 1.0039969693414853e-06
+      },
+      "prediction": "supported",
+      "timing": {
+        "ground_seconds": 0.01189565658569336,
+        "compile_seconds": 0.0025742053985595703,
+        "evaluate_seconds": 0.0016429424285888672
+      },
+      "wall_seconds": 0.0022758543491363525
+    },
+    {
+      "claim_id": "bus_edit",
+      "distribution": {
+        "supported": 0.000985521966290541,
+        "refuted": 0.9990126110245846,
+        "unknown": 1.8670091247842065e-06
+      },
+      "prediction": "refuted",
+      "timing": {
+        "ground_seconds": 0.012077093124389648,
+        "compile_seconds": 0.002611875534057617,
+        "evaluate_seconds": 0.001645803451538086
+      },
+      "wall_seconds": 0.0022685006260871887
+    }
+  ],
+  "training": {
+    "epochs": 30,
+    "training_examples": 4,
+    "elapsed_seconds": 0.516734367236495,
+    "history": [
+      {
+        "epoch": 1,
+        "mean_nll": 1.3493676225557136,
+        "parameter_change_l2": 1.2130728130914108
+      },
+      {
+        "epoch": 2,
+        "mean_nll": 0.2640966514178076,
+        "parameter_change_l2": 1.8763667369601467
+      },
+      {
+        "epoch": 3,
+        "mean_nll": 0.04543235554811398,
+        "parameter_change_l2": 2.323846290805884
+      },
+      {
+        "epoch": 4,
+        "mean_nll": 0.016339467061214474,
+        "parameter_change_l2": 2.6292720570059798
+      },
+      {
+        "epoch": 5,
+        "mean_nll": 0.010341194605921311,
+        "parameter_change_l2": 2.8403186827718243
+      },
+      {
+        "epoch": 6,
+        "mean_nll": 0.007221249349918857,
+        "parameter_change_l2": 2.9872371095386763
+      },
+      {
+        "epoch": 7,
+        "mean_nll": 0.005246653646745036,
+        "parameter_change_l2": 3.0899530324096105
+      },
+      {
+        "epoch": 8,
+        "mean_nll": 0.003948431878178615,
+        "parameter_change_l2": 3.1619586543819733
+      },
+      {
+        "epoch": 9,
+        "mean_nll": 0.003077998764426937,
+        "parameter_change_l2": 3.2125451864222705
+      },
+      {
+        "epoch": 10,
+        "mean_nll": 0.0024830117127407902,
+        "parameter_change_l2": 3.248169657715544
+      },
+      {
+        "epoch": 11,
+        "mean_nll": 0.002066391496750253,
+        "parameter_change_l2": 3.273341123105304
+      },
+      {
+        "epoch": 12,
+        "mean_nll": 0.001765496160010649,
+        "parameter_change_l2": 3.291218097887597
+      },
+      {
+        "epoch": 13,
+        "mean_nll": 0.0015406754867817174,
+        "parameter_change_l2": 3.3040172133968553
+      },
+      {
+        "epoch": 14,
+        "mean_nll": 0.001367498221912511,
+        "parameter_change_l2": 3.313293473646551
+      },
+      {
+        "epoch": 15,
+        "mean_nll": 0.0012307818101584544,
+        "parameter_change_l2": 3.3201342695655995
+      },
+      {
+        "epoch": 16,
+        "mean_nll": 0.0011206079110386291,
+        "parameter_change_l2": 3.32529614461951
+      },
+      {
+        "epoch": 17,
+        "mean_nll": 0.0010301342054293006,
+        "parameter_change_l2": 3.3293025846877273
+      },
+      {
+        "epoch": 18,
+        "mean_nll": 0.0009544943326791344,
+        "parameter_change_l2": 3.332514093900737
+      },
+      {
+        "epoch": 19,
+        "mean_nll": 0.00089019297536308,
+        "parameter_change_l2": 3.335178041095532
+      },
+      {
+        "epoch": 20,
+        "mean_nll": 0.000834710035168662,
+        "parameter_change_l2": 3.3374637381866266
+      },
+      {
+        "epoch": 21,
+        "mean_nll": 0.0007862160871141555,
+        "parameter_change_l2": 3.3394868871378365
+      },
+      {
+        "epoch": 22,
+        "mean_nll": 0.0007433667584118009,
+        "parameter_change_l2": 3.341326494760287
+      },
+      {
+        "epoch": 23,
+        "mean_nll": 0.0007051576270804549,
+        "parameter_change_l2": 3.3430365171755834
+      },
+      {
+        "epoch": 24,
+        "mean_nll": 0.000670823942499954,
+        "parameter_change_l2": 3.3446538467425078
+      },
+      {
+        "epoch": 25,
+        "mean_nll": 0.0006397720237625304,
+        "parameter_change_l2": 3.3462037736368115
+      },
+      {
+        "epoch": 26,
+        "mean_nll": 0.0006115323252267046,
+        "parameter_change_l2": 3.3477037097419613
+      },
+      {
+        "epoch": 27,
+        "mean_nll": 0.0005857270613132126,
+        "parameter_change_l2": 3.349165720219652
+      },
+      {
+        "epoch": 28,
+        "mean_nll": 0.0005620475583640872,
+        "parameter_change_l2": 3.350598239401201
+      },
+      {
+        "epoch": 29,
+        "mean_nll": 0.0005402381319179472,
+        "parameter_change_l2": 3.352007230611178
+      },
+      {
+        "epoch": 30,
+        "mean_nll": 0.000520084395376541,
+        "parameter_change_l2": 3.353396968444272
+      }
+    ],
+    "parameter_change_l2": 3.353396968444272,
+    "gradient_checks": [
+      {
+        "finite": true,
+        "norm": 2.336318504602021
+      },
+      {
+        "finite": true,
+        "norm": 9.851556706053666
+      },
+      {
+        "finite": true,
+        "norm": 2.588381001885248
+      },
+      {
+        "finite": true,
+        "norm": 3.1214688165736924
+      },
+      {
+        "finite": true,
+        "norm": 9.168058781069233
+      },
+      {
+        "finite": true,
+        "norm": 1.6537373756643385
+      },
+      {
+        "finite": true,
+        "norm": 5.057626527043572
+      },
+      {
+        "finite": true,
+        "norm": 1.567841504934892
+      },
+      {
+        "finite": true,
+        "norm": 2.2601152717020305
+      },
+      {
+        "finite": true,
+        "norm": 1.2748872289932924
+      },
+      {
+        "finite": true,
+        "norm": 0.48619128032958325
+      },
+      {
+        "finite": true,
+        "norm": 1.329242754427864
+      },
+      {
+        "finite": true,
+        "norm": 0.25314909378453526
+      },
+      {
+        "finite": true,
+        "norm": 0.9925536398686357
+      },
+      {
+        "finite": true,
+        "norm": 0.07321093813988154
+      },
+      {
+        "finite": true,
+        "norm": 1.081971166309516
+      },
+      {
+        "finite": true,
+        "norm": 0.0555816864391559
+      },
+      {
+        "finite": true,
+        "norm": 0.7658484233104574
+      },
+      {
+        "finite": true,
+        "norm": 0.021218439898632663
+      },
+      {
+        "finite": true,
+        "norm": 0.8449112822577288
+      },
+      {
+        "finite": true,
+        "norm": 0.020989652515615645
+      },
+      {
+        "finite": true,
+        "norm": 0.5841350653727136
+      },
+      {
+        "finite": true,
+        "norm": 0.009572749041624912
+      },
+      {
+        "finite": true,
+        "norm": 0.6462492898749491
+      },
+      {
+        "finite": true,
+        "norm": 0.01136637449410749
+      },
+      {
+        "finite": true,
+        "norm": 0.4467964031365594
+      },
+      {
+        "finite": true,
+        "norm": 0.0057785095551969945
+      },
+      {
+        "finite": true,
+        "norm": 0.49608563754810064
+      },
+      {
+        "finite": true,
+        "norm": 0.0077934237439531056
+      },
+      {
+        "finite": true,
+        "norm": 0.34752053293745827
+      },
+      {
+        "finite": true,
+        "norm": 0.004226884113607584
+      },
+      {
+        "finite": true,
+        "norm": 0.3874677871752939
+      },
+      {
+        "finite": true,
+        "norm": 0.006234807606644391
+      },
+      {
+        "finite": true,
+        "norm": 0.2769733207822972
+      },
+      {
+        "finite": true,
+        "norm": 0.0035080994280721357
+      },
+      {
+        "finite": true,
+        "norm": 0.3100162178123294
+      },
+      {
+        "finite": true,
+        "norm": 0.005513989348549011
+      },
+      {
+        "finite": true,
+        "norm": 0.22687946400760725
+      },
+      {
+        "finite": true,
+        "norm": 0.0031615770117610974
+      },
+      {
+        "finite": true,
+        "norm": 0.2547123940352561
+      },
+      {
+        "finite": true,
+        "norm": 0.005201583494954183
+      },
+      {
+        "finite": true,
+        "norm": 0.1908524770233267
+      },
+      {
+        "finite": true,
+        "norm": 0.003004887049648276
+      },
+      {
+        "finite": true,
+        "norm": 0.21470213840959831
+      },
+      {
+        "finite": true,
+        "norm": 0.005111796003657817
+      },
+      {
+        "finite": true,
+        "norm": 0.16426905101276731
+      },
+      {
+        "finite": true,
+        "norm": 0.002954234533784638
+      },
+      {
+        "finite": true,
+        "norm": 0.1850798129762211
+      },
+      {
+        "finite": true,
+        "norm": 0.005152660497791937
+      },
+      {
+        "finite": true,
+        "norm": 0.14401267758027173
+      },
+      {
+        "finite": true,
+        "norm": 0.0029663581346202374
+      },
+      {
+        "finite": true,
+        "norm": 0.1625327290222275
+      },
+      {
+        "finite": true,
+        "norm": 0.00527350173277274
+      },
+      {
+        "finite": true,
+        "norm": 0.12812249914759372
+      },
+      {
+        "finite": true,
+        "norm": 0.003016783953391412
+      },
+      {
+        "finite": true,
+        "norm": 0.14491783279305853
+      },
+      {
+        "finite": true,
+        "norm": 0.005444003461550159
+      },
+      {
+        "finite": true,
+        "norm": 0.11538178651015904
+      },
+      {
+        "finite": true,
+        "norm": 0.003090692107179004
+      },
+      {
+        "finite": true,
+        "norm": 0.13084400254158798
+      },
+      {
+        "finite": true,
+        "norm": 0.0056449515153577075
+      },
+      {
+        "finite": true,
+        "norm": 0.10499081068672128
+      },
+      {
+        "finite": true,
+        "norm": 0.0031786834556050488
+      },
+      {
+        "finite": true,
+        "norm": 0.11937173378466616
+      },
+      {
+        "finite": true,
+        "norm": 0.005863724122151347
+      },
+      {
+        "finite": true,
+        "norm": 0.0963824534428617
+      },
+      {
+        "finite": true,
+        "norm": 0.0032746265459688054
+      },
+      {
+        "finite": true,
+        "norm": 0.10984221846738378
+      },
+      {
+        "finite": true,
+        "norm": 0.006091868572674737
+      },
+      {
+        "finite": true,
+        "norm": 0.08913794737284705
+      },
+      {
+        "finite": true,
+        "norm": 0.0033744609870571874
+      },
+      {
+        "finite": true,
+        "norm": 0.10178524951709773
+      },
+      {
+        "finite": true,
+        "norm": 0.006323673288901428
+      },
+      {
+        "finite": true,
+        "norm": 0.08294638800551256
+      },
+      {
+        "finite": true,
+        "norm": 0.0034754798001807394
+      },
+      {
+        "finite": true,
+        "norm": 0.09486335099321828
+      },
+      {
+        "finite": true,
+        "norm": 0.006555264218217185
+      },
+      {
+        "finite": true,
+        "norm": 0.0775783710970767
+      },
+      {
+        "finite": true,
+        "norm": 0.0035758745100037135
+      },
+      {
+        "finite": true,
+        "norm": 0.08883307124456583
+      },
+      {
+        "finite": true,
+        "norm": 0.006784007282919447
+      },
+      {
+        "finite": true,
+        "norm": 0.07286505906773372
+      },
+      {
+        "finite": true,
+        "norm": 0.0036744367861199323
+      },
+      {
+        "finite": true,
+        "norm": 0.0835170391798207
+      },
+      {
+        "finite": true,
+        "norm": 0.0070081047841354495
+      },
+      {
+        "finite": true,
+        "norm": 0.06868152057051208
+      },
+      {
+        "finite": true,
+        "norm": 0.0037703593237408727
+      },
+      {
+        "finite": true,
+        "norm": 0.0787840820568739
+      },
+      {
+        "finite": true,
+        "norm": 0.007226321170045791
+      },
+      {
+        "finite": true,
+        "norm": 0.06493418120895626
+      },
+      {
+        "finite": true,
+        "norm": 0.0038631021427829666
+      },
+      {
+        "finite": true,
+        "norm": 0.0745354031806069
+      },
+      {
+        "finite": true,
+        "norm": 0.00743779727175993
+      },
+      {
+        "finite": true,
+        "norm": 0.06155180245214874
+      },
+      {
+        "finite": true,
+        "norm": 0.003952302926228762
+      },
+      {
+        "finite": true,
+        "norm": 0.07069511277223987
+      },
+      {
+        "finite": true,
+        "norm": 0.007641925529614761
+      },
+      {
+        "finite": true,
+        "norm": 0.058479169671837694
+      },
+      {
+        "finite": true,
+        "norm": 0.0040377172639779425
+      },
+      {
+        "finite": true,
+        "norm": 0.06720376876371255
+      },
+      {
+        "finite": true,
+        "norm": 0.007838267197565044
+      },
+      {
+        "finite": true,
+        "norm": 0.05567271937638187
+      },
+      {
+        "finite": true,
+        "norm": 0.004119179220789791
+      },
+      {
+        "finite": true,
+        "norm": 0.06401395192594442
+      },
+      {
+        "finite": true,
+        "norm": 0.008026498234149186
+      },
+      {
+        "finite": true,
+        "norm": 0.05309750142294527
+      },
+      {
+        "finite": true,
+        "norm": 0.004196575657542092
+      },
+      {
+        "finite": true,
+        "norm": 0.061087201685438665
+      },
+      {
+        "finite": true,
+        "norm": 0.00820637459056402
+      },
+      {
+        "finite": true,
+        "norm": 0.05072504422945226
+      },
+      {
+        "finite": true,
+        "norm": 0.004269829784967743
+      },
+      {
+        "finite": true,
+        "norm": 0.058391860941911296
+      },
+      {
+        "finite": true,
+        "norm": 0.008377710436797059
+      },
+      {
+        "finite": true,
+        "norm": 0.048531829702518244
+      },
+      {
+        "finite": true,
+        "norm": 0.004338890844707393
+      },
+      {
+        "finite": true,
+        "norm": 0.05590153210334322
+      },
+      {
+        "finite": true,
+        "norm": 0.00854036486915149
+      },
+      {
+        "finite": true,
+        "norm": 0.04649818415800769
+      },
+      {
+        "finite": true,
+        "norm": 0.004403727793533633
+      },
+      {
+        "finite": true,
+        "norm": 0.05359394959141383
+      }
+    ],
+    "trainable_parameters": 270595,
+    "feature_names": [
+      "frozen media-and-proposition representation"
+    ],
+    "loss": "negative log probability of the supplied root state",
+    "label_scope": "claim only",
+    "device": "cpu",
+    "seed": 7
+  },
+  "features_unchanged": true,
+  "reference_file_unchanged": true,
+  "audio_used": false,
+  "versions": {
+    "deepproblog": "2.0.6",
+    "problog": "2.3.0",
+    "pysdd": "1.0.6",
+    "torch": "2.10.0+cu128"
+  },
+  "feature_sha256": "0102cbb7183f2605c00225f6cbe7d0ea288190aa29cc50d4f9a3366083f24924",
+  "reference_sha256": "ee5592a1db803a0470e306b1df2205eb5d2a05ef6f31e31d89ce397d48f545be",
+  "cases": [
+    {
+      "claim_id": "aircraft_original",
+      "text": "The aircraft is gray.",
+      "root_label": "supported",
+      "feature_id": "visual__aircraft_gray__matched__joint",
+      "reference": "The shown aircraft is gray. Audio cannot establish this depicted color.",
+      "claim": {
+        "claim_id": "aircraft_original",
+        "text": "The aircraft is gray.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "The",
+            "lemma": "the",
+            "upos": "DET",
+            "head": 2,
+            "deprel": "det",
+            "start_char": 0,
+            "end_char": 3,
+            "feats": "Definite=Def|PronType=Art"
+          },
+          {
+            "id": 2,
+            "text": "aircraft",
+            "lemma": "aircraft",
+            "upos": "NOUN",
+            "head": 4,
+            "deprel": "nsubj",
+            "start_char": 4,
+            "end_char": 12,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 3,
+            "text": "is",
+            "lemma": "be",
+            "upos": "AUX",
+            "head": 4,
+            "deprel": "cop",
+            "start_char": 13,
+            "end_char": 15,
+            "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+          },
+          {
+            "id": 4,
+            "text": "gray",
+            "lemma": "gray",
+            "upos": "ADJ",
+            "head": 0,
+            "deprel": "root",
+            "start_char": 16,
+            "end_char": 20,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 5,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "head": 4,
+            "deprel": "punct",
+            "start_char": 20,
+            "end_char": 21,
+            "feats": null
+          }
+        ],
+        "variables": [
+          {
+            "name": "E1",
+            "kind": "event",
+            "description": "be",
+            "token_ids": []
+          },
+          {
+            "name": "X1",
+            "kind": "entity",
+            "description": "aircraft",
+            "token_ids": []
+          },
+          {
+            "name": "T0",
+            "kind": "context",
+            "description": "Reference time supplied by the caller",
+            "token_ids": []
+          }
+        ],
+        "atoms": [
+          {
+            "id": "a1",
+            "predicate": "referent",
+            "arguments": [
+              "X1",
+              "aircraft",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a2",
+            "predicate": "be",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X1",
+              "ARG2",
+              "{\"kind\":\"text\",\"value\":\"gray\"}",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "be",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a3",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "unspecified",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "temporal",
+            "roles": [],
+            "text": "temporal",
+            "token_ids": [],
+            "trainable": false
+          }
+        ],
+        "expression": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a3",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "T0"
+                          ],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E1"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "X1"
+          ],
+          "state": ""
+        },
+        "coverage": [],
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ],
+        "version": "logical-form-v2",
+        "metadata": {
+          "logical_form": {
+            "version": "logical-form-v2",
+            "kind": "claim",
+            "entities": [
+              {
+                "id": "x2",
+                "text": "aircraft",
+                "type": "entity"
+              }
+            ],
+            "formula": {
+              "op": "event",
+              "id": "e3",
+              "predicate": "be",
+              "anchor": "is",
+              "arguments": {
+                "ARG1": "x2",
+                "ARG2": {
+                  "kind": "text",
+                  "value": "gray"
+                }
+              }
+            },
+            "warnings": [
+              "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+              "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+            ]
+          },
+          "normalizations": [],
+          "entities": {
+            "X1": {
+              "id": "x2",
+              "text": "aircraft",
+              "type": "entity"
+            }
+          },
+          "events": {
+            "E1": {
+              "op": "event",
+              "id": "e3",
+              "predicate": "be",
+              "anchor": "is",
+              "arguments": {
+                "ARG1": "x2",
+                "ARG2": {
+                  "kind": "text",
+                  "value": "gray"
+                }
+              },
+              "scope": "world",
+              "route": "unspecified",
+              "owner": null
+            }
+          },
+          "scopes": {},
+          "temporal": {
+            "E1": {
+              "tense": "pres",
+              "aspect": "simple",
+              "reference": "context",
+              "token_ids": [
+                3
+              ],
+              "finite": true,
+              "completion": "unspecified"
+            }
+          },
+          "allowed_routes": {
+            "a1": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a2": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a3": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ]
+          },
+          "kind": "claim",
+          "requires_context": false,
+          "runtime_requirements": [],
+          "uses_phrase_arguments": false,
+          "limitations": [
+            "Executable structure is not a certificate of semantic equivalence.",
+            "Scoped, group and reference predicates require evidence functions; missing functions return unknown.",
+            "Group descriptions preserve quantifier conditions; no general first-order quantifier theorem prover is implemented."
+          ],
+          "event_references": [],
+          "compiler_changes": [],
+          "content_coverage": {
+            "complete": true,
+            "missing": [],
+            "method": "Source lexical content compared with reachable translated values, allowing inflection.",
+            "limitation": "Necessary coverage check, not a semantic-equivalence or role/scope check."
+          },
+          "structural_alerts": [],
+          "source_alignments": []
+        },
+        "status": "compiled",
+        "logical_form": "EXISTS X1: ((referent(X1, aircraft, scope, world, route, unspecified) AND EXISTS E1: ((be(E1, ARG1, X1, ARG2, {\"kind\":\"text\",\"value\":\"gray\"}, scope, world, route, unspecified) AND EXISTS T0: (temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified))))))"
+      }
+    },
+    {
+      "claim_id": "aircraft_edit",
+      "text": "The aircraft is yellow.",
+      "root_label": "refuted",
+      "feature_id": "visual__aircraft_yellow__matched__joint",
+      "reference": "The visible aircraft has an incompatible gray color. This edit does not change audio verifiability.",
+      "claim": {
+        "claim_id": "aircraft_edit",
+        "text": "The aircraft is yellow.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "The",
+            "lemma": "the",
+            "upos": "DET",
+            "head": 2,
+            "deprel": "det",
+            "start_char": 0,
+            "end_char": 3,
+            "feats": "Definite=Def|PronType=Art"
+          },
+          {
+            "id": 2,
+            "text": "aircraft",
+            "lemma": "aircraft",
+            "upos": "NOUN",
+            "head": 4,
+            "deprel": "nsubj",
+            "start_char": 4,
+            "end_char": 12,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 3,
+            "text": "is",
+            "lemma": "be",
+            "upos": "AUX",
+            "head": 4,
+            "deprel": "cop",
+            "start_char": 13,
+            "end_char": 15,
+            "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+          },
+          {
+            "id": 4,
+            "text": "yellow",
+            "lemma": "yellow",
+            "upos": "ADJ",
+            "head": 0,
+            "deprel": "root",
+            "start_char": 16,
+            "end_char": 22,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 5,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "head": 4,
+            "deprel": "punct",
+            "start_char": 22,
+            "end_char": 23,
+            "feats": null
+          }
+        ],
+        "variables": [
+          {
+            "name": "E1",
+            "kind": "event",
+            "description": "be",
+            "token_ids": []
+          },
+          {
+            "name": "X1",
+            "kind": "entity",
+            "description": "aircraft",
+            "token_ids": []
+          },
+          {
+            "name": "T0",
+            "kind": "context",
+            "description": "Reference time supplied by the caller",
+            "token_ids": []
+          }
+        ],
+        "atoms": [
+          {
+            "id": "a1",
+            "predicate": "referent",
+            "arguments": [
+              "X1",
+              "aircraft",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a2",
+            "predicate": "be",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X1",
+              "ARG2",
+              "{\"kind\":\"text\",\"value\":\"yellow\"}",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "be",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a3",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "unspecified",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "temporal",
+            "roles": [],
+            "text": "temporal",
+            "token_ids": [],
+            "trainable": false
+          }
+        ],
+        "expression": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a3",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "T0"
+                          ],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E1"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "X1"
+          ],
+          "state": ""
+        },
+        "coverage": [],
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ],
+        "version": "logical-form-v2",
+        "metadata": {
+          "logical_form": {
+            "version": "logical-form-v2",
+            "kind": "claim",
+            "entities": [
+              {
+                "id": "x2",
+                "text": "aircraft",
+                "type": "entity"
+              }
+            ],
+            "formula": {
+              "op": "event",
+              "id": "e3",
+              "predicate": "be",
+              "anchor": "is",
+              "arguments": {
+                "ARG1": "x2",
+                "ARG2": {
+                  "kind": "text",
+                  "value": "yellow"
+                }
+              }
+            },
+            "warnings": [
+              "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+              "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+            ]
+          },
+          "normalizations": [],
+          "entities": {
+            "X1": {
+              "id": "x2",
+              "text": "aircraft",
+              "type": "entity"
+            }
+          },
+          "events": {
+            "E1": {
+              "op": "event",
+              "id": "e3",
+              "predicate": "be",
+              "anchor": "is",
+              "arguments": {
+                "ARG1": "x2",
+                "ARG2": {
+                  "kind": "text",
+                  "value": "yellow"
+                }
+              },
+              "scope": "world",
+              "route": "unspecified",
+              "owner": null
+            }
+          },
+          "scopes": {},
+          "temporal": {
+            "E1": {
+              "tense": "pres",
+              "aspect": "simple",
+              "reference": "context",
+              "token_ids": [
+                3
+              ],
+              "finite": true,
+              "completion": "unspecified"
+            }
+          },
+          "allowed_routes": {
+            "a1": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a2": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a3": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ]
+          },
+          "kind": "claim",
+          "requires_context": false,
+          "runtime_requirements": [],
+          "uses_phrase_arguments": false,
+          "limitations": [
+            "Executable structure is not a certificate of semantic equivalence.",
+            "Scoped, group and reference predicates require evidence functions; missing functions return unknown.",
+            "Group descriptions preserve quantifier conditions; no general first-order quantifier theorem prover is implemented."
+          ],
+          "event_references": [],
+          "compiler_changes": [],
+          "content_coverage": {
+            "complete": true,
+            "missing": [],
+            "method": "Source lexical content compared with reachable translated values, allowing inflection.",
+            "limitation": "Necessary coverage check, not a semantic-equivalence or role/scope check."
+          },
+          "structural_alerts": [],
+          "source_alignments": []
+        },
+        "status": "compiled",
+        "logical_form": "EXISTS X1: ((referent(X1, aircraft, scope, world, route, unspecified) AND EXISTS E1: ((be(E1, ARG1, X1, ARG2, {\"kind\":\"text\",\"value\":\"yellow\"}, scope, world, route, unspecified) AND EXISTS T0: (temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified))))))"
+      }
+    },
+    {
+      "claim_id": "bus_original",
+      "text": "The school buses are yellow.",
+      "root_label": "supported",
+      "feature_id": "visual__bus_yellow__matched__joint",
+      "reference": "The foreground bus is yellow; a bus group is treated as the selected referent, not a universal count claim.",
+      "claim": {
+        "claim_id": "bus_original",
+        "text": "The school buses are yellow.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "The",
+            "lemma": "the",
+            "upos": "DET",
+            "head": 3,
+            "deprel": "det",
+            "start_char": 0,
+            "end_char": 3,
+            "feats": "Definite=Def|PronType=Art"
+          },
+          {
+            "id": 2,
+            "text": "school",
+            "lemma": "school",
+            "upos": "NOUN",
+            "head": 3,
+            "deprel": "compound",
+            "start_char": 4,
+            "end_char": 10,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 3,
+            "text": "buses",
+            "lemma": "bus",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "nsubj",
+            "start_char": 11,
+            "end_char": 16,
+            "feats": "Number=Plur"
+          },
+          {
+            "id": 4,
+            "text": "are",
+            "lemma": "be",
+            "upos": "AUX",
+            "head": 5,
+            "deprel": "cop",
+            "start_char": 17,
+            "end_char": 20,
+            "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+          },
+          {
+            "id": 5,
+            "text": "yellow",
+            "lemma": "yellow",
+            "upos": "ADJ",
+            "head": 0,
+            "deprel": "root",
+            "start_char": 21,
+            "end_char": 27,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "head": 5,
+            "deprel": "punct",
+            "start_char": 27,
+            "end_char": 28,
+            "feats": null
+          }
+        ],
+        "variables": [
+          {
+            "name": "E1",
+            "kind": "event",
+            "description": "be",
+            "token_ids": []
+          },
+          {
+            "name": "X1",
+            "kind": "group",
+            "description": "buses",
+            "token_ids": []
+          },
+          {
+            "name": "T0",
+            "kind": "context",
+            "description": "Reference time supplied by the caller",
+            "token_ids": []
+          }
+        ],
+        "atoms": [
+          {
+            "id": "a1",
+            "predicate": "referent",
+            "arguments": [
+              "X1",
+              "buses",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a2",
+            "predicate": "property",
+            "arguments": [
+              "X1",
+              "mod",
+              "school",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "property",
+            "roles": [],
+            "text": "property",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a3",
+            "predicate": "be",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X1",
+              "ARG2",
+              "{\"kind\":\"text\",\"value\":\"yellow\"}",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "be",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a4",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "unspecified",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "temporal",
+            "roles": [],
+            "text": "temporal",
+            "token_ids": [],
+            "trainable": false
+          }
+        ],
+        "expression": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a3",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a4",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "T0"
+                          ],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E1"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "X1"
+          ],
+          "state": ""
+        },
+        "coverage": [],
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ],
+        "version": "logical-form-v2",
+        "metadata": {
+          "logical_form": {
+            "version": "logical-form-v2",
+            "kind": "claim",
+            "entities": [
+              {
+                "id": "x3",
+                "text": "buses",
+                "type": "group",
+                "properties": [
+                  {
+                    "role": "mod",
+                    "value": "school"
+                  }
+                ]
+              }
+            ],
+            "formula": {
+              "op": "event",
+              "id": "e4",
+              "predicate": "be",
+              "anchor": "are",
+              "arguments": {
+                "ARG1": "x3",
+                "ARG2": {
+                  "kind": "text",
+                  "value": "yellow"
+                }
+              }
+            },
+            "warnings": [
+              "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+              "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+            ]
+          },
+          "normalizations": [],
+          "entities": {
+            "X1": {
+              "id": "x3",
+              "text": "buses",
+              "type": "group",
+              "properties": [
+                {
+                  "role": "mod",
+                  "value": "school"
+                }
+              ]
+            }
+          },
+          "events": {
+            "E1": {
+              "op": "event",
+              "id": "e4",
+              "predicate": "be",
+              "anchor": "are",
+              "arguments": {
+                "ARG1": "x3",
+                "ARG2": {
+                  "kind": "text",
+                  "value": "yellow"
+                }
+              },
+              "scope": "world",
+              "route": "unspecified",
+              "owner": null
+            }
+          },
+          "scopes": {},
+          "temporal": {
+            "E1": {
+              "tense": "pres",
+              "aspect": "simple",
+              "reference": "context",
+              "token_ids": [
+                4
+              ],
+              "finite": true,
+              "completion": "unspecified"
+            }
+          },
+          "allowed_routes": {
+            "a1": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a2": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a3": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a4": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ]
+          },
+          "kind": "claim",
+          "requires_context": false,
+          "runtime_requirements": [],
+          "uses_phrase_arguments": false,
+          "limitations": [
+            "Executable structure is not a certificate of semantic equivalence.",
+            "Scoped, group and reference predicates require evidence functions; missing functions return unknown.",
+            "Group descriptions preserve quantifier conditions; no general first-order quantifier theorem prover is implemented."
+          ],
+          "event_references": [],
+          "compiler_changes": [],
+          "content_coverage": {
+            "complete": true,
+            "missing": [],
+            "method": "Source lexical content compared with reachable translated values, allowing inflection.",
+            "limitation": "Necessary coverage check, not a semantic-equivalence or role/scope check."
+          },
+          "structural_alerts": [],
+          "source_alignments": []
+        },
+        "status": "compiled",
+        "logical_form": "EXISTS X1: ((referent(X1, buses, scope, world, route, unspecified) AND property(X1, mod, school, scope, world, route, unspecified) AND EXISTS E1: ((be(E1, ARG1, X1, ARG2, {\"kind\":\"text\",\"value\":\"yellow\"}, scope, world, route, unspecified) AND EXISTS T0: (temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified))))))"
+      }
+    },
+    {
+      "claim_id": "bus_edit",
+      "text": "The school buses are gray.",
+      "root_label": "refuted",
+      "feature_id": "visual__bus_gray__matched__joint",
+      "reference": "The shown bus body is yellow. Audio remains insufficient to determine its color.",
+      "claim": {
+        "claim_id": "bus_edit",
+        "text": "The school buses are gray.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "The",
+            "lemma": "the",
+            "upos": "DET",
+            "head": 3,
+            "deprel": "det",
+            "start_char": 0,
+            "end_char": 3,
+            "feats": "Definite=Def|PronType=Art"
+          },
+          {
+            "id": 2,
+            "text": "school",
+            "lemma": "school",
+            "upos": "NOUN",
+            "head": 3,
+            "deprel": "compound",
+            "start_char": 4,
+            "end_char": 10,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 3,
+            "text": "buses",
+            "lemma": "bus",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "nsubj",
+            "start_char": 11,
+            "end_char": 16,
+            "feats": "Number=Plur"
+          },
+          {
+            "id": 4,
+            "text": "are",
+            "lemma": "be",
+            "upos": "AUX",
+            "head": 5,
+            "deprel": "cop",
+            "start_char": 17,
+            "end_char": 20,
+            "feats": "Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin"
+          },
+          {
+            "id": 5,
+            "text": "gray",
+            "lemma": "gray",
+            "upos": "ADJ",
+            "head": 0,
+            "deprel": "root",
+            "start_char": 21,
+            "end_char": 25,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "head": 5,
+            "deprel": "punct",
+            "start_char": 25,
+            "end_char": 26,
+            "feats": null
+          }
+        ],
+        "variables": [
+          {
+            "name": "E1",
+            "kind": "event",
+            "description": "be",
+            "token_ids": []
+          },
+          {
+            "name": "X1",
+            "kind": "group",
+            "description": "buses",
+            "token_ids": []
+          },
+          {
+            "name": "T0",
+            "kind": "context",
+            "description": "Reference time supplied by the caller",
+            "token_ids": []
+          }
+        ],
+        "atoms": [
+          {
+            "id": "a1",
+            "predicate": "referent",
+            "arguments": [
+              "X1",
+              "buses",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "referent",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a2",
+            "predicate": "property",
+            "arguments": [
+              "X1",
+              "mod",
+              "school",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "property",
+            "roles": [],
+            "text": "property",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a3",
+            "predicate": "be",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X1",
+              "ARG2",
+              "{\"kind\":\"text\",\"value\":\"gray\"}",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "be",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a4",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "unspecified",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "temporal",
+            "roles": [],
+            "text": "temporal",
+            "token_ids": [],
+            "trainable": false
+          }
+        ],
+        "expression": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a3",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a4",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "T0"
+                          ],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E1"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "X1"
+          ],
+          "state": ""
+        },
+        "coverage": [],
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ],
+        "version": "logical-form-v2",
+        "metadata": {
+          "logical_form": {
+            "version": "logical-form-v2",
+            "kind": "claim",
+            "entities": [
+              {
+                "id": "x3",
+                "text": "buses",
+                "type": "group",
+                "properties": [
+                  {
+                    "role": "mod",
+                    "value": "school"
+                  }
+                ]
+              }
+            ],
+            "formula": {
+              "op": "event",
+              "id": "e4",
+              "predicate": "be",
+              "anchor": "are",
+              "arguments": {
+                "ARG1": "x3",
+                "ARG2": {
+                  "kind": "text",
+                  "value": "gray"
+                }
+              }
+            },
+            "warnings": [
+              "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+              "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+            ]
+          },
+          "normalizations": [],
+          "entities": {
+            "X1": {
+              "id": "x3",
+              "text": "buses",
+              "type": "group",
+              "properties": [
+                {
+                  "role": "mod",
+                  "value": "school"
+                }
+              ]
+            }
+          },
+          "events": {
+            "E1": {
+              "op": "event",
+              "id": "e4",
+              "predicate": "be",
+              "anchor": "are",
+              "arguments": {
+                "ARG1": "x3",
+                "ARG2": {
+                  "kind": "text",
+                  "value": "gray"
+                }
+              },
+              "scope": "world",
+              "route": "unspecified",
+              "owner": null
+            }
+          },
+          "scopes": {},
+          "temporal": {
+            "E1": {
+              "tense": "pres",
+              "aspect": "simple",
+              "reference": "context",
+              "token_ids": [
+                4
+              ],
+              "finite": true,
+              "completion": "unspecified"
+            }
+          },
+          "allowed_routes": {
+            "a1": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a2": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a3": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ],
+            "a4": [
+              "visual_depiction",
+              "audio_event",
+              "speech_assertion",
+              "ocr_assertion"
+            ]
+          },
+          "kind": "claim",
+          "requires_context": false,
+          "runtime_requirements": [],
+          "uses_phrase_arguments": false,
+          "limitations": [
+            "Executable structure is not a certificate of semantic equivalence.",
+            "Scoped, group and reference predicates require evidence functions; missing functions return unknown.",
+            "Group descriptions preserve quantifier conditions; no general first-order quantifier theorem prover is implemented."
+          ],
+          "event_references": [],
+          "compiler_changes": [],
+          "content_coverage": {
+            "complete": true,
+            "missing": [],
+            "method": "Source lexical content compared with reachable translated values, allowing inflection.",
+            "limitation": "Necessary coverage check, not a semantic-equivalence or role/scope check."
+          },
+          "structural_alerts": [],
+          "source_alignments": []
+        },
+        "status": "compiled",
+        "logical_form": "EXISTS X1: ((referent(X1, buses, scope, world, route, unspecified) AND property(X1, mod, school, scope, world, route, unspecified) AND EXISTS E1: ((be(E1, ARG1, X1, ARG2, {\"kind\":\"text\",\"value\":\"gray\"}, scope, world, route, unspecified) AND EXISTS T0: (temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified))))))"
+      }
+    }
+  ],
+  "limits": [
+    "One previously inspected development clip; no held-out videos or generalization claim.",
+    "Four assistant-reviewed visual color labels are used only for this engineering check; original training-eligibility flags remain false.",
+    "Entity identities, candidate inventory and time conditions are stipulated; no evidence alignment learning is demonstrated.",
+    "Audio labels remain provisional and excluded. Full-corpus media/feature extraction and empirical binding training have not begun."
+  ]
+}

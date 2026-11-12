@@ -2,20 +2,47 @@
   "updated": "2026-11-12",
   "steps": [
     {
-      "id": 24,
-      "title": "Resolve event and interval references, then set a stopping point",
-      "status": "proposed; not implemented",
+      "id": 25,
+      "title": "Freeze compiler and start a controlled relation-learning experiment",
+      "status": "proposed; empirical training/evaluation not begun",
       "items": [
         {
-          "text": "Link During this time to the stated interval and the same event—resolve cross-clause temporal references",
+          "text": "Select source-disjoint claims and audit full logical forms plus visual/audio/speech/OCR labels—establish valid supervision",
           "done": false
         },
         {
-          "text": "Test nominal events without inventing missing predicates—distinguish collapse/spread events from entity strings",
+          "text": "Create checked binding edits and cache corresponding frozen features—ensure edits affect the intended source",
           "done": false
         },
         {
-          "text": "Freeze shared components and evaluate new claims—measure bindings and source context before further expansion/training",
+          "text": "Train small classifiers and compare with frozen-model/simpleaggregation baselines—measure heldoutbindinggain andruntime",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Resolve event and interval references, then set a stopping point",
+      "status": "bounded tests and full replay complete; nominal typing remains off; fresh semantic evaluation pending",
+      "items": [
+        {
+          "text": "Test bounded parent-interval references on existing events; retain missing-event refusals",
+          "done": true
+        },
+        {
+          "text": "Implement/test nominaleventvariables; keep lexicaltyping off after real noun-sense errors",
+          "done": true
+        },
+        {
+          "text": "Replayall2375originals/cached449cases and reviewall25changedprograms; retain1963/exclude412",
+          "done": true
+        },
+        {
+          "text": "Run411tests, historicaldefaultcomparison and nativefeature-basedtraininginterfacecheck",
+          "done": true
+        },
+        {
+          "text": "Evaluate reviewedbindings on unseen sourcevideos before empiricalperformanceclaims",
           "done": false
         }
       ]
@@ -666,5 +693,6 @@
   "claim_split_run": "exp/probabilistic_verification/claim_split_20261112",
   "split_alignment_run": "exp/probabilistic_verification/split_alignment_20261112",
   "full_rewrite_run": "exp/probabilistic_verification/rewrite_all_20261112",
-  "semantic_components_run": "exp/probabilistic_verification/semantic_components_20261112"
+  "semantic_components_run": "exp/probabilistic_verification/semantic_components_20261112",
+  "compiler_readiness_run": "exp/probabilistic_verification/compiler_readiness_20261112"
 }
