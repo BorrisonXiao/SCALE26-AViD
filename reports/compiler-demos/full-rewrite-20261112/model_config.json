@@ -1,0 +1,26 @@
+{
+  "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+  "dtype": "float16",
+  "temperature": 0,
+  "seed": 42,
+  "max_tokens": 3072,
+  "max_model_len": 32768,
+  "vllm": "0.18.0",
+  "transformers": "4.57.6",
+  "job_id": "1226791",
+  "gpu_names": [
+    "NVIDIA H100 80GB HBM3"
+  ],
+  "source_sha256": {
+    "scripts/run_claim_split_model.py": "835926319c0cdda685f3609665fa60b6a85833612ae76de2a090a0b3e1bbd565",
+    "scripts/probabilistic_verification/claim_split.py": "338827451982e0735c3ee4ac1bc556e7e14efab40981be9814c5ed1c7ac0213d",
+    "scripts/probabilistic_verification/sentence_simplification.py": "c04a09c8bfd1700cd3b93b7d478c0f000378b6e23c599f9788be79ec4e5ef671",
+    "scripts/probabilistic_verification/full_rewrite.py": "b8350688c25a1240455769ce8a047bcd18ed776ceb4071099669478028efbcdd",
+    "scripts/prompts_phase2.py": "de4b9f21a2e04684575f319c228901b04c59ce66d746074846c7370a51b38d42"
+  },
+  "model_config_sha256": "a1ee086a68d0cbfc87316da00ba4b8507bd1292978108e2496201a30a450f438",
+  "input_sha256": "b0bbac44ad4f1df81393156d9d0d89432783662b9b3d9de947d3db9662639d6d",
+  "eligible": 419,
+  "sentences_only": false,
+  "full_fallback": true
+}

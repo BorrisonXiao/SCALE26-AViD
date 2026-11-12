@@ -7,13 +7,28 @@
       "date": "2026-11-12",
       "items": [
         {
+          "text": "Completed all449 previous rejects:30 direct passes bypassed generation;419 frozen Qwen requests produced1437 clauses.207 cases fail component compilation,142 alignment,14 composition and2 model refusals.",
+          "href": "#remaining-failures",
+          "label": "Complete cohort and bottlenecks"
+        },
+        {
+          "text": "Reviewed all84 generated programs;27 additions judged faithful (14direct/13rewrite),57 not approved. Previous1926rows retained exactly:1953/2375=82.23%;422 remaining. Development compilation counts, not independent accuracy.",
+          "href": "#full-rewrite-example",
+          "label": "All449 examples, exact prompts and reviews"
+        },
+        {
+          "text": "Implemented bounded repeated adjuncts, measurements/ranges, scalar magnitude, NOT EXISTS absence, participant IDs and source-use matching.360 tests pass; all2375 historical default outputs unchanged. Three native absence checks use constructed inventories.",
+          "href": "?rewrite_all=TgR_u37mCoQ4_1916#full-rewrite-example",
+          "label": "No-narration example and native checks"
+        },
+        {
           "text": "Consolidated Reports to two main entries and the compiler report from eight views to five. Current results/examples stay prominent; older comparisons share History and all old URLs remain valid.",
           "href": "#history",
           "label": "History and earlier reports"
         },
         {
-          "text": "Clarified the remaining449 claims:29 tested rewrite failures and420 untested. First checks group227 predicate-formation,173 content omission,43 operator/type and6 explicit alignment/context failures. No new model/compiler run.",
-          "href": "#remaining-failures",
+          "text": "Before the full sweep, audited449 remaining claims:29 tested rewrite failures and420 untested. This earlier snapshot is preserved in History.",
+          "href": "#remaining-failures-before-full-run",
           "label": "Why the remaining claims fail"
         },
         {
@@ -24,7 +39,7 @@
         {
           "text": "Freshly recompiled all2,375 originals with exact saved-record equality:1,924 passes (81.01%) and2,103 candidates (88.55%). Two reviewed automatic splits give1,926 passes (81.09%);449 failures remain.",
           "href": "#current-corpus-rate",
-          "label": "Current full-corpus pass rate"
+          "label": "Earlier full-corpus pass rate"
         },
         {
           "text": "Published all62 case comparisons with inferred mention links, exact prompts/raw responses, compiled structures and failure reasons. Shorter text still fails on quantity, source scope, references and negation.",

@@ -1,0 +1,35 @@
+{
+  "provenance": "Constructed candidate inventories and observations; no media model is called.",
+  "cases": [
+    {
+      "empty_audio_inventory": true,
+      "inventory_complete": true,
+      "expected": "supported",
+      "distribution": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      }
+    },
+    {
+      "empty_audio_inventory": true,
+      "inventory_complete": false,
+      "expected": "unknown",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      }
+    },
+    {
+      "empty_audio_inventory": false,
+      "inventory_complete": true,
+      "expected": "refuted",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 1.0,
+        "unknown": 0.0
+      }
+    }
+  ]
+}

@@ -2,6 +2,54 @@
   "updated": "2026-11-12",
   "steps": [
     {
+      "id": 22,
+      "title": "Preserve meaning during composition and reference resolution",
+      "status": "proposed; not implemented",
+      "items": [
+        {
+          "text": "Preserve original OR, while/temporal overlap, modality and quoted/source context across the compiled subclaims—prevent changed logical meaning",
+          "done": false
+        },
+        {
+          "text": "Resolve class descriptions such as court/panel and richer original-span/group references—avoid disconnected participants and false refusals",
+          "done": false
+        },
+        {
+          "text": "Replay the cached419 responses and review newly generated programs—measure compiler improvement without changing the prompt or model",
+          "done": false
+        }
+      ],
+      "note": "Pause prompt changes and empirical relation training until these fixed-output checks establish a useful stopping point."
+    },
+    {
+      "id": 21,
+      "title": "Repair bounded compiler semantics and test all449 previous rejects",
+      "status": "experiment and review complete; report/publication checks recorded separately",
+      "items": [
+        {
+          "text": "Support repeated adjuncts, explicit participant IDs and source-use checks—repair clear compiler restrictions",
+          "done": true
+        },
+        {
+          "text": "Implement typed measurements and bounded NOT EXISTS absence with completeness-sensitive unknown",
+          "done": true
+        },
+        {
+          "text": "Run direct-first compilation and one fixed rewrite prompt on every previous reject—30 model skips,419 actual requests",
+          "done": true
+        },
+        {
+          "text": "Inspect all84 generated programs and retain only27 reviewed additions; preserve previous1926rows exactly",
+          "done": true
+        },
+        {
+          "text": "Run historical2375default-output equality and360 regression/extension tests",
+          "done": true
+        }
+      ],
+      "note": "1953/2375=82.23% retained;422remain. Counts are development compilation outcomes, not independent semantic accuracy. No new empirical media verification/training."
+    },
+    {
       "id": 20,
       "title": "Separate sentence generation from original-mention alignment",
       "status": "fixed31-case experiment and full2375-claim census complete; reliability remains limited",
@@ -20,14 +68,14 @@
         },
         {
           "text": "Test explicit participant identifiers and routine source frames to reduce false refusals without guessing references",
-          "done": false
+          "done": true
         },
         {
           "text": "Define typed measurements and quantified absence before expanding failure-only evaluation or new DeepProbLog learning",
-          "done": false
+          "done": true
         }
       ],
-      "note": "Direct1924/2375=81.01%; two reviewed new automatic splits give1926/2375=81.09%,449 failures. Candidates2105/2375=88.63% are a weaker measure. Old sentences+new alignment also recover2, with different membership; no per-claim union. Core38 compiler files unchanged."
+      "note": "Direct1924/2375=81.01%; two reviewed new automatic splits give1926/2375=81.09%,449 failures. Candidates2105/2375=88.63% are a weaker measure. Old sentences+new alignment also recover2, with different membership; no per-claim union. Core38 compiler files unchanged. Historical31-case result. Its proposed bounded identifier/source/measurement/absence follow-up is completed in step21; general reference resolution remains open."
     },
     {
       "id": 19,
@@ -48,14 +96,14 @@
         },
         {
           "text": "Separate sentence generation from reference resolution using original entity/event mentions to reduce wrong identity groups",
-          "done": false
+          "done": true
         },
         {
           "text": "Repeat a fixed small fidelity comparison before corpus-wide fallback or new DeepProbLog learning",
-          "done": false
+          "done": true
         }
       ],
-      "note": "Qwen65/77 component passes,20/31 all-component passes,0 approved complete results. Seven assistant-written splits yield18/18 component passes and4 faithful linked results; one separate guard is appropriately refused. These selected diagnostics are not automatic gains or independent gold. Core38 compiler files and full-corpus baseline unchanged. See compiler-demos.html#sentence-splitting."
+      "note": "Qwen65/77 component passes,20/31 all-component passes,0 approved complete results. Seven assistant-written splits yield18/18 component passes and4 faithful linked results; one separate guard is appropriately refused. These selected diagnostics are not automatic gains or independent gold. Core38 compiler files and full-corpus baseline unchanged. See compiler-demos.html#sentence-splitting. Subsequent fixed31-case comparison is completed in step20; all449follow-up in step21."
     },
     {
       "id": 6,
@@ -520,7 +568,7 @@
       ]
     }
   ],
-  "intro": "Fresh full2375-claim run reproduces1924 direct content-check passes (81.01%). Two reviewed automatic sentences-only splits give1926 passes (81.09%);449 failures remain. Candidate generation is2105/2375 (88.63%) in that diagnostic composition, not semantic accuracy. Both31-case alignment comparisons recover2; automatic expansion/new learning remain deferred. The remaining449 comprise29 tested rewrite failures and420 untested claims; the31-case diagnostic cannot estimate whole-corpus recovery.",
+  "intro": "All449 previous rejects tested:30 direct passes skip generation,419 final model requests.27 reviewed additions to previous1926 accepted rows give1953/2375=82.23%;422 remain.84 programs generated automatically;57 not approved. Compiler-author development review, not semantic accuracy.360 tests pass;2375 historical default outputs exact. Next work targets operator/context preservation and participant reference resolution using cached responses; empirical training remains deferred.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -547,8 +595,8 @@
     "status": "fixed-input comparison and focused qualitative review; not a selected production parser"
   },
   "rewrite_fallback": {
-    "status": "experimental sentences-only generation and original-mention alignment; exact-output review required",
-    "policy": "Compile original first; strict failures only. Same31 failures used in fixed comparison, with no per-claim prompt selection. Two reviewed sentences-only outputs may replace their exact failed originals; manual examples and historical prompt successes are not unioned. No unreviewed corpus-wide fallback."
+    "status": "all449 previous rejects tested; 27 reviewed additions; automatic meaning reliability remains limited",
+    "policy": "Improved direct compiler first; every automatic direct pass skips model loading even if later meaning review fails. One final prompt for419 strict failures; no per-claim prompt/attempt selection. Retain only27 newly approved outputs plus previous1926rows. Initial418requestattempt entirely excluded. No unreviewed promotion or new empirical training."
   },
   "logical_form_run": {
     "source_path": "exp/probabilistic_verification/logical_form_20261028",
@@ -569,5 +617,6 @@
   "compiler_alert_review_run": "exp/probabilistic_verification/compiler_alert_review_20261111",
   "claim_rewrite_run": "exp/probabilistic_verification/claim_rewrite_20261111",
   "claim_split_run": "exp/probabilistic_verification/claim_split_20261112",
-  "split_alignment_run": "exp/probabilistic_verification/split_alignment_20261112"
+  "split_alignment_run": "exp/probabilistic_verification/split_alignment_20261112",
+  "full_rewrite_run": "exp/probabilistic_verification/rewrite_all_20261112"
 }

@@ -1,0 +1,3597 @@
+{
+  "provenance": "Compiler-author assistant reviewed all84 final generated programs against originals, sentences and complete scoped outputs; not independent human gold. Failed outputs retain automatic failure reasons, without a blanket semantic judgment of their text.",
+  "cases": [
+    {
+      "claim_id": "TbJqMFkNxARY_167",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Injury and be-event witnesses are jointly negated within the spill time condition; no positive injury existence is introduced.",
+      "artifact_sha256": "66b377855274c0f6ffa52d6e9a7a5468ab0af43dbeaeb1c84a5f2da361667b59"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1016",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: 2025-03-28",
+      "artifact_sha256": "86ae191fea82a8c3dd8f2d71e0ee913f033407664639c01b6ffc7772ab42a912"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2168",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/Rain",
+      "artifact_sha256": "d58e9f47efbaa41262a2afc5aa6fdf13d7a97f4f7f72d35ed33ea0a47621b49e"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_898",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "927eeed06323a14a8fc31c763da6deadb48d2cdb0deb9a4089f2842b86e5929a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1753",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c4: SRL repeats ARG2 on tariff",
+      "artifact_sha256": "d1db0809dd71f6c8d129cf97259b54d19a5d31c2129fa8d532a9f0b1c5b75561"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_11",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: online",
+      "artifact_sha256": "008eef67c24f226a8db000f4268526ae92ece659da7212a94f261baf98f9f6ba"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_12",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: missing",
+      "artifact_sha256": "1db162c062d89fe3df7b762b7d2409f49efd92f05c462cf1a7aa691d6af6faea"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_48",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: further, inland",
+      "artifact_sha256": "1fa070efb635c8a7ced3a8f0ae226a48a4def754fd62388687680f0495e52c62"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_54",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: back",
+      "artifact_sha256": "453a3fc660bd8b07b391d6f81581d330defecd9cf2550182db7280a417caa40a"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_61",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: stuck in their homes",
+      "artifact_sha256": "0ffc341755865b21a9a194f80b37585ae92b8402c1f63f8444fb1fc62d77fe4f"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_63",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: nearly completely submerged in water",
+      "artifact_sha256": "de0005f1d4972d30cb5bc451d51b1cb9725c85eafe008d95598bc660f3c509a6"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_68",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/reliance",
+      "artifact_sha256": "4d4aaf95bb0a5f84fbb8a0ee27165d8218851b56252d2ad285fadadf8055888d"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_75",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: submerged",
+      "artifact_sha256": "1c7e9a1af430f3420fc70e01d45ef655b7d3cc1f958deae538634f9e0eeb0e4a"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_77",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The same homes are damaged and flooded during the storm; both conditions and the shared storm-time phrase are retained.",
+      "artifact_sha256": "7c8d33fc8ded16a5cfa998aa98f92e6a4cb93f595afb04a47f088cf990be83f9"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_79",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: A shared property is not anchored in the original text.",
+      "artifact_sha256": "9f3fa8e10b771d09022ded41174b48344df15f5c78452ae3173451c0a725972b"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_87",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/evacuation",
+      "artifact_sha256": "0bcfebf05be3a4192177c1d5b89d092556c4dd914122db3f2537947eb30ffe09"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_106",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: Small",
+      "artifact_sha256": "305c20f66e19cec8d69632c5e006d734a01af4f675b386a1f5342479072cda3d"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_127",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: other",
+      "artifact_sha256": "10b465a456fb64c17af6548fa09f3f7b30b36463552b3130d1be0f11ab7fcff8"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_131",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Possible windy-condition causation is split from an unqualified role/falling assertion; uncertainty and the causal binding are weakened.",
+      "artifact_sha256": "fe93b919e4b0c6232b1554b07a371d0068607cb3e8fcd627d43bd3ffc0bf2065"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_132",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Both dock/along and ship/towards constrain the same driving event and the same two-truck group.",
+      "artifact_sha256": "196229c8a9576dbe9760553d6dd0349004777a71b7f1d80528d7a202f36034ec"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_160",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Absence requires declared entity IDs.",
+      "artifact_sha256": "22bac0fb5c55cc02017610a637de4986ef209221799e9a5f6ba07c0e99241575"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_161",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.",
+      "artifact_sha256": "d080d8bed202064513aa47fbdb11e1a212a10cc1343b9d505d28b5bfa8886cd4"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_164",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: Mississippi",
+      "artifact_sha256": "625e7a94f4831a19a70f4eccf5969eb9c2c63d952e9453661130ef9fd283926f"
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_172",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to keep the port open",
+      "artifact_sha256": "196445954d983a40a2d5095b439080d343a37c1ca7d9ee8f681945a602a1f380"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_181",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Supply exactly one sentence.",
+      "artifact_sha256": "7d1b206cac69923e0de88d49fbb3811f8f8a46c755b0d0c7474921c3c25f9621"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_190",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Event identity aligned, but repeated-clause tense needs an original-token time attachment.",
+      "artifact_sha256": "92408942fb59794165688a4aadd11a82482a170865b7e5f4431a78349b90e5e0"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_192",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/beginning",
+      "artifact_sha256": "f4420b020093992c803b6ba98265bdf3199dc7eea9e84805fb66136b7235b7f0"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_200",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: excited",
+      "artifact_sha256": "e5596496b1ea2aa45bfea30da53f06b60417e2d9d04528f45f0e5e9734871fda"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/condition",
+      "artifact_sha256": "ea163326cb9ae5df6e7dcee52f08a3bd2d4697201daa78672e0300a887928929"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_234",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: in",
+      "artifact_sha256": "c8576ac077131f5642a094aa7364d0b655ae9064715f4e6024972286432756e7"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_239",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: covered in dust",
+      "artifact_sha256": "fde392a23dfd7b5062c6f0555d91e22d6492b891bb5cf5327e39c8d7d29eb61c"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_271",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: on",
+      "artifact_sha256": "121e1712db3833756f76d5513bfe9f3bea1a9993226add81903f075417680996"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_277",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: A shared property is not anchored in the original text.",
+      "artifact_sha256": "20027c06cd94997f55a7e549a9abc77eb5927f8c454d6fa3986c8085ae3427ff"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_284",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: like driving into a haboob",
+      "artifact_sha256": "db50d2a4bb8bd24ddbf4a3c1ac7c81e9803a510eadc1b86fea848295c8736343"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_299",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The airport adjunct is restored, but away is treated as a location instead of a well-defined result/particle.",
+      "artifact_sha256": "ed26c56eb95bfe7fb8f435f8d4f34fd5c56586aafb82ffa320def224d8979855"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_308",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Likely is a text property of existing outages, while their residential location becomes an actual-world assertion; modal scope is not preserved.",
+      "artifact_sha256": "79314e673320568f99aa87602d0be933ca80104dcb0d25376f793e1156224bd8"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_314",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/loss",
+      "artifact_sha256": "047ddb835614dbcaa67f2c7c83885c5484a55a6c641c888182edf73d5a42c840"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_323",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/incident",
+      "artifact_sha256": "4ff50629139b8b11b3b030c4a1b58c2f7332f3188405d61c266ad393c0a67417"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_333",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Robot1 is paces is ungrammatical and paces becomes an object; moving up adds an interpretation of the malformed original rather than preserving pacing.",
+      "artifact_sha256": "1870ba86984d54fab5ebce33cad50ec7b913ac3360f59bea6e3ed9876369554a"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_337",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: back",
+      "artifact_sha256": "456ac13d5d7470ea87b5c0e10117c4b2ebd11108b8a9ab257371e4ee31893196"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_342",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: to start sparring",
+      "artifact_sha256": "361e1b4f95fd91ee760762a34ff174de0ff9b3dbc5c94a1fb392eaaa5dfdf7a7"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_343",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Exclaiming and saying the quote are separate events. The quote need not be what the man exclaimed; the speech-event binding is lost.",
+      "artifact_sha256": "735198668502893f13fce3d7fadca3a1341b84e2423210158d8c1af2460741a3"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_346",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: man's",
+      "artifact_sha256": "d1b66122eabc3388c65e1685339ad200266010ea5cb78f4a69be4f625887116e"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_355",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: pushed",
+      "artifact_sha256": "fa6d74e6794ecabc058e19cdaf4b8e672596e5819b227ff1da82966f36cab668"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_357",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The watch/ability content retains a generic what entity rather than a defined indirect-question/event relationship; reference/content interpretation is incomplete.",
+      "artifact_sha256": "3cdbbc2a8829d03af03e1472e8ec8d0b3efcb94267063d24e99f661695cb9d6c"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_360",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: upright",
+      "artifact_sha256": "40781f3733d6e98d412de6e0e208a44e3c1696a387ef0a9b61bd797dd0ddef1d"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_373",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/event",
+      "artifact_sha256": "78922200edd963ff06d2a6d0889d241f743fb3aa630be867bec8d1bfca308447"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: three",
+      "artifact_sha256": "029c41947ea29e8dfbb82233bb08cb660238672ff91dd968a3b71b8feefe9eaa"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/place",
+      "artifact_sha256": "533fde00351302eb38e3c547f19a90a9529d8b4069b5a8f6a98254208660b582"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_380",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/publication",
+      "artifact_sha256": "dfbdfd9fff5fbce4f479b8dd3f040914bd65fb50eeff748a3918a0939d4c528b"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_395",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Trips becomes a nominal Robot trips entity instead of a tripping event. Running/falling remain but the tripping action is not compiled.",
+      "artifact_sha256": "72869a7d7def2d8a4df0c56952a0ddd9edc51ae882e90ac1930d56454a16b2c3"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_407",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/legs",
+      "artifact_sha256": "17e6ad0888282f676923600c25aa9ec3ba451593fa733a39ed4f243a6e18dc13"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_417",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Four is the robot count;100m is a separate typed measurement of the dash.",
+      "artifact_sha256": "17291a83788f521fef19d44f416d7bc27b48cd8a3850f9bea01d5ef55fa5af4c"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_421",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/event",
+      "artifact_sha256": "11eaa53a736d4a1b31c7d56cb890677baaf96dd6e6d5811322ac4728136f583d"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_423",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Event identity aligned, but repeated-clause tense needs an original-token time attachment.",
+      "artifact_sha256": "b9959c9391df67a2fc35cb2471e0b5dc5f65c75690f3334dfb7aeb1d6695c1a4"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_425",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: caught in the ropes",
+      "artifact_sha256": "e1035510144829b62d976af9dc9702aaf4ad02e5d78008814ccba75c875774bb"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_432",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Robot2 attempts the knee action on Robot1 inside purpose scope and misses Robot1 outside it. Both numeric identities are preserved; a successful knee is not asserted.",
+      "artifact_sha256": "713ba19a65e5e83f90280971ea6df9ee2d891c8c7a92981200404872192b820c"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/Robot 2",
+      "artifact_sha256": "ff0b2f6f3a5195a94cc221a80b420b1efcda67310ee1929a6ceb0ad96cda9d8a"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_444",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "Model returned refuse with no proposed sentences. The fixed output schema does not ask for a refusal explanation.",
+      "artifact_sha256": "14d81a58fbc556156e6c3a7f5501ff87f0a1645e214d156901a3277db3cd3f81"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_446",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/He",
+      "artifact_sha256": "7cd8a61da764682b8ca471c5efb1fac957fb4954183929b1f8a70deb219193ff"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_447",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "Model returned refuse with no proposed sentences. The fixed output schema does not ask for a refusal explanation.",
+      "artifact_sha256": "bc0ec75262c114309c06cef5b4779d86bb1c65f415ab5068369f8ba004903039"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_453",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The written quote becomes a government entity; exact OCR content/source scope is not preserved.",
+      "artifact_sha256": "e6dc2804b4ed42021b92f39e31cc2292f9bc7202ee756e83456908e8c208e880"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_454",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Using metal rails is attached under the attempted-breaking purpose/relative context instead of the actual ongoing method of attempting; actual-versus-goal binding is not retained.",
+      "artifact_sha256": "08c8855a170710284233ff5c5d8f76a06e2302f100f04a17bddbc47e48f89aa9"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_467",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: I'm",
+      "artifact_sha256": "230cd511f3d641ebd02da6b9872731025b8948e07b8b1acf8c15f6a087511cb7"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_468",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: attacked by the police",
+      "artifact_sha256": "4d5bbae58c22834436c5574e7c8c857073dcbe8d7054672123acbb21ab756412"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_469",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/protest",
+      "artifact_sha256": "45567c211d0bcd42a8a94dd3125582327f4d0488a46559d5225923b078b3ce9c"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_470",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Event identity aligned, but repeated-clause tense needs an original-token time attachment.",
+      "artifact_sha256": "7307423291b1f6cfb02194c4295cdce09d0915f7d84b70be8ce8a84c216a21b1"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_478",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/sign",
+      "artifact_sha256": "b3e4c917efb0a242b9ed3d3ce240d2021cdbb4e3a5ba3098f678ec9783e05d27"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_489",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/statement",
+      "artifact_sha256": "e816fe111a126826c9614378c852e6a6de128bb9d02f5d24aab6a4ca0952a034"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_495",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: Mexico, Nov, 15",
+      "artifact_sha256": "5b8c4ce2a648f5af33130df6a9f34dd6d96ddf0d645e0c8450c3f35b210903e2"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_496",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/quote",
+      "artifact_sha256": "a63e4e0d62c690a49d117d76c637a9c5a0638865b659b5b202158609e411e947"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_497",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/statement",
+      "artifact_sha256": "31a9e09d1d2f553023eda1975f680af4c99f25a5fa2d9111f5ecd2b02b346615"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c4: Unresolved modal interpretation: would",
+      "artifact_sha256": "c04808b0b8c2d663ad55ec4b4d3aaeb60d13618fae6e16fc6849a8518b15dad8"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_517",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Event identity aligned, but repeated-clause tense needs an original-token time attachment.",
+      "artifact_sha256": "006354fd8e35c17e263ad45e52a4b5ff06af66de48b1684462f11868053aba3a"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_519",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: all they wanted",
+      "artifact_sha256": "67ea2929f797ed1e40adf99c0fe78ed01530b067d5644085bae0b09f2b886e20"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_530",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: up",
+      "artifact_sha256": "545e78bda1334346aa7a7af6ebc233fbcb8eb364cf5756540ef84301a0d1f291"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_532",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The model retains Or as a discourse word, but composition uses AND. Shots and explosions are both required instead of alternatives.",
+      "artifact_sha256": "927ffe55e614eaf72ae0d19b55abfb2fe472e20925e35e80451952c34d2fc540"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_535",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unrepresented source content: Narco, state",
+      "artifact_sha256": "891ffc3cdc92d49241ebfcf5f5f016be89a30c5f2098de161f47ac900184a227"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_536",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/message",
+      "artifact_sha256": "3d5ab6db7fffb28f597b1b1d6d44035b5983187b39bd18b7b62dbaa708cb856e"
+    },
+    {
+      "claim_id": "TLO3smKI67PM_556",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/lands",
+      "artifact_sha256": "9a4d7c048819aa2d20ab94315838be8e272244e68edeaafd2627256bb064b3e7"
+    },
+    {
+      "claim_id": "TLO3smKI67PM_580",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: almost, fan's",
+      "artifact_sha256": "f1c298c1cc2b541f30ce3fe75a18282273b0714e5c2ca8ba21bff85772a21090"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_606",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "One visible video overlay owns the exact preserved quotation, verified on the OCR route. No event inside the quotation is asserted.",
+      "artifact_sha256": "015571af4d23028ec879db1426a14153a5738e4ecf1f4d8b5bdb19327f8eeb34"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_609",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: dressed in white robes",
+      "artifact_sha256": "4ab7cfe9a07b6dbda27088657c3f90158611b26b1cb53a5a5bf6f9f5bc4d4ee7"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_618",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The fragment is ambiguous about floor-arranged cots. The rewrite chooses men arranged in cots without adequate original evidence.",
+      "artifact_sha256": "1836113ca56edc8ad0c125876907914a814348b63aa67e6e4ae845961874f8cc"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_628",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c4: Unrepresented source content: only",
+      "artifact_sha256": "d1d040baa6536cac7386f38782c3dbf54595c9646421a42c91222fe74351e084"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_631",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: A shared property is not anchored in the original text.",
+      "artifact_sha256": "9196f946e6561d474ee77e00e0ddafeb473f8e0b687100ae7990c2adfb7fb616"
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_638",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "No issue-with-Hajj witness exists; the original broad absence is retained, subject to complete candidate evidence.",
+      "artifact_sha256": "fed6c9bfc8a3a1ffeaa5952d6ece5460f85d0a444cedb1fdaad8bdfdd0e35f3a"
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_660",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "While is lost. Sailing and fireworks can satisfy the composed conjunction at different times.",
+      "artifact_sha256": "2161f4f54823f08acb7ab75d692ded73dfe83ff5209e3901ff3212052617a2bd"
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_662",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The sound is linked to a fireworks object while explosion is a separate world event; the heard sound need not come from that explosion.",
+      "artifact_sha256": "07a31a7c892803083d0d68a234520ab3f4971057f07446f6f320d5f1186c6c3b"
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_682",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The walking direction is restored, but a spurious track-toward-building relation remains inside the recreation-area description.",
+      "artifact_sha256": "226c70ac43959cd8c0bc7c9c74d099aeaa6879c083ff17aadfa0719d035ccbe5"
+    },
+    {
+      "claim_id": "TKCfkoNUssZI_728",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Every floor is retained only as a property on one floor entity, without a universal floor condition.",
+      "artifact_sha256": "68679005345df83ece72f811bfd3f454c1cd96ee6ff85a3d97bb63c3cc16eab8"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_732",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: other",
+      "artifact_sha256": "fa82fb422e9da07fbc3c9d5ec7be50d77e84d9b8b49295882ee3e076866c8675"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_733",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: currently",
+      "artifact_sha256": "78c4af28a1e71155a737bd01012dfddad4f66035ca820c18d3f527f20322b3d5"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_741",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Both sides remains a lexical quantifier property and the gathered/crowd description has incomplete group semantics; the result is partial.",
+      "artifact_sha256": "32f3371f27018608dac2d756d192951ca8944b79c4b69247e2d7b277c47bd486"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_745",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: order",
+      "artifact_sha256": "43c1acdc72d95e72247c7b68d1d62b56c7590e2fbdd5c619ec2f328276ab8967"
+    },
+    {
+      "claim_id": "T8u81WMIyj18_755",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unrepresented source content: 2025",
+      "artifact_sha256": "d41a2c38746706d69fa69a21e5e3a000d0e62c5964c47c585cf7e3d11b553bf6"
+    },
+    {
+      "claim_id": "T8u81WMIyj18_758",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: A shared property is not anchored in the original text.",
+      "artifact_sha256": "f6d04bee865029e23587c99b65fb17fe2b8b7104503fd0af5fb43841452142af"
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_760",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The same camera broadcasts the source livestream and is owned by IPC; broadcaster and owner are not swapped.",
+      "artifact_sha256": "386891386e139d19b8181330fce8a50e85a7958ec6dda9426d7f98e1389493ba"
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_770",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: SRL repeats obl on parks",
+      "artifact_sha256": "0f0ec85004be4358c4577d9c02852cfbd6eae51c4f70490ca58f7bfde18a33a9"
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_774",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: it difficult to see",
+      "artifact_sha256": "963139955fe8246253cf69213d55f1781ad60322109d2afbbe9ca0ddea5fc4d7"
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_779",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: first",
+      "artifact_sha256": "7cde56245cbae9fd3a3234ba1ff9b0486e8f5b4ce14fe4b11df3f337a42dd0c9"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_791",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: to go right",
+      "artifact_sha256": "f32e94d1442f7295d46de99bd50b8d5f90ce2d475daf5f47f091244872ecd906"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_796",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/condition",
+      "artifact_sha256": "c9b305cf606f739e55b2c643c5179f3ebb3c61d2938c6c0181f833dc3defe275"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_800",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: down",
+      "artifact_sha256": "2a18e08182e29b2171a30e6fe03b222d4a9c8c414b2ff3c45f02c9d3f5505bf6"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_801",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Repeated original event has conflicting ARG1 arguments.",
+      "artifact_sha256": "92e7d1bb623a7282ae02c58962202336dabc2b367a573fc8bebc9a2a5f292237"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_806",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A source negation is absent from the logical operators. Preserve the intended negated clause.",
+      "artifact_sha256": "95f70666283e37eb2c11ac28126ec76dae3ff59b1debd6faf6408e0c90e4b8f1"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_807",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Windsor West as a riding description and as a separate entity are not unified; depicted-label and world-classification contexts are also mixed.",
+      "artifact_sha256": "6480f6f874d4676b9d12ab2e40ff1b6b0b8f66c9cf17d985cc64afb04f895848"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_808",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/39.1% of the vote",
+      "artifact_sha256": "0dadb17b42fb4c898cbb9413777a5407a85bac793051ad276b6a6b37c2ad8101"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_809",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/election",
+      "artifact_sha256": "d6fb2576985f42c37a5b0e98b7d685a9d6e36f2b078e94454c0234731ffca864"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_812",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c2/balance of power in the minority parliament",
+      "artifact_sha256": "be1cb3a47a2f64ee6903cd6267d577755ec9cef7f6826d633f3d3606e8758f0f"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_813",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/claim",
+      "artifact_sha256": "5be786d9d553b9479b08f7916989e11bf4f45081c18a0ad179abd22b45b981c8"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_814",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The quoted geographic labels are converted into ordinary inclusion assertions; exact label/source interpretation is not established.",
+      "artifact_sha256": "391ed26676eb5f90fb0ed27cc98e63832b23b06d7e8bb7f40e7dc58a0b60a5a0"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_820",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Negated sufficiency needs a separate quantified interpretation.",
+      "artifact_sha256": "76650e729d5cf8f82163cd5fb98fc793b22e73ba36b558a368b4480d27d4ca9e"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_821",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Two compiled entities in one clause map to one original mention.",
+      "artifact_sha256": "066d2777129f62edb9e2a8bf373970f0eda0b47ec299124afb8ec4e9cff24f05"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_822",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: 2025, Liberal, red",
+      "artifact_sha256": "94d3c0c283e0f7821d85f34934af91564e291bbcd85af65cdd988fff61e78802"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_823",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A source negation is absent from the logical operators. Preserve the intended negated clause.",
+      "artifact_sha256": "6b39e5bfe65e183a47c1f29ea35785db9a3cd66e2894780a851e937d6e4b4311"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_824",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The contribution to government formation is assigned to the Liberals instead of the winning-seats event; Quebec/night scope is not carried into the win.",
+      "artifact_sha256": "8d80f5d64ed267c785c84948207ef68c3d4d002d10a8f991eb8102541b4bb1d2"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_827",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Content must reuse the focal parent entity; do not assert an unrelated event.",
+      "artifact_sha256": "4561d81dba2f6a1bceb94cfe83682a0da2213770d3a96942e3f9d18ebba22631"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_829",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unrepresented source content: White, Rock",
+      "artifact_sha256": "c01e52c666dd91ecbef8bbc8ad60faf279f598693a01cfd7e253022349e96ef5"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_836",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "3a1978e405ebfc4f4d359b850509bf519d9e8cf576e68a4ffe07b9bd97318326"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_838",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: SRL repeats ARG0 on made",
+      "artifact_sha256": "f1c049c9e6ede2b7b6c1054fc53436a40f3910bbb60d94ae754d7fde481321b3"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_846",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to build domestic strength",
+      "artifact_sha256": "72fc716eed2ee47129970c5a2197d216667a0528840e979bc48e40039deb0505"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_847",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: plan, right",
+      "artifact_sha256": "82b3d9dd7280c7e9662149105a1029f33f543d5318823b3313c28db1a3a914db"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_854",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/+5",
+      "artifact_sha256": "0342d6da58b72f83f30432b16569c0ece5ade7b57956a34033effc0dacb8148b"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_856",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/seats",
+      "artifact_sha256": "355cc3685d2571a4aabe2b1a477389df7239658d807ae6b6d7637d75b2c015e4"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_858",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: 172",
+      "artifact_sha256": "8861394c4d7f7c075e361a5c82d1ba76c915374867fadd28bf76ead37d4b4f6e"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_859",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Repeated leadership/appointment events are not identified across temporal contexts; only-about-a-week remains an opaque phrase and the rewrite adds redundant became statements.",
+      "artifact_sha256": "2ee32636ed5e27231ed0a0d59ea8860c5dcafe255cbd1d60fbbc66d4afba86b5"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_860",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "2b7b9b1c0483ba82c5b443a06d147c2d64d4b4bbec512ebe7451cf1484102fd1"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_867",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c5: Unrepresented source content: such",
+      "artifact_sha256": "1500ad09a1fc565e0ee44341bd78ec151a1ef1a8dccd623553cd027754d22d98"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_868",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: vote",
+      "artifact_sha256": "bbb3ee1767aed310853a9ddc62c32e2ae4eeba6c0c8685f0d868799ae84eca0a"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_870",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "597c73496942ed49b36420016d363869b122e08c2e530d2db1b0a0a898e536c1"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_871",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/options",
+      "artifact_sha256": "7de8ab007f4d00f0a4fde9a39ccc34008b4b74cb072d0e469a76277f03e38049"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_875",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Repeated original event has conflicting ARG2 arguments.",
+      "artifact_sha256": "e52394213e96ddf88bd9c5d3f2db46554d3ad9c810805a3e03a05897167f2231"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_878",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: well",
+      "artifact_sha256": "0c547027540f387e8102df98ae0b1227a025f3f6615d8edee4fb04a1fd67e21b"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_883",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/person",
+      "artifact_sha256": "b8e8e2ffa32c39b4e14f418fa121c0291f4840f1ab45eec43a7639d1fa9062ca"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_889",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c1/people in a street",
+      "artifact_sha256": "3763f321bbb1bd20846e8a77886b07a7d68f016c4a40577a84021a379d04e91b"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_892",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: slightly",
+      "artifact_sha256": "7ea2314250a87898c3e44d18f6a7b91e93402a0cec3c2517b3bb91d6241d468f"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_893",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/level",
+      "artifact_sha256": "07bdbd6ad0169783fbdcd821e8e11266777f88cf5bb008896e435e64b44ade08"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_894",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c5: Unrepresented source content: 45",
+      "artifact_sha256": "eb97e0beb21353f938019f8bb7eab1b4c6835de0e4668c3b1c45ab5afaad5b6e"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_900",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: The bar graph displays seats",
+      "artifact_sha256": "adb532d09bfac667a62ebf1b96516a18f09730b85c0354e91ff9326b44e38d4c"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_906",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unresolved modal interpretation: would",
+      "artifact_sha256": "f041331272df3477023a02e83e50ed964d8f23f1f2fe5d40618b4a91de8df324"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_908",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "55d86d38dd95672fcc379c47f8396422be91a837889ce5205a166bf570e1d56c"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_909",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "55edeab6017209414a9325db0b9dbbc250de4aa463c9abb7f27305c22de52f53"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_910",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c5/ones",
+      "artifact_sha256": "5afdba89d6f8ceaf6668b0a0fe1a73422245abbd4480090694a1cebd6e40ade8"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_912",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The campaign main-story description retains the Liberal revival paired with Conservative decline. Both nominal descriptions are linked; reciprocal pairing is redundant.",
+      "artifact_sha256": "433f45bd26994be7bf672118b57a9f8733a8a29ca49c8a2450b92776529851e6"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_914",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: Conservative, landslide",
+      "artifact_sha256": "a7ca862593e77bcf1e3c2fcf7943d849d0b5f9b4e261c1c76e95d9f11133cf27"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_915",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: 52",
+      "artifact_sha256": "8ea21f9be669f3f558524e2d0d442f88af801e4baf60e02a3bd295dfa51648f5"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_916",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c9: Unrepresented source content: 2020",
+      "artifact_sha256": "1402f7b6323c2a6b60437c9102b73c348f9e8a6cbce9ba2ce010aebafd112912"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_918",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: near",
+      "artifact_sha256": "5611a2736290ab42caafdf8d46cb79fb385840829bf9b772cfb5f298574c0d36"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_920",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: SRL repeats ARG3 on rose",
+      "artifact_sha256": "5bbf2227135408cc780d47cb2ee4c842a584ca155ffd759f86694429355d8816"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_921",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "4c9ee4968d1d11fc9f917942a9e4a4933708c852e87e959d8ab7f977fff94a41"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_924",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: SRL repeats ARG4 on drop",
+      "artifact_sha256": "c3bea2e1e344e515bb0a102b2392947cac8c7079e790bb29d7749bf70aeda0a9"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_926",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c5: Unrepresented source content: well",
+      "artifact_sha256": "3b1f21b4cf691e789322c1fe6edcde182b185db64bdaf671aab38774f5fba005"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_927",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Under the nominal-label reading, Donald Trump is identified as the first major cause of reversal. The repeated identification clause adds no different cause or participant.",
+      "artifact_sha256": "70a102d891b1b9c07cc90f00f2e1a9b8b8cd8765f5bec45b0b2a9cbec788dd44"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_930",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/result",
+      "artifact_sha256": "c175a411fab0b3ab167c7c23cbf29710fb2d538e29b3f33b73d6ca4de338b530"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_933",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "0d0556a4fa25b85f1788c3d8a389f12fc8581b84c0af395e60adb671fe96e818"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_934",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Each comparison target remains inside an opaque more-popular-than string rather than an explicit comparison participant; word retention alone is not the intended relation compilation.",
+      "artifact_sha256": "99c6b51e7e2f0ef378a18867399066c98cdc1b510c8154ddea2ec22ac0ebec3b"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_935",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: March, 17, 2025",
+      "artifact_sha256": "070784746ab9d216e6ee9ee8d1f5d027a6d1efcd5386349b2336b0656f0ded55"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_941",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: more geographically concentrated",
+      "artifact_sha256": "6681912fc0bec45591f380be6a789ed02d2b74964a3a878082bd8e250edf2126"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_944",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: Example",
+      "artifact_sha256": "dad6982b03bec3cffd9d9383bbfc08f0ad9cb41e8119bb80e8aa4c39be6bd70b"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_947",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: only",
+      "artifact_sha256": "a7b85edd6ea5a1eec676525fe51c5e21592cdf8cf32af043e287ab9b27be2726"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_948",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/48.1% of seats",
+      "artifact_sha256": "310a4fda15fdd9c3f02fb6e4b97f138cb4c001a70457b2af688f3adcb69b394b"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_949",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The shared urban-centers group is the Liberals' strongest region and includes Toronto,Montreal,Vancouver; the named members are linked to that group.",
+      "artifact_sha256": "4d95853b897d757692b9fe8eb4aa402e0128aa51cac598df284f630ed95c872a"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_950",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The province statements are not linked as members of the rural southwestern region group, and strongest is weakened to especially strong for those provinces.",
+      "artifact_sha256": "4ce93f82de999adeda78c50f4e73629b5546fac1e3b64aed27f20eeda2bdcaca"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_951",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: Bloc, Québécois",
+      "artifact_sha256": "f3a4a43abdb401cfea3323668a5318a62f2e1329b2228a6cb19ddf7e144dfe46"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_954",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: roughly",
+      "artifact_sha256": "a8757541abefc37f0f022745935a68133cd2c22a49c8f5cd0e414d85b7856d5e"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_955",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/decline",
+      "artifact_sha256": "c65e58c643110dad70391d615b7d0a170a6b5416b50680e4d393237692e87171"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_956",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unrepresented source content: only",
+      "artifact_sha256": "b142d6057c16c5b859bdf62bbc0ab5b7efa7a851d74a2d5ac80be655bebd4cad"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_957",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/party",
+      "artifact_sha256": "75caf1781d3a429ffa23813637085411413ce6140db9349d37d1b8de2f26d5b4"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_959",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: needed",
+      "artifact_sha256": "3c3ae794415e4233e4129fc50df953bd497dffae0601521dd518dc39707cc389"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_960",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Explicit source clause predicates have no linked SRL frame: faced",
+      "artifact_sha256": "b9e1f06d85bb45dd89878e8cbf80726d5b3e94cfbb466633bf1cbcd69be17535"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_962",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: left of the Liberals",
+      "artifact_sha256": "059e264073c420ee3378b7f6c254fb04ce0391a2c8dc47db6558b215d1aae137"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_963",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Two compiled entities in one clause map to one original mention.",
+      "artifact_sha256": "844a1f8d88c59fb3f3a7c11b34bfedb70b669c34385a54b58891f5ae009e9825"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_964",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: that the Liberal comeback would not have happened without Trump",
+      "artifact_sha256": "ac0f921700afe434632e211a09fa38dec5140a4ad76c93cbf5747aeb7409ca66"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_966",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Sponsor-message content becomes world-level offer/lesson assertions, with Brilliant even stored as a text-valued agent; source and participant typing are incomplete.",
+      "artifact_sha256": "fe1c4e6db051637f78ec05262e8a17a451226ea3fb5dc4ed29ede32a835ce983"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_967",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c1/hands-on problem solving",
+      "artifact_sha256": "1160058240683feed7e89b5c48fd55398796801403510f520da4a30437ab618a"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_972",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: National, results, so, far",
+      "artifact_sha256": "0bb1ca0e6d97c4e54d26a98ae4485099908891de6c9299c45524017aa9783a9c"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_973",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c6: Unrepresented source content: 0",
+      "artifact_sha256": "4ec4df57f6a44ecf0ecc75ef0200c08cc9d6a9bd2be9e660ceebe10991d8b7e3"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_975",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/candidate Rhonda Kirkland",
+      "artifact_sha256": "bf406ab72252970be99f58e6c7f0d47788cbad4364bae168452149ffa9708f58"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_976",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: Peterborough",
+      "artifact_sha256": "06ff33b0bdaa7506151ae43e9ac9e886386f80ab80076fe6babbf3416822e3d3"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_977",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/candidate",
+      "artifact_sha256": "03de4d99843c877bb58bf73dbbd6104518a6b3c2b6b67270f6f2f96213c3ed09"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_978",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The announcement and future arrival are separated. What is about to happen is no longer inside the decision desk's reported content.",
+      "artifact_sha256": "553380aa0a630b809e7b749054d89cdbd71ac4c95d48091a71e4370cbfaf069e"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_983",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: A shared property is not anchored in the original text.",
+      "artifact_sha256": "cfa6bd04a3ebfc966c0505cd21cf09e0e5ba3fdc21400dd346472eb9071a0561"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_984",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c5: Embedded predicate has no explicit or licensed controller: known",
+      "artifact_sha256": "0b94f20caf72cc50e8e81fac13c09990f87faf80dc781530e966c3581aff8064"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_987",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/mention",
+      "artifact_sha256": "0e5722c10126d45cc4aaf8006c5f6535d320fc9d066d08391ebff3a50d3bc6b5"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_991",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/It",
+      "artifact_sha256": "07dde2f911d81cdbb6debcbde2e250c6e4dfa8feb9e469722aaedd4f4cf4c810"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_994",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c1/11 seats in Quebec",
+      "artifact_sha256": "d5f1e236a241fbc030cc40df49cfd53a219d2561707abbc012288b29e123d692"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_995",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c1/5 seats in Quebec",
+      "artifact_sha256": "33e8345aaddc5e27f6e8fc619b3019c0bd709b1e72e70c22edf4586aa027d4d1"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_997",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: 7",
+      "artifact_sha256": "f732f75e56bca2df9bbf7a92435441db10f313973c165c5a8003b22015703d63"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_999",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/video",
+      "artifact_sha256": "1258c32a223510d4364efcdd1e6162b1dcccf3540f0a7ecfd0bbff0ee9f92e74"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1003",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: created",
+      "artifact_sha256": "584df316f52fd75c5a942a9e6a9cc2150f9833dbdf5bb7e245cd5f99ca3e0722"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1005",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: more",
+      "artifact_sha256": "3ff92399917a32f6b9c6139e22adcea90186b880b48103f38ac081d3da98c484"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1018",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "62631114047b0c441d86dfb32ab303fd867d5de9b8c6899e08fd9a275c765af6"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1021",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique simple source sentence for the original media description.",
+      "artifact_sha256": "133e6b29de279779d95a76f5f009087d943765ca501030a80fd4ac91ade8bfa8"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1022",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique simple source sentence for the original media description.",
+      "artifact_sha256": "82c644e3a3a99075240d09017b86fee80e59d8d4b1475aafe2eda756cd16ab6a"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1026",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: more",
+      "artifact_sha256": "d95ca83e4d75f8fd2b3f74c07d22f150698607318931ce4de22165772b9e80b5"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1035",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The earthquake owns a typed scalar magnitude7.7; neither magnitude nor7.7 is invented as an ordinary object.",
+      "artifact_sha256": "bb69c8e56e5b32121aaa703db494e04490a85509a25427d73cbf5c4afed4c222"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1041",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: heavily populated",
+      "artifact_sha256": "9f7e6e2971af2e33766197f6dda85ba68260b8418b7755df13cc334bf7bba00e"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1047",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The epicenter-of-earthquake relationship remains inside an opaque close-to string rather than linked location/event participants.",
+      "artifact_sha256": "f2219a9e4bca14df19d6873d3eda4ce72c58cbd6c0e2c153619898d502da6d8f"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1051",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: increased stress on the rocks beneath",
+      "artifact_sha256": "57ff4c0ecead163900c3c6d4f8883e91d2e6aaa774fc7ea5a17f12f22c63b016"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1062",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: slightly",
+      "artifact_sha256": "9bcdfcaf928151ed3f2def10b0514d708f27295a966d346d592170c764dc27ef"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1066",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: greater, damage",
+      "artifact_sha256": "e5411743b85c423123447aa7bc44ad9816a392c880de3342f6ae285a19d050a1"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1069",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/vulnerability",
+      "artifact_sha256": "c5349b54051d33afdd95a6e675098b1d9ca348e78c0bcc33d44245fe7603e031"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1070",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/event",
+      "artifact_sha256": "915b6e438e8b959270f24820d63b4de95feb43f893524041c85bf2cabf5ec2d5"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1136",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Nominal OR has no explicit alternative group.",
+      "artifact_sha256": "f90e0e7aed8aa80cf9868913cee85126b946ffe94beefcdefb1b1e207713a913"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1137",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Nominal OR has no explicit alternative group.",
+      "artifact_sha256": "7289b6c53625397da397020a0cf80d4fe539cc1285465e4ad46604a686fefaa6"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c2/half elliptical orbit around Earth",
+      "artifact_sha256": "37d6dd60d73a8c4246fdc354878c16b917757b2f744ce8a27b32084cec4aeee8"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1163",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "A quoted/scare-quoted scenic-route description is changed into literal scenic comparison. Its source/ironic reading remains unresolved.",
+      "artifact_sha256": "3e61cbbfb8e9d9d9c52cc08c2c1153b126af127d87821078fefcf6f7619ec0a5"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1179",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/points",
+      "artifact_sha256": "3097c49ceb99ea30ac6a8e5ca99c2eb83755021a9293967208832cc74b8592a0"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1181",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Supply exactly one sentence.",
+      "artifact_sha256": "f67dbb4cd6dd0b2b1dd20075377ec084957a47f4dc6e5dacd75ddbf321c34fc7"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1184",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: A shared property is not anchored in the original text.",
+      "artifact_sha256": "839b081da63602d0fff843c45440e0f8ccaec4fe567e722b55803607e2c7f95a"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1185",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "An implicit spacecraft/location subject becomes the phase itself at133m, and m is also treated as a predicate. The subject/type interpretation is changed.",
+      "artifact_sha256": "835fdc446f49434d013e197d29e6a9bd1eb50c5b658462bcfd7faed06d4f5037"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1187",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/state",
+      "artifact_sha256": "0dbc97e7ec32cccddd2923f6b2953790beaa57ccfa13b0754eb49baab5625a47"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1191",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/Landing",
+      "artifact_sha256": "976a92ed0aefc368e468e911e1df5d075184a4be8aacecf0d9e536eea440f29b"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1192",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/event",
+      "artifact_sha256": "5bb3d64d1aac130b6415596e7e4e443e9b1d77ae2f736e3fba2712226cfe09af"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1193",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/cut",
+      "artifact_sha256": "da7b8403e9a0cde0b6bdb94c034e385c4659ba6be01bffa543e1e7026f8d43d6"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1196",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/mission",
+      "artifact_sha256": "368433fd7a9d9126c9d8d085d5de628647e103937562283906ea3aa8e9b5ae20"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1202",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/content",
+      "artifact_sha256": "e7616b849f6d800bfe4c6273bb76eef562a6f2a104c2cb2c6ce33b2c346dcf1e"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1207",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "dfb4a64c52934a3f70d44fa5540ff571b76c6e32f19fd8f4fa52cb609d2ce716"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1209",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/event",
+      "artifact_sha256": "098544437a2606cc8e9d97ed3e2f12681dd6a4a87e63876d7ca9f56ca3682096"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1212",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: how, effectively",
+      "artifact_sha256": "64f39e6851668aeb3acc26556960e33212515caa95a16ca0633157ec8d7f403d"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1225",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: fully",
+      "artifact_sha256": "0ea191ac5745b5289ec557a7612817cd45b751f561e654e2551aecc554f025fb"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1227",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The same surface disturbances are visible, around the lander and caused by engine-plume activity; location and cause owners are explicit.",
+      "artifact_sha256": "3c5ea15b939787d01092efccd63881ba414de9c040af9d8b863b0f71b111791d"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1228",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/person",
+      "artifact_sha256": "9049b50284ae81b5bbd5efae736cbc772aba8a9aa45a001f28257d15cb0e776a"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1229",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/selection",
+      "artifact_sha256": "34889dd8e93037da1c3fed0cec6f964daff6d8195b9fb3a43372d212f15e94ef"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c5/filling",
+      "artifact_sha256": "82448262c3b9da16218d595442dcce41162d8735f15825d2e8b788247a1b31e7"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1231",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c4: A finite clause remains inside a literal/entity instead of a linked clause.",
+      "artifact_sha256": "3d412dc31c79dceed3e2ddd84996ac01168b16d6bb30c62a73ff36c055ede801"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1233",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: 121°C",
+      "artifact_sha256": "f55569d4a8fdb4504f6e3032e12e1e9f420b83faa32f1736f983387ce138b665"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1234",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: to protect hardware",
+      "artifact_sha256": "633aa8571fcbb74f6595a91d1d3363488cd7c5c82d7edb99b2354117802c04d3"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1237",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "a0d67551e9992989b84fab1ea9e871ec2a3ce192cf2fed67a72904d3d3a8b4ae"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1247",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/Earth",
+      "artifact_sha256": "d351736e563e0786f6db7a6d9fcf16bc85ac89e463b2f6c611e390dc89423ee3"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1248",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Supply exactly one sentence.",
+      "artifact_sha256": "b56c05312337e98cc1930a3de6799a204d326d60a1615ec2d736e967842169e6"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1249",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/signals",
+      "artifact_sha256": "a56eb29e59c8dc8ad6dedd344373695f111448c2c1b6cdbf3f8ed056aeb2a040"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1256",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: for providing payload services in lunar orbit",
+      "artifact_sha256": "b6bcb03a09f32e55359c76e351638b155dfd9613312b55cb8a0c374a962974dd"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1263",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/relay",
+      "artifact_sha256": "78fe1f7c77f6c7b22e85c963d24c86da82ad911bd7bc04e7f313d32c52fb0852"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1268",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unrepresented source content: region, ideal",
+      "artifact_sha256": "878536ba547576b58bb87710bf31f20e37581668624f065a3d4a18e3fb69357a"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1282",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to advance lunar research",
+      "artifact_sha256": "0b3d5fa69dd6706a118021133e721113e4c3f5b55519435bb4aa20a7752c74df"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1283",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to enable sustainable presence on the moon",
+      "artifact_sha256": "2f1edff6fa1060fccff0377662b2eadc786ac5e8eb08f43d4127709f0ef190ed"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1297",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: SRL repeats ARG1 on stands",
+      "artifact_sha256": "a9ace29d051b4cb23b2c88149de5effd218288fe33da3ca3629683e3b008e010"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1298",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: little",
+      "artifact_sha256": "4cbc7b44d30733f785693dfef65c72f62e4de923a1fa4f2cb599b62699ee7d7d"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1312",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Scientists work/use the same complex manufacturing tools with building the spacecraft remaining in purpose scope; no completed spacecraft construction is asserted.",
+      "artifact_sha256": "09eb456ad3f40dba9c3fe0ea74a4631357692a57f6fb4873a789889ea3a3d614"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1317",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: Will Coogan",
+      "artifact_sha256": "ba9a3a4c3863b2ef7880aea413aa855f17261deef6364e4fbaae435e7b8137f5"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1326",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "de63a1800e45615eacd6a1677042aad40d63a8319606beb3bfd7283522a451aa"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1335",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: rocket sized",
+      "artifact_sha256": "960c583b993a6a02235c83974de2a7f9459930ac15daa4d08e53c89092ae13c7"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1340",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: qualified",
+      "artifact_sha256": "1d3dd951579fcc7646c1c96b1454b39d48ea9b73c78cb8c278bd5a697ca4d7ed"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1350",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to understand heat fluxes",
+      "artifact_sha256": "d7322ec3ed9126cf502ed5701242e4bedb11b9b00e523292fcda3bbacca8033a"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1351",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to take some temperature measurements",
+      "artifact_sha256": "e1206f996db0bed4329ae868638065f740a040355cd7dbe39b4a6d5e69736201"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1354",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to extract information",
+      "artifact_sha256": "ed564f6bf5f7cdda5d19d7b602e57acf80c1f288ea72ee23d851de1605970d1b"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1402",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Hundreds remains an ordinary noun/group linked to people, without an explicit cardinality condition; numeric meaning is not established.",
+      "artifact_sha256": "5ac2a1e2f57b3fe43f79f062727301c2a3866727e0dda316e4dfd11ecab7ab3a"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: IM's",
+      "artifact_sha256": "4308633c98968b6b50f1d1310cdfb1b08861627535e03efac3bc20584419dec2"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1410",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The from-IM1 direction is restored, but its descent remains an opaque time string without an explicit event/reference link.",
+      "artifact_sha256": "8ae64c31b8eff51b9d4ae5ae7b3ee17b4eb8e565b5163cd5881d0c357e1f8212"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1437",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unrepresented source content: landing",
+      "artifact_sha256": "eed9f60ac4270b46bcd4f7fb0d5163885c8ede1f00ea7e0ce2dca9e303add902"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The same braking-burn entity reduces Blue Ghost's orbital velocity to the typed endpoint40m/s. The possessor and to relationship remain explicit.",
+      "artifact_sha256": "e87714e4cad43fcfa146c905142e0d5b59aefea23d09ed3b2052bf7fa6f031db"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1463",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "During touchdown the same Blue Ghost legs contact the same sensors, and those sensors are on the footpads.",
+      "artifact_sha256": "00a4034ddcc91f5a89542c67d27d51d7a85eafd0c71ffa450b5102619d1e4b19"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1464",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Repeated events with embedded contexts need separate alignment.",
+      "artifact_sha256": "a9b162eaa5cbb8f158581b84f83a0ee1587b3741187db9a9529bb48da60fdfcd"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1467",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: high",
+      "artifact_sha256": "33671fa9043bf23191cfb1248d627ae6704ebc37c76db02f51364c7ff10eb8c1"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1470",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unresolved modal interpretation: would",
+      "artifact_sha256": "90b12cd76cbe4134d793978d87d4517e8939825655eb3d09f59e9c03c950c536"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1472",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unresolved modal interpretation: would",
+      "artifact_sha256": "b204f225a348ad3a2a7d7e36b46849574fb55064a9127d305b503b2fecb0c060"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1482",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/storm",
+      "artifact_sha256": "d4011907141f323d3379e856fb9cf8f75e7b153939232ed0b639ea4843780399"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1491",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: 2.5",
+      "artifact_sha256": "b7bcb4596b5fef5f57a337a3ed0136962440c89d8772d01c8cd4cd8045390129"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1497",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "49baba9aab6b2bdb892b4f63b77b2e8c930f3afc37f950b51842581433aa8fb9"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/observation",
+      "artifact_sha256": "f5804fd4eb809a272c807df9c93a009079b4ed838ab2067ef51cd0473fe4bc2e"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1500",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: north",
+      "artifact_sha256": "43ec279c4421f29b7ff58ba7fc502fd3b1f8ef599e1ce70a2ab2b2acb0840ee0"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1511",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Entity is not an exact source mention: mb",
+      "artifact_sha256": "b5a2a372d5b8c8c5cbeb2dfa0a294336b84669e1342449f32203e2c35e9f4526"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1512",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: see a big ridge",
+      "artifact_sha256": "14f5c9a31f51773e2cd052ce36d3e04e390c81ec7a15550ddf1ae445420c4793"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1513",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/ridge",
+      "artifact_sha256": "937565f0515a6e0dbef4f0837551cf109e8d7383462bfec34f4a0a7d94bfdac5"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1520",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: Text in the top left of the screen",
+      "artifact_sha256": "28700a618eee34d04993566680f11e7e34986779e76805f77f45496b3bc43397"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1521",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "3f430cee2d6384bc932e6deae1216f4a19941f0b027720b88a67366a9f66aa98"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1525",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/Executive Order",
+      "artifact_sha256": "30c8caab775bfdd1078fc4422bcc2f96cf25fcd5f171be87ead4c58bac488a73"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1544",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: 0",
+      "artifact_sha256": "c5a824849552efa3ac7dc9a98527fe8f4d108af4ad91a0483c566df6b9877c75"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1547",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: almost all of the tariffs the Trump administration has put in place",
+      "artifact_sha256": "0d1236c892d58faf88f9029a32b0f9441a68dd3c1aca5001787557f21ed13bf7"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1549",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/delegation",
+      "artifact_sha256": "32e0531725e22e51684a29207ac1da892e95ad6ab7e1d4b8c657e182aaf3efb7"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1554",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "fd7e814325c0094541f996f533331d9eac98c0e27fe43bc655dbbc793c81aea1"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1556",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: America, problems",
+      "artifact_sha256": "dcb625b9c3592ff7cf2ecedda73bdd48288db340fb3c10888f95214cfc6f6ee9"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1569",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c4: A clausal argument has no attached SRL frame: that the US immigration situation does not support invocation of the Alien Enemies Act",
+      "artifact_sha256": "04fec0277327fbf21be7545776217b482723cb4f8de2518164ae887bfaf75daa"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1570",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "195bc52d6e35a99635b9c604aacf67962cb4240756f7e284bbb908c06c18f0c4"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1572",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: constrained",
+      "artifact_sha256": "ff3199ee916231f24240015a08d5e61fe850e89c6a215f65ba38145740bfa0c4"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1574",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Legal pretext becomes permission through allows, which is stronger than providing a pretext; the original justification/goal relationship is changed.",
+      "artifact_sha256": "6ac823817b304233c8f105cc2ce475f5c9d06ab7fad2a033846b8f78dc820cad"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1582",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c4: Explicit source clause predicates have no linked SRL frame: ranging",
+      "artifact_sha256": "ff61446d7d15d8c96e6cf36a97ede5cadc50fc5fbf071e02eb71bfd8c77788b7"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1585",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: struck down by SCOTUS",
+      "artifact_sha256": "48535fe63b1e2a11b89f307bf2ff71ea588ccf0d1d8332746c9c570c25b60370"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "daa476649d4914fd99205fd4cf6fa4d12719924de63e3b20db463ecfd7916357"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1588",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c4/reciprocal tariffs by country",
+      "artifact_sha256": "3e676772f0f5d884789666326da804641042e8c6b98e2a0a8208b92b2f720c7a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1589",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/tariffs",
+      "artifact_sha256": "2d15bce11bb41d5f2f9c7cc58a468ba89700d152ab2af50a5f66967aaa0e3612"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1600",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: SRL repeats ARG0 on presents",
+      "artifact_sha256": "57a67691331dd74a5553fcc4b805a20f1be17f6c5a469f2ad2b514b9c9bf11a5"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1602",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: more",
+      "artifact_sha256": "d772d10e87008452f18544c73f03f7929b97d3c0f1edc8c826217c02b6c1230b"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1605",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/468.00",
+      "artifact_sha256": "77783bab473cff1085a96d86643ad6b20d03fdbfeedf029c4eba344157dc5f44"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1606",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/The S&P 500",
+      "artifact_sha256": "cd08b4ba8a139b071b7c7c8bae8de6e46628fbe16b36deebbc0d04d4d89217ee"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1607",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/372.25",
+      "artifact_sha256": "00c59d5ce17de23fa3d3dbd7eed6b3ab7c3edb6ea2da9946e50fe8cbc46258a5"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1608",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/value",
+      "artifact_sha256": "a18cbd65d65b815e2ce2386578f596298454b14637d005b87ff195f5b758ab16"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1609",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/index",
+      "artifact_sha256": "6220fc72a34b594ba715ae58f377016fba9709ee003725813b41ef17ba856f8d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1610",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unrepresented source content: +369.75",
+      "artifact_sha256": "3e22f130b64c10c204b9e781eebbd0112dbe88382c2a4978f4fc423ab3330afe"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Court is a panel compiles panel as a class string. The panel with three judges is a separate entity, so its three-judge condition need not hold of the court.",
+      "artifact_sha256": "49bc24d58c57cf2592d2b9130a6d9f7b9bd196a35c3cc86e7745e1883b894c76"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1624",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/approach",
+      "artifact_sha256": "2c37665f8cfd3d0ea44fa8e5e8a243845beca1d207b17c0703dd49f479d375c0"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1632",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: In",
+      "artifact_sha256": "36a1ebdbf08c6f05f0cb035c44864f6f49c925da7cf2550f063ba75a451b0e1b"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1634",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: just ruling for the plaintiff",
+      "artifact_sha256": "76dea3c1fd514c04611001ab10d08036f9e605e6850d8b420be2c3850a5f28d2"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1636",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/tariffs",
+      "artifact_sha256": "979b35720bea11a55966109db42b23e7f50c2ddcd8efdf8055cea0a4aa02e785"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1639",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: unless the ruling is overturned",
+      "artifact_sha256": "1fc0a65a549d76675e39846653702d50e70b27296012f6d70d949d68b9e3e079"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1645",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The inference marker is lost, a spurious will predicate remains, and inferred tariff resumption is asserted as a condition fact.",
+      "artifact_sha256": "b7d9a6e675d8d8c44fcae2b25c2ef61e4ded76c9bddeebf772df267adb81524d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1646",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Embedded predicate has no explicit or licensed controller: speaking",
+      "artifact_sha256": "bee162d4f9549e1e63a23fe30094311ad5afa0cccba9de0632575244a7991941"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1647",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/event",
+      "artifact_sha256": "61669d007016aaf74b1792925c279da62c97979cf2ed801b02391c260287bd0f"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1648",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: clapping",
+      "artifact_sha256": "9fdc4e2bda270e822011c4b70223512117703dd6356fae61f31391c0fa6163f0"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1654",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to make America wealthy again",
+      "artifact_sha256": "6eb4dbbfb25fea26dd4f81dc676e853d4e0921a4f2392e0db4a6067834bb7dc1"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1655",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/America",
+      "artifact_sha256": "88a02f34b3f743b6c4da32e8a2a58cfe1cc377e37a6b93bc465a1e5de9cb4059"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1657",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/markets",
+      "artifact_sha256": "1c9c98251d08207d550416acafd6397a0a777fe77326d24ef202fa6dfe9306ec"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1658",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c2/plot of U.S. tariff rates from 1900 to the present",
+      "artifact_sha256": "1199d4d9fa888444b2819bb08570836331693d3d89df0975300db919f5ff28fc"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1659",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/recipients",
+      "artifact_sha256": "6042463bb58d408af02277871db8f6b7b0e0535d27b8d10dd639d6dc15eae2ae"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1664",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "67e89ead1ba4fa91cb2bde1345b77a56e6ffc9b7d91522149bbaf37e9dd9399a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1665",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "8425cc6db480ef69c2e1b37537732e4a9dabf016ac3f6654fc8e021aa93a9c61"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1666",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "fb21c7f32b7ff00dbb0aef21eecb61fba183d6ee32de52314481e12fc9f72131"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1667",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/Apple",
+      "artifact_sha256": "831ae5896162daba0311f64d303b54591a0fc4673833c311c7e1331b3c7f0fa4"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1668",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/drop",
+      "artifact_sha256": "6d52ce327f9a67528262e967067c1f478044a5daddd5c272999a9f225182bec2"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/they",
+      "artifact_sha256": "8cd4b07658833875895fac3392ff77013e3a608a7eff72b3ee7993209a37220d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1680",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unrepresented source content: 800, less",
+      "artifact_sha256": "060bddc296a9428dc6fe9706acada00899fffc6a482adee2d17c1585456a8761"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1681",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: 25, item",
+      "artifact_sha256": "99124888d04b23f390f60987e2ad179c02096e83a1cc0fc6e537df0f9aa2f30f"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1682",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: down",
+      "artifact_sha256": "9e7d795b52c56b332f7bad5a310b1956a7b6be3b0c6211af47a77072ed602c7d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1683",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: 10B, year",
+      "artifact_sha256": "42e59bee13eea2eae8549380203b5fb6b7d5a198e12aef97a177bf604093fbea"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1695",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "b19108861f1a5e6f02945e6eb7408869359e1dad140e47771111719c3d32a2d2"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1697",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: SRL repeats ARG0 on made",
+      "artifact_sha256": "25610f20ab95032e61094e318d143b7b09ee5016bdcb1e6bb986cf8e32112d7e"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1705",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to build domestic strength",
+      "artifact_sha256": "52cd83a45fd108a35d58478b0fe6831462651492a333f169b8fbbcf542b0ebb7"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1706",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: plan, right",
+      "artifact_sha256": "eba769bef6f689d16ae89c65f17b8651f09d1fe9a4f2ae0d6de06357107373ca"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1713",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/+5",
+      "artifact_sha256": "97b4347af75b92e9966b9da6b0d8f0e1fd5ec209223e4ad758f42ccd35ad4683"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1715",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/seats",
+      "artifact_sha256": "cca4a400ab26e30af0397011a463d560744ccf935618789ea036dbd8ac39769a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1717",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: 172",
+      "artifact_sha256": "219aa1f8577235c46c30c219d073ca3c06f120e54dc50cece255a654029d154a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1718",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Same duplicated Carney text as859: repeated leadership/appointment events and opaque duration/after relations remain unresolved.",
+      "artifact_sha256": "063137c360ee751eb2b5501b49683e395d7cb92711adeae8e82093939a961d21"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1719",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "eaf207fe4d4d9dbb987d8ddff21347acbaeb235cf6153499d70bbd89f4d505d3"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1724",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: Previously held by Liberal MP Chandra Arya, it borders riding where Poilievre is seeking re-election",
+      "artifact_sha256": "f2e1136ce312ea759dbfcb43915b45cf655d1c09a35423fdef859c7b45cdb007"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1726",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/you",
+      "artifact_sha256": "20484ef541b1b0d637d973d860eb1da69b234e614734a84a733a282f927d854e"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1727",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: vote",
+      "artifact_sha256": "2d7d9e40b62e95641d66886fdbc6f0dbdab42e9b6dfcf3f4b5a792189a8b517a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1729",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo",
+      "artifact_sha256": "7820b769ba64634df103c67337b0df0342584c8384139ad2493e5d240fa1183d"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1730",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/options",
+      "artifact_sha256": "cab2a89383107555f73b6fe50cb68133c795b77c563ba65ee42e922c6728c1ab"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1731",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/content",
+      "artifact_sha256": "10a5f525dc28d2a54ebd4694eea783f86efda92ea0b7f50fd21c3351572fcf45"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1739",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "7c646905f8059bb82b57416b06f8f9b92810812414a5b70b980e461e38b6fd18"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1741",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Absence quantifies data satisfying the supporting relation to Trump's argument; supporting data are not asserted to exist.",
+      "artifact_sha256": "015d8c647ba8bbfdbc503e3332424c712421de2bb93d5ceb6a8aea514187db89"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1747",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: Trump announces 10% baseline tariff, reciprocal tariff on some nations",
+      "artifact_sha256": "a28621081e89310c6eb156d61935effa78c65d30c1ffa89b2ad0d77218b250be"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1750",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: charge",
+      "artifact_sha256": "c8dca2f45a7610894b15beeb6ea9289482e552301a759f365e8166834437fe38"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1751",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: only",
+      "artifact_sha256": "211dacacb5b354b84e03f4f019d6ca71f0aec9696d37ccee3b55b7cfe05bc88f"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1754",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/China",
+      "artifact_sha256": "5478764db64f549f45a1739b1b9ae9e7677a6108b23002120ae0811827d1f5b9"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1757",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/USA",
+      "artifact_sha256": "4dbc75ac48e49be0bcbdc74a312d6fb7b8c4301cdd053c7dd120764e8b446413"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1759",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: 64",
+      "artifact_sha256": "0ff88199dd1774833bd893099448a705c63e5bf77dd28ee96e2a9298ff1c2f2a"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1761",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Repeated events with embedded contexts need separate alignment.",
+      "artifact_sha256": "93f5188213b0f62ca8acc1b986628c61c437430ff346f500f7100d86313a838b"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1762",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Trump's talking content becomes a world-level numbers-are-unfair assertion; without-chart also lacks proper absence scope.",
+      "artifact_sha256": "f2912a08204af36aadceb47a76a90b2ac404d00ba6df36a39324606fd8a5f329"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1763",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: 10",
+      "artifact_sha256": "8521645172e3437d4fa81d4ba512b2d6a6ef7b24114be3c0d326e7a1e3ab090f"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Building housing a publisher becomes a building being constructed and for housing; construction is invented and the publisher relationship is weakened.",
+      "artifact_sha256": "10ecea57f9c4e674b47dbed99cc5c3ede3e7d003495db818e461ff6e3d664135"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1779",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "All windows is not a universal condition, and the one-room exception is asserted outside the original seems uncertainty.",
+      "artifact_sha256": "4d170aae3d679e620da5a93125c25ffad7b8352f4395f4f58cd65a0569e46a75"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1780",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/Nepal",
+      "artifact_sha256": "f078546d2357b74edc2e4ec354812046f43e8c50612e0a7543b15bf8b047f8f4"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1782",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/houses",
+      "artifact_sha256": "a7e937a05591f6ecb7b2d9d88865acebf949f1df3a04403ee0b238c15a94002e"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1796",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "During demonstrations is moved to demonstrations during unrest; killings/injuries are no longer bound to that demonstration interval.",
+      "artifact_sha256": "072d651744f38d30a77ab73bee779a1d52b8c28eda28df271faffde86b4e2f87"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1800",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: a burned building on fire",
+      "artifact_sha256": "41a22f307e1d1a5d7e3bcd769b319788a059036dd573c7d680140effa04a27cc"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1812",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: Singing",
+      "artifact_sha256": "0f450bd90550b3486f3a55238d78b462dbf75007f24f375bbf569bd1a7262b6d"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1813",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/location",
+      "artifact_sha256": "2e416dd381dfde77c4859a7ad81b8c841037f6d62335df8a9ee10f594be31c32"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1819",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/chant",
+      "artifact_sha256": "f545b1ed648c6129d0f12f0d2100daa852155001ac3e42deb0d3272a7eec1e6f"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1820",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/vest",
+      "artifact_sha256": "54f2f592b5207fd905531ae553e53f97cb9fe4ad2c70225632c15fa75911c222"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1821",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c1/government building on fire",
+      "artifact_sha256": "f0d052e5f8ad446247dcff2545685c8c98475ada07e5234a313b88d1c8100e55"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1824",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c1/pedestrians and motorcyclists on a street",
+      "artifact_sha256": "1e19c1f3250293f20538010c531edc4971da6d4bd30b3aedd47bb2ab35453dc8"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1826",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Themselves remains unresolved, picture-taking events are duplicated and the model chooses picture-background scope for the fire/smoke.",
+      "artifact_sha256": "cab4e98656d2bc232b992e7e05f03f5983dc01ab0625b4be0c42e18be0e4791f"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1828",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: hear lots of honking horns",
+      "artifact_sha256": "a405fde611b84f834b23fd5f51ae7061ef0b9c08879aab246c71878a8fe3723b"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Source sentence must precede its content.",
+      "artifact_sha256": "f83e30a1d5806d3408d7201b9c59fb022403009c8a71c6a989bd3f2555b64e4d"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1830",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: some of the surrounding area",
+      "artifact_sha256": "a481afc1dea598c8f0ef158ac376770841fd0260a8dadec9470502625acdf4b8"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The locations are restored, but the second shot is treated as an event location; depicted context and vehicle/lights association remain unresolved.",
+      "artifact_sha256": "66c467dca40c3a0667dcfa82ca70e0453136907bfb447309d49ec22164ce7fd7"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1864",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Burning stays in a generic complement with unspecified route, rather than typed visual depiction; either-side scope is also incomplete.",
+      "artifact_sha256": "afe4280a3ccd3af2dce5bbe253da859ec724cc7ebe59a6bfb863b7b96fb3fc8e"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1873",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: 2020",
+      "artifact_sha256": "8860cdc542406e21bae27575ab72c95b0fb765f772bf6a8b9459fe39906ab168"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1874",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/road",
+      "artifact_sha256": "89b7899ba46e8037c7f884f4c732c8d58f680cb068e7491ae5afdc4a6cb87b50"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1875",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: covered in traffic cones",
+      "artifact_sha256": "33c680d0715501c5e163a044e0e909d98565693152387fcc662e745c5d8f1e03"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "b05aca492b9300635d45c563df92667f377adc2880081b7fbabb175e61391fec"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1878",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/fires",
+      "artifact_sha256": "0103a26db4fa92b5bcd80c6a3459f8e62a36dd8345764690be5752afa98bd283"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1885",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: 19000",
+      "artifact_sha256": "7f41c0777393e1a9660bd4ef54332749f5dffa42a63b0f326be70b80d54b11d4"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1889",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c5/street from the row of homes",
+      "artifact_sha256": "4a59bd5075f287e1a51d78ef89866775ac85f435cdf670a8a91000689889ddd0"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1894",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: SRL repeats ARG1 on destroyed",
+      "artifact_sha256": "2e88e50274c70dd64d936d261ac81c3b672c050c1de25150dc3e4bae2c1cf4f2"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1900",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The rewrite adds explicit start/end claims and leaves4hours long as text; the required interval/duration equivalence is not established.",
+      "artifact_sha256": "f4cf625e1ae1ccc03f94596c1e84b54a8e6124ceeade99b61e673b0904d4a288"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1901",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Audio and have-event witnesses stay inside NOT EXISTS; the positive video stays outside. The audio evidence route is explicit.",
+      "artifact_sha256": "f5ce59356432c9115a9272ea686762c98b5920b78c89ed93c666bddacf8818a1"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1905",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique simple source sentence for the original media description.",
+      "artifact_sha256": "e1c4278939b3272c6eed0cfc8a37ee63306a7f08ae41586aa882326a8abca03e"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1909",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/acres",
+      "artifact_sha256": "0009f8fd6109eac812bcebd10a4abbdfcb877ba296a54652f3cb25188615ab03"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1913",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Content must reuse the focal parent entity; do not assert an unrelated event.",
+      "artifact_sha256": "7739ee1e63bb5938b1c869086d8b48a746095fa32585ae5a5e8709837744c5ae"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1916",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Narration and feature-event witnesses stay inside NOT EXISTS; no positive narration is introduced and the audio route is explicit.",
+      "artifact_sha256": "2691d9510591604c281d2fdbe2e97fb898c0cff77a7c4ede82052aa1ef447dd7"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1922",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The car viewpoint and locations remain, but burning stays a generic complement without visual depiction/either-side semantics.",
+      "artifact_sha256": "969ad837f9ff50315402fb27d42f79afd0f6360a2c773bd8d1f0acb3c45dddf9"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1925",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Department association is assigned to the video rather than preserving the original logo-for-department relationship; the full organization name is also split.",
+      "artifact_sha256": "35a5ba197d9f953c245d91899e17869059960c562f84320cb9246716ae2d8694"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1926",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The video-for-department assertion does not bind the displayed logo to that department.",
+      "artifact_sha256": "405db5a66d10b40d62993b0a16f9d02a473cb0802e72d26f7cd1ffbfe28a0ccf"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1927",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The video-for-County assertion does not bind the displayed logo to the County.",
+      "artifact_sha256": "fc0c956e928197422c37e3e403d378be6ea7c52c3775355bfb5925c72f807a43"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1928",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Related-to the Sheriff weakens and shifts the original logo-for relationship to the video.",
+      "artifact_sha256": "4abca6c56716ea89ced58d3010cdaeb3746a5f1eef16ca7b1c7222ad20cb097e"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1929",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Video association with the Police Department is substituted for the logo's department relationship.",
+      "artifact_sha256": "dcf2413d19478372aa97267c05d97bb7837b291b150f981861d75d9c1f6664be"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1930",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The Team2 relationship remains inside a video assertion/time string rather than bound to the logo; redundant onscreen events remain.",
+      "artifact_sha256": "45ba76bf4705981fd7bafc16dc82610133b53cb7ef7a2abbcf9d6a2e8d059bf8"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1934",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: some of the area surrounding Los Angeles",
+      "artifact_sha256": "23c8d5df4e16c48091b6b51c4bd194841deca4b2ef2ce1c9fb9b401361cbc57e"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1945",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c1/V-LATs",
+      "artifact_sha256": "ab4e0f2b540b467c9fcc771601e63c0f13633dfa596c8d0f473519abcea37d18"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1968",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Two compiled entities in one clause map to one original mention.",
+      "artifact_sha256": "2e8dcbc1bbb1056a8ca4fa0628926b096c931439f2638792325e5d4a71c35b72"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1971",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Reappearance remains inside prediction scope under expected, with court/Orlando and following-day constraints; no actual reappearance is asserted.",
+      "artifact_sha256": "56ae8717876ac09472494464d29a4dcaac4670884569e9f0c4679073ad018f5d"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1976",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+      "artifact_sha256": "a5f25ad34f7005ce457c853d30128d816cd813a070b654a1001fb39ca87b1f63"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1978",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unresolved modal interpretation: would",
+      "artifact_sha256": "e25f70e35af746199b5c5f517a8d96f2fbd9e23904c170d1ac21bf18bf52e92a"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1979",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Explicit source clause predicates have no linked SRL frame: broke",
+      "artifact_sha256": "27a766ee09422149bc57bd091fe3f6a38970898041721a0d5f318d38e2358c3e"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1989",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: seconds",
+      "artifact_sha256": "bf207decdc27ebda45b7e8cad9f328203ce7666fc771832b679cbfc3ec707d33"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1995",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Seemingly is only an adverb string on an actual extinguish event, rather than uncertainty over whether it was extinguished.",
+      "artifact_sha256": "c92488e6fb6225c041b0989577532720dd748ddeb1fff49fbb3c229b16b6b76b"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1999",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: holdover, fire",
+      "artifact_sha256": "eeee2a0d59bbc24ef0c80cbfb6b376ba2568622b09b019899b8542daf46753eb"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_2002",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: obsessed with fire",
+      "artifact_sha256": "578dc60d8960daefc0cd58de777816183b25e9cf2940f80c1364be92f3f9a912"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_2003",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Explicit source clause predicates have no linked SRL frame: leading",
+      "artifact_sha256": "04df861b2cfc2383124f7276aed0bdbe1b379bbf0c74c5bfb5650ae434703de2"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2029",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: to perform Kung Fu abroad",
+      "artifact_sha256": "564af503c745b404155dbbeaa15739b016de89cb7ffc9aa48cc01edcf2e6bc14"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2058",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unresolved modal interpretation: would",
+      "artifact_sha256": "9679941ed9e186723f94d93848c3ec3eceb637a4309f216a84ff1af7c6eee7bb"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2068",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: A finite clause remains inside a literal/entity instead of a linked clause.",
+      "artifact_sha256": "2f912bfd023795a35f8c8069b692a2630597c4dabec5b202dd2e48bd7bc77311"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2078",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: accepting bribes",
+      "artifact_sha256": "0c6bf9d414b33da4ceb885c0b9b223b3b857c8ef62658d6f7d9494813d3d243e"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2095",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: simply",
+      "artifact_sha256": "3d3a85d376abdcd98fbdbf3ba68ff0ca2923b5e21fb94add50d80ae679cd1744"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2096",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: practically",
+      "artifact_sha256": "781da4e7918c019bf8541ddbb49fcabb29e380fbdf8dfe379b4eee50eb6933cd"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2102",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: all",
+      "artifact_sha256": "7b93d1a52f2256c24c196d699c82c55999c358dd32bd7644b6786a51a92d0e81"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2109",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: expulsion, monk, monastery",
+      "artifact_sha256": "7ca05381ef2aa82c3597403ec84087d435ee8eae5b23eceafb4e323ba929a415"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2114",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: expulsion, Shi, Yongxin",
+      "artifact_sha256": "5c59da9ffb414b4cf71bbd34b65f40268d3fcd00473dfe2d2e5ac861533ce081"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2127",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/deviation",
+      "artifact_sha256": "72047a2b09ec77373fc538f107bee25d9a215b8d1ebe13cf1bc4c867d55b191c"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2131",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: became",
+      "artifact_sha256": "f3730118bc3350e6627406fa71311edc7fbdf0a91de39fdf871ec416d2463409"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2132",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: became",
+      "artifact_sha256": "3108eded0de6e31ebbc201df0a56b59ae058e8e732de5ab62d61b871d6a0af65"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2139",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: CEO, Abbot",
+      "artifact_sha256": "1f4c0d90e46d6530c0542cb64c2a485be1bbad9623e9dd6ecf6fcc2a82cd4a3e"
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2161",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: more",
+      "artifact_sha256": "da01afe50c8d149d38334bf9bd32659d36abee78964d3f6c90c6b3c6c398bc3b"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2166",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Repeated original event has conflicting ARGM-LOC arguments.",
+      "artifact_sha256": "56f7d1c6263ce30d97ecc714236a007786aa9982fab746bf6fd83beb83e0663a"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2170",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Extra wind/direction content is restored, but movement under struggling remains generic complement content rather than an explicit unachieved goal.",
+      "artifact_sha256": "016a25bbd097bdd4afa60b3c9b7bc420fe655a19fa4a4b84c0117e27eb5a1953"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2173",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: A shared property is not anchored in the original text.",
+      "artifact_sha256": "c271d85e288cc5a7b8fb7223383d3d56997cca298fb6ab5c17989a1058e1d30b"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Repeated events with embedded contexts need separate alignment.",
+      "artifact_sha256": "d6009f95068026fb15cf2948b15bca96511224b6847c426cac826f420b381591"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2177",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Repeated events with embedded contexts need separate alignment.",
+      "artifact_sha256": "309c69ab540f49d7ed8d56a1e2e535977867f03937512770831e9f65e6579ec4"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2185",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: No unique compiled noun head: c2/Meishan Township, Chiayi",
+      "artifact_sha256": "ce8d1e20da259d24820fcd6a2bdb6b5ae3b8be56f804473c21b27ff4b4de3cd1"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2191",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: between, 36°C",
+      "artifact_sha256": "9aecc1f48e384809051e7d3538ab8e4bf6660625bc8f1669c9a0bd5ab755e8f8"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2199",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: direct, impact, Taiwan",
+      "artifact_sha256": "93450aa6f2b3f90ad7a497e773c2594a41dea2f4f838ba768f333c0d5b7b1b96"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2215",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: only",
+      "artifact_sha256": "b6bb2bd2ed16ce05ad4e7a97b3c8b134fac80273f1a3cc6ce2c05e967c2a75c1"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2221",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A time value or amount is not a counted group. Use a typed time/measurement literal or an amount property: PM",
+      "artifact_sha256": "7bc4f79bd21a0e819a74641e6a34f0d817c537e87ab176c8783df76e43f41ca8"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2230",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Tourists/walking/rain/umbrellas/harbor remain within depicted footage content, with shared tourists and correct extra location.",
+      "artifact_sha256": "d1f4d888cd3746cebb28c2b82ffd17c2393d9c8c2b8611fd09003a2cda4f7bcd"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2234",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: because they had already paid",
+      "artifact_sha256": "3e0941630410f562955331a89d0341f4b73b1175a5cebd238e2af99dd9554b32"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2236",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The same boat's capsizing remains inside the clip's visual depiction after the source-alignment correction; it is not a separate world assertion.",
+      "artifact_sha256": "a3262ef0681e75be1dd82baac6f4c162c9d14ea00db0ab8c7dd835ea0b7b68b9"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2240",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/number",
+      "artifact_sha256": "720907f737bac99bf4279217a3d8b75e27d26d086e17b66aeb951d9eaa0bfc75"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2243",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: missing",
+      "artifact_sha256": "74addb684e51ea858b2fbe9a53319ddfb97002d17971754964e96edd40532125"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2256",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The sound/microphone/location words remain, but footage is treated as a physical event location instead of recording context.",
+      "artifact_sha256": "efba39f987d7526d9738ca959c5b29a63e6cbc207dd327542dfefca53ab5a7a6"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2257",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The tools/submerged event remains outside the flooding depiction context.",
+      "artifact_sha256": "f33a72db014fc8032ec30ce360ff1c6bce0dd4224ea699b7a38771fbb3d57a05"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2258",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: submerged up to the middle of its tires",
+      "artifact_sha256": "e170b8e4ed1f4e2412f2e00228829e81c6ddd7df4150305bc420d99896cff9e8"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2261",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: SRL repeats obl on crash",
+      "artifact_sha256": "f1718a43d059e54c43b8b9ada363c9519aece5f6acdb8dcb4974d66b096d584e"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2262",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: violently",
+      "artifact_sha256": "2757eea2aa23e882ff3fd42c7122a168afadb938edad061dc5f607dcc5ed93b1"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2269",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "Swaying remains in an unspecified generic complement instead of visual depiction.",
+      "artifact_sha256": "0b78a2577440f584da4a8d7140fd49c69ae5e7dbbbd88f0ffd00ec2fb072dfe2"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2278",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "A geyser-from-grates entity relation is introduced instead of clearly binding the water's source to the grates.",
+      "artifact_sha256": "ee81dbf10e9409ab2aaddbb6f49dfd7b4ece0e726c928cbcb0234cb16f4b224d"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2281",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The coordinated branches/debris group is blown around in the street and in Dongguan; both locations constrain the same event.",
+      "artifact_sha256": "2072d371ef0e70a14a0c711c73b27c595e1d6b574ce164bdb8cc7d6e79616885"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2283",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: 12",
+      "artifact_sha256": "7f0e3e62b831aaa9d9b648d4654933bae200f5efaf8250605da6367051a11962"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2286",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The same fallen tree branches in Jiangmen crush the same cars group that includes taxis; the two clauses share the cars.",
+      "artifact_sha256": "936c4f0c394b6aa7bf9a2232000e5b9f97f7db762a5132ed4438422f6a02efe1"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2289",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/event",
+      "artifact_sha256": "1a779b774f2928f8e91b44c6f2250e85e04c4eb4e21df5a2e4cf763634d4bc82"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2290",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/collapse",
+      "artifact_sha256": "2118e0c1d873058fc24290450221df6ba57f598e55385f8fffb2668135e9d2dd"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2292",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/Pedestrians",
+      "artifact_sha256": "267bb291d9009965951dddf03e739c129679535dab3296c530d4d17853d483e8"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2297",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: A shared property is not anchored in the original text.",
+      "artifact_sha256": "fca72d0970b9c3689222bc78abbcaf5b3ddb154174487a25cb8f4bc4acc3dbed"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2316",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: the coastal regions of Guangdong likely experienced severe heavy rainfall and high winds",
+      "artifact_sha256": "2f870ffe33254ac5c5dafeef0af1bd1d4089f0db923c15ada6e8f5f098501e72"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2317",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: the coastal regions of Hainan likely experienced severe heavy rainfall and high winds during landfall",
+      "artifact_sha256": "f07e45804ac6474ec44ec69a10e18388fda468e157be5706c18d59383723147e"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2324",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c2: Unrepresented source content: 2025/07/20",
+      "artifact_sha256": "51c65e023841b7876d21b2a99aab2ddf147895c02611b610cdd7cf2a104b6990"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: reporter, Zhuhai",
+      "artifact_sha256": "79fc446c83a6d78e75543d3602c80b9390742f869f0d9f99d14c12d2c40e1536"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2344",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "90kg is correctly typed, but he remains unresolved and it is unclear whether the struggle is reported content or narrator description.",
+      "artifact_sha256": "89986201ac04a600ffd7caf3a936fbae9e56f2cb4cc08a46bdee45def070595c"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2347",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The parenthetical ZMC is forced into an alias statement, and the know-as form becomes belief content rather than a clear name/apposition relation.",
+      "artifact_sha256": "d97ff8bc9252617c7c44759f48756b6a52cb76b02141baf2bd34049447a37c86"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2350",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Direction and20–25km/h describe one Wipha movement; speed is a typed range rather than a counted kilometer group.",
+      "artifact_sha256": "b05288befc9c06f12b46d8bff5201062fef356b4cc62b32f56ec96eb90eb8d61"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2362",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c1: Unrepresented source content: areas",
+      "artifact_sha256": "b5ec65462f8cd19e7c5b93827a377d03c8dad12c7fe6eebd5a14de5fa3933263"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2371",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unrepresented source content: Typhoon, No., 8",
+      "artifact_sha256": "5ec359a578880da19e82225b416a0bee4fbc0af68f8bd94d6910a3b853439c5c"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2377",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "The same collapsed scaffolding crushes the multiple-vehicle group in the same housing estate located below that scaffolding.",
+      "artifact_sha256": "6e413c58fc75aa83c5e273cbb1666b4cbe81f55771e0666797b5d7166738f43e"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2383",
+      "reviewed": true,
+      "faithful": false,
+      "verdict": "partial_or_incorrect",
+      "reason": "The extra location is restored, but in-mid-air is incorrectly typed as time.",
+      "artifact_sha256": "bc7ec2beff7a047f417be1eef96f386842a2d4d7f424b5e9b29540715ae9e1be"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2400",
+      "reviewed": true,
+      "faithful": true,
+      "verdict": "faithful",
+      "reason": "Injuries and finding-event witnesses are jointly negated for the San Tin Highway incident; the incident itself remains positive.",
+      "artifact_sha256": "59d2df5148bfc34f433c6762c5b245379bb4486f7765b6a7cbba544c2d11295e"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2428",
+      "reviewed": false,
+      "faithful": false,
+      "verdict": "not_compiled",
+      "reason": "No complete compiled result: c3: Unrepresented source content: No., 3",
+      "artifact_sha256": "52e83d5652903bcc068a0481a31f018a13736b3842a7ef3bf5014cdcc62f10ad"
+    }
+  ]
+}

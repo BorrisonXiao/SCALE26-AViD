@@ -1,0 +1,2534 @@
+[
+  {
+    "claim_id": "TjHepwuhkYFA_1016",
+    "text": "Beginning at video timestamp 2025-03-28 12:46:35 and ending at video timestamp 12:46:37, the midground and background terrain in the video shift relative to the foreground of the video.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: 2025-03-28"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2168",
+    "text": "Extremely high winds are visible, blowing mist or rain horizontally across the screen.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/Rain"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_898",
+    "text": "Shows image of the tweet from Trump: 'Good luck to the Great people of Canada. Elect the man who has the strength and wisdom to cut your taxes in half, increase your military power, for free, to the highest level in the World, have your Car, Steel, Aluminum, Lumber, Energy, and all other businesses, QUADRUPLE in size, WITH ZERO TARIFFS OR TAXES, if Canada becomes the cherished 51st. State of the United States of America. No more artificially drawn line from many years ago. Look how beautiful this land mass would be. Free access with NO BORDER. ALL POSITIVES WITH NO NEGATIVES. IT WAS MEANT TO BE! America can no longer subsidize Canada with the Hundreds of Billions of Dollars a year that we have been spending in the past. It makes no sense unless Canada is a State!'",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1753",
+    "text": "The chart shows at least 25 lines with different countries and the percentage they tariff vs the percentage USA will tariff them in return.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c4: SRL repeats ARG2 on tariff"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_11",
+    "text": "People online are praying for other's safety during the Typhoon.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: online"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_12",
+    "text": "Commenters ask if anyone is missing, it's unclear if there are.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: missing"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_48",
+    "text": "Roads further inland are drivable for now.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: further, inland"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_54",
+    "text": "Akiak, Alaska may get power back the following weekend.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: back"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_61",
+    "text": "People are stuck in their homes during a major storm at night.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: stuck in their homes"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_63",
+    "text": "A home was nearly completely submerged in water.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: nearly completely submerged in water"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_68",
+    "text": "Angupaul1 is relying on a portable charger to livestream.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/reliance"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_75",
+    "text": "Boats are submerged in heavy storm waters.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: submerged"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_79",
+    "text": "Some roads further inland are drivable for now.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: A shared property is not anchored in the original text."
+  },
+  {
+    "claim_id": "TInVWzp25aIM_87",
+    "text": "People were evacuated to the Joint Base Elemendorf-Richardson, Alaska on October 15th, 2025.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/evacuation"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_106",
+    "text": "Small motorized vehicles are able to survey the wreckage.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: Small"
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_127",
+    "text": "Many shipping containers are leaning on top of each other precariously across much of The Mississippi's deck.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: other"
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_131",
+    "text": "The windy conditions may have played a role in the the containers falling off The Mississippi ",
+    "stage": "review_rejected",
+    "reason": "Possible windy-condition causation is split from an unqualified role/falling assertion; uncertainty and the causal binding are weakened."
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_160",
+    "text": "There are no containers fully in the water.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Absence requires declared entity IDs."
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_161",
+    "text": "No containers in the water implies this was potentially recorded after cleanup already began.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented."
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_164",
+    "text": "The container spill was from the ship The Mississippi.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: Mississippi"
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_172",
+    "text": "The goal of the recovery operation was to keep the port open.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to keep the port open"
+  },
+  {
+    "claim_id": "T2EE72iNELEs_181",
+    "text": "Staship Flight test, T-13 to liftoff.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Supply exactly one sentence."
+  },
+  {
+    "claim_id": "T2EE72iNELEs_190",
+    "text": "Rocket reaches Earth atmosphere and beyond.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Event identity aligned, but repeated-clause tense needs an original-token time attachment."
+  },
+  {
+    "claim_id": "T2EE72iNELEs_192",
+    "text": "Video beginning velocity 17828 mph.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/beginning"
+  },
+  {
+    "claim_id": "T2EE72iNELEs_200",
+    "text": "Spectators are excited as rocket launches.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: excited"
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_223",
+    "text": "The physical integrity of the power lines seems intact.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/condition"
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_234",
+    "text": "Massive dust storm is closing in.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: in"
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_239",
+    "text": "People are covered in dust.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: covered in dust"
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_271",
+    "text": "Street lights are coming on due to darkness from dust storm.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: on"
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_277",
+    "text": "Dust or debris particle flying around in an orange tint sky.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: A shared property is not anchored in the original text."
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_284",
+    "text": "This is what it is like driving into a haboob.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: like driving into a haboob"
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_299",
+    "text": "Roof partially browned away at Sky Harbor Airport.",
+    "stage": "review_rejected",
+    "reason": "The airport adjunct is restored, but away is treated as a location instead of a well-defined result/particle."
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_308",
+    "text": "Power outages likely in residential area.",
+    "stage": "review_rejected",
+    "reason": "Likely is a text property of existing outages, while their residential location becomes an actual-world assertion; modal scope is not preserved."
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_314",
+    "text": "Residential area could loose power.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/loss"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_323",
+    "text": "Robot slams into man during race.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/incident"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_333",
+    "text": "Robot 1paces up behind the man",
+    "stage": "review_rejected",
+    "reason": "Robot1 is paces is ungrammatical and paces becomes an object; moving up adds an interpretation of the malformed original rather than preserving pacing."
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_337",
+    "text": "Robot 3 kicks back at Robot 2 but stumbles",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: back"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_342",
+    "text": "The man gives the signal for the other 2 robots to start sparring",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: to start sparring"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_343",
+    "text": "man exclaims \"just like that!\"",
+    "stage": "review_rejected",
+    "reason": "Exclaiming and saying the quote are separate events. The quote need not be what the man exclaimed; the speech-event binding is lost."
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_346",
+    "text": "Robot 1 swings at the man's butt as he is talking to people who are off-screen.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: man's"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_355",
+    "text": "Robot is able to balance itself after getting pushed.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: pushed"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_357",
+    "text": "People are circled around the robot waiting to watch what it can do.",
+    "stage": "review_rejected",
+    "reason": "The watch/ability content retains a generic what entity rather than a defined indirect-question/event relationship; reference/content interpretation is incomplete."
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_360",
+    "text": "The robot repositions itself upright and starts walking backwards.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: upright"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_373",
+    "text": "Robot 100m sprint.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/event"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_378",
+    "text": "Robot on lane three comes in second place.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: three"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_379",
+    "text": "Robot race inside a running  track.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/place"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_380",
+    "text": "Weibo, People's daily",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/publication"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_395",
+    "text": "Robot running trips and falls.",
+    "stage": "review_rejected",
+    "reason": "Trips becomes a nominal Robot trips entity instead of a tripping event. Running/falling remain but the tripping action is not compiled."
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_407",
+    "text": "there are 2 robots with long legs and 2 with shorter legs.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/legs"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_421",
+    "text": "100m- final lineup",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/event"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_423",
+    "text": "Robot 1 is getting pushed into the corner by Robot 2 ",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Event identity aligned, but repeated-clause tense needs an original-token time attachment."
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_425",
+    "text": "Robot 2 collapses after getting caught in the ropes.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: caught in the ropes"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_433",
+    "text": "Robot 1 sweep kicks Robot 2",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/Robot 2"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_444",
+    "text": "game over",
+    "stage": "model_refuse",
+    "reason": "Model returned refuse with no proposed sentences. The fixed output schema does not ask for a refusal explanation."
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_446",
+    "text": "Netizens: His courage to keep fighting despite repeated failures is commendable. ",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/He"
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_447",
+    "text": "Beijing recently.",
+    "stage": "model_refuse",
+    "reason": "Model returned refuse with no proposed sentences. The fixed output schema does not ask for a refusal explanation."
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_453",
+    "text": "\"Narco government\" written in graffiti on the barricades surrounding the National Palace ",
+    "stage": "review_rejected",
+    "reason": "The written quote becomes a government entity; exact OCR content/source scope is not preserved."
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_454",
+    "text": "Protesters are attempting to breakdown barricades using metal rails.",
+    "stage": "review_rejected",
+    "reason": "Using metal rails is attached under the attempted-breaking purpose/relative context instead of the actual ongoing method of attempting; actual-versus-goal binding is not retained."
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_467",
+    "text": "\"Watch the man holding the Mexican flag. I'm going to press play. I don't know what is happening, ok, but suddenly someone pushes him and all the police move towards him, I don't know why. I mean, hello? And from there, everything began to escalate, you know? Watch that.\"",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: I'm"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_468",
+    "text": "We can see a protester holding the Mexican flag suddenly get attacked by the police.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: attacked by the police"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_469",
+    "text": "Protest happening in the middle of Zócalo .",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/protest"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_470",
+    "text": "The protest is happening in the middle of the Zócalo, formally known as the Plaza de la Constitución, which is the main square in central Mexico City.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Event identity aligned, but repeated-clause tense needs an original-token time attachment."
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_478",
+    "text": "Sign posted at the National Palace entry way that says \"Mexico bleeds every time we remain silent\".",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/sign"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_489",
+    "text": "\"Mexico: Violent clashes erupt during anti-government protests.\"",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/statement"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_495",
+    "text": " \"Mexico, Nov 15\".",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: Mexico, Nov, 15"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_496",
+    "text": "\"Police fire smoke bombs and tear gas as protesters hurl stones.\"",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/quote"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_497",
+    "text": "\"Mexico City security chief: 20 arrested for theft and assault.\"",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/statement"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_504",
+    "text": "Protester holds a sign \"They shut down my voice without realizing that they would awaken the voice of all of Mexico.\"",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c4: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_517",
+    "text": "\"Sheinbaum: Movement promoted from abroad against our government.\"",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Event identity aligned, but repeated-clause tense needs an original-token time attachment."
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_519",
+    "text": "\"justice was all they wanted.\"",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: all they wanted"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_530",
+    "text": "Lady on the screen is criticizing exiled Mexicans for not standing up to the Narco State.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: up"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_532",
+    "text": "Six shots fired or the sound of explosions.",
+    "stage": "review_rejected",
+    "reason": "The model retains Or as a discourse word, but composition uses AND. Shots and explosions are both required instead of alternatives."
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_535",
+    "text": "\"Medicine faculty is back\" and \"Narco state\" written in graffiti.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unrepresented source content: Narco, state"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_536",
+    "text": "\"Manzo lives\" written in graffiti on the barricades.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/message"
+  },
+  {
+    "claim_id": "TLO3smKI67PM_556",
+    "text": "The Phillies fan father runs over to where the home run lands.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/lands"
+  },
+  {
+    "claim_id": "TLO3smKI67PM_580",
+    "text": "It's almost the Phillies fan son's birthday.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: almost, fan's"
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_609",
+    "text": "Most people are dressed in white robes.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: dressed in white robes"
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_618",
+    "text": "Group of men sitting on floor arranged cots.",
+    "stage": "review_rejected",
+    "reason": "The fragment is ambiguous about floor-arranged cots. The rewrite chooses men arranged in cots without adequate original evidence."
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_628",
+    "text": "Video overlay reading \"Last year it took hours to get to the camp, now its only 25 mins\" is visible.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c4: Unrepresented source content: only"
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_631",
+    "text": "Some people walking in road below.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: A shared property is not anchored in the original text."
+  },
+  {
+    "claim_id": "TQKCK6-tRaoE_660",
+    "text": "Scarlet Sails sail while fireworks go off in the background.",
+    "stage": "review_rejected",
+    "reason": "While is lost. Sailing and fireworks can satisfy the composed conjunction at different times."
+  },
+  {
+    "claim_id": "TQKCK6-tRaoE_662",
+    "text": "Sound of fireworks exploding.",
+    "stage": "review_rejected",
+    "reason": "The sound is linked to a fireworks object while explosion is a separate world event; the heard sound need not come from that explosion."
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_682",
+    "text": "individuals walk from a recreation area with basketball courts and a track toward the building. ",
+    "stage": "review_rejected",
+    "reason": "The walking direction is restored, but a spurious track-toward-building relation remains inside the recreation-area description."
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_728",
+    "text": "There are lights on at every floor of the building. ",
+    "stage": "review_rejected",
+    "reason": "Every floor is retained only as a property on one floor entity, without a universal floor condition."
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_732",
+    "text": "There are many chairs stacked on top of each other ready to be loaded into the large truck.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: other"
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_733",
+    "text": "There are not too many cars currently on the road, so traffic is not being obstructed too badly.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: currently"
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_741",
+    "text": "There's a crowd of people gathered around on both sides of the street.",
+    "stage": "review_rejected",
+    "reason": "Both sides remains a lexical quantifier property and the gathered/crowd description has incomplete group semantics; the result is partial."
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_745",
+    "text": "A car drives up onto the curb in order to get around the police car and oncoming traffic.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: order"
+  },
+  {
+    "claim_id": "T8u81WMIyj18_755",
+    "text": "The car is parked at 1:53am on August 19th, 2025.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unrepresented source content: 2025"
+  },
+  {
+    "claim_id": "T8u81WMIyj18_758",
+    "text": "The setting is a dark and calm night, with no notable weather.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: A shared property is not anchored in the original text."
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_770",
+    "text": "The cargo crane parks directly in front of the camera at 9:20:38am and obstructs the view of the port.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: SRL repeats obl on parks"
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_774",
+    "text": "Heavy fog makes it difficult to see.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: it difficult to see"
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_779",
+    "text": "The large boat has a reminder about safety first.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: first"
+  },
+  {
+    "claim_id": "T1JQ-aG78Zuc_791",
+    "text": "The tram driver accidentally requested a switch to go right at an intersection, even though the tram needs to go straight.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: to go right"
+  },
+  {
+    "claim_id": "T1JQ-aG78Zuc_796",
+    "text": "The weather is sunny with no clouds in the middle of the day.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/condition"
+  },
+  {
+    "claim_id": "T1JQ-aG78Zuc_800",
+    "text": "The tram slows down substantially as it approaches the man laying near the tracks.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: down"
+  },
+  {
+    "claim_id": "T1JQ-aG78Zuc_801",
+    "text": "The man laying down crawls away from the tracks as the tram passes him.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Repeated original event has conflicting ARG1 arguments."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_806",
+    "text": "Notes that not all lost NDP votes went to the Liberals.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A source negation is absent from the logical operators. Preserve the intended negated clause."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_807",
+    "text": "Example shown: Windsor West riding.",
+    "stage": "review_rejected",
+    "reason": "Windsor West as a riding description and as a separate entity are not unified; depicted-label and world-classification contexts are also mixed."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_808",
+    "text": "In Windsor West, Conservative Harb Gill had 39.1% with a total of 21,270 votes (lead of 4,529); Liberal Richard Pollock had 30.8% with 16,741 votes; NDP Brian Masse had 27.8% with 15,112; and PPC Jacob Bezaire has 1% with 548 votes.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/39.1% of the vote"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_809",
+    "text": "Long-time NDP MP Brian Masse (in since 2002) lost and finished third.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/election"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_812",
+    "text": "Despite low vote share, NDP will still hold the balance of power in the minority parliament, which Aiken calls unique given they only had 6% of the vote.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c2/balance of power in the minority parliament"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_813",
+    "text": "Clarifies that Liberals will remain the primary power-holders.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/claim"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_814",
+    "text": "Key geography: 'Fortress Vancouver, Fortress Montreal, and Fortress GTA.'",
+    "stage": "review_rejected",
+    "reason": "The quoted geographic labels are converted into ordinary inclusion assertions; exact label/source interpretation is not established."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_820",
+    "text": "However, not enough gains, and failure to sufficiently weaken Fortress Toronto prevented Conservatives from forming government.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Negated sufficiency needs a separate quantified interpretation."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_821",
+    "text": "Moves to Fortress Montreal / Quebec.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Two compiled entities in one clause map to one original mention."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_822",
+    "text": "2025 Montreal map shows a lot of Liberal red.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: 2025, Liberal, red"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_823",
+    "text": "2021 map shows more Bloc Québécois seats (blue) — not as much red.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A source negation is absent from the logical operators. Preserve the intended negated clause."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_824",
+    "text": "Liberals had a strong night in Quebec, winning Bloc seats — contributing to forming the government.",
+    "stage": "review_rejected",
+    "reason": "The contribution to government formation is assigned to the Liberals instead of the winning-seats event; Quebec/night scope is not carried into the win."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_827",
+    "text": "2021 map shows more NDP seats, many of which have since gone Liberal.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Content must reuse the focal parent entity; do not assert an unrelated event."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_829",
+    "text": "Special note: South Surrey-White Rock riding.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unrepresented source content: White, Rock"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_836",
+    "text": "Shows image of Trump shaking Elon Musk's hand at some kind of rally (Elon Musk wearing SpaceX sweatshirt).",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_838",
+    "text": "Claims that Trump has said Canada is not a real country.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: SRL repeats ARG0 on made"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_846",
+    "text": "States that the best response to the crisis is to build domestic strength and assist people who will be most harmed by tariffs.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to build domestic strength"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_847",
+    "text": "States this plan as right, fair, and the Canadian thing to do.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: plan, right"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_854",
+    "text": "5 larger dots overlay them with a +5 in yellow in the top right.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/+5"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_856",
+    "text": "They show the current House composition: Liberals hold 152 seats, Conservatives 120, Bloc Québécois 33, NDP 24, Greens 2, with 3 independents and 4 seats vacant.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/seats"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_858",
+    "text": "The speaker notes that 172 seats are required for a majority government, though a minority government can still form with fewer seats than that.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: 172"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_859",
+    "text": "Mark Carney has been Prime Minister for only about a week, after winning the Liberal leadership and after Justin Trudeau's resignation.",
+    "stage": "review_rejected",
+    "reason": "Repeated leadership/appointment events are not identified across temporal contexts; only-about-a-week remains an opaque phrase and the rewrite adds redundant became statements."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_860",
+    "text": "If the Liberals lose this election, Carney would become Canada's shortest-serving Prime Minister, a record currently held by Charles Tupper who served 69 days in 1896.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_867",
+    "text": "Shows picture of what the voter information service page looks like: can find electoral district, look at the map, profile, etc. with a place you can type your postal code and search ('Go') or a link you can click to find an electoral district without a postal code.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c5: Unrepresented source content: such"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_868",
+    "text": "Requirements to vote are stated as being a Canadian citizen who is at least 18 years old on election day and able to provide proof of identity and address.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: vote"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_870",
+    "text": "Shows physical paper voting where folded up ballots are slipped into large boxes that say Elections Canada. The box in the image is #608A.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_871",
+    "text": "The speaker notes that Canadians may vote on election day, at advance polls, or by mail-in ballot if they are outside the country, with more information coming on the Elections Canada website.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/options"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_875",
+    "text": "Address begins with 'To my fellow Conservatives' — he is speaking to party members/supporters.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Repeated original event has conflicting ARG2 arguments."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_878",
+    "text": "Claims the party gained well over 20 seats in the election.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: well"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_883",
+    "text": "Says that change is needed, but emphasizes change is difficult.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/person"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_889",
+    "text": "Shows scene of people in street holding signs protesting against America acquiring Canada: woman in Canada mask holds sign that says 'Canada is Already Great' and waves at camera while wearing an 'I voted' sticker; another woman in the back holds two flags: Canada's and Ukraine's.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c1/people in a street"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_892",
+    "text": "Green is consistently the lowest with BLOC slightly above it following a similar flat distribution around 5 and 6% respectively.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: slightly"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_893",
+    "text": "NDP is flat at about 20% until Jan 2025 then it drops steeply to 8-9%.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/level"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_894",
+    "text": "Lib is on a slight decline from 32% in Jan 2023 to 20% in Jan 2025 but jumps all the way up to ~45% between Jan 2025 and present.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c5: Unrepresented source content: 45"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_900",
+    "text": "Shows bar graph of seats won comparing 2021 in light red and 2025 in dark red (the 2025 data is from the time of writing and animating which is 07:30 GMT, 03:30 ADT).",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: The bar graph displays seats"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_906",
+    "text": "Comment that this outcome would have seemed impossible only months earlier.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_908",
+    "text": "Video topic: the Liberals' political revival, the election results, and the implications for Canada.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_909",
+    "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_910",
+    "text": "Cuts to the crowd who is giving him a standing ovation, all holding red signs (assume supporters).",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c5/ones"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_914",
+    "text": "Six months earlier, a Conservative landslide seemed inevitable.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: Conservative, landslide"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_915",
+    "text": "Then-incumbent PM Justin Trudeau was very unpopular: net approval rating -52 in December.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: 52"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_916",
+    "text": "Shows graph of approval: Estimated change and trend (2016-2024): approval starts near 50% and ends around 28-30% (down ~20 points), while disapproval begins near 40% and rises to about 68-70% (up ~30 points); overall pattern shows early volatility, a temporary approval bump around 2020, then a sustained decline in approval with steadily increasing disapproval through 2024.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c9: Unrepresented source content: 2020"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_918",
+    "text": "Estimated change and trend (2016-2024, index 2016 Q1 = 100): Both countries start near 100; the United States ends around 115-116 (up ~15-16 points) after a sharp 2020 drop and strong post-2020 growth, while Canada ends near 101-102 (up ~1-2 points) after a deeper 2020 decline and a slower, flatter recovery that peaks around 2022 before easing slightly, resulting in a widening gap in real GDP per capita growth.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: near"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_920",
+    "text": "Estimated change and trend (Jan 2023-Jan 2025): Conservatives rise from about 34-35% to 43-44% (up ~9 points), Liberals fall from roughly 31-32% to 20-21% (down ~11 points), NDP remain relatively flat around 18-19%, Bloc Québécois edge up slightly from 6-7% to 8-9%, and Greens stay low and stable near 3-4%; overall trend shows widening Conservative lead driven mainly by declining Liberal support.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: SRL repeats ARG3 on rose"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_921",
+    "text": "It looked certain Poilievre would replace Trudeau; main question was margin of victory.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_924",
+    "text": "Shows same graph as before with post January results: Conservatives drop sharply from about 43-44% to roughly 37-38% (down ~6 points), Liberals surge from around 20-21% to about 42-43% (up ~21-22 points), NDP fall from roughly 18-19% to near 8-9% (down ~10 points), Bloc Québécois ease slightly from about 8-9% to 6-7%, and Greens decline from around 4% to about 2-3%; overall, the new data shows a rapid realignment driven primarily by a large shift from NDP and Conservative support toward the Liberals.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: SRL repeats ARG4 on drop"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_926",
+    "text": "Shows table picture of various polls in April: multiple national polls show the Liberals leading at roughly 41-44%, with the Conservatives close behind at about 37-41%, The NDP polls mostly between 6-11%, well below earlier levels; the Bloc Québécois is stable around 6% nationally; Greens sit near 1-3%; PPC and others remain around 1-2%.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c5: Unrepresented source content: well"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_930",
+    "text": "Polling: Ipsos showed 49% of Canadians preferred Carney to negotiate with Trump vs. 33% for Poilievre.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/result"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_933",
+    "text": "Second cause of reversal: Mark Carney's personal popularity.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_934",
+    "text": "Carney more popular than Trudeau, Poilievre, and Jagmeet Singh.",
+    "stage": "review_rejected",
+    "reason": "Each comparison target remains inside an opaque more-popular-than string rather than an explicit comparison participant; word retention alone is not the intended relation compilation."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_935",
+    "text": "Leadership approval snapshot (Angus Reid, March 17, 2025): Pierre Poilievre has approval around the mid-30% range with disapproval near 55-60%, Justin Trudeau shows higher approval near ~48-50% with disapproval around ~35%, Jagmeet Singh records approval near ~32-33% with disapproval close to ~60%, and Yves-François Blanchet (Quebec polling only) has approval around ~48-50% and disapproval near ~40-42%, indicating Trudeau and Blanchet with net-positive standings and Poilievre and Singh facing higher disapproval than approval.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: March, 17, 2025"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_941",
+    "text": "Conservative support more geographically concentrated; Liberal support more evenly spread.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: more geographically concentrated"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_944",
+    "text": "Example: 338Canada aggregator had Conservatives +3 points in mid-March but still predicted more Liberal seats due to distribution efficiency.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: Example"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_947",
+    "text": "Liberals beat Conservatives in popular vote but only by ~1.4 points: 43.1% vs. 41.7%.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: only"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_948",
+    "text": "With 96% counted: Liberals projected 48.1% of seats = 166 seats; Conservatives 42.9% = 146 seats (out of 343 total).",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/48.1% of seats"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_950",
+    "text": "Conservatives strongest in rural southwestern regions: especially Alberta and Saskatchewan.",
+    "stage": "review_rejected",
+    "reason": "The province statements are not linked as members of the rural southwestern region group, and strongest is weakened to especially strong for those provinces."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_951",
+    "text": "Remaining seats expected mainly for Bloc Québécois (Quebec-only nationalist party) and NDP (social democratic, left of Liberals).",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: Bloc, Québécois"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_954",
+    "text": "Seat comparison (2021 vs projected 2025): The chart compares seats won in the 2021 election with projected 2025 results, showing the Liberals increasing their seat total (roughly mid-150s to near 180), the Conservatives also gaining (from about 120 to the mid-140s), and the Bloc Québécois declining (from low-30s to around 20); NDP and Green Party results are not displayed.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: roughly"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_955",
+    "text": "NDP had a poor result: declining steadily since Carney became Liberal leader.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/decline"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_956",
+    "text": "NDP slightly underperformed polls: 6.1% vote share and only 7 seats.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unrepresented source content: only"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_957",
+    "text": "Major drop from 2021: nearly 18% vote share and 25 seats then.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/party"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_959",
+    "text": "Liberals appear short of the 172 seats needed for a majority government.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: needed"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_960",
+    "text": "Carney now faces decision similar to Trudeau's in 2021: whether to form a support alliance with the NDP which would give him enough seats for a majority.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Explicit source clause predicates have no linked SRL frame: faced"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_962",
+    "text": "Carney may face difficulties: positioned slightly right of Trudeau while NDP is left of Liberals; outcome depends on NDP's new leader.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: left of the Liberals"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_963",
+    "text": "Conclusion: Carney's success credited largely to Trump's rhetoric and threats.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Two compiled entities in one clause map to one original mention."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_964",
+    "text": "Suggestion that without Trump the Liberal comeback would not have happened.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: that the Liberal comeback would not have happened without Trump"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_966",
+    "text": "Sponsor message: Brilliant offers interactive lessons in math, science, programming, data analysis, and AI.",
+    "stage": "review_rejected",
+    "reason": "Sponsor-message content becomes world-level offer/lesson assertions, with Brilliant even stored as a text-valued agent; source and participant typing are incomplete."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_967",
+    "text": "Lessons focus on hands-on problem solving, claimed to be 6x more effective than lectures.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c1/hands-on problem solving"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_972",
+    "text": "National results so far: 222 of 343 ridings have reported; seat counts stand at Liberals 124, Conservatives 88, Bloc Québécois 16, NDP 2, Greens 0 (172 seats needed for a majority).",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: National, results, so, far"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_973",
+    "text": "Can see numbers updating on bottom throughout. Start at Liberals 118, Conservatives 83, Bloc Québécois 15, NDP 4, Greens 0.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c6: Unrepresented source content: 0"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_975",
+    "text": "Riding-level result (Oshawa): Conservative candidate Rhonda Kirkland is leading locally with 314 votes reported, followed by Liberal Isaac Ransom with 245 and NDP candidate Sara Labelle with 60.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/candidate Rhonda Kirkland"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_976",
+    "text": "Riding-level result (Peterborough): Liberal candidate Emma Harrison is leading locally with 2740 votes reported, followed by Conservative Michelle Ferreri with 1932 (increasing) and NDP candidate Heather Ray with 137.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: Peterborough"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_977",
+    "text": "Riding-level result (Pickering-Brooklin): Liberal candidate Juanita Nathan is leading locally with 70 votes reported, followed by Conservative Alicia Vianga with 62 (increasing) and NDP candidate Andrea Wood with 3.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/candidate"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_978",
+    "text": "Decision desk announcing results are about to come in.",
+    "stage": "review_rejected",
+    "reason": "The announcement and future arrival are separated. What is about to happen is no longer inside the decision desk's reported content."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_983",
+    "text": "Only question is whether it will be a majority government or a minority government.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: A shared property is not anchored in the original text."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_984",
+    "text": "Commentators reference anticipated celebration at HQ (supporters unaware of final call yet).",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c5: Embedded predicate has no explicit or licensed controller: known"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_987",
+    "text": "Mention of dramatic comeback from 'depths of despair' over previous 1-2 years.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/mention"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_991",
+    "text": "Still unknown whether the government will be majority or minority.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/It"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_994",
+    "text": "Bloc Québécois: -11 seats in Quebec.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c1/11 seats in Quebec"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_995",
+    "text": "Conservatives: -5 seats in Quebec.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c1/5 seats in Quebec"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_997",
+    "text": "The video includes the logo for 7 News.com.au.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: 7"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_999",
+    "text": "The video contains a compilation of short video scenes and images overlaid by a news broadcaster's audio description (which also appears in overlaid text).",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/video"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1003",
+    "text": "At the time the video was created, the death toll from the earthquake is 1600.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: created"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1005",
+    "text": "Video footage shows a tall (8+ story) building collapsing.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: more"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1018",
+    "text": "A large object in the background (presumably a tower supporting a power line) falls.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1021",
+    "text": "There is no original sound in the video, only overlaid dramatic music.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique simple source sentence for the original media description."
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1022",
+    "text": "A logo 'storyful' appears in the video.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique simple source sentence for the original media description."
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1026",
+    "text": "In the video footage, a tall (23+ story) building collapses.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: more"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1041",
+    "text": "The area that experienced violent shaking is heavily populated.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: heavily populated"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1047",
+    "text": "Sagaing is near Mandalay and also close to the epicenter of the earthquake.",
+    "stage": "review_rejected",
+    "reason": "The epicenter-of-earthquake relationship remains inside an opaque close-to string rather than linked location/event participants."
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1051",
+    "text": "The Indian Plate is moving northward, producing increased stress on the rocks beneath.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: increased stress on the rocks beneath"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1062",
+    "text": "Bago is slightly Northeast of Yangon.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: slightly"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1066",
+    "text": "The closer to the surface an earthquake is, the greater the damage.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: greater, damage"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1069",
+    "text": "Tall buildings are most vulnerable to the slower movement caused by lower frequency shock waves.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/vulnerability"
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1070",
+    "text": "A video shows a tall building collapsing in Bangkok (inferred).",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/event"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1136",
+    "text": "Blue Ghost completed on-orbit commissioning.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Nominal OR has no explicit alternative group."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1137",
+    "text": "Blue Ghost began the journey to the moon after on-orbit commissioning.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Nominal OR has no explicit alternative group."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1148",
+    "text": "Blue Ghost had three and a half elliptical orbits around Earth.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c2/half elliptical orbit around Earth"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1163",
+    "text": "Firefly chose a more 'scenic route'.",
+    "stage": "review_rejected",
+    "reason": "A quoted/scare-quoted scenic-route description is changed into literal scenic comparison. Its source/ironic reading remains unresolved."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1179",
+    "text": "Blue vector points toward Earth off to right of Blue Ghost and yellow vector points towards Sun off to left of Blue Ghost.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/points"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1181",
+    "text": "Blue Ghost performing 9 minute power descent initiation using all of its engines to reduce speed.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Supply exactly one sentence."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1184",
+    "text": "First redirect occurred 98 meters from original target.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: A shared property is not anchored in the original text."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1185",
+    "text": "Now in autonomous phase 133 m above ground level.",
+    "stage": "review_rejected",
+    "reason": "An implicit spacecraft/location subject becomes the phase itself at133m, and m is also treated as a predicate. The subject/type interpretation is changed."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1187",
+    "text": "Navigation filter still healthy.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/state"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1191",
+    "text": "Landing successful and everyone cheers.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/Landing"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1192",
+    "text": "Firefly Aerospace became first commercial company in history to complete a fully successful moon landing.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/event"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1193",
+    "text": "Cut to larger crowd of what is likely members of the public cheering; this event was almost certainly broadcasted live.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/cut"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1196",
+    "text": "Overview of Firefly Aerospace's Blue Ghost lunar about 10 days after landing.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/mission"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1202",
+    "text": "Also shows close up of what the wire connection looks like after the initial firing of the electrode.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/content"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1207",
+    "text": "Blue Ghost began drilling operations using NASA's LISTER payload located beneath the lower deck.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1209",
+    "text": "A March 3 video shows the LISTER drill operating during descent into the regolith which is watched by those in the Firefly Aerospace control room.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/event"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1212",
+    "text": "LISTER also measures thermal conductivity (how effectively the lunar material transfers heat).",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: how, effectively"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1225",
+    "text": "The landing video had already hinted this because one lander leg was not fully in contact with the surface and the nearby shadow shape was unusual.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: fully"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1228",
+    "text": "Can see obvious engine plume disturbance on the surface in the images which matches what was seen in the landing video as regolith was blown outward.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/person"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1229",
+    "text": "Mare Crisium was selected as a landing site due to its geological value: large basin located in the northeast quadrant of the moon's near side when observing the moon from the Earth's northern hemisphere.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/selection"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1230",
+    "text": "Mare Crisium is a large basin created by ancient asteroid impact and volcanic eruptions that filled with basaltic lava about 3 billion years ago.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c5/filling"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1231",
+    "text": "Firefly and NASA described the site as uniquely suited for studying lunar regolith, geophysical behavior, and how solar wind interacts with Earth's magnetic field in this region.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c4: A finite clause remains inside a literal/entity instead of a linked clause."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1233",
+    "text": "Firefly reported that lunar noon is the hottest part of the lunar day and temperatures can reach about 250°F or 121°C.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: 121°C"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1234",
+    "text": "To protect hardware, Blue Ghost began cycling power on and off to keep the lander as cool as possible.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: to protect hardware"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1237",
+    "text": "Firefly said the lander would gradually return to full power once surface temperatures dropped.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1247",
+    "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/Earth"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1248",
+    "text": "Even though Blue Ghost will only operate for about 2 weeks total, they've been able to complete a few different firsts.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Supply exactly one sentence."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1249",
+    "text": "On March 3, NASA and the Italian Space Agency achieved a first-of-its-kind demonstration of acquiring and tracking Earth-based navigation signals (GNSS signals) from the Moon's surface.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/signals"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1256",
+    "text": "Firefly was awarded 2 additional NASA commercial lunar payload services task orders to provide payload services in lunar orbit and on lunar surface in 2026.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: for providing payload services in lunar orbit"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1263",
+    "text": "Elytra will remain in lunar orbit to provide long-haul communications relay and support RF calibration services for NASA's telescope systems.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/relay"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1268",
+    "text": "During lunar night, the Moon also blocks solar RF noise, making the region ideal for observing signals from the cosmic dark ages.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unrepresented source content: region, ideal"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1282",
+    "text": "Blue Ghost's mission is to advance lunar research.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to advance lunar research"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1283",
+    "text": "Blue Ghost's mission is to enable sustainable presence on the moon.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to enable sustainable presence on the moon"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1297",
+    "text": "CLPS stands for Commercial Lunar Payload Services.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: SRL repeats ARG1 on stands"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1298",
+    "text": "Designing the vehicle took a little over a year.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: little"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1317",
+    "text": "Will Coogan is the Chief Engineer of the Blue Ghost Lander.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: Will Coogan"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1326",
+    "text": "Blue Ghost is targeting around 100kg of payload.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1335",
+    "text": "Composite tubes were previously rocket sized.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: rocket sized"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1340",
+    "text": "The composite tubes were qualified within two weeks.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: qualified"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1350",
+    "text": "A goal of the pneumatic drill is to understand heat fluxes.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to understand heat fluxes"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1351",
+    "text": "A goal of the pneumatic drill is to take some temperature measurements.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to take some temperature measurements"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1354",
+    "text": "A goal of the lunar planet vac is to extract information from samples.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to extract information"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1402",
+    "text": "Hundreds of people are standing up and cheering.",
+    "stage": "review_rejected",
+    "reason": "Hundreds remains an ordinary noun/group linked to people, without an explicit cardinality condition; numeric meaning is not established."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1408",
+    "text": "IM's moon landing was a nailbiter.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: IM's"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1410",
+    "text": "Lights are shooting out from the IM-1 during its descent.",
+    "stage": "review_rejected",
+    "reason": "The from-IM1 direction is restored, but its descent remains an opaque time string without an explicit event/reference link."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1437",
+    "text": "The video shows a simulation of the landing as it occurred.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unrepresented source content: landing"
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1464",
+    "text": "After touchdown, Blue Ghost's legs send a signal to shutdown the engine.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Repeated events with embedded contexts need separate alignment."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1467",
+    "text": "Two people high-five in reaction to the landing.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: high"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1470",
+    "text": "The 10-20 knots of flow at 850mb would persist through the day on the 3rd.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1472",
+    "text": "The 25-30 knots of flow would maintain itself on the 4th and into the 5th.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1482",
+    "text": "Made landfall and dissipated.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/storm"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1491",
+    "text": "Evening of the third shows values at 2.5.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: 2.5"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1497",
+    "text": "Color fills are where there is spin in the atmosphere.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1498",
+    "text": "Not much to see with respect to spin until the 3rd.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/observation"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1500",
+    "text": "This circulation then moves north-northeast and then parks itself over central Texas.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: north"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1511",
+    "text": "On July 2nd the circulation head had dissipated and meandered slowly north given about 10 to 20 knots of flow at 500mb out of the south.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Entity is not an exact source mention: mb"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1512",
+    "text": "You can see a big ridge of high pressure dominating the southern half of the country.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: see a big ridge"
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1513",
+    "text": "You can see this high pressure ridge through winds out west out of the south, westerly flow across the central plains, and northerly flow on the east side of the ridge in the southeast.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/ridge"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1520",
+    "text": "Text in the top left of the screen reports the location as Washington, DC.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: Text in the top left of the screen"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1521",
+    "text": "Other text in the top left of the screen reports the date as April 2, 2025.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1525",
+    "text": "The video transitions to a scene showing Trump seated, signing the Executive Order, and then displaying the signed order to some onlookers, who clap in response.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/Executive Order"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1544",
+    "text": "The court ruling was 3-0 in favor of the injunction.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: 0"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1547",
+    "text": "The injunction temporarily pauses/rules illegal and unconstitutional almost all of the tariffs the Trump administration has put in place.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: almost all of the tariffs the Trump administration has put in place"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1549",
+    "text": "Congress can pass laws to delegate this authority to the president in certain instances.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/delegation"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1554",
+    "text": "The court ruling temporarily strikes down all of the tariffs put in place on Trump's first day and on 'liberation day'.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1556",
+    "text": "Axelrod claims Trump thinks tariffs are a cure-all for all of America's problems.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: America, problems"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1569",
+    "text": "An example of this skepticism is the opinion that the US immigration situation is not an invasion or incursion and does not support invocation of the Alien Enemies Act.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c4: A clausal argument has no attached SRL frame: that the US immigration situation does not support invocation of the Alien Enemies Act"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1570",
+    "text": "SCOTUS is skeptical towards the administration's tendency to call everything an attack/emergency/incursion/rebellion.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1572",
+    "text": "Axelrod claims Trump does not want to be constrained.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: constrained"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1574",
+    "text": "Declaring emergencies has given Trump legal pretext to expand executive power.",
+    "stage": "review_rejected",
+    "reason": "Legal pretext becomes permission through allows, which is stronger than providing a pretext; the original justification/goal relationship is changed."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1582",
+    "text": "Worldwide and retaliatory tariffs were announced on 'Liberation Day' (April 2), including 10% worldwide and 11-50% imposed on some countries.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c4: Explicit source clause predicates have no linked SRL frame: ranging"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1585",
+    "text": "If the tariffs ultimately get struck down (e.g. by SCOTUS), there could be an action brought by countries from whom the tariffs have been collected.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: struck down by SCOTUS"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1586",
+    "text": "Image of Trump signing something (likely executive orders).",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1588",
+    "text": "Footage of Trump holding up and speaking about a poster listing reciprocal tariffs by country.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c4/reciprocal tariffs by country"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1589",
+    "text": "Tariff poster shows: China 67% tariffs charged to USA / 34% USA discounted reciprocal tariffs.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/tariffs"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1600",
+    "text": "Erin Burnett presents from a CNN studio.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: SRL repeats ARG0 on presents"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1602",
+    "text": "Dow Futures rose immediately by more than a percent, 1.1% / 500 points.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: more"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1605",
+    "text": "US Futures: DOW 42,638.00, +468.00, +1.1%.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/468.00"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1606",
+    "text": "US Futures: S&P 500 5,989.00, +86.25, +1.46%.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/The S&P 500"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1607",
+    "text": "US Futures: NASDAQ 21,752.00, +372.25, +1.74%.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/372.25"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1608",
+    "text": "US Futures (second reading): DOW 42,634.00, +464.00, +1.1%.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/value"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1609",
+    "text": "US Futures (second reading): S&P 500 5,988.75, +86.00, +1.46%.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/index"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1610",
+    "text": "US Futures (second reading): NASDAQ 21,749.50, +369.75, +1.73%.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unrepresented source content: +369.75"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1612",
+    "text": "The court is a three judge panel.",
+    "stage": "review_rejected",
+    "reason": "Court is a panel compiles panel as a class string. The panel with three judges is a separate entity, so its three-judge condition need not hold of the court."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1624",
+    "text": "This ruling is significant because Trump uses tariffs as a key part of his international trade 'deals' and policy.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/approach"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1632",
+    "text": "Ryan Goodman is the Just Security Co-Editor-In-Chief.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: In"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1634",
+    "text": "The court said in the ruling that it is not just ruling for the plaintiff but for everyone who would be covered by the tariffs.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: just ruling for the plaintiff"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1636",
+    "text": "The court ruling places with Congress the authority to set tariffs or delegate control of tariffs to the President in specific situations.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/tariffs"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1639",
+    "text": "The ruling means that the Administration will need to go to Congress to set tariffs unless the ruling is overturned.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: unless the ruling is overturned"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1645",
+    "text": "A pause on the ruling will bring back the pre-ruling conditions (inference: allow tariffs to resume as before).",
+    "stage": "review_rejected",
+    "reason": "The inference marker is lost, a spurious will predicate remains, and inferred tariff resumption is asserted as a condition fact."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1646",
+    "text": "Footage of Trump speaking in Washington DC this afternoon (muted).",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Embedded predicate has no explicit or licensed controller: speaking"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1647",
+    "text": "Footage of Trump speaking on an airstrip on Sunday in Morristown, NJ wearing a Make America Great Again baseball cap (muted).",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/event"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1648",
+    "text": "Footage from Monday in Arlington, VA of Trump speaking at podium with JD Vance and Pete Hegseth behind him clapping (muted).",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: clapping"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1654",
+    "text": "The woman says that Trump's plan is to make America wealthy again.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to make America wealthy again"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1655",
+    "text": "She claims that Trump wants America to return to the late 19th century, when America had no income tax and state spending was instead funded by tariff revenue; Rachana says that this is a fantasy.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/America"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1657",
+    "text": "Stock markets around the world are reacting badly to Trump's decision and that it could tip the economy into a recession — an observation echoed in the video by b-roll of financial buildings and graphics of negative market reports.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/markets"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1658",
+    "text": "The video cuts back to Rachana, who shows a plot of U.S. tariff rates from 1900 to the present, claiming that if Trump fully implements his tariffs, the resulting rates will be higher than any U.S. tariffs in over 100 years.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c2/plot of U.S. tariff rates from 1900 to the present"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1659",
+    "text": "Trump announced a blanket 10% tariff on all of America's trading partners.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/recipients"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1664",
+    "text": "The EU tariff rate would be 20%.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1665",
+    "text": "The Chinese tariff rate would be 34%.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1666",
+    "text": "The Vietnamese tariff rate would be 46%.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1667",
+    "text": "Rachana says that these tariff rates explain why a company like Apple has suffered in the stock market, as Apple does a lot of its production in China and some in Vietnam.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/Apple"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1668",
+    "text": "A plot shows Apple's share price dropping by around 10 points in after hours between April 2 and April 3.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/drop"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1676",
+    "text": "America's trading partners will be thinking about how to engage with the White House and whether to retaliate against Trump's tariffs; these countries know that the more they retaliate, the more they hurt their own economies.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/they"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1680",
+    "text": "Prices could go up; extra tariffs for $800 or less but only if shipped via the international postal service.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unrepresented source content: 800, less"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1681",
+    "text": "An additional 30% tariff or $25 per item as of time of video but could go up to $50 per item by June 1, 2025.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: 25, item"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1682",
+    "text": "It will break down to .09 cents per day it will cost consumers.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: down"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1683",
+    "text": "Yale says it will cost consumers across the USA a minimum of 10B a year.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: 10B, year"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1695",
+    "text": "Shows image of Trump shaking Elon Musk's hand at some kind of rally (Elon Musk wearing SpaceX sweatshirt).",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1697",
+    "text": "Claims that Trump has said Canada is not a real country.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: SRL repeats ARG0 on made"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1705",
+    "text": "States that the best response to the crisis is to build domestic strength and assist people who will be most harmed by tariffs.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: to build domestic strength"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1706",
+    "text": "States this plan as right, fair, and the Canadian thing to do.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: plan, right"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1713",
+    "text": "5 larger dots overlay them with a +5 in yellow in the top right.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/+5"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1715",
+    "text": "They show the current House composition: Liberals hold 152 seats, Conservatives 120, Bloc Québécois 33, NDP 24, Greens 2, with 3 independents and 4 seats vacant.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/seats"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1717",
+    "text": "The speaker notes that 172 seats are required for a majority government, though a minority government can still form with fewer seats than that.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: 172"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1718",
+    "text": "Mark Carney has been Prime Minister for only about a week, after winning the Liberal leadership and after Justin Trudeau's resignation.",
+    "stage": "review_rejected",
+    "reason": "Same duplicated Carney text as859: repeated leadership/appointment events and opaque duration/after relations remain unresolved."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1719",
+    "text": "If the Liberals lose this election, Carney would become Canada's shortest-serving Prime Minister, a record currently held by Charles Tupper who served 69 days in 1896.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1724",
+    "text": "Shows news article from CBC news backing this up: Headline is Mark Carney to run for seat in Ottawa's Nepean riding. Subheading is: Previously held by Liberal MP Chandra Arya, it borders riding where Poilievre is seeking re-election; Posted Mar 22, 2025 at 8:19 PM EDT (5 hours ago).",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: Previously held by Liberal MP Chandra Arya, it borders riding where Poilievre is seeking re-election"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1726",
+    "text": "Shows picture of what the voter information service page looks like: can find electoral district, look at the map, profile, etc. with a place you can type your postal code and search ('Go') or a link you can click to find an electoral district without a postal code.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/you"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1727",
+    "text": "Requirements to vote are stated as being a Canadian citizen who is at least 18 years old on election day and able to provide proof of identity and address.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: vote"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1729",
+    "text": "Shows physical paper voting where folded up ballots are slipped into large boxes that say Elections Canada. The box in the image is #608A.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/photo"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1730",
+    "text": "The speaker notes that Canadians may vote on election day, at advance polls, or by mail-in ballot if they are outside the country, with more information coming on the Elections Canada website.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/options"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1731",
+    "text": "Shows images of mail in ballots with all items included: envelope for you to receive it, return envelope, ballot, and the instructions for voting.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/content"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1739",
+    "text": "Otherwise, importers would need to get a refund.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1747",
+    "text": "Title of video: 'Trump announces 10% baseline tariff, reciprocal tariff on some nations'.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: Trump announces 10% baseline tariff, reciprocal tariff on some nations"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1750",
+    "text": "USA will implement reciprocal tariffs; charge half of what the other countries have charged the USA.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: charge"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1751",
+    "text": "President Trump mentions he could have implemented a full reciprocal but chose to do only half.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: only"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1754",
+    "text": "China tariffs the USA 67%, USA will reciprocate with 34%; currency manipulation and trade barriers from China.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/China"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1757",
+    "text": "EU tariffs the USA 39%, USA will reciprocate with 20%.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/USA"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1759",
+    "text": "Taiwan, took USA computer chips and semiconductors says Trump, tariffs the USA 64%, USA will reciprocate with 32%.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: 64"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1761",
+    "text": "Trump blames people sitting at the oval office for making poor decisions.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Repeated events with embedded contexts need separate alignment."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1762",
+    "text": "Video cuts and shows Trump without chart talking about how disproportionate and unfair the numbers are.",
+    "stage": "review_rejected",
+    "reason": "Trump's talking content becomes a world-level numbers-are-unfair assertion; without-chart also lacks proper absence scope."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1763",
+    "text": "Trump says minimum baseline tariff of 10% to help rebuild the USA economy and prevent cheating; 10 year jail sentence for mishandling at the gate.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: 10"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1766",
+    "text": "Building housing Kantipur Publications in Kathmandu on fire.",
+    "stage": "review_rejected",
+    "reason": "Building housing a publisher becomes a building being constructed and for housing; construction is invented and the publisher relationship is weakened."
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1779",
+    "text": "Lots of damage, all windows broken, but fire seems mostly put out except for 1 room.",
+    "stage": "review_rejected",
+    "reason": "All windows is not a universal condition, and the one-room exception is asserted outside the original seems uncertainty."
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1780",
+    "text": "As part of the ongoing protests going on in Nepal which has already led to the resignation of the prime minister, the young protesters in Nepal are burning down politicians' houses.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/Nepal"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1782",
+    "text": "All politicians' houses on same block and all lit on fire: at least 5 houses burning seen.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/houses"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1796",
+    "text": "The resignation follows Monday's deadly unrest that killed 19 people and injured more than 100 others during demonstrations triggered by the government's social media ban.",
+    "stage": "review_rejected",
+    "reason": "During demonstrations is moved to demonstrations during unrest; killings/injuries are no longer bound to that demonstration interval."
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1800",
+    "text": "Close up footage of burned building on fire, can see the individual rooms, only 1 is actively on fire but they all look burned and have smoke billowing out from them.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: a burned building on fire"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1812",
+    "text": "Chants and singing in unknown language at 0:01.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: Singing"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1813",
+    "text": "Footage of large groups of people gathered outside of what appears to be a government building.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/location"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1819",
+    "text": "Protestors chant in unknown language at 0:34.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/chant"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1820",
+    "text": "Video focuses on one man wearing a Nepal Police vest that looks to be a bulletproof vest.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/vest"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1821",
+    "text": "Closer up footage of government building on fire with spectators watching and filming.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c1/government building on fire"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1824",
+    "text": "Footage of pedestrians and motorcyclists on street stopping to observe and film.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c1/pedestrians and motorcyclists on a street"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1826",
+    "text": "Two boys have someone take a picture of themselves on bridge where fire and smoke can be seen in back.",
+    "stage": "review_rejected",
+    "reason": "Themselves remains unresolved, picture-taking events are duplicated and the model chooses picture-background scope for the fire/smoke."
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1828",
+    "text": "Can hear lots of honking horns.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: hear lots of honking horns"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1829",
+    "text": "Footage of burned debris, overturned and burned cars.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Source sentence must precede its content."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1830",
+    "text": "The video depicts a map of Los Angeles and some of the surrounding area.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: some of the surrounding area"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1860",
+    "text": "In the second shot, an emergency vehicle is visible on the side of the road with emergency lights flashing.",
+    "stage": "review_rejected",
+    "reason": "The locations are restored, but the second shot is treated as an event location; depicted context and vehicle/lights association remain unresolved."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1864",
+    "text": "The third shot shows fire burning in the hills on either side of the road.",
+    "stage": "review_rejected",
+    "reason": "Burning stays in a generic complement with unspecified route, rather than typed visual depiction; either-side scope is also incomplete."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1873",
+    "text": "The video shows side-by-side footage of the PCH on April 21, 2020 (on the left; the first filming) and on January 23, 2025 (on the right; the second filming).",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: 2020"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1874",
+    "text": "In the earlier footage, the road is clear and the vegetation on the side of the road is healthy.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/road"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1875",
+    "text": "In the later footage, the road is covered in traffic cones and the vegetation looks burnt.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: covered in traffic cones"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1877",
+    "text": "The video shows stills of Pete's Seafood, a restaurant at Topanga Beach, which has survived many fires.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1878",
+    "text": "Some on-screen text, cut off, says '...experienced one of the worst wildfire sieges in its history. When the fires finally ended on November 5, 1993, there were four fatalities, over 1,200 structures had been destroyed, nearly 200,000 acres had been swept by 22 different fires — and the response cost/damage estimate approached $1 billion'.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/fires"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1885",
+    "text": "Homes starting at the block of 19000 PCH were destroyed by the fire.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: 19000"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1889",
+    "text": "There is a row of homes on the coast that was evidently untouched by the fire, seemingly due to a concrete rock wall across the street that may have protected them.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c5/street from the row of homes"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1894",
+    "text": "It is unclear how long it will be until people whose homes were destroyed in the fire will be allowed to rebuild them.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: SRL repeats ARG1 on destroyed"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1900",
+    "text": "The heatmap covers a period of 4 hours on January 7, 2025.",
+    "stage": "review_rejected",
+    "reason": "The rewrite adds explicit start/end claims and leaves4hours long as text; the required interval/duration equivalence is not established."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1905",
+    "text": "Different stills are shown, presumably from different time points.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique simple source sentence for the original media description."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1909",
+    "text": "On-screen text states fire grew from 2,921 acres to over 16,000 acres in less than 8 hours on January 8th, 2025.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/acres"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1913",
+    "text": "The before-to-after transitions show healthy, vibrant stretches of coast with homes scattering the beach.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Content must reuse the focal parent entity; do not assert an unrelated event."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1922",
+    "text": "A third shot, also taken from a car, shows fire burning in the hills on either side of the road.",
+    "stage": "review_rejected",
+    "reason": "The car viewpoint and locations remain, but burning stays a generic complement without visual depiction/either-side semantics."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1925",
+    "text": "There is a logo onscreen at the beginning of the video for the California Department of Forestry & Fire Protection.",
+    "stage": "review_rejected",
+    "reason": "Department association is assigned to the video rather than preserving the original logo-for-department relationship; the full organization name is also split."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1926",
+    "text": "There is a logo onscreen at the beginning of the video for the Los Angeles Fire Department.",
+    "stage": "review_rejected",
+    "reason": "The video-for-department assertion does not bind the displayed logo to that department."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1927",
+    "text": "There is a logo onscreen at the beginning of the video for the County of Los Angeles.",
+    "stage": "review_rejected",
+    "reason": "The video-for-County assertion does not bind the displayed logo to the County."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1928",
+    "text": "There is a logo onscreen at the beginning of the video for the Sheriff of Los Angeles County.",
+    "stage": "review_rejected",
+    "reason": "Related-to the Sheriff weakens and shifts the original logo-for relationship to the video."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1929",
+    "text": "There is a logo onscreen at the beginning of the video for the Los Angeles Police Department.",
+    "stage": "review_rejected",
+    "reason": "Video association with the Police Department is substituted for the logo's department relationship."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1930",
+    "text": "There is a logo onscreen at the beginning of the video for Cal Fire Team 2.",
+    "stage": "review_rejected",
+    "reason": "The Team2 relationship remains inside a video assertion/time string rather than bound to the logo; redundant onscreen events remain."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1934",
+    "text": "Jeremiah Wittwer stands in front of a map of some of the area surrounding Los Angeles affected by the fire.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A clausal argument has no attached SRL frame: some of the area surrounding Los Angeles"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1945",
+    "text": "V-LATs (Very Large Air Tankers) are assisting ground crews in combatting the fire in Mandeville Canyon.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c1/V-LATs"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1968",
+    "text": "The Palisades Fire is one of the most destructive in California's history.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Two compiled entities in one clause map to one original mention."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1976",
+    "text": "The man in the blue blazer is presumably a lawyer or member of law enforcement.",
+    "stage": "composition",
+    "reason": "No complete compiled result: Shared mentions have different compiled descriptions; merging could move modifiers across contexts."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1978",
+    "text": "Rinderknecht would drop off riders close to where the fire originated.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1979",
+    "text": "Rinderknecht lived near the place where the fire started at the time it broke out.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Explicit source clause predicates have no linked SRL frame: broke"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1989",
+    "text": "Rinderknecht's phone signal was attested seconds after the flames erupted.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: seconds"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1995",
+    "text": "The brush fire that Rinderknecht set was seemingly quickly extinguished by firefighters.",
+    "stage": "review_rejected",
+    "reason": "Seemingly is only an adverb string on an actual extinguish event, rather than uncertainty over whether it was extinguished."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1999",
+    "text": "Kenny Cooper explains that a holdover fire is 'deeply seeded in vegetation and roots'.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: holdover, fire"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_2002",
+    "text": "Investigators say that Rinderknecht was obsessed with fire.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: obsessed with fire"
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_2003",
+    "text": "Rinderknecht repeatedly listened to a French rap song about fire in the months leading up to the Lachman Fire.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Explicit source clause predicates have no linked SRL frame: leading"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2029",
+    "text": "Shi Yongxin led warrior monks on tours to perform Kung Fu abroad.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: to perform Kung Fu abroad"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2058",
+    "text": "The female reporter said she would ask the Abbot to address some of the public's doubts.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unresolved modal interpretation: would"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2068",
+    "text": "Shi Yongxin claims that as long as he has a clear conscience, he is not afraid of criticism.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: A finite clause remains inside a literal/entity instead of a linked clause."
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2078",
+    "text": "The third charge is accepting bribes as a non-state functionary.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: accepting bribes"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2095",
+    "text": "Shi Yongxin is described as simply a business executive.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: simply"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2096",
+    "text": "Tourists are charged a fee for practically everything they do inside the temple.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: practically"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2102",
+    "text": "After the Shaolin Temple movie exploded in popularity, people from all over the country flocked to the temple to visit.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: all"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2109",
+    "text": "'Qian Dan' refers to the expulsion of a monk from a monastery for violating religious vows.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: expulsion, monk, monastery"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2114",
+    "text": "Therefore, the expulsion of Shi Yongxin is considered invalid.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: expulsion, Shi, Yongxin"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2127",
+    "text": "Shi Yongxin deviated from the identity of a monk in running the temple.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c3/deviation"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2131",
+    "text": "At the time Shi Yongxin became abbot, the Shaolin Temple had only nine monks.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: became"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2132",
+    "text": "At the time Shi Yongxin became abbot, the temple buildings were in a state of disrepair.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Explicit source clause predicates have no linked SRL frame: became"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2139",
+    "text": "Shi Yongxin's business tactics earned him the nickname 'The CEO Abbot.'",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: CEO, Abbot"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2161",
+    "text": "Shi Yongxin has been described as acting more like a corporate CEO.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: more"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2166",
+    "text": "The video takes place on a large, open paved pier or terminal area.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Repeated original event has conflicting ARGM-LOC arguments."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2170",
+    "text": "Multiple people are seen struggling to move across the open area against the intense wind.",
+    "stage": "review_rejected",
+    "reason": "Extra wind/direction content is restored, but movement under struggling remains generic complement content rather than an explicit unachieved goal."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2173",
+    "text": "Some people crouch or sit on the ground for stability.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: A shared property is not anchored in the original text."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2176",
+    "text": "The wind speed appears sufficient to force adults to crawl.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Repeated events with embedded contexts need separate alignment."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2177",
+    "text": "The conditions appear dangerous to be outside in.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Repeated events with embedded contexts need separate alignment."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2185",
+    "text": "The highest rainfall accumulation of the day was in Meishan Township, Chiayi, which received 149.0 mm.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: No unique compiled noun head: c2/Meishan Township, Chiayi"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2191",
+    "text": "Northern regions are expected to experience high temperatures of 35°C to 36°C the following day before afternoon rain begins.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: between, 36°C"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2199",
+    "text": "A direct impact on Taiwan is considered unlikely.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: direct, impact, Taiwan"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2215",
+    "text": "Western and Northern Taiwan are expected to see only occasional afternoon thunderstorms over the weekend.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: only"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2221",
+    "text": "The woman claims the current time is 7:00 PM on July 21st in Vietnam time.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A time value or amount is not a counted group. Use a typed time/measurement literal or an amount property: PM"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2234",
+    "text": "Tourists decided to go out to sea because they had already paid.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: because they had already paid"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2240",
+    "text": "The narrator reports 49 people total were on board.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c2/number"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2243",
+    "text": "The narrator reports 4 people were still missing at the time of recording.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: missing"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2256",
+    "text": "The wind is making a whooshing sound in the microphone in Zhongshan footage.",
+    "stage": "review_rejected",
+    "reason": "The sound/microphone/location words remain, but footage is treated as a physical event location instead of recording context."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2257",
+    "text": "Severe flooding is shown indoors in Zhongshan, with tools submerged in a blue basket.",
+    "stage": "review_rejected",
+    "reason": "The tools/submerged event remains outside the flooding depiction context."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2258",
+    "text": "Severe flooding is shown outdoors in Zhongshan, with a truck submerged up to the middle of its tires.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: A clausal argument has no attached SRL frame: submerged up to the middle of its tires"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2261",
+    "text": "In Zhuhai, large ocean waves crash violently over the 'Fisher Girl' statue.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: SRL repeats obl on crash"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2262",
+    "text": "In Zhuhai, large ocean waves crash violently over the surrounding boardwalk near the 'Fisher Girl' statue.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: violently"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2269",
+    "text": "A tall palm tree is shown swaying wildly in the wind outside a balcony in Hong Kong.",
+    "stage": "review_rejected",
+    "reason": "Swaying remains in an unspecified generic complement instead of visual depiction."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2278",
+    "text": "Water erupts like geysers from sewer grates on the street in Dongguan.",
+    "stage": "review_rejected",
+    "reason": "A geyser-from-grates entity relation is introduced instead of clearly binding the water's source to the grates."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2283",
+    "text": "Typhoon Wipha made landfall with wind force level 12.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: 12"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2289",
+    "text": "Pedestrians are struggling to walk or stand in strong wind carrying a spray of water in Jiangmen.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/event"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2290",
+    "text": "Ceiling panels inside a shopping mall or large building collapse to the floor in Jiangmen.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c4/collapse"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2292",
+    "text": "Pedestrians run for cover from falling debris in Jiangmen.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: Original noun head is absent or ambiguous: c1/Pedestrians"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2297",
+    "text": "The video includes a 'Composite Reflectivity' radar loop overlaid on a map of the South China coast.",
+    "stage": "alignment",
+    "reason": "No complete compiled result: A shared property is not anchored in the original text."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2316",
+    "text": "Based on the trajectory shown, the coastal regions of Guangdong likely experienced severe heavy rainfall and high winds during landfall.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: the coastal regions of Guangdong likely experienced severe heavy rainfall and high winds"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2317",
+    "text": "Based on the trajectory shown, the coastal regions of Hainan likely experienced severe heavy rainfall and high winds during landfall.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: A clausal argument has no attached SRL frame: the coastal regions of Hainan likely experienced severe heavy rainfall and high winds during landfall"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2324",
+    "text": "The dashcam footage has a visible timestamp of 2025/07/20 09:54.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c2: Unrepresented source content: 2025/07/20"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2343",
+    "text": "A reporter in Zhuhai, Guangdong is shown wearing a white raincoat.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: reporter, Zhuhai"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2344",
+    "text": "The reporter in Zhuhai states he weighs 90kg but is struggling to remain standing due to the wind.",
+    "stage": "review_rejected",
+    "reason": "90kg is correctly typed, but he remains unresolved and it is unclear whether the struggle is reported content or narrator description."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2347",
+    "text": "The video is reported by 'China Blue News' (ZMC).",
+    "stage": "review_rejected",
+    "reason": "The parenthetical ZMC is forced into an alias statement, and the know-as form becomes belief content rather than a clear name/apposition relation."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2362",
+    "text": "The reporter notes that rainfall intensity in some of these areas may be historically rare for this time of year.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c1: Unrepresented source content: areas"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2371",
+    "text": "On-screen text at the end of the video names an upcoming storm as Typhoon No. 8 'Co-May.'",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unrepresented source content: Typhoon, No., 8"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2383",
+    "text": "At the Siu Sai Wan Complex at 15 Siu Sai Wan Road, external scaffolding loosened and dangled in mid-air.",
+    "stage": "review_rejected",
+    "reason": "The extra location is restored, but in-mid-air is incorrectly typed as time."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2428",
+    "text": "The forecast expected the signal to be lowered to Signal No. 3 after 7:00 PM.",
+    "stage": "component_compilation",
+    "reason": "No complete compiled result: c3: Unrepresented source content: No., 3"
+  }
+]

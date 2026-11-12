@@ -1,0 +1,22 @@
+{
+  "jobs": [
+    {
+      "job_id": "1226788",
+      "state": "COMPLETED",
+      "allocated_seconds": 133,
+      "requests": 418,
+      "used_in_final": false
+    },
+    {
+      "job_id": "1226791",
+      "state": "COMPLETED",
+      "allocated_seconds": 134,
+      "requests": 419,
+      "used_in_final": true
+    }
+  ],
+  "gpu": "one NVIDIA H10080GB per job, sequential; both released",
+  "final_generation_seconds": 84.29280396178365,
+  "max_input_tokens": 4177,
+  "max_output_tokens": 250
+}
