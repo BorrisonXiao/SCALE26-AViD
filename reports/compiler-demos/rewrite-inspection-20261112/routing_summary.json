@@ -1,0 +1,21 @@
+{
+  "total": 40,
+  "strict_failures": 31,
+  "direct_passes_skipped": 9,
+  "conditions": {
+    "initial": {
+      "eligible": 31,
+      "reviewed_recoveries": 1,
+      "rejected": 30,
+      "critical_proposals": 2,
+      "proposed_diagnostic_changes": 1
+    },
+    "revised": {
+      "eligible": 31,
+      "reviewed_recoveries": 3,
+      "rejected": 28,
+      "critical_proposals": 9,
+      "proposed_diagnostic_changes": 2
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "steps": [
     {
       "id": 6,
@@ -335,7 +335,7 @@
           "done": false
         }
       ],
-      "note": "Two fixed prompts on the same40 cases: faithful target recoveries1/24 then2/24; revised guard recovery1, proposed control regressions2/8. All80 triples reviewed by the compiler-author assistant. Full original replay2375 exact; three reviewed replacements give2105 generated/1927 content-check passes. No corpus-wide rewrite, media inference or new learning/inference experiment."
+      "note": "Two fixed prompts on the same40 cases: faithful target recoveries1/24 then2/24; revised guard recovery1, proposed control regressions2/8. All80 triples reviewed by the compiler-author assistant. Full original replay2375 exact; three reviewed replacements give2105 generated/1927 content-check passes. No corpus-wide rewrite, media inference or new learning/inference experiment.12November: generation runner now enforces failure-only routing before model loading (31 eligible/9 skipped in saved pilot); exact request/model/failure inspection added, no new model run."
     },
     {
       "id": 8,
@@ -492,7 +492,7 @@
   },
   "rewrite_fallback": {
     "status": "implemented experimental pilot; manual review required; automatic expansion not enabled",
-    "policy": "Keep original claims and compiler frozen; preserve exact names/quotes and false facts. Both40-case prompt conditions fail the predeclared gates. Do not expand automatically or start new relation training based on generated counts."
+    "policy": "Direct compilation first. Rewrite only unsupported strict results, including rejected diagnostic candidates; skip every compiled result before model loading. Historical passing probes remain separate. Both40-case prompt conditions still fail recovery gates; no automatic expansion or new training."
   },
   "logical_form_run": {
     "source_path": "exp/probabilistic_verification/logical_form_20261028",

@@ -1,8 +1,23 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "timezone": "America/New_York",
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
+    {
+      "date": "2026-11-12",
+      "items": [
+        {
+          "text": "Enforced direct compilation before model loading:31 historical failures eligible,9 direct passes skipped. A separate all-passing input exits with zero model requests. No new generation or compiler change.",
+          "href": "#rewrite-routing",
+          "label": "Failure-only routing"
+        },
+        {
+          "text": "Added five failed examples and exact saved prompts, raw responses, model settings and rejection reasons for both historical conditions. Passing diagnostic probes are explicitly outside the fallback path.",
+          "href": "#rewrite-failed-examples",
+          "label": "Failures, prompts and model"
+        }
+      ]
+    },
     {
       "date": "2026-11-11",
       "items": [

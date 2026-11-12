@@ -1,0 +1,369 @@
+{
+  "input_sha256": "92c0647a4206df7864b5812e2ccd8ef2ec5f20aa084c18a63e3ddc97b4ca1135",
+  "total": 40,
+  "planned_rewrite_requests": 31,
+  "direct_passes_skipped": 9,
+  "model_called": false,
+  "routes": [
+    {
+      "claim_id": "Txf2EdqOg1SQ_2185",
+      "direct_status": "unsupported",
+      "direct_code": "duplicate_role",
+      "direct_reason": "SRL repeats ARG0 on received",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2257",
+      "direct_status": "unsupported",
+      "direct_code": "duplicate_role",
+      "direct_reason": "SRL repeats ARGM-LOC on shown",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1860",
+      "direct_status": "unsupported",
+      "direct_code": "duplicate_role",
+      "direct_reason": "SRL repeats ARGM-LOC on is",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "direct_status": "unsupported",
+      "direct_code": "duplicate_role",
+      "direct_reason": "SRL repeats ARG0 on survived",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "direct_status": "unsupported",
+      "direct_code": "media_modifier",
+      "direct_reason": "A media-description modifier contains an unresolved clause.",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1587",
+      "direct_status": "unsupported",
+      "direct_code": "media_modifier",
+      "direct_reason": "A media-description modifier contains an unresolved clause.",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_750",
+      "direct_status": "unsupported",
+      "direct_code": "missing_predicate",
+      "direct_reason": "Explicit source clause predicates have no linked SRL frame: clearing",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1636",
+      "direct_status": "unsupported",
+      "direct_code": "missing_srl",
+      "direct_reason": "No usable SRL frame or unambiguous nominal root.",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1927",
+      "direct_status": "unsupported",
+      "direct_code": "predicate_type",
+      "direct_reason": "Predicate position is not a lexical/state predicate: onscreen",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1354",
+      "direct_status": "unsupported",
+      "direct_code": "unresolved_clause",
+      "direct_reason": "A clausal argument has no attached SRL frame: to extract information from samples",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1263",
+      "direct_status": "unsupported",
+      "direct_code": "unresolved_controller",
+      "direct_reason": "Embedded predicate has no explicit or licensed controller: relay",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1826",
+      "direct_status": "unsupported",
+      "direct_code": "unresolved_clause",
+      "direct_reason": "A clausal argument has no attached SRL frame: a picture of themselves on bridge where fire and smoke can be seen in back",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "T2EE72iNELEs_192",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: beginning, velocity, 17828, mph",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: physical, integrity, power, lines",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: Robot, race",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: three",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: 2",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1035",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: 7.7",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: half",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: second",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: three",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: fire",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2350",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: 25, h",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "direct_status": "unsupported",
+      "direct_code": "coverage_omission",
+      "direct_reason": "Unrepresented source content: Guangdong",
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_789",
+      "direct_status": "compiled",
+      "direct_code": null,
+      "direct_reason": null,
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": false,
+      "action": "keep_direct_result"
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1366",
+      "direct_status": "compiled",
+      "direct_code": null,
+      "direct_reason": null,
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": false,
+      "action": "keep_direct_result"
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_782",
+      "direct_status": "compiled",
+      "direct_code": null,
+      "direct_reason": null,
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": false,
+      "action": "keep_direct_result"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1690",
+      "direct_status": "compiled",
+      "direct_code": null,
+      "direct_reason": null,
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": false,
+      "action": "keep_direct_result"
+    },
+    {
+      "claim_id": "TInVWzp25aIM_18",
+      "direct_status": "compiled",
+      "direct_code": null,
+      "direct_reason": null,
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": false,
+      "action": "keep_direct_result"
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1805",
+      "direct_status": "compiled",
+      "direct_code": null,
+      "direct_reason": null,
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": false,
+      "action": "keep_direct_result"
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1079",
+      "direct_status": "compiled",
+      "direct_code": null,
+      "direct_reason": null,
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": false,
+      "action": "keep_direct_result"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1955",
+      "direct_status": "compiled",
+      "direct_code": null,
+      "direct_reason": null,
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": false,
+      "action": "keep_direct_result"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1916",
+      "direct_status": "unsupported",
+      "direct_code": "negative_quantifier",
+      "direct_reason": "A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1901",
+      "direct_status": "unsupported",
+      "direct_code": "negative_quantifier",
+      "direct_reason": "A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_921",
+      "direct_status": "unsupported",
+      "direct_code": "modal_scope",
+      "direct_reason": "Unresolved modal interpretation: would",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_820",
+      "direct_status": "unsupported",
+      "direct_code": "threshold_scope",
+      "direct_reason": "Enough-NP needs one explicit infinitival sufficiency goal.",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "direct_status": "unsupported",
+      "direct_code": "polarity_omission",
+      "direct_reason": "A source negation is absent from the logical operators. Preserve the intended negated clause.",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_823",
+      "direct_status": "unsupported",
+      "direct_code": "polarity_omission",
+      "direct_reason": "A source negation is absent from the logical operators. Preserve the intended negated clause.",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_803",
+      "direct_status": "compiled",
+      "direct_code": null,
+      "direct_reason": null,
+      "has_diagnostic_candidate": true,
+      "rewrite_eligible": false,
+      "action": "keep_direct_result"
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "direct_status": "unsupported",
+      "direct_code": "modal_scope",
+      "direct_reason": "Unresolved modal interpretation: would",
+      "has_diagnostic_candidate": false,
+      "rewrite_eligible": true,
+      "action": "request_rewrite"
+    }
+  ]
+}
