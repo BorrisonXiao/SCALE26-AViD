@@ -1,0 +1,15 @@
+{
+  "condition_cases": 316,
+  "attempts": 765,
+  "exclusions": 394,
+  "retained_viewer": 1981,
+  "recoveries_viewer": 9,
+  "main_reports": 2,
+  "views": 5,
+  "old_repairs": 13,
+  "old_components": 47,
+  "old_model_cases": 449,
+  "old_demos": 41,
+  "mobile_overflow": false,
+  "page_errors": []
+}

@@ -1,0 +1,105 @@
+{
+  "jobs": [
+    {
+      "JobID": "1228872",
+      "State": "CANCELLED by 1906",
+      "Start": "2026-11-12T23:50:53",
+      "End": "2026-11-12T23:57:51",
+      "Elapsed": "00:06:58",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    },
+    {
+      "JobID": "1228879",
+      "State": "FAILED",
+      "Start": "2026-11-12T23:57:53",
+      "End": "2026-11-12T23:58:32",
+      "Elapsed": "00:00:39",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    },
+    {
+      "JobID": "1228882",
+      "State": "COMPLETED",
+      "Start": "2026-11-12T23:59:23",
+      "End": "2026-11-13T00:07:02",
+      "Elapsed": "00:07:39",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    },
+    {
+      "JobID": "1228889",
+      "State": "COMPLETED",
+      "Start": "2026-11-13T00:04:53",
+      "End": "2026-11-13T00:08:11",
+      "Elapsed": "00:03:18",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    },
+    {
+      "JobID": "1228890",
+      "State": "COMPLETED",
+      "Start": "2026-11-13T00:12:53",
+      "End": "2026-11-13T00:14:47",
+      "Elapsed": "00:01:54",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    },
+    {
+      "JobID": "1228891",
+      "State": "COMPLETED",
+      "Start": "2026-11-13T00:12:53",
+      "End": "2026-11-13T00:18:16",
+      "Elapsed": "00:05:23",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    },
+    {
+      "JobID": "1228903",
+      "State": "COMPLETED",
+      "Start": "2026-11-13T00:28:23",
+      "End": "2026-11-13T00:36:05",
+      "Elapsed": "00:07:42",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    },
+    {
+      "JobID": "1228928",
+      "State": "COMPLETED",
+      "Start": "2026-11-13T00:53:23",
+      "End": "2026-11-13T01:00:55",
+      "Elapsed": "00:07:32",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    },
+    {
+      "JobID": "1228930",
+      "State": "FAILED",
+      "Start": "2026-11-13T01:06:23",
+      "End": "2026-11-13T01:07:25",
+      "Elapsed": "00:01:02",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    },
+    {
+      "JobID": "1228932",
+      "State": "CANCELLED by 1906",
+      "Start": "None",
+      "End": "2026-11-13T01:26:47",
+      "Elapsed": "00:00:00",
+      "AllocTRES": ""
+    },
+    {
+      "JobID": "1228933",
+      "State": "COMPLETED",
+      "Start": "2026-11-13T01:23:25",
+      "End": "2026-11-13T01:24:06",
+      "Elapsed": "00:00:41",
+      "AllocTRES": "billing=536,cpu=2,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1"
+    },
+    {
+      "JobID": "1228934",
+      "State": "COMPLETED",
+      "Start": "2026-11-13T01:26:54",
+      "End": "2026-11-13T01:46:30",
+      "Elapsed": "00:19:36",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    }
+  ],
+  "all_final": true,
+  "final_job": "1228934",
+  "final_unique_requests": 605,
+  "final_hardware": "One H100 80GB",
+  "note": "Includes excluded development attempts and failed startups; no resources remain allocated. Final typed-edit first156 + feedback117+102 + generic117+113. Peak at most2 GPUs, userlimit8; no media inference."
+}

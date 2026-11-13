@@ -652,9 +652,29 @@
         "Compared fixed24 strict failures with conservative30B and revised8B prompts and at most one error retry; separate direct-form diagnostics use12 cases.",
         "Next: improve reference/source composition and evaluate one fixed model condition on remaining strict failures; training stays deferred."
       ]
+    },
+    {
+      "id": 27,
+      "title": "Test typed field edits with compiler feedback and a generic-retry control",
+      "status": "completed",
+      "items": [
+        "All158 available failed drafts tested, sharing one first attempt and up to2 retries. Passing originals never queried;218 no-draft failures remain ineligible.",
+        "Reviewed63 unique complete programs: feedback9 additions, generic8;605 unique model requests. All1972 earlier retained programs unchanged.",
+        "466tests pass;158-case CPU replay exact. Currentpool1981/2375;394excluded; semantic correctness still limits automatic acceptance."
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Keep partial forms and improve structural corrections before training",
+      "status": "planned",
+      "items": [
+        "Keep partial forms after direct errors to expose218 no-draft failures to bounded editing without inventing events.",
+        "Check shared participants, scope, number types and noun attachments together; parser labels are not gold.",
+        "Compare one bounded structural method against generic retry on fixed failures, then inspect claims from new source videos."
+      ]
     }
   ],
-  "intro": "Compiler remains the priority. Repairs rerun on all2375 originals and449 cached cases:1983 direct automatic passes;1972 retained after development review (83.03%);403 excluded. Nine new approved outputs; no empirical training. Fixed24-case model pilots remain separate.",
+  "intro": "Compiler remains the priority. Reruns on2375 originals/449 cached cases are unchanged. All158 strict failures with drafts tested with typed field edits: feedback61 complete/9 retained, generic46/8. Current retained pool1981/2375(83.41%);394excluded. One new context-dependent mention is not a complete event. No empirical training.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -707,5 +727,6 @@
   "full_rewrite_run": "exp/probabilistic_verification/rewrite_all_20261112",
   "semantic_components_run": "exp/probabilistic_verification/semantic_components_20261112",
   "compiler_readiness_run": "exp/probabilistic_verification/compiler_readiness_20261112",
-  "compiler_repairs_run": "exp/probabilistic_verification/compiler_repairs_20261112"
+  "compiler_repairs_run": "exp/probabilistic_verification/compiler_repairs_20261112",
+  "compiler_feedback_run": "exp/probabilistic_verification/compiler_feedback_20261112"
 }

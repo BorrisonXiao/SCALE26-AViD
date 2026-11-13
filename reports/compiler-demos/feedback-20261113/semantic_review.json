@@ -1,0 +1,2534 @@
+{
+  "provenance": "Compiler-author development review of every unique complete final edit program; identical program/form judgments reused by hash. Every earlier retained program remains unchanged.",
+  "unique_programs": 63,
+  "cases": [
+    {
+      "condition": "edits_generic",
+      "claim_id": "TjHepwuhkYFA_1016",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TInVWzp25aIM_11",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TInVWzp25aIM_48",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Restores the two source-attached modifiers on Roads; the drivable condition and for-now restriction remain. No extra event is introduced.",
+      "artifact_sha256": "7547262a31233a2b685e007dd074e8de72b32326f865367a5746b147aba21a3c"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TInVWzp25aIM_79",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Restores inland on the roads. The existential group reading of some roads, drivable condition and for-now restriction remain.",
+      "artifact_sha256": "e0130b495e466944dc4ad3feb195f1496b1c624114abdc742ed83fb4f7aedae2"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TbJqMFkNxARY_164",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Preserves container spill, ship Mississippi and the from relation. Duplicate source-attached properties are redundant; the extra nsubj uses the same spill referent.",
+      "artifact_sha256": "c4e66cffb9fe05e8c6a41c1ddae3013a592850d841989c687c026e0840edcd07"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2EE72iNELEs_190",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2EE72iNELEs_192",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "acba03285a3d19b589d1a6e4baa738ffb2fbc720696123546ca393031a26fcba"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "9ed9029c5f6ef6ad2e7528faeba9962b157a5cc01ddc4ce86382cb54cdc2c633"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Tg0UxWYuPeJ0_342",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The signal is made the object of start, and sparring is independently asserted. Giving a signal does not entail that the robots actually start sparring.",
+      "artifact_sha256": "639f72928718642231c6a53302a15f21d064b3372479dddaa65dee591ec19580"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The useful lane-three repair also adds nummod(lane, Robot), an unsupported extra relationship. A correct earlier whole-form variant is not this program.",
+      "artifact_sha256": "a0028c081f8ac3bd2ece93c644b57814f284b7b6a3cf2dd5d668e2a9bfb82ed7"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The track is made a core participant of race, and running is attached to race rather than track. Adding Robot does not repair the whole program.",
+      "artifact_sha256": "328fc681354ce7964d21487904c4d24bb342d2fdf30705b671fa7f2afa52b76f"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Tg0UxWYuPeJ0_380",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Two named sources are collapsed into Weibo with People/daily modifiers; their separate identities and coordination are lost.",
+      "artifact_sha256": "d6a69befa3d2996a2deb8967d3ac68ad971bd8d5dd04ff53d2a6580e17ec63fa"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Tg0UxWYuPeJ0_395",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "11fdfe02216396fedb4fca1ad764320efdcba22a1e8652f32c297e8d0dc299a6"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Tg0UxWYuPeJ0_407",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "74d4716f42e0003afd3f7e76aac0e4b6846f41511aedc72a769be14eb9d6a9a7"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The actor is a sweep entity modified by Robot 1, rather than Robot 1 performing a sweep kick. The source dependency parse is itself wrong here.",
+      "artifact_sha256": "200c596216de0446b86cbd91d2d4bc2199421bec57575983f8e4805fab90aa46"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Tg0UxWYuPeJ0_446",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "31db40cbb7744445b91ff36112a1066a368c310cb63a9d40840975ee42eb8cf2"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Tg0UxWYuPeJ0_447",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Retained only as a context-dependent mention: Beijing with recently, with the runtime requirement for interpreting a standalone mention preserved. No visit, event or complete factual proposition is invented; this is not training eligibility.",
+      "artifact_sha256": "734fc77c85bbf708a7b2e4b67998d7db4d8c874b94060d0673bd09fd6677dd63"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFOEIehBwT8Q_489",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Preserves violent clashes in Mexico and their eruption during anti-government protests. The quoted headline content is compiled without inventing a speaker; no media source or world truth is certified.",
+      "artifact_sha256": "3ed5fabe2c51500bd4d1de4cf85d5673525c71673b72bbd2f62cd06264d64ea7"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFOEIehBwT8Q_495",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Nov and 15 are independent modifiers of Mexico, rather than a jointly represented date or preserved caption. Their intended temporal relationship is unresolved.",
+      "artifact_sha256": "91d8d2864dd224e340a7cf2784bc3341652e6745e1ebfb1465e502f6c963755d"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFOEIehBwT8Q_496",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFOEIehBwT8Q_497",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFOEIehBwT8Q_517",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Sheinbaum is made the promoter of the movement. The colon attributes a statement to her; it does not say she promoted the movement.",
+      "artifact_sha256": "d32cae9e7626dc258c8ca1abd78133ea1d1b950d4c06cb58070d61f7fad38d29"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQKCK6-tRaoE_662",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d96499d443c734738f78dfea68137d8b6e29aa0ddb2b776bdccd15d9fb749885"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TMrQshDs8aH0_732",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Load has the truck as its theme and no shared chair participant. Readiness and stacking are also copied into opaque modifiers rather than correctly bound clauses.",
+      "artifact_sha256": "5455ef3cdd3baaf83af4812ea08d5c4628dc002aecc084f61dc52095580428ad"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TMrQshDs8aH0_733",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TMrQshDs8aH0_745",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The purpose get-around clause lacks the car as its shared subject. Ownership by the drive event does not enforce that participant identity.",
+      "artifact_sha256": "8cdc11de4215613033f231809ac1afe8621cbfb816af5084b75b9753499a2538"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T3HTSBW42QaY_779",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The reminder-about-safety relation is present, but an additional about-safety manner relation is imposed on have. The extra attachment is not licensed.",
+      "artifact_sha256": "8dac7dfc88dea9d308ef32d344ebfca0e2a529e899dfb0b0223fe008f5160b11"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T1JQ-aG78Zuc_791",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ca51b2f1a6cbfaaefee530f7deae231b797265dcb2f91ff1ea9726fdd538ea43"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_807",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_814",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_821",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "5299c715f96bc86ad41db87881d993d600fee5e59a2306ed23bb4b3d0982cc0e"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_822",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "331c48ab31655d9ae7e9c8c11511d4e2c288832a92647c9678e6e75216d846c5"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_829",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The note and electoral riding are linked by mutual apposition, leaving identity versus note content unresolved. Not retained without a clear topic/content relation.",
+      "artifact_sha256": "b97029555798d718c9cd99a8b851860de0d3066d99126d9af49735a6b12ba8ff"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_838",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "a0d1d539ab55a00e13b50a6905ab546d493cba5fe5513b26adbfb17834013daa"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_856",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ce4bffeb7e6d6b45fa4d73fb728382adad8eccd006e8e9a855214b433336a294"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_859",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_878",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Claims is a nominal group with a relative clause rather than the reporting predicate, and well is manner rather than degree on over 20.",
+      "artifact_sha256": "a63752d81d1635038ab039089cef8fba18b2e422e7cde9548aa35b17266b04d3"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_889",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_893",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "b00709e9209d4a9d58bef35f0b8e3cb2a2c05da004578bd75d7e8533d2e06ddc"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_908",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_914",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "62c3e02e0d91dc3b027847ad48d2ca45849cf791406ea9a358b76081577c102c"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_915",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_926",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_930",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_933",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_941",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_944",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "478d83503917d63bc2137f4220132e4ff17c55b9945d1dcbfc513eda7231032e"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_947",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_948",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_951",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_956",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_957",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_966",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "879448a6b0338ed65ea22c975d82e9d01e9a866c4dd18ef554a38009703eb5c9"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_984",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Unaware/supporters is attached as apposition to celebration, while final and yet become separate predicates. The parenthetical meaning is not preserved.",
+      "artifact_sha256": "2816306d3082e36288c1587aa13ea90ec4c2497fd6b5f94bf1cb5573b6c31361"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_991",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_994",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The negative seat change is replaced by an exact count on Bloc Quebecois. Minus 11 is not 11 party referents.",
+      "artifact_sha256": "94f250d2320696008ca1b44f394635a57b055d3c9a43080f789886939bb5c8c6"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TQEmEycTI0RQ_995",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The negative seat change is replaced by an exact count on Conservatives. Minus 5 is not a positive count of party referents.",
+      "artifact_sha256": "941c0e0fd1fad3047d21ed6e3c2afea5da86e9cf7d4324062ba888337e400f0f"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TjHepwuhkYFA_997",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TjHepwuhkYFA_999",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "c41d043e2c0839c2dd867ea61f44dd1b5cc6d56dc4a339c377a910c537207317"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TjHepwuhkYFA_1022",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Adds the source-quoted storyful modifier to logo while preserving appears-in-video. This is a nominal text label, not an invented independent event.",
+      "artifact_sha256": "af0edfd119099dd1feae7b9b7d1f4d5ab39da4deda80bbe59178a3a9970323bb"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TjHepwuhkYFA_1047",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TjHepwuhkYFA_1066",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d4f18c8a51f4cf59771c151cead2813cf6b1614ba4471f8ff21ba8781f3d051d"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1163",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Preserves Firefly choosing a route and restores more/scenic on that route. The comparative description remains attached to the selected object.",
+      "artifact_sha256": "ccb72255c79b255d8515536fc5a79faf61d98ef17a7842101c7c627869300529"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1179",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "830e59f189111b2048fb011a77b0c1acb4c6332a2e5cdb32dd50a345a43c64ea"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1184",
+      "compiled": true,
+      "faithful": false,
+      "reason": "98 meters is attached to target by a generic nmod, not a distance from the redirect to the original target.",
+      "artifact_sha256": "54c09d8ba3d750befc3988a12e93dc707f6387c1e1f649991335e5342d3ef651"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1191",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1192",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Firefly is not bound to the first-commercial-company complement. Completing the landing is treated as purpose rather than the restrictive condition on first company.",
+      "artifact_sha256": "c31b6d05223d4cb9b28e064c3766ef5aa311679837c1ac30b48bfbc69db66892"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1196",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "08197ebaf424d13ef003cff7c72612da9c1dd066e1ab5af76e4d16d126726866"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1212",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "f765c1e4304790e0284b36b4083c0196ff4a41c7ff64e1d58248d77bf30bb57d"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "44326139846b0a8da30af1c88bb4610901a985594889d1db6460858ddc92212c"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1231",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Studying regolith/behavior and the solar-wind interaction are conjoined as separate conditions. The interaction is not represented as the third object of study under the suitability description.",
+      "artifact_sha256": "3ef6f0e2310173a29c0c7a2aa6f1bb756b166e71bc692c36123efef7c4d480af"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1233",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "97dac5f78d6f17e51141c019e21b3a31eb7f290704278bfcb91b93f6e8264333"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1234",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1248",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "abea7adab9fac801734338095a86ec57704bb08d6f37a1508bbbdd0dbe90b2a1"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1249",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d4203e4d7c92093e649f9e3b87e24304107fd527f7b4adfca676ec9683d15443"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1256",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "05f2202b3d5202ee9d0caf6af3c0d39358bf49c5bd4e62f1ea761542dd8ed52a"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1268",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1298",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The over-one-year duration is lost; little is attached to take and design rather than the amount over a year.",
+      "artifact_sha256": "45c248dac68da63255712d6f9ce71180ab7251ce50cc61020b9e091a09e4d3c2"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "24901ca7eb7103d4c49bac7c171e6ad956838c1ed019c49b27eab58845b152f9"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1437",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "T2G_ACMxR_I4_1464",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgPh_fzHTCm4_1491",
+      "compiled": true,
+      "faithful": false,
+      "reason": "2.5 becomes a count of values, while values are made to depict the evening. The measured value and time relationship are wrong.",
+      "artifact_sha256": "3b485e1b3934a62af475a9774a1fbfc0592519ad4e32f420cdd63a57e1cecfc1"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgPh_fzHTCm4_1497",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The where clause is an opaque string plus an independent spin-exists event. No shared location binds the color fills to atmospheric spin.",
+      "artifact_sha256": "be02346078bc8804c6d839d9abaed60633358843308b5ff713f8656f906ebdd0"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1544",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1549",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Laws is missing as the object of pass and instead becomes the agent of delegate. Certain is also attached to president rather than instances.",
+      "artifact_sha256": "b797c5558be05267615c226d6bd68394126bb7fe3cd358293d5443213ee9e671"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1556",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1574",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "eb34309d18e34612df45f89fd16eb587f6d33693b0d4bf6cc8a4316a8f5a9491"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1582",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ff7eab7cf9187183c7c70b6e9fd4fa66a35dae0103625ab7a735217ccfbc9a31"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1588",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "2000cda96d26957e3254cb0a62bfca221f91418dc6644a81d08d185148a0a6d8"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1602",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1605",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "b6223c887bb56b16160b2270f341c8955433f31842129613176c463f2fe8b5e3"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1606",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "3919284c2cd649ad6fc68d4572b07fdaca2d64aeaba15eb1d05f5053b76dfc64"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1607",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "2d561c3ca0c8630e5b5111715781a2211564a60d95a1fbe62fadd78a52aad97b"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1608",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1609",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1610",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1624",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1632",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The title is split into a self-referential In relation and an event location. Co-Editor-In-Chief is not a location inside itself.",
+      "artifact_sha256": "ae1ecde67690e3b57aa5290ee67aabb7db1d9dff9970dfd3f26ad04a0e3f4393"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1645",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "e3dd9a2b76f49bb3d55e29ecea13c2156d9749ae6542e0d1b976ca6cf0610572"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1648",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Him is made the clapping actor and the two named clappers remain an opaque phrase. Muted is attached to clapping; the depiction and behind relation are not correctly bound.",
+      "artifact_sha256": "612d81bc8477cc36268cc84721f66c292a08b6b9127a0c8334388734e60ae8ac"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1659",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "7fa4d6ab02f37c05c40071c595153757d5c00823fe9e35f97fa7dd22be68e41f"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "c4c8d06c36a0c1f6f0d5d964d6632fc1d14a318538a01c233a09ab24d22cde2f"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1680",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1681",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "1f81d2ba18208e08b44ccc136b7b9025ca625d184cee99c789ac017262988f3f"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1683",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1697",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "a0d1d539ab55a00e13b50a6905ab546d493cba5fe5513b26adbfb17834013daa"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1715",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ce4bffeb7e6d6b45fa4d73fb728382adad8eccd006e8e9a855214b433336a294"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1718",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "986e2a638f1f0514b35afcd7fa9f92ae1308fb30f2c2c90806a182180e62837b"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1747",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The video title is turned into Trump announcing a partial quote through speech_assertion. Title content is not evidence of an actual speech event, and Trump is a text literal rather than the source participant.",
+      "artifact_sha256": "b4c314720f98666a1d4d90e00bd29cecb68cfd0644c35ebeea62640afabc657f"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1751",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "b7590d05f4529009c31415c84902b22051cb46d198b533a93f3bb5d85407b9e1"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1754",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1757",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1759",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "fa039decf970ed104db78b354ffda2585cb897e004cc20be563319ba1e44b2ca"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1762",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The content of talking is independently asserted as numbers being unfair, and cutting is only a manner adjunct. The statement/depiction distinction is lost.",
+      "artifact_sha256": "ff3cc810888e54dd24090a774757059d34b63cedeca383635baf85daeb6f4191"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TFgw4IaR9R8s_1763",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "95631e101d5f38d99450d36383063337f1fbe22621722ba181358b1b0dbbb044"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TW4OYA3RN-Hw_1779",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Lots of damage is attached to windows and breaking, and all windows loses its universal restriction. Later fire scope does not repair these errors.",
+      "artifact_sha256": "f9fdf3b97fd025f9dea86aae8aa976d93b70604e66a131ccd0dc2c1ca968f665"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TW4OYA3RN-Hw_1800",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "7a5a1835c5c1ec39dc8f0a08a8ac008bc8dd9b8a05f1901e697a98f5481b0bae"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1830",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "f05ce537a3008e17501b1b691efe74125980865c7b85a36ebdbdf50a10e54510"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1831",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1873",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1874",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Earlier modifies the road rather than footage, and an unsupported road-of-itself relation remains. The intended footage restriction is not faithfully represented.",
+      "artifact_sha256": "a0c33464b5d7ccbaeed31b949c1e22caf7265c924817a5c085f58832bd9e238d"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1875",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "af8a031a2a015c9c0f0812e49129af8476ba1e5b087407eab30ab291eb60fad2"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1885",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1900",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Duration/date objects are embedded as JSON strings inside generic properties. The four-hour period and January date are not represented through their typed temporal fields.",
+      "artifact_sha256": "088429599a520734d970ac57c88a8de973f603a2329e1d136c8e631103ee53ef"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1905",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "9df5551278f1aadc02b957ad31711514c57601ecc160e1d0002ec343d02a033d"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1908",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "a0216db3c1d3c09bd2ba60a49bab4506fcb37f70a2a3f77cc1ddc870fd82683b"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1909",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1913",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "5df7211fe95f1fa74c83fed0f7db4a379be2e1c5e0242b07cceb8602dfe07310"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1924",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1968",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The Fire is equated with California history; one-of-the-most-destructive is changed to a count/property rather than a comparison set.",
+      "artifact_sha256": "8bb5cb7584c617ecde569ca9a943eba05aeef206001eb4a3bfe06804b84e818f"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1989",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Seconds is shared as a time entity of both events, not the delay between them, and two temporal propositions reuse the event identifier with different arguments.",
+      "artifact_sha256": "ba3774bb280e2e03adb06feb79a6949b39681405e0a6405c6d6afe882923d4f7"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1995",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TgR_u37mCoQ4_1999",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The quote is retained, but the holdover fire is connected to Kenny Cooper by mod rather than as the subject of the quoted description. Attribution alone does not preserve what the quote describes.",
+      "artifact_sha256": "f76a1e2b6b39e082de2cc401b8abe90bd00afe2cde1b5344b2d742c7a375a926"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TzzhcBIczf_M_2068",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TzzhcBIczf_M_2078",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "6a20e03f19f618894fadbc67dc44e10699f53406436b669c311ad83e1bab3f64"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TzzhcBIczf_M_2095",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Simply is compiled as the manner of describing, leaving its just-a-business-executive focus unresolved. The role repair alone does not establish the intended whole meaning.",
+      "artifact_sha256": "b15a7ea36c304e5a380a11770d0c318bf20b9d03fa77d9927028c0e09d555a7f"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TzzhcBIczf_M_2096",
+      "compiled": true,
+      "faithful": false,
+      "reason": "They and Tourists are independent referents, so the charge can be linked to another group doing the activities. The required shared participant is not encoded.",
+      "artifact_sha256": "798da3cbf98a00e9a7dc9f0fbff505fecf271cf59a0a409a89b0e7ddb43f50c6"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TzzhcBIczf_M_2102",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "61739fff34a0b0d7c3ff72ad900cba9281221e10b7706032ccccb59522fa7566"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TzzhcBIczf_M_2109",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "a38e5e579f52929fb520217dc9e363951bec96fe63a623601951a4e0d34e5b6d"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TzzhcBIczf_M_2114",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d552fcf0a4cd34ddc7b45ac0b9075a5c4b6f84354bdd9dbb178cc6163e4fb022"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TzzhcBIczf_M_2139",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Him is not bound to Shi Yongxin, and the nickname is decomposed into ordinary modifiers without preserving the full quoted name. Identity remains unresolved.",
+      "artifact_sha256": "90ec51bf38bc024bc6d046b88905f26666146ba98b91d62ae1c5029dab1dd743"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "TzzhcBIczf_M_2161",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The like relation is absent: act has CEO as a direct argument with more, which does not encode acting more like a CEO.",
+      "artifact_sha256": "54c626deca7e24348e65657aa122a4b78bffce2ac7996d225800b0a686b8fd1c"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ff5e7f1f5f6f52081b0f79ce968174b8c353cd33b24c9edd2b053effd98af661"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2177",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2191",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2199",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "532403c811e54c004121887ec38676485aa2929c33d75a239b94dfc44dfa8d85"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2215",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2240",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Preserves narrator as reporting source, exact total 49 and the on-board condition inside the speech-assertion scope, rather than asserting the passengers independently. The extra on clause marker is redundant parser annotation.",
+      "artifact_sha256": "7b7d5e4e54b01a66edf83e952306fb720424ef41f9d29ad0ac3be38d35937db8"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2283",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "f2d4cf05195363a2a7ab472c706a510d12639f46db4c81aab8973ee174471be6"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The reporter becomes ARG0 of show rather than the depicted person, and the wearing proposition has an unspecified complement route. The inherited role/scope error remains.",
+      "artifact_sha256": "1cff13d750a3e6f6a9d61196253f62176a8f516e6cf0dcc551035b7185e8ea2f"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2347",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2362",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2371",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Co-May and Typhoon No. 8 are split across unrelated apposition/nummod nodes; naming uses May as its complement rather than the complete storm name.",
+      "artifact_sha256": "8054238969100a2884b31eb5c9e1c1b99ceaf7502c8125c344aa2f748ffc106f"
+    },
+    {
+      "condition": "edits_generic",
+      "claim_id": "Txf2EdqOg1SQ_2428",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TjHepwuhkYFA_1016",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TInVWzp25aIM_11",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d4b9ec1e9ed25b12d2217cab440c3d631c9d43b5efec9aa2b302e39433b649d4"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TInVWzp25aIM_48",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Restores the two source-attached modifiers on Roads; the drivable condition and for-now restriction remain. No extra event is introduced.",
+      "artifact_sha256": "7547262a31233a2b685e007dd074e8de72b32326f865367a5746b147aba21a3c"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TInVWzp25aIM_79",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Restores inland on the roads. The existential group reading of some roads, drivable condition and for-now restriction remain.",
+      "artifact_sha256": "e0130b495e466944dc4ad3feb195f1496b1c624114abdc742ed83fb4f7aedae2"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TbJqMFkNxARY_164",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Preserves container spill, ship Mississippi and the from relation. Duplicate source-attached properties are redundant; the extra nsubj uses the same spill referent.",
+      "artifact_sha256": "c4e66cffb9fe05e8c6a41c1ddae3013a592850d841989c687c026e0840edcd07"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2EE72iNELEs_190",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "0bfdb670e84afdaa015cac973fc736408d2106fd4ef5d0c956ad16f0248de58d"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2EE72iNELEs_192",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "aa05ea723a13c61af8721810bab22703fb9143a7a06cec63eb7924ef8ae2ff4f"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TzF9M4kZ3Pys_223",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "4001a233a07af9db2519dada4f9518d153e96433819c0b820be154d2b783b34c"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_342",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The signal is made the object of start, and sparring is independently asserted. Giving a signal does not entail that the robots actually start sparring.",
+      "artifact_sha256": "639f72928718642231c6a53302a15f21d064b3372479dddaa65dee591ec19580"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The useful lane-three repair also adds nummod(lane, Robot), an unsupported extra relationship. A correct earlier whole-form variant is not this program.",
+      "artifact_sha256": "a0028c081f8ac3bd2ece93c644b57814f284b7b6a3cf2dd5d668e2a9bfb82ed7"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_379",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The track is made a core participant of race, and running is attached to race rather than track. Adding Robot does not repair the whole program.",
+      "artifact_sha256": "328fc681354ce7964d21487904c4d24bb342d2fdf30705b671fa7f2afa52b76f"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_380",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Two named sources are collapsed into Weibo with People/daily modifiers; their separate identities and coordination are lost.",
+      "artifact_sha256": "d6a69befa3d2996a2deb8967d3ac68ad971bd8d5dd04ff53d2a6580e17ec63fa"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_395",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The running robot remains an opaque nominal, duplicated during relations refer to that entity, and falls is placed under purpose-labelled propositions. Coordinated running/tripping/falling is not faithfully represented.",
+      "artifact_sha256": "5d7f7f17d278d0db0e472f8937848212fdfd8710cbcf947161e421297029fcbb"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_407",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "41f44b4eaea8750a8f8e7d35e1a272aeb3151f3780219cb6a41ad5c64a1d94e6"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The actor is a sweep entity modified by Robot 1, rather than Robot 1 performing a sweep kick. The source dependency parse is itself wrong here.",
+      "artifact_sha256": "200c596216de0446b86cbd91d2d4bc2199421bec57575983f8e4805fab90aa46"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_446",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "18197d35817921f0d9dcc7991cf24ce91335ece3aad3dcf04bcac5122cc3f0f0"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_447",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Retained only as a context-dependent mention: Beijing with recently, with the runtime requirement for interpreting a standalone mention preserved. No visit, event or complete factual proposition is invented; this is not training eligibility.",
+      "artifact_sha256": "734fc77c85bbf708a7b2e4b67998d7db4d8c874b94060d0673bd09fd6677dd63"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFOEIehBwT8Q_489",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Preserves violent clashes in Mexico and their eruption during anti-government protests. The quoted headline content is compiled without inventing a speaker; no media source or world truth is certified.",
+      "artifact_sha256": "3ed5fabe2c51500bd4d1de4cf85d5673525c71673b72bbd2f62cd06264d64ea7"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFOEIehBwT8Q_495",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Nov and 15 are independent modifiers of Mexico, rather than a jointly represented date or preserved caption. Their intended temporal relationship is unresolved.",
+      "artifact_sha256": "91d8d2864dd224e340a7cf2784bc3341652e6745e1ebfb1465e502f6c963755d"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFOEIehBwT8Q_496",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Police firing smoke bombs is a noun phrase, while a second hurl event makes that phrase the hurling actor. The actual police/protester roles are lost.",
+      "artifact_sha256": "26bda8521e45281e8bc7c759009011accb1523eaaa39ccb35613b7ffc6807a22"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFOEIehBwT8Q_497",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFOEIehBwT8Q_517",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Sheinbaum is made the promoter of the movement. The colon attributes a statement to her; it does not say she promoted the movement.",
+      "artifact_sha256": "d32cae9e7626dc258c8ca1abd78133ea1d1b950d4c06cb58070d61f7fad38d29"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQKCK6-tRaoE_662",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "c5d7b615505773223e3c2199df9f5aee8473fd360590e302ed125809ce8ca4bd"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TMrQshDs8aH0_732",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Load has the truck as its theme and no shared chair participant. Readiness and stacking are also copied into opaque modifiers rather than correctly bound clauses.",
+      "artifact_sha256": "5455ef3cdd3baaf83af4812ea08d5c4628dc002aecc084f61dc52095580428ad"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TMrQshDs8aH0_733",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "2f2320b1492a68c8f5b32d6e3f67086757bd790ed48330821e022329ca817265"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TMrQshDs8aH0_745",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The purpose get-around clause lacks the car as its shared subject. Ownership by the drive event does not enforce that participant identity.",
+      "artifact_sha256": "8cdc11de4215613033f231809ac1afe8621cbfb816af5084b75b9753499a2538"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T3HTSBW42QaY_779",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The reminder-about-safety relation is present, but an additional about-safety manner relation is imposed on have. The extra attachment is not licensed.",
+      "artifact_sha256": "8dac7dfc88dea9d308ef32d344ebfca0e2a529e899dfb0b0223fe008f5160b11"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T1JQ-aG78Zuc_791",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "bc5ad3d3aa96b0ff939f2e2f6866b34683eafc783f9c4678231d6cb81920eec0"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_807",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_814",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The three coordinated Fortress place names are flattened into modifiers of geography. Their separate identities and list structure are lost.",
+      "artifact_sha256": "c6dbb24cc1bcebd4c6fe6a2677007e69e027f1eb00484064cd630d8da71d63f4"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_821",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Moves becomes a nominal group and Fortress, Montreal and Quebec become separate destinations. The omitted mover and the slash relationship are unresolved.",
+      "artifact_sha256": "da0f3a3da754a10d98a96fa8927a54667459988c2f22164b7b96338a870d8659"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_822",
+      "compiled": true,
+      "faithful": false,
+      "reason": "2025 is a count of maps; Liberal/red modify the map while the depicted lot has no color/political content. The time and depiction bindings are wrong.",
+      "artifact_sha256": "3190e5745edd3b68fc2a911a8b33d0850912e09e17dc54634e3257e6a96783be"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_829",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The note and electoral riding are linked by mutual apposition, leaving identity versus note content unresolved. Not retained without a clear topic/content relation.",
+      "artifact_sha256": "b97029555798d718c9cd99a8b851860de0d3066d99126d9af49735a6b12ba8ff"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_838",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_856",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "0164df343ac5565d6e2a8c823de8c17fcf95e9fedaef239a3f8b986158b2b84a"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_859",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "9be785ee0acd569c23bf82ff0c05eaff0b840a5e447f6bcc331057f0b0a87989"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_878",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Claims is a nominal group with a relative clause rather than the reporting predicate, and well is manner rather than degree on over 20.",
+      "artifact_sha256": "a63752d81d1635038ab039089cef8fba18b2e422e7cde9548aa35b17266b04d3"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_889",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_893",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "b00709e9209d4a9d58bef35f0b8e3cb2a2c05da004578bd75d7e8533d2e06ddc"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_908",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_914",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "1d7c96d2b0ea045dbb09c9f47e606076c26eb910a04b6ca8e81d900e68eb04a3"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_915",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d0b52867cf6d1f2c41def01beb447268c1b98a7817ba8071db95768ed93942d1"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_926",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_930",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_933",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_941",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_944",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "478d83503917d63bc2137f4220132e4ff17c55b9945d1dcbfc513eda7231032e"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_947",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_948",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_951",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_956",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_957",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_966",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "57930a7b5f29c6f4fab6739194b683e9be3c27ea5bfef4981f3ac8f3a82189a4"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_984",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Unaware/supporters is attached as apposition to celebration, while final and yet become separate predicates. The parenthetical meaning is not preserved.",
+      "artifact_sha256": "2816306d3082e36288c1587aa13ea90ec4c2497fd6b5f94bf1cb5573b6c31361"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_991",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_994",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The negative seat change is replaced by an exact count on Bloc Quebecois. Minus 11 is not 11 party referents.",
+      "artifact_sha256": "94f250d2320696008ca1b44f394635a57b055d3c9a43080f789886939bb5c8c6"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TQEmEycTI0RQ_995",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The negative seat change is replaced by an exact count on Conservatives. Minus 5 is not a positive count of party referents.",
+      "artifact_sha256": "941c0e0fd1fad3047d21ed6e3c2afea5da86e9cf7d4324062ba888337e400f0f"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TjHepwuhkYFA_997",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TjHepwuhkYFA_999",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "213b886adf22c0ac7388057bfdd71f16012bd32d7ad4a22e4e6b03ee6e0be539"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TjHepwuhkYFA_1022",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Adds the source-quoted storyful modifier to logo while preserving appears-in-video. This is a nominal text label, not an invented independent event.",
+      "artifact_sha256": "af0edfd119099dd1feae7b9b7d1f4d5ab39da4deda80bbe59178a3a9970323bb"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TjHepwuhkYFA_1047",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Also adds that Mandalay is close to the epicenter. Only Sagaing is asserted to be near both places.",
+      "artifact_sha256": "f967e67f72f899e6c025c9ba72d355e1f15e8bf4dfd9336e5cb0f73c74eaa832"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TjHepwuhkYFA_1066",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1148",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "490cf1d64b6019bb054095ca80b37212f93aa4fd37deff52a11427be9334592d"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1163",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Preserves Firefly choosing a route and restores more/scenic on that route. The comparative description remains attached to the selected object.",
+      "artifact_sha256": "ccb72255c79b255d8515536fc5a79faf61d98ef17a7842101c7c627869300529"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1179",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1184",
+      "compiled": true,
+      "faithful": false,
+      "reason": "98 meters is attached to target by a generic nmod, not a distance from the redirect to the original target.",
+      "artifact_sha256": "54c09d8ba3d750befc3988a12e93dc707f6387c1e1f649991335e5342d3ef651"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1191",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1192",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Firefly is not bound to the first-commercial-company complement. Completing the landing is treated as purpose rather than the restrictive condition on first company.",
+      "artifact_sha256": "c31b6d05223d4cb9b28e064c3766ef5aa311679837c1ac30b48bfbc69db66892"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1196",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "08197ebaf424d13ef003cff7c72612da9c1dd066e1ab5af76e4d16d126726866"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1212",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "879588c79f99044c876fc39c3b71ea56f735d57b95b07a7f744a02549db4ec45"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d6683f4639b5efb520bad016ee42fe895500057d1b2176fb5abbd4bdc0b828a7"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1231",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Studying regolith/behavior and the solar-wind interaction are conjoined as separate conditions. The interaction is not represented as the third object of study under the suitability description.",
+      "artifact_sha256": "3ef6f0e2310173a29c0c7a2aa6f1bb756b166e71bc692c36123efef7c4d480af"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1233",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1234",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1248",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ab106ef6528c7c61497cf96e2fc16b0451ef0853fef37d6137ca7e104b029538"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1249",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d4203e4d7c92093e649f9e3b87e24304107fd527f7b4adfca676ec9683d15443"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1256",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "b8834ca657a1a2663700e2544f61003f0c78e9a35358e969983906bfea284024"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1268",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "34d8eded7732f52c66c813f19eef241b82587ae811f1c2200535d15e18dd0efd"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1298",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The over-one-year duration is lost; little is attached to take and design rather than the amount over a year.",
+      "artifact_sha256": "45c248dac68da63255712d6f9ce71180ab7251ce50cc61020b9e091a09e4d3c2"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1408",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "aadd0fe8642045c8db14051185e4cdb76825df155fe2a46cb55ac51b29ba5291"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1437",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "6d36462e6c5a32a41b219ff74024d962333730d1c9adc79c84a9bae55e371b3e"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "T2G_ACMxR_I4_1464",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgPh_fzHTCm4_1491",
+      "compiled": true,
+      "faithful": false,
+      "reason": "2.5 becomes a count of values, while values are made to depict the evening. The measured value and time relationship are wrong.",
+      "artifact_sha256": "3b485e1b3934a62af475a9774a1fbfc0592519ad4e32f420cdd63a57e1cecfc1"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgPh_fzHTCm4_1497",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The where clause is an opaque string plus an independent spin-exists event. No shared location binds the color fills to atmospheric spin.",
+      "artifact_sha256": "be02346078bc8804c6d839d9abaed60633358843308b5ff713f8656f906ebdd0"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1544",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The 3-0 ruling is reduced to separate entities with self-links, and injunction/favor become ruling modifiers. The vote and in-favor relationship are lost.",
+      "artifact_sha256": "1895f77b430f9d3d16fb6c060f1f8a85658eeebe909504f30c6ae9f3f9a224e3"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1549",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Laws is missing as the object of pass and instead becomes the agent of delegate. Certain is also attached to president rather than instances.",
+      "artifact_sha256": "b797c5558be05267615c226d6bd68394126bb7fe3cd358293d5443213ee9e671"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1556",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1574",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "15c7d55899aa1f9cf920eca3ed9ac06a10e70bf790a14176fc8ca15838b84149"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1582",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ff7eab7cf9187183c7c70b6e9fd4fa66a35dae0103625ab7a735217ccfbc9a31"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1588",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d986beeb601af28b2fbc706d37d766f46db8d764cb41417fd31e6dac63949a94"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1602",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1605",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "5a8c88aa25df98a63247ea6f3cee04f13bef40edd2426eb75e53c5517d5f8565"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1606",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "e53eed457ebe14fd2abf64b4e8c119c876e3fae8b4863b1a69fe01222159c258"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1607",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "be15cc5fa1cca1d3af9fd344fd93773872f06def93079b27ce57a0f845dce78f"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1608",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1609",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1610",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1612",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Three and judge are properties of court, not a three-judge panel; the quantity and membership relationship are missing.",
+      "artifact_sha256": "4f261f1eb3723082507f810fd41419da297870f48398e3d721bec5e2aed8b10d"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1624",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1632",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The title is split into a self-referential In relation and an event location. Co-Editor-In-Chief is not a location inside itself.",
+      "artifact_sha256": "ae1ecde67690e3b57aa5290ee67aabb7db1d9dff9970dfd3f26ad04a0e3f4393"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1645",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "4471164dff12a648635606239b0ff9b418dec1d6f7d49ed9bd6b56d51f696c60"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1648",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Him is made the clapping actor and the two named clappers remain an opaque phrase. Muted is attached to clapping; the depiction and behind relation are not correctly bound.",
+      "artifact_sha256": "612d81bc8477cc36268cc84721f66c292a08b6b9127a0c8334388734e60ae8ac"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1659",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "52a50e4958eeeb9358c97d7fec03d42ef779cc385661fb98ff1d652d5c949e64"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "c4c8d06c36a0c1f6f0d5d964d6632fc1d14a318538a01c233a09ab24d22cde2f"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1680",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1681",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1683",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1697",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1715",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "0164df343ac5565d6e2a8c823de8c17fcf95e9fedaef239a3f8b986158b2b84a"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1718",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "1e5724bab22f926ff981354bc22c95d9d0dccae1fddffd736484a55c6a24eb4c"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1747",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The video title is turned into Trump announcing a partial quote through speech_assertion. Title content is not evidence of an actual speech event, and Trump is a text literal rather than the source participant.",
+      "artifact_sha256": "b4c314720f98666a1d4d90e00bd29cecb68cfd0644c35ebeea62640afabc657f"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1751",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "823375ee5353e86c25ac37b9465f3358cd2e023b582278d720bb3c4a20b50f68"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1754",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1757",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1759",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "fa039decf970ed104db78b354ffda2585cb897e004cc20be563319ba1e44b2ca"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1762",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The numbers being unfair is still independently asserted outside the depicted speech, and without-chart/cuts are misplaced properties or adjuncts. Extra duplicate clauses do not repair scope.",
+      "artifact_sha256": "986a750afba07777d57b0d1fa61a0b7e980a0f2f418ddc688c9cb4d503363ab6"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TFgw4IaR9R8s_1763",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "16e766c5563946296bd12a8c4d1d8c142ac752b82472c2114a2c732e0310cc65"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TW4OYA3RN-Hw_1766",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "821f65ff0c031e27c3de594afe3a562a09b3aadb91bea186f412543649c8d6df"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TW4OYA3RN-Hw_1779",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Lots of damage is attached to windows and breaking, and all windows loses its universal restriction. Later fire scope does not repair these errors.",
+      "artifact_sha256": "f9fdf3b97fd025f9dea86aae8aa976d93b70604e66a131ccd0dc2c1ca968f665"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TW4OYA3RN-Hw_1800",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1830",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1831",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "f70a596bcf5a276cacc7f4d6c1e6a8b55fb655d420ce13d2e8b92d95f238cd84"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1873",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1874",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Earlier modifies the road rather than footage, and an unsupported road-of-itself relation remains. The intended footage restriction is not faithfully represented.",
+      "artifact_sha256": "a0c33464b5d7ccbaeed31b949c1e22caf7265c924817a5c085f58832bd9e238d"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1875",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Later modifies road, footage is placed in road/vegetation, and burnt takes traffic cones as an argument. Depiction context and adjective bindings are wrong.",
+      "artifact_sha256": "6e069a7f4eb92d72eeda581313fa8f326bfc7c023d82789d7d95234a3c7e574e"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1885",
+      "compiled": true,
+      "faithful": false,
+      "reason": "19000 is treated as a count of blocks rather than an address identifier. The fire-caused destruction is present, but the location restriction is not faithful.",
+      "artifact_sha256": "1dea2e0d88477dc5c6fe8d5bd9aac49cb00528c7403460e5150af42945a12a11"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1900",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Duration/date objects are embedded as JSON strings inside generic properties. The four-hour period and January date are not represented through their typed temporal fields.",
+      "artifact_sha256": "088429599a520734d970ac57c88a8de973f603a2329e1d136c8e631103ee53ef"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1905",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1908",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "c5cdb151de9b4e152c242d1e8ffbe1f5b3421b9a152c3ef9e5902a3b08109b4e"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1909",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The on-screen statement is replaced by a world-level grow event; screen/text/states are nominal modifiers. Correct numeric/date spans do not preserve the OCR assertion scope.",
+      "artifact_sha256": "bcd2820463b123e402f7eb66466f93e2977c4d1dca8005233d07aea8f6a77bbd"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1913",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Healthy/vibrant modify transitions, stretches becomes an event, and show takes transitions as its own object. The coastal depiction is not preserved.",
+      "artifact_sha256": "f0e9d4a9d4469d491aa280f0c8fd837fc4d6175ef1e4015d9965d94229aac2b3"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1924",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The date is an event and a part of the update, plus a time of depict. This does not bind the date as the date of the named Operations Update.",
+      "artifact_sha256": "ce685c4395ce020d466732befd3a624b32a6496c7ee9d05798d8f58392f9d17b"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1968",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The Fire is equated with California history; one-of-the-most-destructive is changed to a count/property rather than a comparison set.",
+      "artifact_sha256": "8bb5cb7584c617ecde569ca9a943eba05aeef206001eb4a3bfe06804b84e818f"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1989",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Seconds is shared as a time entity of both events, not the delay between them, and two temporal propositions reuse the event identifier with different arguments.",
+      "artifact_sha256": "ba3774bb280e2e03adb06feb79a6949b39681405e0a6405c6d6afe882923d4f7"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1995",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TgR_u37mCoQ4_1999",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The quote is retained, but the holdover fire is connected to Kenny Cooper by mod rather than as the subject of the quoted description. Attribution alone does not preserve what the quote describes.",
+      "artifact_sha256": "f76a1e2b6b39e082de2cc401b8abe90bd00afe2cde1b5344b2d742c7a375a926"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TzzhcBIczf_M_2068",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TzzhcBIczf_M_2078",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "6a20e03f19f618894fadbc67dc44e10699f53406436b669c311ad83e1bab3f64"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TzzhcBIczf_M_2095",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Simply is compiled as the manner of describing, leaving its just-a-business-executive focus unresolved. The role repair alone does not establish the intended whole meaning.",
+      "artifact_sha256": "b15a7ea36c304e5a380a11770d0c318bf20b9d03fa77d9927028c0e09d555a7f"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TzzhcBIczf_M_2096",
+      "compiled": true,
+      "faithful": false,
+      "reason": "They and Tourists are independent referents, so the charge can be linked to another group doing the activities. The required shared participant is not encoded.",
+      "artifact_sha256": "798da3cbf98a00e9a7dc9f0fbff505fecf271cf59a0a409a89b0e7ddb43f50c6"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TzzhcBIczf_M_2102",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "0af22e3f41512e148f1e7e3ef893bc788feac8e26fcd74ec388cf0149f9cfd03"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TzzhcBIczf_M_2109",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Qian Dan is made an agent related to vows; expulsion/monk/monastery become modifiers or wrongly bound events. The term-definition structure is lost.",
+      "artifact_sha256": "d7b28bdf1a15d538cffb5c06c7c16e9cd05dfcae4525de6c47aa3deb6d57aeb4"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TzzhcBIczf_M_2114",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "4dd7ccdfa3fc3ab9841c30ed5335bb097166d09d0f166f5c8c6622718047f1c8"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TzzhcBIczf_M_2139",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "TzzhcBIczf_M_2161",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The like relation is absent: act has CEO as a direct argument with more, which does not encode acting more like a CEO.",
+      "artifact_sha256": "54c626deca7e24348e65657aa122a4b78bffce2ac7996d225800b0a686b8fd1c"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d036ab3148641506f08ccd855725858f79191e7298e5551918719ef0809b3243"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2177",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Dangerous modifies appear, but the outside state has no subject and the final in is a literal. No relation binds dangerous conditions to being outside in them.",
+      "artifact_sha256": "6dba96b6405223ad2e8aec44787b109a82098203b527ccb7fec11937d1c7a821"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2191",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2199",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "dfa39f5a4920906e2a86b3f14599789c64deeb5a296b6deb890275aae66e00b1"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2215",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ddafade0719a258c41c616670ee87930456058939a62dbdffb0c2f1dfd8c81b3"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2240",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Preserves narrator as reporting source, exact total 49 and the on-board condition inside the speech-assertion scope, rather than asserting the passengers independently. The extra on clause marker is redundant parser annotation.",
+      "artifact_sha256": "7b7d5e4e54b01a66edf83e952306fb720424ef41f9d29ad0ac3be38d35937db8"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2283",
+      "compiled": true,
+      "faithful": true,
+      "reason": "Preserves Wipha making landfall with the attached wind-force-level phrase and restores 12 on level. The numeral is a level label, not a count of typhoons or wind entities; no calibration of wind measurement is claimed.",
+      "artifact_sha256": "cd779162e4a221ade48155d89e9132eb3299b3866f3cff838a8b2a6cf9bd29cb"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The reporter becomes ARG0 of show rather than the depicted person, and the wearing proposition has an unspecified complement route. The inherited role/scope error remains.",
+      "artifact_sha256": "1cff13d750a3e6f6a9d61196253f62176a8f516e6cf0dcc551035b7185e8ea2f"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2347",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2362",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "5cfead8ea4fab28d878b1419be8fe4fc60c3f4a6ff8f3f9c2e9aee3d08f78a7b"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2371",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Co-May and Typhoon No. 8 are split across unrelated apposition/nummod nodes; naming uses May as its complement rather than the complete storm name.",
+      "artifact_sha256": "8054238969100a2884b31eb5c9e1c1b99ceaf7502c8125c344aa2f748ffc106f"
+    },
+    {
+      "condition": "edits_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2428",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    }
+  ]
+}

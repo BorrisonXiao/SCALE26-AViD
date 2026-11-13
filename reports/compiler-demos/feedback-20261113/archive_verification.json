@@ -1,0 +1,28 @@
+{
+  "archive_sha256": "85a29dc6d723fcdd1bbfc25c5c8ae7f64357cc3ed1b2ddb7e14fa97b1e1761a3",
+  "extraction": "/tmp/avid-compiler-feedback-yeg9j3xs",
+  "sha256_inventory": true,
+  "originals": 2375,
+  "cached_cohort": 449,
+  "typed_edit_cases": 158,
+  "byte_identical_artifacts": [
+    "direct_all.jsonl",
+    "cached_pipeline.jsonl",
+    "direct_regression.json",
+    "edit_replay.json",
+    "summary.json",
+    "corpus_reviewed.jsonl",
+    "semantic_review.json",
+    "remaining_cases.json",
+    "cases.json"
+  ],
+  "prior_retained_exact": 1972,
+  "replayed_archive_sha256": "343389408de8b8718f609c09b13b5cca0ae5db26c9120485c1267b1c0f24b24a",
+  "post_replay_documentation_only_changes": [
+    "COMPILER_FEEDBACK_SHA256SUMS",
+    "README_COMPILER_FEEDBACK.md",
+    "docs/compiler_feedback_20261113.md",
+    "exp/probabilistic_verification/compiler_feedback_20261112/source_manifest.json"
+  ],
+  "code_and_replay_data_unchanged_after_replay": true
+}

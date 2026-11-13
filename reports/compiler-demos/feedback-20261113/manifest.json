@@ -1,0 +1,21 @@
+{
+  "baseline": "compiler_repairs_20261112",
+  "baseline_site_commit": "55e7ae6",
+  "corpus": 2375,
+  "retained": 1972,
+  "remaining": 403,
+  "selection": "All158 remaining strict original failures with saved drafts;218 strict failures without drafts are ineligible for field edits;27 direct passes receive no request.",
+  "conditions": [
+    "Initial logical-form correction",
+    "At most two retries with actual compiler diagnostics",
+    "Same initial failures with generic retry instruction and no new diagnostic"
+  ],
+  "policy": "Passing originals bypass the model. Stop after first compilation success; meaning review never triggers generation on a passing original. No per-claim condition selection; no training or media inference.",
+  "initial_pilot_selection": "Same24 earlier strict failures, fixed before generation; development only.",
+  "final_conditions": [
+    "Typed field edits + compiler feedback",
+    "Typed field edits + generic retry"
+  ],
+  "final_model_source": "typed_edits/model_source",
+  "final_config": "typed_edits/config.json"
+}

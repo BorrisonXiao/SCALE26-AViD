@@ -1,8 +1,28 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "timezone": "America/New_York",
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
+    {
+      "date": "2026-11-13",
+      "items": [
+        {
+          "text": "Tested all158 remaining failed drafts with typed field edits. Feedback produces61 complete programs/9 retained meanings; generic retries46/8. Sharedfirst41/5. Mainpool1981/2375(83.41%),394excluded; all1972 earlier retained programs unchanged. These are development judgments, not accuracy.",
+          "href": "#remaining-failures",
+          "label": "Controlled results and limits"
+        },
+        {
+          "text": "Published original failed structures, readable edits, every exact prompt/response/error and63 program reviews. Wrong roles, scope and number types remain despite valid JSON. Wind-speed example still fails.218 no-draft failures remain untested by field editing.",
+          "href": "#feedback-example",
+          "label": "All attempts and failure examples"
+        },
+        {
+          "text": "466tests pass; CPU replay reproduces158 cases and all retry outputs. No media inference, SRL retraining or empirical relation learning. Next proposed: partial forms, joint role/scope checks and bounded structural corrections.",
+          "href": "#feedback-failures",
+          "label": "Remaining cases and next steps"
+        }
+      ]
+    },
     {
       "date": "2026-11-12",
       "items": [

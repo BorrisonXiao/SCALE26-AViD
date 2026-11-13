@@ -1,0 +1,16 @@
+{
+  "cases": 158,
+  "source": "Frozen typed_edits/model_source",
+  "no_gpu": true,
+  "byte_identical_files": [
+    "before.jsonl",
+    "first/responses.jsonl",
+    "first_final.jsonl",
+    "feedback_final.jsonl",
+    "generic_final.jsonl",
+    "feedback_1/responses.jsonl",
+    "feedback_2/responses.jsonl",
+    "generic_1/responses.jsonl",
+    "generic_2/responses.jsonl"
+  ]
+}

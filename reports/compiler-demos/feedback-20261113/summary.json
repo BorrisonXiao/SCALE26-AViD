@@ -1,0 +1,166 @@
+{
+  "corpus": {
+    "total": 2375,
+    "before": 1972,
+    "accepted": 1981,
+    "rate": 0.8341052631578947,
+    "remaining": 394,
+    "new_approved": 9,
+    "new_ids": [
+      "TInVWzp25aIM_48",
+      "TInVWzp25aIM_79",
+      "TbJqMFkNxARY_164",
+      "Tg0UxWYuPeJ0_447",
+      "TFOEIehBwT8Q_489",
+      "TjHepwuhkYFA_1022",
+      "T2G_ACMxR_I4_1163",
+      "Txf2EdqOg1SQ_2240",
+      "Txf2EdqOg1SQ_2283"
+    ]
+  },
+  "direct": {
+    "total": 2375,
+    "compiled": 1983,
+    "unchanged": true
+  },
+  "cached": {
+    "total": 449,
+    "programs": 114,
+    "unchanged": true
+  },
+  "conditions": [
+    {
+      "id": "edits_generic",
+      "title": "Field edits + generic retry",
+      "total": 158,
+      "before_compiled": 2,
+      "initial_compiled": 41,
+      "final_compiled": 46,
+      "approved": 8,
+      "new_approved": 8,
+      "requests_by_round": [
+        156,
+        117,
+        113
+      ],
+      "config": {
+        "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+        "backend": "vllm+xgrammar",
+        "dtype": "float16",
+        "temperature": 0,
+        "max_new_tokens": 1536,
+        "batch_size": 4,
+        "max_edits": 8,
+        "max_retries": 2,
+        "typed_values": true,
+        "control": true,
+        "job_id": "1228934",
+        "vllm": "0.18.0",
+        "torch": "2.10.0+cu128",
+        "source": "/exp/cxiao/scale26/avid/exp/probabilistic_verification/compiler_feedback_20261112/typed_edits/model_source/scripts/run_logical_form_edits.py",
+        "gpus": [
+          "NVIDIA H100 80GB HBM3"
+        ]
+      },
+      "failures": {
+        "schema": 8,
+        "edit_error": 12,
+        "unused_entities": 10,
+        "unquoted_verbatim": 1,
+        "id_as_literal": 12,
+        "predicate_anchor": 4,
+        "subject_binding": 7,
+        "duplicate_entity": 21,
+        "coverage_omission": 21,
+        "unknown_entity": 7,
+        "quantity_type": 3,
+        "adjunct_argument": 1,
+        "unlicensed_qualification": 1,
+        "long_literal": 2,
+        "unlinked_temporal_value": 1,
+        "unlicensed_condition": 1
+      }
+    },
+    {
+      "id": "edits_feedback",
+      "title": "Field edits + compiler feedback",
+      "total": 158,
+      "before_compiled": 2,
+      "initial_compiled": 41,
+      "final_compiled": 61,
+      "approved": 9,
+      "new_approved": 9,
+      "requests_by_round": [
+        156,
+        117,
+        102
+      ],
+      "config": {
+        "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+        "backend": "vllm+xgrammar",
+        "dtype": "float16",
+        "temperature": 0,
+        "max_new_tokens": 1536,
+        "batch_size": 4,
+        "max_edits": 8,
+        "max_retries": 2,
+        "typed_values": true,
+        "control": true,
+        "job_id": "1228934",
+        "vllm": "0.18.0",
+        "torch": "2.10.0+cu128",
+        "source": "/exp/cxiao/scale26/avid/exp/probabilistic_verification/compiler_feedback_20261112/typed_edits/model_source/scripts/run_logical_form_edits.py",
+        "gpus": [
+          "NVIDIA H100 80GB HBM3"
+        ]
+      },
+      "failures": {
+        "schema": 6,
+        "coverage_omission": 20,
+        "id_as_literal": 12,
+        "subject_binding": 9,
+        "unlicensed_condition": 2,
+        "unused_entities": 10,
+        "duplicate_entity": 10,
+        "unknown_entity": 5,
+        "edit_error": 12,
+        "adjunct_argument": 2,
+        "predicate_anchor": 2,
+        "long_literal": 2,
+        "quantity_type": 3,
+        "unlinked_temporal_value": 2
+      }
+    }
+  ],
+  "unique_programs_reviewed": 63,
+  "primary_cases": 158,
+  "old_retained_unchanged": 1972,
+  "remaining_stages": {
+    "edit_compilation": 97,
+    "alignment": 86,
+    "component_compilation": 104,
+    "meaning_review": 99,
+    "composition": 8
+  },
+  "remaining_tested": 149,
+  "without_draft": 218,
+  "no_draft_codes": {
+    "unresolved_clause": 96,
+    "duplicate_role": 33,
+    "negative_quantifier": 3,
+    "missing_srl": 10,
+    "nominal_disjunction": 7,
+    "mention_alignment": 2,
+    "predicate_type": 8,
+    "modal_scope": 16,
+    "missing_predicate": 33,
+    "threshold_scope": 2,
+    "polarity_omission": 2,
+    "temporal_scope": 2,
+    "unresolved_controller": 1,
+    "media_modifier": 2,
+    "quantity_type": 1
+  },
+  "skipped_direct_passes": 27,
+  "training": "Deferred; no new media inference or parser training."
+}
