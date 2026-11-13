@@ -1,0 +1,14 @@
+{
+  "comparisons": 13,
+  "model_cases": 72,
+  "exclusions": 403,
+  "retained_viewer": 1972,
+  "recoveries_viewer": 9,
+  "main_reports": 2,
+  "views": 5,
+  "old_components": 47,
+  "old_model_cases": 449,
+  "old_demos": 41,
+  "mobile_overflow": false,
+  "page_errors": []
+}

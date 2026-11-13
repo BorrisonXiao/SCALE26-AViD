@@ -1,0 +1,2699 @@
+[
+  {
+    "id": "TInVWzp25aIM_87",
+    "title": "TInVWzp25aIM_87",
+    "text": "People were evacuated to the Joint Base Elemendorf-Richardson, Alaska on October 15th, 2025.",
+    "before": {
+      "status": "unsupported",
+      "code": "entity_alignment",
+      "reason": "Original noun head is absent or ambiguous: c2/evacuation",
+      "form": null,
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [],
+      "metadata": {
+        "events": {},
+        "temporal": {}
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "c1_x1",
+            "text": "People",
+            "type": "group"
+          },
+          {
+            "id": "c2_x2",
+            "text": "evacuation",
+            "type": "entity",
+            "event_ref": "e3"
+          },
+          {
+            "id": "c2_x10",
+            "text": "Joint Base Elemendorf-Richardson",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "appos",
+                "target": "c2_x12"
+              }
+            ]
+          },
+          {
+            "id": "c2_x12",
+            "text": "Alaska",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e3",
+              "predicate": "evacuate",
+              "anchor": "evacuated",
+              "arguments": {
+                "ARG1": "c1_x1"
+              }
+            },
+            {
+              "op": "event",
+              "id": "e7",
+              "predicate": "be",
+              "anchor": "was",
+              "arguments": {
+                "ARG1": "c2_x2",
+                "ARG2": "c2_x10"
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARG2",
+                  "value": "to"
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "id": "e20",
+              "predicate": "occur",
+              "anchor": "occurred",
+              "arguments": {
+                "ARG1": "c2_x2",
+                "ARGM-TMP": {
+                  "kind": "date",
+                  "value": "2025-10-15"
+                }
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARGM-TMP",
+                  "value": "on"
+                }
+              ]
+            }
+          ]
+        },
+        "warnings": [
+          "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [
+        {
+          "mention": "c2_x2",
+          "event": "e3",
+          "variable": "E1"
+        }
+      ],
+      "predicates": [
+        "referent(X1, People, scope, world, route, unspecified)",
+        "evacuate(E1, ARG1, X1, scope, world, route, unspecified)",
+        "temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified)",
+        "referent(X2, Joint Base Elemendorf-Richardson, scope, world, route, unspecified)",
+        "referent(X3, Alaska, scope, world, route, unspecified)",
+        "entity_relation(X2, appos, X3, scope, world, route, unspecified)",
+        "be(E2, ARG1, E1, ARG2, X2, scope, world, route, unspecified)",
+        "property(E2, preposition:ARG2, to, scope, world, route, unspecified)",
+        "temporal(E2, past, simple, T0, unspecified, scope, world, route, unspecified)",
+        "occur(E3, ARG1, E1, ARGM-TMP, {\"kind\":\"date\",\"value\":\"2025-10-15\"}, scope, world, route, unspecified)",
+        "property(E3, preposition:ARGM-TMP, on, scope, world, route, unspecified)",
+        "temporal(E3, past, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "evacuate",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e7",
+            "predicate": "be",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E3": {
+            "id": "e20",
+            "predicate": "occur",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              2,
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E2": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              7
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E3": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              20
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": true,
+    "note": "The destination and date refer to the same evacuate event; evacuation is an event reference, not a second unrelated object.",
+    "stage": "compiled_composed"
+  },
+  {
+    "id": "TInVWzp25aIM_106",
+    "title": "TInVWzp25aIM_106",
+    "text": "Small motorized vehicles are able to survey the wreckage.",
+    "before": {
+      "status": "unsupported",
+      "code": "coverage_omission",
+      "reason": "c1: Unrepresented source content: Small",
+      "form": null,
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [],
+      "metadata": {
+        "events": {},
+        "temporal": {}
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x3",
+            "text": "vehicles",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Small"
+              }
+            ]
+          },
+          {
+            "id": "x9",
+            "text": "wreckage",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e2",
+              "predicate": "motorize",
+              "anchor": "motorized",
+              "arguments": {
+                "ARG1": "x3"
+              }
+            },
+            {
+              "op": "event",
+              "id": "e4",
+              "predicate": "be",
+              "anchor": "are",
+              "arguments": {
+                "ARG1": "x3",
+                "ARG2": {
+                  "kind": "text",
+                  "value": "able to survey the wreckage"
+                }
+              },
+              "properties": [
+                {
+                  "role": "clause_marker:ARG2",
+                  "value": "to"
+                }
+              ],
+              "propositions": [
+                {
+                  "role": "ARG2",
+                  "kind": "complement",
+                  "route": "unspecified",
+                  "body": {
+                    "op": "event",
+                    "id": "e7",
+                    "predicate": "survey",
+                    "anchor": "survey",
+                    "arguments": {
+                      "ARG0": "x3",
+                      "ARG1": "x9"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, vehicles, scope, world, route, unspecified)",
+        "property(X1, mod, Small, scope, world, route, unspecified)",
+        "motorize(E1, ARG1, X1, scope, world, route, unspecified)",
+        "proposition(E2, ARG2, complement, c1::TInVWzp25aIM_106, scope, world, route, unspecified)",
+        "reference(X1, x3, scope, c1::TInVWzp25aIM_106, route, unspecified, owner, E2)",
+        "referent(X2, wreckage, scope, c1::TInVWzp25aIM_106, route, unspecified, owner, E2)",
+        "survey(E3, ARG0, X1, ARG1, X2, scope, c1::TInVWzp25aIM_106, route, unspecified, owner, E2)",
+        "be(E2, ARG1, X1, ARG2, {\"kind\":\"text\",\"value\":\"able to survey the wreckage\"}, ARG2, c1::TInVWzp25aIM_106, scope, world, route, unspecified)",
+        "property(E2, clause_marker:ARG2, to, scope, world, route, unspecified)",
+        "temporal(E2, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e2",
+            "predicate": "motorize",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e4",
+            "predicate": "be",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E3": {
+            "id": "e7",
+            "predicate": "survey",
+            "scope": "c1::TInVWzp25aIM_106",
+            "route": "unspecified",
+            "owner": "E2"
+          }
+        },
+        "temporal": {
+          "E2": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              4
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": true,
+    "note": "Small is restored on the vehicles. Motorized and able to survey retain their existing predicate/complement structure; actual surveying is not asserted.",
+    "stage": "direct_pass"
+  },
+  {
+    "id": "TbJqMFkNxARY_160",
+    "title": "TbJqMFkNxARY_160",
+    "text": "There are no containers fully in the water.",
+    "before": {
+      "status": "unsupported",
+      "code": "quantifier",
+      "reason": "Absence requires declared entity IDs.",
+      "form": null,
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [],
+      "metadata": {
+        "events": {},
+        "temporal": {}
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x4",
+            "text": "containers",
+            "type": "group",
+            "properties": []
+          },
+          {
+            "id": "x8",
+            "text": "water",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "entity",
+              "ref": "x8"
+            },
+            {
+              "op": "not_exists",
+              "entities": [
+                "x4"
+              ],
+              "body": {
+                "op": "event",
+                "id": "e2",
+                "predicate": "be",
+                "anchor": "are",
+                "arguments": {
+                  "ARG1": "x4",
+                  "ARG2": "x8"
+                },
+                "properties": [
+                  {
+                    "role": "preposition:ARG2",
+                    "value": "in"
+                  },
+                  {
+                    "role": "advmod",
+                    "value": "fully"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, water, scope, world, route, unspecified)",
+        "referent(X2, containers, scope, world, route, unspecified)",
+        "be(E1, ARG1, X2, ARG2, X1, scope, world, route, unspecified)",
+        "property(E1, preposition:ARG2, in, scope, world, route, unspecified)",
+        "property(E1, advmod, fully, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e2",
+            "predicate": "be",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              2
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": true,
+    "note": "NOT EXISTS contains the full be-in-water condition including fully. A partly submerged container does not contradict this claim.",
+    "stage": "direct_pass"
+  },
+  {
+    "id": "TbJqMFkNxARY_161",
+    "title": "TbJqMFkNxARY_161",
+    "text": "No containers in the water implies this was potentially recorded after cleanup already began.",
+    "before": {
+      "status": "unsupported",
+      "code": "negative_quantifier",
+      "reason": "c1: A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.",
+      "form": null,
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [],
+      "metadata": {
+        "events": {},
+        "temporal": {}
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "c1_x4",
+            "text": "containers",
+            "type": "group",
+            "properties": []
+          },
+          {
+            "id": "c1_x7",
+            "text": "water",
+            "type": "entity"
+          },
+          {
+            "id": "c2_x1",
+            "text": "This",
+            "type": "pronoun"
+          },
+          {
+            "id": "c2_x6",
+            "text": "cleanup",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "entity",
+                  "ref": "c1_x7"
+                },
+                {
+                  "op": "not_exists",
+                  "entities": [
+                    "c1_x4"
+                  ],
+                  "body": {
+                    "op": "event",
+                    "id": "e2",
+                    "predicate": "be",
+                    "anchor": "are",
+                    "arguments": {
+                      "ARG1": "c1_x4",
+                      "ARG2": "c1_x7"
+                    },
+                    "properties": [
+                      {
+                        "role": "preposition:ARG2",
+                        "value": "in"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "id": "e12",
+              "predicate": "record",
+              "anchor": "recorded",
+              "arguments": {
+                "ARG1": "c2_x1",
+                "ARGM-ADV": {
+                  "kind": "text",
+                  "value": "potentially"
+                }
+              },
+              "properties": [
+                {
+                  "role": "clause_marker:ARGM-TMP",
+                  "value": "after"
+                }
+              ],
+              "propositions": [
+                {
+                  "role": "after",
+                  "kind": "temporal",
+                  "route": "unspecified",
+                  "body": {
+                    "op": "event",
+                    "id": "e16",
+                    "predicate": "begin",
+                    "anchor": "began",
+                    "arguments": {
+                      "ARG1": "c2_x6",
+                      "ARGM-TMP": {
+                        "kind": "time",
+                        "value": "already"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "warnings": [
+          "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+        ]
+      },
+      "runtime_requirements": [
+        "reference resolution"
+      ],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, water, scope, world, route, unspecified)",
+        "referent(X2, containers, scope, world, route, unspecified)",
+        "be(E1, ARG1, X2, ARG2, X1, scope, world, route, unspecified)",
+        "property(E1, preposition:ARG2, in, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)",
+        "referent(X3, This, scope, world, route, unspecified)",
+        "resolve_reference(X3, This, scope, world, route, unspecified)",
+        "proposition(E2, after, temporal, c1::TbJqMFkNxARY_161, scope, world, route, unspecified)",
+        "referent(X4, cleanup, scope, c1::TbJqMFkNxARY_161, route, unspecified, owner, E2)",
+        "begin(E3, ARG1, X4, ARGM-TMP, {\"kind\":\"time\",\"value\":\"already\"}, scope, c1::TbJqMFkNxARY_161, route, unspecified, owner, E2)",
+        "temporal(E3, past, simple, T0, unspecified, scope, c1::TbJqMFkNxARY_161, route, unspecified, owner, E2)",
+        "record(E2, ARG1, X3, ARGM-ADV, {\"kind\":\"text\",\"value\":\"potentially\"}, after, c1::TbJqMFkNxARY_161, scope, world, route, unspecified)",
+        "property(E2, clause_marker:ARGM-TMP, after, scope, world, route, unspecified)",
+        "temporal(E2, past, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e2",
+            "predicate": "be",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e12",
+            "predicate": "record",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E3": {
+            "id": "e16",
+            "predicate": "begin",
+            "scope": "c1::TbJqMFkNxARY_161",
+            "route": "unspecified",
+            "owner": "E2"
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              2
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E3": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              16
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E2": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              10,
+              12
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": false,
+    "note": "Implication, uncertainty and the antecedent of this are not adequately represented. A complete program is insufficient.",
+    "stage": "compiled_composed"
+  },
+  {
+    "id": "TzF9M4kZ3Pys_308",
+    "title": "TzF9M4kZ3Pys_308",
+    "text": "Power outages likely in residential area.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "c1_x2",
+            "text": "outages",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Power"
+              },
+              {
+                "role": "mod",
+                "value": "power"
+              }
+            ]
+          },
+          {
+            "id": "c2_x8",
+            "text": "area",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "residential"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e3",
+              "predicate": "be",
+              "anchor": "are",
+              "arguments": {
+                "ARG1": "c1_x2",
+                "ARG2": {
+                  "kind": "text",
+                  "value": "likely"
+                }
+              }
+            },
+            {
+              "op": "event",
+              "id": "e9",
+              "predicate": "be",
+              "anchor": "are",
+              "arguments": {
+                "ARG1": "c1_x2",
+                "ARG2": "c2_x8"
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARG2",
+                  "value": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "warnings": [
+          "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, outages, scope, world, route, unspecified)",
+        "property(X1, mod, Power, scope, world, route, unspecified)",
+        "property(X1, mod, power, scope, world, route, unspecified)",
+        "be(E1, ARG1, X1, ARG2, {\"kind\":\"text\",\"value\":\"likely\"}, scope, world, route, unspecified)",
+        "referent(X2, area, scope, world, route, unspecified)",
+        "property(X2, mod, residential, scope, world, route, unspecified)",
+        "be(E2, ARG1, X1, ARG2, X2, scope, world, route, unspecified)",
+        "property(E2, preposition:ARG2, in, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "be",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e9",
+            "predicate": "be",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {}
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "outages",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Power"
+              }
+            ],
+            "relations": [
+              {
+                "role": "in",
+                "target": "x6"
+              }
+            ]
+          },
+          {
+            "id": "x6",
+            "text": "area",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "residential"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "qualified",
+          "operator": "likely",
+          "body": {
+            "op": "entity",
+            "ref": "x2"
+          }
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "qualification(likely, q1::TzF9M4kZ3Pys_308, scope, world, route, unspecified)",
+        "referent(X1, outages, scope, q1::TzF9M4kZ3Pys_308, route, unspecified)",
+        "property(X1, mod, Power, scope, q1::TzF9M4kZ3Pys_308, route, unspecified)",
+        "referent(X2, area, scope, q1::TzF9M4kZ3Pys_308, route, unspecified)",
+        "property(X2, mod, residential, scope, q1::TzF9M4kZ3Pys_308, route, unspecified)",
+        "entity_relation(X1, in, X2, scope, q1::TzF9M4kZ3Pys_308, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {},
+        "temporal": {}
+      }
+    },
+    "approved": true,
+    "note": "Likely scopes over the complete outage proposition, including the residential-area restriction. Outages are not asserted as certain.",
+    "stage": "direct_pass"
+  },
+  {
+    "id": "Tg0UxWYuPeJ0_343",
+    "title": "Tg0UxWYuPeJ0_343",
+    "text": "man exclaims \"just like that!\"",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "c1_x2",
+            "text": "man",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e3",
+              "predicate": "exclaim",
+              "anchor": "exclaims",
+              "arguments": {
+                "ARG0": "c1_x2"
+              }
+            },
+            {
+              "op": "event",
+              "id": "e7",
+              "predicate": "say",
+              "anchor": "says",
+              "arguments": {
+                "ARG0": "c1_x2",
+                "ARG1": {
+                  "kind": "verbatim_text",
+                  "value": "just like that!"
+                }
+              },
+              "properties": [
+                {
+                  "role": "source_route",
+                  "value": "speech_assertion"
+                }
+              ],
+              "propositions": []
+            }
+          ]
+        },
+        "warnings": [
+          "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, man, scope, world, route, unspecified)",
+        "exclaim(E1, ARG0, X1, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)",
+        "say(E2, ARG0, X1, ARG1, {\"kind\":\"verbatim_text\",\"value\":\"just like that!\"}, scope, world, route, speech_assertion)",
+        "temporal(E2, pres, simple, T0, unspecified, scope, world, route, speech_assertion)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "exclaim",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e7",
+            "predicate": "say",
+            "scope": "world",
+            "route": "speech_assertion",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E2": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              7
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x1",
+            "text": "man",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e2",
+          "predicate": "exclaim",
+          "anchor": "exclaims",
+          "arguments": {
+            "ARG0": "x1",
+            "ARG1": {
+              "kind": "verbatim_text",
+              "value": "just like that!"
+            }
+          },
+          "properties": [
+            {
+              "role": "source_route",
+              "value": "speech_assertion"
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, man, scope, world, route, unspecified)",
+        "exclaim(E1, ARG0, X1, ARG1, {\"kind\":\"verbatim_text\",\"value\":\"just like that!\"}, scope, world, route, speech_assertion)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, speech_assertion)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e2",
+            "predicate": "exclaim",
+            "scope": "world",
+            "route": "speech_assertion",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              2
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": true,
+    "note": "One exclaim event binds the man and the exact quoted words under speech support.",
+    "stage": "direct_pass"
+  },
+  {
+    "id": "Tg0UxWYuPeJ0_360",
+    "title": "Tg0UxWYuPeJ0_360",
+    "text": "The robot repositions itself upright and starts walking backwards.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "robot",
+            "type": "entity"
+          },
+          {
+            "id": "x4",
+            "text": "itself",
+            "type": "pronoun"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e3",
+              "predicate": "reposition",
+              "anchor": "repositions",
+              "arguments": {
+                "nsubj": "x2",
+                "obj": "x4"
+              },
+              "properties": [
+                {
+                  "role": "advmod",
+                  "value": "upright"
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "id": "e7",
+              "predicate": "start",
+              "anchor": "starts",
+              "arguments": {
+                "ARG0": "x2"
+              },
+              "propositions": [
+                {
+                  "role": "ARG1",
+                  "kind": "complement",
+                  "route": "unspecified",
+                  "body": {
+                    "op": "event",
+                    "id": "e8",
+                    "predicate": "walk",
+                    "anchor": "walking",
+                    "arguments": {
+                      "ARG0": "x2",
+                      "ARGM-DIR": {
+                        "kind": "text",
+                        "value": "backwards"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [
+        "reference resolution"
+      ],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, robot, scope, world, route, unspecified)",
+        "referent(X2, itself, scope, world, route, unspecified)",
+        "resolve_reference(X2, itself, scope, world, route, unspecified)",
+        "reposition(E1, nsubj, X1, obj, X2, scope, world, route, unspecified)",
+        "property(E1, advmod, upright, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)",
+        "proposition(E2, ARG1, complement, c1::Tg0UxWYuPeJ0_360, scope, world, route, unspecified)",
+        "reference(X1, x2, scope, c1::Tg0UxWYuPeJ0_360, route, unspecified, owner, E2)",
+        "walk(E3, ARG0, X1, ARGM-DIR, {\"kind\":\"text\",\"value\":\"backwards\"}, scope, c1::Tg0UxWYuPeJ0_360, route, unspecified, owner, E2)",
+        "temporal(E3, unspecified, progressive, T0, unspecified, scope, c1::Tg0UxWYuPeJ0_360, route, unspecified, owner, E2)",
+        "start(E2, ARG0, X1, ARG1, c1::Tg0UxWYuPeJ0_360, scope, world, route, unspecified)",
+        "temporal(E2, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "reposition",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e7",
+            "predicate": "start",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E3": {
+            "id": "e8",
+            "predicate": "walk",
+            "scope": "c1::Tg0UxWYuPeJ0_360",
+            "route": "unspecified",
+            "owner": "E2"
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E3": {
+            "tense": "unspecified",
+            "aspect": "progressive",
+            "reference": "context",
+            "token_ids": [
+              8
+            ],
+            "finite": false,
+            "completion": "unspecified"
+          },
+          "E2": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              7
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "robot",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e3",
+              "predicate": "reposition",
+              "anchor": "repositions",
+              "arguments": {
+                "nsubj": "x2",
+                "obj": "x2"
+              },
+              "properties": [
+                {
+                  "role": "advmod",
+                  "value": "upright"
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "id": "e7",
+              "predicate": "start",
+              "anchor": "starts",
+              "arguments": {
+                "ARG0": "x2"
+              },
+              "propositions": [
+                {
+                  "role": "ARG1",
+                  "kind": "complement",
+                  "route": "unspecified",
+                  "body": {
+                    "op": "event",
+                    "id": "e8",
+                    "predicate": "walk",
+                    "anchor": "walking",
+                    "arguments": {
+                      "ARG0": "x2",
+                      "ARGM-DIR": {
+                        "kind": "text",
+                        "value": "backwards"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, robot, scope, world, route, unspecified)",
+        "reposition(E1, nsubj, X1, obj, X1, scope, world, route, unspecified)",
+        "property(E1, advmod, upright, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)",
+        "proposition(E2, ARG1, complement, c1::Tg0UxWYuPeJ0_360, scope, world, route, unspecified)",
+        "reference(X1, x2, scope, c1::Tg0UxWYuPeJ0_360, route, unspecified, owner, E2)",
+        "walk(E3, ARG0, X1, ARGM-DIR, {\"kind\":\"text\",\"value\":\"backwards\"}, scope, c1::Tg0UxWYuPeJ0_360, route, unspecified, owner, E2)",
+        "temporal(E3, unspecified, progressive, T0, unspecified, scope, c1::Tg0UxWYuPeJ0_360, route, unspecified, owner, E2)",
+        "start(E2, ARG0, X1, ARG1, c1::Tg0UxWYuPeJ0_360, scope, world, route, unspecified)",
+        "temporal(E2, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "reposition",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e7",
+            "predicate": "start",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E3": {
+            "id": "e8",
+            "predicate": "walk",
+            "scope": "c1::Tg0UxWYuPeJ0_360",
+            "route": "unspecified",
+            "owner": "E2"
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E3": {
+            "tense": "unspecified",
+            "aspect": "progressive",
+            "reference": "context",
+            "token_ids": [
+              8
+            ],
+            "finite": false,
+            "completion": "unspecified"
+          },
+          "E2": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              7
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": true,
+    "note": "Reposition has the robot as both subject and object. Upright and backwards remain attached to their events; start retains its walking complement.",
+    "stage": "direct_pass"
+  },
+  {
+    "id": "TFOEIehBwT8Q_453",
+    "title": "TFOEIehBwT8Q_453",
+    "text": "\"Narco government\" written in graffiti on the barricades surrounding the National Palace ",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "mention",
+        "entities": [
+          {
+            "id": "x3",
+            "text": "government",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Narco"
+              }
+            ],
+            "propositions": [
+              {
+                "role": "acl",
+                "kind": "relative",
+                "route": "unspecified",
+                "body": {
+                  "op": "event",
+                  "id": "e5",
+                  "predicate": "write",
+                  "anchor": "written",
+                  "arguments": {
+                    "ARG1": "x3",
+                    "ARGM-LOC": "x7"
+                  },
+                  "adjuncts": [
+                    {
+                      "role": "ARGM-LOC",
+                      "target": "x10",
+                      "preposition": "on"
+                    }
+                  ],
+                  "properties": [
+                    {
+                      "role": "preposition:ARGM-LOC",
+                      "value": "in"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "x7",
+            "text": "graffiti",
+            "type": "entity"
+          },
+          {
+            "id": "x10",
+            "text": "barricades",
+            "type": "group",
+            "propositions": [
+              {
+                "role": "acl",
+                "kind": "relative",
+                "route": "unspecified",
+                "body": {
+                  "op": "event",
+                  "id": "e11",
+                  "predicate": "surround",
+                  "anchor": "surrounding",
+                  "arguments": {
+                    "ARG1": "x10",
+                    "ARG2": "x14"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "x14",
+            "text": "National Palace",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "entity",
+          "ref": "x3"
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [
+        "interpretation of a standalone mention"
+      ],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, government, scope, world, route, unspecified)",
+        "property(X1, mod, Narco, scope, world, route, unspecified)",
+        "proposition(X1, acl, relative, c1::TFOEIehBwT8Q_453, scope, world, route, unspecified)",
+        "reference(X1, x3, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X1)",
+        "referent(X2, graffiti, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X1)",
+        "referent(X3, barricades, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X1)",
+        "proposition(X3, acl, relative, c2::TFOEIehBwT8Q_453, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X1)",
+        "reference(X3, x10, scope, c2::TFOEIehBwT8Q_453, route, unspecified, owner, X3)",
+        "referent(X4, National Palace, scope, c2::TFOEIehBwT8Q_453, route, unspecified, owner, X3)",
+        "surround(E2, ARG1, X3, ARG2, X4, scope, c2::TFOEIehBwT8Q_453, route, unspecified, owner, X3)",
+        "temporal(E2, unspecified, progressive, T0, unspecified, scope, c2::TFOEIehBwT8Q_453, route, unspecified, owner, X3)",
+        "adjunct(E1, ARGM-LOC, X3, on, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X1)",
+        "write(E1, ARG1, X1, ARGM-LOC, X2, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X1)",
+        "property(E1, preposition:ARGM-LOC, in, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X1)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e5",
+            "predicate": "write",
+            "scope": "c1::TFOEIehBwT8Q_453",
+            "route": "unspecified",
+            "owner": "X1"
+          },
+          "E2": {
+            "id": "e11",
+            "predicate": "surround",
+            "scope": "c2::TFOEIehBwT8Q_453",
+            "route": "unspecified",
+            "owner": "X3"
+          }
+        },
+        "temporal": {
+          "E2": {
+            "tense": "unspecified",
+            "aspect": "progressive",
+            "reference": "context",
+            "token_ids": [
+              11
+            ],
+            "finite": false,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x7",
+            "text": "graffiti",
+            "type": "entity"
+          },
+          {
+            "id": "x10",
+            "text": "barricades",
+            "type": "group",
+            "propositions": [
+              {
+                "role": "acl",
+                "kind": "relative",
+                "route": "unspecified",
+                "body": {
+                  "op": "event",
+                  "id": "e11",
+                  "predicate": "surround",
+                  "anchor": "surrounding",
+                  "arguments": {
+                    "ARG1": "x10",
+                    "ARG2": "x14"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "x14",
+            "text": "National Palace",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e5",
+          "predicate": "write",
+          "anchor": "written",
+          "arguments": {
+            "ARG1": {
+              "kind": "verbatim_text",
+              "value": "Narco government"
+            },
+            "ARGM-LOC": "x7"
+          },
+          "adjuncts": [
+            {
+              "role": "ARGM-LOC",
+              "target": "x10",
+              "preposition": "on"
+            }
+          ],
+          "properties": [
+            {
+              "role": "source_route",
+              "value": "ocr_assertion"
+            },
+            {
+              "role": "preposition:ARGM-LOC",
+              "value": "in"
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, graffiti, scope, world, route, unspecified)",
+        "referent(X2, barricades, scope, world, route, unspecified)",
+        "proposition(X2, acl, relative, c1::TFOEIehBwT8Q_453, scope, world, route, unspecified)",
+        "reference(X2, x10, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X2)",
+        "referent(X3, National Palace, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X2)",
+        "surround(E2, ARG1, X2, ARG2, X3, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X2)",
+        "temporal(E2, unspecified, progressive, T0, unspecified, scope, c1::TFOEIehBwT8Q_453, route, unspecified, owner, X2)",
+        "adjunct(E1, ARGM-LOC, X2, on, scope, world, route, unspecified)",
+        "write(E1, ARG1, {\"kind\":\"verbatim_text\",\"value\":\"Narco government\"}, ARGM-LOC, X1, scope, world, route, ocr_assertion)",
+        "property(E1, preposition:ARGM-LOC, in, scope, world, route, ocr_assertion)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e5",
+            "predicate": "write",
+            "scope": "world",
+            "route": "ocr_assertion",
+            "owner": null
+          },
+          "E2": {
+            "id": "e11",
+            "predicate": "surround",
+            "scope": "c1::TFOEIehBwT8Q_453",
+            "route": "unspecified",
+            "owner": "X2"
+          }
+        },
+        "temporal": {
+          "E2": {
+            "tense": "unspecified",
+            "aspect": "progressive",
+            "reference": "context",
+            "token_ids": [
+              11
+            ],
+            "finite": false,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": true,
+    "note": "The quoted words are writing content, not a government entity. Graffiti, barricades and the surrounding relation remain explicit.",
+    "stage": "direct_pass"
+  },
+  {
+    "id": "TFOEIehBwT8Q_532",
+    "title": "TFOEIehBwT8Q_532",
+    "text": "Six shots fired or the sound of explosions.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "c1_x2",
+            "text": "shots",
+            "type": "group",
+            "quantity": {
+              "operator": "exact",
+              "value": "Six"
+            }
+          },
+          {
+            "id": "c2_x4",
+            "text": "sound",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "of",
+                "target": "c2_x6"
+              }
+            ]
+          },
+          {
+            "id": "c2_x6",
+            "text": "explosions",
+            "type": "group"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e4",
+              "predicate": "fire",
+              "anchor": "fired",
+              "arguments": {
+                "ARG1": "c1_x2"
+              }
+            },
+            {
+              "op": "event",
+              "id": "e13",
+              "predicate": "hear",
+              "anchor": "heard",
+              "arguments": {
+                "ARGM-DIS": {
+                  "kind": "text",
+                  "value": "Or"
+                },
+                "ARG1": "c2_x4"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+        ]
+      },
+      "runtime_requirements": [
+        "group candidates and quantity conditions"
+      ],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, shots, scope, world, route, unspecified)",
+        "group_quantity(X1, exact, Six, scope, world, route, unspecified)",
+        "fire(E1, ARG1, X1, scope, world, route, unspecified)",
+        "temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified)",
+        "referent(X2, sound, scope, world, route, unspecified)",
+        "referent(X3, explosions, scope, world, route, unspecified)",
+        "entity_relation(X2, of, X3, scope, world, route, unspecified)",
+        "hear(E2, ARG1, X2, ARGM-DIS, {\"kind\":\"text\",\"value\":\"Or\"}, scope, world, route, unspecified)",
+        "temporal(E2, past, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e4",
+            "predicate": "fire",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e13",
+            "predicate": "hear",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3,
+              4
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E2": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              12,
+              13
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "c1_x2",
+            "text": "shots",
+            "type": "group",
+            "quantity": {
+              "operator": "exact",
+              "value": "Six"
+            }
+          },
+          {
+            "id": "c2_x4",
+            "text": "sound",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "of",
+                "target": "c2_x6"
+              }
+            ]
+          },
+          {
+            "id": "c2_x6",
+            "text": "explosions",
+            "type": "group"
+          }
+        ],
+        "formula": {
+          "op": "or",
+          "children": [
+            {
+              "op": "event",
+              "id": "e4",
+              "predicate": "fire",
+              "anchor": "fired",
+              "arguments": {
+                "ARG1": "c1_x2"
+              }
+            },
+            {
+              "op": "event",
+              "id": "e13",
+              "predicate": "hear",
+              "anchor": "heard",
+              "arguments": {
+                "ARGM-DIS": {
+                  "kind": "text",
+                  "value": "Or"
+                },
+                "ARG1": "c2_x4"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+        ]
+      },
+      "runtime_requirements": [
+        "group candidates and quantity conditions"
+      ],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, shots, scope, world, route, unspecified)",
+        "group_quantity(X1, exact, Six, scope, world, route, unspecified)",
+        "fire(E1, ARG1, X1, scope, world, route, unspecified)",
+        "temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified)",
+        "referent(X2, sound, scope, world, route, unspecified)",
+        "referent(X3, explosions, scope, world, route, unspecified)",
+        "entity_relation(X2, of, X3, scope, world, route, unspecified)",
+        "hear(E2, ARG1, X2, ARGM-DIS, {\"kind\":\"text\",\"value\":\"Or\"}, scope, world, route, unspecified)",
+        "temporal(E2, past, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e4",
+            "predicate": "fire",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e13",
+            "predicate": "hear",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3,
+              4
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E2": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              12,
+              13
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": true,
+    "note": "The two alternatives are joined by OR. Six qualifies shots only; no explosion count is invented.",
+    "stage": "compiled_composed"
+  },
+  {
+    "id": "TFOEIehBwT8Q_536",
+    "title": "TFOEIehBwT8Q_536",
+    "text": "\"Manzo lives\" written in graffiti on the barricades.",
+    "before": {
+      "status": "unsupported",
+      "code": "entity_alignment",
+      "reason": "Original noun head is absent or ambiguous: c1/message",
+      "form": null,
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [],
+      "metadata": {
+        "events": {},
+        "temporal": {}
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x7",
+            "text": "graffiti",
+            "type": "entity"
+          },
+          {
+            "id": "x10",
+            "text": "barricades",
+            "type": "group"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e5",
+          "predicate": "write",
+          "anchor": "written",
+          "arguments": {
+            "ARG1": {
+              "kind": "verbatim_text",
+              "value": "Manzo lives"
+            },
+            "ARGM-LOC": "x7"
+          },
+          "adjuncts": [
+            {
+              "role": "ARGM-LOC",
+              "target": "x10",
+              "preposition": "on"
+            }
+          ],
+          "properties": [
+            {
+              "role": "source_route",
+              "value": "ocr_assertion"
+            },
+            {
+              "role": "preposition:ARGM-LOC",
+              "value": "in"
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, graffiti, scope, world, route, unspecified)",
+        "referent(X2, barricades, scope, world, route, unspecified)",
+        "adjunct(E1, ARGM-LOC, X2, on, scope, world, route, unspecified)",
+        "write(E1, ARG1, {\"kind\":\"verbatim_text\",\"value\":\"Manzo lives\"}, ARGM-LOC, X1, scope, world, route, ocr_assertion)",
+        "property(E1, preposition:ARGM-LOC, in, scope, world, route, ocr_assertion)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e5",
+            "predicate": "write",
+            "scope": "world",
+            "route": "ocr_assertion",
+            "owner": null
+          }
+        },
+        "temporal": {}
+      }
+    },
+    "approved": true,
+    "note": "The exact quoted words remain OCR content. Graffiti and barricades are separate explicit surfaces of the writing event.",
+    "stage": "direct_pass"
+  },
+  {
+    "id": "TQEmEycTI0RQ_955",
+    "title": "TQEmEycTI0RQ_955",
+    "text": "NDP had a poor result: declining steadily since Carney became Liberal leader.",
+    "before": {
+      "status": "unsupported",
+      "code": "entity_alignment",
+      "reason": "Original noun head is absent or ambiguous: c3/decline",
+      "form": null,
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [],
+      "metadata": {
+        "events": {},
+        "temporal": {}
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "c1_x1",
+            "text": "NDP",
+            "type": "entity"
+          },
+          {
+            "id": "c1_x5",
+            "text": "result",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "poor"
+              }
+            ]
+          },
+          {
+            "id": "c3_x2",
+            "text": "decline",
+            "type": "entity",
+            "event_ref": "e9"
+          },
+          {
+            "id": "c3_x5",
+            "text": "Carney",
+            "type": "entity"
+          },
+          {
+            "id": "c3_x8",
+            "text": "leader",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Liberal"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e2",
+              "predicate": "have",
+              "anchor": "had",
+              "arguments": {
+                "ARG0": "c1_x1",
+                "ARG1": "c1_x5"
+              }
+            },
+            {
+              "op": "event",
+              "id": "e9",
+              "predicate": "decline",
+              "anchor": "declined",
+              "arguments": {
+                "ARG1": "c1_x5",
+                "ARGM-MNR": {
+                  "kind": "manner",
+                  "value": "steadily"
+                }
+              }
+            },
+            {
+              "op": "event",
+              "id": "e14",
+              "predicate": "begin",
+              "anchor": "began",
+              "arguments": {
+                "ARG1": "c3_x2"
+              },
+              "properties": [
+                {
+                  "role": "clause_marker:ARGM-TMP",
+                  "value": "since"
+                }
+              ],
+              "propositions": [
+                {
+                  "role": "since",
+                  "kind": "temporal",
+                  "route": "unspecified",
+                  "body": {
+                    "op": "event",
+                    "id": "e17",
+                    "predicate": "become",
+                    "anchor": "became",
+                    "arguments": {
+                      "ARG1": "c3_x5",
+                      "ARG2": "c3_x8"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "warnings": [
+          "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [
+        {
+          "mention": "c3_x2",
+          "event": "e9",
+          "variable": "E2"
+        }
+      ],
+      "predicates": [
+        "referent(X1, NDP, scope, world, route, unspecified)",
+        "referent(X2, result, scope, world, route, unspecified)",
+        "property(X2, mod, poor, scope, world, route, unspecified)",
+        "have(E1, ARG0, X1, ARG1, X2, scope, world, route, unspecified)",
+        "temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified)",
+        "decline(E2, ARG1, X2, ARGM-MNR, {\"kind\":\"manner\",\"value\":\"steadily\"}, scope, world, route, unspecified)",
+        "temporal(E2, past, simple, T0, unspecified, scope, world, route, unspecified)",
+        "proposition(E3, since, temporal, c1::TQEmEycTI0RQ_955, scope, world, route, unspecified)",
+        "referent(X3, Carney, scope, c1::TQEmEycTI0RQ_955, route, unspecified, owner, E3)",
+        "referent(X4, leader, scope, c1::TQEmEycTI0RQ_955, route, unspecified, owner, E3)",
+        "property(X4, mod, Liberal, scope, c1::TQEmEycTI0RQ_955, route, unspecified, owner, E3)",
+        "become(E4, ARG1, X3, ARG2, X4, scope, c1::TQEmEycTI0RQ_955, route, unspecified, owner, E3)",
+        "temporal(E4, past, simple, T0, unspecified, scope, c1::TQEmEycTI0RQ_955, route, unspecified, owner, E3)",
+        "begin(E3, ARG1, E2, since, c1::TQEmEycTI0RQ_955, scope, world, route, unspecified)",
+        "property(E3, clause_marker:ARGM-TMP, since, scope, world, route, unspecified)",
+        "temporal(E3, past, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e2",
+            "predicate": "have",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e9",
+            "predicate": "decline",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E3": {
+            "id": "e14",
+            "predicate": "begin",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E4": {
+            "id": "e17",
+            "predicate": "become",
+            "scope": "c1::TQEmEycTI0RQ_955",
+            "route": "unspecified",
+            "owner": "E3"
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              2
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E2": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              9
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E4": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              17
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E3": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              14
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": false,
+    "note": "The declining subject is linked to result rather than NDP and begin is introduced. Reflexive/lexical repairs do not resolve that event reading.",
+    "stage": "compiled_composed"
+  },
+  {
+    "id": "TgPh_fzHTCm4_1500",
+    "title": "TgPh_fzHTCm4_1500",
+    "text": "This circulation then moves north-northeast and then parks itself over central Texas.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "circulation",
+            "type": "entity"
+          },
+          {
+            "id": "x7",
+            "text": "northeast",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "advmod",
+                "value": "north"
+              }
+            ]
+          },
+          {
+            "id": "x11",
+            "text": "itself",
+            "type": "pronoun"
+          },
+          {
+            "id": "x14",
+            "text": "Texas",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "central"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e4",
+              "predicate": "move",
+              "anchor": "moves",
+              "arguments": {
+                "ARG1": "x2",
+                "ARGM-TMP": {
+                  "kind": "time",
+                  "value": "then"
+                },
+                "ARGM-DIR": "x7"
+              }
+            },
+            {
+              "op": "event",
+              "id": "e10",
+              "predicate": "park",
+              "anchor": "parks",
+              "arguments": {
+                "ARG0": "x2",
+                "ARGM-TMP": {
+                  "kind": "time",
+                  "value": "then"
+                },
+                "ARG1": "x11",
+                "ARGM-LOC": "x14"
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARGM-LOC",
+                  "value": "over"
+                }
+              ]
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [
+        "reference resolution"
+      ],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, circulation, scope, world, route, unspecified)",
+        "referent(X2, northeast, scope, world, route, unspecified)",
+        "property(X2, advmod, north, scope, world, route, unspecified)",
+        "move(E1, ARG1, X1, ARGM-DIR, X2, ARGM-TMP, {\"kind\":\"time\",\"value\":\"then\"}, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)",
+        "referent(X3, itself, scope, world, route, unspecified)",
+        "resolve_reference(X3, itself, scope, world, route, unspecified)",
+        "referent(X4, Texas, scope, world, route, unspecified)",
+        "property(X4, mod, central, scope, world, route, unspecified)",
+        "park(E2, ARG0, X1, ARG1, X3, ARGM-LOC, X4, ARGM-TMP, {\"kind\":\"time\",\"value\":\"then\"}, scope, world, route, unspecified)",
+        "property(E2, preposition:ARGM-LOC, over, scope, world, route, unspecified)",
+        "temporal(E2, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e4",
+            "predicate": "move",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e10",
+            "predicate": "park",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              4
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E2": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              10
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "circulation",
+            "type": "entity"
+          },
+          {
+            "id": "x7",
+            "text": "northeast",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "advmod",
+                "value": "north"
+              }
+            ]
+          },
+          {
+            "id": "x14",
+            "text": "Texas",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "central"
+              }
+            ]
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e4",
+              "predicate": "move",
+              "anchor": "moves",
+              "arguments": {
+                "ARG1": "x2",
+                "ARGM-TMP": {
+                  "kind": "time",
+                  "value": "then"
+                },
+                "ARGM-DIR": "x7"
+              }
+            },
+            {
+              "op": "event",
+              "id": "e10",
+              "predicate": "park",
+              "anchor": "parks",
+              "arguments": {
+                "ARG0": "x2",
+                "ARGM-TMP": {
+                  "kind": "time",
+                  "value": "then"
+                },
+                "ARG1": "x2",
+                "ARGM-LOC": "x14"
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARGM-LOC",
+                  "value": "over"
+                }
+              ]
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, circulation, scope, world, route, unspecified)",
+        "referent(X2, northeast, scope, world, route, unspecified)",
+        "property(X2, advmod, north, scope, world, route, unspecified)",
+        "move(E1, ARG1, X1, ARGM-DIR, X2, ARGM-TMP, {\"kind\":\"time\",\"value\":\"then\"}, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)",
+        "referent(X3, Texas, scope, world, route, unspecified)",
+        "property(X3, mod, central, scope, world, route, unspecified)",
+        "park(E2, ARG0, X1, ARG1, X1, ARGM-LOC, X3, ARGM-TMP, {\"kind\":\"time\",\"value\":\"then\"}, scope, world, route, unspecified)",
+        "property(E2, preposition:ARGM-LOC, over, scope, world, route, unspecified)",
+        "temporal(E2, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e4",
+            "predicate": "move",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e10",
+            "predicate": "park",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              4
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E2": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              10
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": false,
+    "note": "Itself now shares the circulation referent, but repeated then modifiers do not explicitly order the events.",
+    "stage": "direct_pass"
+  },
+  {
+    "id": "Txf2EdqOg1SQ_2290",
+    "title": "Txf2EdqOg1SQ_2290",
+    "text": "Ceiling panels inside a shopping mall or large building collapse to the floor in Jiangmen.",
+    "before": {
+      "status": "unsupported",
+      "code": "entity_alignment",
+      "reason": "Original noun head is absent or ambiguous: c4/collapse",
+      "form": null,
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [],
+      "metadata": {
+        "events": {},
+        "temporal": {}
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "c1_x2",
+            "text": "panels",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "Ceiling"
+              },
+              {
+                "role": "mod",
+                "value": "ceiling"
+              }
+            ]
+          },
+          {
+            "id": "c1_x7",
+            "text": "mall",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "shopping"
+              }
+            ]
+          },
+          {
+            "id": "c2_x7",
+            "text": "building",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "large"
+              }
+            ]
+          },
+          {
+            "id": "c3_x7",
+            "text": "floor",
+            "type": "entity"
+          },
+          {
+            "id": "c4_x2",
+            "text": "collapse",
+            "type": "entity",
+            "event_ref": "e20"
+          },
+          {
+            "id": "c4_x5",
+            "text": "Jiangmen",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "and",
+          "children": [
+            {
+              "op": "event",
+              "id": "e3",
+              "predicate": "be",
+              "anchor": "are",
+              "arguments": {
+                "ARG1": "c1_x2",
+                "ARG2": "c1_x7"
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARG2",
+                  "value": "inside"
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "id": "e11",
+              "predicate": "be",
+              "anchor": "are",
+              "arguments": {
+                "ARG1": "c1_x2",
+                "ARG2": "c2_x7"
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARG2",
+                  "value": "inside"
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "id": "e20",
+              "predicate": "collapse",
+              "anchor": "collapse",
+              "arguments": {
+                "ARG1": "c1_x2",
+                "ARG4": "c3_x7"
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARG4",
+                  "value": "to"
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "id": "e27",
+              "predicate": "occur",
+              "anchor": "occurs",
+              "arguments": {
+                "ARG1": "c4_x2",
+                "ARGM-LOC": "c4_x5"
+              },
+              "properties": [
+                {
+                  "role": "preposition:ARGM-LOC",
+                  "value": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "warnings": [
+          "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [
+        {
+          "mention": "c4_x2",
+          "event": "e20",
+          "variable": "E3"
+        }
+      ],
+      "predicates": [
+        "referent(X1, panels, scope, world, route, unspecified)",
+        "property(X1, mod, Ceiling, scope, world, route, unspecified)",
+        "property(X1, mod, ceiling, scope, world, route, unspecified)",
+        "referent(X2, mall, scope, world, route, unspecified)",
+        "property(X2, mod, shopping, scope, world, route, unspecified)",
+        "be(E1, ARG1, X1, ARG2, X2, scope, world, route, unspecified)",
+        "property(E1, preposition:ARG2, inside, scope, world, route, unspecified)",
+        "referent(X3, building, scope, world, route, unspecified)",
+        "property(X3, mod, large, scope, world, route, unspecified)",
+        "be(E2, ARG1, X1, ARG2, X3, scope, world, route, unspecified)",
+        "property(E2, preposition:ARG2, inside, scope, world, route, unspecified)",
+        "referent(X4, floor, scope, world, route, unspecified)",
+        "collapse(E3, ARG1, X1, ARG4, X4, scope, world, route, unspecified)",
+        "property(E3, preposition:ARG4, to, scope, world, route, unspecified)",
+        "referent(X5, Jiangmen, scope, world, route, unspecified)",
+        "occur(E4, ARG1, E3, ARGM-LOC, X5, scope, world, route, unspecified)",
+        "property(E4, preposition:ARGM-LOC, in, scope, world, route, unspecified)",
+        "temporal(E4, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "be",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e11",
+            "predicate": "be",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E3": {
+            "id": "e20",
+            "predicate": "collapse",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E4": {
+            "id": "e27",
+            "predicate": "occur",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E4": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              27
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "approved": false,
+    "note": "The two alternative locations still become an AND reading in this cached rewrite. Explicit generated formulas need evaluation on this case.",
+    "stage": "compiled_composed"
+  }
+]

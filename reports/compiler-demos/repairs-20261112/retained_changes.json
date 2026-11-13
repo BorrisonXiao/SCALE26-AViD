@@ -1,0 +1,1890 @@
+[
+  {
+    "claim_id": "TFOEIehBwT8Q_461",
+    "text": "The protests are likely in support of Carlos Manzo.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "protests",
+            "type": "group"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "be",
+          "anchor": "are",
+          "arguments": {
+            "ARG1": "x2",
+            "ARG2": {
+              "kind": "text",
+              "value": "likely in support of Carlos Manzo"
+            }
+          }
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, protests, scope, world, route, unspecified)",
+        "be(E1, ARG1, X1, ARG2, {\"kind\":\"text\",\"value\":\"likely in support of Carlos Manzo\"}, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "be",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "protests",
+            "type": "group",
+            "properties": []
+          }
+        ],
+        "formula": {
+          "op": "qualified",
+          "operator": "likely",
+          "body": {
+            "op": "event",
+            "id": "e3",
+            "predicate": "be",
+            "anchor": "are",
+            "arguments": {
+              "ARG1": "x2",
+              "ARG2": {
+                "kind": "text",
+                "value": "likely in support of Carlos Manzo"
+              }
+            }
+          }
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "qualification(likely, q1::TFOEIehBwT8Q_461, scope, world, route, unspecified)",
+        "referent(X1, protests, scope, q1::TFOEIehBwT8Q_461, route, unspecified)",
+        "be(E1, ARG1, X1, ARG2, {\"kind\":\"text\",\"value\":\"likely in support of Carlos Manzo\"}, scope, q1::TFOEIehBwT8Q_461, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, q1::TFOEIehBwT8Q_461, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "be",
+            "scope": "q1::TFOEIehBwT8Q_461",
+            "route": "unspecified",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "note": "Targeted change review: the source route or simple likelihood scope now follows the original grammatical context; earlier conditions retain their previous status.",
+    "artifact_sha256": "ccbee7e6d098c2855c4da6cbdb63f2689fbb8f34cf440b22e4ac5f9e6b52b906"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_472",
+    "text": "Police are creating a barrier between themselves and the protesters while throwing tear gas and other items at the crowd.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x1",
+            "text": "Police",
+            "type": "group"
+          },
+          {
+            "id": "x5",
+            "text": "barrier",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "between",
+                "target": "g7"
+              }
+            ]
+          },
+          {
+            "id": "x7",
+            "text": "themselves",
+            "type": "pronoun"
+          },
+          {
+            "id": "g7",
+            "text": "between themselves and the protesters",
+            "type": "group",
+            "relations": [
+              {
+                "role": "member",
+                "target": "x7"
+              },
+              {
+                "role": "member",
+                "target": "x10"
+              }
+            ]
+          },
+          {
+            "id": "x10",
+            "text": "protesters",
+            "type": "group"
+          },
+          {
+            "id": "x14",
+            "text": "gas",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "tear"
+              }
+            ]
+          },
+          {
+            "id": "g14",
+            "text": "tear gas and other items",
+            "type": "group",
+            "relations": [
+              {
+                "role": "member",
+                "target": "x14"
+              },
+              {
+                "role": "member",
+                "target": "x17"
+              }
+            ]
+          },
+          {
+            "id": "x17",
+            "text": "items",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "other"
+              }
+            ]
+          },
+          {
+            "id": "x20",
+            "text": "crowd",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "create",
+          "anchor": "creating",
+          "arguments": {
+            "ARG0": "x1",
+            "ARG1": "x5"
+          },
+          "properties": [
+            {
+              "role": "clause_marker:ARGM-TMP",
+              "value": "while"
+            }
+          ],
+          "propositions": [
+            {
+              "role": "while",
+              "kind": "temporal",
+              "route": "unspecified",
+              "body": {
+                "op": "event",
+                "id": "e12",
+                "predicate": "throw",
+                "anchor": "throwing",
+                "arguments": {
+                  "ARG0": "x1",
+                  "ARG1": "g14",
+                  "ARG2": "x20"
+                },
+                "properties": [
+                  {
+                    "role": "preposition:ARG2",
+                    "value": "at"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [
+        "reference resolution"
+      ],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, Police, scope, world, route, unspecified)",
+        "referent(X2, barrier, scope, world, route, unspecified)",
+        "referent(X3, between themselves and the protesters, scope, world, route, unspecified)",
+        "referent(X4, themselves, scope, world, route, unspecified)",
+        "resolve_reference(X4, themselves, scope, world, route, unspecified)",
+        "entity_relation(X3, member, X4, scope, world, route, unspecified)",
+        "referent(X5, protesters, scope, world, route, unspecified)",
+        "entity_relation(X3, member, X5, scope, world, route, unspecified)",
+        "entity_relation(X2, between, X3, scope, world, route, unspecified)",
+        "proposition(E1, while, temporal, c1::TFOEIehBwT8Q_472, scope, world, route, unspecified)",
+        "reference(X1, x1, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "referent(X6, tear gas and other items, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "referent(X7, gas, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "property(X7, mod, tear, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "entity_relation(X6, member, X7, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "referent(X8, items, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "property(X8, mod, other, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "entity_relation(X6, member, X8, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "referent(X9, crowd, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "throw(E2, ARG0, X1, ARG1, X6, ARG2, X9, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "property(E2, preposition:ARG2, at, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "temporal(E2, unspecified, progressive, T0, unspecified, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "create(E1, ARG0, X1, ARG1, X2, while, c1::TFOEIehBwT8Q_472, scope, world, route, unspecified)",
+        "property(E1, clause_marker:ARGM-TMP, while, scope, world, route, unspecified)",
+        "temporal(E1, pres, progressive, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "create",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e12",
+            "predicate": "throw",
+            "scope": "c1::TFOEIehBwT8Q_472",
+            "route": "unspecified",
+            "owner": "E1"
+          }
+        },
+        "temporal": {
+          "E2": {
+            "tense": "unspecified",
+            "aspect": "progressive",
+            "reference": "context",
+            "token_ids": [
+              12
+            ],
+            "finite": false,
+            "completion": "unspecified"
+          },
+          "E1": {
+            "tense": "pres",
+            "aspect": "progressive",
+            "reference": "context",
+            "token_ids": [
+              2,
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x1",
+            "text": "Police",
+            "type": "group"
+          },
+          {
+            "id": "x5",
+            "text": "barrier",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "between",
+                "target": "g7"
+              }
+            ]
+          },
+          {
+            "id": "g7",
+            "text": "between themselves and the protesters",
+            "type": "group",
+            "relations": [
+              {
+                "role": "member",
+                "target": "x1"
+              },
+              {
+                "role": "member",
+                "target": "x10"
+              }
+            ]
+          },
+          {
+            "id": "x10",
+            "text": "protesters",
+            "type": "group"
+          },
+          {
+            "id": "x14",
+            "text": "gas",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "tear"
+              }
+            ]
+          },
+          {
+            "id": "g14",
+            "text": "tear gas and other items",
+            "type": "group",
+            "relations": [
+              {
+                "role": "member",
+                "target": "x14"
+              },
+              {
+                "role": "member",
+                "target": "x17"
+              }
+            ]
+          },
+          {
+            "id": "x17",
+            "text": "items",
+            "type": "group",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "other"
+              }
+            ]
+          },
+          {
+            "id": "x20",
+            "text": "crowd",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "create",
+          "anchor": "creating",
+          "arguments": {
+            "ARG0": "x1",
+            "ARG1": "x5"
+          },
+          "properties": [
+            {
+              "role": "clause_marker:ARGM-TMP",
+              "value": "while"
+            }
+          ],
+          "propositions": [
+            {
+              "role": "while",
+              "kind": "temporal",
+              "route": "unspecified",
+              "body": {
+                "op": "event",
+                "id": "e12",
+                "predicate": "throw",
+                "anchor": "throwing",
+                "arguments": {
+                  "ARG0": "x1",
+                  "ARG1": "g14",
+                  "ARG2": "x20"
+                },
+                "properties": [
+                  {
+                    "role": "preposition:ARG2",
+                    "value": "at"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, Police, scope, world, route, unspecified)",
+        "referent(X2, barrier, scope, world, route, unspecified)",
+        "referent(X3, between themselves and the protesters, scope, world, route, unspecified)",
+        "entity_relation(X3, member, X1, scope, world, route, unspecified)",
+        "referent(X4, protesters, scope, world, route, unspecified)",
+        "entity_relation(X3, member, X4, scope, world, route, unspecified)",
+        "entity_relation(X2, between, X3, scope, world, route, unspecified)",
+        "proposition(E1, while, temporal, c1::TFOEIehBwT8Q_472, scope, world, route, unspecified)",
+        "reference(X1, x1, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "referent(X5, tear gas and other items, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "referent(X6, gas, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "property(X6, mod, tear, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "entity_relation(X5, member, X6, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "referent(X7, items, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "property(X7, mod, other, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "entity_relation(X5, member, X7, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "referent(X8, crowd, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "throw(E2, ARG0, X1, ARG1, X5, ARG2, X8, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "property(E2, preposition:ARG2, at, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "temporal(E2, unspecified, progressive, T0, unspecified, scope, c1::TFOEIehBwT8Q_472, route, unspecified, owner, E1)",
+        "create(E1, ARG0, X1, ARG1, X2, while, c1::TFOEIehBwT8Q_472, scope, world, route, unspecified)",
+        "property(E1, clause_marker:ARGM-TMP, while, scope, world, route, unspecified)",
+        "temporal(E1, pres, progressive, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "create",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e12",
+            "predicate": "throw",
+            "scope": "c1::TFOEIehBwT8Q_472",
+            "route": "unspecified",
+            "owner": "E1"
+          }
+        },
+        "temporal": {
+          "E2": {
+            "tense": "unspecified",
+            "aspect": "progressive",
+            "reference": "context",
+            "token_ids": [
+              12
+            ],
+            "finite": false,
+            "completion": "unspecified"
+          },
+          "E1": {
+            "tense": "pres",
+            "aspect": "progressive",
+            "reference": "context",
+            "token_ids": [
+              2,
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "note": "Targeted change review: reflexive now shares its local subject; other earlier conditions retain their previous status.",
+    "artifact_sha256": "bc35a52daf890b31ddef9b3dbfd93fab678f51dcacef063b2df65acc9ffc85e3"
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_845",
+    "text": "Says Canadians can provide for themselves more than any foreign government could.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "Canadians",
+            "type": "group"
+          },
+          {
+            "id": "x6",
+            "text": "themselves",
+            "type": "pronoun"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e1",
+          "predicate": "say",
+          "anchor": "Says",
+          "arguments": {},
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "assertion",
+              "route": "speech_assertion",
+              "body": {
+                "op": "qualified",
+                "operator": "ability",
+                "body": {
+                  "op": "event",
+                  "id": "e4",
+                  "predicate": "provide",
+                  "anchor": "provide",
+                  "arguments": {
+                    "ARG0": "x2",
+                    "ARG2": "x6",
+                    "ARG1": {
+                      "kind": "text",
+                      "value": "more than any foreign government could"
+                    }
+                  },
+                  "properties": [
+                    {
+                      "role": "preposition:ARG2",
+                      "value": "for"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [
+        "reference resolution"
+      ],
+      "event_references": [],
+      "predicates": [
+        "proposition(E1, ARG1, assertion, c1::TQEmEycTI0RQ_845, scope, world, route, unspecified)",
+        "qualification(ability, q2::TQEmEycTI0RQ_845, scope, c1::TQEmEycTI0RQ_845, route, speech_assertion, owner, E1)",
+        "referent(X1, Canadians, scope, q2::TQEmEycTI0RQ_845, route, speech_assertion, owner, E1)",
+        "referent(X2, themselves, scope, q2::TQEmEycTI0RQ_845, route, speech_assertion, owner, E1)",
+        "resolve_reference(X2, themselves, scope, q2::TQEmEycTI0RQ_845, route, speech_assertion, owner, E1)",
+        "provide(E2, ARG0, X1, ARG1, {\"kind\":\"text\",\"value\":\"more than any foreign government could\"}, ARG2, X2, scope, q2::TQEmEycTI0RQ_845, route, speech_assertion, owner, E1)",
+        "property(E2, preposition:ARG2, for, scope, q2::TQEmEycTI0RQ_845, route, speech_assertion, owner, E1)",
+        "say(E1, ARG1, c1::TQEmEycTI0RQ_845, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e1",
+            "predicate": "say",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e4",
+            "predicate": "provide",
+            "scope": "q2::TQEmEycTI0RQ_845",
+            "route": "speech_assertion",
+            "owner": "E1"
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              1
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "Canadians",
+            "type": "group"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e1",
+          "predicate": "say",
+          "anchor": "Says",
+          "arguments": {},
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "assertion",
+              "route": "speech_assertion",
+              "body": {
+                "op": "qualified",
+                "operator": "ability",
+                "body": {
+                  "op": "event",
+                  "id": "e4",
+                  "predicate": "provide",
+                  "anchor": "provide",
+                  "arguments": {
+                    "ARG0": "x2",
+                    "ARG2": "x2",
+                    "ARG1": {
+                      "kind": "text",
+                      "value": "more than any foreign government could"
+                    }
+                  },
+                  "properties": [
+                    {
+                      "role": "preposition:ARG2",
+                      "value": "for"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "proposition(E1, ARG1, assertion, c1::TQEmEycTI0RQ_845, scope, world, route, unspecified)",
+        "qualification(ability, q2::TQEmEycTI0RQ_845, scope, c1::TQEmEycTI0RQ_845, route, speech_assertion, owner, E1)",
+        "referent(X1, Canadians, scope, q2::TQEmEycTI0RQ_845, route, speech_assertion, owner, E1)",
+        "provide(E2, ARG0, X1, ARG1, {\"kind\":\"text\",\"value\":\"more than any foreign government could\"}, ARG2, X1, scope, q2::TQEmEycTI0RQ_845, route, speech_assertion, owner, E1)",
+        "property(E2, preposition:ARG2, for, scope, q2::TQEmEycTI0RQ_845, route, speech_assertion, owner, E1)",
+        "say(E1, ARG1, c1::TQEmEycTI0RQ_845, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e1",
+            "predicate": "say",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e4",
+            "predicate": "provide",
+            "scope": "q2::TQEmEycTI0RQ_845",
+            "route": "speech_assertion",
+            "owner": "E1"
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              1
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "note": "Targeted change review: reflexive now shares its local subject; other earlier conditions retain their previous status.",
+    "artifact_sha256": "67110e5646eba6d02a9a5d1318eb429bb542eb07342d706aa5a5a4a1f4e6898e"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1537",
+    "text": "Steven Miller wrote online in response to the decision: 'The judicial coup is out of control'.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x1",
+            "text": "Steven Miller",
+            "type": "entity"
+          },
+          {
+            "id": "x6",
+            "text": "response",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "to",
+                "target": "x9"
+              }
+            ]
+          },
+          {
+            "id": "x9",
+            "text": "decision",
+            "type": "entity"
+          },
+          {
+            "id": "x14",
+            "text": "coup",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "judicial"
+              }
+            ]
+          },
+          {
+            "id": "x18",
+            "text": "control",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "write",
+          "anchor": "wrote",
+          "arguments": {
+            "ARG0": "x1",
+            "ARGM-LOC": {
+              "kind": "text",
+              "value": "online"
+            },
+            "ARGM-PRP": "x6"
+          },
+          "properties": [
+            {
+              "role": "preposition:ARGM-PRP",
+              "value": "in"
+            },
+            {
+              "role": "clause_marker:ARG1",
+              "value": "out of"
+            }
+          ],
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "complement",
+              "route": "unspecified",
+              "body": {
+                "op": "event",
+                "id": "e15",
+                "predicate": "be",
+                "anchor": "is",
+                "arguments": {
+                  "ARG1": "x14",
+                  "ARG2": "x18"
+                },
+                "properties": [
+                  {
+                    "role": "preposition:ARG2",
+                    "value": "out of"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, Steven Miller, scope, world, route, unspecified)",
+        "referent(X2, response, scope, world, route, unspecified)",
+        "referent(X3, decision, scope, world, route, unspecified)",
+        "entity_relation(X2, to, X3, scope, world, route, unspecified)",
+        "proposition(E1, ARG1, complement, c1::TFgw4IaR9R8s_1537, scope, world, route, unspecified)",
+        "referent(X4, coup, scope, c1::TFgw4IaR9R8s_1537, route, unspecified, owner, E1)",
+        "property(X4, mod, judicial, scope, c1::TFgw4IaR9R8s_1537, route, unspecified, owner, E1)",
+        "referent(X5, control, scope, c1::TFgw4IaR9R8s_1537, route, unspecified, owner, E1)",
+        "be(E2, ARG1, X4, ARG2, X5, scope, c1::TFgw4IaR9R8s_1537, route, unspecified, owner, E1)",
+        "property(E2, preposition:ARG2, out of, scope, c1::TFgw4IaR9R8s_1537, route, unspecified, owner, E1)",
+        "temporal(E2, pres, simple, T0, unspecified, scope, c1::TFgw4IaR9R8s_1537, route, unspecified, owner, E1)",
+        "write(E1, ARG0, X1, ARGM-LOC, {\"kind\":\"text\",\"value\":\"online\"}, ARGM-PRP, X2, ARG1, c1::TFgw4IaR9R8s_1537, scope, world, route, unspecified)",
+        "property(E1, preposition:ARGM-PRP, in, scope, world, route, unspecified)",
+        "property(E1, clause_marker:ARG1, out of, scope, world, route, unspecified)",
+        "temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "write",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e15",
+            "predicate": "be",
+            "scope": "c1::TFgw4IaR9R8s_1537",
+            "route": "unspecified",
+            "owner": "E1"
+          }
+        },
+        "temporal": {
+          "E2": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              15
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E1": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x1",
+            "text": "Steven Miller",
+            "type": "entity"
+          },
+          {
+            "id": "x6",
+            "text": "response",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "to",
+                "target": "x9"
+              }
+            ]
+          },
+          {
+            "id": "x9",
+            "text": "decision",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "write",
+          "anchor": "wrote",
+          "arguments": {
+            "ARG0": "x1",
+            "ARGM-LOC": {
+              "kind": "text",
+              "value": "online"
+            },
+            "ARGM-PRP": "x6",
+            "ARG1": {
+              "kind": "verbatim_text",
+              "value": "The judicial coup is out of control"
+            }
+          },
+          "properties": [
+            {
+              "role": "preposition:ARGM-PRP",
+              "value": "in"
+            },
+            {
+              "role": "source_route",
+              "value": "ocr_assertion"
+            },
+            {
+              "role": "preposition:ARG1",
+              "value": "out of"
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, Steven Miller, scope, world, route, unspecified)",
+        "referent(X2, response, scope, world, route, unspecified)",
+        "referent(X3, decision, scope, world, route, unspecified)",
+        "entity_relation(X2, to, X3, scope, world, route, unspecified)",
+        "write(E1, ARG0, X1, ARG1, {\"kind\":\"verbatim_text\",\"value\":\"The judicial coup is out of control\"}, ARGM-LOC, {\"kind\":\"text\",\"value\":\"online\"}, ARGM-PRP, X2, scope, world, route, ocr_assertion)",
+        "property(E1, preposition:ARGM-PRP, in, scope, world, route, ocr_assertion)",
+        "property(E1, preposition:ARG1, out of, scope, world, route, ocr_assertion)",
+        "temporal(E1, past, simple, T0, unspecified, scope, world, route, ocr_assertion)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "write",
+            "scope": "world",
+            "route": "ocr_assertion",
+            "owner": null
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "note": "Targeted change review: the source route or simple likelihood scope now follows the original grammatical context; earlier conditions retain their previous status.",
+    "artifact_sha256": "45b094c96c5a99eb1543df372cb40c6ad3f7a5abe24ff86d72747cb0b94d8986"
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1704",
+    "text": "Says Canadians can provide for themselves more than any foreign government could.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "Canadians",
+            "type": "group"
+          },
+          {
+            "id": "x6",
+            "text": "themselves",
+            "type": "pronoun"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e1",
+          "predicate": "say",
+          "anchor": "Says",
+          "arguments": {},
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "assertion",
+              "route": "speech_assertion",
+              "body": {
+                "op": "qualified",
+                "operator": "ability",
+                "body": {
+                  "op": "event",
+                  "id": "e4",
+                  "predicate": "provide",
+                  "anchor": "provide",
+                  "arguments": {
+                    "ARG0": "x2",
+                    "ARG2": "x6",
+                    "ARG1": {
+                      "kind": "text",
+                      "value": "more than any foreign government could"
+                    }
+                  },
+                  "properties": [
+                    {
+                      "role": "preposition:ARG2",
+                      "value": "for"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [
+        "reference resolution"
+      ],
+      "event_references": [],
+      "predicates": [
+        "proposition(E1, ARG1, assertion, c1::TFgw4IaR9R8s_1704, scope, world, route, unspecified)",
+        "qualification(ability, q2::TFgw4IaR9R8s_1704, scope, c1::TFgw4IaR9R8s_1704, route, speech_assertion, owner, E1)",
+        "referent(X1, Canadians, scope, q2::TFgw4IaR9R8s_1704, route, speech_assertion, owner, E1)",
+        "referent(X2, themselves, scope, q2::TFgw4IaR9R8s_1704, route, speech_assertion, owner, E1)",
+        "resolve_reference(X2, themselves, scope, q2::TFgw4IaR9R8s_1704, route, speech_assertion, owner, E1)",
+        "provide(E2, ARG0, X1, ARG1, {\"kind\":\"text\",\"value\":\"more than any foreign government could\"}, ARG2, X2, scope, q2::TFgw4IaR9R8s_1704, route, speech_assertion, owner, E1)",
+        "property(E2, preposition:ARG2, for, scope, q2::TFgw4IaR9R8s_1704, route, speech_assertion, owner, E1)",
+        "say(E1, ARG1, c1::TFgw4IaR9R8s_1704, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e1",
+            "predicate": "say",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e4",
+            "predicate": "provide",
+            "scope": "q2::TFgw4IaR9R8s_1704",
+            "route": "speech_assertion",
+            "owner": "E1"
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              1
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "Canadians",
+            "type": "group"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e1",
+          "predicate": "say",
+          "anchor": "Says",
+          "arguments": {},
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "assertion",
+              "route": "speech_assertion",
+              "body": {
+                "op": "qualified",
+                "operator": "ability",
+                "body": {
+                  "op": "event",
+                  "id": "e4",
+                  "predicate": "provide",
+                  "anchor": "provide",
+                  "arguments": {
+                    "ARG0": "x2",
+                    "ARG2": "x2",
+                    "ARG1": {
+                      "kind": "text",
+                      "value": "more than any foreign government could"
+                    }
+                  },
+                  "properties": [
+                    {
+                      "role": "preposition:ARG2",
+                      "value": "for"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "proposition(E1, ARG1, assertion, c1::TFgw4IaR9R8s_1704, scope, world, route, unspecified)",
+        "qualification(ability, q2::TFgw4IaR9R8s_1704, scope, c1::TFgw4IaR9R8s_1704, route, speech_assertion, owner, E1)",
+        "referent(X1, Canadians, scope, q2::TFgw4IaR9R8s_1704, route, speech_assertion, owner, E1)",
+        "provide(E2, ARG0, X1, ARG1, {\"kind\":\"text\",\"value\":\"more than any foreign government could\"}, ARG2, X1, scope, q2::TFgw4IaR9R8s_1704, route, speech_assertion, owner, E1)",
+        "property(E2, preposition:ARG2, for, scope, q2::TFgw4IaR9R8s_1704, route, speech_assertion, owner, E1)",
+        "say(E1, ARG1, c1::TFgw4IaR9R8s_1704, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e1",
+            "predicate": "say",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e4",
+            "predicate": "provide",
+            "scope": "q2::TFgw4IaR9R8s_1704",
+            "route": "speech_assertion",
+            "owner": "E1"
+          }
+        },
+        "temporal": {
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              1
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "note": "Targeted change review: reflexive now shares its local subject; other earlier conditions retain their previous status.",
+    "artifact_sha256": "ec08f7fe67830daa69722e8c033bc13f65ef7ef5365b10cff1ce8f8363f0a410"
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1781",
+    "text": "Shows footage of debris outside of homes burning as well as the homes themselves on fire.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "footage",
+            "type": "entity",
+            "relations": [],
+            "propositions": [
+              {
+                "role": "content",
+                "kind": "depiction",
+                "route": "visual_depiction",
+                "body": {
+                  "op": "entity",
+                  "ref": "g4"
+                }
+              }
+            ]
+          },
+          {
+            "id": "x4",
+            "text": "debris",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "of",
+                "target": "x7"
+              }
+            ],
+            "propositions": [
+              {
+                "role": "acl",
+                "kind": "relative",
+                "route": "visual_depiction",
+                "body": {
+                  "op": "event",
+                  "id": "e8",
+                  "predicate": "burn",
+                  "anchor": "burning",
+                  "arguments": {
+                    "ARG1": "g4"
+                  }
+                }
+              }
+            ],
+            "properties": [
+              {
+                "role": "advmod",
+                "value": "outside"
+              }
+            ]
+          },
+          {
+            "id": "g4",
+            "text": "of debris outside of homes burning as well as the homes themselves on fire",
+            "type": "group",
+            "relations": [
+              {
+                "role": "member",
+                "target": "x4"
+              },
+              {
+                "role": "member",
+                "target": "x13"
+              }
+            ]
+          },
+          {
+            "id": "x13",
+            "text": "homes",
+            "type": "group",
+            "relations": [
+              {
+                "role": "nmod",
+                "target": "x14"
+              }
+            ]
+          },
+          {
+            "id": "x14",
+            "text": "themselves",
+            "type": "pronoun"
+          },
+          {
+            "id": "x7",
+            "text": "homes",
+            "type": "group"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e1",
+          "predicate": "show",
+          "anchor": "Shows",
+          "arguments": {},
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "entity",
+                "ref": "x2"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [
+        "reference resolution"
+      ],
+      "event_references": [],
+      "predicates": [
+        "proposition(E1, ARG1, depiction, c1::TW4OYA3RN-Hw_1781, scope, world, route, unspecified)",
+        "referent(X1, footage, scope, c1::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, E1)",
+        "proposition(X1, content, depiction, c2::TW4OYA3RN-Hw_1781, scope, c1::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, E1)",
+        "referent(X2, of debris outside of homes burning as well as the homes themselves on fire, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "referent(X3, debris, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "property(X3, advmod, outside, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "referent(X4, homes, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "entity_relation(X3, of, X4, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "proposition(X3, acl, relative, c3::TW4OYA3RN-Hw_1781, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "reference(X2, g4, scope, c3::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X3)",
+        "burn(E2, ARG1, X2, scope, c3::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X3)",
+        "temporal(E2, unspecified, progressive, T0, unspecified, scope, c3::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X3)",
+        "entity_relation(X2, member, X3, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "referent(X5, homes, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "referent(X6, themselves, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "resolve_reference(X6, themselves, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "entity_relation(X5, nmod, X6, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "entity_relation(X2, member, X5, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "show(E1, ARG1, c1::TW4OYA3RN-Hw_1781, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e1",
+            "predicate": "show",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e8",
+            "predicate": "burn",
+            "scope": "c3::TW4OYA3RN-Hw_1781",
+            "route": "visual_depiction",
+            "owner": "X3"
+          }
+        },
+        "temporal": {
+          "E2": {
+            "tense": "unspecified",
+            "aspect": "progressive",
+            "reference": "context",
+            "token_ids": [
+              8
+            ],
+            "finite": false,
+            "completion": "unspecified"
+          },
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              1
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x2",
+            "text": "footage",
+            "type": "entity",
+            "relations": [],
+            "propositions": [
+              {
+                "role": "content",
+                "kind": "depiction",
+                "route": "visual_depiction",
+                "body": {
+                  "op": "entity",
+                  "ref": "g4"
+                }
+              }
+            ]
+          },
+          {
+            "id": "x4",
+            "text": "debris",
+            "type": "entity",
+            "relations": [
+              {
+                "role": "of",
+                "target": "x7"
+              }
+            ],
+            "propositions": [
+              {
+                "role": "acl",
+                "kind": "relative",
+                "route": "visual_depiction",
+                "body": {
+                  "op": "event",
+                  "id": "e8",
+                  "predicate": "burn",
+                  "anchor": "burning",
+                  "arguments": {
+                    "ARG1": "g4"
+                  }
+                }
+              }
+            ],
+            "properties": [
+              {
+                "role": "advmod",
+                "value": "outside"
+              }
+            ]
+          },
+          {
+            "id": "g4",
+            "text": "of debris outside of homes burning as well as the homes themselves on fire",
+            "type": "group",
+            "relations": [
+              {
+                "role": "member",
+                "target": "x4"
+              },
+              {
+                "role": "member",
+                "target": "x13"
+              }
+            ]
+          },
+          {
+            "id": "x13",
+            "text": "homes",
+            "type": "group",
+            "relations": []
+          },
+          {
+            "id": "x7",
+            "text": "homes",
+            "type": "group"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e1",
+          "predicate": "show",
+          "anchor": "Shows",
+          "arguments": {},
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "depiction",
+              "route": "visual_depiction",
+              "body": {
+                "op": "entity",
+                "ref": "x2"
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [],
+      "event_references": [],
+      "predicates": [
+        "proposition(E1, ARG1, depiction, c1::TW4OYA3RN-Hw_1781, scope, world, route, unspecified)",
+        "referent(X1, footage, scope, c1::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, E1)",
+        "proposition(X1, content, depiction, c2::TW4OYA3RN-Hw_1781, scope, c1::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, E1)",
+        "referent(X2, of debris outside of homes burning as well as the homes themselves on fire, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "referent(X3, debris, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "property(X3, advmod, outside, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "referent(X4, homes, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "entity_relation(X3, of, X4, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "proposition(X3, acl, relative, c3::TW4OYA3RN-Hw_1781, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "reference(X2, g4, scope, c3::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X3)",
+        "burn(E2, ARG1, X2, scope, c3::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X3)",
+        "temporal(E2, unspecified, progressive, T0, unspecified, scope, c3::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X3)",
+        "entity_relation(X2, member, X3, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "referent(X5, homes, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "entity_relation(X2, member, X5, scope, c2::TW4OYA3RN-Hw_1781, route, visual_depiction, owner, X1)",
+        "show(E1, ARG1, c1::TW4OYA3RN-Hw_1781, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e1",
+            "predicate": "show",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e8",
+            "predicate": "burn",
+            "scope": "c3::TW4OYA3RN-Hw_1781",
+            "route": "visual_depiction",
+            "owner": "X3"
+          }
+        },
+        "temporal": {
+          "E2": {
+            "tense": "unspecified",
+            "aspect": "progressive",
+            "reference": "context",
+            "token_ids": [
+              8
+            ],
+            "finite": false,
+            "completion": "unspecified"
+          },
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              1
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "note": "Targeted change review: reflexive now shares its local subject; other earlier conditions retain their previous status.",
+    "artifact_sha256": "8807b7ef56658747cd97d5f4b1ec4269df6874b56d535dd8f728e7bed51ab714"
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2093",
+    "text": "Shi Yongxin claims that he single-handedly propelled himself to the number one spot on the internet's trending list.",
+    "before": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x1",
+            "text": "Shi Yongxin",
+            "type": "entity"
+          },
+          {
+            "id": "x5",
+            "text": "he",
+            "type": "pronoun"
+          },
+          {
+            "id": "x8",
+            "text": "handedly",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "single"
+              }
+            ]
+          },
+          {
+            "id": "x10",
+            "text": "himself",
+            "type": "pronoun"
+          },
+          {
+            "id": "span10_20",
+            "text": "number one spot on the internet's trending list",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "claim",
+          "anchor": "claims",
+          "arguments": {
+            "ARG0": "x1"
+          },
+          "properties": [
+            {
+              "role": "clause_marker:ARG1",
+              "value": "that"
+            }
+          ],
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "assertion",
+              "route": "speech_assertion",
+              "body": {
+                "op": "event",
+                "id": "e9",
+                "predicate": "propel",
+                "anchor": "propelled",
+                "arguments": {
+                  "ARG0": "x5",
+                  "ARGM-MNR": "x8",
+                  "ARG1": "x10",
+                  "ARG2": "span10_20"
+                }
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [
+        "reference resolution"
+      ],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, Shi Yongxin, scope, world, route, unspecified)",
+        "proposition(E1, ARG1, assertion, c1::TzzhcBIczf_M_2093, scope, world, route, unspecified)",
+        "referent(X2, he, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "resolve_reference(X2, he, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "referent(X3, himself, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "resolve_reference(X3, himself, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "referent(X4, number one spot on the internet's trending list, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "referent(X5, handedly, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "property(X5, mod, single, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "propel(E2, ARG0, X2, ARG1, X3, ARG2, X4, ARGM-MNR, X5, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "temporal(E2, past, simple, T0, unspecified, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "claim(E1, ARG0, X1, ARG1, c1::TzzhcBIczf_M_2093, scope, world, route, unspecified)",
+        "property(E1, clause_marker:ARG1, that, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "claim",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e9",
+            "predicate": "propel",
+            "scope": "c1::TzzhcBIczf_M_2093",
+            "route": "speech_assertion",
+            "owner": "E1"
+          }
+        },
+        "temporal": {
+          "E2": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              9
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "after": {
+      "status": "compiled",
+      "code": null,
+      "reason": null,
+      "form": {
+        "version": "logical-form-v2",
+        "kind": "claim",
+        "entities": [
+          {
+            "id": "x1",
+            "text": "Shi Yongxin",
+            "type": "entity"
+          },
+          {
+            "id": "x5",
+            "text": "he",
+            "type": "pronoun"
+          },
+          {
+            "id": "x8",
+            "text": "handedly",
+            "type": "entity",
+            "properties": [
+              {
+                "role": "mod",
+                "value": "single"
+              }
+            ]
+          },
+          {
+            "id": "span10_20",
+            "text": "number one spot on the internet's trending list",
+            "type": "entity"
+          }
+        ],
+        "formula": {
+          "op": "event",
+          "id": "e3",
+          "predicate": "claim",
+          "anchor": "claims",
+          "arguments": {
+            "ARG0": "x1"
+          },
+          "properties": [
+            {
+              "role": "clause_marker:ARG1",
+              "value": "that"
+            }
+          ],
+          "propositions": [
+            {
+              "role": "ARG1",
+              "kind": "assertion",
+              "route": "speech_assertion",
+              "body": {
+                "op": "event",
+                "id": "e9",
+                "predicate": "propel",
+                "anchor": "propelled",
+                "arguments": {
+                  "ARG0": "x5",
+                  "ARGM-MNR": "x8",
+                  "ARG1": "x5",
+                  "ARG2": "span10_20"
+                }
+              }
+            }
+          ]
+        },
+        "warnings": [
+          "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+          "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+        ]
+      },
+      "runtime_requirements": [
+        "reference resolution"
+      ],
+      "event_references": [],
+      "predicates": [
+        "referent(X1, Shi Yongxin, scope, world, route, unspecified)",
+        "proposition(E1, ARG1, assertion, c1::TzzhcBIczf_M_2093, scope, world, route, unspecified)",
+        "referent(X2, he, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "resolve_reference(X2, he, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "referent(X3, number one spot on the internet's trending list, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "referent(X4, handedly, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "property(X4, mod, single, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "propel(E2, ARG0, X2, ARG1, X2, ARG2, X3, ARGM-MNR, X4, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "temporal(E2, past, simple, T0, unspecified, scope, c1::TzzhcBIczf_M_2093, route, speech_assertion, owner, E1)",
+        "claim(E1, ARG0, X1, ARG1, c1::TzzhcBIczf_M_2093, scope, world, route, unspecified)",
+        "property(E1, clause_marker:ARG1, that, scope, world, route, unspecified)",
+        "temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified)"
+      ],
+      "metadata": {
+        "events": {
+          "E1": {
+            "id": "e3",
+            "predicate": "claim",
+            "scope": "world",
+            "route": "unspecified",
+            "owner": null
+          },
+          "E2": {
+            "id": "e9",
+            "predicate": "propel",
+            "scope": "c1::TzzhcBIczf_M_2093",
+            "route": "speech_assertion",
+            "owner": "E1"
+          }
+        },
+        "temporal": {
+          "E2": {
+            "tense": "past",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              9
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          },
+          "E1": {
+            "tense": "pres",
+            "aspect": "simple",
+            "reference": "context",
+            "token_ids": [
+              3
+            ],
+            "finite": true,
+            "completion": "unspecified"
+          }
+        }
+      }
+    },
+    "note": "Targeted change review: reflexive now shares its local subject; other earlier conditions retain their previous status.",
+    "artifact_sha256": "00ad959d7da873eb8b728d0bf613321bf051f7205871ef11210e31a42c9c79b7"
+  }
+]

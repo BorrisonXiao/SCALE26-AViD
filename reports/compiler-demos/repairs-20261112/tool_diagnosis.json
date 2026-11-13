@@ -1,0 +1,92 @@
+[
+  {
+    "claim_id": "TzF9M4kZ3Pys_308",
+    "text": "Power outages likely in residential area.",
+    "amr": "(l / likely-01\n      :ARG1 (o / out-02\n            :ARG1 (p / power))\n      :location (a / area\n            :mod (r / residential)))",
+    "config": {
+      "frontend": "amrlib-BART-large",
+      "amrlib": "0.8.0",
+      "transformers": "4.57.6",
+      "torch": "2.10.0+cu128",
+      "beam_size": 4,
+      "model_download": {
+        "url": "https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_large-v0_1_0/model_parse_xfm_bart_large-v0_1_0.tar.gz",
+        "sha256": "2fcfe2113527accb752b6c574994022b3375b66d59da5042356c0f853e879849",
+        "bytes": 1506463657
+      },
+      "model_config_sha256": "9fb73729a55302b4ca6e03c1ef2a93610c397f6d87f3ecb919881be700264508"
+    }
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_160",
+    "text": "There are no containers fully in the water.",
+    "amr": "(b / be-located-at-91\n      :polarity -\n      :ARG1 (c / container)\n      :ARG2 (w / water)\n      :degree (f / full))",
+    "config": {
+      "frontend": "amrlib-BART-large",
+      "amrlib": "0.8.0",
+      "transformers": "4.57.6",
+      "torch": "2.10.0+cu128",
+      "beam_size": 4,
+      "model_download": {
+        "url": "https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_large-v0_1_0/model_parse_xfm_bart_large-v0_1_0.tar.gz",
+        "sha256": "2fcfe2113527accb752b6c574994022b3375b66d59da5042356c0f853e879849",
+        "bytes": 1506463657
+      },
+      "model_config_sha256": "9fb73729a55302b4ca6e03c1ef2a93610c397f6d87f3ecb919881be700264508"
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_360",
+    "text": "The robot repositions itself upright and starts walking backwards.",
+    "amr": "(a / and\n      :op1 (r / reposition-01\n            :ARG0 (r2 / robot)\n            :ARG1 r2\n            :ARG2 (u / upright))\n      :op2 (s / start-01\n            :ARG0 r2\n            :ARG1 (w / walk-01\n                  :ARG0 r2\n                  :direction (b / backwards))))",
+    "config": {
+      "frontend": "amrlib-BART-large",
+      "amrlib": "0.8.0",
+      "transformers": "4.57.6",
+      "torch": "2.10.0+cu128",
+      "beam_size": 4,
+      "model_download": {
+        "url": "https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_large-v0_1_0/model_parse_xfm_bart_large-v0_1_0.tar.gz",
+        "sha256": "2fcfe2113527accb752b6c574994022b3375b66d59da5042356c0f853e879849",
+        "bytes": 1506463657
+      },
+      "model_config_sha256": "9fb73729a55302b4ca6e03c1ef2a93610c397f6d87f3ecb919881be700264508"
+    }
+  },
+  {
+    "claim_id": "TInVWzp25aIM_106",
+    "text": "Small motorized vehicles are able to survey the wreckage.",
+    "amr": "(p / possible-01\n      :ARG1 (s / survey-01\n            :ARG0 (v / vehicle\n                  :mod (s2 / small)\n                  :ARG1-of (m / motorize-01))\n            :ARG1 (w / wreckage)))",
+    "config": {
+      "frontend": "amrlib-BART-large",
+      "amrlib": "0.8.0",
+      "transformers": "4.57.6",
+      "torch": "2.10.0+cu128",
+      "beam_size": 4,
+      "model_download": {
+        "url": "https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_large-v0_1_0/model_parse_xfm_bart_large-v0_1_0.tar.gz",
+        "sha256": "2fcfe2113527accb752b6c574994022b3375b66d59da5042356c0f853e879849",
+        "bytes": 1506463657
+      },
+      "model_config_sha256": "9fb73729a55302b4ca6e03c1ef2a93610c397f6d87f3ecb919881be700264508"
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_343",
+    "text": "man exclaims \"just like that!\"",
+    "amr": "(e / exclaim-01\n      :ARG0 (m / man)\n      :ARG1 (r / resemble-01\n            :ARG2 (t / that)\n            :mod (j / just)))",
+    "config": {
+      "frontend": "amrlib-BART-large",
+      "amrlib": "0.8.0",
+      "transformers": "4.57.6",
+      "torch": "2.10.0+cu128",
+      "beam_size": 4,
+      "model_download": {
+        "url": "https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_large-v0_1_0/model_parse_xfm_bart_large-v0_1_0.tar.gz",
+        "sha256": "2fcfe2113527accb752b6c574994022b3375b66d59da5042356c0f853e879849",
+        "bytes": 1506463657
+      },
+      "model_config_sha256": "9fb73729a55302b4ca6e03c1ef2a93610c397f6d87f3ecb919881be700264508"
+    }
+  }
+]

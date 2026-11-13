@@ -7,6 +7,21 @@
       "date": "2026-11-12",
       "items": [
         {
+          "text": "Repaired noun modifiers, local reflexives, shared event references, simple likelihood, qualified absence and quoted content. Reran2375 originals/449 cached cases:1983 direct passes,1972 retained (83.03%),403 excluded. Nine new development approvals; not independent accuracy.",
+          "href": "#remaining-failures",
+          "label": "Current compiler repairs and counts"
+        },
+        {
+          "text": "Tested nested AND/OR and one compiler-feedback retry on24 fixed failures; prompts, model responses and errors are inspectable. Direct-form comparisons remain separate. All438 tests pass; empirical training is deferred.",
+          "href": "#repair-model",
+          "label": "Model comparisons and exact feedback"
+        },
+        {
+          "text": "Published13 changed-program comparisons and all403 exclusions in the existing report. Previous experiments remain under History; no new report page or top-level view.",
+          "href": "#repair-example",
+          "label": "Readable repair examples"
+        },
+        {
           "text": "Replayed all 2,375 originals and 449 cached cases. General auxiliary, adverb and interval repairs yield 1,978 direct automatic passes. Reviewed 25 changed programs and retained 10 additions: 1,963/2,375 (82.65%), with 412 excluded. These are development judgments, not accuracy.",
           "href": "#remaining-failures",
           "label": "Compiler stopping point and full accounting"

@@ -4,7 +4,7 @@
     {
       "id": 25,
       "title": "Freeze compiler and start a controlled relation-learning experiment",
-      "status": "proposed; empirical training/evaluation not begun",
+      "status": "deferred",
       "items": [
         {
           "text": "Select source-disjoint claims and audit full logical forms plus visual/audio/speech/OCR labels—establish valid supervision",
@@ -17,7 +17,8 @@
         {
           "text": "Train small classifiers and compare with frozen-model and simple aggregation baselines—measure binding improvements and runtime on held-out videos",
           "done": false
-        }
+        },
+        "User correction: resolve compiler failures first; the earlier training transition is superseded."
       ]
     },
     {
@@ -640,9 +641,20 @@
         "Measure pair correctness, three-way verdicts, unknown behavior, and cost",
         "Separate parsing, candidate, perception, classifier, and composition failures"
       ]
+    },
+    {
+      "id": 26,
+      "title": "Repair modifiers, references, operators and scope; test compiler feedback",
+      "status": "completed",
+      "items": [
+        "Reran all2375 originals and449 cached cases; reviewed13 changed complete programs and7 changes to previously retained outputs.",
+        "Added explicit AND/OR formulas and shared event variables;438 tests pass with native constructed-evidence contrasts.",
+        "Compared fixed24 strict failures with conservative30B and revised8B prompts and at most one error retry; separate direct-form diagnostics use12 cases.",
+        "Next: improve reference/source composition and evaluate one fixed model condition on remaining strict failures; training stays deferred."
+      ]
     }
   ],
-  "intro": "Shared-component experiment complete:36targetchecks10→34;1437cachedclauses1140→1147. Three date/time recoveries and three newly reviewed exclusions leave1953/2375retained(82.23%),422remaining. No netcoveragegain or independentsemanticaccuracy.385tests pass; historical2375defaultoutputs exact. Next:event/intervalreferences and boundednominaleventanalysis; newempiricaltraining remainsdeferred.",
+  "intro": "Compiler remains the priority. Repairs rerun on all2375 originals and449 cached cases:1983 direct automatic passes;1972 retained after development review (83.03%);403 excluded. Nine new approved outputs; no empirical training. Fixed24-case model pilots remain separate.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -694,5 +706,6 @@
   "split_alignment_run": "exp/probabilistic_verification/split_alignment_20261112",
   "full_rewrite_run": "exp/probabilistic_verification/rewrite_all_20261112",
   "semantic_components_run": "exp/probabilistic_verification/semantic_components_20261112",
-  "compiler_readiness_run": "exp/probabilistic_verification/compiler_readiness_20261112"
+  "compiler_readiness_run": "exp/probabilistic_verification/compiler_readiness_20261112",
+  "compiler_repairs_run": "exp/probabilistic_verification/compiler_repairs_20261112"
 }

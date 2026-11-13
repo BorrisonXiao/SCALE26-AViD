@@ -1,0 +1,10 @@
+{
+  "slurm": "JobID|State|Elapsed|AllocTRES\n1228116|TIMEOUT|00:35:11|billing=982,cpu=8,gres/gpu:v100=3,gres/gpu=3,mem=100G,node=1\n1228116.batch|CANCELLED|00:35:24|cpu=8,gres/gpu:v100=3,gres/gpu=3,mem=100G,node=1\n1228116.extern|COMPLETED|00:35:12|billing=982,cpu=8,gres/gpu:v100=3,gres/gpu=3,mem=100G,node=1\n1228131|FAILED|00:00:26|billing=357,cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228131.batch|FAILED|00:00:26|cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228131.extern|COMPLETED|00:00:26|billing=357,cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228132|COMPLETED|00:06:38|billing=357,cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228132.batch|COMPLETED|00:06:38|cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228132.extern|COMPLETED|00:06:38|billing=357,cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228323|COMPLETED|00:03:59|billing=357,cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228323.batch|COMPLETED|00:03:59|cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228323.extern|COMPLETED|00:03:59|billing=357,cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228381|COMPLETED|00:03:46|billing=357,cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228381.batch|COMPLETED|00:03:46|cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n1228381.extern|COMPLETED|00:03:46|billing=357,cpu=8,gres/gpu:v100=1,gres/gpu=1,mem=50G,node=1\n",
+  "peak_allocated_gpus": 4,
+  "limit": 8,
+  "media_requests": 0,
+  "srl_training": false,
+  "relation_training": false,
+  "saved_model_responses": 117,
+  "notes": "30B rewrite rounds complete; direct phase timed out before saving a response. First8B attempt failed during vocabulary setup before inference; corrected attempt completed. All resources released."
+}

@@ -1,0 +1,16 @@
+{
+  "archive_sha256": "17d81540793ca9e7070a7f09fc2d7d2034ca0ca92587d40c910be3e5721b9adf",
+  "extraction": "/tmp/avid-compiler-repairs-ktazbvpc",
+  "sha256_inventory": true,
+  "originals": 2375,
+  "cached_cohort": 449,
+  "byte_identical_artifacts": [
+    "direct_all.jsonl",
+    "cached_pipeline.jsonl",
+    "summary.json",
+    "corpus_reviewed.jsonl",
+    "semantic_review.json",
+    "remaining_cases.json",
+    "cases.json"
+  ]
+}

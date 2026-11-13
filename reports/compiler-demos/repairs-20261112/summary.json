@@ -1,0 +1,100 @@
+{
+  "corpus": {
+    "total": 2375,
+    "previous_accepted": 1963,
+    "accepted": 1972,
+    "remaining": 403,
+    "new_approved": 9,
+    "new_ids": [
+      "TInVWzp25aIM_87",
+      "TInVWzp25aIM_106",
+      "TbJqMFkNxARY_160",
+      "TzF9M4kZ3Pys_308",
+      "Tg0UxWYuPeJ0_343",
+      "Tg0UxWYuPeJ0_360",
+      "TFOEIehBwT8Q_453",
+      "TFOEIehBwT8Q_532",
+      "TFOEIehBwT8Q_536"
+    ],
+    "rate": 0.8303157894736842
+  },
+  "direct": {
+    "before": 1978,
+    "final": 1983,
+    "lost_passes": [],
+    "failures": {
+      "coverage_omission": 153,
+      "unresolved_clause": 100,
+      "duplicate_role": 34,
+      "negative_quantifier": 3,
+      "missing_srl": 11,
+      "nominal_disjunction": 8,
+      "mention_alignment": 2,
+      "predicate_type": 8,
+      "missing_predicate": 36,
+      "opaque_clause": 7,
+      "modal_scope": 16,
+      "threshold_scope": 2,
+      "polarity_omission": 2,
+      "temporal_scope": 2,
+      "unresolved_controller": 1,
+      "media_modifier": 3,
+      "unlinked_temporal_value": 3,
+      "quantity_type": 1
+    }
+  },
+  "cached": {
+    "total": 449,
+    "before_programs": 108,
+    "programs": 114,
+    "stages": {
+      "direct_pass": 63,
+      "component_compilation": 178,
+      "alignment": 143,
+      "compiled_composed": 51,
+      "model_refuse": 1,
+      "composition": 13
+    },
+    "approved": 49,
+    "changed_reviewed": 13,
+    "exact_reviews_reused": 101
+  },
+  "remaining": {
+    "stages": {
+      "component_compilation": 178,
+      "alignment": 143,
+      "meaning_review": 65,
+      "model_refuse": 1,
+      "composition": 13,
+      "direct_refusal_without_cached_rewrite": 3
+    },
+    "codes": {
+      "unresolved_time_reference": 1,
+      "entity_alignment": 121,
+      "duplicate_role": 11,
+      "coverage_omission": 76,
+      "meaning_review": 65,
+      "description_alignment": 7,
+      "unresolved_clause": 50,
+      "sentence_parse": 3,
+      "event_time_alignment": 4,
+      "unresolved_reflexive": 2,
+      "model_refuse": 1,
+      "modal_scope": 15,
+      "polarity_omission": 2,
+      "threshold_negation": 1,
+      "missing_shared_participant": 2,
+      "missing_predicate": 10,
+      "event_alignment": 6,
+      "shared_description": 11,
+      "unresolved_controller": 2,
+      "source_alignment": 5,
+      "nominal_disjunction": 2,
+      "opaque_clause": 2,
+      "mention_alignment": 1,
+      "unlinked_temporal_value": 3
+    }
+  },
+  "targeted_retained_changes": 7,
+  "training": "Deferred; compiler remains the priority. Model pilots are not pooled into corpus coverage."
+}

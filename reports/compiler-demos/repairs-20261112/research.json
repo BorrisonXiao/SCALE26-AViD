@@ -1,0 +1,10 @@
+{
+  "sources": [
+    {"title":"Stanza dependency parsing","url":"https://stanfordnlp.github.io/stanza/depparse.html","finding":"The existing parser supplies UD heads and relations, including noun modifiers. In the actual cached vehicles example, Small is already amod of vehicles; the converter loses it after caching a shorter SRL argument."},
+    {"title":"AMR annotation guidelines","url":"https://github.com/amrisi/amr-guidelines/blob/master/amr.md","finding":"AMR represents modifiers, shared nodes, conjunction/disjunction and negation. Actual cached BART AMRs retain small and the robot's repeated subject/object node. AMR's quantifier representation is shallow; a compiler must still define scope. No claim that AMR alone is a fully faithful FOL parser."},
+    {"title":"Stanza coreference","url":"https://stanfordnlp.github.io/stanza/coref.html","finding":"A separate pretrained coreference component exists. We did not download or benchmark it here. Local Reflex=Yes plus grammatical attachment was sufficient for the motivating robot example; missing event structure still causes refusal."},
+    {"title":"Logic-LM","url":"https://aclanthology.org/2023.findings-emnlp.248/","finding":"An existing LLM-to-symbolic-formulation approach uses solver error messages for self-refinement. This supports the proposed bounded compiler-feedback loop; its benchmark results do not establish fidelity on our media claims."},
+    {"title":"PICARD","url":"https://aclanthology.org/2021.emnlp-main.779/","finding":"Incremental parsing constrains generated formal syntax. Our existing JSON grammar similarly prevents some malformed outputs; syntax validity is distinct from preservation of the original claim."}
+  ],
+  "scope":"Focused primary-source check plus inspection of saved tool outputs. No SRL/AMR retraining or new AMR-model benchmark."
+}
