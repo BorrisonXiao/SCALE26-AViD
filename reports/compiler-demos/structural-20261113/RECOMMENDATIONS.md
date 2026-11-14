@@ -1,0 +1,19 @@
+# Local assessment and proposed next experiments
+
+This is the implementing assistant's assessment, not an independent review. Automatic approval rejected sending unpublished project material to the external judge; no external review ran.
+
+The new structural pilots do not support scaling compiler-error prompting to the whole remaining cohort: neither the permissive nor stricter condition yields a newly retained meaning on the fixed40-case diagnostic. Keeping partial forms is still useful engineering:189 of218 previously missing drafts are now inspectable. It does not supply the missing semantic interpretation.
+
+The most concrete alternative is **one frozen neural semantic parser followed by a compositional compiler**. The cached BART AMR already represents wind speed as the causer of forcing adults to crawl and treats Sheinbaum as the source of an assertion. A formal AMR-to-logic translation can reuse those relationships instead of reconstructing them from verbal SRL. This needs a bounded comparison on checked reference meanings: the robot AMR adds a wrong sweep relationship, the charger AMR misattaches portable, and basic AMR needs explicit scope interpretation. Bos2016 and Lai etal2020 provide relevant formal foundations. This is a proposed frontend experiment, not a claim that a reliable replacement has been implemented.
+
+A **source-conditioned neural confidence model** is a second component to investigate. The frozen Qwen diagnostic accepts10 of63 prior complete programs: six agree with the author's retained judgments and four do not; it misses three retained examples. That is60% precision/66.7% recall relative to development judgments, not independent semantic accuracy. A small cross-encoder or head on frozen text representations could be cheaper, but needs checked positive/negative meanings and source-disjoint evaluation. It cannot recover a faithful graph when the generator never proposes one. The media relation classifier in the accepted paper is a separate model: it takes frozen media features, whereas this optional parser confidence model takes the sentence and candidate logical form.
+
+**Probabilistic parsing** fits the accepted framework after candidate quality is checked. A source-only distribution over logical forms is a categorical choice, not OR over all interpretations. Native DeepProbLog examples show0.58 versus0.91 support under stipulated values, and retain unparsed probability separately from insufficient evidence. No parser posterior was learned or calibrated. Token likelihood, grammar validity and media-supportedness are not interchangeable confidence estimates. Choosing whichever parse matches the media risks a correct verdict for the wrong sentence meaning.
+
+The paper should distinguish these frontend choices from its verification contribution. P3 already combines uncertain language and environment interpretation; NL2Logic already combines recursive semantic parsing and deterministic compilation. A contribution must be demonstrated through the typed depiction/sound/speech/OCR support, media-conditioned binding models and evidence assignment/inference, with honest parsing and calibration ablations. The accepted ADR-023 direction is unchanged. No new multimodal training or SRL retraining is proposed here.
+
+Proposed next steps and goals:
+
+1. Write a small reference set for roles, source scope, OR/negation and time. Goal: compare actual meaning rather than compiler success, including the near-correct robot/during-race case.
+2. Test a fixed AMR-to-logic frontend on the same claims. Goal: reuse the neural parser's available semantic links, without selecting different frontends per sentence.
+3. Assess candidate coverage and a small source-conditioned confidence model. Goal: determine whether alternate parses and learned confidence improve reliability before adding a calibrated parse mixture to verification.

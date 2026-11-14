@@ -1,0 +1,13 @@
+{
+  "review_status": "REVIEW_UNAVAILABLE",
+  "backend": "codex-cli",
+  "judge_model": "gpt-5.5",
+  "effort": "xhigh",
+  "n_ideas": 11,
+  "top_n": 3,
+  "rounds": 0,
+  "reason": "Automatic approval rejected the external request because it would disclose unpublished project research artifacts/results. No request was run. No alternative external route was attempted.",
+  "external_scores": null,
+  "local_assessment": "The literature supports typed structural decoding and source-consistency checks as immediate engineering work. A source-conditioned small ranker and a calibrated latent-parse mixture are longer-term alternatives requiring new checked meanings; none can infer faithfulness from compilation success alone.",
+  "independent": false
+}

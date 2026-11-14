@@ -1,0 +1,82 @@
+[
+  {
+    "claim_id": "Tg0UxWYuPeJ0_433",
+    "text": "Robot 1 sweep kicks Robot 2",
+    "raw": "(k / kick-01\n      :ARG0 (r / robot\n            :mod 1\n            :ARG1-of (s / sweep-01))\n      :ARG1 (r2 / robot\n            :mod 2))",
+    "request_hash": "3e7711bb592de485aa0a359fdd09097480520ae10a9d7334331e46d1d0f2d471",
+    "model": {
+      "frontend": "amrlib-BART-large",
+      "amrlib": "0.8.0",
+      "transformers": "4.57.6",
+      "torch": "2.10.0+cu128",
+      "beam_size": 4,
+      "model_download": {
+        "url": "https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_large-v0_1_0/model_parse_xfm_bart_large-v0_1_0.tar.gz",
+        "sha256": "2fcfe2113527accb752b6c574994022b3375b66d59da5042356c0f853e879849",
+        "bytes": 1506463657
+      },
+      "model_config_sha256": "9fb73729a55302b4ca6e03c1ef2a93610c397f6d87f3ecb919881be700264508"
+    },
+    "source_file": "exp/probabilistic_verification/full_compilation_20261029/amr_0_raw.jsonl"
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_517",
+    "text": "\"Sheinbaum: Movement promoted from abroad against our government.\"",
+    "raw": "(s / say-01\n      :ARG0 (p / person\n            :name (n / name\n                  :op1 \"Sheinbaum\"))\n      :ARG1 (p2 / promote-02\n            :ARG1 (m / movement-07\n                  :ARG1 (a / against\n                        :op1 (g / government-organization\n                              :ARG0-of (g2 / govern-01\n                                    :ARG1 (w / we)))))\n            :source (a2 / abroad)))",
+    "request_hash": "53c3bf4ccdb362e8d0029ffc4239a5cc95cfc4492f82bea57470041d33ff1735",
+    "model": {
+      "frontend": "amrlib-BART-large",
+      "amrlib": "0.8.0",
+      "transformers": "4.57.6",
+      "torch": "2.10.0+cu128",
+      "beam_size": 4,
+      "model_download": {
+        "url": "https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_large-v0_1_0/model_parse_xfm_bart_large-v0_1_0.tar.gz",
+        "sha256": "2fcfe2113527accb752b6c574994022b3375b66d59da5042356c0f853e879849",
+        "bytes": 1506463657
+      },
+      "model_config_sha256": "9fb73729a55302b4ca6e03c1ef2a93610c397f6d87f3ecb919881be700264508"
+    },
+    "source_file": "exp/probabilistic_verification/full_compilation_20261029/amr_0_raw.jsonl"
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2176",
+    "text": "The wind speed appears sufficient to force adults to crawl.",
+    "raw": "(a / appear-02\n      :ARG1 (s / suffice-01\n            :ARG0 (s2 / speed\n                  :mod (w / wind))\n            :ARG1 (f / force-01\n                  :ARG0 s2\n                  :ARG1 (a2 / adult)\n                  :ARG2 (c / crawl-01\n                        :ARG0 a2))))",
+    "request_hash": "a8e469820ccb1fb31e32bc41479b7c5ac90b18e21bef67961fa433b9b26c4840",
+    "model": {
+      "frontend": "amrlib-BART-large",
+      "amrlib": "0.8.0",
+      "transformers": "4.57.6",
+      "torch": "2.10.0+cu128",
+      "beam_size": 4,
+      "model_download": {
+        "url": "https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_large-v0_1_0/model_parse_xfm_bart_large-v0_1_0.tar.gz",
+        "sha256": "2fcfe2113527accb752b6c574994022b3375b66d59da5042356c0f853e879849",
+        "bytes": 1506463657
+      },
+      "model_config_sha256": "9fb73729a55302b4ca6e03c1ef2a93610c397f6d87f3ecb919881be700264508"
+    },
+    "source_file": "exp/probabilistic_verification/full_compilation_20261029/amr_0_raw.jsonl"
+  },
+  {
+    "claim_id": "TInVWzp25aIM_68",
+    "text": "Angupaul1 is relying on a portable charger to livestream.",
+    "raw": "(r / rely-01\n      :ARG0 (p / person\n            :name (n / name\n                  :op1 \"Angupaul1\"))\n      :ARG1 (t / thing\n            :ARG0-of (c / charge-03\n                  :ARG1 (p2 / portable)))\n      :ARG2 (l / livestream-01\n            :ARG0 p))",
+    "request_hash": "c65b37464f58435b4bd50632f18173c8edec41c65289d0e9ea960f3f7daaf238",
+    "model": {
+      "frontend": "amrlib-BART-large",
+      "amrlib": "0.8.0",
+      "transformers": "4.57.6",
+      "torch": "2.10.0+cu128",
+      "beam_size": 4,
+      "model_download": {
+        "url": "https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_large-v0_1_0/model_parse_xfm_bart_large-v0_1_0.tar.gz",
+        "sha256": "2fcfe2113527accb752b6c574994022b3375b66d59da5042356c0f853e879849",
+        "bytes": 1506463657
+      },
+      "model_config_sha256": "9fb73729a55302b4ca6e03c1ef2a93610c397f6d87f3ecb919881be700264508"
+    },
+    "source_file": "exp/probabilistic_verification/full_compilation_20261029/amr_1_raw.jsonl"
+  }
+]

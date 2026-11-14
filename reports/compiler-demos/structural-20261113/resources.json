@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "JobID": "1230471",
+      "State": "COMPLETED",
+      "Start": "2026-11-13T20:13:08",
+      "End": "2026-11-13T20:21:13",
+      "Elapsed": "00:08:05",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    },
+    {
+      "JobID": "1230713",
+      "State": "COMPLETED",
+      "Start": "2026-11-13T20:35:24",
+      "End": "2026-11-13T20:40:39",
+      "Elapsed": "00:05:15",
+      "AllocTRES": "billing=602,cpu=8,gres/gpu:h100=1,gres/gpu=1,mem=100G,node=1"
+    }
+  ],
+  "peak_gpus": 1,
+  "user_limit": 8,
+  "compiler_requests": 359,
+  "neural_diagnostic_requests": 63,
+  "total_local_requests": 422,
+  "external_review_requests": 0,
+  "all_final": true,
+  "note": "External review was rejected before execution; no unpublished artifacts were sent to that service."
+}

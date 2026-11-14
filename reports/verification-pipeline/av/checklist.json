@@ -666,15 +666,26 @@
     {
       "id": 28,
       "title": "Keep partial forms and improve structural corrections before training",
+      "status": "completed",
+      "items": [
+        "Retained actual partial compiler state for 189 of 218 no-draft failures; the remaining 29 still have no usable form. No partial form is automatically accepted.",
+        "Tested fixed 20 existing drafts/20 partial drafts with subtree replacement and two retry controls. Strict feedback gives 7 complete programs versus 5 generic; no new retained meaning after review.",
+        "Added discriminated literal types and joint participant checks; 484 tests pass, and all 2,375 originals/449 cached outputs remain unchanged.",
+        "Ran a local frozen text-model meaning check on 63 earlier programs and native categorical parse-choice examples. Neither is a trained or calibrated parser."
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Compare a fixed neural semantic-parser frontend on reference meanings",
       "status": "planned",
       "items": [
-        "Keep partial forms after direct errors to expose218 no-draft failures to bounded editing without inventing events.",
-        "Check shared participants, scope, number types and noun attachments together; parser labels are not gold.",
-        "Compare one bounded structural method against generic retry on fixed failures, then inspect claims from new source videos."
+        "Write checked reference meanings for roles, source scope, alternatives and time; resolve the near-correct during-race case.",
+        "Test one AMR-to-logic path with compositional semantics, using the same frontend across claims and no per-claim model selection.",
+        "Measure faithful candidate coverage and a source-conditioned confidence model before calibrated parse mixtures or media training."
       ]
     }
   ],
-  "intro": "Compiler remains the priority. Reruns on2375 originals/449 cached cases are unchanged. All158 strict failures with drafts tested with typed field edits: feedback61 complete/9 retained, generic46/8. Current retained pool1981/2375(83.41%);394excluded. One new context-dependent mention is not a complete event. No empirical training.",
+  "intro": "Compiler remains the priority. Full 2,375/449 replay is unchanged; retained pool stays 1,981/2,375 (83.41%), with 394 excluded. Partial structure is now available for 189 of 218 previous no-draft cases. Fixed 40-case structural pilots add no retained meaning. Neural and probabilistic alternatives are investigated; no media training.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -728,5 +739,6 @@
   "semantic_components_run": "exp/probabilistic_verification/semantic_components_20261112",
   "compiler_readiness_run": "exp/probabilistic_verification/compiler_readiness_20261112",
   "compiler_repairs_run": "exp/probabilistic_verification/compiler_repairs_20261112",
-  "compiler_feedback_run": "exp/probabilistic_verification/compiler_feedback_20261112"
+  "compiler_feedback_run": "exp/probabilistic_verification/compiler_feedback_20261112",
+  "compiler_structural_run": "exp/probabilistic_verification/compiler_structural_20261113"
 }

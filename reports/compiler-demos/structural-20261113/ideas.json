@@ -1,0 +1,268 @@
+{
+  "instruction": "Looks reasonable. Go ahead, while also brainstorm and investigate if there's other more elegant and general solution for this (e.g., some neural/probablistic approach?).",
+  "date": "2026-11-13",
+  "grounded_on": "research/compiler_alternatives_20261113/literature.json",
+  "grounding_status": "grounded",
+  "ideas": [
+    {
+      "id": "i1",
+      "title": "Pretrained DRS parsing with a deterministic logic converter",
+      "one_liner": "Use an existing logic-oriented neural parser rather than infer full semantics from verbal SRL.",
+      "hypothesis": "Explicit scope boxes may reduce quote, negation and modal attachment errors.",
+      "proposed_method": "Reuse a released DRS parser if weights are available; translate its boxes, referents and conditions into the existing logical form. Keep original-span alignments and refuse unsupported conversions.",
+      "minimal_experiment": "First establish checkpoint access, then compare 30 fixed scope-heavy claims with the current compiler.",
+      "contribution_type": "method",
+      "novelty_rationale": "This is a candidate frontend/evaluation design, not a claim that the underlying established method is new. A paper contribution would require a controlled finding about typed multimodal verification and binding errors.",
+      "closest_prior_work": "Zhang, Bouma and Bos 2025 (p10); Pustejovsky et al. 2019 (p11)",
+      "feasibility": {
+        "compute": "1-6 GPU-hours for inference; checkpoint availability unconfirmed (planning estimate)",
+        "data": "Existing claims; structured meaning references still needed",
+        "implementation": "high"
+      },
+      "risk": "high",
+      "expected_outcome": "Positive: better scope without extra training. Negative: unavailable weights or conversion errors dominate.",
+      "based_on_gaps": [
+        "g1",
+        "g3"
+      ]
+    },
+    {
+      "id": "i2",
+      "title": "A small source-conditioned neural ranker",
+      "one_liner": "Score whether each candidate graph preserves the source sentence.",
+      "hypothesis": "A cross-encoder can use lexical roles and scope rather than compiler scores alone.",
+      "proposed_method": "Encode the original sentence together with a deterministic rendering of a candidate graph. Train only a small head or a compact text cross-encoder on checked positive/negative graph pairs; keep the candidate generator fixed.",
+      "minimal_experiment": "Measure leave-video-out ranking on checked pairs, with majority, likelihood and simple edit-cost controls. Do not claim performance from resubstitution on 63 outputs.",
+      "contribution_type": "method",
+      "novelty_rationale": "This is a candidate frontend/evaluation design, not a claim that the underlying established method is new. A paper contribution would require a controlled finding about typed multimodal verification and binding errors.",
+      "closest_prior_work": "Cheng and Lapata 2018 (p7)",
+      "feasibility": {
+        "compute": "1-4 GPU-hours after annotation (planning estimate)",
+        "data": "At least 100-200 newly checked candidate pairs; current 63 judgments are insufficient for a credible held-out claim",
+        "implementation": "medium"
+      },
+      "risk": "medium",
+      "expected_outcome": "Positive: ranks faithful alternatives above role/scope errors. Negative: lexical leakage or no gain over simple controls.",
+      "based_on_gaps": [
+        "g1",
+        "g5"
+      ]
+    },
+    {
+      "id": "i3",
+      "title": "Marginalize over alternative logical forms",
+      "one_liner": "Represent parse uncertainty as mutually exclusive choices before evidence verification.",
+      "hypothesis": "Retaining ambiguity may improve calibration compared with choosing one parse or OR-ing all readings.",
+      "proposed_method": "Use one parser to produce a bounded deduplicated candidate set, learn/calibrate source-only weights and retain probability for no adequate parse. Compile the categorical parse choice and shared evidence variables into probabilistic logic.",
+      "minimal_experiment": "Check the mixture semantics on authored native examples, then compare calibration and cost on source-disjoint manually judged candidates.",
+      "contribution_type": "method",
+      "novelty_rationale": "This is a candidate frontend/evaluation design, not a claim that the underlying established method is new. A paper contribution would require a controlled finding about typed multimodal verification and binding errors.",
+      "closest_prior_work": "Krishnamurthy et al. 2016 (p6); Park et al. 2024 (p5)",
+      "feasibility": {
+        "compute": "CPU engineering checks; 1-6 GPU-hours for candidate generation (planning estimate)",
+        "data": "Checked candidate meanings and source-disjoint calibration labels",
+        "implementation": "medium"
+      },
+      "risk": "medium",
+      "expected_outcome": "Positive: uncertainty tracks genuine ambiguity. Negative: confidently weighted wrong parses or no faithful candidate; report both.",
+      "based_on_gaps": [
+        "g1",
+        "g2"
+      ]
+    },
+    {
+      "id": "i4",
+      "title": "Generate logical structure through typed grammar actions",
+      "one_liner": "Constrain the decoder using the current partial AST and well-formedness conditions.",
+      "hypothesis": "Earlier type/scope checks can reduce wasted invalid candidates.",
+      "proposed_method": "Generate create-node, bind-argument and attach-scope actions with a source-specific symbol table. Use one incremental AST checker rather than per-word post-processing.",
+      "minimal_experiment": "Compare one fixed action decoder and current JSON edits on the same 40 failures, checking full meaning and latency separately.",
+      "contribution_type": "method",
+      "novelty_rationale": "This is a candidate frontend/evaluation design, not a claim that the underlying established method is new. A paper contribution would require a controlled finding about typed multimodal verification and binding errors.",
+      "closest_prior_work": "Scholak et al. 2021 (p1); Poesia et al. 2022 (p2); Nagy et al. 2026 (p12)",
+      "feasibility": {
+        "compute": "1-4 GPU-hours (planning estimate)",
+        "data": "Current parser inputs and checked outputs",
+        "implementation": "medium"
+      },
+      "risk": "medium",
+      "expected_outcome": "Positive: fewer malformed outputs at equal meaning accuracy. Negative: types pass while relationships remain wrong.",
+      "based_on_gaps": [
+        "g1",
+        "g4"
+      ]
+    },
+    {
+      "id": "i5",
+      "title": "Contrastive consistency across related claims",
+      "one_liner": "Use known local meaning changes to test or train the semantic parser.",
+      "hypothesis": "A parser that tracks controlled role, scope and source changes has fewer spurious readings.",
+      "proposed_method": "Create reviewed subject/object, quote/world and negation contrasts; require equivalent paraphrases to yield equivalent graphs and meaning changes to affect the corresponding subgraph. Use consistency as training evidence only after checking examples.",
+      "minimal_experiment": "Construct 30-50 contrast pairs across new videos and measure graph differences, not only verdict agreement.",
+      "contribution_type": "diagnostic",
+      "novelty_rationale": "This is a candidate frontend/evaluation design, not a claim that the underlying established method is new. A paper contribution would require a controlled finding about typed multimodal verification and binding errors.",
+      "closest_prior_work": "Gupta et al. 2021 (p8)",
+      "feasibility": {
+        "compute": "0-2 GPU-hours (planning estimate)",
+        "data": "New manually checked contrasts; some earlier edits can seed development only",
+        "implementation": "low"
+      },
+      "risk": "low",
+      "expected_outcome": "Positive: exposes systematic bindings and supplies useful local labels. Negative: transformations are unfaithful or the parser can satisfy shallow lexical tests.",
+      "based_on_gaps": [
+        "g1",
+        "g2",
+        "g5"
+      ]
+    },
+    {
+      "id": "i6",
+      "title": "Soft neural scores for relationships with global constraints",
+      "one_liner": "Treat parser links as uncertain features rather than mandatory edges.",
+      "hypothesis": "Soft structural prediction can override a wrong dependency edge while maintaining a valid graph.",
+      "proposed_method": "Score candidate argument, modifier and scope links with a frozen encoder plus small classifiers. Apply hard constraints only for declarations/types/acyclic scopes and globally normalize or decode compatible structures.",
+      "minimal_experiment": "On checked constructions, compare hard dependency constraints with soft scores and identical graph candidates.",
+      "contribution_type": "method",
+      "novelty_rationale": "This is a candidate frontend/evaluation design, not a claim that the underlying established method is new. A paper contribution would require a controlled finding about typed multimodal verification and binding errors.",
+      "closest_prior_work": "Cheng and Lapata 2018 (p7); Krishnamurthy et al. 2016 (p6)",
+      "feasibility": {
+        "compute": "2-8 GPU-hours after graph annotations (planning estimate)",
+        "data": "Several hundred checked link/scope labels; not obtainable from pass/fail errors alone",
+        "implementation": "high"
+      },
+      "risk": "high",
+      "expected_outcome": "Positive: corrects annotation disagreements. Negative: weak labels cannot identify the intended graph or search becomes costly.",
+      "based_on_gaps": [
+        "g2",
+        "g4",
+        "g5"
+      ]
+    },
+    {
+      "id": "i7",
+      "title": "Repair partial ASTs while preserving checked fragments",
+      "one_liner": "Separate missing structure from already validated local constraints.",
+      "hypothesis": "Structural repair can recover claims without unnecessarily regenerating complete graphs.",
+      "proposed_method": "Keep actual partial compiler state and source anchors; allow bounded subtree replacement. Preserve only independently checked fragments as hard constraints, keeping parser-only suggestions defeasible.",
+      "minimal_experiment": "Evaluate the fixed 20 existing-draft/20 partial-draft diagnostic with generic versus compiler feedback; inspect every complete output.",
+      "contribution_type": "empirical",
+      "novelty_rationale": "This is a candidate frontend/evaluation design, not a claim that the underlying established method is new. A paper contribution would require a controlled finding about typed multimodal verification and binding errors.",
+      "closest_prior_work": "Poesia et al. 2022 (p2); Nagy et al. 2026 (p12)",
+      "feasibility": {
+        "compute": "1-3 GPU-hours (planning estimate)",
+        "data": "Current real claims and saved annotations",
+        "implementation": "low"
+      },
+      "risk": "low",
+      "expected_outcome": "Positive: new faithful repairs from saved partial state. Negative: more executability without preserved meaning.",
+      "based_on_gaps": [
+        "g1",
+        "g4"
+      ]
+    },
+    {
+      "id": "i8",
+      "title": "Calibrate selective acceptance on unseen source videos",
+      "one_liner": "Measure coverage only at a checked reliability level.",
+      "hypothesis": "Abstention can expose the large gap between valid structure and faithful meaning.",
+      "proposed_method": "Combine source-only parser confidence, typed-check outcomes and candidate disagreement into a calibrated acceptance score. Keep meaning uncertainty separate from insufficient media evidence.",
+      "minimal_experiment": "Collect 100-200 video-disjoint meaning judgments; report coverage versus error and failures to find a faithful candidate.",
+      "contribution_type": "diagnostic",
+      "novelty_rationale": "This is a candidate frontend/evaluation design, not a claim that the underlying established method is new. A paper contribution would require a controlled finding about typed multimodal verification and binding errors.",
+      "closest_prior_work": "Park et al. 2024 (p5); Cheng and Lapata 2018 (p7)",
+      "feasibility": {
+        "compute": "CPU calibration; 1-2 GPU-hours for fixed candidate features (planning estimate)",
+        "data": "New video-disjoint labels; development judgments cannot establish calibration guarantees",
+        "implementation": "medium"
+      },
+      "risk": "low",
+      "expected_outcome": "Positive: useful coverage at low error. Negative: no threshold transfers across video sources; disclose the shift.",
+      "based_on_gaps": [
+        "g1",
+        "g2",
+        "g5"
+      ]
+    },
+    {
+      "id": "i9",
+      "title": "Bidirectional generation as a faithfulness diagnostic",
+      "one_liner": "Compare the original sentence with a text rendering of each candidate graph.",
+      "hypothesis": "Back-generation may reveal omitted or swapped relationships that word coverage misses.",
+      "proposed_method": "Use a frozen graph-to-text model or a deterministic rendering and bidirectional text entailment. Treat this as an auxiliary diagnostic; it can repair a bad graph silently or miss fine distinctions.",
+      "minimal_experiment": "Compare its scores against existing checked role/scope errors and an edit-cost baseline without tuning on the final test videos.",
+      "contribution_type": "diagnostic",
+      "novelty_rationale": "This is a candidate frontend/evaluation design, not a claim that the underlying established method is new. A paper contribution would require a controlled finding about typed multimodal verification and binding errors.",
+      "closest_prior_work": "Cheng and Lapata 2018 (p7); Bevilacqua et al. 2021 (p9)",
+      "feasibility": {
+        "compute": "1-3 GPU-hours (planning estimate)",
+        "data": "Checked graph pairs and original sentences",
+        "implementation": "low"
+      },
+      "risk": "medium",
+      "expected_outcome": "Positive: flags some errors cheaply. Negative: fluent back-generation hides wrong structure, so never a proof.",
+      "based_on_gaps": [
+        "g1",
+        "g5"
+      ]
+    },
+    {
+      "id": "i10",
+      "title": "A flat typed semantic graph as the common output",
+      "one_liner": "Let one neural decoder emit nodes and labelled edges, then compile deterministically.",
+      "hypothesis": "Explicit IDs and separate scope edges may be easier to generate than deeply nested JSON.",
+      "proposed_method": "Use entity/event/operator nodes with argument and context edges; validate reachability, declaration and scope before converting to the existing logical form. Keep this a single parser path, not selection among frontend models.",
+      "minimal_experiment": "Compare equivalent flat and nested output formats on the same fixed claims, with identical source input and reviewed meanings.",
+      "contribution_type": "empirical",
+      "novelty_rationale": "This is a candidate frontend/evaluation design, not a claim that the underlying established method is new. A paper contribution would require a controlled finding about typed multimodal verification and binding errors.",
+      "closest_prior_work": "Raspanti et al. 2025 (p3); Bevilacqua et al. 2021 (p9)",
+      "feasibility": {
+        "compute": "1-4 GPU-hours (planning estimate)",
+        "data": "Current claims and matched graph references",
+        "implementation": "medium"
+      },
+      "risk": "medium",
+      "expected_outcome": "Positive: less duplication or invalid nesting. Negative: only a serialization change with no semantic gain.",
+      "based_on_gaps": [
+        "g1",
+        "g3"
+      ]
+    },
+    {
+      "id": "i11",
+      "title": "A fixed AMR frontend with compositional logical semantics",
+      "one_liner": "Use the existing neural AMR output as the meaning graph and apply a formal recursive translation.",
+      "hypothesis": "Some current failures are caused by reconstructing missing semantic links from verbal SRL; cached AMR already supplies these links.",
+      "proposed_method": "Keep a single frozen BART AMR frontend. Translate its concepts, roles, identity and explicitly supported scope operators compositionally into the existing logic. Use source-span evidence and refuse unsupported meanings; do not select the better frontend separately for each claim.",
+      "minimal_experiment": "Use the existing AMR cache on the same40 cases, with checked reference meanings; compare source fidelity and typed-scope preservation before any broader rollout.",
+      "contribution_type": "empirical",
+      "novelty_rationale": "AMR-to-FOL is established by Bos2016 and Lai etal2020. The useful result would be whether this frontend reduces our conversion errors at a fixed annotation/compute cost; it is not the paper contribution by itself.",
+      "closest_prior_work": "Bos2016 (p16); Lai, Donatelli and Pustejovsky2020 (p15); Bevilacqua etal2021 (p9)",
+      "feasibility": {
+        "compute": "CPU for cached graphs;1-2GPU-hours for new n-best decoding (planning estimate)",
+        "data": "Existing2375 cached AMRs plus checked source/reference structures",
+        "implementation": "medium"
+      },
+      "risk": "medium",
+      "expected_outcome": "Positive: preserves the wind-speed and attribution structures without parser retraining. Negative: AMR errors or scope gaps dominate; the robot and charger examples already show that risk.",
+      "based_on_gaps": [
+        "g1",
+        "g3",
+        "g4"
+      ]
+    }
+  ],
+  "removed": [
+    {
+      "title": "Retrain a general-purpose SRL model",
+      "reason": "Outside the user constraint and unnecessary before assessing existing pretrained models."
+    },
+    {
+      "title": "Learn the entire parser from supported/refuted claim labels alone",
+      "reason": "Unidentified latent meanings can obtain correct verdicts for the wrong reason; not a sufficient faithfulness signal."
+    },
+    {
+      "title": "Treat a generic AMR-to-logic converter as an untested new solution",
+      "reason": "The project already has AMR experiments; scope and source alignment remain conversion obligations."
+    }
+  ]
+}

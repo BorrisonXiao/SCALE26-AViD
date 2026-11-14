@@ -1,0 +1,27 @@
+{
+  "archive_sha256": "be168b2adebc45392309fa49ed1b931512b883d5ae39ecc76075230143011432",
+  "extraction": "/tmp/avid-compiler-structural-beg8vc7e",
+  "sha256_inventory": true,
+  "originals": 2375,
+  "cached_cohort": 449,
+  "strict_failures": 367,
+  "partial_forms": 189,
+  "model_conditions": 2,
+  "model_cases_per_condition": 40,
+  "neural_messages_checked": 63,
+  "prior_retained_exact": 1981,
+  "byte_identical_artifacts": [
+    "direct_all.jsonl",
+    "cached_pipeline.jsonl",
+    "direct_regression.json",
+    "failed_drafts.jsonl",
+    "summary.json",
+    "corpus_reviewed.jsonl",
+    "semantic_review.json",
+    "remaining_cases.json",
+    "cases.json",
+    "parse_mixture_examples.json",
+    "replay_development.json",
+    "replay_strict.json"
+  ]
+}

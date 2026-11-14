@@ -1,0 +1,19 @@
+{
+  "condition_cases": 476,
+  "attempts": 1204,
+  "exclusions": 394,
+  "neural_checks": 63,
+  "main_reports": 2,
+  "views": 5,
+  "retained": 1981,
+  "new_recoveries": 0,
+  "old_components": 47,
+  "old_readiness": 38,
+  "old_repairs": 13,
+  "old_rewrites": 449,
+  "old_demos": 41,
+  "old_typed_conditions": 2,
+  "amr_examples": 4,
+  "mobile_overflow": false,
+  "page_errors": []
+}

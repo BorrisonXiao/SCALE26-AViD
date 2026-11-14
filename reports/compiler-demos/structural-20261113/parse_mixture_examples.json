@@ -1,0 +1,48 @@
+{
+  "claim": "Alice saw Bob with a telescope.",
+  "interpretations": [
+    "Alice used a telescope to see Bob.",
+    "Alice saw Bob, who had a telescope."
+  ],
+  "observations": {
+    "alice_uses_telescope": [
+      0.9,
+      0.1,
+      0.0
+    ],
+    "bob_has_telescope": [
+      0.1,
+      0.9,
+      0.0
+    ]
+  },
+  "examples": [
+    {
+      "title": "Two alternative logical forms",
+      "distribution": {
+        "supported": 0.5800000000000001,
+        "refuted": 0.42000000000000004,
+        "unknown": 0.0,
+        "parsing_abstention": 0.0
+      },
+      "or_of_observations": 0.91,
+      "program": "0.6::reading(p0); 0.4::reading(p1).\n0.9::observation(o0,supported); 0.1::observation(o0,refuted).\n0.1::observation(o1,supported); 0.9::observation(o1,refuted).\nuses(p0,o0).\nuses(p1,o1).\nuses(_,_) :- fail.\nobservation(_,_) :- fail.\nanswer(Y) :- reading(P), uses(P,O), observation(O,Y).\nanswer(parsing_abstention) :- reading(none).\nany_supported :- observation(O,supported).\n",
+      "weights_supplied": true,
+      "learned_parser": false
+    },
+    {
+      "title": "Retain probability of no adequate parse",
+      "distribution": {
+        "supported": 0.522,
+        "refuted": 0.378,
+        "unknown": 0.0,
+        "parsing_abstention": 0.1
+      },
+      "or_of_observations": 0.91,
+      "program": "0.54::reading(p0); 0.36::reading(p1); 0.1::reading(none).\n0.9::observation(o0,supported); 0.1::observation(o0,refuted).\n0.1::observation(o1,supported); 0.9::observation(o1,refuted).\nuses(p0,o0).\nuses(p1,o1).\nuses(_,_) :- fail.\nobservation(_,_) :- fail.\nanswer(Y) :- reading(P), uses(P,O), observation(O,Y).\nanswer(parsing_abstention) :- reading(none).\nany_supported :- observation(O,supported).\n",
+      "weights_supplied": true,
+      "learned_parser": false
+    }
+  ],
+  "status": "Constructed native DeepProbLog engineering check. All parse weights and evidence probabilities are stipulated. No parser confidence was estimated, no media was processed, and no empirical calibration or coverage gain is claimed."
+}

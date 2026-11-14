@@ -7,6 +7,26 @@
       "date": "2026-11-13",
       "items": [
         {
+          "text": "Preserved unfinished compiler structure for 189 of 218 previous no-draft cases. These are diagnostic drafts, not new passes. All 2,375 original/449 cached outputs remain unchanged; retained pool stays 1,981 (83.41%).",
+          "href": "#remaining-failures",
+          "label": "Partial parses and current counts"
+        },
+        {
+          "text": "Tested two fixed 40-case structural conditions with shared-first-attempt retry controls. Strict feedback yields 7 complete programs versus 5 generic; all new meanings remain excluded after review. Corrected the earlier description of generic-retry error input.",
+          "href": "#feedback-example",
+          "label": "Exact structural corrections and reviews"
+        },
+        {
+          "text": "Ran a frozen text-model check on 63 previous programs: six matching approvals, four disputed approvals, three missed retained examples. Native DeepProbLog examples distinguish parse alternatives, logical OR and parser abstention. All 484 tests pass.",
+          "href": "#parse-uncertainty",
+          "label": "Neural and probabilistic checks"
+        },
+        {
+          "text": "Verified 17 primary works and recorded 11 alternatives. Cached AMR already captures some missing roles, while other graphs remain wrong. Proposed next: reference meanings and one fixed neural semantic-parser frontend. The external judge did not run because automatic approval rejected the unpublished payload.",
+          "href": "#compiler-alternatives",
+          "label": "Alternatives and proposed goals"
+        },
+        {
           "text": "Tested all158 remaining failed drafts with typed field edits. Feedback produces61 complete programs/9 retained meanings; generic retries46/8. Sharedfirst41/5. Mainpool1981/2375(83.41%),394excluded; all1972 earlier retained programs unchanged. These are development judgments, not accuracy.",
           "href": "#remaining-failures",
           "label": "Controlled results and limits"

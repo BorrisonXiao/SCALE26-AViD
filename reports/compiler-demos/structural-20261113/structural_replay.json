@@ -1,0 +1,44 @@
+{
+  "no_gpu": true,
+  "conditions": [
+    {
+      "condition": "development",
+      "cases": 40,
+      "frozen_source": "exp/probabilistic_verification/compiler_structural_20261113/model_source",
+      "byte_identical_files": [
+        "before.jsonl",
+        "first/responses.jsonl",
+        "first_final.jsonl",
+        "feedback_final.jsonl",
+        "generic_final.jsonl",
+        "feedback_1/responses.jsonl",
+        "feedback_2/responses.jsonl",
+        "generic_1/responses.jsonl",
+        "generic_2/responses.jsonl"
+      ],
+      "no_gpu": true
+    },
+    {
+      "condition": "strict",
+      "cases": 40,
+      "frozen_source": "exp/probabilistic_verification/compiler_structural_20261113/strict/model_source",
+      "byte_identical_files": [
+        "before.jsonl",
+        "first/responses.jsonl",
+        "first_final.jsonl",
+        "feedback_final.jsonl",
+        "generic_final.jsonl",
+        "feedback_1/responses.jsonl",
+        "feedback_2/responses.jsonl",
+        "generic_1/responses.jsonl",
+        "generic_2/responses.jsonl"
+      ],
+      "no_gpu": true,
+      "neural_messages_checked": 63
+    }
+  ],
+  "partial_capture_cases": 367,
+  "new_partial_drafts": 189,
+  "corpus_originals": 2375,
+  "cached_cohort": 449
+}

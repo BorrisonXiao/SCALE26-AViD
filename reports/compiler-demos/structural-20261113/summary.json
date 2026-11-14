@@ -1,0 +1,275 @@
+{
+  "corpus": {
+    "total": 2375,
+    "before": 1981,
+    "accepted": 1981,
+    "rate": 0.8341052631578947,
+    "remaining": 394,
+    "new_approved": 0,
+    "new_ids": []
+  },
+  "selection": {
+    "total": 2375,
+    "baseline_retained": 1981,
+    "excluded": 394,
+    "strict_failures": 367,
+    "existing_drafts": 149,
+    "new_partial_drafts": 189,
+    "still_without_draft": 29,
+    "no_draft_ids": [
+      "T2EE72iNELEs_181",
+      "Tg0UxWYuPeJ0_373",
+      "Tg0UxWYuPeJ0_421",
+      "Tsuk2uoYj-kc_618",
+      "TQEmEycTI0RQ_820",
+      "TQEmEycTI0RQ_847",
+      "TQEmEycTI0RQ_894",
+      "TQEmEycTI0RQ_934",
+      "TQEmEycTI0RQ_950",
+      "TQEmEycTI0RQ_960",
+      "TQEmEycTI0RQ_963",
+      "TQEmEycTI0RQ_987",
+      "TjHepwuhkYFA_1026",
+      "T2G_ACMxR_I4_1185",
+      "T2G_ACMxR_I4_1187",
+      "T2G_ACMxR_I4_1263",
+      "T2G_ACMxR_I4_1467",
+      "TFgw4IaR9R8s_1636",
+      "TFgw4IaR9R8s_1706",
+      "TW4OYA3RN-Hw_1812",
+      "TW4OYA3RN-Hw_1821",
+      "TW4OYA3RN-Hw_1824",
+      "TgR_u37mCoQ4_1925",
+      "TgR_u37mCoQ4_1926",
+      "TgR_u37mCoQ4_1927",
+      "TgR_u37mCoQ4_1928",
+      "TgR_u37mCoQ4_1929",
+      "TgR_u37mCoQ4_1930",
+      "Txf2EdqOg1SQ_2290"
+    ],
+    "selected": 40,
+    "selected_groups": {
+      "existing_draft": 20,
+      "partial_capture": 20
+    },
+    "selection": "Eight named motivating failures where available, then deterministic round-robin by direct error code within each draft group,20 per group. Fixed before model outputs; development diagnostic, not a random accuracy sample.",
+    "policy": "Strict original failure only. New partial forms always require a model correction; they are never accepted as compiler passes. Up to4 typed edits including logical-subtree replacement; shared first attempt then at most2 feedback/generic retries. No pooling control or previous methods."
+  },
+  "conditions": [
+    {
+      "id": "development_generic",
+      "title": "Permissive structural edits / generic retry",
+      "total": 40,
+      "initial_compiled": 4,
+      "final_compiled": 6,
+      "approved": 0,
+      "new_approved": 0,
+      "requests_by_round": [
+        40,
+        36,
+        35
+      ],
+      "failures": {
+        "edit_error": 7,
+        "numeric_modifier_type": 1,
+        "predicate_anchor": 2,
+        "coverage_omission": 4,
+        "shared_subject": 1,
+        "clause_in_entity": 2,
+        "unlinked_temporal_value": 1,
+        "long_literal": 1,
+        "unknown_entity": 7,
+        "unused_entities": 1,
+        "adjunct_argument": 1,
+        "mention_alignment": 2,
+        "adjunct_role": 1,
+        "negative_quantifier": 1,
+        "polarity_omission": 1,
+        "quantity_type": 1
+      },
+      "config": {
+        "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+        "backend": "vllm+xgrammar",
+        "dtype": "float16",
+        "temperature": 0,
+        "max_new_tokens": 2048,
+        "batch_size": 4,
+        "max_edits": 4,
+        "max_retries": 2,
+        "shared_first": true,
+        "original_error_in_both_branches": true,
+        "job_id": "1230471",
+        "vllm": "0.18.0",
+        "torch": "2.10.0+cu128",
+        "source": "/exp/cxiao/scale26/avid/exp/probabilistic_verification/compiler_structural_20261113/model_source/scripts/run_structural_compiler.py",
+        "gpus": [
+          "NVIDIA H100 80GB HBM3"
+        ]
+      }
+    },
+    {
+      "id": "development_feedback",
+      "title": "Permissive structural edits / compiler feedback",
+      "total": 40,
+      "initial_compiled": 4,
+      "final_compiled": 8,
+      "approved": 0,
+      "new_approved": 0,
+      "requests_by_round": [
+        40,
+        36,
+        33
+      ],
+      "failures": {
+        "edit_error": 8,
+        "numeric_modifier_type": 1,
+        "unused_entities": 5,
+        "coverage_omission": 3,
+        "shared_subject": 1,
+        "clause_in_entity": 2,
+        "unlinked_temporal_value": 1,
+        "adjunct_argument": 2,
+        "unknown_entity": 2,
+        "mention_alignment": 2,
+        "adjunct_role": 1,
+        "negative_quantifier": 2,
+        "polarity_omission": 1,
+        "quantity_type": 1
+      },
+      "config": {
+        "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+        "backend": "vllm+xgrammar",
+        "dtype": "float16",
+        "temperature": 0,
+        "max_new_tokens": 2048,
+        "batch_size": 4,
+        "max_edits": 4,
+        "max_retries": 2,
+        "shared_first": true,
+        "original_error_in_both_branches": true,
+        "job_id": "1230471",
+        "vllm": "0.18.0",
+        "torch": "2.10.0+cu128",
+        "source": "/exp/cxiao/scale26/avid/exp/probabilistic_verification/compiler_structural_20261113/model_source/scripts/run_structural_compiler.py",
+        "gpus": [
+          "NVIDIA H100 80GB HBM3"
+        ]
+      }
+    },
+    {
+      "id": "structural_generic",
+      "title": "Strict literal types + structural edits / generic retry",
+      "total": 40,
+      "initial_compiled": 5,
+      "final_compiled": 5,
+      "approved": 0,
+      "new_approved": 0,
+      "requests_by_round": [
+        40,
+        35,
+        35
+      ],
+      "failures": {
+        "unused_entities": 5,
+        "numeric_modifier_type": 1,
+        "predicate_anchor": 2,
+        "coverage_omission": 4,
+        "shared_subject": 1,
+        "edit_error": 5,
+        "clause_in_entity": 2,
+        "unlinked_temporal_value": 1,
+        "subject_binding": 1,
+        "unknown_entity": 5,
+        "adjunct_argument": 1,
+        "mention_alignment": 2,
+        "duplicate_entity": 1,
+        "negative_quantifier": 3,
+        "quantity_type": 1
+      },
+      "config": {
+        "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+        "backend": "vllm+xgrammar",
+        "dtype": "float16",
+        "temperature": 0,
+        "max_new_tokens": 2048,
+        "batch_size": 4,
+        "max_edits": 4,
+        "max_retries": 2,
+        "shared_first": true,
+        "strict_types": true,
+        "original_error_in_both_branches": true,
+        "job_id": "1230713",
+        "vllm": "0.18.0",
+        "torch": "2.10.0+cu128",
+        "source": "/exp/cxiao/scale26/avid/exp/probabilistic_verification/compiler_structural_20261113/strict/model_source/scripts/run_structural_compiler.py",
+        "gpus": [
+          "NVIDIA H100 80GB HBM3"
+        ]
+      }
+    },
+    {
+      "id": "structural_feedback",
+      "title": "Strict literal types + structural edits / compiler feedback",
+      "total": 40,
+      "initial_compiled": 5,
+      "final_compiled": 7,
+      "approved": 0,
+      "new_approved": 0,
+      "requests_by_round": [
+        40,
+        35,
+        34
+      ],
+      "failures": {
+        "unused_entities": 5,
+        "numeric_modifier_type": 1,
+        "coverage_omission": 5,
+        "shared_subject": 1,
+        "clause_as_text": 1,
+        "unlinked_temporal_value": 1,
+        "edit_error": 5,
+        "subject_binding": 2,
+        "clause_in_entity": 1,
+        "adjunct_argument": 2,
+        "unknown_entity": 2,
+        "missing_event": 1,
+        "negative_quantifier": 2,
+        "polarity_omission": 1,
+        "quantity_type": 1,
+        "source_content_missing": 1,
+        "mention_alignment": 1
+      },
+      "config": {
+        "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+        "backend": "vllm+xgrammar",
+        "dtype": "float16",
+        "temperature": 0,
+        "max_new_tokens": 2048,
+        "batch_size": 4,
+        "max_edits": 4,
+        "max_retries": 2,
+        "shared_first": true,
+        "strict_types": true,
+        "original_error_in_both_branches": true,
+        "job_id": "1230713",
+        "vllm": "0.18.0",
+        "torch": "2.10.0+cu128",
+        "source": "/exp/cxiao/scale26/avid/exp/probabilistic_verification/compiler_structural_20261113/strict/model_source/scripts/run_structural_compiler.py",
+        "gpus": [
+          "NVIDIA H100 80GB HBM3"
+        ]
+      }
+    }
+  ],
+  "unique_programs_reviewed": 13,
+  "old_retained_unchanged": 1981,
+  "remaining_stages": {
+    "edit_compilation": 88,
+    "structural_compilation": 33,
+    "alignment": 75,
+    "component_compilation": 99,
+    "meaning_review": 94,
+    "composition": 5
+  },
+  "training": "Deferred. No new media inference or SRL training."
+}

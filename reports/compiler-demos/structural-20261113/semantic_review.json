@@ -1,0 +1,1286 @@
+{
+  "unique_programs": 13,
+  "cases": [
+    {
+      "condition": "development_generic",
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "24ca15d687397c82da23e17f9ddb04eb8a025ac27f9e407677ba53e3b3b4892b"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFOEIehBwT8Q_517",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "5d02645975f9b05f29774a3b9d454babf2f7d8aa0a734461f8732b486532458e"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TQEmEycTI0RQ_822",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "78686767b4585145f16df144a77a5c7caa2501832fec038e55a52ab0ced93cac"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TMrQshDs8aH0_745",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "265e3d89c1f6ce6295bf160a57196e83a513fe5229def719930c668ac9410773"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Wind speed is a source property of adults, not a participant of appear/force. The sufficient-to clause is also copied as ordinary text. The cause/subject binding is absent.",
+      "artifact_sha256": "7413662ea4484abc07017a35c90f28dc7baa65c5f52a183cee96bce6573e11fb"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TQEmEycTI0RQ_838",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ca3dac14ac9f7d1d5077fbd3d810be04ef24815803d63a4e0b28723d7829650e"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TgR_u37mCoQ4_1924",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "696fcaabe99dc96d3979be2b40cac94d3bcdc4618595d4cfcd1d64ef08f305a8"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TzzhcBIczf_M_2109",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "b3e49b225df8679743e5c9fb15e0b81235ca8737e8a0639f3bf8e2608a1383f0"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TgR_u37mCoQ4_1908",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "9029f3ea10e4949679c32aee5e6df0e1af782772b04bc25caf404d433456e2d6"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFgw4IaR9R8s_1762",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The numbers-being-unfair clause is asserted outside the depicted speech. Cut/show nesting and the opaque Trump-without-chart referent also leave source and absence relationships unresolved.",
+      "artifact_sha256": "3f01e7836e619a73a55c1b86dd40a1b659c3b3da4c02bb057cf2735f4e148461"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TjHepwuhkYFA_999",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TgR_u37mCoQ4_1831",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFOEIehBwT8Q_495",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "df2027fdd50a0fb5f96be967a921e7fb6257a4dc9b0343359ab7358c3892f06c"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFOEIehBwT8Q_496",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "9f64bc92717e5232cfcd04a9fbfab9d19cd39337e3be4422077f5f56a8737433"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "00a785931e1bba13a4a5521804b3b81ccca842ed21d3f6031ae9e65cc1ac095d"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TgPh_fzHTCm4_1497",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The where clause is an ordinary text value plus a separate spin-exists event. No shared place binds the color fills to the atmospheric spin; the copied words do not supply that relationship.",
+      "artifact_sha256": "be02346078bc8804c6d839d9abaed60633358843308b5ff713f8656f906ebdd0"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TjHepwuhkYFA_997",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "Txf2EdqOg1SQ_2168",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TInVWzp25aIM_68",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Livestream is marked as an assertion despite being a purpose. A separate adjunct invents a nonstandard argument role and duplicates the event nominal. A purpose label on the role does not override its assertion kind.",
+      "artifact_sha256": "4d514b66b9d20dc248a91ef128673734303f86cb8b702d4cd267d96305dfb2dd"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "0d36194470e77b202eddbbb3d6a89d6a1f71fd7b39b9e3d80f3f4e865263f48a"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "5284b426712238936a55dc428d5445a8b5b223beaefc63c01ff6bf52ac564516"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "Tg0UxWYuPeJ0_333",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TgR_u37mCoQ4_1889",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "20a46aba8af836b6edf5dc54d491efe5e34ac047268352d1793fd24c1d458070"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "T2G_ACMxR_I4_1237",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "T1JQ-aG78Zuc_796",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TgR_u37mCoQ4_1976",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The two possible professions become simultaneous member links, while presumably is an ordinary adjunct. OR/range fields on a text literal are not logical alternatives or uncertainty scope.",
+      "artifact_sha256": "cb6761e72e57af4be158d8de344357eb500de4f637e9916a16cdc5f24cd7bb17"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "Txf2EdqOg1SQ_2221",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFgw4IaR9R8s_1655",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFgw4IaR9R8s_1520",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "0795734b9405d588abffc00968baf1732d6674e16432ef07bd78d7b6d5006930"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "Tg0UxWYuPeJ0_323",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "dfb108229e33fb77fe34d1c93ea9e5b66ba680c6851c9b0b97044a56bb5d78fe"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFgw4IaR9R8s_1646",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "769783c14cb3277706de1adf4fd8ff0eb00485912a8affe88ae4fbd77979c727"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "T2G_ACMxR_I4_1326",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "T2G_ACMxR_I4_1228",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFOEIehBwT8Q_504",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "fcb1bcafe17d3e24b5351f221636d3f26439fe9896c73d7ece1098d04807c8fc"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "T8u81WMIyj18_758",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ce7d10799875e583ede7bd4c74abeab39a92ff5f03f359e8daf0f88f0d9127d4"
+    },
+    {
+      "condition": "development_generic",
+      "claim_id": "TFgw4IaR9R8s_1569",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The situation is given invasion/incursion member links despite the negative description, and the opinion content is attached to be rather than clearly to opinion. Negated opaque text does not encode the required scoped alternatives.",
+      "artifact_sha256": "e89304d9c27522f304a02ada68831f378d15ab9a8950272e9ea6a06e6da22aa5"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "78bb2db7646680beba702895a6de54a21c9a4a00a061dfafa397ef0b39797935"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFOEIehBwT8Q_517",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TQEmEycTI0RQ_822",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "78686767b4585145f16df144a77a5c7caa2501832fec038e55a52ab0ced93cac"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TMrQshDs8aH0_745",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "c2712fee57d013ef93c45a5f449ab37958bc1a2c7af886807c4c1e02ea7ef3df"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Wind speed is hidden in unit/attribute fields of an ordinary text literal; it is not a declared causer. Correct words in metadata do not preserve the relationship.",
+      "artifact_sha256": "f3df88a24f7b67938f7ac686da8e6ed72dfed47a8a56a5778efb0b9260a33e0a"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TQEmEycTI0RQ_838",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ca3dac14ac9f7d1d5077fbd3d810be04ef24815803d63a4e0b28723d7829650e"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TgR_u37mCoQ4_1924",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "696fcaabe99dc96d3979be2b40cac94d3bcdc4618595d4cfcd1d64ef08f305a8"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TzzhcBIczf_M_2109",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TgR_u37mCoQ4_1908",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFgw4IaR9R8s_1762",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The numbers being disproportionate/unfair is independently asserted outside talking. A correct depicted talking subtree does not license the extra world assertion.",
+      "artifact_sha256": "96a14e71d64197f0a236616cb9b1be6aa1b229019dd089330ef22fdfcc6f5829"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TjHepwuhkYFA_999",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TgR_u37mCoQ4_1831",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFOEIehBwT8Q_495",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "df2027fdd50a0fb5f96be967a921e7fb6257a4dc9b0343359ab7358c3892f06c"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFOEIehBwT8Q_496",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "9f64bc92717e5232cfcd04a9fbfab9d19cd39337e3be4422077f5f56a8737433"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "d87b147fff7b630b85bb036fec77bcd4f11734f3be654287dfa3c9da04fed67a"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TgPh_fzHTCm4_1497",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The where clause is an ordinary text value plus a separate spin-exists event. No shared place binds the color fills to the atmospheric spin; the copied words do not supply that relationship.",
+      "artifact_sha256": "be02346078bc8804c6d839d9abaed60633358843308b5ff713f8656f906ebdd0"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TjHepwuhkYFA_997",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2168",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TInVWzp25aIM_68",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Livestream is marked as an assertion despite being a purpose. A separate adjunct invents a nonstandard argument role and duplicates the event nominal. A purpose label on the role does not override its assertion kind.",
+      "artifact_sha256": "4d514b66b9d20dc248a91ef128673734303f86cb8b702d4cd267d96305dfb2dd"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The restaurant is not identified with the named Seafood business; fire objects are attached through an amount adjunct and artificial many referent. Depicting stills is also replaced by depicting survival as an event.",
+      "artifact_sha256": "be02ce7377c84a4a81954cc5f5b2cf2deb748fad873a0ad1f8ce3809f3f8b656"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "eacdd57b0717630fc2a4897f35fd7a9ad79d8488d35e184cef380f595b15d0ed"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_333",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TgR_u37mCoQ4_1889",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "T2G_ACMxR_I4_1237",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "T1JQ-aG78Zuc_796",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TgR_u37mCoQ4_1976",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The two possible professions become simultaneous member links, while presumably is an ordinary adjunct. OR/range fields on a text literal are not logical alternatives or uncertainty scope.",
+      "artifact_sha256": "cb6761e72e57af4be158d8de344357eb500de4f637e9916a16cdc5f24cd7bb17"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2221",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFgw4IaR9R8s_1655",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFgw4IaR9R8s_1520",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_323",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFgw4IaR9R8s_1646",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Footage is made the manner of speaking, and a separate muted event is placed inside depiction. The actual recording/content relationship and muted-recording attribute are not preserved.",
+      "artifact_sha256": "50f3a53070855498e6e7e0b43afae5232f99d7fec62c5fe63e0b18a7eab2cde1"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "T2G_ACMxR_I4_1326",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "T2G_ACMxR_I4_1228",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFOEIehBwT8Q_504",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "913a99ddb1f955a4e7e5ee3b564699a305bf7bff3b1f1eca57ff47c17c7df1ce"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "T8u81WMIyj18_758",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "development_feedback",
+      "claim_id": "TFgw4IaR9R8s_1569",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The situation is given invasion/incursion member links despite the negative description, and the opinion content is attached to be rather than clearly to opinion. Negated opaque text does not encode the required scoped alternatives.",
+      "artifact_sha256": "e89304d9c27522f304a02ada68831f378d15ab9a8950272e9ea6a06e6da22aa5"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "24ca15d687397c82da23e17f9ddb04eb8a025ac27f9e407677ba53e3b3b4892b"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFOEIehBwT8Q_517",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "5d02645975f9b05f29774a3b9d454babf2f7d8aa0a734461f8732b486532458e"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TQEmEycTI0RQ_822",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "78686767b4585145f16df144a77a5c7caa2501832fec038e55a52ab0ced93cac"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TMrQshDs8aH0_745",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "265e3d89c1f6ce6295bf160a57196e83a513fe5229def719930c668ac9410773"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "261fc67ae4436f3ee32b51c2cec76ce9fe69e5933e9d4b2f89832300cf08d830"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TQEmEycTI0RQ_838",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "3101c065b978aac95d95b798500440c5ffaf8a955037c6994b266e5219ac7316"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TgR_u37mCoQ4_1924",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "696fcaabe99dc96d3979be2b40cac94d3bcdc4618595d4cfcd1d64ef08f305a8"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TzzhcBIczf_M_2109",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "57eb7eabe79ac21ddea54fc4abbb6ff2b7df6b0fe59de10571177295c8aa8f08"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TgR_u37mCoQ4_1908",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "9029f3ea10e4949679c32aee5e6df0e1af782772b04bc25caf404d433456e2d6"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFgw4IaR9R8s_1762",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TjHepwuhkYFA_999",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TgR_u37mCoQ4_1831",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFOEIehBwT8Q_495",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "df2027fdd50a0fb5f96be967a921e7fb6257a4dc9b0343359ab7358c3892f06c"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFOEIehBwT8Q_496",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "9f64bc92717e5232cfcd04a9fbfab9d19cd39337e3be4422077f5f56a8737433"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "21f3cef6e2778d8a8ffa7135f5fdae6d48c67f69c56b8260db9c06a2b80b1692"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TgPh_fzHTCm4_1497",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The where clause is an ordinary text value plus a separate spin-exists event. No shared place binds the color fills to the atmospheric spin; the copied words do not supply that relationship.",
+      "artifact_sha256": "be02346078bc8804c6d839d9abaed60633358843308b5ff713f8656f906ebdd0"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TjHepwuhkYFA_997",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "Txf2EdqOg1SQ_2168",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TInVWzp25aIM_68",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The child clause retains assertion kind rather than purpose; the extra to-livestream adjunct does not correct its interpretation or bind an intended goal instead of an asserted event.",
+      "artifact_sha256": "41a975be06df3ee23abf3c414ff1006987402c989811141d233b1ec1f97c3d39"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "13dc3c7b96aa40a60819cff2e22a1100e69d4eff654d5c8666c5f780322deaad"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "Tg0UxWYuPeJ0_333",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TgR_u37mCoQ4_1889",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "0085d021180fcef2def10df622eeca3fbdcd5a1846edd525c57ac137610e8690"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "T2G_ACMxR_I4_1237",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "T1JQ-aG78Zuc_796",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TgR_u37mCoQ4_1976",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Lawyer and member are simultaneous member links and an opaque text alternative, while presumably remains an ordinary adjunct. The disjunction and uncertainty are not represented as logical scope.",
+      "artifact_sha256": "cbfc8170efa91e9f3e1d2c11d23f25eb571b058059a8310683c5dc0a4e0a29d4"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "Txf2EdqOg1SQ_2221",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFgw4IaR9R8s_1655",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFgw4IaR9R8s_1520",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "ee41858eaaa3d9206167dc06184be66dfdafe9506efe69ec3e29d22be7aac823"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "Tg0UxWYuPeJ0_323",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The participants and into relation are close to the intended reading, but during race is compiled as ARGM-LOC (location), not a temporal condition. Withheld as an unresolved temporal-typing case; not claimed to be a wholly different natural-language reading.",
+      "artifact_sha256": "8fe60d60ad9f398478ce211cd3c15af57ef09c221c80f1ce5c6468bd7a4d7065"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFgw4IaR9R8s_1646",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "769783c14cb3277706de1adf4fd8ff0eb00485912a8affe88ae4fbd77979c727"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "T2G_ACMxR_I4_1326",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "T2G_ACMxR_I4_1228",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFOEIehBwT8Q_504",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "21fa034c1039e5f2417226494c9847930dc4ef70153a5fd5ec07ed5d9de83c0a"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "T8u81WMIyj18_758",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_generic",
+      "claim_id": "TFgw4IaR9R8s_1569",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The situation is given invasion/incursion member links despite the negative description, and the opinion content is attached to be rather than clearly to opinion. Negated opaque text does not encode the required scoped alternatives.",
+      "artifact_sha256": "e89304d9c27522f304a02ada68831f378d15ab9a8950272e9ea6a06e6da22aa5"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "78bb2db7646680beba702895a6de54a21c9a4a00a061dfafa397ef0b39797935"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFOEIehBwT8Q_517",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TQEmEycTI0RQ_822",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "78686767b4585145f16df144a77a5c7caa2501832fec038e55a52ab0ced93cac"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TMrQshDs8aH0_745",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "c2712fee57d013ef93c45a5f449ab37958bc1a2c7af886807c4c1e02ea7ef3df"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "5bd367ead893cd92b6a38ab32c4155ab8e85824a673195394c88bd38a41343eb"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TQEmEycTI0RQ_838",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "13c3d411b16c5ada1c3763033bd461c1fba94dccaf29d8315459bf5def15e23b"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "b605acdcccf68795117f00fc496e5d0d828f76aa3d7fd6bdfdc0c959e9d80e66"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TgR_u37mCoQ4_1924",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "696fcaabe99dc96d3979be2b40cac94d3bcdc4618595d4cfcd1d64ef08f305a8"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TzzhcBIczf_M_2109",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "57eb7eabe79ac21ddea54fc4abbb6ff2b7df6b0fe59de10571177295c8aa8f08"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TgR_u37mCoQ4_1908",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFgw4IaR9R8s_1762",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The numbers being disproportionate/unfair is independently asserted outside talking. A correct depicted talking subtree does not license the extra world assertion.",
+      "artifact_sha256": "96a14e71d64197f0a236616cb9b1be6aa1b229019dd089330ef22fdfcc6f5829"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TjHepwuhkYFA_999",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TgR_u37mCoQ4_1831",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFOEIehBwT8Q_495",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "df2027fdd50a0fb5f96be967a921e7fb6257a4dc9b0343359ab7358c3892f06c"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFOEIehBwT8Q_496",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "9f64bc92717e5232cfcd04a9fbfab9d19cd39337e3be4422077f5f56a8737433"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "5c3c197a7dd55c2517f5903de03f4ff8a67afeb6ccc142080a70f4f4563f047a"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TgPh_fzHTCm4_1497",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The where clause is an ordinary text value plus a separate spin-exists event. No shared place binds the color fills to the atmospheric spin; the copied words do not supply that relationship.",
+      "artifact_sha256": "be02346078bc8804c6d839d9abaed60633358843308b5ff713f8656f906ebdd0"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TjHepwuhkYFA_997",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2168",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TInVWzp25aIM_68",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The child clause retains assertion kind rather than purpose; the extra to-livestream adjunct does not correct its interpretation or bind an intended goal instead of an asserted event.",
+      "artifact_sha256": "41a975be06df3ee23abf3c414ff1006987402c989811141d233b1ec1f97c3d39"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "13dc3c7b96aa40a60819cff2e22a1100e69d4eff654d5c8666c5f780322deaad"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_333",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TgR_u37mCoQ4_1889",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "T2G_ACMxR_I4_1237",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "c94c1b16818ceba32eaad7bebd8f413366bfb601a7319f89bc6a2d2a46d3eb3b"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "T1JQ-aG78Zuc_796",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TgR_u37mCoQ4_1976",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Lawyer and member are simultaneous member links and an opaque text alternative, while presumably remains an ordinary adjunct. The disjunction and uncertainty are not represented as logical scope.",
+      "artifact_sha256": "cbfc8170efa91e9f3e1d2c11d23f25eb571b058059a8310683c5dc0a4e0a29d4"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "Txf2EdqOg1SQ_2221",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFgw4IaR9R8s_1655",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "5eeaa75c737c7b5295e60403a8ec20da61f8cc00001c37c116c72c713f85f43f"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFgw4IaR9R8s_1520",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "4e3dd4ba7a4f3f0cbb1a511e0babb5d34d0071e1233578c7b031180880c55147"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "Tg0UxWYuPeJ0_323",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The participants and into relation are close to the intended reading, but during race is compiled as ARGM-LOC (location), not a temporal condition. Withheld as an unresolved temporal-typing case; not claimed to be a wholly different natural-language reading.",
+      "artifact_sha256": "8fe60d60ad9f398478ce211cd3c15af57ef09c221c80f1ce5c6468bd7a4d7065"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFgw4IaR9R8s_1646",
+      "compiled": true,
+      "faithful": false,
+      "reason": "Footage is made the manner of speaking, and a separate muted event is placed inside depiction. The actual recording/content relationship and muted-recording attribute are not preserved.",
+      "artifact_sha256": "50f3a53070855498e6e7e0b43afae5232f99d7fec62c5fe63e0b18a7eab2cde1"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "T2G_ACMxR_I4_1326",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "T2G_ACMxR_I4_1228",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFOEIehBwT8Q_504",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "07d37620217867548f2069a63b5775ada50e91ca6b30ee6e11c5697b802f9830"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "T8u81WMIyj18_758",
+      "compiled": false,
+      "faithful": false,
+      "reason": "No complete program.",
+      "artifact_sha256": "91db802a263705a0b03e2d2c943e3029b052ca82cb049615d7987a3d64116b73"
+    },
+    {
+      "condition": "structural_feedback",
+      "claim_id": "TFgw4IaR9R8s_1569",
+      "compiled": true,
+      "faithful": false,
+      "reason": "The situation is given invasion/incursion member links despite the negative description, and the opinion content is attached to be rather than clearly to opinion. Negated opaque text does not encode the required scoped alternatives.",
+      "artifact_sha256": "e89304d9c27522f304a02ada68831f378d15ab9a8950272e9ea6a06e6da22aa5"
+    }
+  ],
+  "provenance": "Compiler-author development judgments, not independent reference accuracy."
+}
