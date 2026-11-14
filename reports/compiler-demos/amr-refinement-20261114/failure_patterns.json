@@ -1,0 +1,432 @@
+{
+  "unhandled_complement": {
+    "count": 631,
+    "patterns": [
+      [
+        "No scope policy for have-degree-91 :ARG2 broad-02",
+        4
+      ],
+      [
+        "No scope policy for have-degree-91 :ARG2 high-02",
+        3
+      ],
+      [
+        "No scope policy for end-up-03 :ARG2 fall-01",
+        2
+      ],
+      [
+        "No scope policy for say-01 :ARG0 signal-07",
+        2
+      ],
+      [
+        "No scope policy for show-01 :ARG1 compare-01",
+        2
+      ],
+      [
+        "No scope policy for state-01 :ARG1 ask-02",
+        2
+      ],
+      [
+        "No scope policy for focus-01 :ARG1 respond-01",
+        2
+      ],
+      [
+        "No scope policy for have-concession-91 :ARG1 obligate-01",
+        2
+      ],
+      [
+        "No scope policy for emphasize-01 :ARG1 possible-01",
+        2
+      ],
+      [
+        "No scope policy for have-quant-91 :ARG1 provide-01",
+        2
+      ],
+      [
+        "No scope policy for state-01 :ARG1 respond-01",
+        2
+      ],
+      [
+        "No scope policy for tell-01 :ARG1 keep-02",
+        2
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "Tg0UxWYuPeJ0_445",
+        "text": "It got really intense; I saw robots fighting.",
+        "reason": "No scope policy for get-03 :ARG2 intense-02"
+      },
+      {
+        "claim_id": "TQEmEycTI0RQ_932",
+        "text": "Poilievre's aggressive rhetoric, effective against unpopular Trudeau, looked divisive given Trump's actions.",
+        "reason": "No scope policy for effective-04 :ARG1 oppose-01"
+      },
+      {
+        "claim_id": "TgR_u37mCoQ4_1958",
+        "text": "The news anchors reporting are Micah Ohlman, Cher Calvin, and Rick Chambers.",
+        "reason": "No scope policy for have-org-role-91 :ARG4 report-01"
+      }
+    ]
+  },
+  "coordination_scope": {
+    "count": 46,
+    "patterns": [
+      [
+        "An annotated coordination needs explicit scope.",
+        46
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TInVWzp25aIM_60",
+        "text": "The typhoon caused heavy rain and winds.",
+        "reason": "An annotated coordination needs explicit scope."
+      },
+      {
+        "claim_id": "TInVWzp25aIM_77",
+        "text": "Homes are damaged and flooded during the storm.",
+        "reason": "An annotated coordination needs explicit scope."
+      },
+      {
+        "claim_id": "Tg0UxWYuPeJ0_363",
+        "text": "Humanoid robot has great balance and coordination.",
+        "reason": "An annotated coordination needs explicit scope."
+      }
+    ]
+  },
+  "negative_argument_scope": {
+    "count": 37,
+    "patterns": [
+      [
+        "A negated argument needs scope projection over its governing relation.",
+        37
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TInVWzp25aIM_39",
+        "text": "Anchorage, Alaska was not majorly affected by Typhoon Halong.",
+        "reason": "A negated argument needs scope projection over its governing relation."
+      },
+      {
+        "claim_id": "TInVWzp25aIM_52",
+        "text": "Akiak, Alaska has not had electricity for 22 days and counting due to Typhoon Halong.",
+        "reason": "A negated argument needs scope projection over its governing relation."
+      },
+      {
+        "claim_id": "TbJqMFkNxARY_161",
+        "text": "No containers in the water implies this was potentially recorded after cleanup already began.",
+        "reason": "A negated argument needs scope projection over its governing relation."
+      }
+    ]
+  },
+  "duplicate_roles": {
+    "count": 20,
+    "patterns": [
+      [
+        "Repeated core role at m",
+        3
+      ],
+      [
+        "Repeated core role at a",
+        2
+      ],
+      [
+        "Repeated core role at p",
+        2
+      ],
+      [
+        "Repeated core role at ii",
+        2
+      ],
+      [
+        "Repeated core role at n",
+        2
+      ],
+      [
+        "Repeated core role at f",
+        1
+      ],
+      [
+        "Repeated core role at l",
+        1
+      ],
+      [
+        "Repeated core role at l2",
+        1
+      ],
+      [
+        "Repeated core role at c2",
+        1
+      ],
+      [
+        "Repeated core role at d",
+        1
+      ],
+      [
+        "Repeated core role at h3",
+        1
+      ],
+      [
+        "Repeated core role at k",
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "Tg0UxWYuPeJ0_392",
+        "text": "black box text reads \"On the morning of August 17, in the preliminary round of the 4×100m relay at the 2025 World Humanoid Robot Games, the long-legged robot from Gaoyi Technology Team, one of the favorites to win the championship and the previous 400m champion, competed against two teams of short-legged robots. However, one of the runners from the Gao Yi Technology team knocked down several opponents after the start. Other athletes also fell down, and some staff members also fell down. Although the Gao Yi Technology team rallied and crossed the finish line first, they still managed to catch up. However, due to violations such as crossing lanes, they were still penalized and finished at the bottom of the group, resulting in their elimination.\"",
+        "reason": "Repeated core role at m"
+      },
+      {
+        "claim_id": "TFOEIehBwT8Q_497",
+        "text": "\"Mexico City security chief: 20 arrested for theft and assault.\"",
+        "reason": "Repeated core role at a"
+      },
+      {
+        "claim_id": "TLO3smKI67PM_564",
+        "text": "The Phillies fan father eventually gives the ball to the Phillies fan Karen.",
+        "reason": "Repeated core role at f"
+      }
+    ]
+  },
+  "event_scope_reentry": {
+    "count": 17,
+    "patterns": [
+      [
+        "An event is referenced from two contexts: s",
+        3
+      ],
+      [
+        "An event is referenced from two contexts: f",
+        3
+      ],
+      [
+        "An event is referenced from two contexts: p",
+        3
+      ],
+      [
+        "An event is referenced from two contexts: s2",
+        2
+      ],
+      [
+        "An event is referenced from two contexts: l",
+        1
+      ],
+      [
+        "An event is referenced from two contexts: v",
+        1
+      ],
+      [
+        "An event is referenced from two contexts: o",
+        1
+      ],
+      [
+        "An event is referenced from two contexts: ii2",
+        1
+      ],
+      [
+        "Cross-context event argument: c2",
+        1
+      ],
+      [
+        "An event is referenced from two contexts: d",
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TjHepwuhkYFA_1016",
+        "text": "Beginning at video timestamp 2025-03-28 12:46:35 and ending at video timestamp 12:46:37, the midground and background terrain in the video shift relative to the foreground of the video.",
+        "reason": "An event is referenced from two contexts: s"
+      },
+      {
+        "claim_id": "T2EE72iNELEs_180",
+        "text": "Rocket is launched successfully.",
+        "reason": "An event is referenced from two contexts: l"
+      },
+      {
+        "claim_id": "TzF9M4kZ3Pys_260",
+        "text": "Lack of visibility might cause cancelled flights.",
+        "reason": "An event is referenced from two contexts: f"
+      }
+    ]
+  },
+  "sentence_mode": {
+    "count": 14,
+    "patterns": [
+      [
+        "Question/imperative interpretation is not implemented.",
+        14
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TQEmEycTI0RQ_898",
+        "text": "Shows image of the tweet from Trump: 'Good luck to the Great people of Canada. Elect the man who has the strength and wisdom to cut your taxes in half, increase your military power, for free, to the highest level in the World, have your Car, Steel, Aluminum, Lumber, Energy, and all other businesses, QUADRUPLE in size, WITH ZERO TARIFFS OR TAXES, if Canada becomes the cherished 51st. State of the United States of America. No more artificially drawn line from many years ago. Look how beautiful this land mass would be. Free access with NO BORDER. ALL POSITIVES WITH NO NEGATIVES. IT WAS MEANT TO BE! America can no longer subsidize Canada with the Hundreds of Billions of Dollars a year that we have been spending in the past. It makes no sense unless Canada is a State!'",
+        "reason": "Question/imperative interpretation is not implemented."
+      },
+      {
+        "claim_id": "Tg0UxWYuPeJ0_328",
+        "text": "The man lightly pushes Robot 1away saying, \"Don't move\"",
+        "reason": "Question/imperative interpretation is not implemented."
+      },
+      {
+        "claim_id": "TFOEIehBwT8Q_456",
+        "text": "Protester shouting \"kill him/them\".",
+        "reason": "Question/imperative interpretation is not implemented."
+      }
+    ]
+  },
+  "coordination_size": {
+    "count": 5,
+    "patterns": [
+      [
+        "Coordination needs at least two members.",
+        5
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "T2EE72iNELEs_179",
+        "text": "A child says in Spanish \"to infinity and beyond.\"",
+        "reason": "Coordination needs at least two members."
+      },
+      {
+        "claim_id": "TQEmEycTI0RQ_862",
+        "text": "The speaker clarifies that Canadians do not vote directly for the Prime Minister but instead vote for a local Member of Parliament, and the leader of the party with most MPs elected becomes Prime Minister.",
+        "reason": "Coordination needs at least two members."
+      },
+      {
+        "claim_id": "TQEmEycTI0RQ_863",
+        "text": "They list the main party leaders: Mark Carney of the Liberals, Pierre Poilievre of the Conservatives, Jagmeet Singh of the NDP, Yves-François Blanchet of the Bloc Québécois, and Green Party co-leaders Elizabeth May and Jonathan Pedneault, and show pictures of them.",
+        "reason": "Coordination needs at least two members."
+      }
+    ]
+  },
+  "untranslated_nodes": {
+    "count": 5,
+    "patterns": [
+      [
+        "Not all AMR nodes were visited.",
+        5
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "T2G_ACMxR_I4_1205",
+        "text": "LMS works by measuring changes in electric and magnetic fields caused by variations in the solar wind and the effects of Earth's magnetosphere on the Moon.",
+        "reason": "Not all AMR nodes were visited."
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1755",
+        "text": "President says we had never charged before and the other countries have always charged us, they will now be upset.",
+        "reason": "Not all AMR nodes were visited."
+      },
+      {
+        "claim_id": "Txf2EdqOg1SQ_2201",
+        "text": "Beach activities are discouraged due to the expected waves and swells.",
+        "reason": "Not all AMR nodes were visited."
+      }
+    ]
+  },
+  "polarity_value": {
+    "count": 4,
+    "patterns": [
+      [
+        "Unsupported polarity value: t",
+        3
+      ],
+      [
+        "Unsupported polarity value: t4",
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TInVWzp25aIM_12",
+        "text": "Commenters ask if anyone is missing, it's unclear if there are.",
+        "reason": "Unsupported polarity value: t"
+      },
+      {
+        "claim_id": "Tg0UxWYuPeJ0_318",
+        "text": "Friend of the bystander checks to see if he is ok",
+        "reason": "Unsupported polarity value: t"
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1578",
+        "text": "Axelrod claims it is unclear whether negotiations with other countries over tariffs can continue while tariffs are blocked.",
+        "reason": "Unsupported polarity value: t"
+      }
+    ]
+  },
+  "coordination_reentry": {
+    "count": 3,
+    "patterns": [
+      [
+        "An OR operand is referenced outside its choice.",
+        3
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TQEmEycTI0RQ_871",
+        "text": "The speaker notes that Canadians may vote on election day, at advance polls, or by mail-in ballot if they are outside the country, with more information coming on the Elections Canada website.",
+        "reason": "An OR operand is referenced outside its choice."
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1730",
+        "text": "The speaker notes that Canadians may vote on election day, at advance polls, or by mail-in ballot if they are outside the country, with more information coming on the Elections Canada website.",
+        "reason": "An OR operand is referenced outside its choice."
+      },
+      {
+        "claim_id": "Txf2EdqOg1SQ_2166",
+        "text": "The video takes place on a large, open paved pier or terminal area.",
+        "reason": "An OR operand is referenced outside its choice."
+      }
+    ]
+  },
+  "media_modifier_scope": {
+    "count": 3,
+    "patterns": [
+      [
+        "A predicative media modifier needs attribute-versus-content interpretation.",
+        3
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TjHepwuhkYFA_1037",
+        "text": "A shake map shows the intensity of the earthquake's ground movement at varying distances from the epicenter.",
+        "reason": "A predicative media modifier needs attribute-versus-content interpretation."
+      },
+      {
+        "claim_id": "T2G_ACMxR_I4_1270",
+        "text": "Cameras and orbital images offer clear insight into the lander's activities and scientific objectives.",
+        "reason": "A predicative media modifier needs attribute-versus-content interpretation."
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1586",
+        "text": "Image of Trump signing something (likely executive orders).",
+        "reason": "A predicative media modifier needs attribute-versus-content interpretation."
+      }
+    ]
+  },
+  "unresolved_reference": {
+    "count": 1,
+    "patterns": [
+      [
+        "A core argument names an undeclared node: -",
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TFgw4IaR9R8s_1739",
+        "text": "Otherwise, importers would need to get a refund.",
+        "reason": "A core argument names an undeclared node: -"
+      }
+    ]
+  }
+}

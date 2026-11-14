@@ -1,0 +1,13 @@
+{
+  "total": 32,
+  "videos": {
+    "T3HTSBW42QaY": 30,
+    "TKCfkoNUssZI": 53,
+    "T2EE72iNELEs": 35,
+    "Tsuk2uoYj-kc": 49
+  },
+  "per_video": 8,
+  "source_disjoint_from_60": true,
+  "policy": "Selected by fixed hash before changes; original texts only. Four videos are absent from the60AMR reference cases. Cached parser predictions and earlier project work already exist; this is not a never-seen project/model test set or independent gold.",
+  "sha256": "29434859b138eca2a2230abfc5ccf6591243b63cfc066402faf99c60c8e907b0"
+}

@@ -1,0 +1,100 @@
+{
+  "rows": [
+    {
+      "status": "completed",
+      "returncode": 0,
+      "stdout": "{\"kind\": \"progress\", \"phase\": \"imports_done\", \"seconds\": 2.7190067898482084}\nCaching ACs\n{\"kind\": \"progress\", \"phase\": \"model_ready\", \"seconds\": 2.9599488899111748}\n{\"kind\": \"progress\", \"phase\": \"first_solve_done\", \"seconds\": 2.9882300179451704}\n{\"kind\": \"result\", \"emitter\": \"compact\", \"claim_id\": \"Tg0UxWYuPeJ0_323\", \"observations\": 8, \"mode\": \"unknown\", \"assignment_grounding_seconds\": 0.00026627443730831146, \"emit_seconds\": 8.711405098438263e-05, \"model_seconds\": 0.028134511783719063, \"first_solve_seconds\": 0.02824663370847702, \"cached_solve_seconds\": 0.012660397216677666, \"problog_ground_seconds\": 0.009019136428833008, \"circuit_compile_seconds\": 0.0037500858306884766, \"circuit_evaluation_seconds\": 0.015434503555297852, \"distribution\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"expected\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"program_sha256\": \"107eb51b9f919d97b9c8d618c6a0b38787ba0d6ffd681021d2c7e8091d40e92f\", \"source\": \"Constructed distributions; no media or trained model. Same shared observation identities in both serializers.\"}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "result": {
+        "kind": "result",
+        "emitter": "compact",
+        "claim_id": "Tg0UxWYuPeJ0_323",
+        "observations": 8,
+        "mode": "unknown",
+        "assignment_grounding_seconds": 0.00026627443730831146,
+        "emit_seconds": 8.711405098438263e-05,
+        "model_seconds": 0.028134511783719063,
+        "first_solve_seconds": 0.02824663370847702,
+        "cached_solve_seconds": 0.012660397216677666,
+        "problog_ground_seconds": 0.009019136428833008,
+        "circuit_compile_seconds": 0.0037500858306884766,
+        "circuit_evaluation_seconds": 0.015434503555297852,
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "expected": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "program_sha256": "107eb51b9f919d97b9c8d618c6a0b38787ba0d6ffd681021d2c7e8091d40e92f",
+        "source": "Constructed distributions; no media or trained model. Same shared observation identities in both serializers."
+      },
+      "claim_id": "Tg0UxWYuPeJ0_323",
+      "emitter": "compact",
+      "mode": "unknown",
+      "process_seconds": 3.4611438866704702
+    },
+    {
+      "status": "time_limit",
+      "limit_seconds": 12,
+      "stdout": "{\"kind\": \"progress\", \"phase\": \"imports_done\", \"seconds\": 2.1928826570510864}\nCaching ACs\n{\"kind\": \"progress\", \"phase\": \"model_ready\", \"seconds\": 2.452888349071145}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\nTimeout (0:00:04)!\nThread 0x00007fd41d2a6740 (most recent call first):\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/pysdd/iterator.py\", line 155 in depth_first_rec\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/pysdd/iterator.py\", line 146 in depth_first_rec\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/pysdd/iterator.py\", line 106 in depth_first\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/sdd_formula.py\", line 481 in wmc\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/sdd_formula.py\", line 933 in _evaluate_evidence\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/dd_formula.py\", line 506 in evaluate_evidence\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/dd_formula.py\", line 459 in propagate\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/evaluator.py\", line 425 in get_evaluator\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/evaluator.py\", line 440 in evaluate\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/arithmetic_circuit.py\", line 60 in evaluate\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/solver.py\", line 89 in solve\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/model.py\", line 117 in solve\n  File \"/exp/cxiao/scale26/avid/scripts/run_amr_encoding_profile.py\", line 40 in worker\n  File \"/exp/cxiao/scale26/avid/scripts/run_amr_encoding_profile.py\", line 49 in main\n  File \"/exp/cxiao/scale26/avid/scripts/run_amr_encoding_profile.py\", line 59 in <module>\n",
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "emitter": "compact",
+      "mode": "unknown",
+      "process_seconds": 12.078649589791894
+    },
+    {
+      "status": "completed",
+      "returncode": 0,
+      "stdout": "{\"kind\": \"progress\", \"phase\": \"imports_done\", \"seconds\": 2.2081480473279953}\nCaching ACs\n{\"kind\": \"progress\", \"phase\": \"model_ready\", \"seconds\": 2.431467603892088}\n{\"kind\": \"progress\", \"phase\": \"first_solve_done\", \"seconds\": 2.546663152053952}\n{\"kind\": \"result\", \"emitter\": \"compact\", \"claim_id\": \"T1JQ-aG78Zuc_796\", \"observations\": 11, \"mode\": \"unknown\", \"assignment_grounding_seconds\": 0.00030342303216457367, \"emit_seconds\": 0.00011031515896320343, \"model_seconds\": 0.02968067303299904, \"first_solve_seconds\": 0.11516166105866432, \"cached_solve_seconds\": 0.07575180009007454, \"problog_ground_seconds\": 0.013143539428710938, \"circuit_compile_seconds\": 0.011007308959960938, \"circuit_evaluation_seconds\": 0.09096574783325195, \"distribution\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"expected\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"program_sha256\": \"9d306b0cf305d0105ac7f673e07af9eb38d6bdaa23c8063bd07a161959913049\", \"source\": \"Constructed distributions; no media or trained model. Same shared observation identities in both serializers.\"}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "result": {
+        "kind": "result",
+        "emitter": "compact",
+        "claim_id": "T1JQ-aG78Zuc_796",
+        "observations": 11,
+        "mode": "unknown",
+        "assignment_grounding_seconds": 0.00030342303216457367,
+        "emit_seconds": 0.00011031515896320343,
+        "model_seconds": 0.02968067303299904,
+        "first_solve_seconds": 0.11516166105866432,
+        "cached_solve_seconds": 0.07575180009007454,
+        "problog_ground_seconds": 0.013143539428710938,
+        "circuit_compile_seconds": 0.011007308959960938,
+        "circuit_evaluation_seconds": 0.09096574783325195,
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "expected": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "program_sha256": "9d306b0cf305d0105ac7f673e07af9eb38d6bdaa23c8063bd07a161959913049",
+        "source": "Constructed distributions; no media or trained model. Same shared observation identities in both serializers."
+      },
+      "claim_id": "T1JQ-aG78Zuc_796",
+      "emitter": "compact",
+      "mode": "unknown",
+      "process_seconds": 3.0003417301923037
+    },
+    {
+      "status": "time_limit",
+      "limit_seconds": 12,
+      "stdout": "{\"kind\": \"progress\", \"phase\": \"imports_done\", \"seconds\": 2.3007524088025093}\nCaching ACs\n{\"kind\": \"progress\", \"phase\": \"model_ready\", \"seconds\": 2.587547419592738}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\nTimeout (0:00:04)!\nThread 0x00007f3e75056740 (most recent call first):\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/pysdd/iterator.py\", line 156 in depth_first_rec\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/pysdd/iterator.py\", line 146 in depth_first_rec\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/pysdd/iterator.py\", line 106 in depth_first\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/sdd_formula.py\", line 481 in wmc\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/sdd_formula.py\", line 933 in _evaluate_evidence\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/dd_formula.py\", line 506 in evaluate_evidence\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/dd_formula.py\", line 459 in propagate\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/evaluator.py\", line 425 in get_evaluator\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/problog/evaluator.py\", line 440 in evaluate\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/arithmetic_circuit.py\", line 60 in evaluate\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/solver.py\", line 89 in solve\n  File \"/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/model.py\", line 117 in solve\n  File \"/exp/cxiao/scale26/avid/scripts/run_amr_encoding_profile.py\", line 40 in worker\n  File \"/exp/cxiao/scale26/avid/scripts/run_amr_encoding_profile.py\", line 49 in main\n  File \"/exp/cxiao/scale26/avid/scripts/run_amr_encoding_profile.py\", line 59 in <module>\n",
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "emitter": "compact",
+      "mode": "mixed",
+      "process_seconds": 12.07044163160026
+    }
+  ],
+  "platform": "Linux-5.14.0-570.17.1.el9_6.x86_64-x86_64-with-glibc2.34",
+  "policy": "CPU fresh process;12s including imports; two PyTorch threads; same formula/domains/evidence. All states queried, with a repeated query to check caching. Timings are diagnostic, not a controlled general benchmark."
+}

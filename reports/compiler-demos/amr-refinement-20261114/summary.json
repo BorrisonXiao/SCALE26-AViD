@@ -1,0 +1,106 @@
+{
+  "groups": {
+    "all": {
+      "total": 2375,
+      "converted": 1589,
+      "source_checks_pass": 1406,
+      "source_flagged": 183,
+      "refusals": {
+        "unhandled_complement": 631,
+        "event_scope_reentry": 17,
+        "sentence_mode": 14,
+        "polarity_value": 4,
+        "negative_argument_scope": 37,
+        "coordination_scope": 46,
+        "coordination_size": 5,
+        "duplicate_roles": 20,
+        "coordination_reentry": 3,
+        "media_modifier_scope": 3,
+        "untranslated_nodes": 5,
+        "unresolved_reference": 1
+      },
+      "source_issues": {
+        "numeric_source_mismatch": 39,
+        "name_source_mismatch": 72,
+        "source_number_omission": 34,
+        "source_name_omission": 119,
+        "month_source_mismatch": 2,
+        "measurement_binding": 10,
+        "written_reading_frame": 9,
+        "location_value_type": 1,
+        "quote_source_alignment": 6,
+        "clock_omission": 1
+      }
+    },
+    "development60": {
+      "total": 60,
+      "converted": 46,
+      "source_checks_pass": 43,
+      "source_flagged": 3,
+      "refusals": {
+        "unhandled_complement": 8,
+        "coordination_scope": 3,
+        "polarity_value": 1,
+        "media_modifier_scope": 1,
+        "negative_argument_scope": 1
+      },
+      "source_issues": {
+        "numeric_source_mismatch": 1,
+        "source_number_omission": 1,
+        "measurement_binding": 1,
+        "name_source_mismatch": 1,
+        "source_name_omission": 1,
+        "location_value_type": 1
+      },
+      "reviews": {
+        "matches_reference": 18,
+        "not_compiled": 14,
+        "incorrect": 12,
+        "partial": 12,
+        "context_needed": 4
+      },
+      "source_pass_but_incorrect": 9
+    },
+    "new_videos32": {
+      "total": 32,
+      "converted": 28,
+      "source_checks_pass": 26,
+      "source_flagged": 2,
+      "refusals": {
+        "event_scope_reentry": 1,
+        "unhandled_complement": 3
+      },
+      "source_issues": {
+        "name_source_mismatch": 2,
+        "source_name_omission": 1
+      },
+      "reviews": {
+        "matches_reference": 12,
+        "partial": 9,
+        "not_compiled": 4,
+        "incorrect": 4,
+        "context_needed": 3
+      },
+      "source_pass_but_incorrect": 2
+    }
+  },
+  "seconds": 19.985,
+  "method": "One cached BART AMR, source span alignment/normalisation, shared coordination/scope classes, compact exact-state encoding. No parser selection/model calls/media training.",
+  "retained_pool": 1981,
+  "excluded": 394,
+  "promotions": 0,
+  "review": "All92 inspected by implementing assistant.32 original-text readings were frozen first; their first output inspection informed the event/unit plurality fix, so final32 are development diagnostics, not held-out accuracy. No model judge/new human approvals.",
+  "review_counts": {
+    "matches_reference": 30,
+    "not_compiled": 18,
+    "incorrect": 16,
+    "partial": 21,
+    "context_needed": 7
+  },
+  "conversion_change": {
+    "previous": 1425,
+    "current": 1589,
+    "newly_converted": 164,
+    "newly_refused": 0
+  }
+}

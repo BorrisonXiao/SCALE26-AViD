@@ -1,0 +1,226 @@
+[
+  {
+    "claim_id": "T2EE72iNELEs_209",
+    "text": "Smoke erupts as rocket lands.",
+    "meaning": "Smoke erupts while a rocket lands. Preserve both events and temporal overlap, without replacing overlap by causation.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T2EE72iNELEs_190",
+    "text": "Rocket reaches Earth atmosphere and beyond.",
+    "meaning": "A rocket reaches the Earth atmosphere and goes beyond it. Beyond is a further extent/direction, not another named destination.",
+    "ambiguity": "The exact boundary meant by beyond is unspecified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T2EE72iNELEs_180",
+    "text": "Rocket is launched successfully.",
+    "meaning": "A rocket is launched, and the launch succeeds. The rocket is the launched object, not the launcher.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T2EE72iNELEs_188",
+    "text": "video begin at T+ 57:24",
+    "meaning": "The video begins at elapsed timecode T+57:24. Preserve the elapsed marker and full timecode; do not infer a wall clock or its field units.",
+    "ambiguity": "The claim alone does not define whether the fields are minutes/seconds or another elapsed scale.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T2EE72iNELEs_195",
+    "text": "Rocket launch with clear skies.",
+    "meaning": "A rocket launch takes place with clear skies. Keep sky conditions concurrent with the launch.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T2EE72iNELEs_191",
+    "text": "End of video velocity is 12005 mph.",
+    "meaning": "At the end of the video, a velocity is 12005 miles per hour. Preserve the amount, speed unit and end-of-video timing.",
+    "ambiguity": "The moving referent is omitted; do not invent it.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T2EE72iNELEs_202",
+    "text": "Rocket falls over the ocean.",
+    "meaning": "A rocket falls above/over the ocean. Falling does not by itself assert impact with the water.",
+    "ambiguity": "Over may indicate the trajectory above the ocean; the text does not state impact.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T2EE72iNELEs_208",
+    "text": "Rocket decelerates to a safe landing in the ocean.",
+    "meaning": "A rocket slows down and reaches a safe landing in the ocean. Preserve the rocket across deceleration and landing and retain safe.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_766",
+    "text": "The cargo crane is connected to an East distribution worker container.",
+    "meaning": "The cargo crane is connected to a container described as an East distribution worker container. Preserve the connection and full modifier phrase.",
+    "ambiguity": "The internal interpretation of East distribution worker is unclear; do not silently invent an organisation or person.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_770",
+    "text": "The cargo crane parks directly in front of the camera at 9:20:38am and obstructs the view of the port.",
+    "meaning": "At 9:20:38am a cargo crane parks directly in front of the camera and blocks the view of the port. The same crane performs both events.",
+    "ambiguity": "No date or timezone is stated.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_783",
+    "text": "A crane is stationed next to the large boat.",
+    "meaning": "A crane is stationed beside a large boat. Large modifies boat, and next to links crane and boat.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_776",
+    "text": "A large wave at 8:58:09 douses the pier with water.",
+    "meaning": "A large wave douses the pier with water at 8:58:09. Preserve the wave as cause/actor, pier as affected object and water as substance.",
+    "ambiguity": "The bare timestamp does not define a clock timezone, am/pm or elapsed scale.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_777",
+    "text": "The footage is taken on August 20th, 2025.",
+    "meaning": "The footage was recorded on August 20,2025. This is the recording date, not an inferred date of an unrelated depicted event.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_779",
+    "text": "The large boat has a reminder about safety first.",
+    "meaning": "A large boat carries a safety-first reminder. Preserve the reminder and its connection to the boat.",
+    "ambiguity": "Written versus spoken form is not explicitly stated; do not invent exact lettering.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_760",
+    "text": "The camera broadcasting this livestream is owned by IPC.",
+    "meaning": "IPC owns the camera that is broadcasting the livestream. Ownership and broadcasting must share the camera.",
+    "ambiguity": "IPC is a supplied name; its organisational type is not certified by the claim alone.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_764",
+    "text": "The cargo crane was made by Tadano.",
+    "meaning": "Tadano made the cargo crane. Keep maker and manufactured object distinct.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_726",
+    "text": "There is a crowd of people standing in front of a white building. ",
+    "meaning": "A crowd of people stands in front of a white building. Keep plurality/crowd and the white modifier on the building.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_725",
+    "text": "There are police in yellow reflective vests. ",
+    "meaning": "Police wear yellow reflective vests. Yellow and reflective modify the vests, not the police.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_709",
+    "text": "There are individuals wearing black leaving the helicopters.",
+    "meaning": "Black-clad individuals leave helicopters. Keep clothing, people as movers, helicopters as departure sources and plurality.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_680",
+    "text": "Lights are on in the bottom floor of the building and on the very top floor. ",
+    "meaning": "Lights are on at the building's bottom floor and at its very top floor. Both distinct floor locations are required.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_695",
+    "text": "Speech given in an open area in a city to a large group of people.",
+    "meaning": "A speech is given in an open area within a city to a large group of people. Preserve audience, location nesting and group size.",
+    "ambiguity": "The speaker is omitted; do not invent a named speaker.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_717",
+    "text": "There are military personnel and civilians in the video.",
+    "meaning": "The video depicts military personnel and civilians. Both groups belong to the depicted content.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_686",
+    "text": "Video taken at night.",
+    "meaning": "The video was recorded at night. Keep the recording-time condition distinct from an arbitrary depicted event time.",
+    "ambiguity": "No date or clock time is stated.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "TKCfkoNUssZI_701",
+    "text": "There are slurs being said to the police.",
+    "meaning": "Someone says slurs to the police. Preserve derogatory speech and police as recipients; do not invent exact words or a specific speaker.",
+    "ambiguity": "The utterer and words are omitted.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_644",
+    "text": "Sent by God.",
+    "meaning": "An unspecified person or thing is described as sent by God. Preserve God as the stated sender without inventing the patient or the missing source context.",
+    "ambiguity": "This fragment needs a referent and evidential context; compilation does not certify a religious world claim.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_628",
+    "text": "Video overlay reading \"Last year it took hours to get to the camp, now its only 25 mins\" is visible.",
+    "meaning": "A visible video overlay contains exactly: Last year it took hours to get to the camp, now its only 25 mins. Keep the original wording and 25 mins inside the written overlay, not as independently true travel claims.",
+    "ambiguity": "The printed wording uses its; do not correct the quotation.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_622",
+    "text": "A man has his eyes closed.",
+    "meaning": "A man's own eyes are closed. Preserve the state and possession; do not substitute a past eye-closing action alone.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_632",
+    "text": "Bright sun over a man praying.",
+    "meaning": "Bright sunlight is above a man who is praying. Bright modifies the sun/light, and the man is the prayer actor.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_645",
+    "text": "A video overlay reading \"Al-Wefaq News\" is visible.",
+    "meaning": "A visible video overlay contains exactly Al-Wefaq News. Preserve the hyphen and full label under written-text support.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_611",
+    "text": "Hajj and Umrah Services Association and Pilgrims hand out drinks to the public.",
+    "meaning": "Hajj and Umrah Services Association and pilgrims hand drinks to the public. Preserve the full organisation name, the pilgrims, drinks and recipient public.",
+    "ambiguity": "The wording is compatible with joint or distributed participation; do not require one unsupported distribution.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_602",
+    "text": "Pilgrimage in Mount Arafat.",
+    "meaning": "A pilgrimage is at Mount Arafat. Preserve the named location without inventing a specific pilgrim or new event time.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_615",
+    "text": "A man sitting on rock praying.",
+    "meaning": "A man sits on a rock and prays. The sitting and praying share the man; rock is the sitting support/location.",
+    "ambiguity": "No ambiguity identified.",
+    "author": "Implementing assistant reading from original text, frozen before extension outputs. Not independent gold."
+  }
+]

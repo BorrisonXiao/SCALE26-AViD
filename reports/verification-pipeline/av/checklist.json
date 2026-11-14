@@ -704,15 +704,38 @@
     {
       "id": 30,
       "title": "Preserve source information and extend shared AMR operators",
+      "status": "completed",
+      "items": [
+        {
+          "text": "Implemented source-span/value checks and scoped exact quotations, clocks and entity-number preservation. All2,375 rerun:1,589 convert;1,406 pass necessary source checks;183 source flags;786 graph refusals.",
+          "done": true
+        },
+        {
+          "text": "Added shared AND groups, OR assignments, repeated descriptions and complement-scope classes.538 tests pass; default AMR2375 and legacy2375/449 replay exact.",
+          "done": true
+        },
+        {
+          "text": "Profiled equivalent three-state encodings. Older16-condition wind compact solve~1.3s; refined19-condition version still exceeds12s. Resolution remains open.",
+          "done": true
+        },
+        {
+          "text": "Reviewed all60 prior+32 source-disjoint follow-up cases:18 and12 whole-reading matches. Follow-up inspection informed a shared number fix; these are development judgments, not held-out accuracy.",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Correct source-to-graph bindings and establish practical inference before training",
       "status": "planned",
       "items": [
-        "Align names, quantities/units, exact quotes, am/pm and grammatical features to source spans; flag unsupported changes.",
-        "Add participant coordination and shared complement-scope policies with contrast tests; address 841 of 950 first stops.",
-        "Profile the nested program time limit and evaluate fixed new-source claims before confidence training."
+        "Check semantic types, source arguments, result states and depiction scope; goal: catch wrong meanings beyond name/value preservation.",
+        "Test one bounded source-conditioned semantic correction on strict failures with a generic-retry control; goal: repair structure while copying source literals, without parser selection.",
+        "Profile larger categorical circuits and review another frozen sample; goal: establish reliable meanings and candidate-domain cost before confidence or relation training."
       ]
     }
   ],
-  "intro": "Compiler remains the priority. Fixed AMR comparison:1,425/2,375 graphs convert;950 refuse. Self-review on 60 references finds 13 matches, including 6/40 previous failures. These are development judgments, not corpus accuracy. Retained pool stays 1,981/2,375 (83.41%),394 excluded; no media training.",
+  "intro": "Compiler remains the priority. Refined AMR:1,589/2,375 graph conversions,1,406 source-check passes; neither is semantic accuracy. Assistant review:18/60 prior cases and12/32 follow-up whole-reading matches. Final32 informed development. Retained pool stays1,981/2,375(83.41%),394 excluded. Refined19-condition wind inference still exceeds12s; training deferred.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -768,5 +791,6 @@
   "compiler_repairs_run": "exp/probabilistic_verification/compiler_repairs_20261112",
   "compiler_feedback_run": "exp/probabilistic_verification/compiler_feedback_20261112",
   "compiler_structural_run": "exp/probabilistic_verification/compiler_structural_20261113",
-  "amr_composition_run": "exp/probabilistic_verification/amr_composition_20261114"
+  "amr_composition_run": "exp/probabilistic_verification/amr_composition_20261114",
+  "amr_refinement_run": "exp/probabilistic_verification/amr_refinement_20261114"
 }

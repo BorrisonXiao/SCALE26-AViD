@@ -1,0 +1,24 @@
+{
+  "archive_sha256": "4451cccef749d0c757ad96688f9ca5c0a5b9ba53773d1a0d2050d295f9469312",
+  "sha256_inventory": true,
+  "byte_identical_artifacts": [
+    "corpus.jsonl",
+    "cases.json",
+    "reviews.json",
+    "reviewed_cases.json",
+    "failure_patterns.json",
+    "source_issues.json",
+    "legacy_regression.json"
+  ],
+  "summary_equal_except_elapsed_seconds": true,
+  "originals": 2375,
+  "reviewed_cases": 92,
+  "legacy_amr_claims": 2375,
+  "legacy_originals": 2375,
+  "legacy_cached": 449,
+  "focused_tests": 33,
+  "workspace_full_tests": 538,
+  "native_race_unknown": 1.0,
+  "model_calls": 0,
+  "extraction": "/tmp/avid-amr-refinement-ulstmjkl"
+}

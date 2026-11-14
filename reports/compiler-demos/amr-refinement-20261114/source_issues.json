@@ -1,0 +1,297 @@
+{
+  "numeric_source_mismatch": {
+    "count": 39,
+    "examples": [
+      {
+        "claim_id": "Tg0UxWYuPeJ0_335",
+        "text": "Robot 1raises his boxing gloves up.",
+        "issue": {
+          "code": "numeric_source_mismatch",
+          "node": "r2",
+          "role": ":mod",
+          "value": "1",
+          "reason": "A numeric graph value has no matching explicit source value."
+        }
+      },
+      {
+        "claim_id": "TInVWzp25aIM_101",
+        "text": "Hundreds of Kipnuk residents were displaced during Typhoon Halong.",
+        "issue": {
+          "code": "numeric_source_mismatch",
+          "node": "m",
+          "role": ":op1",
+          "value": "100",
+          "reason": "A numeric graph value has no matching explicit source value."
+        }
+      },
+      {
+        "claim_id": "Tg0UxWYuPeJ0_389",
+        "text": "Text reads \"2025 World Humanoid Robot Games\"",
+        "issue": {
+          "code": "numeric_source_mismatch",
+          "node": "n",
+          "role": ":op1",
+          "value": "2025",
+          "reason": "A numeric graph value has no matching explicit source value."
+        }
+      }
+    ]
+  },
+  "name_source_mismatch": {
+    "count": 72,
+    "examples": [
+      {
+        "claim_id": "TFOEIehBwT8Q_506",
+        "text": "Protester is holding a sign that says \"Carlos Manzo, Mexican hero\".",
+        "issue": {
+          "code": "name_source_mismatch",
+          "node": "n",
+          "value": "Mexico",
+          "reason": "A generated name is absent from the original source."
+        }
+      },
+      {
+        "claim_id": "TInVWzp25aIM_16",
+        "text": "Large amounts of rain hit the Aleutian Islands.",
+        "issue": {
+          "code": "name_source_mismatch",
+          "node": "n",
+          "value": "Alaska",
+          "reason": "A generated name is absent from the original source."
+        }
+      },
+      {
+        "claim_id": "TzF9M4kZ3Pys_273",
+        "text": "Residential footage of haboob.",
+        "issue": {
+          "code": "name_source_mismatch",
+          "node": "n",
+          "value": "Hambob",
+          "reason": "A generated name is absent from the original source."
+        }
+      }
+    ]
+  },
+  "source_number_omission": {
+    "count": 34,
+    "examples": [
+      {
+        "claim_id": "TW4OYA3RN-Hw_1773",
+        "text": "Giant crowd of protestors on one side, large military force on other trying to support the barrier.",
+        "issue": {
+          "code": "source_number_omission",
+          "start": 29,
+          "end": 32,
+          "text": "one",
+          "reason": "An explicit source amount/identifier is not represented in graph values."
+        }
+      },
+      {
+        "claim_id": "TbJqMFkNxARY_176",
+        "text": "The U.S. Coast Guard 905 is one of the boats involved in the recovery operation.",
+        "issue": {
+          "code": "source_number_omission",
+          "start": 28,
+          "end": 31,
+          "text": "one",
+          "reason": "An explicit source amount/identifier is not represented in graph values."
+        }
+      },
+      {
+        "claim_id": "Tg0UxWYuPeJ0_400",
+        "text": "The long-legged, black robot was eliminated by short-legged one.",
+        "issue": {
+          "code": "source_number_omission",
+          "start": 60,
+          "end": 63,
+          "text": "one",
+          "reason": "An explicit source amount/identifier is not represented in graph values."
+        }
+      }
+    ]
+  },
+  "source_name_omission": {
+    "count": 119,
+    "examples": [
+      {
+        "claim_id": "TQEmEycTI0RQ_899",
+        "text": "Liberals, now led by former Bank of Canada Governor Mark Carney, won again.",
+        "issue": {
+          "code": "source_name_omission",
+          "token_id": 1,
+          "text": "Liberals",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+        }
+      },
+      {
+        "claim_id": "TInVWzp25aIM_16",
+        "text": "Large amounts of rain hit the Aleutian Islands.",
+        "issue": {
+          "code": "source_name_omission",
+          "token_id": 7,
+          "text": "Aleutian",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+        }
+      },
+      {
+        "claim_id": "TInVWzp25aIM_16",
+        "text": "Large amounts of rain hit the Aleutian Islands.",
+        "issue": {
+          "code": "source_name_omission",
+          "token_id": 8,
+          "text": "Islands",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+        }
+      }
+    ]
+  },
+  "month_source_mismatch": {
+    "count": 2,
+    "examples": [
+      {
+        "claim_id": "TzF9M4kZ3Pys_303",
+        "text": "Timelapse of driving into a dust storm in Arizona 8/25/2025.",
+        "issue": {
+          "code": "month_source_mismatch",
+          "node": "d3",
+          "value": "8",
+          "reason": "No explicit source month licenses this calendar value."
+        }
+      },
+      {
+        "claim_id": "TQEmEycTI0RQ_827",
+        "text": "2021 map shows more NDP seats, many of which have since gone Liberal.",
+        "issue": {
+          "code": "month_source_mismatch",
+          "node": "d",
+          "value": "2",
+          "reason": "No explicit source month licenses this calendar value."
+        }
+      }
+    ]
+  },
+  "measurement_binding": {
+    "count": 10,
+    "examples": [
+      {
+        "claim_id": "Tg0UxWYuPeJ0_373",
+        "text": "Robot 100m sprint.",
+        "issue": {
+          "code": "measurement_binding",
+          "text": "100m",
+          "reason": "The complete source amount and unit lack a linked quantity condition."
+        }
+      },
+      {
+        "claim_id": "Tg0UxWYuPeJ0_421",
+        "text": "100m- final lineup",
+        "issue": {
+          "code": "measurement_binding",
+          "text": "100m",
+          "reason": "The complete source amount and unit lack a linked quantity condition."
+        }
+      },
+      {
+        "claim_id": "TQEmEycTI0RQ_830",
+        "text": "Liberal Ernie Klassen has 50.4% of the votes with 32,423 votes (lead 2,925 votes); Conservative Kerry-Lynne Findlay has 45.8% with 29,498 votes; NDP Jureun Park has 2.5% with 1,602.",
+        "issue": {
+          "code": "measurement_binding",
+          "text": "45.8%",
+          "reason": "The complete source amount and unit lack a linked quantity condition."
+        }
+      }
+    ]
+  },
+  "written_reading_frame": {
+    "count": 9,
+    "examples": [
+      {
+        "claim_id": "Tg0UxWYuPeJ0_389",
+        "text": "Text reads \"2025 World Humanoid Robot Games\"",
+        "issue": {
+          "code": "written_reading_frame",
+          "text": "2025 World Humanoid Robot Games",
+          "reason": "The stative inscription still has an unresolved reading-event analysis."
+        }
+      },
+      {
+        "claim_id": "Tg0UxWYuPeJ0_391",
+        "text": "Blue text reads \"A major upset occurs in the 100-meter robot relay\"",
+        "issue": {
+          "code": "written_reading_frame",
+          "text": "A major upset occurs in the 100-meter robot relay",
+          "reason": "The stative inscription still has an unresolved reading-event analysis."
+        }
+      },
+      {
+        "claim_id": "Tsuk2uoYj-kc_646",
+        "text": "Video overlay reading \"Youssef_Baijash\" is visible.",
+        "issue": {
+          "code": "written_reading_frame",
+          "text": "Youssef_Baijash",
+          "reason": "The stative inscription still has an unresolved reading-event analysis."
+        }
+      }
+    ]
+  },
+  "location_value_type": {
+    "count": 1,
+    "examples": [
+      {
+        "claim_id": "TFOEIehBwT8Q_495",
+        "text": " \"Mexico, Nov 15\".",
+        "issue": {
+          "code": "location_value_type",
+          "node": "b",
+          "reason": "A calendar/time value is not a location."
+        }
+      }
+    ]
+  },
+  "quote_source_alignment": {
+    "count": 6,
+    "examples": [
+      {
+        "claim_id": "TjHepwuhkYFA_1013",
+        "text": "The footage is labeled 'cabin-2'.",
+        "issue": {
+          "code": "quote_source_alignment",
+          "text": "cabin-2",
+          "reason": "A written quotation has no unique AMR artifact."
+        }
+      },
+      {
+        "claim_id": "TjHepwuhkYFA_1019",
+        "text": "The footage is labeled 'first ever surface rupture caught on camera'.",
+        "issue": {
+          "code": "quote_source_alignment",
+          "text": "first ever surface rupture caught on camera",
+          "reason": "A written quotation has no unique AMR artifact."
+        }
+      },
+      {
+        "claim_id": "TjHepwuhkYFA_1020",
+        "text": "The footage is labeled 'M7.7 Myanmar Earthquake'.",
+        "issue": {
+          "code": "quote_source_alignment",
+          "text": "M7.7 Myanmar Earthquake",
+          "reason": "A written quotation has no unique AMR artifact."
+        }
+      }
+    ]
+  },
+  "clock_omission": {
+    "count": 1,
+    "examples": [
+      {
+        "claim_id": "Txf2EdqOg1SQ_2341",
+        "text": "After 1:00 PM, Typhoon Wipha began to move away from Hong Kong.",
+        "issue": {
+          "code": "clock_omission",
+          "text": "1:00 PM",
+          "reason": "The complete source clock/timecode has no linked graph value."
+        }
+      }
+    ]
+  }
+}
