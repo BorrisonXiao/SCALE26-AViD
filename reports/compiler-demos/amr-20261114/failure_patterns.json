@@ -1,0 +1,390 @@
+{
+  "unhandled_complement": {
+    "count": 649,
+    "patterns": [
+      [
+        "No scope policy for have-degree-91 :ARG2 high-02",
+        5
+      ],
+      [
+        "No scope policy for have-degree-91 :ARG2 broad-02",
+        4
+      ],
+      [
+        "No scope policy for note-01 :ARG1 possible-01",
+        3
+      ],
+      [
+        "No scope policy for accuse-01 :ARG2 start-01",
+        3
+      ],
+      [
+        "No scope policy for arrest-01 :ARG2 suspect-01",
+        3
+      ],
+      [
+        "No scope policy for need-01 :ARG1 prepare-02",
+        3
+      ],
+      [
+        "No scope policy for succeed-01 :ARG1 launch-01",
+        2
+      ],
+      [
+        "No scope policy for cancel-01 :ARG1 fly-01",
+        2
+      ],
+      [
+        "No scope policy for end-up-03 :ARG2 fall-01",
+        2
+      ],
+      [
+        "No scope policy for say-01 :ARG0 signal-07",
+        2
+      ],
+      [
+        "No scope policy for show-01 :ARG1 compare-01",
+        2
+      ],
+      [
+        "No scope policy for state-01 :ARG1 ask-02",
+        2
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "Tg0UxWYuPeJ0_445",
+        "text": "It got really intense; I saw robots fighting.",
+        "reason": "No scope policy for get-03 :ARG2 intense-02"
+      },
+      {
+        "claim_id": "TQEmEycTI0RQ_932",
+        "text": "Poilievre's aggressive rhetoric, effective against unpopular Trudeau, looked divisive given Trump's actions.",
+        "reason": "No scope policy for effective-04 :ARG1 oppose-01"
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1629",
+        "text": "The administration has argued against the ability of any courts to block policies put forth by the administration.",
+        "reason": "No scope policy for argue-01 :ARG1 oppose-01"
+      }
+    ]
+  },
+  "argument_coordination": {
+    "count": 192,
+    "patterns": [
+      [
+        "Coordinated participants need a group/distributive interpretation, not clause conjunction.",
+        192
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TjHepwuhkYFA_1016",
+        "text": "Beginning at video timestamp 2025-03-28 12:46:35 and ending at video timestamp 12:46:37, the midground and background terrain in the video shift relative to the foreground of the video.",
+        "reason": "Coordinated participants need a group/distributive interpretation, not clause conjunction."
+      },
+      {
+        "claim_id": "TKCfkoNUssZI_717",
+        "text": "There are military personnel and civilians in the video.",
+        "reason": "Coordinated participants need a group/distributive interpretation, not clause conjunction."
+      },
+      {
+        "claim_id": "Txf2EdqOg1SQ_2168",
+        "text": "Extremely high winds are visible, blowing mist or rain horizontally across the screen.",
+        "reason": "Coordinated participants need a group/distributive interpretation, not clause conjunction."
+      }
+    ]
+  },
+  "negative_argument_scope": {
+    "count": 34,
+    "patterns": [
+      [
+        "A negated argument needs scope projection over its governing relation.",
+        34
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TInVWzp25aIM_39",
+        "text": "Anchorage, Alaska was not majorly affected by Typhoon Halong.",
+        "reason": "A negated argument needs scope projection over its governing relation."
+      },
+      {
+        "claim_id": "TbJqMFkNxARY_161",
+        "text": "No containers in the water implies this was potentially recorded after cleanup already began.",
+        "reason": "A negated argument needs scope projection over its governing relation."
+      },
+      {
+        "claim_id": "TzF9M4kZ3Pys_243",
+        "text": "Visibility becomes non-existent as dust storm takes over.",
+        "reason": "A negated argument needs scope projection over its governing relation."
+      }
+    ]
+  },
+  "coordination_scope": {
+    "count": 22,
+    "patterns": [
+      [
+        "An annotated coordination needs explicit scope.",
+        22
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TInVWzp25aIM_77",
+        "text": "Homes are damaged and flooded during the storm.",
+        "reason": "An annotated coordination needs explicit scope."
+      },
+      {
+        "claim_id": "TFOEIehBwT8Q_459",
+        "text": "Thousands of people are rallying and protesting in Mexico.",
+        "reason": "An annotated coordination needs explicit scope."
+      },
+      {
+        "claim_id": "TKCfkoNUssZI_721",
+        "text": "There are buildings and tents in the area. ",
+        "reason": "An annotated coordination needs explicit scope."
+      }
+    ]
+  },
+  "duplicate_roles": {
+    "count": 20,
+    "patterns": [
+      [
+        "Repeated core role at m",
+        3
+      ],
+      [
+        "Repeated core role at a",
+        2
+      ],
+      [
+        "Repeated core role at p",
+        2
+      ],
+      [
+        "Repeated core role at ii",
+        2
+      ],
+      [
+        "Repeated core role at n",
+        2
+      ],
+      [
+        "Repeated core role at f",
+        1
+      ],
+      [
+        "Repeated core role at l",
+        1
+      ],
+      [
+        "Repeated core role at l2",
+        1
+      ],
+      [
+        "Repeated core role at c2",
+        1
+      ],
+      [
+        "Repeated core role at d",
+        1
+      ],
+      [
+        "Repeated core role at h3",
+        1
+      ],
+      [
+        "Repeated core role at k",
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "Tg0UxWYuPeJ0_392",
+        "text": "black box text reads \"On the morning of August 17, in the preliminary round of the 4×100m relay at the 2025 World Humanoid Robot Games, the long-legged robot from Gaoyi Technology Team, one of the favorites to win the championship and the previous 400m champion, competed against two teams of short-legged robots. However, one of the runners from the Gao Yi Technology team knocked down several opponents after the start. Other athletes also fell down, and some staff members also fell down. Although the Gao Yi Technology team rallied and crossed the finish line first, they still managed to catch up. However, due to violations such as crossing lanes, they were still penalized and finished at the bottom of the group, resulting in their elimination.\"",
+        "reason": "Repeated core role at m"
+      },
+      {
+        "claim_id": "TFOEIehBwT8Q_497",
+        "text": "\"Mexico City security chief: 20 arrested for theft and assault.\"",
+        "reason": "Repeated core role at a"
+      },
+      {
+        "claim_id": "TLO3smKI67PM_564",
+        "text": "The Phillies fan father eventually gives the ball to the Phillies fan Karen.",
+        "reason": "Repeated core role at f"
+      }
+    ]
+  },
+  "sentence_mode": {
+    "count": 14,
+    "patterns": [
+      [
+        "Question/imperative interpretation is not implemented.",
+        14
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TQEmEycTI0RQ_898",
+        "text": "Shows image of the tweet from Trump: 'Good luck to the Great people of Canada. Elect the man who has the strength and wisdom to cut your taxes in half, increase your military power, for free, to the highest level in the World, have your Car, Steel, Aluminum, Lumber, Energy, and all other businesses, QUADRUPLE in size, WITH ZERO TARIFFS OR TAXES, if Canada becomes the cherished 51st. State of the United States of America. No more artificially drawn line from many years ago. Look how beautiful this land mass would be. Free access with NO BORDER. ALL POSITIVES WITH NO NEGATIVES. IT WAS MEANT TO BE! America can no longer subsidize Canada with the Hundreds of Billions of Dollars a year that we have been spending in the past. It makes no sense unless Canada is a State!'",
+        "reason": "Question/imperative interpretation is not implemented."
+      },
+      {
+        "claim_id": "Tg0UxWYuPeJ0_328",
+        "text": "The man lightly pushes Robot 1away saying, \"Don't move\"",
+        "reason": "Question/imperative interpretation is not implemented."
+      },
+      {
+        "claim_id": "TFOEIehBwT8Q_456",
+        "text": "Protester shouting \"kill him/them\".",
+        "reason": "Question/imperative interpretation is not implemented."
+      }
+    ]
+  },
+  "event_scope_reentry": {
+    "count": 8,
+    "patterns": [
+      [
+        "An event is referenced from two contexts: f",
+        2
+      ],
+      [
+        "An event is referenced from two contexts: p",
+        2
+      ],
+      [
+        "An event is referenced from two contexts: ii2",
+        1
+      ],
+      [
+        "Cross-context event argument: c2",
+        1
+      ],
+      [
+        "An event is referenced from two contexts: d",
+        1
+      ],
+      [
+        "An event is referenced from two contexts: s",
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TQEmEycTI0RQ_901",
+        "text": "Green is flat at barely visible.",
+        "reason": "An event is referenced from two contexts: f"
+      },
+      {
+        "claim_id": "T2G_ACMxR_I4_1215",
+        "text": "The PlanetVac video shows initial deployment to the surface and visible interaction with the regolith.",
+        "reason": "An event is referenced from two contexts: ii2"
+      },
+      {
+        "claim_id": "TgPh_fzHTCm4_1469",
+        "text": "Starting at 7am central on the morning of the 3rd there is about 10-20 knots of flow at 850mb out of the south.",
+        "reason": "An event is referenced from two contexts: f"
+      }
+    ]
+  },
+  "polarity_value": {
+    "count": 4,
+    "patterns": [
+      [
+        "Unsupported polarity value: t",
+        3
+      ],
+      [
+        "Unsupported polarity value: t4",
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TInVWzp25aIM_12",
+        "text": "Commenters ask if anyone is missing, it's unclear if there are.",
+        "reason": "Unsupported polarity value: t"
+      },
+      {
+        "claim_id": "Tg0UxWYuPeJ0_318",
+        "text": "Friend of the bystander checks to see if he is ok",
+        "reason": "Unsupported polarity value: t"
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1578",
+        "text": "Axelrod claims it is unclear whether negotiations with other countries over tariffs can continue while tariffs are blocked.",
+        "reason": "Unsupported polarity value: t"
+      }
+    ]
+  },
+  "coordination_size": {
+    "count": 3,
+    "patterns": [
+      [
+        "Coordination needs at least two members.",
+        3
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "T2EE72iNELEs_179",
+        "text": "A child says in Spanish \"to infinity and beyond.\"",
+        "reason": "Coordination needs at least two members."
+      },
+      {
+        "claim_id": "TQEmEycTI0RQ_863",
+        "text": "They list the main party leaders: Mark Carney of the Liberals, Pierre Poilievre of the Conservatives, Jagmeet Singh of the NDP, Yves-François Blanchet of the Bloc Québécois, and Green Party co-leaders Elizabeth May and Jonathan Pedneault, and show pictures of them.",
+        "reason": "Coordination needs at least two members."
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1722",
+        "text": "They list the main party leaders: Mark Carney of the Liberals, Pierre Poilievre of the Conservatives, Jagmeet Singh of the NDP, Yves-François Blanchet of the Bloc Québécois, and Green Party co-leaders Elizabeth May and Jonathan Pedneault and show pictures of them.",
+        "reason": "Coordination needs at least two members."
+      }
+    ]
+  },
+  "media_modifier_scope": {
+    "count": 3,
+    "patterns": [
+      [
+        "A predicative media modifier needs attribute-versus-content interpretation.",
+        3
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TFOEIehBwT8Q_504",
+        "text": "Protester holds a sign \"They shut down my voice without realizing that they would awaken the voice of all of Mexico.\"",
+        "reason": "A predicative media modifier needs attribute-versus-content interpretation."
+      },
+      {
+        "claim_id": "TjHepwuhkYFA_1037",
+        "text": "A shake map shows the intensity of the earthquake's ground movement at varying distances from the epicenter.",
+        "reason": "A predicative media modifier needs attribute-versus-content interpretation."
+      },
+      {
+        "claim_id": "TFgw4IaR9R8s_1586",
+        "text": "Image of Trump signing something (likely executive orders).",
+        "reason": "A predicative media modifier needs attribute-versus-content interpretation."
+      }
+    ]
+  },
+  "untranslated_nodes": {
+    "count": 1,
+    "patterns": [
+      [
+        "Not all AMR nodes were visited.",
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "claim_id": "TFgw4IaR9R8s_1755",
+        "text": "President says we had never charged before and the other countries have always charged us, they will now be upset.",
+        "reason": "Not all AMR nodes were visited."
+      }
+    ]
+  }
+}

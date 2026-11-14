@@ -1,0 +1,7 @@
+{
+  "total": 60,
+  "human": 20,
+  "previous_failures": 40,
+  "policy": "One cached BART AMR frontend for all claims. No parser selection, rewrite, new model calls, external/GPT review, or automatic promotion into the retained pool.",
+  "references_sha256": "8f87f77bcba80744defc558bfb3ecb44ef1162d7a9574e14fac2df96fa385e76"
+}

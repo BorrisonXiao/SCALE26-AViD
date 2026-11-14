@@ -4,6 +4,26 @@
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
     {
+      "date": "2026-11-14",
+      "items": [
+        {
+          "text": "Compared one cached BART AMR frontend on all 2,375 original claims:1,425 graph conversions,950 refusals; no new model requests.",
+          "href": "compiler-demos.html#remaining-failures",
+          "label": "AMR comparison"
+        },
+        {
+          "text": "Self-reviewed 60 frozen readings:13 matches/11 partial/9 incorrect/4 context-dependent/23 refused. Retained pool stays 1,981; no GPT/model review.",
+          "href": "compiler-demos.html#amr-compiler-example",
+          "label": "All 60 examples"
+        },
+        {
+          "text": "Normalised inverse roles, kept negative arguments under NOT and included source-owner assignments.505 tests pass;22 development confidence pairs prepared without training. Native nested-wind inference hit the diagnostic time limit; profiling remains pending.",
+          "href": "compiler-demos.html#amr-compiler-design",
+          "label": "Design and next steps"
+        }
+      ]
+    },
+    {
       "date": "2026-11-13",
       "items": [
         {

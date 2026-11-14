@@ -1,0 +1,22 @@
+{
+  "cache_sources": {
+    "exp/probabilistic_verification/full_compilation_20261029/amr_0_raw.jsonl": "9d0126a3868b970f9d79a826a55c5c4c1c55f47316e3ea2a71c12e37affdd90a",
+    "exp/probabilistic_verification/full_compilation_20261029/amr_1_raw.jsonl": "f3e69ec7a67f54e3b520f4572f710cf7e9d59605fed438870708b3d0e9b7213a",
+    "exp/probabilistic_verification/full_compilation_20261029/amr_2_raw.jsonl": "2222715ecc7408b562b270f651555aedd73492b2299cd59973e7ff75053138c7",
+    "exp/probabilistic_verification/full_compilation_20261029/amr_3_raw.jsonl": "e9aa3c9358a41f55625133e5704099e1db1daaaa57ffd7f6556bc5ef483c3e2a"
+  },
+  "inputs_sha256": "cf0f8f8117c61034219725549031a5a25675f1c7bd683751d3c45f2ba2350fd1",
+  "model_config": {
+    "frontend": "amrlib-BART-large",
+    "amrlib": "0.8.0",
+    "transformers": "4.57.6",
+    "torch": "2.10.0+cu128",
+    "beam_size": 4,
+    "model_download": {
+      "url": "https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_large-v0_1_0/model_parse_xfm_bart_large-v0_1_0.tar.gz",
+      "sha256": "2fcfe2113527accb752b6c574994022b3375b66d59da5042356c0f853e879849",
+      "bytes": 1506463657
+    },
+    "model_config_sha256": "9fb73729a55302b4ca6e03c1ef2a93610c397f6d87f3ecb919881be700264508"
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "author": "20 earlier human-confirmed readings plus40 assistant readings frozen before converter execution. Prior development and four AMRs were already inspected. No independent or held-out accuracy claim.",
+  "source": "exp/probabilistic_verification/scope_compilation_20261101/human_responses/1a3a8fd47e72a50f4943.json",
+  "source_sha256": "1a3a8fd47e72a50f4943c10ae129608b8e6187d57547810921716509f02d2e20",
+  "references": [
+    {
+      "claim_id": "TQKCK6-tRaoE_677",
+      "text": "A video overlay reading \"news 76\" is visible.",
+      "origin": "human_confirmed_reading",
+      "meaning": "A visible video overlay contains the literal text \"news 76\".",
+      "relationships": "The overlay is part of the video and displays \"news 76\".",
+      "source_context": "Explicitly a visible overlay in a video.",
+      "quantity_and_time": "At least one such overlay; no time stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1522",
+      "text": "The video opens with Trump speaking at a podium.",
+      "origin": "human_confirmed_reading",
+      "meaning": "The beginning of the video depicts Trump speaking at a podium.",
+      "relationships": "Trump is the speaker and is located at a podium.",
+      "source_context": "Explicitly the opening of a video.",
+      "quantity_and_time": "Speaking occurs at the video's opening; no date or duration stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_22",
+      "text": "At least one person has died from the typhoon.",
+      "origin": "human_confirmed_reading",
+      "meaning": "The typhoon has caused the death of at least one person.",
+      "relationships": "One or more people died; the typhoon caused their deaths.",
+      "source_context": "None stated.",
+      "quantity_and_time": "At least one death has occurred by the reference time; no date stated.",
+      "ambiguity": "The particular typhoon is not identified in the claim alone."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1507",
+      "text": "The clockwise motion indicates a ridge or high-pressure anti-cyclone over the region.",
+      "origin": "human_confirmed_reading",
+      "meaning": "Clockwise motion is interpreted as indicating either a ridge or a high-pressure anti-cyclone over the region.",
+      "relationships": "Clockwise motion indicates a ridge or high-pressure anti-cyclone; the indicated weather feature is over the region.",
+      "source_context": "An interpretation of motion; no particular medium or speaker stated.",
+      "quantity_and_time": "None stated.",
+      "ambiguity": "The moving entity is unspecified, yet likely refers to the cyclone. The region is unspecified, but it should not affect the compilation."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_218",
+      "text": "A haboob, or an intense, massive wall of dust and sand created by the downdrafts of a collapsing thunderstorm. ",
+      "origin": "human_confirmed_reading",
+      "meaning": "A nominal description of a haboob as an intense, massive wall of dust and sand created by downdrafts from a collapsing thunderstorm.",
+      "relationships": "A collapsing thunderstorm produces downdrafts that create the haboob, described as a massive, intense wall of dust and sand.",
+      "source_context": "None stated; wording is a descriptive fragment.",
+      "quantity_and_time": "Thunderstorm collapse is part of the description; no date, duration, or event count stated.",
+      "ambiguity": "None."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1907",
+      "text": "On-screen text confirms the still shows 'Actual fire spread, four hours after ignition'.",
+      "origin": "human_confirmed_reading",
+      "meaning": "On-screen text identifies the still as showing 'Actual fire spread, four hours after ignition'.",
+      "relationships": "On-screen text identifies what the still shows; the described fire spread is temporally related to ignition.",
+      "source_context": "The identification is attributed to on-screen text, including the quoted label 'Actual fire spread, four hours after ignition'.",
+      "quantity_and_time": "Four hours after ignition describes the fire spread shown, not an elapsed video timestamp.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_798",
+      "text": "The tram is driving at night, in mostly clear weather.",
+      "origin": "human_confirmed_reading",
+      "meaning": "The tram is moving at night while the weather is mostly clear.",
+      "relationships": "The tram is moving; nighttime and mostly clear weather characterize the same event.",
+      "source_context": "None stated.",
+      "quantity_and_time": "At night; weather is mostly, rather than completely, clear; no date or duration stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1797",
+      "text": "Oli's government lifted the social media restrictions after protests intensified, with police firing tear gas and rubber bullets at protesters attempting to storm parliament.",
+      "origin": "human_confirmed_reading",
+      "meaning": "Oli's government removed social media restrictions after protests intensified; police fired tear gas and rubber bullets at protesters who were attempting to storm parliament.",
+      "relationships": "Oli's government lifted restrictions; protests intensified; police fired tear gas and rubber bullets at protesters; those protesters attempted to storm parliament.",
+      "source_context": "None stated.",
+      "quantity_and_time": "Restriction removal follows intensified protests; police action accompanies the unrest, with no exact date stated.",
+      "ambiguity": "None."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_473",
+      "text": "Police and protesters are facing each other in the Zócalo  in front of the National Palace  in Mexico City.",
+      "origin": "human_confirmed_reading",
+      "meaning": "Police and protesters face one another in the Zócalo, in front of the National Palace in Mexico City.",
+      "relationships": "Police face protesters reciprocally; both groups are in the Zócalo, in front of the National Palace, in Mexico City.",
+      "source_context": "None stated.",
+      "quantity_and_time": "Multiple police and protesters; the facing relation is ongoing, with no date stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_0",
+      "text": "Emmonak, Alaska is being affected by the typhoon.",
+      "origin": "human_confirmed_reading",
+      "meaning": "The typhoon is currently affecting Emmonak, Alaska.",
+      "relationships": "The typhoon affects Emmonak, a place identified as being in Alaska.",
+      "source_context": "None stated.",
+      "quantity_and_time": "Effects are ongoing at the reference time; no date or duration stated.",
+      "ambiguity": "None."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2433",
+      "text": "Citizens were urged to stop all water activities.",
+      "origin": "human_confirmed_reading",
+      "meaning": "Citizens were urged to cease all water activities; the claim does not establish that they complied.",
+      "relationships": "An unspecified party urged citizens; the requested action was stopping all water activities.",
+      "source_context": "An urging is reported, but its source and medium are unspecified.",
+      "quantity_and_time": "All water activities; the urging occurred in the past, with no date stated.",
+      "ambiguity": "None."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_240",
+      "text": "News report in the background about rain and the weather.",
+      "origin": "human_confirmed_reading",
+      "meaning": "A background news report concerns rain and weather.",
+      "relationships": "The news report has rain and weather as its topics and occupies the background of an unspecified context.",
+      "source_context": "Explicitly a news report in the background.",
+      "quantity_and_time": "None stated.",
+      "ambiguity": "None."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_421",
+      "text": "100m- final lineup",
+      "origin": "human_confirmed_reading",
+      "meaning": "A lineup for a 100-metre final.",
+      "relationships": "A lineup is associated with the final of a 100-metre event; participants are unnamed.",
+      "source_context": "None stated; wording is a nominal fragment.",
+      "quantity_and_time": "100 metres is the event distance; final denotes the competition stage; no date stated.",
+      "ambiguity": "May denote a caption, listed competitors, or competitors physically lined up; the sport is unspecified."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_312",
+      "text": "Wind is starting to pick up.",
+      "origin": "human_confirmed_reading",
+      "meaning": "The wind is beginning to strengthen.",
+      "relationships": "Wind strength is increasing.",
+      "source_context": "None stated.",
+      "quantity_and_time": "The increase is beginning at the reference time; no wind speed or date stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_292",
+      "text": "Timelapse footage of haboob taking over apron.",
+      "origin": "human_confirmed_reading",
+      "meaning": "Time-lapse footage depicts a haboob spreading over an apron.",
+      "relationships": "A haboob spreads over an apron; footage depicts this progression.",
+      "source_context": "Explicitly time-lapse footage.",
+      "quantity_and_time": "Progression is shown with time compressed; no real duration is stated.",
+      "ambiguity": "None."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_554",
+      "text": "The home run lands in the stands, right next to Phillies fan Karen.",
+      "origin": "human_confirmed_reading",
+      "meaning": "A home-run ball lands in the stands immediately beside Karen, a Phillies fan.",
+      "relationships": "The home-run ball lands beside Karen; Karen is identified as a Phillies fan; the landing location is the stands.",
+      "source_context": "None stated.",
+      "quantity_and_time": "One landing, immediately beside Karen; no date stated.",
+      "ambiguity": "'Home run' naturally refers to the hit ball here; Karen's identity is supplied only by name and team affiliation."
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_150",
+      "text": "The Mississippi entered the area around 11:20 UTC.",
+      "origin": "human_confirmed_reading",
+      "meaning": "The entity called 'the Mississippi' entered an unspecified area at approximately 11:20 UTC.",
+      "relationships": "The Mississippi is the entering entity; the area is its destination.",
+      "source_context": "None stated.",
+      "quantity_and_time": "Entry occurred around 11:20 UTC; no date is stated.",
+      "ambiguity": "A named vessel or the Mississippi River or its water are plausible readings; the entity and area are unspecified."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_274",
+      "text": "Strong winds in commercial area.",
+      "origin": "human_confirmed_reading",
+      "meaning": "A description of strong winds in a commercial area.",
+      "relationships": "Strong winds are located in a commercial area.",
+      "source_context": "None stated; wording is a descriptive fragment.",
+      "quantity_and_time": "Wind strength is described qualitatively as strong; no speed or time stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1686",
+      "text": "The US has already implemented steel and aluminum tariffs at 25%.",
+      "origin": "human_confirmed_reading",
+      "meaning": "The US has already put a 25% tariff rate into effect for both steel and aluminum.",
+      "relationships": "The US implemented tariffs applying to steel and aluminum; the stated tariff rate is 25%.",
+      "source_context": "None stated.",
+      "quantity_and_time": "25% applies to both steel and aluminum tariffs; implementation precedes the reference time, with no date stated.",
+      "ambiguity": "No ambiguity identified."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_669",
+      "text": "People singing and dancing.",
+      "origin": "human_confirmed_reading",
+      "meaning": "People engaged in singing and dancing.",
+      "relationships": "People are participants in singing and dancing activities.",
+      "source_context": "None stated; wording is a descriptive fragment.",
+      "quantity_and_time": "Multiple people; activities are ongoing, with no count or date stated.",
+      "ambiguity": "None."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "text": "Robot 1 sweep kicks Robot 2",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Robot 1 kicks Robot 2 using a sweep kick. Sweep is a kind or manner of kick, not a separate event with Robot 1 as patient.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "text": "Robot on lane three comes in second place.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The robot in lane three finishes second. Lane three identifies its lane; second identifies its finishing position.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_517",
+      "text": "\"Sheinbaum: Movement promoted from abroad against our government.\"",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The quoted fragment attributes to Sheinbaum the assertion that a movement against our government is promoted from abroad. It does not assert she promoted it or determine speech versus written text.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_822",
+      "text": "2025 Montreal map shows a lot of Liberal red.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "A 2025 Montreal map depicts a large amount of Liberal red. Keep the year, place, party/color description and depiction source.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_745",
+      "text": "A car drives up onto the curb in order to get around the police car and oncoming traffic.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "A car drives onto the curb with the purpose of getting around both a police car and oncoming traffic. The same car has that purpose; successful evasion is not independently asserted.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2176",
+      "text": "The wind speed appears sufficient to force adults to crawl.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Wind speed appears sufficient to force adults to crawl. Wind speed is the causer of force; adults would crawl. Appearance and sufficiency do not establish actual crawling.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_838",
+      "text": "Claims that Trump has said Canada is not a real country.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "An unspecified source claims Trump said Canada is not a real country. Keep both attribution levels and the negated real-country description.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "text": "Mare Crisium is a large basin created by ancient asteroid impact and volcanic eruptions that filled with basaltic lava about 3 billion years ago.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Mare Crisium is a large basin formed by ancient asteroid impact and volcanic eruptions, and filled with basaltic lava about three billion years ago. The attachment of which event filled it is linguistically awkward; do not infer a new actor.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1924",
+      "text": "The video depicts a 'Palisades Incident Operations Update' from January 12, 2025.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The video depicts an update titled Palisades Incident Operations Update, dated January 12, 2025. The date is the update date, not an inferred date of the fire.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2109",
+      "text": "'Qian Dan' refers to the expulsion of a monk from a monastery for violating religious vows.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Qian Dan denotes expelling a monk from a monastery for violation of religious vows. This is a definition, not an assertion that a particular expulsion occurred.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1676",
+      "text": "America's trading partners will be thinking about how to engage with the White House and whether to retaliate against Trump's tariffs; these countries know that the more they retaliate, the more they hurt their own economies.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Trading partners will consider engagement and retaliation; these countries know that increasing retaliation increases harm to their own economies. Keep future thinking, the whether alternative, comparative dependency, ownership and knowledge scope.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1908",
+      "text": "Additional footage of the heatmap shows fire growth on January 8th, 2025.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Additional heatmap footage depicts fire growth on January 8, 2025. Growth and its date belong to the depicted content.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1762",
+      "text": "Video cuts and shows Trump without chart talking about how disproportionate and unfair the numbers are.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The video cuts to Trump speaking without a chart about the disproportionate and unfair numbers. The number descriptions are inside the topic of his talk; without restricts the chart.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_999",
+      "text": "The video contains a compilation of short video scenes and images overlaid by a news broadcaster's audio description (which also appears in overlaid text).",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The video contains compiled short scenes and images with a broadcaster's audio description, also rendered as overlaid text. Audio and text describe the same material; neither channel may be silently dropped.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1831",
+      "text": "The map shows the spread of the fire from 6:00am on January 6 to 12:00am on January 12.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The map depicts fire spread over the interval from January 6 at 6:00am to January 12 at 12:00am. Do not substitute map creation time for spread time.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_495",
+      "text": " \"Mexico, Nov 15\".",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "A quoted fragment gives Mexico and November 15, with no stated event or year. Keep it as a context-dependent mention, without inventing an occurrence.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_496",
+      "text": "\"Police fire smoke bombs and tear gas as protesters hurl stones.\"",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Quoted text asserts police fire smoke bombs and tear gas while protesters hurl stones. Keep the concurrent events, each actor, and the quoted source; no channel is specified.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "text": "Footage of burned debris, overturned and burned cars.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Footage depicts burned debris and cars that are both overturned and burned. Properties must remain attached to the correct objects.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1497",
+      "text": "Color fills are where there is spin in the atmosphere.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Color-filled areas correspond to locations of atmospheric spin. It is a correspondence/location description, not a person filling something or spin being the color.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_997",
+      "text": "The video includes the logo for 7 News.com.au.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The video contains the logo for 7 News.com.au. Preserve the complete identifier and logo/source relationship.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2168",
+      "text": "Extremely high winds are visible, blowing mist or rain horizontally across the screen.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Extremely high winds are visible and blow mist or rain horizontally across the screen. Keep the alternative mist/rain, degree, manner and visible content.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_68",
+      "text": "Angupaul1 is relying on a portable charger to livestream.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Angupaul1 relies on a portable charger for the purpose of livestreaming. Portable modifies charger; Angupaul1 is the livestreamer. Actual successful livestreaming is not independently asserted.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "text": "The video shows stills of Pete's Seafood, a restaurant at Topanga Beach, which has survived many fires.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The video depicts still images of Pete's Seafood, a restaurant at Topanga Beach; the restaurant has survived many fires. Preserve the business identity and relative clause.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "text": "Image of Trump signing something (likely executive orders).",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "An image depicts Trump signing something, probably executive orders. Signing is depicted; the identity of the signed object is only likely.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_333",
+      "text": "Robot 1paces up behind the man",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Robot 1 paces up behind the man. The missing space is a typographical issue; preserve Robot 1 and the behind relationship.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1889",
+      "text": "There is a row of homes on the coast that was evidently untouched by the fire, seemingly due to a concrete rock wall across the street that may have protected them.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "A coastal row of homes appears untouched by fire, possibly because a concrete rock wall across the street protected them. Preserve evidential uncertainty and the possible causal explanation.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1237",
+      "text": "Firefly said the lander would gradually return to full power once surface temperatures dropped.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Firefly said the lander would gradually return to full power when surface temperature dropped. Keep reported future/conditional timing, gradual change and degree; do not assert actual restoration.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_796",
+      "text": "The weather is sunny with no clouds in the middle of the day.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The weather is sunny at midday and there are no clouds. Cloud absence is scoped absence, not the existence of a no-cloud object.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1976",
+      "text": "The man in the blue blazer is presumably a lawyer or member of law enforcement.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The blue-blazer man is presumed to be either a lawyer or a law-enforcement member. Preserve the clothing attachment, uncertainty and OR.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "text": "Not much to see with respect to spin until the 3rd.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "There is little visible spin before the third. The omitted month/year and referent of spin need context; do not invent an event or full date.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2221",
+      "text": "The woman claims the current time is 7:00 PM on July 21st in Vietnam time.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The woman asserts that the current time is 7:00 PM on July 21 in Vietnam time. This is her asserted local time, not the system clock or the utterance date.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1655",
+      "text": "She claims that Trump wants America to return to the late 19th century, when America had no income tax and state spending was instead funded by tariff revenue; Rachana says that this is a fantasy.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "She reports Trump's desire for America to return to a late-19th-century tax/spending system; Rachana calls this a fantasy. Keep desire, historical context, negation and both attributed judgments.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1520",
+      "text": "Text in the top left of the screen reports the location as Washington, DC.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Text at the screen's top left identifies the location as Washington, DC. Preserve text/OCR attribution and the top-left position.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_323",
+      "text": "Robot slams into man during race.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "A robot slams into a man during a race. Race restricts event time, not event location.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1646",
+      "text": "Footage of Trump speaking in Washington DC this afternoon (muted).",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Muted footage depicts Trump speaking in Washington, DC this afternoon. Speaking is visually depicted; audible speech is not established. Afternoon needs a reference date.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1326",
+      "text": "Blue Ghost is targeting around 100kg of payload.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Blue Ghost targets approximately 100 kilograms of payload. This is a target amount, not a count of 100 objects or a completed delivery.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1228",
+      "text": "Can see obvious engine plume disturbance on the surface in the images which matches what was seen in the landing video as regolith was blown outward.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "Images show engine-plume disturbance on the surface matching a disturbance in landing video when regolith was blown outward. Keep depiction sources, the match and outward motion; exact referents need context.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_504",
+      "text": "Protester holds a sign \"They shut down my voice without realizing that they would awaken the voice of all of Mexico.\"",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "A protester holds a sign bearing the quoted statement about silencing my voice and awakening all Mexico's voice. Keep the statement under written-sign attribution, its negation and figurative wording.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "T8u81WMIyj18_758",
+      "text": "The setting is a dark and calm night, with no notable weather.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "The setting is a dark, calm night with no notable weather. Absence is qualified by notable, not an assertion that no atmospheric conditions exist.",
+      "ambiguity": "See reading; not independent gold."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1569",
+      "text": "An example of this skepticism is the opinion that the US immigration situation is not an invasion or incursion and does not support invocation of the Alien Enemies Act.",
+      "origin": "assistant_reading_before_converter",
+      "meaning": "An opinion exemplifies skepticism: the US immigration situation is neither an invasion nor an incursion and does not justify invoking the Alien Enemies Act. Keep opinion scope, both negations and legal-act identity.",
+      "ambiguity": "See reading; not independent gold."
+    }
+  ]
+}

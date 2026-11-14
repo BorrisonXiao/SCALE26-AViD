@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-14",
   "steps": [
     {
       "id": 25,
@@ -677,15 +677,42 @@
     {
       "id": 29,
       "title": "Compare a fixed neural semantic-parser frontend on reference meanings",
+      "status": "completed",
+      "items": [
+        {
+          "text": "Frozen 20 earlier human readings plus 40 assistant failure readings; all 60 self-reviewed, with no GPT/model judge.",
+          "done": true
+        },
+        {
+          "text": "One fixed cached BART AMR converter processes all 2,375 originals:1,425 graphs convert,950 refuse. No parser selection or new model calls.",
+          "done": true
+        },
+        {
+          "text": "Of 60 reference cases,37 convert:13 reference matches,11 partial,9 incorrect,4 context-dependent,23 refused. Six matches among 40 previous failures; no pool promotions.",
+          "done": true
+        },
+        {
+          "text": "505 tests pass. Prepared 22 confidence pairs but did not train/calibrate a model; one saved candidate per claim does not test ranking.",
+          "done": true
+        },
+        {
+          "text": "Native race/cloud checks return unknown with no media evidence; nested wind exceeds a 10-second diagnostic limit. Profiling remains pending.",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Preserve source information and extend shared AMR operators",
       "status": "planned",
       "items": [
-        "Write checked reference meanings for roles, source scope, alternatives and time; resolve the near-correct during-race case.",
-        "Test one AMR-to-logic path with compositional semantics, using the same frontend across claims and no per-claim model selection.",
-        "Measure faithful candidate coverage and a source-conditioned confidence model before calibrated parse mixtures or media training."
+        "Align names, quantities/units, exact quotes, am/pm and grammatical features to source spans; flag unsupported changes.",
+        "Add participant coordination and shared complement-scope policies with contrast tests; address 841 of 950 first stops.",
+        "Profile the nested program time limit and evaluate fixed new-source claims before confidence training."
       ]
     }
   ],
-  "intro": "Compiler remains the priority. Full 2,375/449 replay is unchanged; retained pool stays 1,981/2,375 (83.41%), with 394 excluded. Partial structure is now available for 189 of 218 previous no-draft cases. Fixed 40-case structural pilots add no retained meaning. Neural and probabilistic alternatives are investigated; no media training.",
+  "intro": "Compiler remains the priority. Fixed AMR comparison:1,425/2,375 graphs convert;950 refuse. Self-review on 60 references finds 13 matches, including 6/40 previous failures. These are development judgments, not corpus accuracy. Retained pool stays 1,981/2,375 (83.41%),394 excluded; no media training.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -740,5 +767,6 @@
   "compiler_readiness_run": "exp/probabilistic_verification/compiler_readiness_20261112",
   "compiler_repairs_run": "exp/probabilistic_verification/compiler_repairs_20261112",
   "compiler_feedback_run": "exp/probabilistic_verification/compiler_feedback_20261112",
-  "compiler_structural_run": "exp/probabilistic_verification/compiler_structural_20261113"
+  "compiler_structural_run": "exp/probabilistic_verification/compiler_structural_20261113",
+  "amr_composition_run": "exp/probabilistic_verification/amr_composition_20261114"
 }

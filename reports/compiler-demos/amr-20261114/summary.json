@@ -1,0 +1,75 @@
+{
+  "total": 2375,
+  "graphs_converted": 1425,
+  "refused": 950,
+  "reference_cases": 60,
+  "reference_converted": 37,
+  "refusals": {
+    "unhandled_complement": 649,
+    "argument_coordination": 192,
+    "sentence_mode": 14,
+    "polarity_value": 4,
+    "negative_argument_scope": 34,
+    "coordination_scope": 22,
+    "coordination_size": 3,
+    "duplicate_roles": 20,
+    "media_modifier_scope": 3,
+    "event_scope_reentry": 8,
+    "untranslated_nodes": 1
+  },
+  "reference_refusals": {
+    "unhandled_complement": 10,
+    "argument_coordination": 9,
+    "polarity_value": 1,
+    "media_modifier_scope": 2,
+    "negative_argument_scope": 1
+  },
+  "seconds": 10.479,
+  "cache_sources": {
+    "exp/probabilistic_verification/full_compilation_20261029/amr_0_raw.jsonl": "9d0126a3868b970f9d79a826a55c5c4c1c55f47316e3ea2a71c12e37affdd90a",
+    "exp/probabilistic_verification/full_compilation_20261029/amr_1_raw.jsonl": "f3e69ec7a67f54e3b520f4572f710cf7e9d59605fed438870708b3d0e9b7213a",
+    "exp/probabilistic_verification/full_compilation_20261029/amr_2_raw.jsonl": "2222715ecc7408b562b270f651555aedd73492b2299cd59973e7ff75053138c7",
+    "exp/probabilistic_verification/full_compilation_20261029/amr_3_raw.jsonl": "e9aa3c9358a41f55625133e5704099e1db1daaaa57ffd7f6556bc5ef483c3e2a"
+  },
+  "reference_sha256": "8f87f77bcba80744defc558bfb3ecb44ef1162d7a9574e14fac2df96fa385e76",
+  "retained_pool_before": 1981,
+  "retained_pool_after": 1981,
+  "promotions": 0,
+  "scope_policies": "scripts/probabilistic_verification/amr_composition.py",
+  "model_calls": 0,
+  "review": "All60 cases inspected by implementing assistant against frozen readings.13 reference matches are development judgments, not human approval of new outputs or corpus semantic accuracy.",
+  "review_counts": {
+    "partial": 11,
+    "not_compiled": 23,
+    "matches_reference": 13,
+    "incorrect": 9,
+    "context_needed": 4
+  },
+  "relationship_matches": 20,
+  "by_cohort": {
+    "human_readings": {
+      "total": 20,
+      "converted": 14,
+      "reading_matches": 7,
+      "reviews": {
+        "partial": 4,
+        "not_compiled": 6,
+        "matches_reference": 7,
+        "incorrect": 2,
+        "context_needed": 1
+      }
+    },
+    "previous_40_failures": {
+      "total": 40,
+      "converted": 23,
+      "reading_matches": 6,
+      "reviews": {
+        "incorrect": 7,
+        "matches_reference": 6,
+        "context_needed": 3,
+        "not_compiled": 17,
+        "partial": 7
+      }
+    }
+  }
+}

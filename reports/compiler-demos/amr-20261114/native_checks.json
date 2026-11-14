@@ -1,0 +1,32 @@
+[
+  {
+    "claim_id": "Tg0UxWYuPeJ0_323",
+    "status": "completed",
+    "returncode": 0,
+    "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+    "distribution": {
+      "unknown": 1.0
+    },
+    "seconds": 2.908,
+    "interpretation": "No media observations; only unknown queried. A time limit is not a verdict."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2176",
+    "status": "time_limit",
+    "limit_seconds": 10,
+    "distribution": null,
+    "seconds": 10.127,
+    "interpretation": "No media observations; only unknown queried. A time limit is not a verdict."
+  },
+  {
+    "claim_id": "T1JQ-aG78Zuc_796",
+    "status": "completed",
+    "returncode": 0,
+    "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+    "distribution": {
+      "unknown": 1.0
+    },
+    "seconds": 5.127,
+    "interpretation": "No media observations; only unknown queried. A time limit is not a verdict."
+  }
+]

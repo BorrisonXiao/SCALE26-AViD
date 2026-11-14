@@ -1,0 +1,6814 @@
+{
+  "status": "Preparation only; no encoder, classifier, training, calibration or evaluation split. One candidate per claim cannot evaluate ranking across alternatives. Partial/context cases are excluded; labels never enter inputs.",
+  "positive": 13,
+  "negative": 9,
+  "examples": [
+    {
+      "claim_id": "TInVWzp25aIM_22",
+      "video_id": "TInVWzp25aIM",
+      "inputs": {
+        "sentence": "At least one person has died from the typhoon.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "die-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "person",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "at-least",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "literal",
+            "arguments": [
+              "X3",
+              "op1",
+              "1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "X2",
+              "quant",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "concept",
+            "arguments": [
+              "E4",
+              "cause-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "role",
+            "arguments": [
+              "E4",
+              "ARG1",
+              "E1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "typhoon",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "role",
+            "arguments": [
+              "E4",
+              "ARG0",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "perfect",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a3",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a4",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X3"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a6",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a7",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a8",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a9",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a10",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E4",
+                    "X5"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a11",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_798",
+      "video_id": "T1JQ-aG78Zuc",
+      "inputs": {
+        "sentence": "The tram is driving at night, in mostly clear weather.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "drive-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "tram",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "date-entity",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "night",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "role",
+            "arguments": [
+              "X3",
+              "dayperiod",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "time",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "weather",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "concept",
+            "arguments": [
+              "E6",
+              "clear-08",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "role",
+            "arguments": [
+              "E6",
+              "ARG1",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "concept",
+            "arguments": [
+              "X7",
+              "most",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a12",
+            "predicate": "role",
+            "arguments": [
+              "E6",
+              "mod",
+              "X7",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a13",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "time",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a14",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "progressive",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a3",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a6",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X4"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a7",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a8",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "exists",
+                      "children": [
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a9",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a10",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a11",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a12",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [
+                        "E6",
+                        "X7"
+                      ],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a13",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a14",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X3",
+            "X5"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_0",
+      "video_id": "TInVWzp25aIM",
+      "inputs": {
+        "sentence": "Emmonak, Alaska is being affected by the typhoon.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "affect-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "typhoon",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "city",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "name",
+            "arguments": [
+              "X3",
+              "Emmonak",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "state",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "name",
+            "arguments": [
+              "X4",
+              "Alaska",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "role",
+            "arguments": [
+              "X3",
+              "location",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a3",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a6",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a7",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a8",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X4"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a9",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a10",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X3"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_421",
+      "video_id": "Tg0UxWYuPeJ0",
+      "inputs": {
+        "sentence": "100m- final lineup",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "X1",
+              "lineup",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "final",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "role",
+            "arguments": [
+              "X1",
+              "mod",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "quantity",
+            "arguments": [
+              "X1",
+              "quant",
+              "100000000",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a3",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a4",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "X1",
+            "X2"
+          ],
+          "state": ""
+        }
+      },
+      "label": false,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_312",
+      "video_id": "TzF9M4kZ3Pys",
+      "inputs": {
+        "sentence": "Wind is starting to pick up.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "start-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "proposition",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "aspect",
+              "c1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "concept",
+            "arguments": [
+              "E2",
+              "pick-up-05",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "wind",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "E2",
+              "ARG1",
+              "X3",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "progressive",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a3",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E2",
+                    "X3"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a6",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_292",
+      "video_id": "TzF9M4kZ3Pys",
+      "inputs": {
+        "sentence": "Timelapse footage of haboob taking over apron.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "X1",
+              "footage",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "timelapse",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "role",
+            "arguments": [
+              "X1",
+              "mod",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "proposition",
+            "arguments": [
+              "X1",
+              "topic",
+              "depiction",
+              "c1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "concept",
+            "arguments": [
+              "E3",
+              "take-over-12",
+              "context_owner",
+              "X1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "haboob",
+              "context_owner",
+              "X1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "role",
+            "arguments": [
+              "E3",
+              "ARG0",
+              "X4",
+              "context_owner",
+              "X1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "apron",
+              "context_owner",
+              "X1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "role",
+            "arguments": [
+              "E3",
+              "ARG1",
+              "X5",
+              "context_owner",
+              "X1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a3",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a4",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a6",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a7",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a8",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a9",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E3",
+                    "X4",
+                    "X5"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "X1",
+            "X2"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_554",
+      "video_id": "TLO3smKI67PM",
+      "inputs": {
+        "sentence": "The home run lands in the stands, right next to Phillies fan Karen.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "land-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "E2",
+              "run-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "home",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "role",
+            "arguments": [
+              "E2",
+              "ARG4",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "E2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "stand",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "next-to",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "concept",
+            "arguments": [
+              "X6",
+              "person",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "name",
+            "arguments": [
+              "X6",
+              "Karen",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "concept",
+            "arguments": [
+              "E7",
+              "have-org-role-91",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "role",
+            "arguments": [
+              "E7",
+              "ARG0",
+              "X6",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a12",
+            "predicate": "concept",
+            "arguments": [
+              "X8",
+              "team",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a13",
+            "predicate": "name",
+            "arguments": [
+              "X8",
+              "Phillipines",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a14",
+            "predicate": "role",
+            "arguments": [
+              "E7",
+              "ARG1",
+              "X8",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a15",
+            "predicate": "concept",
+            "arguments": [
+              "X9",
+              "fan",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a16",
+            "predicate": "role",
+            "arguments": [
+              "E7",
+              "ARG2",
+              "X9",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a17",
+            "predicate": "role",
+            "arguments": [
+              "X5",
+              "op1",
+              "X6",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a18",
+            "predicate": "concept",
+            "arguments": [
+              "X10",
+              "right",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a19",
+            "predicate": "role",
+            "arguments": [
+              "X5",
+              "mod",
+              "X10",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a20",
+            "predicate": "role",
+            "arguments": [
+              "X4",
+              "location",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a21",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG2",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a22",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a3",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X3"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a5",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a6",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "and",
+                              "children": [
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a7",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "and",
+                                  "children": [
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a8",
+                                      "variables": [],
+                                      "state": ""
+                                    },
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a9",
+                                      "variables": [],
+                                      "state": ""
+                                    },
+                                    {
+                                      "op": "exists",
+                                      "children": [
+                                        {
+                                          "op": "and",
+                                          "children": [
+                                            {
+                                              "op": "atom",
+                                              "children": [],
+                                              "atom_id": "a10",
+                                              "variables": [],
+                                              "state": ""
+                                            },
+                                            {
+                                              "op": "atom",
+                                              "children": [],
+                                              "atom_id": "a11",
+                                              "variables": [],
+                                              "state": ""
+                                            },
+                                            {
+                                              "op": "and",
+                                              "children": [
+                                                {
+                                                  "op": "atom",
+                                                  "children": [],
+                                                  "atom_id": "a12",
+                                                  "variables": [],
+                                                  "state": ""
+                                                },
+                                                {
+                                                  "op": "atom",
+                                                  "children": [],
+                                                  "atom_id": "a13",
+                                                  "variables": [],
+                                                  "state": ""
+                                                }
+                                              ],
+                                              "atom_id": "",
+                                              "variables": [],
+                                              "state": ""
+                                            },
+                                            {
+                                              "op": "atom",
+                                              "children": [],
+                                              "atom_id": "a14",
+                                              "variables": [],
+                                              "state": ""
+                                            },
+                                            {
+                                              "op": "atom",
+                                              "children": [],
+                                              "atom_id": "a15",
+                                              "variables": [],
+                                              "state": ""
+                                            },
+                                            {
+                                              "op": "atom",
+                                              "children": [],
+                                              "atom_id": "a16",
+                                              "variables": [],
+                                              "state": ""
+                                            }
+                                          ],
+                                          "atom_id": "",
+                                          "variables": [],
+                                          "state": ""
+                                        }
+                                      ],
+                                      "atom_id": "",
+                                      "variables": [
+                                        "E7",
+                                        "X8",
+                                        "X9"
+                                      ],
+                                      "state": ""
+                                    }
+                                  ],
+                                  "atom_id": "",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a17",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a18",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a19",
+                                  "variables": [],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "X10",
+                            "X6"
+                          ],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a20",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X5"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a21",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a22",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "E2",
+            "X4"
+          ],
+          "state": ""
+        }
+      },
+      "label": false,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_274",
+      "video_id": "TzF9M4kZ3Pys",
+      "inputs": {
+        "sentence": "Strong winds in commercial area.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "X1",
+              "wind",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "area",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "commerce",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "role",
+            "arguments": [
+              "X2",
+              "mod",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "X1",
+              "location",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "E4",
+              "strong-02",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "role",
+            "arguments": [
+              "E4",
+              "ARG1",
+              "X1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a3",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X3"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a5",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a6",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a7",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E4"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "X1",
+            "X2"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1686",
+      "video_id": "TFgw4IaR9R8s",
+      "inputs": {
+        "sentence": "The US has already implemented steel and aluminum tariffs at 25%.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "implement-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "country",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "name",
+            "arguments": [
+              "X2",
+              "US",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "tariff",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "percentage-entity",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "literal",
+            "arguments": [
+              "X4",
+              "value",
+              "25",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "role",
+            "arguments": [
+              "X3",
+              "mod",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "steel",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "role",
+            "arguments": [
+              "X3",
+              "mod",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "concept",
+            "arguments": [
+              "X6",
+              "aluminum",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a12",
+            "predicate": "role",
+            "arguments": [
+              "X3",
+              "mod",
+              "X6",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a13",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a14",
+            "predicate": "concept",
+            "arguments": [
+              "X7",
+              "already",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a15",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "time",
+              "X7",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a16",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "perfect",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a3",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a4",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a6",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a7",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a8",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a9",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a10",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a11",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a12",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X4",
+                    "X5",
+                    "X6"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a13",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a14",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a15",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a16",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X3",
+            "X7"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "video_id": "Tg0UxWYuPeJ0",
+      "inputs": {
+        "sentence": "Robot 1 sweep kicks Robot 2",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "kick-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "robot",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "literal",
+            "arguments": [
+              "X2",
+              "mod",
+              "1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "concept",
+            "arguments": [
+              "E3",
+              "sweep-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "E3",
+              "ARG1",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "robot",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "literal",
+            "arguments": [
+              "X4",
+              "mod",
+              "2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a3",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "exists",
+                      "children": [
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a4",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a5",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [
+                        "E3"
+                      ],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a6",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a7",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a8",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a9",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a10",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X4"
+          ],
+          "state": ""
+        }
+      },
+      "label": false,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "video_id": "Tg0UxWYuPeJ0",
+      "inputs": {
+        "sentence": "Robot on lane three comes in second place.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "come-04",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "robot",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "lane",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "literal",
+            "arguments": [
+              "X3",
+              "mod",
+              "3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "X2",
+              "location",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "place",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "ordinal-entity",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "literal",
+            "arguments": [
+              "X5",
+              "value",
+              "2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "role",
+            "arguments": [
+              "X4",
+              "ord",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG2",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a12",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a3",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a4",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X3"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a6",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a7",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a8",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a9",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a10",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X5"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a11",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a12",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X4"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_822",
+      "video_id": "TQEmEycTI0RQ",
+      "inputs": {
+        "sentence": "2025 Montreal map shows a lot of Liberal red.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "show-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "map",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "city",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "name",
+            "arguments": [
+              "X3",
+              "Montreal",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "X2",
+              "mod",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "date-entity",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "literal",
+            "arguments": [
+              "X4",
+              "year",
+              "2025",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "role",
+            "arguments": [
+              "X2",
+              "time",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "proposition",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "depiction",
+              "c1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "concept",
+            "arguments": [
+              "E5",
+              "red-02",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a12",
+            "predicate": "concept",
+            "arguments": [
+              "X6",
+              "person",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a13",
+            "predicate": "concept",
+            "arguments": [
+              "E7",
+              "liberal-02",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a14",
+            "predicate": "role",
+            "arguments": [
+              "E7",
+              "ARG1",
+              "X6",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a15",
+            "predicate": "role",
+            "arguments": [
+              "E5",
+              "ARG1",
+              "X6",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a16",
+            "predicate": "concept",
+            "arguments": [
+              "X8",
+              "lot",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a17",
+            "predicate": "role",
+            "arguments": [
+              "E5",
+              "quant",
+              "X8",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "visual_depiction"
+            ]
+          },
+          {
+            "id": "a18",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a3",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a4",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a6",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a7",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a8",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X3",
+                    "X4"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a9",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a10",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a11",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a12",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "exists",
+                              "children": [
+                                {
+                                  "op": "and",
+                                  "children": [
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a13",
+                                      "variables": [],
+                                      "state": ""
+                                    },
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a14",
+                                      "variables": [],
+                                      "state": ""
+                                    }
+                                  ],
+                                  "atom_id": "",
+                                  "variables": [],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [
+                                "E7"
+                              ],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a15",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a16",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a17",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E5",
+                    "X6",
+                    "X8"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a18",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2"
+          ],
+          "state": ""
+        }
+      },
+      "label": false,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_495",
+      "video_id": "TFOEIehBwT8Q",
+      "inputs": {
+        "sentence": " \"Mexico, Nov 15\".",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "be-located-at-91",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "country",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "name",
+            "arguments": [
+              "X2",
+              "Mexico",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "date-entity",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "literal",
+            "arguments": [
+              "X3",
+              "day",
+              "15",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "literal",
+            "arguments": [
+              "X3",
+              "month",
+              "11",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG2",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a3",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a4",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a5",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a6",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a7",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a8",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X3"
+          ],
+          "state": ""
+        }
+      },
+      "label": false,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1497",
+      "video_id": "TgPh_fzHTCm4",
+      "inputs": {
+        "sentence": "Color fills are where there is spin in the atmosphere.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "be-located-at-91",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "E2",
+              "fill-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "color",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "role",
+            "arguments": [
+              "E2",
+              "ARG2",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "E2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "E4",
+              "spin-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "atmosphere",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "role",
+            "arguments": [
+              "E4",
+              "location",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG2",
+              "E4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a3",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X3"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a5",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a6",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a7",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a8",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X5"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a9",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "E2",
+            "E4"
+          ],
+          "state": ""
+        }
+      },
+      "label": false,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_997",
+      "video_id": "TjHepwuhkYFA",
+      "inputs": {
+        "sentence": "The video includes the logo for 7 News.com.au.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "include-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "logo",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "publication",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "name",
+            "arguments": [
+              "X3",
+              "7 News.com.au",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "X2",
+              "poss",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "video",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG2",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a3",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a4",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X3"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a6",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a7",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a8",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a9",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X4"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_68",
+      "video_id": "TInVWzp25aIM",
+      "inputs": {
+        "sentence": "Angupaul1 is relying on a portable charger to livestream.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "rely-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "person",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "name",
+            "arguments": [
+              "X2",
+              "Angupaul1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "thing",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "E4",
+              "charge-03",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "role",
+            "arguments": [
+              "E4",
+              "ARG0",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "portable",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "role",
+            "arguments": [
+              "E4",
+              "ARG1",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "proposition",
+            "arguments": [
+              "E1",
+              "ARG2",
+              "purpose",
+              "c1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a12",
+            "predicate": "concept",
+            "arguments": [
+              "E6",
+              "livestream-01",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a13",
+            "predicate": "role",
+            "arguments": [
+              "E6",
+              "ARG0",
+              "X2",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a14",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "progressive",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a3",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a4",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a5",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "exists",
+                      "children": [
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a6",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a7",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a8",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a9",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [
+                        "E4",
+                        "X5"
+                      ],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a10",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a11",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a12",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a13",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E6"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a14",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X3"
+          ],
+          "state": ""
+        }
+      },
+      "label": false,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_796",
+      "video_id": "T1JQ-aG78Zuc",
+      "inputs": {
+        "sentence": "The weather is sunny with no clouds in the middle of the day.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "X1",
+              "weather",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "sunny",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "role",
+            "arguments": [
+              "X1",
+              "mod",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "middle",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "day",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "role",
+            "arguments": [
+              "X4",
+              "part",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "role",
+            "arguments": [
+              "X1",
+              "time",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "concept",
+            "arguments": [
+              "E5",
+              "have-03",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "role",
+            "arguments": [
+              "E5",
+              "ARG0",
+              "X1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "concept",
+            "arguments": [
+              "X6",
+              "cloud",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "role",
+            "arguments": [
+              "E5",
+              "ARG1",
+              "X6",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a3",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a4",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "exists",
+                      "children": [
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a5",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a6",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [
+                        "X4"
+                      ],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a7",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "not",
+                  "children": [
+                    {
+                      "op": "exists",
+                      "children": [
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a8",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a9",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a10",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a11",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [
+                        "E5",
+                        "X6"
+                      ],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "X1",
+            "X2",
+            "X3"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2221",
+      "video_id": "Txf2EdqOg1SQ",
+      "inputs": {
+        "sentence": "The woman claims the current time is 7:00 PM on July 21st in Vietnam time.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "claim-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "woman",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "proposition",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "assertion",
+              "c1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "time",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "current",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "role",
+            "arguments": [
+              "X3",
+              "mod",
+              "X4",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "date-entity",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "literal",
+            "arguments": [
+              "X5",
+              "time",
+              "19:00",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "literal",
+            "arguments": [
+              "X5",
+              "month",
+              "7",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "literal",
+            "arguments": [
+              "X5",
+              "day",
+              "21",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a12",
+            "predicate": "concept",
+            "arguments": [
+              "X6",
+              "country",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a13",
+            "predicate": "name",
+            "arguments": [
+              "X6",
+              "Vietnam",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a14",
+            "predicate": "role",
+            "arguments": [
+              "X5",
+              "timezone",
+              "X6",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a15",
+            "predicate": "role",
+            "arguments": [
+              "X3",
+              "time",
+              "X5",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a16",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a3",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a4",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a6",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a7",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "and",
+                              "children": [
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a8",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a9",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a10",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a11",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "and",
+                                  "children": [
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a12",
+                                      "variables": [],
+                                      "state": ""
+                                    },
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a13",
+                                      "variables": [],
+                                      "state": ""
+                                    }
+                                  ],
+                                  "atom_id": "",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a14",
+                                  "variables": [],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "X6"
+                          ],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a15",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X3",
+                    "X4",
+                    "X5"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a16",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1520",
+      "video_id": "TFgw4IaR9R8s",
+      "inputs": {
+        "sentence": "Text in the top left of the screen reports the location as Washington, DC.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "report-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "text",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "concept",
+            "arguments": [
+              "E3",
+              "left-20",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "screen",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "E3",
+              "ARG2",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "top",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "role",
+            "arguments": [
+              "E3",
+              "mod",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "role",
+            "arguments": [
+              "X2",
+              "location",
+              "E3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "concept",
+            "arguments": [
+              "X6",
+              "city",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "name",
+            "arguments": [
+              "X6",
+              "Washington DC",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a12",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG3",
+              "X6",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a13",
+            "predicate": "proposition",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "assertion",
+              "c1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a14",
+            "predicate": "concept",
+            "arguments": [
+              "X7",
+              "location",
+              "context_owner",
+              "E1",
+              "scope",
+              "c1",
+              "route",
+              "ocr_assertion"
+            ]
+          },
+          {
+            "id": "a15",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "and",
+                              "children": [
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a3",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a4",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a5",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a6",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a7",
+                                  "variables": [],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "X4",
+                            "X5"
+                          ],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a8",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E3"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a9",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a10",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a11",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a12",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a13",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a14",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X7"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a15",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X6"
+          ],
+          "state": ""
+        }
+      },
+      "label": false,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_323",
+      "video_id": "Tg0UxWYuPeJ0",
+      "inputs": {
+        "sentence": "Robot slams into man during race.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "slam-02",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "robot",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "man",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "E4",
+              "race-02",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "time",
+              "E4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "simple",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a3",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a4",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a5",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a6",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a7",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a8",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "E4",
+            "X2",
+            "X3"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1326",
+      "video_id": "T2G_ACMxR_I4",
+      "inputs": {
+        "sentence": "Blue Ghost is targeting around 100kg of payload.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "target-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "organization",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "name",
+            "arguments": [
+              "X2",
+              "Blue Ghost",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG0",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "payload",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "X4",
+              "around",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "mass-quantity",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "quantity",
+            "arguments": [
+              "X5",
+              "quant",
+              "100",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "concept",
+            "arguments": [
+              "X6",
+              "kilogram",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "role",
+            "arguments": [
+              "X5",
+              "unit",
+              "X6",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "role",
+            "arguments": [
+              "X4",
+              "op1",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a12",
+            "predicate": "role",
+            "arguments": [
+              "X3",
+              "quant",
+              "X4",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a13",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a14",
+            "predicate": "temporal",
+            "arguments": [
+              "E1",
+              "pres",
+              "progressive",
+              "T0",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a3",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a4",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "and",
+                              "children": [
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a6",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "exists",
+                                  "children": [
+                                    {
+                                      "op": "and",
+                                      "children": [
+                                        {
+                                          "op": "atom",
+                                          "children": [],
+                                          "atom_id": "a7",
+                                          "variables": [],
+                                          "state": ""
+                                        },
+                                        {
+                                          "op": "atom",
+                                          "children": [],
+                                          "atom_id": "a8",
+                                          "variables": [],
+                                          "state": ""
+                                        },
+                                        {
+                                          "op": "atom",
+                                          "children": [],
+                                          "atom_id": "a9",
+                                          "variables": [],
+                                          "state": ""
+                                        },
+                                        {
+                                          "op": "atom",
+                                          "children": [],
+                                          "atom_id": "a10",
+                                          "variables": [],
+                                          "state": ""
+                                        }
+                                      ],
+                                      "atom_id": "",
+                                      "variables": [],
+                                      "state": ""
+                                    }
+                                  ],
+                                  "atom_id": "",
+                                  "variables": [
+                                    "X6"
+                                  ],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a11",
+                                  "variables": [],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "X5"
+                          ],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a12",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X4"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a13",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a14",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "T0"
+                  ],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X3"
+          ],
+          "state": ""
+        }
+      },
+      "label": false,
+      "provenance": "Assistant development judgment; not independent gold."
+    },
+    {
+      "claim_id": "T8u81WMIyj18_758",
+      "video_id": "T8u81WMIyj18",
+      "inputs": {
+        "sentence": "The setting is a dark and calm night, with no notable weather.",
+        "conditions": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "X1",
+              "night",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "setting",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a3",
+            "predicate": "role",
+            "arguments": [
+              "X1",
+              "domain",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a4",
+            "predicate": "concept",
+            "arguments": [
+              "E3",
+              "dark-03",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a5",
+            "predicate": "role",
+            "arguments": [
+              "E3",
+              "ARG1",
+              "X1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a6",
+            "predicate": "concept",
+            "arguments": [
+              "E4",
+              "calm-03",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a7",
+            "predicate": "role",
+            "arguments": [
+              "E4",
+              "ARG1",
+              "X1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a8",
+            "predicate": "concept",
+            "arguments": [
+              "E5",
+              "have-03",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a9",
+            "predicate": "role",
+            "arguments": [
+              "E5",
+              "ARG0",
+              "X1",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a10",
+            "predicate": "concept",
+            "arguments": [
+              "X6",
+              "weather",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a11",
+            "predicate": "concept",
+            "arguments": [
+              "E7",
+              "notable-04",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a12",
+            "predicate": "role",
+            "arguments": [
+              "E7",
+              "ARG1",
+              "X6",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          },
+          {
+            "id": "a13",
+            "predicate": "role",
+            "arguments": [
+              "E5",
+              "ARG1",
+              "X6",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ]
+          }
+        ],
+        "formula": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a3",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E3"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a6",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a7",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "E4"
+                  ],
+                  "state": ""
+                },
+                {
+                  "op": "not",
+                  "children": [
+                    {
+                      "op": "exists",
+                      "children": [
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a8",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a9",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "and",
+                              "children": [
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a10",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "and",
+                                  "children": [
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a11",
+                                      "variables": [],
+                                      "state": ""
+                                    },
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a12",
+                                      "variables": [],
+                                      "state": ""
+                                    }
+                                  ],
+                                  "atom_id": "",
+                                  "variables": [],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a13",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [
+                        "E5",
+                        "E7",
+                        "X6"
+                      ],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "X1",
+            "X2"
+          ],
+          "state": ""
+        }
+      },
+      "label": true,
+      "provenance": "Assistant development judgment; not independent gold."
+    }
+  ]
+}
