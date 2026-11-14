@@ -1,0 +1,170 @@
+[
+  {
+    "claim_id": "TQEmEycTI0RQ_823",
+    "text": "2021 map shows more Bloc Québécois seats (blue) — not as much red.",
+    "meaning": "The2021 map depicts more Bloc Québécois seats, associated with blue, and comparatively less red. Preserve the comparative reading; not as much red does not mean no red.",
+    "ambiguity": "The comparison baseline and red party identity are not explicit.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1570",
+    "text": "SCOTUS is skeptical towards the administration's tendency to call everything an attack/emergency/incursion/rebellion.",
+    "meaning": "SCOTUS is skeptical of the administration tendency to describe things as an attack, emergency, incursion or rebellion. Preserve skepticism and description scope; do not assert the described events as real attacks.",
+    "ambiguity": "Everything is an overgeneralised reported tendency, not a list of actual events.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1312",
+    "text": "Scientists work with complex manufacturing tools to build the spacecraft.",
+    "meaning": "Scientists use complex manufacturing tools for the purpose of building the spacecraft. Scientists are tool users and intended builders; complex modifies tools.",
+    "ambiguity": "Do not assert completion of the spacecraft.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TLO3smKI67PM_580",
+    "text": "It's almost the Phillies fan son's birthday.",
+    "meaning": "The birthday of the son of the Phillies fan is almost here. Preserve son-of-fan possession and almost timing.",
+    "ambiguity": "The fragment does not supply a date or name; do not invent them.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_357",
+    "text": "People are circled around the robot waiting to watch what it can do.",
+    "meaning": "People surround the robot and wait to watch what the robot can do. The people are watchers; the robot is the performer of the possible actions.",
+    "ambiguity": "The actions are unspecified and not asserted to occur.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_497",
+    "text": "\"Mexico City security chief: 20 arrested for theft and assault.\"",
+    "meaning": "A Mexico City security chief reports20arrests for theft and assault. Keep source attribution, count and alleged crimes inside the report.",
+    "ambiguity": "No exact speaker name or speech/audio route is given; quoted wording is an attribution.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2029",
+    "text": "Shi Yongxin led warrior monks on tours to perform Kung Fu abroad.",
+    "meaning": "Shi Yongxin led warrior monks on tours whose purpose was performing Kung Fu abroad. Preserve the leader, monks, tours, performance purpose and foreign location.",
+    "ambiguity": "Do not silently turn a performance purpose into a completed performance.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2166",
+    "text": "The video takes place on a large, open paved pier or terminal area.",
+    "meaning": "The video depicts a scene on a large open paved pier or terminal area. Keep the location alternative and its modifiers in depicted content.",
+    "ambiguity": "Pier versus terminal area remains an alternative; no actual video-as-physical-location reading.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1989",
+    "text": "Rinderknecht's phone signal was attested seconds after the flames erupted.",
+    "meaning": "The phone signal belonging to Rinderknecht was attested seconds after the flames erupted. Preserve the attestation and relative time between it and eruption.",
+    "ambiguity": "No precise number of seconds or attester is stated.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "T1JQ-aG78Zuc_791",
+    "text": "The tram driver accidentally requested a switch to go right at an intersection, even though the tram needs to go straight.",
+    "meaning": "The tram driver accidentally requested a rightward switch at an intersection, although the tram needs to continue straight. Preserve the accidental request, opposite directions and requirement scope.",
+    "ambiguity": "The requested switch need not have happened.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1471",
+    "text": "The knots of flow ramped up overnight on the 3rd and into the 4th from 10-20 knots to 25-30 knots across central Texas.",
+    "meaning": "Flow speed over central Texas increased overnight on the3rd into the4th, from10–20knots to25–30knots. Preserve both ranges, speed unit, increase, time span and location.",
+    "ambiguity": "Knots of flow is awkward wording; do not invent a month, year or measured object.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1821",
+    "text": "Closer up footage of government building on fire with spectators watching and filming.",
+    "meaning": "Closer footage depicts a government building on fire, with spectators watching and filming. Preserve depiction, building type, fire state and both spectator activities.",
+    "ambiguity": "The comparison for closer and object of filming are implicit.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1041",
+    "text": "The area that experienced violent shaking is heavily populated.",
+    "meaning": "The area that experienced violent shaking is heavily populated. Preserve past shaking in that same area and the present population condition.",
+    "ambiguity": "Violent modifies shaking; heavily modifies populated.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TInVWzp25aIM_12",
+    "text": "Commenters ask if anyone is missing, it's unclear if there are.",
+    "meaning": "Commenters ask whether anyone is missing, and it is unclear whether anyone is. Preserve the question and uncertainty rather than asserting a missing person.",
+    "ambiguity": "The pronoun/ellipsis is resolved only to the missing-person question, not a specific person.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_172",
+    "text": "The goal of the recovery operation was to keep the port open.",
+    "meaning": "Keeping the port open was the goal of the recovery operation. Preserve purpose and continuing open state, without asserting goal achievement.",
+    "ambiguity": "No named port or time is supplied.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "T2EE72iNELEs_181",
+    "text": "Staship Flight test, T-13 to liftoff.",
+    "meaning": "A flight-test fragment names Staship and gives T-13 until liftoff. Preserve the supplied spelling and countdown without guessing units.",
+    "ambiguity": "Staship may be a typo; the source does not license silently replacing it. T-13 field units are unspecified.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_284",
+    "text": "This is what it is like driving into a haboob.",
+    "meaning": "The claim describes what driving into a haboob is like. Preserve driving, entering direction and the haboob; do not invent a named driver or particular completed trip.",
+    "ambiguity": "This is is deictic and may refer to depicted footage; the fragment alone does not resolve it.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_750",
+    "text": "There are multiple additional police officers in the immediate vicinity of the police van helping and clearing space.",
+    "meaning": "Multiple additional police officers near the police van are helping and clearing space. Preserve plurality, additional status, immediate location and shared officers across both activities.",
+    "ambiguity": "The recipient of help is unspecified.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TQKCK6-tRaoE_662",
+    "text": "Sound of fireworks exploding.",
+    "meaning": "An explosion of fireworks is heard. Preserve sound support and fireworks as the source of the explosions.",
+    "ambiguity": "Do not require visual depiction or a stated count.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_962",
+    "text": "Carney may face difficulties: positioned slightly right of Trudeau while NDP is left of Liberals; outcome depends on NDP's new leader.",
+    "meaning": "Carney may have difficulty; Carney is slightly right of Trudeau, NDP is left of Liberals, and the outcome depends on the new NDP leader. Preserve possibility, political-position comparisons and dependence.",
+    "ambiguity": "The political-position sense is strongly suggested; no particular election outcome is asserted.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1645",
+    "text": "A pause on the ruling will bring back the pre-ruling conditions (inference: allow tariffs to resume as before).",
+    "meaning": "A pause on a ruling will restore the earlier conditions, explained as permitting tariffs to resume as before. Preserve the future/conditional prediction and permission, rather than asserting a present resumption.",
+    "ambiguity": "The text marks the tariff explanation as an inference.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1726",
+    "text": "Shows picture of what the voter information service page looks like: can find electoral district, look at the map, profile, etc. with a place you can type your postal code and search ('Go') or a link you can click to find an electoral district without a postal code.",
+    "meaning": "A picture depicts a voter-information page with district finding, a map/profile, postal-code entry plus Go search, and an alternative link to find a district without a postal code. Preserve the depicted interface, alternatives and capability rather than asserting actual user actions.",
+    "ambiguity": "The example list is open-ended; do not invent user identity or results.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_976",
+    "text": "Riding-level result (Peterborough): Liberal candidate Emma Harrison is leading locally with 2740 votes reported, followed by Conservative Michelle Ferreri with 1932 (increasing) and NDP candidate Heather Ray with 137.",
+    "meaning": "Reported Peterborough riding results put Liberal Emma Harrison first with2740votes, Conservative Michelle Ferreri next with1932and an increasing tally, and NDP Heather Ray with137. Preserve every party/name/count binding and reported ranking.",
+    "ambiguity": "These are reported partial results, not certified final vote totals.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_948",
+    "text": "With 96% counted: Liberals projected 48.1% of seats = 166 seats; Conservatives 42.9% = 146 seats (out of 343 total).",
+    "meaning": "With96percent counted, the projected seat figures are Liberals48.1percent/166seats and Conservatives42.9percent/146seats, from343total. Preserve each percentage/count/party binding and projection scope.",
+    "ambiguity": "The supplied percentages/counts need not be arithmetically reconciled; do not change the source numbers.",
+    "origin": "Assistant original-text reading frozen before new checks/correction outputs; no independent gold."
+  }
+]

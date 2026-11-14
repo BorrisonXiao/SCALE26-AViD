@@ -1,0 +1,25 @@
+{
+  "archive_sha256": "a03d6f8f4443d0761d02dbf3875b9c19272bcbaba28cd1bcb0370fccfb61e90a",
+  "sha256_inventory": true,
+  "byte_identical_artifacts": [
+    "corpus.jsonl",
+    "before.jsonl",
+    "cases.json",
+    "complete_programs.json",
+    "duplicate_diagnostic.json",
+    "legacy_regression.json"
+  ],
+  "summaries_equal_except_elapsed": true,
+  "originals": 2375,
+  "pilot_cases": 70,
+  "all_saved_messages_replayed": true,
+  "focused_tests": 26,
+  "full_workspace_tests": 564,
+  "native_wind_mixed": {
+    "supported": 0.1350851717672993,
+    "refuted": 0.6226463974646923,
+    "unknown": 0.24226843076800803
+  },
+  "model_calls": 0,
+  "extraction": "/tmp/avid-amr-correction-t3fogfm8"
+}

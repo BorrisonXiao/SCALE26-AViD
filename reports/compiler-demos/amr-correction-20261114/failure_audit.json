@@ -1,0 +1,620 @@
+{
+  "followup": [
+    {
+      "claim_id": "TQEmEycTI0RQ_823",
+      "text": "2021 map shows more Bloc Québécois seats (blue) — not as much red.",
+      "category": "source meaning and edit mechanics",
+      "analysis": "The cached graph changes2021 into2002/February and changes the party name. Final edits insert empty name strings and repeat declarations; the comparative meaning remains unestablished.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1570",
+      "text": "SCOTUS is skeptical towards the administration's tendency to call everything an attack/emergency/incursion/rebellion.",
+      "category": "source normalization and clause scope",
+      "analysis": "Expanding SCOTUS to the full court name is a plausible standard alias, so the literal-name guard can be overstrict here. Skepticism over a naming tendency still needs clause scope; final edits do not resolve it.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1312",
+      "text": "Scientists work with complex manufacturing tools to build the spacecraft.",
+      "category": "purpose scope and edit mechanics",
+      "analysis": "Building the spacecraft is a purpose of tool use. The graph puts it under work ARG1; repeated edits change declarations/roles without establishing the purpose reading.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TLO3smKI67PM_580",
+      "text": "It's almost the Phillies fan son's birthday.",
+      "category": "wrong name retained",
+      "analysis": "Phillies remains Phillipines. The last patch recopies early triples rather than correcting the named team.",
+      "final_error": [
+        {
+          "code": "name_source_mismatch",
+          "node": "n",
+          "value": "Phillipines",
+          "reason": "A generated name is absent from the original source."
+        },
+        {
+          "code": "source_name_omission",
+          "token_id": 5,
+          "text": "Phillies",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "Tg0UxWYuPeJ0_357",
+      "text": "People are circled around the robot waiting to watch what it can do.",
+      "category": "unsupported embedded clause",
+      "analysis": "The waiting/watch/possible-action nesting is useful, but wait-01 ARG2 watch-01 has no declared scope policy. Recopying the same triples cannot resolve that compiler restriction.",
+      "final_error": [
+        {
+          "code": "unhandled_complement",
+          "reason": "No scope policy for wait-01 :ARG2 watch-01"
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_497",
+      "text": "\"Mexico City security chief: 20 arrested for theft and assault.\"",
+      "category": "attribution and argument attachment",
+      "analysis": "The security chief is attached as an arrest argument, not as the source of a report. Theft/assault and the20people need a corrected attribution structure, not just valid JSON.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2029",
+      "text": "Shi Yongxin led warrior monks on tours to perform Kung Fu abroad.",
+      "category": "purpose and semantic type",
+      "analysis": "The graph keeps the leader and monks but types Kung Fu as a work of art and places performance inside tour ARG1. The source describes a performance purpose; index mistakes leave this unresolved.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2166",
+      "text": "The video takes place on a large, open paved pier or terminal area.",
+      "category": "depiction and alternatives",
+      "analysis": "The graph locates a video object at a pier/terminal alternative. The intended scene/depicition reading and modifier scope remain unresolved; final edits duplicate existing triples.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1989",
+      "text": "Rinderknecht's phone signal was attested seconds after the flames erupted.",
+      "category": "value normalization and unsupported structure",
+      "analysis": "Multiple one-second units can be a legitimate normalization of unspecified seconds. A strict no-new-number guard can therefore overreject; the attestation/time structure still needs review. Do not call every flagged1 an invented event count.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "T1JQ-aG78Zuc_791",
+      "text": "The tram driver accidentally requested a switch to go right at an intersection, even though the tram needs to go straight.",
+      "category": "request, requirement and property types",
+      "analysis": "Accidental request and need-to-go-straight must stay separate from achieved motion. Final edits mostly repeat the need/go clauses. Directional adjective predicates also need a property-versus-clause treatment.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TgPh_fzHTCm4_1471",
+      "text": "The knots of flow ramped up overnight on the 3rd and into the 4th from 10-20 knots to 25-30 knots across central Texas.",
+      "category": "measurement and interval binding",
+      "analysis": "The ranges survive as modifiers of knot objects, rather than explicit speed measurements. Final edits also attach the25–30range to the wrong range node. Values alone do not establish the right bindings.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1821",
+      "text": "Closer up footage of government building on fire with spectators watching and filming.",
+      "category": "property predicate treated as clause",
+      "analysis": "Closer is a degree/property of footage, but have-degree-91 ARG2 close-10 is treated as an unsupported clause. This is a compiler typing problem even before any model correction.",
+      "final_error": [
+        {
+          "code": "unhandled_complement",
+          "reason": "No scope policy for have-degree-91 :ARG2 close-10"
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TjHepwuhkYFA_1041",
+      "text": "The area that experienced violent shaking is heavily populated.",
+      "category": "nominal event alignment and edit mechanics",
+      "analysis": "The area and shaking are present. Nominal shaking must align to shake-01, and experience must compose with that content. Shifted/repeated indexed replacements do not establish a corrected program.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_12",
+      "text": "Commenters ask if anyone is missing, it's unclear if there are.",
+      "category": "question scope and negation",
+      "analysis": "Missing-person content occurs under a question and uncertainty, not an assertion of a missing person. The final patch edits one index twice and adds extra negation; it does not establish the intended scope.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "One original triple index was edited twice."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_172",
+      "text": "The goal of the recovery operation was to keep the port open.",
+      "category": "purpose reification and state",
+      "analysis": "Have-purpose-91 must link an operation to keeping the port open, without asserting achievement. The current compiler refuses its event arguments; the model mostly recopies them.",
+      "final_error": [
+        {
+          "code": "unhandled_complement",
+          "reason": "No scope policy for have-purpose-91 :ARG1 operate-01"
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "T2EE72iNELEs_181",
+      "text": "Staship Flight test, T-13 to liftoff.",
+      "category": "countdown and nominal event type",
+      "analysis": "T-13 is a countdown, but the graph invents an aircraft type. Flight/test nominal structure also triggers an unsupported complement. The model keeps the same graph.",
+      "final_error": [
+        {
+          "code": "unhandled_complement",
+          "reason": "No scope policy for test-01 :ARG1 fly-01"
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TzF9M4kZ3Pys_284",
+      "text": "This is what it is like driving into a haboob.",
+      "category": "wrong lexical meaning and unresolved reference",
+      "analysis": "Haboob becomes the invented car name Hambob. This is also a deictic fragment, so a fully resolved specific driving event is not supplied by the text alone.",
+      "final_error": [
+        {
+          "code": "name_source_mismatch",
+          "node": "n",
+          "value": "Hambob",
+          "reason": "A generated name is absent from the original source."
+        },
+        {
+          "code": "unhandled_complement",
+          "reason": "No scope policy for resemble-01 :ARG2 drive-01"
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TMrQshDs8aH0_750",
+      "text": "There are multiple additional police officers in the immediate vicinity of the police van helping and clearing space.",
+      "category": "shared activities and scope",
+      "analysis": "Police participants and vicinity remain. Helping/clearing may be separate or jointly interpreted activities; the graph embeds clear under help. Final additions do not settle the reading.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_662",
+      "text": "Sound of fireworks exploding.",
+      "category": "audio source scope",
+      "analysis": "The parser finds sound, an explosion and fireworks, but the compiler lacks a rule identifying the explosion as audible content. The model patches then add unrelated ownership/location links.",
+      "final_error": [
+        {
+          "code": "unhandled_complement",
+          "reason": "No scope policy for sound-01 :ARG1 explode-01"
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_962",
+      "text": "Carney may face difficulties: positioned slightly right of Trudeau while NDP is left of Liberals; outcome depends on NDP's new leader.",
+      "category": "political meaning and multiple clauses",
+      "analysis": "Political left/right relations, possibility and outcome dependence need distinct scope. The graph also treats Liberals as liberal people; final edits add empty names and duplicate triples.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1645",
+      "text": "A pause on the ruling will bring back the pre-ruling conditions (inference: allow tariffs to resume as before).",
+      "category": "prediction and metalinguistic inference",
+      "analysis": "The predicted return and inferred permission to resume tariffs must not become current events. The patch adds an undeclared inference target and duplicates role links.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1726",
+      "text": "Shows picture of what the voter information service page looks like: can find electoral district, look at the map, profile, etc. with a place you can type your postal code and search ('Go') or a link you can click to find an electoral district without a postal code.",
+      "category": "interface capability and depiction",
+      "analysis": "The claim describes a page picture and capabilities/alternatives, not actions actually performed. The graph mixes those contexts; repeated indexed edits do not repair that structure.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_976",
+      "text": "Riding-level result (Peterborough): Liberal candidate Emma Harrison is leading locally with 2740 votes reported, followed by Conservative Michelle Ferreri with 1932 (increasing) and NDP candidate Heather Ray with 137.",
+      "category": "reported counts and lexical meaning",
+      "analysis": "Candidate/party/vote bindings and reported ranking are required. The AMR also turns riding into a ride predicate. The patch does not establish correct reported-count relationships.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_948",
+      "text": "With 96% counted: Liberals projected 48.1% of seats = 166 seats; Conservatives 42.9% = 146 seats (out of 343 total).",
+      "category": "seat type and projection",
+      "analysis": "Parliamentary seats become seated people and Liberal people. Counts remain but party/count/projection bindings are wrong. The patch recopies early triples instead of resolving those meanings.",
+      "final_error": [
+        {
+          "code": "edit_error",
+          "reason": "Repeated node declarations or repeated triples."
+        }
+      ],
+      "reviewer": "Implementing assistant; all24follow-up final graphs/edits inspected. Failure diagnosis, not independent gold or a semantic-accuracy score."
+    }
+  ],
+  "generation_stages": {
+    "first": {
+      "count": 41,
+      "codes": {
+        "edit_error": 34,
+        "unhandled_complement": 5,
+        "coordination_scope": 1,
+        "name_source_mismatch": 1
+      },
+      "reasons": [
+        [
+          "Repeated node declarations or repeated triples.",
+          30
+        ],
+        [
+          "Undeclared target node: ",
+          3
+        ],
+        [
+          "No scope policy for refer-01 :ARG1 expel-01",
+          1
+        ],
+        [
+          "No scope policy for show-01 :ARG1 talk-01",
+          1
+        ],
+        [
+          "An annotated coordination needs explicit scope.",
+          1
+        ],
+        [
+          "A generated name is absent from the original source.",
+          1
+        ],
+        [
+          "No scope policy for have-degree-91 :ARG2 close-10",
+          1
+        ],
+        [
+          "Undeclared source node or unsupported AMR role.",
+          1
+        ],
+        [
+          "No scope policy for have-purpose-91 :ARG1 operate-01",
+          1
+        ],
+        [
+          "No scope policy for test-01 :ARG1 fly-01",
+          1
+        ]
+      ]
+    },
+    "feedback_1": {
+      "count": 41,
+      "codes": {
+        "edit_error": 31,
+        "unhandled_complement": 7,
+        "name_source_mismatch": 3
+      },
+      "reasons": [
+        [
+          "Repeated node declarations or repeated triples.",
+          26
+        ],
+        [
+          "Undeclared target node: ",
+          3
+        ],
+        [
+          "A generated name is absent from the original source.",
+          3
+        ],
+        [
+          "No scope policy for refer-01 :ARG1 expel-01",
+          1
+        ],
+        [
+          "No scope policy for show-01 :ARG1 talk-01",
+          1
+        ],
+        [
+          "No scope policy for wait-01 :ARG2 watch-01",
+          1
+        ],
+        [
+          "No scope policy for have-degree-91 :ARG2 close-10",
+          1
+        ],
+        [
+          "No scope policy for experience-01 :ARG1 shake-01",
+          1
+        ],
+        [
+          "No scope policy for have-purpose-91 :ARG1 operate-01",
+          1
+        ],
+        [
+          "No scope policy for test-01 :ARG1 fly-01",
+          1
+        ],
+        [
+          "Undeclared source node or unsupported AMR role.",
+          1
+        ],
+        [
+          "Undeclared target node: imperative",
+          1
+        ]
+      ]
+    },
+    "feedback_2": {
+      "count": 41,
+      "codes": {
+        "edit_error": 32,
+        "unhandled_complement": 6,
+        "name_source_mismatch": 3
+      },
+      "reasons": [
+        [
+          "Repeated node declarations or repeated triples.",
+          28
+        ],
+        [
+          "Undeclared target node: ",
+          3
+        ],
+        [
+          "A generated name is absent from the original source.",
+          3
+        ],
+        [
+          "No scope policy for refer-01 :ARG1 expel-01",
+          1
+        ],
+        [
+          "No scope policy for wait-01 :ARG2 watch-01",
+          1
+        ],
+        [
+          "No scope policy for have-degree-91 :ARG2 close-10",
+          1
+        ],
+        [
+          "One original triple index was edited twice.",
+          1
+        ],
+        [
+          "No scope policy for have-purpose-91 :ARG1 operate-01",
+          1
+        ],
+        [
+          "No scope policy for test-01 :ARG1 fly-01",
+          1
+        ],
+        [
+          "No scope policy for sound-01 :ARG1 explode-01",
+          1
+        ]
+      ]
+    },
+    "generic_1": {
+      "count": 41,
+      "codes": {
+        "edit_error": 31,
+        "unhandled_complement": 7,
+        "coordination_scope": 1,
+        "name_source_mismatch": 2
+      },
+      "reasons": [
+        [
+          "Repeated node declarations or repeated triples.",
+          25
+        ],
+        [
+          "Undeclared target node: ",
+          3
+        ],
+        [
+          "A generated name is absent from the original source.",
+          2
+        ],
+        [
+          "No scope policy for refer-01 :ARG1 expel-01",
+          1
+        ],
+        [
+          "No scope policy for show-01 :ARG1 talk-01",
+          1
+        ],
+        [
+          "An annotated coordination needs explicit scope.",
+          1
+        ],
+        [
+          "No scope policy for wait-01 :ARG2 watch-01",
+          1
+        ],
+        [
+          "No scope policy for have-degree-91 :ARG2 close-10",
+          1
+        ],
+        [
+          "One original triple index was edited twice.",
+          1
+        ],
+        [
+          "No scope policy for have-purpose-91 :ARG1 operate-01",
+          1
+        ],
+        [
+          "No scope policy for test-01 :ARG1 fly-01",
+          1
+        ],
+        [
+          "Undeclared target node: e",
+          1
+        ],
+        [
+          "No scope policy for sound-01 :ARG1 explode-01",
+          1
+        ],
+        [
+          "Undeclared target node: imperative",
+          1
+        ]
+      ]
+    },
+    "generic_2": {
+      "count": 41,
+      "codes": {
+        "edit_error": 30,
+        "unhandled_complement": 7,
+        "coordination_scope": 1,
+        "name_source_mismatch": 3
+      },
+      "reasons": [
+        [
+          "Repeated node declarations or repeated triples.",
+          26
+        ],
+        [
+          "Undeclared target node: ",
+          3
+        ],
+        [
+          "A generated name is absent from the original source.",
+          3
+        ],
+        [
+          "No scope policy for refer-01 :ARG1 expel-01",
+          1
+        ],
+        [
+          "No scope policy for show-01 :ARG1 talk-01",
+          1
+        ],
+        [
+          "An annotated coordination needs explicit scope.",
+          1
+        ],
+        [
+          "No scope policy for wait-01 :ARG2 watch-01",
+          1
+        ],
+        [
+          "No scope policy for have-degree-91 :ARG2 close-10",
+          1
+        ],
+        [
+          "No scope policy for have-purpose-91 :ARG1 operate-01",
+          1
+        ],
+        [
+          "No scope policy for test-01 :ARG1 fly-01",
+          1
+        ],
+        [
+          "No scope policy for sound-01 :ARG1 explode-01",
+          1
+        ],
+        [
+          "Undeclared target node: imperative",
+          1
+        ]
+      ]
+    }
+  },
+  "total_requests": 205,
+  "duplicate_declaration_or_triple_attempts": 135,
+  "interpretation": "This indexed-edit implementation fails mechanically and the compiler fragment remains restrictive. Do not infer that all LLM graph correction is impossible. Literal source guards can also overreject legitimate normalization."
+}

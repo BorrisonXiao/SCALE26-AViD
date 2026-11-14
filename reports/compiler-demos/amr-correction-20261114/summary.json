@@ -1,0 +1,220 @@
+{
+  "corpus": {
+    "total": 2375,
+    "graphs_converted": 1589,
+    "checks_pass": 1397,
+    "source_only_previous_pass": 1406,
+    "new_semantic_flags_on_source_pass": 9,
+    "semantic_issue_counts": {
+      "media_location": 2,
+      "adjective_argument": 5,
+      "time_cardinality": 2,
+      "media_time_attachment": 1,
+      "result_state_agent": 1
+    },
+    "conversion_refusals": {
+      "unhandled_complement": 631,
+      "event_scope_reentry": 17,
+      "sentence_mode": 14,
+      "polarity_value": 4,
+      "negative_argument_scope": 37,
+      "coordination_scope": 46,
+      "coordination_size": 5,
+      "duplicate_roles": 20,
+      "coordination_reentry": 3,
+      "media_modifier_scope": 3,
+      "untranslated_nodes": 5,
+      "unresolved_reference": 1
+    },
+    "seconds": 25.2423379663378,
+    "retained_pool": 1981,
+    "excluded": 394,
+    "promotions": 0,
+    "policy": "One fixed cached AMR frontend; new checks only. Every generated program is byte-identical to the preceding refined compiler. Checks are not semantic accuracy; no per-claim parser selection."
+  },
+  "conditions": {
+    "before": {
+      "all": {
+        "total": 70,
+        "automatic_pass": 29,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "numeric_source_mismatch": 2,
+          "source_name_omission": 3,
+          "unhandled_complement": 18,
+          "polarity_value": 2,
+          "location_value_type": 1,
+          "adjective_argument": 1,
+          "media_modifier_scope": 1,
+          "negative_argument_scope": 1,
+          "coordination_scope": 2,
+          "name_source_mismatch": 5,
+          "quote_source_alignment": 1,
+          "duplicate_roles": 1,
+          "coordination_reentry": 1,
+          "measurement_binding": 1,
+          "sentence_mode": 1
+        }
+      },
+      "development": {
+        "total": 46,
+        "automatic_pass": 29,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "numeric_source_mismatch": 1,
+          "source_name_omission": 1,
+          "unhandled_complement": 6,
+          "polarity_value": 1,
+          "location_value_type": 1,
+          "adjective_argument": 1,
+          "media_modifier_scope": 1,
+          "negative_argument_scope": 1,
+          "coordination_scope": 2,
+          "name_source_mismatch": 1,
+          "quote_source_alignment": 1
+        }
+      },
+      "followup": {
+        "total": 24,
+        "automatic_pass": 0,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "name_source_mismatch": 4,
+          "unhandled_complement": 12,
+          "duplicate_roles": 1,
+          "coordination_reentry": 1,
+          "numeric_source_mismatch": 1,
+          "measurement_binding": 1,
+          "polarity_value": 1,
+          "source_name_omission": 2,
+          "sentence_mode": 1
+        }
+      }
+    },
+    "first": {
+      "all": {
+        "total": 70,
+        "automatic_pass": 29,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "edit_error": 34,
+          "unhandled_complement": 5,
+          "coordination_scope": 1,
+          "name_source_mismatch": 1
+        }
+      },
+      "development": {
+        "total": 46,
+        "automatic_pass": 29,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "edit_error": 13,
+          "unhandled_complement": 2,
+          "coordination_scope": 1,
+          "name_source_mismatch": 1
+        }
+      },
+      "followup": {
+        "total": 24,
+        "automatic_pass": 0,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "edit_error": 21,
+          "unhandled_complement": 3
+        }
+      }
+    },
+    "feedback": {
+      "all": {
+        "total": 70,
+        "automatic_pass": 29,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "edit_error": 32,
+          "unhandled_complement": 6,
+          "name_source_mismatch": 3
+        }
+      },
+      "development": {
+        "total": 46,
+        "automatic_pass": 29,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "edit_error": 15,
+          "unhandled_complement": 1,
+          "name_source_mismatch": 1
+        }
+      },
+      "followup": {
+        "total": 24,
+        "automatic_pass": 0,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "edit_error": 17,
+          "name_source_mismatch": 2,
+          "unhandled_complement": 5
+        }
+      }
+    },
+    "generic": {
+      "all": {
+        "total": 70,
+        "automatic_pass": 29,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "edit_error": 30,
+          "unhandled_complement": 7,
+          "coordination_scope": 1,
+          "name_source_mismatch": 3
+        }
+      },
+      "development": {
+        "total": 46,
+        "automatic_pass": 29,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "edit_error": 13,
+          "unhandled_complement": 2,
+          "coordination_scope": 1,
+          "name_source_mismatch": 1
+        }
+      },
+      "followup": {
+        "total": 24,
+        "automatic_pass": 0,
+        "new_passes": 0,
+        "new_pass_review_counts": {},
+        "remaining": {
+          "edit_error": 17,
+          "name_source_mismatch": 2,
+          "unhandled_complement": 5
+        }
+      }
+    }
+  },
+  "unique_complete_programs": 29,
+  "complete_review_counts": {
+    "incorrect": 7,
+    "matches_reference": 9,
+    "context_needed": 3,
+    "partial": 10
+  },
+  "model_requests": 205,
+  "initial_eligible": 41,
+  "initial_skipped": 29,
+  "retained_pool": 1981,
+  "excluded": 394,
+  "promotions": 0,
+  "review_policy": "Implementing assistant only; references do not enter messages or retry triggers. Final follow-up original-text readings were frozen before outputs; same project videos, not independent gold or corpus accuracy."
+}

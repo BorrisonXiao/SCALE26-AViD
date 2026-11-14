@@ -726,16 +726,39 @@
     },
     {
       "id": 31,
-      "title": "Correct source-to-graph bindings and establish practical inference before training",
+      "title": "Test source checks, bounded AMR edits and native circuit ordering",
+      "status": "completed",
+      "items": [
+        {
+          "text": "Reran all2,375originals. Source/semantic checks flag9additional source-passing candidates; generated predicates unchanged.1,589conversions/1,397combined passes are not semantic accuracy.",
+          "done": true
+        },
+        {
+          "text": "Fixed70-case trial:29AMRpasses skip generation;41failures get205paired requests. Feedback and generic retries recover0new automatic passes. Reviewed24follow-up failure graphs/edits; no external judge.",
+          "done": true
+        },
+        {
+          "text": "Paired12-case format pilot: explicit indices reduce duplicate errors7→3after one retry, but0/12passes for both layouts.48requests; no expansion. CPU duplicate normalization gives0passes on205saved attempts.",
+          "done": true
+        },
+        {
+          "text": "Grouped categorical variables in native DeepProbLog: refined wind~0.04s, larger and gradient checks pass.564tests; unchanged default AMR/legacy outputs. All GPUs released.",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Fix general predicate/source typing and legitimate normalization",
       "status": "planned",
       "items": [
-        "Check semantic types, source arguments, result states and depiction scope; goal: catch wrong meanings beyond name/value preservation.",
-        "Test one bounded source-conditioned semantic correction on strict failures with a generic-retry control; goal: repair structure while copying source literals, without parser selection.",
-        "Profile larger categorical circuits and review another frozen sample; goal: establish reliable meanings and candidate-domain cost before confidence or relation training."
+        "Distinguish nominal events and adjective properties from clauses; add ordinary audio/source scopes. Goal: address systematic compiler restrictions before more retries.",
+        "Handle verified name aliases and unit normalization. Goal: reduce false refusals without allowing changed identities or amounts.",
+        "Rerun fixed references and all2,375claims under one chosen compiler. Goal: measure faithful gains before new generation or media-conditioned relation training."
       ]
     }
   ],
-  "intro": "Compiler remains the priority. Refined AMR:1,589/2,375 graph conversions,1,406 source-check passes; neither is semantic accuracy. Assistant review:18/60 prior cases and12/32 follow-up whole-reading matches. Final32 informed development. Retained pool stays1,981/2,375(83.41%),394 excluded. Refined19-condition wind inference still exceeds12s; training deferred.",
+  "intro": "Compiler remains the priority. Source-based checks:1,589/2,375graphs convert;1,397pass combined checks. Bounded edits0/41recoveries in205requests; separate12-case index pilot0passes in48requests. Native variable grouping resolves tested19/32/64-observation costs and preserves gradients.564tests pass; retainedpool1,981unchanged. No new media training.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -792,5 +815,6 @@
   "compiler_feedback_run": "exp/probabilistic_verification/compiler_feedback_20261112",
   "compiler_structural_run": "exp/probabilistic_verification/compiler_structural_20261113",
   "amr_composition_run": "exp/probabilistic_verification/amr_composition_20261114",
-  "amr_refinement_run": "exp/probabilistic_verification/amr_refinement_20261114"
+  "amr_refinement_run": "exp/probabilistic_verification/amr_refinement_20261114",
+  "amr_correction_run": "exp/probabilistic_verification/amr_correction_20261114"
 }

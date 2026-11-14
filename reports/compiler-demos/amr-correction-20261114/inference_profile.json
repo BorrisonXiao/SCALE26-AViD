@@ -1,0 +1,508 @@
+{
+  "rows": [
+    {
+      "status": "time_limit",
+      "limit_seconds": 12,
+      "stdout": null,
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "case": "Txf2EdqOg1SQ_2176",
+      "mode": "unknown",
+      "entity_domain": 1,
+      "ordered": false,
+      "process_seconds": 12.098562132567167
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "Txf2EdqOg1SQ_2176",
+        "mode": "unknown",
+        "ordered": true,
+        "entity_domain": 1,
+        "observations": 19,
+        "program_sha256": "2da5a4a1e30b4f2fc9b0cffccbd2ff7f0eab95fcc9fc3cd06e813e6b60585292",
+        "setup_seconds": 1.2978022210299969,
+        "first_solve_seconds": 0.042993756011128426,
+        "cached_seconds": 0.008406911045312881,
+        "ground_seconds": 0.021719295531511307,
+        "compile_seconds": 0.008164610713720322,
+        "evaluate_seconds": 0.013029813766479492,
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "expected": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "gradient_norm": null,
+        "proof_nodes": 82
+      },
+      "stdout": "Caching ACs\n{\"case\": \"Txf2EdqOg1SQ_2176\", \"mode\": \"unknown\", \"ordered\": true, \"entity_domain\": 1, \"observations\": 19, \"program_sha256\": \"2da5a4a1e30b4f2fc9b0cffccbd2ff7f0eab95fcc9fc3cd06e813e6b60585292\", \"setup_seconds\": 1.2978022210299969, \"first_solve_seconds\": 0.042993756011128426, \"cached_seconds\": 0.008406911045312881, \"ground_seconds\": 0.021719295531511307, \"compile_seconds\": 0.008164610713720322, \"evaluate_seconds\": 0.013029813766479492, \"distribution\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"expected\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"gradient_norm\": null, \"proof_nodes\": 82}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "Txf2EdqOg1SQ_2176",
+      "mode": "unknown",
+      "entity_domain": 1,
+      "ordered": true,
+      "process_seconds": 5.449752487242222
+    },
+    {
+      "status": "time_limit",
+      "limit_seconds": 12,
+      "stdout": null,
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "case": "Txf2EdqOg1SQ_2176",
+      "mode": "mixed",
+      "entity_domain": 1,
+      "ordered": false,
+      "process_seconds": 12.09650512598455
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "Txf2EdqOg1SQ_2176",
+        "mode": "mixed",
+        "ordered": true,
+        "entity_domain": 1,
+        "observations": 19,
+        "program_sha256": "29e5554951359a0f1b59afa48538915c703ff26b4a0ff89a197118cb7e614477",
+        "setup_seconds": 1.1529448088258505,
+        "first_solve_seconds": 0.04372990503907204,
+        "cached_seconds": 0.008720103651285172,
+        "ground_seconds": 0.021546127274632454,
+        "compile_seconds": 0.008653335273265839,
+        "evaluate_seconds": 0.01347208023071289,
+        "distribution": {
+          "supported": 0.1350851717672993,
+          "refuted": 0.6226463974646923,
+          "unknown": 0.24226843076800803
+        },
+        "expected": {
+          "supported": 0.13508517176729928,
+          "refuted": 0.6226463974646927,
+          "unknown": 0.24226843076800797
+        },
+        "gradient_norm": null,
+        "proof_nodes": 82
+      },
+      "stdout": "Caching ACs\n{\"case\": \"Txf2EdqOg1SQ_2176\", \"mode\": \"mixed\", \"ordered\": true, \"entity_domain\": 1, \"observations\": 19, \"program_sha256\": \"29e5554951359a0f1b59afa48538915c703ff26b4a0ff89a197118cb7e614477\", \"setup_seconds\": 1.1529448088258505, \"first_solve_seconds\": 0.04372990503907204, \"cached_seconds\": 0.008720103651285172, \"ground_seconds\": 0.021546127274632454, \"compile_seconds\": 0.008653335273265839, \"evaluate_seconds\": 0.01347208023071289, \"distribution\": {\"supported\": 0.1350851717672993, \"refuted\": 0.6226463974646923, \"unknown\": 0.24226843076800803}, \"expected\": {\"supported\": 0.13508517176729928, \"refuted\": 0.6226463974646927, \"unknown\": 0.24226843076800797}, \"gradient_norm\": null, \"proof_nodes\": 82}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "Txf2EdqOg1SQ_2176",
+      "mode": "mixed",
+      "entity_domain": 1,
+      "ordered": true,
+      "process_seconds": 4.970470070838928
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "Tg0UxWYuPeJ0_323",
+        "mode": "mixed",
+        "ordered": false,
+        "entity_domain": 1,
+        "observations": 8,
+        "program_sha256": "06972d7b7753e5e2793347a7edda60f34e548481144105e51a0b2c7cd6bbc596",
+        "setup_seconds": 1.320435255765915,
+        "first_solve_seconds": 0.030018385499715805,
+        "cached_seconds": 0.013063592836260796,
+        "ground_seconds": 0.009330511093139648,
+        "compile_seconds": 0.004221200942993164,
+        "evaluate_seconds": 0.016396284103393555,
+        "distribution": {
+          "supported": 0.4304672100000003,
+          "refuted": 0.33657956871093764,
+          "unknown": 0.23295322128906232
+        },
+        "expected": {
+          "supported": 0.4304672100000001,
+          "refuted": 0.33657956871093775,
+          "unknown": 0.23295322128906215
+        },
+        "gradient_norm": null,
+        "proof_nodes": 33
+      },
+      "stdout": "Caching ACs\n{\"case\": \"Tg0UxWYuPeJ0_323\", \"mode\": \"mixed\", \"ordered\": false, \"entity_domain\": 1, \"observations\": 8, \"program_sha256\": \"06972d7b7753e5e2793347a7edda60f34e548481144105e51a0b2c7cd6bbc596\", \"setup_seconds\": 1.320435255765915, \"first_solve_seconds\": 0.030018385499715805, \"cached_seconds\": 0.013063592836260796, \"ground_seconds\": 0.009330511093139648, \"compile_seconds\": 0.004221200942993164, \"evaluate_seconds\": 0.016396284103393555, \"distribution\": {\"supported\": 0.4304672100000003, \"refuted\": 0.33657956871093764, \"unknown\": 0.23295322128906232}, \"expected\": {\"supported\": 0.4304672100000001, \"refuted\": 0.33657956871093775, \"unknown\": 0.23295322128906215}, \"gradient_norm\": null, \"proof_nodes\": 33}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "Tg0UxWYuPeJ0_323",
+      "mode": "mixed",
+      "entity_domain": 1,
+      "ordered": false,
+      "process_seconds": 5.449871534481645
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "Tg0UxWYuPeJ0_323",
+        "mode": "mixed",
+        "ordered": true,
+        "entity_domain": 1,
+        "observations": 8,
+        "program_sha256": "06972d7b7753e5e2793347a7edda60f34e548481144105e51a0b2c7cd6bbc596",
+        "setup_seconds": 1.2460326310247183,
+        "first_solve_seconds": 0.01595417410135269,
+        "cached_seconds": 0.0024375729262828827,
+        "ground_seconds": 0.008977385237812996,
+        "compile_seconds": 0.0032246429473161697,
+        "evaluate_seconds": 0.0037009716033935547,
+        "distribution": {
+          "supported": 0.43046721000000016,
+          "refuted": 0.3365795687109375,
+          "unknown": 0.23295322128906223
+        },
+        "expected": {
+          "supported": 0.4304672100000001,
+          "refuted": 0.33657956871093775,
+          "unknown": 0.23295322128906215
+        },
+        "gradient_norm": null,
+        "proof_nodes": 33
+      },
+      "stdout": "Caching ACs\n{\"case\": \"Tg0UxWYuPeJ0_323\", \"mode\": \"mixed\", \"ordered\": true, \"entity_domain\": 1, \"observations\": 8, \"program_sha256\": \"06972d7b7753e5e2793347a7edda60f34e548481144105e51a0b2c7cd6bbc596\", \"setup_seconds\": 1.2460326310247183, \"first_solve_seconds\": 0.01595417410135269, \"cached_seconds\": 0.0024375729262828827, \"ground_seconds\": 0.008977385237812996, \"compile_seconds\": 0.0032246429473161697, \"evaluate_seconds\": 0.0037009716033935547, \"distribution\": {\"supported\": 0.43046721000000016, \"refuted\": 0.3365795687109375, \"unknown\": 0.23295322128906223}, \"expected\": {\"supported\": 0.4304672100000001, \"refuted\": 0.33657956871093775, \"unknown\": 0.23295322128906215}, \"gradient_norm\": null, \"proof_nodes\": 33}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "Tg0UxWYuPeJ0_323",
+      "mode": "mixed",
+      "entity_domain": 1,
+      "ordered": true,
+      "process_seconds": 5.173479685559869
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "T1JQ-aG78Zuc_796",
+        "mode": "mixed",
+        "ordered": false,
+        "entity_domain": 1,
+        "observations": 11,
+        "program_sha256": "dddd7e68522bb6f577b43088c28a7fe131ff2f5ca8b12f8e256e90376dfbf94e",
+        "setup_seconds": 1.2634809650480747,
+        "first_solve_seconds": 0.12278468906879425,
+        "cached_seconds": 0.07931572012603283,
+        "ground_seconds": 0.01420140266418457,
+        "compile_seconds": 0.01233816146850586,
+        "evaluate_seconds": 0.0961906909942627,
+        "distribution": {
+          "supported": 0.0887210855943753,
+          "refuted": 0.7598418038733518,
+          "unknown": 0.15143711053226544
+        },
+        "expected": null,
+        "gradient_norm": null,
+        "proof_nodes": 48
+      },
+      "stdout": "Caching ACs\n{\"case\": \"T1JQ-aG78Zuc_796\", \"mode\": \"mixed\", \"ordered\": false, \"entity_domain\": 1, \"observations\": 11, \"program_sha256\": \"dddd7e68522bb6f577b43088c28a7fe131ff2f5ca8b12f8e256e90376dfbf94e\", \"setup_seconds\": 1.2634809650480747, \"first_solve_seconds\": 0.12278468906879425, \"cached_seconds\": 0.07931572012603283, \"ground_seconds\": 0.01420140266418457, \"compile_seconds\": 0.01233816146850586, \"evaluate_seconds\": 0.0961906909942627, \"distribution\": {\"supported\": 0.0887210855943753, \"refuted\": 0.7598418038733518, \"unknown\": 0.15143711053226544}, \"expected\": null, \"gradient_norm\": null, \"proof_nodes\": 48}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "T1JQ-aG78Zuc_796",
+      "mode": "mixed",
+      "entity_domain": 1,
+      "ordered": false,
+      "process_seconds": 5.362020876258612
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "T1JQ-aG78Zuc_796",
+        "mode": "mixed",
+        "ordered": true,
+        "entity_domain": 1,
+        "observations": 11,
+        "program_sha256": "dddd7e68522bb6f577b43088c28a7fe131ff2f5ca8b12f8e256e90376dfbf94e",
+        "setup_seconds": 1.1472705602645874,
+        "first_solve_seconds": 0.02735837921500206,
+        "cached_seconds": 0.0056016575545072556,
+        "ground_seconds": 0.0137594323605299,
+        "compile_seconds": 0.0047423820942640305,
+        "evaluate_seconds": 0.008802413940429688,
+        "distribution": {
+          "supported": 0.08872108559437503,
+          "refuted": 0.7598418038733594,
+          "unknown": 0.15143711053226538
+        },
+        "expected": null,
+        "gradient_norm": null,
+        "proof_nodes": 48
+      },
+      "stdout": "Caching ACs\n{\"case\": \"T1JQ-aG78Zuc_796\", \"mode\": \"mixed\", \"ordered\": true, \"entity_domain\": 1, \"observations\": 11, \"program_sha256\": \"dddd7e68522bb6f577b43088c28a7fe131ff2f5ca8b12f8e256e90376dfbf94e\", \"setup_seconds\": 1.1472705602645874, \"first_solve_seconds\": 0.02735837921500206, \"cached_seconds\": 0.0056016575545072556, \"ground_seconds\": 0.0137594323605299, \"compile_seconds\": 0.0047423820942640305, \"evaluate_seconds\": 0.008802413940429688, \"distribution\": {\"supported\": 0.08872108559437503, \"refuted\": 0.7598418038733594, \"unknown\": 0.15143711053226538}, \"expected\": null, \"gradient_norm\": null, \"proof_nodes\": 48}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "T1JQ-aG78Zuc_796",
+      "mode": "mixed",
+      "entity_domain": 1,
+      "ordered": true,
+      "process_seconds": 5.050693903118372
+    },
+    {
+      "status": "time_limit",
+      "limit_seconds": 12,
+      "stdout": null,
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "case": "Txf2EdqOg1SQ_2176",
+      "mode": "unknown",
+      "entity_domain": 2,
+      "ordered": false,
+      "process_seconds": 12.235649978742003
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "Txf2EdqOg1SQ_2176",
+        "mode": "unknown",
+        "ordered": true,
+        "entity_domain": 2,
+        "observations": 32,
+        "program_sha256": "e10d75e9ddf89f80d6495ea1e0760476077a750ee9f67c10e3233c83991f23e6",
+        "setup_seconds": 1.4053707141429186,
+        "first_solve_seconds": 0.263188973069191,
+        "cached_seconds": 0.03765418939292431,
+        "ground_seconds": 0.043528612703084946,
+        "compile_seconds": 0.06218930333852768,
+        "evaluate_seconds": 0.1573927402496338,
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "expected": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "gradient_norm": null,
+        "proof_nodes": 165
+      },
+      "stdout": "Caching ACs\n{\"case\": \"Txf2EdqOg1SQ_2176\", \"mode\": \"unknown\", \"ordered\": true, \"entity_domain\": 2, \"observations\": 32, \"program_sha256\": \"e10d75e9ddf89f80d6495ea1e0760476077a750ee9f67c10e3233c83991f23e6\", \"setup_seconds\": 1.4053707141429186, \"first_solve_seconds\": 0.263188973069191, \"cached_seconds\": 0.03765418939292431, \"ground_seconds\": 0.043528612703084946, \"compile_seconds\": 0.06218930333852768, \"evaluate_seconds\": 0.1573927402496338, \"distribution\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"expected\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"gradient_norm\": null, \"proof_nodes\": 165}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "Txf2EdqOg1SQ_2176",
+      "mode": "unknown",
+      "entity_domain": 2,
+      "ordered": true,
+      "process_seconds": 6.028928522020578
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "Tg0UxWYuPeJ0_323",
+        "mode": "unknown",
+        "ordered": false,
+        "entity_domain": 2,
+        "observations": 12,
+        "program_sha256": "a2261c2170d0249edad18a0da531d0454490a37b95df101499df498acb508614",
+        "setup_seconds": 1.188657484948635,
+        "first_solve_seconds": 0.17883988097310066,
+        "cached_seconds": 0.12324561551213264,
+        "ground_seconds": 0.017322778701782227,
+        "compile_seconds": 0.0138092041015625,
+        "evaluate_seconds": 0.14764904975891113,
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "expected": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "gradient_norm": null,
+        "proof_nodes": 63
+      },
+      "stdout": "Caching ACs\n{\"case\": \"Tg0UxWYuPeJ0_323\", \"mode\": \"unknown\", \"ordered\": false, \"entity_domain\": 2, \"observations\": 12, \"program_sha256\": \"a2261c2170d0249edad18a0da531d0454490a37b95df101499df498acb508614\", \"setup_seconds\": 1.188657484948635, \"first_solve_seconds\": 0.17883988097310066, \"cached_seconds\": 0.12324561551213264, \"ground_seconds\": 0.017322778701782227, \"compile_seconds\": 0.0138092041015625, \"evaluate_seconds\": 0.14764904975891113, \"distribution\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"expected\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"gradient_norm\": null, \"proof_nodes\": 63}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "Tg0UxWYuPeJ0_323",
+      "mode": "unknown",
+      "entity_domain": 2,
+      "ordered": false,
+      "process_seconds": 5.225713197141886
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "Tg0UxWYuPeJ0_323",
+        "mode": "unknown",
+        "ordered": true,
+        "entity_domain": 2,
+        "observations": 12,
+        "program_sha256": "a2261c2170d0249edad18a0da531d0454490a37b95df101499df498acb508614",
+        "setup_seconds": 1.1739446800202131,
+        "first_solve_seconds": 0.03841271996498108,
+        "cached_seconds": 0.006912987679243088,
+        "ground_seconds": 0.018137359991669655,
+        "compile_seconds": 0.006219208240509033,
+        "evaluate_seconds": 0.013998746871948242,
+        "distribution": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "expected": {
+          "supported": 0.0,
+          "refuted": 0.0,
+          "unknown": 1.0
+        },
+        "gradient_norm": null,
+        "proof_nodes": 63
+      },
+      "stdout": "Caching ACs\n{\"case\": \"Tg0UxWYuPeJ0_323\", \"mode\": \"unknown\", \"ordered\": true, \"entity_domain\": 2, \"observations\": 12, \"program_sha256\": \"a2261c2170d0249edad18a0da531d0454490a37b95df101499df498acb508614\", \"setup_seconds\": 1.1739446800202131, \"first_solve_seconds\": 0.03841271996498108, \"cached_seconds\": 0.006912987679243088, \"ground_seconds\": 0.018137359991669655, \"compile_seconds\": 0.006219208240509033, \"evaluate_seconds\": 0.013998746871948242, \"distribution\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"expected\": {\"supported\": 0.0, \"refuted\": 0.0, \"unknown\": 1.0}, \"gradient_norm\": null, \"proof_nodes\": 63}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "Tg0UxWYuPeJ0_323",
+      "mode": "unknown",
+      "entity_domain": 2,
+      "ordered": true,
+      "process_seconds": 4.946925761178136
+    },
+    {
+      "status": "time_limit",
+      "limit_seconds": 12,
+      "stdout": null,
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "case": "conjunction32",
+      "mode": "mixed",
+      "entity_domain": 1,
+      "ordered": false,
+      "process_seconds": 12.283481821417809
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "conjunction32",
+        "mode": "mixed",
+        "ordered": true,
+        "entity_domain": 1,
+        "observations": 32,
+        "program_sha256": "aa514f14605d46323686fded5294a6a2776826bfe3df87728f609bea86fc842b",
+        "setup_seconds": 1.5207940358668566,
+        "first_solve_seconds": 0.06379345245659351,
+        "cached_seconds": 0.011053619906306267,
+        "ground_seconds": 0.033444926142692566,
+        "compile_seconds": 0.011644857004284859,
+        "evaluate_seconds": 0.018634319305419922,
+        "distribution": {
+          "supported": 0.03433683820292518,
+          "refuted": 0.8062885155414989,
+          "unknown": 0.1593746462555759
+        },
+        "expected": {
+          "supported": 0.03433683820292515,
+          "refuted": 0.8062885155414992,
+          "unknown": 0.1593746462555757
+        },
+        "gradient_norm": null,
+        "proof_nodes": 129
+      },
+      "stdout": "Caching ACs\n{\"case\": \"conjunction32\", \"mode\": \"mixed\", \"ordered\": true, \"entity_domain\": 1, \"observations\": 32, \"program_sha256\": \"aa514f14605d46323686fded5294a6a2776826bfe3df87728f609bea86fc842b\", \"setup_seconds\": 1.5207940358668566, \"first_solve_seconds\": 0.06379345245659351, \"cached_seconds\": 0.011053619906306267, \"ground_seconds\": 0.033444926142692566, \"compile_seconds\": 0.011644857004284859, \"evaluate_seconds\": 0.018634319305419922, \"distribution\": {\"supported\": 0.03433683820292518, \"refuted\": 0.8062885155414989, \"unknown\": 0.1593746462555759}, \"expected\": {\"supported\": 0.03433683820292515, \"refuted\": 0.8062885155414992, \"unknown\": 0.1593746462555757}, \"gradient_norm\": null, \"proof_nodes\": 129}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "conjunction32",
+      "mode": "mixed",
+      "entity_domain": 1,
+      "ordered": true,
+      "process_seconds": 4.523903487250209
+    },
+    {
+      "status": "time_limit",
+      "limit_seconds": 12,
+      "stdout": null,
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "case": "conjunction64",
+      "mode": "mixed",
+      "entity_domain": 1,
+      "ordered": false,
+      "process_seconds": 12.215639535337687
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "conjunction64",
+        "mode": "mixed",
+        "ordered": true,
+        "entity_domain": 1,
+        "observations": 64,
+        "program_sha256": "1f08e1f7e1af06cdd4c9511170dd87d8b299b3699410da80d8a0cd224aba8a64",
+        "setup_seconds": 1.7421119045466185,
+        "first_solve_seconds": 0.13248367048799992,
+        "cached_seconds": 0.023722808808088303,
+        "ground_seconds": 0.06660589389503002,
+        "compile_seconds": 0.024597447365522385,
+        "evaluate_seconds": 0.041193485260009766,
+        "distribution": {
+          "supported": 0.001179018457773862,
+          "refuted": 0.9624758607888839,
+          "unknown": 0.03634512075334225
+        },
+        "expected": {
+          "supported": 0.0011790184577738603,
+          "refuted": 0.962475860788884,
+          "unknown": 0.03634512075334216
+        },
+        "gradient_norm": null,
+        "proof_nodes": 257
+      },
+      "stdout": "Caching ACs\n{\"case\": \"conjunction64\", \"mode\": \"mixed\", \"ordered\": true, \"entity_domain\": 1, \"observations\": 64, \"program_sha256\": \"1f08e1f7e1af06cdd4c9511170dd87d8b299b3699410da80d8a0cd224aba8a64\", \"setup_seconds\": 1.7421119045466185, \"first_solve_seconds\": 0.13248367048799992, \"cached_seconds\": 0.023722808808088303, \"ground_seconds\": 0.06660589389503002, \"compile_seconds\": 0.024597447365522385, \"evaluate_seconds\": 0.041193485260009766, \"distribution\": {\"supported\": 0.001179018457773862, \"refuted\": 0.9624758607888839, \"unknown\": 0.03634512075334225}, \"expected\": {\"supported\": 0.0011790184577738603, \"refuted\": 0.962475860788884, \"unknown\": 0.03634512075334216}, \"gradient_norm\": null, \"proof_nodes\": 257}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "returncode": 0,
+      "case": "conjunction64",
+      "mode": "mixed",
+      "entity_domain": 1,
+      "ordered": true,
+      "process_seconds": 5.496013663709164
+    },
+    {
+      "status": "time_limit",
+      "limit_seconds": 12,
+      "stdout": null,
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n",
+      "case": "Txf2EdqOg1SQ_2176",
+      "mode": "gradient",
+      "entity_domain": 1,
+      "ordered": false,
+      "process_seconds": 12.26195539534092
+    },
+    {
+      "status": "completed",
+      "result": {
+        "case": "Txf2EdqOg1SQ_2176",
+        "mode": "gradient",
+        "ordered": true,
+        "entity_domain": 1,
+        "observations": 19,
+        "program_sha256": "eb8954b4cfcbe2e1c1953d39ee22e89177bd0d2b2f6181bf492a0a74937d142f",
+        "setup_seconds": 1.3887602463364601,
+        "first_solve_seconds": 0.07657274790108204,
+        "cached_seconds": 0.03888433240354061,
+        "ground_seconds": 0.027802512049674988,
+        "compile_seconds": 0.007901636883616447,
+        "evaluate_seconds": 0.038292646408081055,
+        "distribution": {
+          "supported": 0.13508517176729898,
+          "refuted": 0.6226463974646921,
+          "unknown": 0.24226843076800825
+        },
+        "expected": {
+          "supported": 0.13508517176729928,
+          "refuted": 0.6226463974646927,
+          "unknown": 0.24226843076800797
+        },
+        "gradient_norm": 6.026089081556323,
+        "proof_nodes": 82
+      },
+      "stdout": "Caching ACs\n{\"case\": \"Txf2EdqOg1SQ_2176\", \"mode\": \"gradient\", \"ordered\": true, \"entity_domain\": 1, \"observations\": 19, \"program_sha256\": \"eb8954b4cfcbe2e1c1953d39ee22e89177bd0d2b2f6181bf492a0a74937d142f\", \"setup_seconds\": 1.3887602463364601, \"first_solve_seconds\": 0.07657274790108204, \"cached_seconds\": 0.03888433240354061, \"ground_seconds\": 0.027802512049674988, \"compile_seconds\": 0.007901636883616447, \"evaluate_seconds\": 0.038292646408081055, \"distribution\": {\"supported\": 0.13508517176729898, \"refuted\": 0.6226463974646921, \"unknown\": 0.24226843076800825}, \"expected\": {\"supported\": 0.13508517176729928, \"refuted\": 0.6226463974646927, \"unknown\": 0.24226843076800797}, \"gradient_norm\": 6.026089081556323, \"proof_nodes\": 82}\n",
+      "stderr": "/exp/cxiao/scale26/avid/envs/probabilistic-verification/lib/python3.12/site-packages/deepproblog/engines/__init__.py:6: UserWarning: ApproximateEngine is not available as PySwip could not be found\n  warnings.warn(\"ApproximateEngine is not available as PySwip could not be found\")\n/exp/cxiao/scale26/avid/scripts/profile_ordered_inference.py:30: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\nConsider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n  values={str(k.args[1]):z for k,z in result.result.items()};scores={s:float(values.get(s,0.))for s in ['supported','refuted','unknown']}\n",
+      "returncode": 0,
+      "case": "Txf2EdqOg1SQ_2176",
+      "mode": "gradient",
+      "entity_domain": 1,
+      "ordered": true,
+      "process_seconds": 5.663712568581104
+    }
+  ],
+  "platform": "Linux-5.14.0-570.17.1.el9_6.x86_64-x86_64-with-glibc2.34",
+  "policy": "Native DeepProbLog; unchanged serialized programs/probabilities; fresh process12s including imports; PYTHONHASHSEED=0; two CPU threads; one diagnostic run per condition, not a broad throughput benchmark. Constructed observations and score-calibrator gradients only; no media training."
+}

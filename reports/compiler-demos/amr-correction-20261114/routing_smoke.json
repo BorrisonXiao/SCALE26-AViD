@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "direct_pass",
+    "claim_id": "Tg0UxWYuPeJ0_403",
+    "llm_import_blocked": true,
+    "model_called": false,
+    "routing": [
+      {
+        "claim_id": "Tg0UxWYuPeJ0_403",
+        "request": false,
+        "reason": "Original strict direct pass; no correction."
+      }
+    ]
+  },
+  {
+    "kind": "amr_pass",
+    "claim_id": "Tg0UxWYuPeJ0_433",
+    "llm_import_blocked": true,
+    "model_called": false,
+    "routing": [
+      {
+        "claim_id": "Tg0UxWYuPeJ0_433",
+        "request": false,
+        "reason": "AMR automatic pass; no correction."
+      }
+    ]
+  }
+]

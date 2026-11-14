@@ -7,24 +7,24 @@
       "date": "2026-11-14",
       "items": [
         {
-          "text": "Refined one cached AMR compiler with source alignment, exact written text, clocks, participant coordination and shared complement scopes. All2,375 rerun:1,589 graph conversions,1,406 source-check passes; zero retained-pool promotions.",
+          "text": "Grouped categorical outcomes inside DeepProbLog circuits: refined19-condition wind~0.04s, two-candidate and64-observation tests pass with preserved probabilities/gradients.564tests; unchanged default AMR and legacy replays.",
+          "href": "#amr-correction-design",
+          "label": "Native inference fix"
+        },
+        {
+          "text": "Reran2,375cached originals:1,589graph conversions/1,397combined-check passes;9additional source-pass alerts. Source flags are not semantic accuracy; retainedpool1,981unchanged.",
           "href": "#remaining-failures",
-          "label": "Current results and limits"
+          "label": "Corpus results and limits"
         },
         {
-          "text": "Self-reviewed all60 earlier references plus32 claims from four other videos:18 and12 whole-reading matches. Follow-up inspection informed one shared plurality fix; final32 are development diagnostics, not held-out accuracy. No GPT/model judge.",
-          "href": "#amr-refinement-example",
-          "label": "All92 examples and errors"
+          "text": "Fixed70-case trial produces0new passes in205model requests. Explicit-index12-case pilot also0passes in48requests. Self-inspected all24follow-up failures; no GPT/model judge, no media training.",
+          "href": "#amr-correction-example",
+          "label": "All attempts and failure diagnoses"
         },
         {
-          "text": "538 tests pass; default AMR2375 and legacy2375/449 replay exact. Compact rules help the older16-condition wind program, but refined19-condition inference still exceeds12s. No training.",
-          "href": "#amr-refinement-design",
-          "label": "Operators, inference cost and next steps"
-        },
-        {
-          "text": "Initial fixed AMR comparison:1,425 graphs convert and13/60 development references match. Earlier evidence remains unchanged under History.",
-          "href": "#initial-amr-status",
-          "label": "Initial AMR comparison"
+          "text": "Earlier source preservation/coordination run:1,589conversions/1,406source passes,18/60+12/32development reading matches. Earlier evidence remains under History.",
+          "href": "#source-amr-status",
+          "label": "Earlier AMR comparison"
         }
       ]
     },
