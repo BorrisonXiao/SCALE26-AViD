@@ -1,0 +1,98 @@
+[
+  {
+    "claim_id": "TFOEIehBwT8Q_479",
+    "text": "Explosions are sounding off in the middle of a protests.",
+    "whole_reading": "partial",
+    "reason": "The explosion and protest timing survive, but sound-off lacks the declared audio-content route used for sound-01."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2314",
+    "text": "The infrared imagery shows the most intense convection surrounding the storm's circulation center.",
+    "whole_reading": "matches_reference",
+    "reason": "The imagery depiction contains intense convection, the superlative degree and the storm circulation center it surrounds."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1442",
+    "text": "Prior to powered descent, Blue Ghost's orbital velocity was approximately 1,700 meters per second.",
+    "whole_reading": "partial",
+    "reason": "The linked 1700 metres per second, approximation and prior-to-descent condition survive. The past copular velocity state and its spacecraft attachment remain incompletely typed."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2345",
+    "text": "Flights at Shenzhen airport are facing delays or cancellations.",
+    "whole_reading": "partial",
+    "reason": "Flight location and delay/cancellation alternatives survive. Facing a possible disruption is not distinguished from a realized disruption."
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1494",
+    "text": "This long duration of precipitable water allowed for lots of moisture in the atmosphere for round after round of heavy rainfall.",
+    "whole_reading": "partial",
+    "reason": "Duration, moisture and repeated heavy rain remain, but precipitable is represented as precipitate and the repeated-round/source-permission reading is incomplete."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1716",
+    "text": "This is shown by dots representing each seat, color coded for lib (red), conservatives (dark blue), BQ (teal), NDP (orange), Green (green), independent/vacant (yellow).",
+    "whole_reading": "partial",
+    "reason": "Party/color pairings remain, but each-seat quantification, dot-to-seat assignment and the visual presentation context are not fully represented."
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_784",
+    "text": "The weather is mostly sunny with relatively calm waves.",
+    "whole_reading": "partial",
+    "reason": "Sunny weather and calm waves survive. The relative qualifier still uses a separate relative-05 event without source-property alignment."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1115",
+    "text": "Blue Ghost Mission 1 is a lunar landing mission.",
+    "whole_reading": "incorrect",
+    "reason": "A lunar landing mission is treated as an actual land-01 event, and mission identity is attached through an organization. The mission does not establish an achieved landing."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1351",
+    "text": "A goal of the pneumatic drill is to take some temperature measurements.",
+    "whole_reading": "partial",
+    "reason": "Temperature measurement is correctly in purpose scope. The pneumatic drill is still a drill-01 event rather than a tool."
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2210",
+    "text": "The weekend outlook predicts significant rainfall for Southern Taiwan.",
+    "whole_reading": "matches_reference",
+    "reason": "Rainfall and significant degree remain under a weekend-outlook prediction, with southern Taiwan as location."
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_227",
+    "text": "Sunny day turns dark due to dust storm.",
+    "whole_reading": "matches_reference",
+    "reason": "The same day changes from sunny to dark, caused by the dust storm; the property arguments are retained."
+  },
+  {
+    "claim_id": "TInVWzp25aIM_62",
+    "text": "The storm is causing major flooding and high winds.",
+    "whole_reading": "matches_reference",
+    "reason": "The storm causes both major flooding and high winds, with the modifiers attached to the correct phenomena."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1640",
+    "text": "The ruling has dramatic global implications.",
+    "whole_reading": "incorrect",
+    "reason": "Global implications becomes implicate-01 acting on globe. This is a word-sense/argument error, not a clause-scope repair."
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1332",
+    "text": "A spacecraft is built multiple times during the development process.",
+    "whole_reading": "matches_reference",
+    "reason": "Repeated spacecraft building is linked to the development process through frequency and time conditions; no exact count is invented."
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_460",
+    "text": "Protestors hold a sign with the rallying cry \"Carlos Manzo lives!\"",
+    "whole_reading": "incorrect",
+    "reason": "The sign quotation is compiled as a real living event for Carlos Manzo, with no written-text/OCR scope."
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1626",
+    "text": "This is a surprising ruling.",
+    "whole_reading": "incorrect",
+    "reason": "A ruling/result is treated as a rule-01 event with this as its ARG0, rather than a ruling whose property is surprising."
+  }
+]

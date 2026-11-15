@@ -1,0 +1,141 @@
+{
+  "rows": [
+    {
+      "claim_id": "TQKCK6-tRaoE_662",
+      "observations": 7,
+      "mixed": false,
+      "seconds": 0.02367592789232731,
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "analytic": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "TQKCK6-tRaoE_662",
+      "observations": 7,
+      "mixed": true,
+      "seconds": 0.023937299847602844,
+      "distribution": {
+        "supported": 0.47829690000000014,
+        "refuted": 0.30166270390625,
+        "unknown": 0.2200403960937497
+      },
+      "analytic": {
+        "supported": 0.4782969000000001,
+        "refuted": 0.3016627039062503,
+        "unknown": 0.22004039609374965
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1821",
+      "observations": 28,
+      "mixed": false,
+      "seconds": 0.09374330379068851,
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "analytic": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "TW4OYA3RN-Hw_1821",
+      "observations": 28,
+      "mixed": true,
+      "seconds": 0.09531107917428017,
+      "distribution": {
+        "supported": 0.052334763302736106,
+        "refuted": 0.7621731147446673,
+        "unknown": 0.18549212195259607
+      },
+      "analytic": {
+        "supported": 0.05233476330273609,
+        "refuted": 0.7621731147446679,
+        "unknown": 0.18549212195259607
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_172",
+      "observations": 14,
+      "mixed": false,
+      "seconds": 0.04619981721043587,
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "analytic": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "TbJqMFkNxARY_172",
+      "observations": 14,
+      "mixed": true,
+      "seconds": 0.04738752171397209,
+      "distribution": {
+        "supported": 0.22876792454961012,
+        "refuted": 0.5123250208844701,
+        "unknown": 0.25890705456591945
+      },
+      "analytic": {
+        "supported": 0.2287679245496101,
+        "refuted": 0.5123250208844705,
+        "unknown": 0.25890705456591945
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "observations": 26,
+      "mixed": false,
+      "seconds": 0.0873471274971962,
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "analytic": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "T2G_ACMxR_I4_1441",
+      "observations": 26,
+      "mixed": true,
+      "seconds": 0.08759829960763454,
+      "distribution": {
+        "supported": 0.0646108188922668,
+        "refuted": 0.7364799055342575,
+        "unknown": 0.19890927557347532
+      },
+      "analytic": {
+        "supported": 0.06461081889226677,
+        "refuted": 0.7364799055342579,
+        "unknown": 0.19890927557347526
+      },
+      "matches": true
+    }
+  ],
+  "policy": "Grouped native inference; single-run diagnostics with constructed scores and placeholder candidates, no media evidence or training."
+}

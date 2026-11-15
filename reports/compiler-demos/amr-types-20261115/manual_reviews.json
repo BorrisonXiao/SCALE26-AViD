@@ -1,0 +1,142 @@
+{
+  "TzF9M4kZ3Pys_218": {
+    "whole_reading": "incorrect",
+    "reason": "The explanatory or still becomes Boolean disjunction, and downdraft remains gust. Property typing does not fix these readings.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TgR_u37mCoQ4_1907": {
+    "whole_reading": "partial",
+    "reason": "OCR assertion and nested depiction remain, but the exact quoted label is not bound as written text.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "T1JQ-aG78Zuc_798": {
+    "whole_reading": "matches_reference",
+    "reason": "Tram motion, night and mostly-clear concurrent weather are retained. Clear is now a property; its arguments remain.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TLO3smKI67PM_554": {
+    "whole_reading": "incorrect",
+    "reason": "Phillies still becomes Phillipines, and a home-run ball remains a run event. Structural-role typing does not repair either.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TzF9M4kZ3Pys_274": {
+    "whole_reading": "matches_reference",
+    "reason": "Strength stays attached to wind and commercial/commerce to the area; strong is now a property with the same referent.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TQEmEycTI0RQ_822": {
+    "whole_reading": "incorrect",
+    "reason": "Liberal red still denotes a red liberal person inside depiction, rather than party-colored map content.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TQEmEycTI0RQ_838": {
+    "whole_reading": "context_needed",
+    "reason": "Both assertion levels survive; the missing outer claimant and negation/projection reading remain unresolved.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TzzhcBIczf_M_2109": {
+    "whole_reading": "incorrect",
+    "reason": "The expulsion noun is aligned successfully, but its definition is flattened into world conditions. No specific expulsion should be asserted.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TjHepwuhkYFA_999": {
+    "whole_reading": "partial",
+    "reason": "Audio and text material both remain, but appearance-as-location and the cross-channel content identity are unresolved.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "Txf2EdqOg1SQ_2168": {
+    "whole_reading": "incorrect",
+    "reason": "The blowing event still lacks the wind actor/causer and remains outside perception; changing high to a property does not restore the binding.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "T2G_ACMxR_I4_1237": {
+    "whole_reading": "partial",
+    "reason": "Full is a property and report scope survives; Firefly remains a person and future/once conditional timing is not represented.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "T2G_ACMxR_I4_1228": {
+    "whole_reading": "partial",
+    "reason": "The disturbance noun and obvious property now compile. Distinct image/video evidence and their matching content are still not clearly bound; images remain locations.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "T8u81WMIyj18_758": {
+    "whole_reading": "matches_reference",
+    "reason": "Dark/calm properties and qualified absence of notable weather survive local negation.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "T2EE72iNELEs_195": {
+    "whole_reading": "partial",
+    "reason": "Launch, rocket and clear sky remain, but sky is the launch location rather than an explicitly concurrent weather condition.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "T2EE72iNELEs_208": {
+    "whole_reading": "matches_reference",
+    "reason": "Deceleration and landing share the rocket; ocean and safety remain attached to landing. This is a text-reading judgment, not evidence of successful landing.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TKCfkoNUssZI_726": {
+    "whole_reading": "matches_reference",
+    "reason": "A standing crowd contains plural people and is in front of a building whose white property remains attached.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TKCfkoNUssZI_725": {
+    "whole_reading": "partial",
+    "reason": "Wearing, plural vests and yellow remain. Reflective still becomes an unaligned reflect event rather than the vest property/capability.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TKCfkoNUssZI_695": {
+    "whole_reading": "partial",
+    "reason": "The location nesting and audience size survive, but group remains a group-01 event rather than an explicit audience group.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "Tsuk2uoYj-kc_632": {
+    "whole_reading": "matches_reference",
+    "reason": "The bright property stays on the sun; over links it to the man, who remains the prayer actor.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TQEmEycTI0RQ_823": {
+    "whole_reading": "incorrect",
+    "reason": "The cached graph still changes the year and party name and negates red rather than representing comparatively less red. Source checks flag several errors.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TLO3smKI67PM_580": {
+    "whole_reading": "incorrect",
+    "reason": "The birthday and son/fan structure survive, but Phillies remains the unrelated name Phillipines; the explicit identity check still refuses it.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TgR_u37mCoQ4_1989": {
+    "whole_reading": "matches_reference",
+    "reason": "The attested phone signal, owner, past attestation and seconds-after-eruption relationship survive. Multiple one-second units preserve unspecified seconds without choosing an exact duration.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "T1JQ-aG78Zuc_791": {
+    "whole_reading": "partial",
+    "reason": "Request, purpose, accidental manner and need-to-go-straight scopes survive. Intersection remains an intersect event used as a location, and the requested switch interpretation is not fully resolved.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TgPh_fzHTCm4_1471": {
+    "whole_reading": "partial",
+    "reason": "All numeric bounds and Texas survive. Range quantities use knot plus between rather than linked quantity structures; the two dates are conjoined, not a represented time interval.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TW4OYA3RN-Hw_1821": {
+    "whole_reading": "partial",
+    "reason": "The closer/more comparison and depicted burning government building now compile. Watching/filming spectators remain outside depiction, so the full footage reading is incomplete.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TjHepwuhkYFA_1041": {
+    "whole_reading": "partial",
+    "reason": "The shaking noun now aligns and the area is shared. Population is still an event predicate without an explicit state/action distinction; the stative reading needs care.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TQKCK6-tRaoE_662": {
+    "whole_reading": "matches_reference",
+    "reason": "The fireworks explosion is inside a sound context routed to audio_event, with the sound as context owner; no visual evidence is required.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  },
+  "TbJqMFkNxARY_172": {
+    "whole_reading": "partial",
+    "reason": "The recovery operation and keep-open goal now compile under purpose scopes, with a scoped reference to the same operation. The past tense of was the goal is not aligned to have-purpose-91.",
+    "reviewer": "Implementing assistant; development reading, no external judge or new human approval."
+  }
+}

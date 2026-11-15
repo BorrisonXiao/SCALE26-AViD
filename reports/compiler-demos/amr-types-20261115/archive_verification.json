@@ -1,0 +1,22 @@
+{
+  "archive_sha256": "51afaec489bf2ee87dcd95a2f6c29145817c77d5d00b5a9df06cab8c8ceefd54",
+  "sha256_inventory": true,
+  "byte_identical_artifacts": [
+    "corpus.jsonl",
+    "changed.json",
+    "reviewed_cases.json",
+    "review_routing.json",
+    "remaining.json",
+    "additional_gains.json"
+  ],
+  "summary_equal_except_elapsed": true,
+  "total_claims": 2375,
+  "reference_cases": 116,
+  "additional_reviews": 16,
+  "focused_tests": 17,
+  "workspace_tests": 581,
+  "native_analytic_checks": 8,
+  "legacy_replay": true,
+  "model_calls": 0,
+  "extraction": "/tmp/avid-amr-types-88bd6ayc"
+}

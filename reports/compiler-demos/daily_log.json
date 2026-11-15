@@ -1,8 +1,33 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "timezone": "America/New_York",
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
+    {
+      "date": "2026-11-15",
+      "items": [
+        {
+          "text": "Reran all 2,375 claims with source-based predicate types: 1,785 programs and 1,559 automatic passes, net +162. The retained pool is separate and unchanged.",
+          "href": "#remaining-failures",
+          "label": "Corpus results"
+        },
+        {
+          "text": "Added adjective/event-noun distinctions, audio/purpose scope, shared nominal references, verified aliases and linked unit checks. No new model requests.",
+          "href": "#amr-types-design",
+          "label": "Design and controls"
+        },
+        {
+          "text": "Meaning review: 31/92 earlier readings match, plus 2/24 follow-up readings. Sixteen additional new passes reviewed: 5 match, 7 partial, 4 incorrect.",
+          "href": "#amr-types-example",
+          "label": "Readable examples and review"
+        },
+        {
+          "text": "816 automatic failures remain; definitions, mission goals, wrong noun senses and written quotations can also pass with incorrect meaning. 581 tests and eight native controls pass.",
+          "href": "#amr-types-failures",
+          "label": "Remaining failure patterns"
+        }
+      ]
+    },
     {
       "date": "2026-11-14",
       "items": [

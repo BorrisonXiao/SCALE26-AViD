@@ -1,0 +1,13 @@
+{
+  "default_amr_claims": 2375,
+  "default_amr_converted": 1425,
+  "compilations_and_programs_exact": true,
+  "originals": 2375,
+  "cached": 449,
+  "byte_identical": {
+    "direct_all.jsonl": "cdeb38ae98aac3d0781c962e099fb136e12160fd92013c8c6410348ee35886bb",
+    "cached_pipeline.jsonl": "2f67eee7088c11c61ab137979d059949597b1a15e34fce1b459b99da54dc6dff"
+  },
+  "retained": 1981,
+  "excluded": 394
+}
