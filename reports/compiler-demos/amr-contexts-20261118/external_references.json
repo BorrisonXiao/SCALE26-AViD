@@ -1,0 +1,122 @@
+[
+  {
+    "claim_id": "averitec_dev_258",
+    "text": "A Supreme Court nominee has never been nominated and installed while a presidential election is already underway.",
+    "meaning": "Claim denies any prior Supreme Court nominee being both nominated and installed while a presidential election was already underway. Preserve never, both actions and their overlapping election interval.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_419",
+    "text": "The U.S. Centers for Disease Control and Prevention fraudulently add deaths from poisoning, trauma, and unintentional injury to their tally of COVID-19 deaths.",
+    "meaning": "Claim accuses the US CDC of fraudulently adding poisoning, trauma and unintentional-injury deaths to its COVID-19 death tally. Preserve the source name, accusation wording and all death categories; do not adjudicate truth.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_415",
+    "text": "Raj Thackeray tweeted \"On 9 September, Hindu lioness Kangana Ranaut will be given a grand welcome in Maharashtra’s capital, Mumbai.\"",
+    "meaning": "Claim attributes a tweet with the exact quoted wording and 9 September date to Raj Thackeray. The quoted future welcome for Kangana Ranaut is in Mumbai, described as Maharashtra capital. A tweet is not proof that the welcome occurred.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_387",
+    "text": "In England only 69.4% of COVID-19 contacts are now reached and asked to self-isolate.",
+    "meaning": "Claim says only 69.4 percent of COVID-19 contacts in England are now both reached and asked to self-isolate. Asking does not assert actual self-isolation.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_45",
+    "text": "Cutting the umbilical cord straight away deliberately denies the baby natural immunity so that medical professionals have a reason to vaccinate and medicate them.",
+    "meaning": "Claim says immediate umbilical-cord cutting deliberately denies infant immunity, with an alleged purpose of giving medical professionals a reason to vaccinate and medicate the baby. Preserve the causal/purpose assertion without treating it as established medicine.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_223",
+    "text": "Nigeria's petrol prices are lower than Saudi Arabia's.",
+    "meaning": "Claim compares petrol prices: Nigeria lower than Saudi Arabia. Preserve the two countries and direction of comparison.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_321",
+    "text": "In 2019, 10 million fell ill from tuberculosis and 1.5 million died but nobody needs to wears a mask for tuberculosis",
+    "meaning": "Claim gives 2019 tuberculosis totals of 10 million ill and 1.5 million dead, then denies any need to wear masks for tuberculosis. Preserve counts, year and negated necessity; do not change the medical assertion.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_299",
+    "text": "You could text RBG to 50409 to sign a petition to tell your senator not to replace Ruth Bader Ginsberg in the Supreme court until after the 2020 election",
+    "meaning": "Claim describes a possible action: text RBG to 50409 to sign a petition asking a senator not to replace Ruth Bader Ginsberg on the Supreme court until after the 2020 election. Preserve the source spelling, identifier, purpose and negated request, without asserting those actions occurred.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_495",
+    "text": "This Democratic Party of Joe Biden is pushing the so-called Green New Deal. If given power, they would essentially ban animal agriculture and eliminate gas-powered cars.",
+    "meaning": "Claim says the Democratic Party of Joe Biden promotes the Green New Deal and predicts that, if given power, the party would essentially ban animal agriculture and eliminate gas-powered cars. Keep the conditional and hypothetical outcomes.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_409",
+    "text": "Taiwan Shot down a Chinese SU-35 Jet.",
+    "meaning": "Claim asserts Taiwan shot down a Chinese SU-35 jet. Keep actor, action, jet identity and past tense.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_38",
+    "text": "Hunter Biden, son of US President Joe Biden has died.",
+    "meaning": "Claim asserts Hunter Biden has died and identifies him as the son of US President Joe Biden. Preserve perfect aspect and family/title relationships; do not adjudicate the death claim.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_339",
+    "text": "Actor Mukesh Khanna has called for a boycott of Jaya and Amitabh Bachchan.",
+    "meaning": "Claim attributes a call for a boycott of Jaya Bachchan and Amitabh Bachchan to actor Mukesh Khanna. Calling for a boycott does not assert that people carried it out.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_329",
+    "text": "Minneapolis City Council has defunded the police.",
+    "meaning": "Claim asserts Minneapolis City Council has defunded the police. Preserve the organization and perfect aspect.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_275",
+    "text": "Shah Rukh Khan's Kolkata Knight Riders (KKR) is acquiring a 1.28 per cent stake in Reliance Retail at Rs 5,500 crore",
+    "meaning": "Claim says Shah Rukh Khan owns Kolkata Knight Riders, abbreviated KKR, which is acquiring a 1.28 percent stake in Reliance Retail at Rs 5,500 crore. Preserve progressive rather than completed acquisition, ownership, percentage and price.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_246",
+    "text": "A “new virus” disease called Novel Bunya V!rus that is caused by ticks is diagnosed as severe fever with thrombocytopenia syndrome (SFTS) is spreading in China.",
+    "meaning": "Claim says a disease called Novel Bunya V!rus, also described as severe fever with thrombocytopenia syndrome (SFTS), is tick-caused and spreading in China. Preserve names, equivalence as stated, causality and progressive spreading without adjudicating medical truth.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_2",
+    "text": "Due to Imran Khan's criticism of Macron's comments on Islam, French authorities cancelled the visas of 183 Pakistani citizens and deported 118 from the country.",
+    "meaning": "Claim links French authorities cancelling visas of 183 Pakistani citizens and deporting 118 to Imran Khan criticism of Macron comments on Islam. Keep the two counts separately; do not assume the sets are identical.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_139",
+    "text": "A campaign ad video for John Cornyn says that his plan would guarantee insurers must sell plans to any patient with preexisting conditions and will be covered in his plan.",
+    "meaning": "Claim attributes to a John Cornyn campaign video an assertion about his plan: insurers would be obliged to sell plans to patients with preexisting conditions and those patients would be covered. Preserve video assertion, plan, conditional guarantee and obligation; do not assert actual sales/coverage.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_173",
+    "text": "Carbon dioxide intoxication is caused by wearing face masks.",
+    "meaning": "Claim asserts face-mask wearing causes carbon-dioxide intoxication. Preserve the direction of asserted causality without treating it as established medical fact.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_318",
+    "text": "Joe Biden would be the first person without an Ivy League degree to be elected president.",
+    "meaning": "Claim hypothetically makes Joe Biden the first president elected without an Ivy League degree. Preserve would, first and the negative degree qualification rather than asserting an election occurred.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  },
+  {
+    "claim_id": "averitec_dev_341",
+    "text": "Muslim regiment of the Indian Army had refused to fight in India’s 1965 war with Pakistan.",
+    "meaning": "Claim says a Muslim regiment of the Indian Army had refused to fight in the 1965 India-Pakistan war. Preserve past-perfect refusal, army membership, year and opposing countries; refusal does not assert fighting.",
+    "reviewer": "Implementing assistant original-text reading; frozen before new parser output and compiler fixes. No independent gold or truth judgment."
+  }
+]

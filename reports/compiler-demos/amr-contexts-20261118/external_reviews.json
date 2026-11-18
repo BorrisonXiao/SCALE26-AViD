@@ -1,0 +1,242 @@
+[
+  {
+    "claim_id": "averitec_dev_258",
+    "before": {
+      "whole_reading": "not_compiled",
+      "reason": "Repeated nomination role prevents conversion; no complete meaning is accepted."
+    },
+    "after": {
+      "whole_reading": "not_compiled",
+      "reason": "Repeated nomination role prevents conversion; no complete meaning is accepted."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_419",
+    "before": {
+      "whole_reading": "not_compiled",
+      "reason": "Death-event complements lack a supported add/tally interpretation; the COVID-19 entity is also mistyped. No complete meaning is accepted."
+    },
+    "after": {
+      "whole_reading": "not_compiled",
+      "reason": "Death-event complements lack a supported add/tally interpretation; the COVID-19 entity is also mistyped. No complete meaning is accepted."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_415",
+    "before": {
+      "whole_reading": "incorrect",
+      "reason": "The welcome becomes world content with no tweet/assertion context or exact quote; future wording and the metaphorical lioness reading are not preserved."
+    },
+    "after": {
+      "whole_reading": "incorrect",
+      "reason": "The welcome becomes world content with no tweet/assertion context or exact quote; future wording and the metaphorical lioness reading are not preserved."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_387",
+    "before": {
+      "whole_reading": "not_compiled",
+      "reason": "Requesting self-isolation uses ask-02 with no supported complement rule. No isolation occurrence is accepted."
+    },
+    "after": {
+      "whole_reading": "not_compiled",
+      "reason": "Requesting self-isolation uses ask-02 with no supported complement rule. No isolation occurrence is accepted."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_45",
+    "before": {
+      "whole_reading": "not_compiled",
+      "reason": "The deny/cutting complement refuses; the purpose explanation is also represented as factual cause rather than an intended reason."
+    },
+    "after": {
+      "whole_reading": "not_compiled",
+      "reason": "The deny/cutting complement refuses; the purpose explanation is also represented as factual cause rather than an intended reason."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_223",
+    "before": {
+      "whole_reading": "matches_reference",
+      "reason": "Both petrol-price owners and the lower-than comparison survive. The Arabia possessive token is an overstrict name omission; the claim is not automatically retained."
+    },
+    "after": {
+      "whole_reading": "matches_reference",
+      "reason": "Both petrol-price owners and the lower-than comparison survive. The Arabia possessive token is an overstrict name omission; the claim is not automatically retained."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_321",
+    "before": {
+      "whole_reading": "not_compiled",
+      "reason": "The parser changes 10 million into one million and conversion stops on annotated coordination. The wrong count is flagged."
+    },
+    "after": {
+      "whole_reading": "not_compiled",
+      "reason": "The parser changes 10 million into one million and conversion stops on annotated coordination. The wrong count is flagged."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_299",
+    "before": {
+      "whole_reading": "not_compiled",
+      "reason": "The shortcode becomes an invented calendar date and RBG is omitted; text/sign purpose composition also refuses."
+    },
+    "after": {
+      "whole_reading": "not_compiled",
+      "reason": "The shortcode becomes an invented calendar date and RBG is omitted; text/sign purpose composition also refuses."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_495",
+    "before": {
+      "whole_reading": "not_compiled",
+      "reason": "The reified condition has no supported conditional mapping. No present ban is accepted."
+    },
+    "after": {
+      "whole_reading": "not_compiled",
+      "reason": "The reified condition has no supported conditional mapping. No present ban is accepted."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_409",
+    "before": {
+      "whole_reading": "partial",
+      "reason": "Taiwan, the jet, SU-35 and Chinese affiliation survive. Past tense is not aligned to shoot-down. Chinese-to-China triggers an overstrict source-name check; this is not a fabricated country."
+    },
+    "after": {
+      "whole_reading": "partial",
+      "reason": "Taiwan, the jet, SU-35 and Chinese affiliation survive. Past tense is not aligned to shoot-down. Chinese-to-China triggers an overstrict source-name check; this is not a fabricated country."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_38",
+    "before": {
+      "whole_reading": "matches_reference",
+      "reason": "Death is present-perfect for Hunter Biden; son-of-Joe Biden and US-president relationships are retained. This judges the asserted wording, not its truth."
+    },
+    "after": {
+      "whole_reading": "matches_reference",
+      "reason": "Death is present-perfect for Hunter Biden; son-of-Joe Biden and US-president relationships are retained. This judges the asserted wording, not its truth."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_339",
+    "before": {
+      "whole_reading": "incorrect",
+      "reason": "A call for a boycott is flattened into a world boycott event. The requested action must not be treated as already occurring."
+    },
+    "after": {
+      "whole_reading": "incorrect",
+      "reason": "A call for a boycott is flattened into a world boycott event. The requested action must not be treated as already occurring."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_329",
+    "before": {
+      "whole_reading": "matches_reference",
+      "reason": "The city-council actor, police object and present-perfect defunding assertion are retained; no truth verdict is inferred."
+    },
+    "after": {
+      "whole_reading": "matches_reference",
+      "reason": "The city-council actor, police object and present-perfect defunding assertion are retained; no truth verdict is inferred."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_275",
+    "before": {
+      "whole_reading": "incorrect",
+      "reason": "The name changes Rukh to Rajh and the rupee/crore amount changes. Progressive acquisition survives but does not repair identity and quantity errors."
+    },
+    "after": {
+      "whole_reading": "incorrect",
+      "reason": "The name changes Rukh to Rajh and the rupee/crore amount changes. Progressive acquisition survives but does not repair identity and quantity errors."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_246",
+    "before": {
+      "whole_reading": "partial",
+      "reason": "Spreading, ticks and the disease wording survive incompletely. SFTS is missing and the diagnostic name is split; the full naming/diagnosis reading is not preserved."
+    },
+    "after": {
+      "whole_reading": "partial",
+      "reason": "Spreading, ticks and the disease wording survive incompletely. SFTS is missing and the diagnostic name is split; the full naming/diagnosis reading is not preserved."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_2",
+    "before": {
+      "whole_reading": "not_compiled",
+      "reason": "Annotated causal coordination is not fully visited. Counts are present, while French-to-France causes another overstrict name alert."
+    },
+    "after": {
+      "whole_reading": "not_compiled",
+      "reason": "Annotated causal coordination is not fully visited. Counts are present, while French-to-France causes another overstrict name alert."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_139",
+    "before": {
+      "whole_reading": "not_compiled",
+      "reason": "Repeated obligation roles prevent conversion of the plan/guarantee/coverage statement."
+    },
+    "after": {
+      "whole_reading": "not_compiled",
+      "reason": "Repeated obligation roles prevent conversion of the plan/guarantee/coverage statement."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_173",
+    "before": {
+      "whole_reading": "partial",
+      "reason": "Causal direction and the carbon-dioxide name survive. Generic causation is not distinguished from episodic event variables, and wearing is assigned progressive aspect."
+    },
+    "after": {
+      "whole_reading": "partial",
+      "reason": "Causal direction and the carbon-dioxide name survive. Generic causation is not distinguished from episodic event variables, and wearing is assigned progressive aspect."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_318",
+    "before": {
+      "whole_reading": "incorrect",
+      "reason": "Hypothetical would is lost: the graph asserts an election and first-person ordinal rather than a conditional historical comparison."
+    },
+    "after": {
+      "whole_reading": "incorrect",
+      "reason": "Hypothetical would is lost: the graph asserts an election and first-person ordinal rather than a conditional historical comparison."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  },
+  {
+    "claim_id": "averitec_dev_341",
+    "before": {
+      "whole_reading": "not_compiled",
+      "reason": "The refusal-to-fight complement remains unsupported. No completed fight is accepted."
+    },
+    "after": {
+      "whole_reading": "not_compiled",
+      "reason": "The refusal-to-fight complement remains unsupported. No completed fight is accepted."
+    },
+    "reviewer": "Implementing assistant, frozen original-text readings; no truth labels, external judge or post-inspection tuning."
+  }
+]

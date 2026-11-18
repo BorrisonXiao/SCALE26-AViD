@@ -4,6 +4,31 @@
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
     {
+      "date": "2026-11-18",
+      "items": [
+        {
+          "text": "Audited identical claim inventories: original SRL 2,099 programs remain inside current SRL 2,146. The 1,785 headline came from the separate AMR experiment, not lost SRL successes.",
+          "href": "#compiler-count-history",
+          "label": "Count explanation"
+        },
+        {
+          "text": "Completed context/noun fixes and all 2,375 cached claims: AMR 1,808 programs and 1,578 automatic passes, 21 gains/two new alerts, no lost generated cases.",
+          "href": "#remaining-failures",
+          "label": "Full results"
+        },
+        {
+          "text": "Reviewed 132 development cases: 38→44 full-reading matches. External 20-text diagnostic shows no gain: 10 generated, six automatic passes, three full matches in each version.",
+          "href": "#amr-contexts-example",
+          "label": "Read all 152 examples"
+        },
+        {
+          "text": "607 tests, 11 native controls and default/legacy exact replay pass. 797 automatic failures and incorrect passes remain; retained pool 1,981 unchanged. No media training.",
+          "href": "#amr-contexts-failures",
+          "label": "Patterns and next goals"
+        }
+      ]
+    },
+    {
       "date": "2026-11-15",
       "items": [
         {

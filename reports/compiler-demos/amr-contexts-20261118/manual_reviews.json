@@ -1,0 +1,77 @@
+{
+  "TFOEIehBwT8Q_473": {
+    "whole_reading": "partial",
+    "reason": "Protester is now a role noun on the same person. Facing is still one-directional; each-other reciprocity is not represented.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "Txf2EdqOg1SQ_2176": {
+    "whole_reading": "partial",
+    "reason": "Nested appearance, sufficiency and result retain the shared adult/crawler and wind-speed causer. Generic adult coverage is still not expressed by a general quantifier.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "TzzhcBIczf_M_2109": {
+    "whole_reading": "matches_reference",
+    "reason": "The quoted term owns a definition context containing expulsion, monastery and vow-violation cause. No actual expulsion is asserted outside that context.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "TjHepwuhkYFA_999": {
+    "whole_reading": "partial",
+    "reason": "Broadcaster is now a person-role description. Audio/text content identity and appearance-as-location remain unresolved.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "TFOEIehBwT8Q_496": {
+    "whole_reading": "incorrect",
+    "reason": "The new noun check flags tear gas: it remains a gas-03 action with police and tear arguments, not a substance being fired. The protester role is improved but does not repair the gas binding.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "TgPh_fzHTCm4_1497": {
+    "whole_reading": "partial",
+    "reason": "Fill is now a noun rather than an act of filling. A spatial link to a spin event remains instead of an explicit visualization-region correspondence.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "TFOEIehBwT8Q_504": {
+    "whole_reading": "matches_reference",
+    "reason": "The same protester holds a sign with the complete exact quotation under written-text support; quoted events remain unasserted.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "T3HTSBW42QaY_766": {
+    "whole_reading": "context_needed",
+    "reason": "Worker is now a role noun, but the ambiguous East distribution worker compound still contains an actual distribution event and a guessed location reading.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "TKCfkoNUssZI_725": {
+    "whole_reading": "matches_reference",
+    "reason": "Police wear plural vests with yellow and reflective properties. The derived adjective reflective is now aligned to a property instead of an unaligned timed reflection action.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "TKCfkoNUssZI_695": {
+    "whole_reading": "matches_reference",
+    "reason": "Speech, nested open-area/city location and a large audience group of plural people survive. Group is a noun with an explicit of relationship, not a grouping action.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "T2G_ACMxR_I4_1312": {
+    "whole_reading": "matches_reference",
+    "reason": "Scientists share the work/build actor. Building is a work purpose and manufacturing is the function of complex tools; neither completion is asserted as an actual event.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "T1JQ-aG78Zuc_791": {
+    "whole_reading": "partial",
+    "reason": "The requested switch and rightward movement are inside request/purpose scope, separate from the straight-ahead requirement. Intersection still denotes an intersect event rather than a location.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "T2G_ACMxR_I4_1115": {
+    "whole_reading": "partial",
+    "reason": "Landing is now inside mission-purpose scope. The named mission is still described through an organization rather than clean mission identity; the whole reading remains incomplete.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "T2G_ACMxR_I4_1351": {
+    "whole_reading": "matches_reference",
+    "reason": "Pneumatic drill is a tool, and its goal contains unspecified temperature measurements with the same tool as the performer. No actual drilling or completed measurement is asserted.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  },
+  "TFgw4IaR9R8s_1626": {
+    "whole_reading": "matches_reference",
+    "reason": "Ruling is a noun, this is its copular subject/domain, and surprising is an aligned property. This is not an action performed by this.",
+    "reviewer": "Implementing assistant; development judgment, no independent gold or model judge."
+  }
+}

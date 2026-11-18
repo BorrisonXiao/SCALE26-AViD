@@ -1,0 +1,91 @@
+{
+  "stages": [
+    {
+      "method": "Earlier SRL, syntax checks",
+      "source": "compiler_revision_20261105/results.jsonl",
+      "source_sha256": "64f6966936c40d287228e13678b4463623a4acda5c9104425ab01ff28a88eec9",
+      "total": 2375,
+      "generated": 2099,
+      "passing": 2099,
+      "generated_but_flagged": 0,
+      "no_program": 276
+    },
+    {
+      "method": "Same SRL plus source-word coverage",
+      "source": "scope_coverage_20261105/results.jsonl",
+      "source_sha256": "a3aa9898095f97913d476bd50e7b72a5e725395912e21f416cc92456065604c4",
+      "total": 2375,
+      "generated": 2099,
+      "passing": 1839,
+      "generated_but_flagged": 260,
+      "no_program": 276
+    },
+    {
+      "method": "Later SRL plus content/relationship checks",
+      "source": "content_relations_20261105/results.jsonl",
+      "source_sha256": "77d188658b4c88003e201b16c524b927fb29335cecdc4c4640491c0634b42f63",
+      "total": 2375,
+      "generated": 2103,
+      "passing": 1924,
+      "generated_but_flagged": 179,
+      "no_program": 272
+    },
+    {
+      "method": "Current SRL direct path",
+      "source": "compiler_structural_20261113/direct_all.jsonl",
+      "source_sha256": "cdeb38ae98aac3d0781c962e099fb136e12160fd92013c8c6410348ee35886bb",
+      "total": 2375,
+      "generated": 2146,
+      "passing": 1983,
+      "generated_but_flagged": 163,
+      "no_program": 229
+    },
+    {
+      "method": "Current retained pool with reviewed fallback",
+      "source": "compiler_structural_20261113/corpus_reviewed.jsonl",
+      "source_sha256": "cfaabfc9af1cc09041ac0beede911aa5733f256dde74bd21ddc4c16140b57139",
+      "total": 2375,
+      "generated": 2104,
+      "passing": 1981,
+      "generated_but_flagged": 123,
+      "no_program": 271
+    },
+    {
+      "method": "AMR before context fixes",
+      "source": "amr_types_20261115/corpus.jsonl",
+      "source_sha256": "ddd5237f4b1799d99ffe9d85712ecd3397c3caad7e9e58bd0c132b3521b8705c",
+      "total": 2375,
+      "generated": 1785,
+      "passing": 1559,
+      "generated_but_flagged": 226,
+      "no_program": 590
+    },
+    {
+      "method": "AMR after context fixes",
+      "source": "amr_contexts_20261118/corpus.jsonl",
+      "source_sha256": "993d791d28865c1a07eaa466660de4036d422505a374905a4c4ddf3f5cb88ef9",
+      "total": 2375,
+      "generated": 1808,
+      "passing": 1578,
+      "generated_but_flagged": 230,
+      "no_program": 567
+    }
+  ],
+  "paired_generated": {
+    "srl_and_amr": 1662,
+    "srl_only": 484,
+    "amr_only": 123,
+    "neither": 106,
+    "old_2099_missing_from_current_srl": 0,
+    "current_srl_additions": 47,
+    "policy": "Descriptive paired coverage only. Do not union methods or interpret generation as faithful meaning."
+  },
+  "explanation": "The historical 2,099 is SRL program generation. Current SRL still generates 2,146. AMR generated 1,785 before these fixes; this is a different frontend and supported fragment. Source checks and meaning review are separate.",
+  "paired_after_generated": {
+    "srl_and_amr": 1683,
+    "srl_only": 463,
+    "amr_only": 125,
+    "neither": 104
+  },
+  "review": "Implementing-assistant evidence audit; no external judge."
+}

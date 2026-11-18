@@ -1,0 +1,10 @@
+{
+  "dataset": "AVeriTeC",
+  "split": "dev",
+  "url": "https://raw.githubusercontent.com/MichSchli/AVeriTeC/7c62d1ec8df3fb560d6efe2b85fa191135636f81/data/dev.json",
+  "commit": "7c62d1ec8df3fb560d6efe2b85fa191135636f81",
+  "download_sha256": "499793726b4a5406780928a3d9dedc48d6dd53de778f22437d129cacdb08e300",
+  "total": 500,
+  "selected": 20,
+  "policy": "Frozen claim-ID hash, 6–38 words, one source URL, no exact current claim overlap; save no truth labels/evidence. External text-only test, not unseen-video evaluation."
+}

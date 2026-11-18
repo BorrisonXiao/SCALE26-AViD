@@ -1,0 +1,26 @@
+{
+  "archive_sha256": "a858e41a3acfcbc8a6a170cc05a0bbb42a8a2a28466ff77243cab7c5322a9c26",
+  "sha256_inventory": true,
+  "byte_identical_artifacts": [
+    "corpus.jsonl",
+    "changes.json",
+    "review_routing.json",
+    "reviewed_cases.json",
+    "external_outputs.json",
+    "external_cases.json",
+    "remaining.json",
+    "count_history.json",
+    "default_regression.json",
+    "external_equivalence.json"
+  ],
+  "summary_equal_except_elapsed": true,
+  "total_claims": 2375,
+  "development_reviews": 132,
+  "external_cases": 20,
+  "focused_tests": 26,
+  "workspace_tests": 607,
+  "native_analytic_checks": 11,
+  "default_and_legacy_replay": true,
+  "model_calls": 0,
+  "extraction": "/tmp/avid-amr-contexts-hbh_atwk"
+}

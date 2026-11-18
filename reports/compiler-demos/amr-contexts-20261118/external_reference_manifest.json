@@ -1,0 +1,5 @@
+{
+  "sha256": "015f9a1e2899b12e44b618c741797fbcd7dd05f4e7136ce8f719dc60c6d9ec04",
+  "count": 20,
+  "policy": "Do not tune code or selection on external outputs; assess after source freeze. External text-only, not unseen-video evaluation."
+}
