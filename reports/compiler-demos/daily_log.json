@@ -43,6 +43,18 @@
           "href": "#fallback-inspector",
           "label": "All claims and actual stages",
           "fallback_entry": true
+        },
+        {
+          "text": "The coverage experiment produces 2,354/2,375 semantic programs (99.12%). 21 more claims produce only dependency analyses. Earlier strict checks pass 2,177, and targeted repairs bring that count to 2,183. Allowing already generated programs with warnings alone gives 2,280. Advisory outputs require review before evidence inference.",
+          "href": "#remaining-failures",
+          "label": "Coverage comparison",
+          "coverage_entry": true
+        },
+        {
+          "text": "Audited all 21 remaining semantic failures and prepared 54 reviewed forms plus the full test inventory.",
+          "href": "#coverage-examples",
+          "label": "Repairs and failure patterns",
+          "coverage_entry": true
         }
       ]
     },

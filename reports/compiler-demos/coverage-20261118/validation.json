@@ -1,0 +1,8 @@
+{
+  "strict_program_hashes_match": 2177,
+  "newly_grounded_programs": 198,
+  "quote_programs_unknown_with_no_observations": 3,
+  "review_required_skip_verifier": 192,
+  "full_corpus_unique_ids": 2375,
+  "status": "passed"
+}

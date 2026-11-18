@@ -1,0 +1,1848 @@
+{
+  "examples": [
+    {
+      "claim_id": "TQEmEycTI0RQ_898",
+      "category": "source_repair",
+      "title": "An image of a tweet with a named author",
+      "judgment": "matches_reference",
+      "text": "Shows image of the tweet from Trump: 'Good luck to the Great people of Canada. Elect the man who has the strength and wisdom to cut your taxes in half, increase your military power, for free, to the highest level in the World, have your Car, Steel, Aluminum, Lumber, Energy, and all other businesses, QUADRUPLE in size, WITH ZERO TARIFFS OR TAXES, if Canada becomes the cherished 51st. State of the United States of America. No more artificially drawn line from many years ago. Look how beautiful this land mass would be. Free access with NO BORDER. ALL POSITIVES WITH NO NEGATIVES. IT WAS MEANT TO BE! America can no longer subsidize Canada with the Hundreds of Billions of Dollars a year that we have been spending in the past. It makes no sense unless Canada is a State!'",
+      "finding": "The program links the image depiction, exact tweet text and named author. The quote contains requests and hypothetical events, and the program keeps their wording inside the OCR condition."
+    },
+    {
+      "claim_id": "TInVWzp25aIM_12",
+      "category": "amr_reentrancy",
+      "title": "A question about whether someone is missing",
+      "judgment": "partial",
+      "text": "Commenters ask if anyone is missing, it's unclear if there are.",
+      "finding": "Both the question and the uncertainty refer to the AMR truth-value node. The new nested conditions preserve the question reading. The formula still needs a check of variable binding across the negated clarity clause before it can settle the claim."
+    },
+    {
+      "claim_id": "Tsuk2uoYj-kc_628",
+      "category": "source_repair",
+      "title": "One overlay, one exact quote",
+      "judgment": "matches_reference",
+      "text": "Video overlay reading \"Last year it took hours to get to the camp, now its only 25 mins\" is visible.",
+      "finding": "The same overlay is visible and carries the exact string. The old AMR treated the two travel times as events inside the graph. The new program asks for visual support for the overlay and OCR support for its text."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_806",
+      "category": "dependencies",
+      "title": "Negation over all votes",
+      "judgment": "dependency_only",
+      "text": "Notes that not all lost NDP votes went to the Liberals.",
+      "finding": "“Not all” narrows the claim to a quantified subset. The AMR graph gives a negated argument but leaves its projection unresolved, so the output contains grammatical links only."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_871",
+      "category": "dependencies",
+      "title": "Voting alternatives with a condition on one branch",
+      "judgment": "dependency_only",
+      "text": "The speaker notes that Canadians may vote on election day, at advance polls, or by mail-in ballot if they are outside the country, with more information coming on the Elections Canada website.",
+      "finding": "The source links being outside the country to the mail-in alternative. The AMR graph shares an alternative across contexts, and the compiler leaves its scope for review."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_976",
+      "category": "amr_reentrancy",
+      "title": "A shared local lead does not fix the vote-count meaning",
+      "judgment": "partial",
+      "text": "Riding-level result (Peterborough): Liberal candidate Emma Harrison is leading locally with 2740 votes reported, followed by Conservative Michelle Ferreri with 1932 (increasing) and NDP candidate Heather Ray with 137.",
+      "finding": "The graph now keeps “locally” linked to the same leading event and preserves names and numbers. It also encodes the reported vote count through an AMR causal relation and leaves later counts underspecified."
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_983",
+      "category": "amr_reentrancy",
+      "title": "Majority and minority remain alternatives within a question",
+      "judgment": "partial",
+      "text": "Only question is whether it will be a majority government or a minority government.",
+      "finding": "The AMR polarity node now encloses the OR alternatives within question scope. The form still lacks a clear future qualification for “will.”"
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1739",
+      "category": "dependencies",
+      "title": "An otherwise clause needs context",
+      "judgment": "dependency_only",
+      "text": "Otherwise, importers would need to get a refund.",
+      "finding": "The graph contains an unlinked minus-valued argument. The preceding condition is implicit in “otherwise.” A dependency analysis keeps the surface attachments and does not infer an antecedent."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1878",
+      "category": "source_repair",
+      "title": "A long quote begins in the middle of a sentence",
+      "judgment": "matches_reference",
+      "text": "Some on-screen text, cut off, says '...experienced one of the worst wildfire sieges in its history. When the fires finally ended on November 5, 1993, there were four fatalities, over 1,200 structures had been destroyed, nearly 200,000 acres had been swept by 22 different fires — and the response cost/damage estimate approached $1 billion'.",
+      "finding": "The source says some on-screen text is cut off. The new program keeps that property and the literal quote together. The casualties, dates and other details stay inside the written text."
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1884",
+      "category": "source_repair",
+      "title": "The four establishments share a location",
+      "judgment": "partial",
+      "text": "It is implied that Rosenthal Winery, Wiley's Bakeshop, Cholada Thai, and the Topanga Ranch Motel are all establishments near Topanga Beach.",
+      "finding": "The selected program keeps the content beneath “imply” and retains four names and the location. The location is attached to a generic establishments description, so a check should connect it to each listed member under a shared implied context."
+    },
+    {
+      "claim_id": "TzzhcBIczf_M_2111",
+      "category": "source_repair",
+      "title": "An implication has content and an owner",
+      "judgment": "matches_reference",
+      "text": "The allegations imply that Shi Yongxin's position as Abbot was obtained illegitimately.",
+      "finding": "The allegations own the implied clause. Shi Yongxin is linked to the Abbot position, and the illegitimate obtaining stays inside that clause."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2166",
+      "category": "earlier_srl",
+      "title": "Earlier SRL can compile a phrase while losing its OR",
+      "judgment": "incorrect",
+      "text": "The video takes place on a large, open paved pier or terminal area.",
+      "finding": "The earlier converter produces a program but treats pier and terminal area as members of a group. The source allows either place. The program also analyzes the idiom “takes place” as a literal take predicate."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2173",
+      "category": "amr_annotated_coordination",
+      "title": "Crouching or sitting shares a purpose",
+      "judgment": "partial",
+      "text": "Some people crouch or sit on the ground for stability.",
+      "finding": "The two actions remain alternatives using one people variable. The purpose condition applies to the coordination as a whole, and the ground condition stays attached to sitting. The generated scope still requires a compatible evidence function."
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2343",
+      "category": "source_repair",
+      "title": "Depiction of a reporter wearing a raincoat",
+      "judgment": "partial",
+      "text": "A reporter in Zhuhai, Guangdong is shown wearing a white raincoat.",
+      "finding": "The program links the same wearer and white raincoat to the depiction in Zhuhai, Guangdong. AMR also represents the reporter through a reporting event. The source gives a profession and does not require a reporting event in the clip."
+    }
+  ],
+  "reviewed_example_count": 14,
+  "remaining": [
+    {
+      "claim_id": "TFOEIehBwT8Q_467",
+      "text": "\"Watch the man holding the Mexican flag. I'm going to press play. I don't know what is happening, ok, but suddenly someone pushes him and all the police move towards him, I don't know why. I mean, hello? And from there, everything began to escalate, you know? Watch that.\"",
+      "diagnosis": "Several quoted utterances include directives, uncertainty and anomalous coordination edges.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "A generated name is absent from the original source.",
+          "errors": [
+            {
+              "code": "name_source_mismatch",
+              "node": "n",
+              "value": "Mexico",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "sentence_mode",
+              "reason": "Question/imperative interpretation is not implemented."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Unresolved outer claim around the written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "A generated name is absent from the original source.",
+          "errors": [
+            {
+              "code": "name_source_mismatch",
+              "node": "n",
+              "value": "Mexico",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "sentence_mode",
+              "reason": "Question/imperative interpretation is not implemented."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "A generated name is absent from the original source.",
+          "errors": [
+            {
+              "code": "name_source_mismatch",
+              "node": "n",
+              "value": "Mexico",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "sentence_mode",
+              "reason": "Question/imperative interpretation is not implemented."
+            }
+          ]
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "A generated name is absent from the original source.",
+          "errors": [
+            {
+              "code": "name_source_mismatch",
+              "node": "n",
+              "value": "Mexico",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: p"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: the man holding the Mexican flag. I'm going to press play",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_806",
+      "text": "Notes that not all lost NDP votes went to the Liberals.",
+      "diagnosis": "Negation scopes over the “all” quantifier within reported content.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 11,
+              "text": "Liberals",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "negative_argument_scope",
+              "reason": "A negated argument needs scope projection over its governing relation."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 11,
+              "text": "Liberals",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "negative_argument_scope",
+              "reason": "A negated argument needs scope projection over its governing relation."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 11,
+              "text": "Liberals",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "negative_argument_scope",
+              "reason": "A negated argument needs scope projection over its governing relation."
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: that not all lost NDP votes went to the Liberals",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_867",
+      "text": "Shows picture of what the voter information service page looks like: can find electoral district, look at the map, profile, etc. with a place you can type your postal code and search ('Go') or a link you can click to find an electoral district without a postal code.",
+      "diagnosis": "A pictured website embeds several actions, alternatives and descriptive conditions with event reentry.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "Question/imperative interpretation is not implemented.",
+          "errors": [
+            {
+              "code": "sentence_mode",
+              "reason": "Question/imperative interpretation is not implemented."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Unresolved outer claim around the written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "Question/imperative interpretation is not implemented.",
+          "errors": [
+            {
+              "code": "sentence_mode",
+              "reason": "Question/imperative interpretation is not implemented."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An event is referenced from two contexts: g",
+          "errors": [
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: g"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: find",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_871",
+      "text": "The speaker notes that Canadians may vote on election day, at advance polls, or by mail-in ballot if they are outside the country, with more information coming on the Elections Canada website.",
+      "diagnosis": "The mail-in branch has a condition and an alternative is referenced outside the choice.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 5,
+              "text": "Canadians",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "coordination_reentry",
+              "reason": "An OR operand is referenced outside its choice."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 5,
+              "text": "Canadians",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "coordination_reentry",
+              "reason": "An OR operand is referenced outside its choice."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 5,
+              "text": "Canadians",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "coordination_reentry",
+              "reason": "An OR operand is referenced outside its choice."
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "SRL repeats ARGM-ADV on vote",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_916",
+      "text": "Shows graph of approval: Estimated change and trend (2016-2024): approval starts near 50% and ends around 28-30% (down ~20 points), while disapproval begins near 40% and rises to about 68-70% (up ~30 points); overall pattern shows early volatility, a temporary approval bump around 2020, then a sustained decline in approval with steadily increasing disapproval through 2024.",
+      "diagnosis": "Comparative chart trends share events across clusters with different scopes.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "An annotated coordination needs explicit scope.",
+          "errors": [
+            {
+              "code": "coordination_scope",
+              "reason": "An annotated coordination needs explicit scope."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An annotated coordination needs explicit scope.",
+          "errors": [
+            {
+              "code": "coordination_scope",
+              "reason": "An annotated coordination needs explicit scope."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "An event is referenced from two contexts: a4",
+          "errors": [
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: a4"
+            }
+          ]
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An event is referenced from two contexts: a4",
+          "errors": [
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: a4"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: while disapproval begins near 40% and rises to about 68-70% (up ~30 points)",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_918",
+      "text": "Estimated change and trend (2016-2024, index 2016 Q1 = 100): Both countries start near 100; the United States ends around 115-116 (up ~15-16 points) after a sharp 2020 drop and strong post-2020 growth, while Canada ends near 101-102 (up ~1-2 points) after a deeper 2020 decline and a slower, flatter recovery that peaks around 2022 before easing slightly, resulting in a widening gap in real GDP per capita growth.",
+      "diagnosis": "A trend comparison and narrative time qualifiers cross graph contexts.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 46,
+              "text": "Canada",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "coordination_scope",
+              "reason": "An annotated coordination needs explicit scope."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 46,
+              "text": "Canada",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "coordination_scope",
+              "reason": "An annotated coordination needs explicit scope."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 46,
+              "text": "Canada",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: d8"
+            }
+          ]
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 46,
+              "text": "Canada",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "event_scope_reentry",
+              "reason": "Cross-context event argument: g"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "Explicit source clause predicates have no linked SRL frame: peaks, easing, resulting",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_960",
+      "text": "Carney now faces decision similar to Trudeau's in 2021: whether to form a support alliance with the NDP which would give him enough seats for a majority.",
+      "diagnosis": "The alternative alliance is linked to a hypothetical seat majority and another event context.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 7,
+              "text": "Trudeau's",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "polarity_value",
+              "reason": "Unsupported polarity value: t"
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 7,
+              "text": "Trudeau's",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "polarity_value",
+              "reason": "Unsupported polarity value: t"
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 7,
+              "text": "Trudeau's",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: f2"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "Unresolved modal interpretation: would",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_972",
+      "text": "National results so far: 222 of 343 ridings have reported; seat counts stand at Liberals 124, Conservatives 88, Bloc Québécois 16, NDP 2, Greens 0 (172 seats needed for a majority).",
+      "diagnosis": "Seat counts and a majority threshold have graph nodes the translation cannot reach.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "A generated name is absent from the original source.",
+          "errors": [
+            {
+              "code": "name_source_mismatch",
+              "node": "n",
+              "value": "Liberal Party",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n2",
+              "value": "Conservative Party",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n3",
+              "value": "Bloc Quebécois",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n5",
+              "value": "The Greens",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 17,
+              "text": "Liberals",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 20,
+              "text": "Conservatives",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 24,
+              "text": "Québécois",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "coordination_scope",
+              "reason": "An annotated coordination needs explicit scope."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "A generated name is absent from the original source.",
+          "errors": [
+            {
+              "code": "name_source_mismatch",
+              "node": "n",
+              "value": "Liberal Party",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n2",
+              "value": "Conservative Party",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n3",
+              "value": "Bloc Quebécois",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n5",
+              "value": "The Greens",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 17,
+              "text": "Liberals",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 20,
+              "text": "Conservatives",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 24,
+              "text": "Québécois",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "coordination_scope",
+              "reason": "An annotated coordination needs explicit scope."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "A generated name is absent from the original source.",
+          "errors": [
+            {
+              "code": "name_source_mismatch",
+              "node": "n",
+              "value": "Liberal Party",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n2",
+              "value": "Conservative Party",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n3",
+              "value": "Bloc Quebécois",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n5",
+              "value": "The Greens",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 17,
+              "text": "Liberals",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 20,
+              "text": "Conservatives",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 24,
+              "text": "Québécois",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "untranslated_nodes",
+              "reason": "Not all AMR nodes were visited."
+            }
+          ]
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "A generated name is absent from the original source.",
+          "errors": [
+            {
+              "code": "name_source_mismatch",
+              "node": "n",
+              "value": "Liberal Party",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n2",
+              "value": "Conservative Party",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n3",
+              "value": "Bloc Quebécois",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "name_source_mismatch",
+              "node": "n5",
+              "value": "The Greens",
+              "reason": "A generated name is absent from the original source."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 17,
+              "text": "Liberals",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 20,
+              "text": "Conservatives",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 24,
+              "text": "Québécois",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "untranslated_nodes",
+              "reason": "Not all AMR nodes were visited."
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "Explicit source clause predicates have no linked SRL frame: needed",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TQEmEycTI0RQ_975",
+      "text": "Riding-level result (Oshawa): Conservative candidate Rhonda Kirkland is leading locally with 314 votes reported, followed by Liberal Isaac Ransom with 245 and NDP candidate Sara Labelle with 60.",
+      "diagnosis": "The graph repeats a core role for vote totals and a named candidate.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "Repeated core role at c2",
+          "errors": [
+            {
+              "code": "duplicate_roles",
+              "reason": "Repeated core role at c2"
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "Repeated core role at c2",
+          "errors": [
+            {
+              "code": "duplicate_roles",
+              "reason": "Repeated core role at c2"
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "Repeated core role at c2",
+          "errors": [
+            {
+              "code": "duplicate_roles",
+              "reason": "Repeated core role at c2"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: followed",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1547",
+      "text": "The injunction temporarily pauses/rules illegal and unconstitutional almost all of the tariffs the Trump administration has put in place.",
+      "diagnosis": "The legal result combines alternative predicates, negation and a near-universal tariff group.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "A negated argument needs scope projection over its governing relation.",
+          "errors": [
+            {
+              "code": "negative_argument_scope",
+              "reason": "A negated argument needs scope projection over its governing relation."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "A negated argument needs scope projection over its governing relation.",
+          "errors": [
+            {
+              "code": "negative_argument_scope",
+              "reason": "A negated argument needs scope projection over its governing relation."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "A negated argument needs scope projection over its governing relation.",
+          "errors": [
+            {
+              "code": "negative_argument_scope",
+              "reason": "A negated argument needs scope projection over its governing relation."
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: almost all of the tariffs the Trump administration has put in place",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1586",
+      "text": "Image of Trump signing something (likely executive orders).",
+      "diagnosis": "The image depicts signing while the object identity is a likelihood qualifier.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "A predicative media modifier needs attribute-versus-content interpretation.",
+          "errors": [
+            {
+              "code": "media_modifier_scope",
+              "reason": "A predicative media modifier needs attribute-versus-content interpretation."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "A predicative media modifier needs attribute-versus-content interpretation.",
+          "errors": [
+            {
+              "code": "media_modifier_scope",
+              "reason": "A predicative media modifier needs attribute-versus-content interpretation."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "A predicative media modifier needs attribute-versus-content interpretation.",
+          "errors": [
+            {
+              "code": "media_modifier_scope",
+              "reason": "A predicative media modifier needs attribute-versus-content interpretation."
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "Explicit source clause predicates have no linked SRL frame: signing",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1634",
+      "text": "The court said in the ruling that it is not just ruling for the plaintiff but for everyone who would be covered by the tariffs.",
+      "diagnosis": "The source combines reported content with “not just ... but” and a universal clause.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "No scope policy for contrast-01 :ARG1 rule-01",
+          "errors": [
+            {
+              "code": "unhandled_complement",
+              "reason": "No scope policy for contrast-01 :ARG1 rule-01"
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "A negated argument needs scope projection over its governing relation.",
+          "errors": [
+            {
+              "code": "negative_argument_scope",
+              "reason": "A negated argument needs scope projection over its governing relation."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "A negated argument needs scope projection over its governing relation.",
+          "errors": [
+            {
+              "code": "negative_argument_scope",
+              "reason": "A negated argument needs scope projection over its governing relation."
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "Unresolved modal interpretation: would",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1639",
+      "text": "The ruling means that the Administration will need to go to Congress to set tariffs unless the ruling is overturned.",
+      "diagnosis": "The ruling is both the main referent and an argument to the unless clause.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 6,
+              "text": "Administration",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "unhandled_complement",
+              "reason": "No scope policy for mean-01 :ARG1 rule-01"
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 6,
+              "text": "Administration",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: r"
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 6,
+              "text": "Administration",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: r"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: unless the ruling is overturned",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1655",
+      "text": "She claims that Trump wants America to return to the late 19th century, when America had no income tax and state spending was instead funded by tariff revenue; Rachana says that this is a fantasy.",
+      "diagnosis": "The view of a past period is nested in a claim that another speaker calls a fantasy.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "No scope policy for contrast-01 :ARG1 claim-01",
+          "errors": [
+            {
+              "code": "unhandled_complement",
+              "reason": "No scope policy for contrast-01 :ARG1 claim-01"
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An annotated coordination needs explicit scope.",
+          "errors": [
+            {
+              "code": "coordination_scope",
+              "reason": "An annotated coordination needs explicit scope."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "An event is referenced from two contexts: h",
+          "errors": [
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: h"
+            }
+          ]
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An event is referenced from two contexts: h",
+          "errors": [
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: h"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1657",
+      "text": "Stock markets around the world are reacting badly to Trump's decision and that it could tip the economy into a recession — an observation echoed in the video by b-roll of financial buildings and graphics of negative market reports.",
+      "diagnosis": "The market response and possible recession also have source and depiction links that are not all translated.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "No scope policy for bad-05 :ARG1 react-01",
+          "errors": [
+            {
+              "code": "unhandled_complement",
+              "reason": "No scope policy for bad-05 :ARG1 react-01"
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An event is referenced from two contexts: r",
+          "errors": [
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: r"
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "Not all AMR nodes were visited.",
+          "errors": [
+            {
+              "code": "untranslated_nodes",
+              "reason": "Not all AMR nodes were visited."
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: to Trump's decision and that it could tip the economy into a recession",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1724",
+      "text": "Shows news article from CBC news backing this up: Headline is Mark Carney to run for seat in Ottawa's Nepean riding. Subheading is: Previously held by Liberal MP Chandra Arya, it borders riding where Poilievre is seeking re-election; Posted Mar 22, 2025 at 8:19 PM EDT (5 hours ago).",
+      "diagnosis": "The headline and subheading attach several graph participants to a repeated core role.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "An explicit source amount/identifier is not represented in graph values.",
+          "errors": [
+            {
+              "code": "source_number_omission",
+              "start": 270,
+              "end": 271,
+              "text": "5",
+              "reason": "An explicit source amount/identifier is not represented in graph values."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 32,
+              "text": "MP",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "duplicate_roles",
+              "reason": "Repeated core role at h3"
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An explicit source amount/identifier is not represented in graph values.",
+          "errors": [
+            {
+              "code": "source_number_omission",
+              "start": 270,
+              "end": 271,
+              "text": "5",
+              "reason": "An explicit source amount/identifier is not represented in graph values."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 32,
+              "text": "MP",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "duplicate_roles",
+              "reason": "Repeated core role at h3"
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An explicit source amount/identifier is not represented in graph values.",
+          "errors": [
+            {
+              "code": "source_number_omission",
+              "start": 270,
+              "end": 271,
+              "text": "5",
+              "reason": "An explicit source amount/identifier is not represented in graph values."
+            },
+            {
+              "code": "source_name_omission",
+              "token_id": 32,
+              "text": "MP",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "duplicate_roles",
+              "reason": "Repeated core role at h3"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: Previously held by Liberal MP Chandra Arya, it borders riding where Poilievre is seeking re-election; Posted Mar 22, 2025 at 8:19 PM EDT (5 hours ago)",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1726",
+      "text": "Shows picture of what the voter information service page looks like: can find electoral district, look at the map, profile, etc. with a place you can type your postal code and search ('Go') or a link you can click to find an electoral district without a postal code.",
+      "diagnosis": "Another website description has multiple actions and cross-context references.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "Question/imperative interpretation is not implemented.",
+          "errors": [
+            {
+              "code": "sentence_mode",
+              "reason": "Question/imperative interpretation is not implemented."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Unresolved outer claim around the written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "Question/imperative interpretation is not implemented.",
+          "errors": [
+            {
+              "code": "sentence_mode",
+              "reason": "Question/imperative interpretation is not implemented."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An event is referenced from two contexts: g",
+          "errors": [
+            {
+              "code": "event_scope_reentry",
+              "reason": "An event is referenced from two contexts: g"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: find",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1730",
+      "text": "The speaker notes that Canadians may vote on election day, at advance polls, or by mail-in ballot if they are outside the country, with more information coming on the Elections Canada website.",
+      "diagnosis": "Another voting-method description shares an OR alternative with a clause outside its branch.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 5,
+              "text": "Canadians",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "coordination_reentry",
+              "reason": "An OR operand is referenced outside its choice."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 5,
+              "text": "Canadians",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "coordination_reentry",
+              "reason": "An OR operand is referenced outside its choice."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+          "errors": [
+            {
+              "code": "source_name_omission",
+              "token_id": 5,
+              "text": "Canadians",
+              "reason": "An explicit proper-name component is absent from emitted graph names/concepts."
+            },
+            {
+              "code": "coordination_reentry",
+              "reason": "An OR operand is referenced outside its choice."
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "SRL repeats ARGM-ADV on vote",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1731",
+      "text": "Shows images of mail in ballots with all items included: envelope for you to receive it, return envelope, ballot, and the instructions for voting.",
+      "diagnosis": "An instructions clause occurs inside a list of depicted ballot items, with a node left unvisited.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "No scope policy for instruct-01 :ARG3 vote-01",
+          "errors": [
+            {
+              "code": "unhandled_complement",
+              "reason": "No scope policy for instruct-01 :ARG3 vote-01"
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "Not all AMR nodes were visited.",
+          "errors": [
+            {
+              "code": "untranslated_nodes",
+              "reason": "Not all AMR nodes were visited."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "Not all AMR nodes were visited.",
+          "errors": [
+            {
+              "code": "untranslated_nodes",
+              "reason": "Not all AMR nodes were visited."
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: images of mail in ballots with all items included: envelope for you to receive it, return envelope, ballot, and the instructions for voting",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1739",
+      "text": "Otherwise, importers would need to get a refund.",
+      "diagnosis": "An otherwise clause depends on the preceding discourse and the AMR contains a malformed argument.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "A core argument names an undeclared node: -",
+          "errors": [
+            {
+              "code": "unresolved_reference",
+              "reason": "A core argument names an undeclared node: -"
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "A core argument names an undeclared node: -",
+          "errors": [
+            {
+              "code": "unresolved_reference",
+              "reason": "A core argument names an undeclared node: -"
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "A core argument names an undeclared node: -",
+          "errors": [
+            {
+              "code": "unresolved_reference",
+              "reason": "A core argument names an undeclared node: -"
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "Unresolved modal interpretation: would",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2289",
+      "text": "Pedestrians are struggling to walk or stand in strong wind carrying a spray of water in Jiangmen.",
+      "diagnosis": "The graph links one actor to an OR clause and has an incomplete coordination structure.",
+      "stages": [
+        {
+          "stage": "source_scope",
+          "status": "unsupported",
+          "reason": "An annotated coordination needs explicit scope.",
+          "errors": [
+            {
+              "code": "coordination_scope",
+              "reason": "An annotated coordination needs explicit scope."
+            }
+          ]
+        },
+        {
+          "stage": "written_quote",
+          "status": "unsupported",
+          "reason": "Expected one source-bound written quotation.",
+          "errors": null
+        },
+        {
+          "stage": "unresolved_complement",
+          "status": "unsupported",
+          "reason": "An annotated coordination needs explicit scope.",
+          "errors": [
+            {
+              "code": "coordination_scope",
+              "reason": "An annotated coordination needs explicit scope."
+            }
+          ]
+        },
+        {
+          "stage": "annotated_coordination",
+          "status": "unsupported",
+          "reason": "No supported coordination annotation to normalize.",
+          "errors": null
+        },
+        {
+          "stage": "reentrant_amr",
+          "status": "unsupported",
+          "reason": "An annotated coordination needs explicit scope.",
+          "errors": [
+            {
+              "code": "coordination_scope",
+              "reason": "An annotated coordination needs explicit scope."
+            }
+          ]
+        },
+        {
+          "stage": "earlier_srl",
+          "status": "unsupported",
+          "reason": "A clausal argument has no attached SRL frame: carrying a spray of water in Jiangmen",
+          "errors": null
+        },
+        {
+          "stage": "dependencies",
+          "status": "diagnostic",
+          "reason": null,
+          "errors": null
+        }
+      ]
+    }
+  ],
+  "request_check": {
+    "corpus_alerts": [],
+    "external_alerts": [
+      {
+        "claim_id": "averitec_dev_339",
+        "text": "Actor Mukesh Khanna has called for a boycott of Jaya and Amitabh Bachchan.",
+        "code": "request_scope",
+        "reason": "A call for action lacks an explicit request context."
+      }
+    ],
+    "policy": "Advisory diagnostic only. It does not select a parser or estimate all wrong passes."
+  },
+  "checked_forms": 54,
+  "checked_source_groups": 36,
+  "policy": "Implementing-assistant development review. No truth labels or media. Exact forms are candidates for preparation and require separate evidence labels."
+}

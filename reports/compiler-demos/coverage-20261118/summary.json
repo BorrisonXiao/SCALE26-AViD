@@ -1,0 +1,29 @@
+{
+  "total": 2375,
+  "strict_baseline": 2177,
+  "advisory_only_ablation": 2280,
+  "strict_after_repairs": 2183,
+  "semantic_programs": 2354,
+  "programs_including_dependencies": 2375,
+  "categories": {
+    "strict_baseline": 2177,
+    "advisory_checks": 100,
+    "source_repair": 6,
+    "amr_reentrancy": 31,
+    "amr_unresolved_complement": 32,
+    "dependencies": 21,
+    "amr_annotated_coordination": 6,
+    "earlier_srl": 2
+  },
+  "unresolved_semantic": {
+    "event_scope_reentry": 8,
+    "negative_argument_scope": 3,
+    "coordination_reentry": 2,
+    "untranslated_nodes": 3,
+    "duplicate_roles": 2,
+    "media_modifier_scope": 1,
+    "unresolved_reference": 1,
+    "coordination_scope": 1
+  },
+  "no_program": 0
+}

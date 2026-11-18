@@ -815,11 +815,30 @@
     {
       "id": 35,
       "title": "Improve faithful coverage before empirical relation training",
+      "status": "coverage experiment complete",
+      "items": [
+        {
+          "text": "The coverage experiment produces 2,354/2,375 semantic programs (99.12%). 21 more claims produce only dependency analyses. Earlier strict checks pass 2,177, and targeted repairs bring that count to 2,183. Allowing already generated programs with warnings alone gives 2,280. Advisory outputs require review before evidence inference.",
+          "done": true
+        },
+        {
+          "text": "Reviewed all 21 remaining semantic failures and 14 examples. Tested a narrow advisory check on requests.",
+          "done": true
+        },
+        {
+          "text": "Exported 54 reviewed logical forms with source groups and the full 2,375-claim test inventory.",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Resolve remaining scopes and prepare binding evidence",
       "status": "planned",
       "items": [
-        "Repair shared participant and noun-reading errors. Goal: recover complete logical forms rather than larger generation counts.",
-        "Check incorrect primary-parser passes. Goal: enable useful fallback without selecting by gold or media.",
-        "Prepare checked binding forms and an automatic full test. Goal: isolate learning while reporting parsing failures."
+        "Resolve event references and OR branches. Goal: compile more of the remaining claims with the correct scope.",
+        "Review warnings by source group. Goal: estimate meaning preservation and catch misleading primary passes.",
+        "Inspect source-disjoint evidence labels and binding edits. Goal: prepare controls for relation learning."
       ]
     }
   ],
@@ -884,5 +903,6 @@
   "amr_correction_run": "exp/probabilistic_verification/amr_correction_20261114",
   "amr_types_run": "exp/probabilistic_verification/amr_types_20261115",
   "amr_contexts_run": "exp/probabilistic_verification/amr_contexts_20261118",
-  "compiler_fallback_run": "exp/probabilistic_verification/compiler_fallback_20261118"
+  "compiler_fallback_run": "exp/probabilistic_verification/compiler_fallback_20261118",
+  "compiler_coverage_run": "exp/probabilistic_verification/compiler_coverage_20261118"
 }
