@@ -1,0 +1,96 @@
+{
+  "total": 2375,
+  "selected": {
+    "srl": 1978,
+    "abstained": 198,
+    "amr": 178,
+    "rewrite": 21
+  },
+  "automatic_compiled": 2177,
+  "parsing_abstentions": 198,
+  "srl_attempts": 2375,
+  "amr_attempts": 397,
+  "rewrite_attempts": 219,
+  "final_stops": {
+    "rewrite_component": 115,
+    "entity_alignment": 69,
+    "conditional_scope": 1,
+    "sentence_parse": 2,
+    "missing_shared_participant": 1,
+    "event_alignment": 3,
+    "shared_description": 2,
+    "description_alignment": 3,
+    "source_alignment": 2
+  },
+  "seconds": 59.7433714158833,
+  "models_called": 0,
+  "fresh_rewrite_responses": 8,
+  "retained_pool": 1981,
+  "promotions": 0,
+  "policy": "Fixed automatic SRL -> AMR -> one cached rewrite. No meaning-review, media or claim-label routing. Parse abstention is not evidence unknown.",
+  "baseline_audit": {
+    "total": 183,
+    "whole_readings": {
+      "incorrect": 45,
+      "matches_reference": 42,
+      "partial": 83,
+      "context_needed": 13
+    },
+    "fresh": 145,
+    "reused": 38
+  },
+  "addition_reviews": {
+    "amr": {
+      "total": 178,
+      "whole_readings": {
+        "incorrect": 38,
+        "matches_reference": 45,
+        "partial": 82,
+        "context_needed": 13
+      }
+    },
+    "rewrite": {
+      "total": 21,
+      "whole_readings": {
+        "matches_reference": 5,
+        "partial": 13,
+        "incorrect": 3
+      }
+    }
+  },
+  "meaning_review_limit": "Implementing-assistant development audit. Existing SRL passes are not fully reviewed; no end-to-end semantic accuracy or new human approval.",
+  "external": {
+    "total": 20,
+    "srl_generated": 15,
+    "srl_passing": 11,
+    "amr_generated": 10,
+    "amr_passing": 6,
+    "fallback_selected": {
+      "abstained": 7,
+      "srl": 11,
+      "amr": 2
+    },
+    "rewrite_responses": 0,
+    "policy": "Previously selected external diagnostic; frozen references, compiler fixed before these outputs, no new rewrite requests or truth labels.",
+    "meaning_reviews": {
+      "srl": {
+        "not_compiled": 5,
+        "partial": 7,
+        "matches_reference": 4,
+        "incorrect": 4
+      },
+      "amr": {
+        "not_compiled": 10,
+        "partial": 5,
+        "matches_reference": 4,
+        "incorrect": 1
+      },
+      "fallback": {
+        "not_compiled": 7,
+        "partial": 7,
+        "matches_reference": 4,
+        "incorrect": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "claim_id": "Tg0UxWYuPeJ0_318",
+    "text": "Friend of the bystander checks to see if he is ok",
+    "raw": "{\n  \"action\": \"rewrite\",\n  \"sentences\": [\n    \"Friend of the bystander checks to see if he is ok.\",\n    \"The friend is checking on the bystander.\",\n    \"The friend is trying to determine whether the bystander is okay.\",\n    \"The condition being checked is whether the bystander is ok.\"\n  ]\n}",
+    "rewrite_meaning": "incorrect",
+    "reason": "The first sentence repeats the original. Later clauses assume “he” denotes the bystander and duplicate the checking condition. The original pronoun remains ambiguous; this is not a reliable simplification.",
+    "provenance": "Implementing-assistant review of all eight exact model responses and original texts. Text judgment is separate from compiled-program success; never used for routing.",
+    "parsing_status": "abstained",
+    "selected_stage": null,
+    "final_code": "rewrite_component",
+    "final_reason": "c1: The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+    "compiled_review": null
+  },
+  {
+    "claim_id": "TQKCK6-tRaoE_675",
+    "text": "Video overlay reading \"rt_russian\" is visible.",
+    "raw": "{\n  \"action\": \"rewrite\",\n  \"sentences\": [\n    \"A video overlay is visible.\",\n    \"The video overlay reads \\\"rt_russian\\\".\"\n  ]\n}",
+    "rewrite_meaning": "matches_reference",
+    "reason": "Two short statements retain a visible video overlay and its exact written identifier. They must share one overlay; final compilation is checked separately.",
+    "provenance": "Implementing-assistant review of all eight exact model responses and original texts. Text judgment is separate from compiled-program success; never used for routing.",
+    "parsing_status": "compiled",
+    "selected_stage": "rewrite",
+    "final_code": null,
+    "final_reason": null,
+    "compiled_review": {
+      "whole_reading": "matches_reference",
+      "reason": "One shared overlay variable retains its video modifier, visibility and exact rt_russian string. The inscription relation requires OCR support; no person reading or internal quoted proposition is asserted.",
+      "provenance": "Fresh implementing-assistant inspection of original, exact rewrite, composed logical form, sharing and source routes. Development judgment; no new human approval."
+    }
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_750",
+    "text": "There are multiple additional police officers in the immediate vicinity of the police van helping and clearing space.",
+    "raw": "{\n  \"action\": \"rewrite\",\n  \"sentences\": [\n    \"There are multiple additional police officers.\",\n    \"The police officers are in the immediate vicinity of the police van.\",\n    \"The police officers are helping.\",\n    \"The police officers are clearing space.\"\n  ]\n}",
+    "rewrite_meaning": "partial",
+    "reason": "The same officers and van can be linked, but “helping” is separated from clearing space and the intended help/clear relationship is not explicit. “Additional” also needs a comparison group.",
+    "provenance": "Implementing-assistant review of all eight exact model responses and original texts. Text judgment is separate from compiled-program success; never used for routing.",
+    "parsing_status": "compiled",
+    "selected_stage": "rewrite",
+    "final_code": null,
+    "final_reason": null,
+    "compiled_review": {
+      "whole_reading": "partial",
+      "reason": "One shared officers variable links additional/multiple/police descriptions, vicinity of the same police van, helping and clearing space. The relation between helping and clearing and the comparison/group reading of additional/multiple remain unexposed; the result is not counted as a complete recovery.",
+      "provenance": "Fresh implementing-assistant inspection of original, exact rewrite, composed logical form and shared participant alignment. Development judgment; no new human approval."
+    }
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1471",
+    "text": "The knots of flow ramped up overnight on the 3rd and into the 4th from 10-20 knots to 25-30 knots across central Texas.",
+    "raw": "{\n  \"action\": \"rewrite\",\n  \"sentences\": [\n    \"The knots of flow ramped up overnight.\",\n    \"This change occurred on the 3rd and into the 4th.\",\n    \"The wind speed increased from 10 to 20 knots.\",\n    \"The wind speed increased to 25 to 30 knots.\",\n    \"These changes took place across central Texas.\"\n  ]\n}",
+    "rewrite_meaning": "incorrect",
+    "reason": "The original speed moves from a10–20-knot range to a25–30-knot range. One generated clause instead asserts an increase from10to20, while another describes “knots of flow”; shared change/time/location links are unclear.",
+    "provenance": "Implementing-assistant review of all eight exact model responses and original texts. Text judgment is separate from compiled-program success; never used for routing.",
+    "parsing_status": "abstained",
+    "selected_stage": null,
+    "final_code": "entity_alignment",
+    "final_reason": "Original noun head is absent or ambiguous: c1/knots",
+    "compiled_review": null
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1872",
+    "text": "Five years since the filming, everything about the PCH is different.",
+    "raw": "{\n  \"action\": \"rewrite\",\n  \"sentences\": [\n    \"Five years have passed since the filming.\",\n    \"Everything about the PCH is different.\"\n  ]\n}",
+    "rewrite_meaning": "partial",
+    "reason": "The universal “everything” is retained and must not be reduced to one existential candidate. “Five years have passed since filming” fixes a reference time that the fragment does not state explicitly.",
+    "provenance": "Implementing-assistant review of all eight exact model responses and original texts. Text judgment is separate from compiled-program success; never used for routing.",
+    "parsing_status": "abstained",
+    "selected_stage": null,
+    "final_code": "rewrite_component",
+    "final_reason": "c2: An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+    "compiled_review": null
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1884",
+    "text": "It is implied that Rosenthal Winery, Wiley's Bakeshop, Cholada Thai, and the Topanga Ranch Motel are all establishments near Topanga Beach.",
+    "raw": "{\n  \"action\": \"rewrite\",\n  \"sentences\": [\n    \"It is implied that Rosenthal Winery is an establishment near Topanga Beach.\",\n    \"It is implied that Wiley's Bakeshop is an establishment near Topanga Beach.\",\n    \"It is implied that Cholada Thai is an establishment near Topanga Beach.\",\n    \"It is implied that the Topanga Ranch Motel is an establishment near Topanga Beach.\"\n  ]\n}",
+    "rewrite_meaning": "matches_reference",
+    "reason": "The four establishments remain near the same named beach, each inside an “it is implied” qualification. This is a reasonable distribution of the original shared location; a compiler must retain the shared implied context rather than assert each location as a world fact.",
+    "provenance": "Implementing-assistant review of all eight exact model responses and original texts. Text judgment is separate from compiled-program success; never used for routing.",
+    "parsing_status": "abstained",
+    "selected_stage": null,
+    "final_code": "rewrite_component",
+    "final_reason": "c1: The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+    "compiled_review": null
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1924",
+    "text": "The video depicts a 'Palisades Incident Operations Update' from January 12, 2025.",
+    "raw": "{\n  \"action\": \"rewrite\",\n  \"sentences\": [\n    \"The video depicts a 'Palisades Incident Operations Update'.\",\n    \"The 'Palisades Incident Operations Update' is from January 12, 2025.\"\n  ]\n}",
+    "rewrite_meaning": "matches_reference",
+    "reason": "The source title and date remain attached to one update depicted by the video. Composition must keep the dated-update description in the depiction context.",
+    "provenance": "Implementing-assistant review of all eight exact model responses and original texts. Text judgment is separate from compiled-program success; never used for routing.",
+    "parsing_status": "abstained",
+    "selected_stage": null,
+    "final_code": "description_alignment",
+    "final_reason": "A shared property is not anchored in the original text.",
+    "compiled_review": null
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2111",
+    "text": "The allegations imply that Shi Yongxin's position as Abbot was obtained illegitimately.",
+    "raw": "{\n  \"action\": \"rewrite\",\n  \"sentences\": [\n    \"The allegations imply something.\",\n    \"The thing implied is that Shi Yongxin's position as Abbot was obtained illegitimately.\"\n  ]\n}",
+    "rewrite_meaning": "partial",
+    "reason": "The embedded illegitimate-obtaining content remains stated as implied content, but the second clause uses an ambiguous “thing implied” reference and a relative clause. This is hardly simpler and still requires a proposition link.",
+    "provenance": "Implementing-assistant review of all eight exact model responses and original texts. Text judgment is separate from compiled-program success; never used for routing.",
+    "parsing_status": "abstained",
+    "selected_stage": null,
+    "final_code": "rewrite_component",
+    "final_reason": "c1: The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+    "compiled_review": null
+  }
+]

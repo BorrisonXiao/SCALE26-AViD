@@ -1,0 +1,151 @@
+{
+  "rows": [
+    {
+      "claim_id": "Tg0UxWYuPeJ0_385",
+      "stage": "srl",
+      "mode": "unknown",
+      "native": true,
+      "observations": 8,
+      "program_sha256": "9ef3e0114ad72bfae4dc51e05007e2ee4291b06913fac1d402bc389443188348",
+      "seconds": 0.025596734136343002,
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "expected": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_535",
+      "stage": "amr",
+      "mode": "unknown",
+      "native": true,
+      "observations": 3,
+      "program_sha256": "c346d06a6eed062eaf720bce0eea8002c284e859c63ac6a529e37b9aba7e1829",
+      "seconds": 0.01249002106487751,
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "expected": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_535",
+      "stage": "amr",
+      "mode": "ocr",
+      "native": true,
+      "observations": 3,
+      "program_sha256": "c346d06a6eed062eaf720bce0eea8002c284e859c63ac6a529e37b9aba7e1829",
+      "seconds": 0.012372879311442375,
+      "distribution": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      },
+      "expected": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "TFOEIehBwT8Q_535",
+      "stage": "amr",
+      "mode": "speech",
+      "native": true,
+      "observations": 3,
+      "program_sha256": "c346d06a6eed062eaf720bce0eea8002c284e859c63ac6a529e37b9aba7e1829",
+      "seconds": 0.011195464059710503,
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "expected": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1664",
+      "stage": "amr",
+      "mode": "missing_modal",
+      "native": true,
+      "observations": 10,
+      "program_sha256": "736a78b739d6b164a7c0591a19c9557995cf5f54d94e73db1a0c7f907e67a6ca",
+      "seconds": 0.03440634347498417,
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "expected": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1664",
+      "stage": "amr",
+      "mode": "scoped_support",
+      "native": true,
+      "observations": 10,
+      "program_sha256": "736a78b739d6b164a7c0591a19c9557995cf5f54d94e73db1a0c7f907e67a6ca",
+      "seconds": 0.035647571086883545,
+      "distribution": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      },
+      "expected": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      },
+      "matches": true
+    },
+    {
+      "claim_id": "T3HTSBW42QaY_760",
+      "stage": "rewrite",
+      "mode": "unknown",
+      "native": true,
+      "observations": 7,
+      "program_sha256": "ef39eb974cfd3d21dac7cd314d028f5d32a2cf5e50687fff45707b050f2ad30f",
+      "seconds": 0.025994056835770607,
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "expected": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      },
+      "matches": true
+    }
+  ],
+  "parse_policy": {
+    "claim_id": "TjHepwuhkYFA_1016",
+    "verdict": "abstain",
+    "reason": "parsing_failure",
+    "distribution": null
+  },
+  "policy": "Seven native controls on four actual programs, constructed observations and placeholder candidates. One separate parsing-abstention policy check. No real media or training."
+}

@@ -25,6 +25,24 @@
           "text": "607 tests, 11 native controls and default/legacy exact replay pass. 797 automatic failures and incorrect passes remain; retained pool 1,981 unchanged. No media training.",
           "href": "#amr-contexts-failures",
           "label": "Patterns and next goals"
+        },
+        {
+          "text": "Implemented the accepted SRL→AMR→bounded rewrite sequence: 2,177/2,375 automatic passes, 198 explicit parsing abstentions. All inputs remain counted.",
+          "href": "#remaining-failures",
+          "label": "Fixed-sequence results",
+          "fallback_entry": true
+        },
+        {
+          "text": "Audited all 183 original AMR recovery candidates; reviewed every final AMR/rewrite addition. Automatic pass counts remain separate from faithful readings.",
+          "href": "#fallback-demos",
+          "label": "Repairs and examples",
+          "fallback_entry": true
+        },
+        {
+          "text": "Added source contexts/quote checks and complete failure handling.640 tests, seven native controls and unchanged defaults pass. Old retained pool remains separate under History.",
+          "href": "#fallback-inspector",
+          "label": "All claims and actual stages",
+          "fallback_entry": true
         }
       ]
     },

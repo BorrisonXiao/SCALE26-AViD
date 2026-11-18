@@ -1,0 +1,1946 @@
+[
+  {
+    "claim_id": "Txf2EdqOg1SQ_2168",
+    "text": "Extremely high winds are visible, blowing mist or rain horizontally across the screen.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The blowing event still lacks the wind actor/causer and remains outside perception; changing high to a property does not restore the binding.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TInVWzp25aIM_48",
+    "text": "Roads further inland are drivable for now.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Capability, inland location, further degree and current-time restriction are retained.",
+      "pattern": "capability",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TInVWzp25aIM_79",
+    "text": "Some roads further inland are drivable for now.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Some plural roads, inland/further modifiers and current drivability are retained.",
+      "pattern": "capability",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TInVWzp25aIM_87",
+    "text": "People were evacuated to the Joint Base Elemendorf-Richardson, Alaska on October 15th, 2025.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The evacuation puts the named base in ARG1 and people in ARG2, reversing people and destination.",
+      "pattern": "argument_roles",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_127",
+    "text": "Many shipping containers are leaning on top of each other precariously across much of The Mississippi's deck.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The Mississippi is typed as a river, and one container group is put on its own top rather than explicit reciprocal stacking.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_131",
+    "text": "The windy conditions may have played a role in the the containers falling off The Mississippi ",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Possible influence is scoped, but the ship becomes a river and the role-in-falling relation is incomplete.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_164",
+    "text": "The container spill was from the ship The Mississippi.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Container spill and source ship/name survive, but the past source relation has no corresponding tense constraint.",
+      "pattern": "tense_aspect",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_172",
+    "text": "The goal of the recovery operation was to keep the port open.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "The recovery operation and keep-open goal now compile under purpose scopes, with a scoped reference to the same operation. The past tense of was the goal is not aligned to have-purpose-91.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T2EE72iNELEs_190",
+    "text": "Rocket reaches Earth atmosphere and beyond.",
+    "review": {
+      "index": 61,
+      "claim_id": "T2EE72iNELEs_190",
+      "cohort": "new_videos32",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "partial",
+      "reason": "Earth atmosphere and beyond it survive, but both are group members under reach. The further-extent/trajectory reading is not explicit.",
+      "source_checks_pass": true,
+      "program_sha256": "d5041a75fef06b277c0d391d67cfb3d6683d4062aaf533b54e9fa8b5f8f6a97d",
+      "amr_sha256": "d70e0f0f9ec88e8832b3c9a6f162df89bdd0a8acc76eee821f6e583197e45446",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T2EE72iNELEs_192",
+    "text": "Video beginning velocity 17828 mph.",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "The initial speed and unit survive; the fragment gives no object whose velocity is measured. Video beginning is interpreted as a beginning event.",
+      "pattern": "fragment",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2EE72iNELEs_200",
+    "text": "Spectators are excited as rocket launches.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The graph makes the launch the cause of excitement; source as requires temporal overlap and does not explicitly assert causation.",
+      "pattern": "causality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_223",
+    "text": "The physical integrity of the power lines seems intact.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Appearance and intact physical integrity survive, but the power-line compound is an unresolved line/power action relation.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_277",
+    "text": "Dust or debris particle flying around in an orange tint sky.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Dust/debris alternatives modify the flying particle; around-path, orange sky/tint and progressive aspect survive.",
+      "pattern": "coordination",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_314",
+    "text": "Residential area could loose power.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Possibility is preserved, but the model uses loose-02 rather than the intended lose-power reading of the source typo.",
+      "pattern": "predicate_sense",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_323",
+    "text": "Robot slams into man during race.",
+    "review": {
+      "index": 53,
+      "claim_id": "Tg0UxWYuPeJ0_323",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "matches_reference",
+      "reason": "Keeps robot/man participants and uses an explicit time relationship to race, not a location adjunct.",
+      "source_checks_pass": true,
+      "program_sha256": "107eb51b9f919d97b9c8d618c6a0b38787ba0d6ffd681021d2c7e8091d40e92f",
+      "amr_sha256": "be8304162bbbb2e68d0b14d9e4309f84db1e33eefe5898fadf144df55d152c64",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_333",
+    "text": "Robot 1paces up behind the man",
+    "review": {
+      "index": 44,
+      "claim_id": "Tg0UxWYuPeJ0_333",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "partial",
+      "reason": "Robot1 identity and up remain absent. Removing erroneous event plurality does not recover these details.",
+      "source_checks_pass": true,
+      "program_sha256": "b244195ae74a2da53089fd753dfb79779212821d25efde26b59bedc5f982e604",
+      "amr_sha256": "e7f6e38a88865b2afc597b430a86b8daf0362c5e5f9f0860685b99034ff92535",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_346",
+    "text": "Robot 1 swings at the man's butt as he is talking to people who are off-screen.",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "Swing actor and target survive; talking is assigned to the robot although he plausibly refers to the man. Pronoun resolution needs context.",
+      "pattern": "coreference",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_355",
+    "text": "Robot is able to balance itself after getting pushed.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Self-reference and after-pushing are retained, but the push is placed inside possible-balancing scope rather than clearly distinguished from the ability assertion.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_378",
+    "text": "Robot on lane three comes in second place.",
+    "review": {
+      "index": 21,
+      "claim_id": "Tg0UxWYuPeJ0_378",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "matches_reference",
+      "reason": "Keeps the robot linked to lane three, distinct from its second-place ordinal finishing position.",
+      "source_checks_pass": true,
+      "program_sha256": "4fba65cdc1913e6ba61e3340db92560f7f3585e3acea17ff0ae62c3f18744831",
+      "amr_sha256": "8d79bbdb6f681af5c115854e10dc8ff4f07d67f0e2f6de8bebbb5b3f20d96d3f",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_379",
+    "text": "Robot race inside a running  track.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Robot race and track location survive; running-track function is represented by an extra run event in the outer claim.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_380",
+    "text": "Weibo, People's daily",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "Both names survive, but this is a source-label list and Weibo is given publication type. No complete asserted relation is specified.",
+      "pattern": "fragment",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_395",
+    "text": "Robot running trips and falls.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Running takes the trip/fall conjunction as ARG1; three coordinated actions are not represented faithfully. Source POS also misclassifies them as nominal events.",
+      "pattern": "coordination",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_407",
+    "text": "there are 2 robots with long legs and 2 with shorter legs.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Both two-robot groups and leg lengths survive, but the shorter comparison and distinctness of the groups are not explicitly bound.",
+      "pattern": "comparison",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_423",
+    "text": "Robot 1 is getting pushed into the corner by Robot 2 ",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Pusher, pushed robot identifiers and corner are correct; is getting pushed becomes present simple rather than progressive.",
+      "pattern": "tense_aspect",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_425",
+    "text": "Robot 2 collapses after getting caught in the ropes.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Robot 2 collapses after the same robot is caught in plural ropes; the event and temporal bindings survive.",
+      "pattern": "temporal",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_433",
+    "text": "Robot 1 sweep kicks Robot 2",
+    "review": {
+      "index": 20,
+      "claim_id": "Tg0UxWYuPeJ0_433",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "incorrect",
+      "reason": "The kick actor/target are correct, but a separate sweep event makes Robot1 its patient; a sweep kick is not represented.",
+      "source_checks_pass": true,
+      "program_sha256": "8cbad0da1bce1b9ea63e40bf4aedde4ec30fcef3f8df6b713bfe6c3a8ceff1ec",
+      "amr_sha256": "25750fe0b1e504748c10d86b79f92a4dbc5581a528074b7203a8e37e395c93ec",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_447",
+    "text": "Beijing recently.",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "Beijing and recent survive, but the fragment has no located participant or complete event.",
+      "pattern": "fragment",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_454",
+    "text": "Protesters are attempting to breakdown barricades using metal rails.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Attempt retains protesters, break-down goal, barricades and metal-rail instrument without asserting successful breakdown.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_469",
+    "text": "Protest happening in the middle of Zócalo .",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Protest and middle-of-Zocalo location survive, but Zocalo is given an unsupported city-district type.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_470",
+    "text": "The protest is happening in the middle of the Zócalo, formally known as the Plaza de la Constitución, which is the main square in central Mexico City.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Place descriptions survive, but known-as is represented with two square referents rather than an explicit alias identity.",
+      "pattern": "coreference",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_478",
+    "text": "Sign posted at the National Palace entry way that says \"Mexico bleeds every time we remain silent\".",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The sign content has OCR assertion scope, but we is wrongly shared with Mexico; no exact written-string condition protects the quoted wording.",
+      "pattern": "quotation",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_489",
+    "text": "\"Mexico: Violent clashes erupt during anti-government protests.\"",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Mexico, violent clashes and anti-government protest context survive; plural nominal events and an added governing action are not fully faithful.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_504",
+    "text": "Protester holds a sign \"They shut down my voice without realizing that they would awaken the voice of all of Mexico.\"",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The same protester holds a sign with the complete exact quotation under written-text support; quoted events remain unasserted.",
+      "reviewer": "Implementing assistant; development judgment, no independent gold or model judge.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_517",
+    "text": "\"Sheinbaum: Movement promoted from abroad against our government.\"",
+    "review": {
+      "index": 22,
+      "claim_id": "TFOEIehBwT8Q_517",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "context_needed",
+      "reason": "Speaker and assertion scope are correct, with no invented audio route. The referent of our/we and government relation still need context; the graph is a useful attribution candidate, not a fully resolved reading.",
+      "source_checks_pass": true,
+      "program_sha256": "52276e027c84fd4cb444550bfab22eb4cfa4cd1ae565e3764e9e59589edf75e9",
+      "amr_sha256": "2d52f8538e44d2160ff3627af0177e5a1a7c2e2e3d7eb5e07bb1a41bdb2b3ccc",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_519",
+    "text": "\"justice was all they wanted.\"",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Past desire for justice survives, but all is an ordinary modifier rather than an explicit only-justice restriction.",
+      "pattern": "quantification",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_532",
+    "text": "Six shots fired or the sound of explosions.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "The two alternatives remain OR, but sound lacks audio-event scope and six is attached to firing rather than clearly counted shots.",
+      "pattern": "audio_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_535",
+    "text": "\"Medicine faculty is back\" and \"Narco state\" written in graffiti.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The graffiti strings become faculty-return and narcotic-state conditions outside a written-content context.",
+      "pattern": "quotation",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_606",
+    "text": "A video overlay reading \"Mount Arafat welcomes pilgrims after the successful crowd management plan to Arafat\" is visible\".",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Visible video overlay has its full exact quote bound to the overlay, with depiction/perception and OCR routes retained.",
+      "pattern": "quotation",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_618",
+    "text": "Group of men sitting on floor arranged cots.",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "The malformed wording permits floor-arranged cots; the parser instead makes the seated men arrange cots. Intended attachment is unclear.",
+      "pattern": "fragment",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQKCK6-tRaoE_662",
+    "text": "Sound of fireworks exploding.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The fireworks explosion is inside a sound context routed to audio_event, with the sound as context owner; no visual evidence is required.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_745",
+    "text": "A car drives up onto the curb in order to get around the police car and oncoming traffic.",
+    "review": {
+      "index": 24,
+      "claim_id": "TMrQshDs8aH0_745",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "partial",
+      "reason": "The purpose and both coordinated obstacles survive, but drive-direction-up-curb does not explicitly share the car as the mover of up. The onto/trajectory interpretation is not established.",
+      "source_checks_pass": true,
+      "program_sha256": "36b17514eb2a5286e6a4fe9961a1994325282069e2d927d195455be10029ff54",
+      "amr_sha256": "8445557aa5cc92511bf19db1b036215ba5cabd25e4ac2752f93f8d4ddad7256a",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T8u81WMIyj18_758",
+    "text": "The setting is a dark and calm night, with no notable weather.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Dark/calm properties and qualified absence of notable weather survive local negation.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_770",
+    "text": "The cargo crane parks directly in front of the camera at 9:20:38am and obstructs the view of the port.",
+    "review": {
+      "index": 69,
+      "claim_id": "T3HTSBW42QaY_770",
+      "cohort": "new_videos32",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "matches_reference",
+      "reason": "The same cargo crane parks and obstructs the view of the port. The camera position, directly modifier and09:20:38am source clock survive without a date/timezone.",
+      "source_checks_pass": true,
+      "program_sha256": "0d3939102ca4458a53a874bce430137107838135222e6389ec41ffa7af105feb",
+      "amr_sha256": "a431d0e1abc0a2da79700c782d75c2e2034edbf8740df375299f70c54e65a0a2",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_774",
+    "text": "Heavy fog makes it difficult to see.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Heavy fog causing difficulty survives, but seeing is asserted as an event without the generic ability reading.",
+      "pattern": "generic",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T1JQ-aG78Zuc_791",
+    "text": "The tram driver accidentally requested a switch to go right at an intersection, even though the tram needs to go straight.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "The requested switch and rightward movement are inside request/purpose scope, separate from the straight-ahead requirement. Intersection still denotes an intersect event rather than a location.",
+      "reviewer": "Implementing assistant; development judgment, no independent gold or model judge.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T1JQ-aG78Zuc_796",
+    "text": "The weather is sunny with no clouds in the middle of the day.",
+    "review": {
+      "index": 47,
+      "claim_id": "T1JQ-aG78Zuc_796",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "matches_reference",
+      "reason": "Keeps sunny weather and midday outside a joint negative existential for weather having any cloud; inverse-role conditions stay inside NOT.",
+      "source_checks_pass": true,
+      "program_sha256": "9d306b0cf305d0105ac7f673e07af9eb38d6bdaa23c8063bd07a161959913049",
+      "amr_sha256": "cf8e128bc11f448e90c780ecd57d150726658b1957e4f44d29159e8851c71a1b",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_807",
+    "text": "Example shown: Windsor West riding.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Windsor West riding is turned into a riding action at a place, rather than an electoral district example.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_814",
+    "text": "Key geography: 'Fortress Vancouver, Fortress Montreal, and Fortress GTA.'",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "The named geographic list survives, but fortress may be a political stronghold label; the fragment does not establish physical fortress types.",
+      "pattern": "fragment",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_821",
+    "text": "Moves to Fortress Montreal / Quebec.",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "The fragment omits what moves and may describe a change of discussion; the parser chooses physical motion and a facility type.",
+      "pattern": "fragment",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_822",
+    "text": "2025 Montreal map shows a lot of Liberal red.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Liberal red still denotes a red liberal person inside depiction, rather than party-colored map content.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_829",
+    "text": "Special note: South Surrey-White Rock riding.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The electoral riding becomes a ride event and its hyphenated name is split into two locations.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_836",
+    "text": "Shows image of Trump shaking Elon Musk's hand at some kind of rally (Elon Musk wearing SpaceX sweatshirt).",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Image depiction retains Trump shaking Musks hand, rally context and the same Musk wearing the SpaceX sweatshirt.",
+      "pattern": "depiction",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_838",
+    "text": "Claims that Trump has said Canada is not a real country.",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "Both assertion levels survive; the missing outer claimant and negation/projection reading remain unresolved.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_878",
+    "text": "Claims the party gained well over 20 seats in the election.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Claim scope, party and past seat gain survive; well-over-20 remains an untyped quantity structure rather than an explicit bound.",
+      "pattern": "measurement",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_893",
+    "text": "NDP is flat at about 20% until Jan 2025 then it drops steeply to 8-9%.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The drop inherits the until-January interval instead of taking place after that interval as then requires.",
+      "pattern": "temporal",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_909",
+    "text": "Shows image of Carney standing at podium that says Liberal on it with Canada's maple leaf.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Depiction retains Carney and podium, but Liberal is a party entity rather than exact podium text, and it/maple-leaf attachment remains unresolved.",
+      "pattern": "quotation",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_921",
+    "text": "It looked certain Poilievre would replace Trudeau; main question was margin of victory.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Looked certain has no appearance context, would is lost and replacement is treated as actual.",
+      "pattern": "modality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_927",
+    "text": "First major cause of reversal: Donald Trump.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Donald Trump is the first major cause of the described reversal, with ordinal and causal target retained.",
+      "pattern": "causality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_933",
+    "text": "Second cause of reversal: Mark Carney's personal popularity.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Carneys personal popularity is the second cause of the reversal, with the shared personal possessor retained.",
+      "pattern": "causality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_934",
+    "text": "Carney more popular than Trudeau, Poilievre, and Jagmeet Singh.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Names and popularity comparison survive, but comparing against an AND group does not explicitly require exceeding each named person separately.",
+      "pattern": "comparison",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_941",
+    "text": "Conservative support more geographically concentrated; Liberal support more evenly spread.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Party support becomes support by generic conservative/liberal people, and descriptive spread also receives an unsupported past-event reading.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_956",
+    "text": "NDP slightly underperformed polls: 6.1% vote share and only 7 seats.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The 6.1 percent and seven seats are attached to the poll event, rather than clearly to NDPs actual result compared with polls.",
+      "pattern": "measurement_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_957",
+    "text": "Major drop from 2021: nearly 18% vote share and 25 seats then.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Year and baseline numbers survive, but the baseline vote share is not clearly tied to 2021; a mean-event paraphrase replaces the appositive baseline relation.",
+      "pattern": "measurement_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_978",
+    "text": "Decision desk announcing results are about to come in.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The desk, rather than the results, becomes the participant coming in. About-to is outside the announced content.",
+      "pattern": "argument_roles",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_987",
+    "text": "Mention of dramatic comeback from 'depths of despair' over previous 1-2 years.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Mention scope and interval survive, but depths of despair becomes a third-degree despair condition, inventing an ordinal meaning.",
+      "pattern": "predicate_sense",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_991",
+    "text": "Still unknown whether the government will be majority or minority.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Unknown-whether has no question/knowledge context, and the future majority/minority alternatives are not preserved as uncertain future content.",
+      "pattern": "modality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_997",
+    "text": "The video includes the logo for 7 News.com.au.",
+    "review": {
+      "index": 39,
+      "claim_id": "TjHepwuhkYFA_997",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "matches_reference",
+      "reason": "Keeps the complete7 News.com.au name, logo ownership and inclusion in the video. PropBank include-01 ARG1 is the included item; ARG2 is the group.",
+      "source_checks_pass": true,
+      "program_sha256": "f00fa99f54b0385145a1fdfa64b9d6431d9cd9bdb6ffe4c8e7f966126d7b2d9a",
+      "amr_sha256": "2e2d08166bda6ad6b8b6cb6e2209310c2f9125e92b64214dda241235d3907730",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_999",
+    "text": "The video contains a compilation of short video scenes and images overlaid by a news broadcaster's audio description (which also appears in overlaid text).",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Broadcaster is now a person-role description. Audio/text content identity and appearance-as-location remain unresolved.",
+      "reviewer": "Implementing assistant; development judgment, no independent gold or model judge.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1003",
+    "text": "At the time the video was created, the death toll from the earthquake is 1600.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The earthquake-related death toll of 1600 is linked to the time of video creation. No exact clock or omitted actor is invented.",
+      "pattern": "temporal",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1005",
+    "text": "Video footage shows a tall (8+ story) building collapsing.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Video depiction binds collapse to the tall building with at-least-eight stories and progressive collapse aspect.",
+      "pattern": "depiction",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1018",
+    "text": "A large object in the background (presumably a tower supporting a power line) falls.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The presumed tower interpretation is asserted inside an unscoped mean/presume graph instead of remaining a tentative identification.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1022",
+    "text": "A logo 'storyful' appears in the video.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Logo and storyful label survive, but video is an ordinary location rather than a depiction/content context.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1026",
+    "text": "In the video footage, a tall (23+ story) building collapses.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "The building height and collapse survive, but footage is only a medium, not depiction scope; 23-plus is also strengthened to strictly more than 23.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1041",
+    "text": "The area that experienced violent shaking is heavily populated.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "The shaking noun now aligns and the area is shared. Population is still an event predicate without an explicit state/action distinction; the stative reading needs care.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1047",
+    "text": "Sagaing is near Mandalay and also close to the epicenter of the earthquake.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The Sagaing referent becomes both near arguments, while Mandalay names the near predicate.",
+      "pattern": "coreference",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1066",
+    "text": "The closer to the surface an earthquake is, the greater the damage.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Closeness/damage correlation survives, but a generic comparison becomes existential conditions on one earthquake and damage event.",
+      "pattern": "generic",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1069",
+    "text": "Tall buildings are most vulnerable to the slower movement caused by lower frequency shock waves.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The vulnerable-to movement is asserted as actual building motion, slower is changed to most-slow, and shock waves are reduced to a shock event.",
+      "pattern": "generic",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1136",
+    "text": "Blue Ghost completed on-orbit commissioning.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Blue Ghost completed its own on-orbit commissioning, retaining past tense and completion relation.",
+      "pattern": "completion",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1137",
+    "text": "Blue Ghost began the journey to the moon after on-orbit commissioning.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The same spacecraft begins its moon-bound journey after on-orbit commissioning; beginning retains aspect context and past tense.",
+      "pattern": "temporal",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1163",
+    "text": "Firefly chose a more 'scenic route'.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Past choice and more-scenic route survive, but Firefly is unnecessarily typed as a person.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1179",
+    "text": "Blue vector points toward Earth off to right of Blue Ghost and yellow vector points towards Sun off to left of Blue Ghost.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Vector colors, targets and opposing relative directions survive, but Blue Ghost is wrongly typed as an island.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1181",
+    "text": "Blue Ghost performing 9 minute power descent initiation using all of its engines to reduce speed.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Duration, engines and speed-reduction purpose survive, but the spacecraft is an aircraft type and all engines remains an ordinary modifier rather than exhaustive use.",
+      "pattern": "quantification",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1184",
+    "text": "First redirect occurred 98 meters from original target.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "First redirect, 98-meter displacement and original target survive; past occurred is not carried onto the nominal redirect.",
+      "pattern": "tense_aspect",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1185",
+    "text": "Now in autonomous phase 133 m above ground level.",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "The subject is omitted. The graph locates the phase itself 133 meters above ground instead of identifying the participant in that phase.",
+      "pattern": "fragment",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1187",
+    "text": "Navigation filter still healthy.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The still-healthy filter retains navigation as its function rather than an asserted navigation event.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1191",
+    "text": "Landing successful and everyone cheers.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Landing success and cheering survive, but everyone is an existential entity rather than an all-person requirement.",
+      "pattern": "quantification",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1196",
+    "text": "Overview of Firefly Aerospace's Blue Ghost lunar about 10 days after landing.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Overview, owner and approximate ten-day-after-landing relation survive, but lunar is absorbed into the spacecraft name.",
+      "pattern": "name_boundary",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1202",
+    "text": "Also shows close up of what the wire connection looks like after the initial firing of the electrode.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Wire appearance and after-initial-electrode-firing survive, but close-up and shows lack a clear depiction construction.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1207",
+    "text": "Blue Ghost began drilling operations using NASA's LISTER payload located beneath the lower deck.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Beginning, drilling, payload and lower-deck location survive, but NASA is typed as a spaceship and the drill performer is not explicitly shared with Blue Ghost.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1227",
+    "text": "Surface disturbances are visible around the lander caused by engine plume activity.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Visibility and plume-caused surface disturbance survive, but around-the-lander modifies seeing rather than the disturbance location.",
+      "pattern": "location_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1228",
+    "text": "Can see obvious engine plume disturbance on the surface in the images which matches what was seen in the landing video as regolith was blown outward.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "The disturbance noun and obvious property now compile. Distinct image/video evidence and their matching content are still not clearly bound; images remain locations.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1230",
+    "text": "Mare Crisium is a large basin created by ancient asteroid impact and volcanic eruptions that filled with basaltic lava about 3 billion years ago.",
+    "review": {
+      "index": 27,
+      "claim_id": "T2G_ACMxR_I4_1230",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "partial",
+      "reason": "Creation, both causes, basalt and the approximate three-billion-year time survive. Event-nominal plurality and exact attachment of the filled relative clause remain unresolved.",
+      "source_checks_pass": true,
+      "program_sha256": "825c63ce62c9c2d90089873d3e8fc0dcd21202cd50172420e2a5d409535b85ce",
+      "amr_sha256": "5071b15b3b15e5b48f09b103b352a8cda5117cf453a6a14547ce96113d9a24d1",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1237",
+    "text": "Firefly said the lander would gradually return to full power once surface temperatures dropped.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Full is a property and report scope survives; Firefly remains a person and future/once conditional timing is not represented.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1249",
+    "text": "On March 3, NASA and the Italian Space Agency achieved a first-of-its-kind demonstration of acquiring and tracking Earth-based navigation signals (GNSS signals) from the Moon's surface.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Agencies, date, demonstration and signal actions survive, but lunar observation location is a source argument and GNSS identity/first-of-kind relations remain incomplete.",
+      "pattern": "argument_roles",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1282",
+    "text": "Blue Ghost's mission is to advance lunar research.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "The research goal now stays in purpose context, but the named spacecraft is typed as an organization.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1312",
+    "text": "Scientists work with complex manufacturing tools to build the spacecraft.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Scientists share the work/build actor. Building is a work purpose and manufacturing is the function of complex tools; neither completion is asserted as an actual event.",
+      "reviewer": "Implementing assistant; development judgment, no independent gold or model judge.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1317",
+    "text": "Will Coogan is the Chief Engineer of the Blue Ghost Lander.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Chief-engineer role, person name and lander survive, but an engineering event is asserted and identity between the role holder and named person is indirect.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1326",
+    "text": "Blue Ghost is targeting around 100kg of payload.",
+    "review": {
+      "index": 55,
+      "claim_id": "T2G_ACMxR_I4_1326",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "incorrect",
+      "reason": "Mass and approximate100kilograms survive, but Blue Ghost is typed as organization and the target quantity is an actual world payload condition rather than scoped target amount.",
+      "source_checks_pass": true,
+      "program_sha256": "4a33f65d68aa37daaeb6d6de1c24eab8d5b6d4fa5741fa3e5947ee5656e33f69",
+      "amr_sha256": "2a740a9c6d39f51e36eae4c4ed13b17eb032e8e878200879d02e250de6ae4959",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1335",
+    "text": "Composite tubes were previously rocket sized.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Composite tubes have a previous past rocket-sized state; comparison prototype and plural tube reference survive.",
+      "pattern": "comparison",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1340",
+    "text": "The composite tubes were qualified within two weeks.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Past qualification is given a within-two-weeks-after-now time relation, adding an unsupported future anchor.",
+      "pattern": "temporal",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1350",
+    "text": "A goal of the pneumatic drill is to understand heat fluxes.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "The drill and understanding goal are separated by purpose scope, but heat flux remains an ambiguous flux action rather than an explicitly preserved physical quantity.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1351",
+    "text": "A goal of the pneumatic drill is to take some temperature measurements.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Pneumatic drill is a tool, and its goal contains unspecified temperature measurements with the same tool as the performer. No actual drilling or completed measurement is asserted.",
+      "reviewer": "Implementing assistant; development judgment, no independent gold or model judge.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1354",
+    "text": "A goal of the lunar planet vac is to extract information from samples.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Extraction of information from samples stays in purpose scope, but the named sampling instrument is a facility.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1437",
+    "text": "The video shows a simulation of the landing as it occurred.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Video depiction and simulation survive, but landing content is not separated from simulation and as-it-occurred has an unresolved it time.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1463",
+    "text": "During touchdown, Blue Ghost's legs contact sensors on the footpads.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Contacting legs, sensors and touchdown time survive, but Blue Ghost is wrongly a person.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1472",
+    "text": "The 25-30 knots of flow would maintain itself on the 4th and into the 5th.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The would construction becomes actual maintenance, and into-the-fifth is reduced to a pair of day values.",
+      "pattern": "modality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1482",
+    "text": "Made landfall and dissipated.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Both past actions survive, but their omitted shared participant is not represented as one referent.",
+      "pattern": "coreference",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1491",
+    "text": "Evening of the third shows values at 2.5.",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "The metric behind values is omitted, and the third is attached as a date ordinal rather than an explicit contextual day.",
+      "pattern": "fragment",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1497",
+    "text": "Color fills are where there is spin in the atmosphere.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Fill is now a noun rather than an act of filling. A spatial link to a spin event remains instead of an explicit visualization-region correspondence.",
+      "reviewer": "Implementing assistant; development judgment, no independent gold or model judge.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1498",
+    "text": "Not much to see with respect to spin until the 3rd.",
+    "review": {
+      "index": 49,
+      "claim_id": "TgPh_fzHTCm4_1498",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "context_needed",
+      "reason": "The third and little visible spin require context. Much/negation and a reentrant perception target do not establish the complete interval/quantity interpretation.",
+      "source_checks_pass": true,
+      "program_sha256": "d33a92e47b5fd0a9e6fd3e17300ce9c06bc6a682e8f1a904f4a774464fe271e1",
+      "amr_sha256": "1d08102db034c80bc7fc01f1e27bdc219fcceebedcad8ff6f36615096c8159cf",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1512",
+    "text": "You can see a big ridge of high pressure dominating the southern half of the country.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Ability-to-see and visual perception contexts preserve the large high-pressure ridge dominating the southern half.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1520",
+    "text": "Text in the top left of the screen reports the location as Washington, DC.",
+    "review": {
+      "index": 52,
+      "claim_id": "TFgw4IaR9R8s_1520",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "incorrect",
+      "reason": "Source text and position remain, but Washington is the report topic(ARG3), not the value of the reported location. The location/value identity is missing.",
+      "source_checks_pass": true,
+      "program_sha256": "3caf13f55cd15d4aec3bdced815010c04abe90c6d042645350272979a68b3f06",
+      "amr_sha256": "1905c4f484e0d020d740caad6146d083a425cd9044f7cc8de2157f065a0a46c6",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1544",
+    "text": "The court ruling was 3-0 in favor of the injunction.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Court, injunction and 3-0 tally survive, but the ruling is still an action and the tally is not clearly a vote/result relation.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1549",
+    "text": "Congress can pass laws to delegate this authority to the president in certain instances.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Congressional ability and delegation purpose survive; in-certain-instances becomes ordinary time rather than an explicit circumstance restriction.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1554",
+    "text": "The court ruling temporarily strikes down all of the tariffs put in place on Trump's first day and on 'liberation day'.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Temporary striking down survives, but all tariffs is not an exhaustive condition and Liberation Day becomes a liberation event instead of a named day.",
+      "pattern": "quantification",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1556",
+    "text": "Axelrod claims Trump thinks tariffs are a cure-all for all of America's problems.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Nested assertion and belief survive, but cure-all/all-problems is not an explicit exhaustive condition; metaphorical cure remains an action.",
+      "pattern": "quantification",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1572",
+    "text": "Axelrod claims Trump does not want to be constrained.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Axelrods assertion retains Trumps negated desire and constrained content inside desire scope, not an actual constraint event.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1582",
+    "text": "Worldwide and retaliatory tariffs were announced on 'Liberation Day' (April 2), including 10% worldwide and 11-50% imposed on some countries.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Announcement/date and all three percentages survive, but worldwide and retaliatory groups and their respective rate bindings remain conflated.",
+      "pattern": "measurement_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1585",
+    "text": "If the tariffs ultimately get struck down (e.g. by SCOTUS), there could be an action brought by countries from whom the tariffs have been collected.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Conditional and possible-action contexts survive, but SCOTUS is an example node rather than the striking-down agent and the tariff referents are not shared.",
+      "pattern": "argument_roles",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1587",
+    "text": "Image of Trump holding up a signed document.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Holding and signed document survive, but image modification does not create depiction scope for the pictured event.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1588",
+    "text": "Footage of Trump holding up and speaking about a poster listing reciprocal tariffs by country.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Trump is the held-up participant rather than the holder, and the poster is not the held object.",
+      "pattern": "argument_roles",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1589",
+    "text": "Tariff poster shows: China 67% tariffs charged to USA / 34% USA discounted reciprocal tariffs.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Poster becomes a posting person; tariff values are then outside the intended poster-content context.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1600",
+    "text": "Erin Burnett presents from a CNN studio.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Presenter, named person and studio location survive, but CNN receives an unnecessary publication type.",
+      "pattern": "entity_type",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1602",
+    "text": "Dow Futures rose immediately by more than a percent, 1.1% / 500 points.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "500 points becomes 500 percent, and the exact 1.1 percent rise becomes a greater-than bound.",
+      "pattern": "measurement_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1606",
+    "text": "US Futures: S&P 500 5,989.00, +86.25, +1.46%.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Index value and absolute point change are both converted to percentages, and the S&P name structure is malformed.",
+      "pattern": "measurement_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1612",
+    "text": "The court is a three judge panel.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The court is classified as a panel consisting of three persons with judge roles.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1636",
+    "text": "The court ruling places with Congress the authority to set tariffs or delegate control of tariffs to the President in specific situations.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Congress, authority and OR over setting/delegating survive, but the ruling is an action and specific situations is ordinary time rather than a circumstance restriction.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1654",
+    "text": "The woman says that Trump's plan is to make America wealthy again.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The womans assertion contains Trumps plan, with America becoming wealthy again inside that plan rather than as an achieved result.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1659",
+    "text": "Trump announced a blanket 10% tariff on all of America's trading partners.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Trump, past announcement and ten-percent tariff survive; all trading partners is an ordinary modifier rather than an exhaustive requirement.",
+      "pattern": "quantification",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1664",
+    "text": "The EU tariff rate would be 20%.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The conditional/projected would rate becomes an unqualified actual twenty-percent rate.",
+      "pattern": "modality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1666",
+    "text": "The Vietnamese tariff rate would be 46%.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The would rate becomes an unqualified actual forty-six-percent rate.",
+      "pattern": "modality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1695",
+    "text": "Shows image of Trump shaking Elon Musk's hand at some kind of rally (Elon Musk wearing SpaceX sweatshirt).",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Same duplicated image claim as case51: Trump/Musk hand-shake, rally and sweatshirt wearer are correctly shared inside depiction.",
+      "pattern": "depiction",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1697",
+    "text": "Claims that Trump has said Canada is not a real country.",
+    "review": {
+      "whole_reading": "context_needed",
+      "reason": "Both report layers survive, but the unnamed outer claimant and not-real-country projection remain unresolved, as in the earlier duplicate review.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1750",
+    "text": "USA will implement reciprocal tariffs; charge half of what the other countries have charged the USA.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Will is lost, and the half-rate charging relation lacks an explicit recipient binding back to the other countries.",
+      "pattern": "modality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1757",
+    "text": "EU tariffs the USA 39%, USA will reciprocate with 20%.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The twenty-percent reciprocal tariff still has EU as agent charging USA, reversing the intended direction; will is also lost.",
+      "pattern": "argument_roles",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1761",
+    "text": "Trump blames people sitting at the oval office for making poor decisions.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Blamer and blamed people survive, but the poor-decision accusation is an ordinary outer event instead of blame content.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1766",
+    "text": "Building housing Kantipur Publications in Kathmandu on fire.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The on-fire building houses the named publication and is located in Kathmandu; no additional unrelated actor is introduced.",
+      "pattern": "location_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1782",
+    "text": "All politicians' houses on same block and all lit on fire: at least 5 houses burning seen.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Houses, common block, fire and at-least-five visual count survive, but all-house scope and identity between the described and seen groups are incomplete.",
+      "pattern": "quantification",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1813",
+    "text": "Footage of large groups of people gathered outside of what appears to be a government building.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Depiction and an appearance context exist, but government-building properties remain attached outside that appearance context.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1819",
+    "text": "Protestors chant in unknown language at 0:34.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Chanting, protestors and unknown language survive, but 0:34 remains an untyped clock/date value rather than a bound media timestamp.",
+      "pattern": "temporal",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1820",
+    "text": "Video focuses on one man wearing a Nepal Police vest that looks to be a bulletproof vest.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Looks-to-be bulletproof is unscoped and introduces a second vest; video focus also lacks depiction scope.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1821",
+    "text": "Closer up footage of government building on fire with spectators watching and filming.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "The closer/more comparison and depicted burning government building now compile. Watching/filming spectators remain outside depiction, so the full footage reading is incomplete.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1824",
+    "text": "Footage of pedestrians and motorcyclists on street stopping to observe and film.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Motorcyclists become motorcycles, and observing/filming is assigned the group itself as object.",
+      "pattern": "argument_roles",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1828",
+    "text": "Can hear lots of honking horns.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Audibility and audio-event scope bind many plural horns to their honking events.",
+      "pattern": "audio_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1829",
+    "text": "Footage of burned debris, overturned and burned cars.",
+    "review": {
+      "index": 37,
+      "claim_id": "TW4OYA3RN-Hw_1829",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "partial",
+      "reason": "The car is shared by overturn and burn, and its plurality survives. A burned result state is still not distinguished from a burning event.",
+      "source_checks_pass": true,
+      "program_sha256": "2620834a5ceaa2d2a4faa8d6b6a379823d45bbbb55c5f9b568303c29b629c549",
+      "amr_sha256": "742f14d6d3f710b33edcb2b82e8465341e5168f3c071235d07a4acc0db16e0f6",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1830",
+    "text": "The video depicts a map of Los Angeles and some of the surrounding area.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "The city is inside map depiction, but the surrounding area is a separate video branch instead of additional map content.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1831",
+    "text": "The map shows the spread of the fire from 6:00am on January 6 to 12:00am on January 12.",
+    "review": {
+      "index": 34,
+      "claim_id": "TgR_u37mCoQ4_1831",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "matches_reference",
+      "reason": "The depicted interval now keeps06:00 and midnight00:00 attached to their respective January dates.",
+      "source_checks_pass": true,
+      "program_sha256": "e83aa9c3277b3e6819b5da4db6ad5fd430ebaa923ebd64d309668a323d94e72c",
+      "amr_sha256": "ff23bf9c063b0bed8fe49586c56ff21203f88708d7cf060c1d237bd86e90a758",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1873",
+    "text": "The video shows side-by-side footage of the PCH on April 21, 2020 (on the left; the first filming) and on January 23, 2025 (on the right; the second filming).",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Both dates/ordinals and side-by-side survive, but left/right modify dates and there are no separately bound footage views; PCH is also typed as a facility.",
+      "pattern": "location_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1877",
+    "text": "The video shows stills of Pete's Seafood, a restaurant at Topanga Beach, which has survived many fires.",
+    "review": {
+      "index": 42,
+      "claim_id": "TgR_u37mCoQ4_1877",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "partial",
+      "reason": "Survival history is still inside depiction of the stills instead of handled as a projected relative-clause fact.",
+      "source_checks_pass": true,
+      "program_sha256": "e77e9513f7feb3b041511fc4aa744d52542b827f3a5a2c251c29986571e57280",
+      "amr_sha256": "28fba3f6f07a57ac1488075e00ef230b2f6e0d894a6b4ca99b8a1ecf934a601a",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1885",
+    "text": "Homes starting at the block of 19000 PCH were destroyed by the fire.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Spatial address-range starting becomes a start event applied to the homes, with aspect scope rather than a geographic lower bound.",
+      "pattern": "predicate_sense",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1900",
+    "text": "The heatmap covers a period of 4 hours on January 7, 2025.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The heatmap coverage interval retains its four-hour duration and full date.",
+      "pattern": "temporal",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1905",
+    "text": "Different stills are shown, presumably from different time points.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Presumably is a modifier node and the different-time origin is asserted directly rather than kept uncertain.",
+      "pattern": "modality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1908",
+    "text": "Additional footage of the heatmap shows fire growth on January 8th, 2025.",
+    "review": {
+      "index": 31,
+      "claim_id": "TgR_u37mCoQ4_1908",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "partial",
+      "reason": "The graph still makes footage part of a heatmap rather than footage depicting a heatmap.",
+      "source_checks_pass": true,
+      "program_sha256": "d97fe2dcaa56b8451c105e94fd3a9384c8c52835b926ee4d94078f13124038c4",
+      "amr_sha256": "3f763808879cabdeb7377955a429e28149e395000abb5cadb61ed59829c87651",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1913",
+    "text": "The before-to-after transitions show healthy, vibrant stretches of coast with homes scattering the beach.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Coast, healthy/vibrant attributes and homes survive, but transition-showing is not depiction and scattered homes becomes an active scattering event.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1925",
+    "text": "There is a logo onscreen at the beginning of the video for the California Department of Forestry & Fire Protection.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Logo, organization, onscreen location and video beginning survive; for-organization is a beneficiary relation and beginning is an ordinary aspect event.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1926",
+    "text": "There is a logo onscreen at the beginning of the video for the Los Angeles Fire Department.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Logo and department survive, but affiliation is represented as beneficiary and the video boundary is not a media interval.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1927",
+    "text": "There is a logo onscreen at the beginning of the video for the County of Los Angeles.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Logo and county survive, but affiliation is represented as beneficiary and the video boundary is not a media interval.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1928",
+    "text": "There is a logo onscreen at the beginning of the video for the Sheriff of Los Angeles County.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Logo and named sheriff role survive, but affiliation is beneficiary and the video boundary is not a media interval.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1929",
+    "text": "There is a logo onscreen at the beginning of the video for the Los Angeles Police Department.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Logo and police department survive, but affiliation is beneficiary and the video boundary is not a media interval.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1930",
+    "text": "There is a logo onscreen at the beginning of the video for Cal Fire Team 2.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The team is attached as video content, with no logo-to-team relationship.",
+      "pattern": "argument_roles",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1934",
+    "text": "Jeremiah Wittwer stands in front of a map of some of the area surrounding Los Angeles affected by the fire.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Named person, front-of-map location and mapped fire-affected area surrounding Los Angeles are preserved with depiction scope.",
+      "pattern": "depiction",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1978",
+    "text": "Rinderknecht would drop off riders close to where the fire originated.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Drop-off participants and nearby origin survive, but would has no habitual/modal qualification and one event can satisfy the formula.",
+      "pattern": "modality",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1979",
+    "text": "Rinderknecht lived near the place where the fire started at the time it broke out.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Past residence is near the same fires origin and timed to its outbreak; fire references are shared.",
+      "pattern": "temporal",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1989",
+    "text": "Rinderknecht's phone signal was attested seconds after the flames erupted.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The attested phone signal, owner, past attestation and seconds-after-eruption relationship survive. Multiple one-second units preserve unspecified seconds without choosing an exact duration.",
+      "reviewer": "Implementing assistant; development reading, no external judge or new human approval.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2095",
+    "text": "Shi Yongxin is described as simply a business executive.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The described named person and executive person are distinct, while business execution lies outside the description content.",
+      "pattern": "coreference",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2096",
+    "text": "Tourists are charged a fee for practically everything they do inside the temple.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Fee charging and temple activities survive, but practically everything becomes practical-modified existential everything rather than a generic near-universal statement.",
+      "pattern": "generic",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2102",
+    "text": "After the Shaolin Temple movie exploded in popularity, people from all over the country flocked to the temple to visit.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Movie popularity precedes the same visitors flocking from across the country to the temple, with visiting kept as purpose.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2109",
+    "text": "'Qian Dan' refers to the expulsion of a monk from a monastery for violating religious vows.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "The quoted term owns a definition context containing expulsion, monastery and vow-violation cause. No actual expulsion is asserted outside that context.",
+      "reviewer": "Implementing assistant; development judgment, no independent gold or model judge.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2131",
+    "text": "At the time Shi Yongxin became abbot, the Shaolin Temple had only nine monks.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Nine monks at the named temple are linked to the time Shi Yongxin became abbot; person and temple names survive.",
+      "pattern": "temporal",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2132",
+    "text": "At the time Shi Yongxin became abbot, the temple buildings were in a state of disrepair.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "A past state of disrepair becomes a deterioration event, with no past-state condition on the buildings.",
+      "pattern": "noun_reading",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2139",
+    "text": "Shi Yongxin's business tactics earned him the nickname 'The CEO Abbot.'",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "The nickname becomes an actual CEO/abbot person description rather than the quoted name bestowed on Shi Yongxin.",
+      "pattern": "quotation",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2176",
+    "text": "The wind speed appears sufficient to force adults to crawl.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Nested appearance, sufficiency and result retain the shared adult/crawler and wind-speed causer. Generic adult coverage is still not expressed by a general quantifier.",
+      "reviewer": "Implementing assistant; development judgment, no independent gold or model judge.",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2177",
+    "text": "The conditions appear dangerous to be outside in.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Appearance of danger outdoors survives, but the general risk is reduced to one person being endangered in that context.",
+      "pattern": "generic",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2221",
+    "text": "The woman claims the current time is 7:00 PM on July 21st in Vietnam time.",
+    "review": {
+      "index": 50,
+      "claim_id": "Txf2EdqOg1SQ_2221",
+      "cohort": "development60",
+      "reviewer": "Implementing assistant; no GPT/model judge or new human approval.",
+      "whole_reading": "matches_reference",
+      "reason": "Keeps the woman as source and current19:00/July21/Vietnam time in her asserted context; no year or UTC offset is invented.",
+      "source_checks_pass": true,
+      "program_sha256": "6bed5c9a06e71478dfa8c62fd5266be3c6a196378ac099cb0f8583d4b4ca9632",
+      "amr_sha256": "d2f62a94455ed68fac0b7301be611bb856be617424ffa34d02cddd6606aca02b",
+      "provenance": "Exact saved AMR output; prior implementing-assistant review reused."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2240",
+    "text": "The narrator reports 49 people total were on board.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "On-board becomes a board classification of people, and unrelated person alignment incorrectly makes the narrator plural.",
+      "pattern": "predicate_sense",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2243",
+    "text": "The narrator reports 4 people were still missing at the time of recording.",
+    "review": {
+      "whole_reading": "incorrect",
+      "reason": "Missing people becomes a miss action with progressive tense, and unrelated person alignment incorrectly makes the narrator plural.",
+      "pattern": "predicate_sense",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2261",
+    "text": "In Zhuhai, large ocean waves crash violently over the 'Fisher Girl' statue.",
+    "review": {
+      "whole_reading": "matches_reference",
+      "reason": "Large ocean waves crash violently over the named statue in Zhuhai with the correct shared event and location.",
+      "pattern": "location_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2262",
+    "text": "In Zhuhai, large ocean waves crash violently over the surrounding boardwalk near the 'Fisher Girl' statue.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Waves, boardwalk and near-statue location survive, but the surrounding relation has no bound target.",
+      "pattern": "coreference",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2283",
+    "text": "Typhoon Wipha made landfall with wind force level 12.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Typhoon name and level-twelve wind force survive, but the multiword made-landfall event has no past-tense condition.",
+      "pattern": "tense_aspect",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2286",
+    "text": "Fallen tree branches in Jiangmen crushed cars, including taxis.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Branch crushing, cars and taxis survive, but Jiangmen modifies the earlier fall rather than the branches/crushing location.",
+      "pattern": "location_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2290",
+    "text": "Ceiling panels inside a shopping mall or large building collapse to the floor in Jiangmen.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Panels, alternative building locations and city survive, but to-the-floor destination becomes ordinary event location and shopping is an outer action.",
+      "pattern": "location_binding",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2292",
+    "text": "Pedestrians run for cover from falling debris in Jiangmen.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Running and debris protection survive, but cover is an actual event argument rather than a goal and pedestrians gain an extra crossing event.",
+      "pattern": "scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2297",
+    "text": "The video includes a 'Composite Reflectivity' radar loop overlaid on a map of the South China coast.",
+    "review": {
+      "whole_reading": "partial",
+      "reason": "Radar loop/map overlay survives, but the product label becomes a reflect action and South China becomes a country name; video content scope is incomplete.",
+      "pattern": "media_scope",
+      "provenance": "Fresh implementing-assistant source/graph/scope inspection; not independent gold."
+    }
+  }
+]

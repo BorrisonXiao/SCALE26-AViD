@@ -1,0 +1,45 @@
+{
+  "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+  "dtype": "float16",
+  "temperature": 0,
+  "seed": 42,
+  "max_tokens": 3072,
+  "max_model_len": 32768,
+  "vllm": "0.18.0",
+  "transformers": "4.57.6",
+  "job_id": "1226791",
+  "gpu_names": [
+    "NVIDIA H100 80GB HBM3"
+  ],
+  "source_sha256": {
+    "scripts/run_claim_split_model.py": "835926319c0cdda685f3609665fa60b6a85833612ae76de2a090a0b3e1bbd565",
+    "scripts/probabilistic_verification/claim_split.py": "338827451982e0735c3ee4ac1bc556e7e14efab40981be9814c5ed1c7ac0213d",
+    "scripts/probabilistic_verification/sentence_simplification.py": "c04a09c8bfd1700cd3b93b7d478c0f000378b6e23c599f9788be79ec4e5ef671",
+    "scripts/probabilistic_verification/full_rewrite.py": "b8350688c25a1240455769ce8a047bcd18ed776ceb4071099669478028efbcdd",
+    "scripts/prompts_phase2.py": "de4b9f21a2e04684575f319c228901b04c59ce66d746074846c7370a51b38d42"
+  },
+  "model_config_sha256": "a1ee086a68d0cbfc87316da00ba4b8507bd1292978108e2496201a30a450f438",
+  "input_sha256": "b0bbac44ad4f1df81393156d9d0d89432783662b9b3d9de947d3db9662639d6d",
+  "eligible": 419,
+  "sentences_only": false,
+  "full_fallback": true,
+  "source": "Historical single frozen condition; current stage uses it only after both original compilers fail.",
+  "uncached_completion": {
+    "model": "/exp/cxiao/calm/downloads/models/qwen3/30B-A3B-Instruct-2507",
+    "dtype": "float16",
+    "temperature": 0,
+    "seed": 42,
+    "max_tokens": 3072,
+    "max_model_len": 32768,
+    "eligible": 8,
+    "job_id": "1250086",
+    "gpu_names": [
+      "NVIDIA A100 80GB PCIe"
+    ],
+    "vllm": "0.18.0",
+    "system_prompt": "Simplify this claim into complete, easy-to-parse sentences without changing its meaning, even if the claim is false. Prefer splitting complex structure; use one sentence when completing a fragment is enough. Repeat exact participant names and identifiers. State each condition once.\nPreserve numbers, units, ranges, dates, tense/aspect, negation, uncertainty, alternatives, goals and who did what to whom. A planned event is not an achieved event. Never infer a signer from a signed object or guess an ambiguous reference. Keep quoted text exactly in one source sentence; do not expand its internal events into assertions. Depicted and reported content must retain its context. Do not introduce positive audio/narration under an absence claim.\nExample: \"A photo of Alice holding a blue cup.\" becomes [\"A photo depicts Alice.\", \"Alice is holding a blue cup.\"]. The holding remains depicted content; do not duplicate the cup color as an extra sentence.\nReturn JSON with action (rewrite, keep, refuse) and sentences. For rewrite return one to twelve simpler sentences. Return an empty list for keep/refuse. Keep an already clear atomic claim; refuse when simplification requires guessing. Return no IDs, links, predicates, explanations or scores. The supplied dependency/SRL parses can be wrong.",
+    "system_prompt_sha256": "918d4cb18c395fce74e3bf563febcb5b976a899a1ebde5cd56acf2765463452d",
+    "model_config_sha256": "a1ee086a68d0cbfc87316da00ba4b8507bd1292978108e2496201a30a450f438",
+    "policy": "Only uncached cases after both strict checks fail. One response, no retries, no meaning-review labels."
+  }
+}

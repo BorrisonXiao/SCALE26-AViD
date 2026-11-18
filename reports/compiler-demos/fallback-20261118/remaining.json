@@ -1,0 +1,5435 @@
+[
+  {
+    "claim_id": "TjHepwuhkYFA_1016",
+    "text": "Beginning at video timestamp 2025-03-28 12:46:35 and ending at video timestamp 12:46:37, the midground and background terrain in the video shift relative to the foreground of the video.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: midground, background, terrain, video, shift, relative, foreground, video",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "untranslated_nodes",
+        "reason": "Not all AMR nodes were visited.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: Names remain in a list string without linked member descriptions.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_898",
+    "text": "Shows image of the tweet from Trump: 'Good luck to the Great people of Canada. Elect the man who has the strength and wisdom to cut your taxes in half, increase your military power, for free, to the highest level in the World, have your Car, Steel, Aluminum, Lumber, Energy, and all other businesses, QUADRUPLE in size, WITH ZERO TARIFFS OR TAXES, if Canada becomes the cherished 51st. State of the United States of America. No more artificially drawn line from many years ago. Look how beautiful this land mass would be. Free access with NO BORDER. ALL POSITIVES WITH NO NEGATIVES. IT WAS MEANT TO BE! America can no longer subsidize Canada with the Hundreds of Billions of Dollars a year that we have been spending in the past. It makes no sense unless Canada is a State!'",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: image of the tweet from Trump: 'Good luck to the Great people of Canada. Elect the man who has the strength and wisdom to cut your taxes in half, increase your military power, for free, to the highest level in the World, have your Car, Steel, Aluminum, Lumber, Energy, and all other businesses, QUADRUPLE in size, WITH ZERO TARIFFS OR TAXES, if Canada becomes the cherished 51st. State of the United States of America. No more artificially drawn line from many years ago. Look how beautiful this land mass would be. Free access with NO BORDER. ALL POSITIVES WITH NO NEGATIVES. IT WAS MEANT TO BE! America can no longer subsidize Canada with the Hundreds of Billions of Dollars a year that we have been spending in the past. It makes no sense unless Canada is a State",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "polarity_omission",
+        "reason": "Explicit source negation has no logical graph polarity.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/photo",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1753",
+    "text": "The chart shows at least 25 lines with different countries and the percentage they tariff vs the percentage USA will tariff them in return.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: at least 25 lines with different countries and the percentage they tariff vs the percentage USA will tariff them in return",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for return-02 :ARG1 tariff-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c4: SRL repeats ARG2 on tariff",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_11",
+    "text": "People online are praying for other's safety during the Typhoon.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: other",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for pray-01 :ARG1 safe-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: other",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_12",
+    "text": "Commenters ask if anyone is missing, it's unclear if there are.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: if anyone is missing",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "polarity_value",
+        "reason": "Unsupported polarity value: t",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TInVWzp25aIM_68",
+    "text": "Angupaul1 is relying on a portable charger to livestream.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: to livestream",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "adjective_argument",
+        "reason": "A noun-attached adjective is used as a participant of that noun's event predicate; preserve the property on its noun. Declared predicative-value roles are exempt.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c3/purpose",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TbJqMFkNxARY_161",
+    "text": "No containers in the water implies this was potentially recorded after cleanup already began.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "negative_quantifier",
+        "reason": "A no-NP claim requires entity and event existence under joint negation; that quantified construction is not implemented.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "negative_argument_scope",
+        "reason": "A negated argument needs scope projection over its governing relation.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "conditional_scope",
+        "reason": "The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": [
+          {
+            "code": "conditional_scope",
+            "reason": "The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "T2EE72iNELEs_181",
+    "text": "Staship Flight test, T-13 to liftoff.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_srl",
+        "reason": "No usable SRL frame or unambiguous nominal root.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for be-temporally-at-91 :ARG2 lift-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "sentence_parse",
+        "reason": "Supply exactly one sentence.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_284",
+    "text": "This is what it is like driving into a haboob.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: like driving into a haboob",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: A clausal argument has no attached SRL frame: like driving into a haboob",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_318",
+    "text": "Friend of the bystander checks to see if he is ok",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "conditional_scope",
+        "reason": "The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": [
+          {
+            "code": "conditional_scope",
+            "reason": "The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context."
+          }
+        ]
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "polarity_value",
+        "reason": "Unsupported polarity value: t",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_342",
+    "text": "The man gives the signal for the other 2 robots to start sparring",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: signal",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for signal-07 :ARG1 start-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: A clausal argument has no attached SRL frame: to start sparring",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_373",
+    "text": "Robot 100m sprint.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "predicate_type",
+        "reason": "Predicate position is not a lexical/state predicate: 100m",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "measurement_binding",
+        "reason": "The complete source amount and unit lack a linked quantity condition.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c3/event",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_421",
+    "text": "100m- final lineup",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_srl",
+        "reason": "No usable SRL frame or unambiguous nominal root.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/event",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_446",
+    "text": "Netizens: His courage to keep fighting despite repeated failures is commendable. ",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Netizens",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for keep-02 :ARG1 fight-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/He",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_467",
+    "text": "\"Watch the man holding the Mexican flag. I'm going to press play. I don't know what is happening, ok, but suddenly someone pushes him and all the police move towards him, I don't know why. I mean, hello? And from there, everything began to escalate, you know? Watch that.\"",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: the man holding the Mexican flag. I'm going to press play",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: A clausal argument has no attached SRL frame: I'm",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_468",
+    "text": "We can see a protester holding the Mexican flag suddenly get attacked by the police.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: see a protester holding the Mexican flag suddenly get attacked by the police",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: A clausal argument has no attached SRL frame: attacked by the police",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_495",
+    "text": " \"Mexico, Nov 15\".",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Nov, 15",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "location_value_type",
+        "reason": "A calendar/time value is not a location.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: Mexico, Nov, 15",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_496",
+    "text": "\"Police fire smoke bombs and tear gas as protesters hurl stones.\"",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "opaque_clause",
+        "reason": "A finite clause remains inside a literal/entity instead of a linked clause.",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "noun_argument_type",
+        "reason": "A source noun reading has unresolved core-role mappings; coarse lexical categories alone do not establish an error.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/quote",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_497",
+    "text": "\"Mexico City security chief: 20 arrested for theft and assault.\"",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Mexico, City, security, chief",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "duplicate_roles",
+        "reason": "Repeated core role at a",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/statement",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_530",
+    "text": "Lady on the screen is criticizing exiled Mexicans for not standing up to the Narco State.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG1 on standing",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/criticism",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TLO3smKI67PM_556",
+    "text": "The Phillies fan father runs over to where the home run lands.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: over to where the home run lands",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/lands",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TLO3smKI67PM_580",
+    "text": "It's almost the Phillies fan son's birthday.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG2 on 's",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: almost, fan's",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Tsuk2uoYj-kc_628",
+    "text": "Video overlay reading \"Last year it took hours to get to the camp, now its only 25 mins\" is visible.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: reading, took, get",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "quote_source_alignment",
+        "reason": "A written quotation has no unique AMR artifact.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c4: Unrepresented source content: only",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_732",
+    "text": "There are many chairs stacked on top of each other ready to be loaded into the large truck.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: other",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for ready-02 :ARG2 load-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: other",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TMrQshDs8aH0_733",
+    "text": "There are not too many cars currently on the road, so traffic is not being obstructed too badly.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: so",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for bad-07 :ARG1 obstruct-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: currently",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_779",
+    "text": "The large boat has a reminder about safety first.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: first",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for have-03 :ARG1 remind-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: first",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_806",
+    "text": "Notes that not all lost NDP votes went to the Liberals.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: that not all lost NDP votes went to the Liberals",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: A source negation is absent from the logical operators. Preserve the intended negated clause.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_808",
+    "text": "In Windsor West, Conservative Harb Gill had 39.1% with a total of 21,270 votes (lead of 4,529); Liberal Richard Pollock had 30.8% with 16,741 votes; NDP Brian Masse had 27.8% with 15,112; and PPC Jacob Bezaire has 1% with 548 votes.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARGM-ADV on had",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/39.1% of the vote",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_809",
+    "text": "Long-time NDP MP Brian Masse (in since 2002) lost and finished third.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG1 on finished",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_number_omission",
+        "reason": "An explicit source amount/identifier is not represented in graph values.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c3/election",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_812",
+    "text": "Despite low vote share, NDP will still hold the balance of power in the minority parliament, which Aiken calls unique given they only had 6% of the vote.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: the balance of power in the minority parliament, which Aiken calls unique given they only had 6% of the vote",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for call-01 :ARG1 hold-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c2/balance of power in the minority parliament",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_813",
+    "text": "Clarifies that Liberals will remain the primary power-holders.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: Clarifies",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/claim",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_820",
+    "text": "However, not enough gains, and failure to sufficiently weaken Fortress Toronto prevented Conservatives from forming government.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "threshold_scope",
+        "reason": "Enough-NP needs one explicit infinitival sufficiency goal.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Negated sufficiency needs a separate quantified interpretation.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_823",
+    "text": "2021 map shows more Bloc Québécois seats (blue) — not as much red.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "polarity_omission",
+        "reason": "A source negation is absent from the logical operators. Preserve the intended negated clause.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: A source negation is absent from the logical operators. Preserve the intended negated clause.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_827",
+    "text": "2021 map shows more NDP seats, many of which have since gone Liberal.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG1 on gone",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "missing_shared_participant",
+        "reason": "Content must reuse the focal parent entity; do not assert an unrelated event.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_846",
+    "text": "States that the best response to the crisis is to build domestic strength and assist people who will be most harmed by tariffs.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: to build domestic strength and assist people who will be most harmed by tariffs",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: A clausal argument has no attached SRL frame: to build domestic strength",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_847",
+    "text": "States this plan as right, fair, and the Canadian thing to do.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: do",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: plan, right",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_854",
+    "text": "5 larger dots overlay them with a +5 in yellow in the top right.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG2 on overlay",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for overlay-01 :ARG2 equal-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/+5",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_856",
+    "text": "They show the current House composition: Liberals hold 152 seats, Conservatives 120, Bloc Québécois 33, NDP 24, Greens 2, with 3 independents and 4 seats vacant.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Conservatives, 120, Bloc, Québécois, 33, NDP, 24, Greens, 2",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/seats",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_858",
+    "text": "The speaker notes that 172 seats are required for a majority government, though a minority government can still form with fewer seats than that.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: form",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for have-concession-91 :ARG1 note-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: 172",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_860",
+    "text": "If the Liberals lose this election, Carney would become Canada's shortest-serving Prime Minister, a record currently held by Charles Tupper who served 69 days in 1896.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unresolved modal interpretation: would",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_867",
+    "text": "Shows picture of what the voter information service page looks like: can find electoral district, look at the map, profile, etc. with a place you can type your postal code and search ('Go') or a link you can click to find an electoral district without a postal code.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: find",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "sentence_mode",
+        "reason": "Question/imperative interpretation is not implemented.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c5: Unrepresented source content: such",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_868",
+    "text": "Requirements to vote are stated as being a Canadian citizen who is at least 18 years old on election day and able to provide proof of identity and address.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG1 on is",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Explicit source clause predicates have no linked SRL frame: vote",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_870",
+    "text": "Shows physical paper voting where folded up ballots are slipped into large boxes that say Elections Canada. The box in the image is #608A.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: physical paper voting where folded up ballots are slipped into large boxes that say Elections Canada. The box",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for show-01 :ARG1 vote-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/photo",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_871",
+    "text": "The speaker notes that Canadians may vote on election day, at advance polls, or by mail-in ballot if they are outside the country, with more information coming on the Elections Canada website.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARGM-ADV on vote",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_875",
+    "text": "Address begins with 'To my fellow Conservatives' — he is speaking to party members/supporters.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: with 'To my fellow Conservatives' — he is speaking to party members/supporters",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "event_alignment",
+        "reason": "Repeated original event has conflicting ARG2 arguments.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_883",
+    "text": "Says that change is needed, but emphasizes change is difficult.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: change is difficult",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for contrast-01 :ARG1 say-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/person",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_889",
+    "text": "Shows scene of people in street holding signs protesting against America acquiring Canada: woman in Canada mask holds sign that says 'Canada is Already Great' and waves at camera while wearing an 'I voted' sticker; another woman in the back holds two flags: Canada's and Ukraine's.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "written_quote_scope",
+        "reason": "A written quotation is not preserved as an exact string bound to its carrier.",
+        "shared_checks": [
+          {
+            "code": "written_quote_scope",
+            "reason": "A written quotation is not preserved as an exact string bound to its carrier.",
+            "text": "I voted"
+          }
+        ]
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_number_omission",
+        "reason": "An explicit source amount/identifier is not represented in graph values.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c1/people in a street",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_892",
+    "text": "Green is consistently the lowest with BLOC slightly above it following a similar flat distribution around 5 and 6% respectively.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARGM-ADV on is",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for follow-01 :ARG1 be-located-at-91",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c4/around 5% and 6%",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_894",
+    "text": "Lib is on a slight decline from 32% in Jan 2023 to 20% in Jan 2025 but jumps all the way up to ~45% between Jan 2025 and present.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "predicate_type",
+        "reason": "Predicate position is not a lexical/state predicate: ~",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "measurement_binding",
+        "reason": "The complete source amount and unit lack a linked quantity condition.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c5: Unrepresented source content: 45",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_900",
+    "text": "Shows bar graph of seats won comparing 2021 in light red and 2025 in dark red (the 2025 data is from the time of writing and animating which is 07:30 GMT, 03:30 ADT).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: bar graph of seats won comparing 2021 in light red and 2025 in dark red",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "time_cardinality",
+        "reason": "One date-entity has several time values; keep one complete timecode or represent an interval explicitly.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: A clausal argument has no attached SRL frame: The bar graph displays seats",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_906",
+    "text": "Comment that this outcome would have seemed impossible only months earlier.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: Unresolved modal interpretation: would",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_908",
+    "text": "Video topic: the Liberals' political revival, the election results, and the implications for Canada.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Liberals, political, revival, election, results, implications, Canada",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "shared_description",
+        "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_910",
+    "text": "Cuts to the crowd who is giving him a standing ovation, all holding red signs (assume supporters).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: giving, holding",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for assume-02 :ARG1 support-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c5/ones",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_914",
+    "text": "Six months earlier, a Conservative landslide seemed inevitable.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Conservative, landslide",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: Conservative, landslide",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_915",
+    "text": "Then-incumbent PM Justin Trudeau was very unpopular: net approval rating -52 in December.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: net, approval, rating, 52, December",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: 52",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_916",
+    "text": "Shows graph of approval: Estimated change and trend (2016-2024): approval starts near 50% and ends around 28-30% (down ~20 points), while disapproval begins near 40% and rises to about 68-70% (up ~30 points); overall pattern shows early volatility, a temporary approval bump around 2020, then a sustained decline in approval with steadily increasing disapproval through 2024.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: while disapproval begins near 40% and rises to about 68-70% (up ~30 points)",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c9: Unrepresented source content: 2020",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_918",
+    "text": "Estimated change and trend (2016-2024, index 2016 Q1 = 100): Both countries start near 100; the United States ends around 115-116 (up ~15-16 points) after a sharp 2020 drop and strong post-2020 growth, while Canada ends near 101-102 (up ~1-2 points) after a deeper 2020 decline and a slower, flatter recovery that peaks around 2022 before easing slightly, resulting in a widening gap in real GDP per capita growth.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG1 on peaks",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: SRL repeats ARG1 on is",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_920",
+    "text": "Estimated change and trend (Jan 2023-Jan 2025): Conservatives rise from about 34-35% to 43-44% (up ~9 points), Liberals fall from roughly 31-32% to 20-21% (down ~11 points), NDP remain relatively flat around 18-19%, Bloc Québécois edge up slightly from 6-7% to 8-9%, and Greens stay low and stable near 3-4%; overall trend shows widening Conservative lead driven mainly by declining Liberal support.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: driven, declining",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_number_omission",
+        "reason": "An explicit source amount/identifier is not represented in graph values.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: SRL repeats ARG3 on rose",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_921",
+    "text": "It looked certain Poilievre would replace Trudeau; main question was margin of victory.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted.",
+        "shared_checks": [
+          {
+            "code": "modal_scope",
+            "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted."
+          }
+        ]
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unresolved modal interpretation: would",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_924",
+    "text": "Shows same graph as before with post January results: Conservatives drop sharply from about 43-44% to roughly 37-38% (down ~6 points), Liberals surge from around 20-21% to about 42-43% (up ~21-22 points), NDP fall from roughly 18-19% to near 8-9% (down ~10 points), Bloc Québécois ease slightly from about 8-9% to 6-7%, and Greens decline from around 4% to about 2-3%; overall, the new data shows a rapid realignment driven primarily by a large shift from NDP and Conservative support toward the Liberals.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG4 on drop",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: SRL repeats ARG4 on drop",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_926",
+    "text": "Shows table picture of various polls in April: multiple national polls show the Liberals leading at roughly 41-44%, with the Conservatives close behind at about 37-41%, The NDP polls mostly between 6-11%, well below earlier levels; the Bloc Québécois is stable around 6% nationally; Greens sit near 1-3%; PPC and others remain around 1-2%.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: NDP, mostly, 11, well, earlier, levels",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c1/various polls in April",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_930",
+    "text": "Polling: Ipsos showed 49% of Canadians preferred Carney to negotiate with Trump vs. 33% for Poilievre.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Polling, 33, Poilievre",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/result",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_935",
+    "text": "Leadership approval snapshot (Angus Reid, March 17, 2025): Pierre Poilievre has approval around the mid-30% range with disapproval near 55-60%, Justin Trudeau shows higher approval near ~48-50% with disapproval around ~35%, Jagmeet Singh records approval near ~32-33% with disapproval close to ~60%, and Yves-François Blanchet (Quebec polling only) has approval around ~48-50% and disapproval near ~40-42%, indicating Trudeau and Blanchet with net-positive standings and Poilievre and Singh facing higher disapproval than approval.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "temporal_scope",
+        "reason": "Fronted time with a different coordinated subject needs an explicit scope reading.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_number_omission",
+        "reason": "An explicit source amount/identifier is not represented in graph values.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c7: A clausal argument has no attached SRL frame: based on Quebec polling only",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_944",
+    "text": "Example: 338Canada aggregator had Conservatives +3 points in mid-March but still predicted more Liberal seats due to distribution efficiency.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Example",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: Example",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_947",
+    "text": "Liberals beat Conservatives in popular vote but only by ~1.4 points: 43.1% vs. 41.7%.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: only, 43.1, 41.7",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: only",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_948",
+    "text": "With 96% counted: Liberals projected 48.1% of seats = 166 seats; Conservatives 42.9% = 146 seats (out of 343 total).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Conservatives, 42.9, 146, 343, total",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/48.1% of seats",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_951",
+    "text": "Remaining seats expected mainly for Bloc Québécois (Quebec-only nationalist party) and NDP (social democratic, left of Liberals).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Bloc, Québécois, Quebec, only, nationalist, party, NDP, social, democratic",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: Bloc, Québécois",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_954",
+    "text": "Seat comparison (2021 vs projected 2025): The chart compares seats won in the 2021 election with projected 2025 results, showing the Liberals increasing their seat total (roughly mid-150s to near 180), the Conservatives also gaining (from about 120 to the mid-140s), and the Bloc Québécois declining (from low-30s to around 20); NDP and Green Party results are not displayed.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: showing the Liberals increasing their seat total (roughly mid-150s to near 180), the Conservatives also gaining (from about 120 to the mid-140s), and the Bloc Québécois declining (from low-30s to around 20)",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: roughly",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_959",
+    "text": "Liberals appear short of the 172 seats needed for a majority government.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: needed",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Explicit source clause predicates have no linked SRL frame: needed",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_960",
+    "text": "Carney now faces decision similar to Trudeau's in 2021: whether to form a support alliance with the NDP which would give him enough seats for a majority.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "threshold_scope",
+        "reason": "Enough-NP needs one explicit infinitival sufficiency goal.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Explicit source clause predicates have no linked SRL frame: faced",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_962",
+    "text": "Carney may face difficulties: positioned slightly right of Trudeau while NDP is left of Liberals; outcome depends on NDP's new leader.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: positioned slightly right of Trudeau while NDP is left of Liberals",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: A clausal argument has no attached SRL frame: left of the Liberals",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_963",
+    "text": "Conclusion: Carney's success credited largely to Trump's rhetoric and threats.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: credited",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for conclude-01 :ARG1 credit-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Two compiled entities in one clause map to one original mention.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_964",
+    "text": "Suggestion that without Trump the Liberal comeback would not have happened.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "negative_argument_scope",
+        "reason": "A negated argument needs scope projection over its governing relation.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: A clausal argument has no attached SRL frame: that the Liberal comeback would not have happened without Trump",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_967",
+    "text": "Lessons focus on hands-on problem solving, claimed to be 6x more effective than lectures.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: focus",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c1/hands-on problem solving",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_972",
+    "text": "National results so far: 222 of 343 ridings have reported; seat counts stand at Liberals 124, Conservatives 88, Bloc Québécois 16, NDP 2, Greens 0 (172 seats needed for a majority).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: needed",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: National, results, so, far",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_973",
+    "text": "Can see numbers updating on bottom throughout. Start at Liberals 118, Conservatives 83, Bloc Québécois 15, NDP 4, Greens 0.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: see",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c6: Unrepresented source content: 0",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_975",
+    "text": "Riding-level result (Oshawa): Conservative candidate Rhonda Kirkland is leading locally with 314 votes reported, followed by Liberal Isaac Ransom with 245 and NDP candidate Sara Labelle with 60.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: followed",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "duplicate_roles",
+        "reason": "Repeated core role at c2",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/candidate Rhonda Kirkland",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_976",
+    "text": "Riding-level result (Peterborough): Liberal candidate Emma Harrison is leading locally with 2740 votes reported, followed by Conservative Michelle Ferreri with 1932 (increasing) and NDP candidate Heather Ray with 137.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG2 on followed",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for local-02 :ARG1 lead-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: Peterborough",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_977",
+    "text": "Riding-level result (Pickering-Brooklin): Liberal candidate Juanita Nathan is leading locally with 70 votes reported, followed by Conservative Alicia Vianga with 62 (increasing) and NDP candidate Andrea Wood with 3.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: by Conservative Alicia Vianga with 62 (increasing) and NDP candidate Andrea Wood with 3",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for local-02 :ARG1 lead-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/candidate",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_983",
+    "text": "Only question is whether it will be a majority government or a minority government.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "nominal_disjunction",
+        "reason": "Nominal OR has no explicit alternative group.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "description_alignment",
+        "reason": "A shared property is not anchored in the original text.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_984",
+    "text": "Commentators reference anticipated celebration at HQ (supporters unaware of final call yet).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: supporters, unaware, final, call, yet",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c5: Embedded predicate has no explicit or licensed controller: known",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_994",
+    "text": "Bloc Québécois: -11 seats in Quebec.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: 11, seats, Quebec",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c1/11 seats in Quebec",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_995",
+    "text": "Conservatives: -5 seats in Quebec.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: 5, seats, Quebec",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c1/5 seats in Quebec",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1021",
+    "text": "There is no original sound in the video, only overlaid dramatic music.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: , only overlaid dramatic music",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "negative_argument_scope",
+        "reason": "A negated argument needs scope projection over its governing relation.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "source_alignment",
+        "reason": "No unique simple source sentence for the original media description.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1066",
+    "text": "The closer to the surface an earthquake is, the greater the damage.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "generic_scope",
+        "reason": "A comparative generic statement needs a dependency over cases; an existential event/group formula does not express that generalization.",
+        "shared_checks": [
+          {
+            "code": "generic_scope",
+            "reason": "A comparative generic statement needs a dependency over cases; an existential event/group formula does not express that generalization."
+          }
+        ]
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "generic_scope",
+        "reason": "A comparative generic statement needs a dependency over cases; an existential event/group formula does not express that generalization.",
+        "shared_checks": [
+          {
+            "code": "generic_scope",
+            "reason": "A comparative generic statement needs a dependency over cases; an existential event/group formula does not express that generalization."
+          }
+        ]
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: greater, damage",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1070",
+    "text": "A video shows a tall building collapsing in Bangkok (inferred).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: a tall building collapsing in Bangkok (inferred)",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for refer-01 :ARG1 show-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c3/event",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1148",
+    "text": "Blue Ghost had three and a half elliptical orbits around Earth.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: half",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c2/half elliptical orbit around Earth",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1191",
+    "text": "Landing successful and everyone cheers.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "universal_scope",
+        "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+        "shared_checks": [
+          {
+            "code": "universal_scope",
+            "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+            "source_words": "everyone"
+          }
+        ]
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "universal_scope",
+        "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+        "shared_checks": [
+          {
+            "code": "universal_scope",
+            "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+            "source_words": "everyone"
+          }
+        ]
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1192",
+    "text": "Firefly Aerospace became first commercial company in history to complete a fully successful moon landing.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: history",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "event_scope_reentry",
+        "reason": "An event is referenced from two contexts: c4",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c4/event",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1193",
+    "text": "Cut to larger crowd of what is likely members of the public cheering; this event was almost certainly broadcasted live.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: members of the public cheering",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "sentence_mode",
+        "reason": "Question/imperative interpretation is not implemented.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/cut",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1209",
+    "text": "A March 3 video shows the LISTER drill operating during descent into the regolith which is watched by those in the Firefly Aerospace control room.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: watched",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for watch-01 :ARG1 operate-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c4/event",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1212",
+    "text": "LISTER also measures thermal conductivity (how effectively the lunar material transfers heat).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: how, effectively, lunar, material, transfers, heat",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for mean-01 :ARG2 effective-04",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: how",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1229",
+    "text": "Mare Crisium was selected as a landing site due to its geological value: large basin located in the northeast quadrant of the moon's near side when observing the moon from the Earth's northern hemisphere.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: located, observing",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for mean-01 :ARG1 select-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c4/moon",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1231",
+    "text": "Firefly and NASA described the site as uniquely suited for studying lunar regolith, geophysical behavior, and how solar wind interacts with Earth's magnetic field in this region.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "opaque_clause",
+        "reason": "A finite clause remains inside a literal/entity instead of a linked clause.",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for describe-01 :ARG2 suit-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c4: A finite clause remains inside a literal/entity instead of a linked clause.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1233",
+    "text": "Firefly reported that lunar noon is the hottest part of the lunar day and temperatures can reach about 250°F or 121°C.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: 121°C",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_number_omission",
+        "reason": "An explicit source amount/identifier is not represented in graph values.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: 121°C",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1234",
+    "text": "To protect hardware, Blue Ghost began cycling power on and off to keep the lander as cool as possible.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: lander",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "event_scope_reentry",
+        "reason": "An event is referenced from two contexts: c2",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: A clausal argument has no attached SRL frame: to protect hardware",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1237",
+    "text": "Firefly said the lander would gradually return to full power once surface temperatures dropped.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted.",
+        "shared_checks": [
+          {
+            "code": "modal_scope",
+            "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted."
+          }
+        ]
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unresolved modal interpretation: would",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1247",
+    "text": "Before mission end, Blue Ghost is scheduled to capture high-definition imagery of a total Earth eclipse on March 14, where Earth blocks the Sun as viewed from the Moon.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: where Earth blocks the Sun as viewed from the Moon",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for schedule-01 :ARG1 capture-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c3/Earth",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1248",
+    "text": "Even though Blue Ghost will only operate for about 2 weeks total, they've been able to complete a few different firsts.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Even",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "sentence_parse",
+        "reason": "Supply exactly one sentence.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1256",
+    "text": "Firefly was awarded 2 additional NASA commercial lunar payload services task orders to provide payload services in lunar orbit and on lunar surface in 2026.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: 2, additional, NASA, commercial, task, orders",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for order-01 :ARG2 provide-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: A clausal argument has no attached SRL frame: for providing payload services in lunar orbit",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1263",
+    "text": "Elytra will remain in lunar orbit to provide long-haul communications relay and support RF calibration services for NASA's telescope systems.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_controller",
+        "reason": "Embedded predicate has no explicit or licensed controller: relay",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for provide-01 :ARG1 relay-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/relay",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1268",
+    "text": "During lunar night, the Moon also blocks solar RF noise, making the region ideal for observing signals from the cosmic dark ages.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: region, ideal",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for make-02 :ARG0 block-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: Unrepresented source content: region, ideal",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1283",
+    "text": "Blue Ghost's mission is to enable sustainable presence on the moon.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: to enable sustainable presence on the moon",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for enable-01 :ARG1 present-02",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: A clausal argument has no attached SRL frame: to enable sustainable presence on the moon",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1297",
+    "text": "CLPS stands for Commercial Lunar Payload Services.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG1 on stands",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: SRL repeats ARG1 on stands",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1298",
+    "text": "Designing the vehicle took a little over a year.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: little",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: little",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1408",
+    "text": "IM's moon landing was a nailbiter.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: IM's",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: IM's",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1464",
+    "text": "After touchdown, Blue Ghost's legs send a signal to shutdown the engine.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: signal",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for signal-07 :ARG1 shut-down-05",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "event_alignment",
+        "reason": "Repeated events with embedded contexts need separate alignment.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1467",
+    "text": "Two people high-five in reaction to the landing.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_srl",
+        "reason": "No usable SRL frame or unambiguous nominal root.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_number_omission",
+        "reason": "An explicit source amount/identifier is not represented in graph values.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: high",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1470",
+    "text": "The 10-20 knots of flow at 850mb would persist through the day on the 3rd.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unresolved modal interpretation: would",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1471",
+    "text": "The knots of flow ramped up overnight on the 3rd and into the 4th from 10-20 knots to 25-30 knots across central Texas.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: central, Texas",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "measurement_binding",
+        "reason": "The complete source amount and unit lack a linked quantity condition.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/knots",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1511",
+    "text": "On July 2nd the circulation head had dissipated and meandered slowly north given about 10 to 20 knots of flow at 500mb out of the south.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: given about 10 to 20 knots of flow at 500mb out of the south",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: Entity is not an exact source mention: mb",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1513",
+    "text": "You can see this high pressure ridge through winds out west out of the south, westerly flow across the central plains, and northerly flow on the east side of the ridge in the southeast.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: see",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/ridge",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1525",
+    "text": "The video transitions to a scene showing Trump seated, signing the Executive Order, and then displaying the signed order to some onlookers, who clap in response.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: showing, seated, signing",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for respond-01 :ARG2 clap-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c3/Executive Order",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1547",
+    "text": "The injunction temporarily pauses/rules illegal and unconstitutional almost all of the tariffs the Trump administration has put in place.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: almost all of the tariffs the Trump administration has put in place",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "negative_argument_scope",
+        "reason": "A negated argument needs scope projection over its governing relation.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: A clausal argument has no attached SRL frame: almost all of the tariffs the Trump administration has put in place",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1569",
+    "text": "An example of this skepticism is the opinion that the US immigration situation is not an invasion or incursion and does not support invocation of the Alien Enemies Act.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "nominal_disjunction",
+        "reason": "Nominal OR has no explicit alternative group.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c4: A clausal argument has no attached SRL frame: that the US immigration situation does not support invocation of the Alien Enemies Act",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1570",
+    "text": "SCOTUS is skeptical towards the administration's tendency to call everything an attack/emergency/incursion/rebellion.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: call",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for tend-02 :ARG2 call-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1586",
+    "text": "Image of Trump signing something (likely executive orders).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "media_modifier",
+        "reason": "A media-description modifier contains an unresolved clause.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "media_modifier_scope",
+        "reason": "A predicative media modifier needs attribute-versus-content interpretation.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/photo",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1605",
+    "text": "US Futures: DOW 42,638.00, +468.00, +1.1%.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: DOW, 42,638.00, +468.00, 1.1",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c3/468.00",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1607",
+    "text": "US Futures: NASDAQ 21,752.00, +372.25, +1.74%.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: NASDAQ, 21,752.00, +372.25, 1.74",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "measurement_binding",
+        "reason": "The complete source amount and unit lack a linked quantity condition.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c3/372.25",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1608",
+    "text": "US Futures (second reading): DOW 42,634.00, +464.00, +1.1%.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: DOW, 42,634.00, +464.00, 1.1",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/value",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1609",
+    "text": "US Futures (second reading): S&P 500 5,988.75, +86.00, +1.46%.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: S&P, 500, 5,988.75, +86.00, 1.46",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/index",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1610",
+    "text": "US Futures (second reading): NASDAQ 21,749.50, +369.75, +1.73%.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: NASDAQ, 21,749.50, +369.75, 1.73",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: Unrepresented source content: +369.75",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1624",
+    "text": "This ruling is significant because Trump uses tariffs as a key part of his international trade 'deals' and policy.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: deals, policy",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c4/approach",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1632",
+    "text": "Ryan Goodman is the Just Security Co-Editor-In-Chief.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: In",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: In",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1634",
+    "text": "The court said in the ruling that it is not just ruling for the plaintiff but for everyone who would be covered by the tariffs.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for contrast-01 :ARG1 rule-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: Unresolved modal interpretation: would",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1639",
+    "text": "The ruling means that the Administration will need to go to Congress to set tariffs unless the ruling is overturned.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: unless the ruling is overturned",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: A clausal argument has no attached SRL frame: unless the ruling is overturned",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1646",
+    "text": "Footage of Trump speaking in Washington DC this afternoon (muted).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "media_modifier",
+        "reason": "A media-description modifier contains an unresolved clause.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for tape-02 :ARG1 speak-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Embedded predicate has no explicit or licensed controller: speaking",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1647",
+    "text": "Footage of Trump speaking on an airstrip on Sunday in Morristown, NJ wearing a Make America Great Again baseball cap (muted).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: speaking, wearing",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for tape-02 :ARG1 speak-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/event",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1648",
+    "text": "Footage from Monday in Arlington, VA of Trump speaking at podium with JD Vance and Pete Hegseth behind him clapping (muted).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: muted",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: A clausal argument has no attached SRL frame: clapping",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1655",
+    "text": "She claims that Trump wants America to return to the late 19th century, when America had no income tax and state spending was instead funded by tariff revenue; Rachana says that this is a fantasy.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "temporal_scope",
+        "reason": "Fronted time with a different coordinated subject needs an explicit scope reading.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for contrast-01 :ARG1 claim-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/America",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1657",
+    "text": "Stock markets around the world are reacting badly to Trump's decision and that it could tip the economy into a recession — an observation echoed in the video by b-roll of financial buildings and graphics of negative market reports.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: to Trump's decision and that it could tip the economy into a recession",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for bad-05 :ARG1 react-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/markets",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1658",
+    "text": "The video cuts back to Rachana, who shows a plot of U.S. tariff rates from 1900 to the present, claiming that if Trump fully implements his tariffs, the resulting rates will be higher than any U.S. tariffs in over 100 years.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: claiming that if Trump fully implements his tariffs, the resulting rates will be higher than any U.S. tariffs in over 100 years",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for full-09 :ARG1 implement-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c2/plot of U.S. tariff rates from 1900 to the present",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1665",
+    "text": "The Chinese tariff rate would be 34%.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unresolved modal interpretation: would",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1667",
+    "text": "Rachana says that these tariff rates explain why a company like Apple has suffered in the stock market, as Apple does a lot of its production in China and some in Vietnam.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: as Apple does a lot of its production in China and some in Vietnam",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for explain-01 :ARG1 cause-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/Apple",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1668",
+    "text": "A plot shows Apple's share price dropping by around 10 points in after hours between April 2 and April 3.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats obl on dropping",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for show-01 :ARG1 drop-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c4/time",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1676",
+    "text": "America's trading partners will be thinking about how to engage with the White House and whether to retaliate against Trump's tariffs; these countries know that the more they retaliate, the more they hurt their own economies.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "opaque_clause",
+        "reason": "A finite clause remains inside a literal/entity instead of a linked clause.",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "polarity_value",
+        "reason": "Unsupported polarity value: t4",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c3/they",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1680",
+    "text": "Prices could go up; extra tariffs for $800 or less but only if shipped via the international postal service.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "conditional_scope",
+        "reason": "The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": [
+          {
+            "code": "conditional_scope",
+            "reason": "The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context."
+          }
+        ]
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for contrast-01 :ARG2 ship-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: Unrepresented source content: 800, less",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1681",
+    "text": "An additional 30% tariff or $25 per item as of time of video but could go up to $50 per item by June 1, 2025.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: 25",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: 25, item",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1682",
+    "text": "It will break down to .09 cents per day it will cost consumers.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: to .09 cents per day it will cost consumers",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/It",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1683",
+    "text": "Yale says it will cost consumers across the USA a minimum of 10B a year.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: 10B, year",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: 10B, year",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1705",
+    "text": "States that the best response to the crisis is to build domestic strength and assist people who will be most harmed by tariffs.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: to build domestic strength and assist people who will be most harmed by tariffs",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: A clausal argument has no attached SRL frame: to build domestic strength",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1706",
+    "text": "States this plan as right, fair, and the Canadian thing to do.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: do",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: plan, right",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1713",
+    "text": "5 larger dots overlay them with a +5 in yellow in the top right.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG2 on overlay",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for overlay-01 :ARG2 equal-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/+5",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1715",
+    "text": "They show the current House composition: Liberals hold 152 seats, Conservatives 120, Bloc Québécois 33, NDP 24, Greens 2, with 3 independents and 4 seats vacant.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Conservatives, 120, Bloc, Québécois, 33, NDP, 24, Greens, 2",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/seats",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1717",
+    "text": "The speaker notes that 172 seats are required for a majority government, though a minority government can still form with fewer seats than that.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: form",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for have-concession-91 :ARG1 note-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: 172",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1719",
+    "text": "If the Liberals lose this election, Carney would become Canada's shortest-serving Prime Minister, a record currently held by Charles Tupper who served 69 days in 1896.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unresolved modal interpretation: would",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1724",
+    "text": "Shows news article from CBC news backing this up: Headline is Mark Carney to run for seat in Ottawa's Nepean riding. Subheading is: Previously held by Liberal MP Chandra Arya, it borders riding where Poilievre is seeking re-election; Posted Mar 22, 2025 at 8:19 PM EDT (5 hours ago).",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: Previously held by Liberal MP Chandra Arya, it borders riding where Poilievre is seeking re-election; Posted Mar 22, 2025 at 8:19 PM EDT (5 hours ago)",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_number_omission",
+        "reason": "An explicit source amount/identifier is not represented in graph values.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: A clausal argument has no attached SRL frame: Previously held by Liberal MP Chandra Arya, it borders riding where Poilievre is seeking re-election",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1726",
+    "text": "Shows picture of what the voter information service page looks like: can find electoral district, look at the map, profile, etc. with a place you can type your postal code and search ('Go') or a link you can click to find an electoral district without a postal code.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: find",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "sentence_mode",
+        "reason": "Question/imperative interpretation is not implemented.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c2/you",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1727",
+    "text": "Requirements to vote are stated as being a Canadian citizen who is at least 18 years old on election day and able to provide proof of identity and address.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG1 on is",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Explicit source clause predicates have no linked SRL frame: vote",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1729",
+    "text": "Shows physical paper voting where folded up ballots are slipped into large boxes that say Elections Canada. The box in the image is #608A.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: physical paper voting where folded up ballots are slipped into large boxes that say Elections Canada. The box",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for show-01 :ARG1 vote-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/photo",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1730",
+    "text": "The speaker notes that Canadians may vote on election day, at advance polls, or by mail-in ballot if they are outside the country, with more information coming on the Elections Canada website.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARGM-ADV on vote",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1731",
+    "text": "Shows images of mail in ballots with all items included: envelope for you to receive it, return envelope, ballot, and the instructions for voting.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: images of mail in ballots with all items included: envelope for you to receive it, return envelope, ballot, and the instructions for voting",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for instruct-01 :ARG3 vote-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/content",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1739",
+    "text": "Otherwise, importers would need to get a refund.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unresolved_reference",
+        "reason": "A core argument names an undeclared node: -",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unresolved modal interpretation: would",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1747",
+    "text": "Title of video: 'Trump announces 10% baseline tariff, reciprocal tariff on some nations'.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Title, video",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for title-01 :ARG2 announce-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: A clausal argument has no attached SRL frame: Trump announces 10% baseline tariff, reciprocal tariff on some nations",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1751",
+    "text": "President Trump mentions he could have implemented a full reciprocal but chose to do only half.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: only",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for contrast-01 :ARG1 implement-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: only",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1754",
+    "text": "China tariffs the USA 67%, USA will reciprocate with 34%; currency manipulation and trade barriers from China.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: currency, manipulation, trade, barriers",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/China",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1759",
+    "text": "Taiwan, took USA computer chips and semiconductors says Trump, tariffs the USA 64%, USA will reciprocate with 32%.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: 64",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: 64",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1763",
+    "text": "Trump says minimum baseline tariff of 10% to help rebuild the USA economy and prevent cheating; 10 year jail sentence for mishandling at the gate.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: 10, 10, year, jail, sentence, mishandling, gate",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for help-01 :ARG1 rebuild-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: 10",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1780",
+    "text": "As part of the ongoing protests going on in Nepal which has already led to the resignation of the prime minister, the young protesters in Nepal are burning down politicians' houses.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: which has already led to the resignation of the prime minister",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for lead-03 :ARG2 resign-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/Nepal",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1800",
+    "text": "Close up footage of burned building on fire, can see the individual rooms, only 1 is actively on fire but they all look burned and have smoke billowing out from them.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: only",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for contrast-01 :ARG1 look-02",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: A clausal argument has no attached SRL frame: a burned building on fire",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1812",
+    "text": "Chants and singing in unknown language at 0:01.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: singing",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: A clausal argument has no attached SRL frame: Singing",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TW4OYA3RN-Hw_1826",
+    "text": "Two boys have someone take a picture of themselves on bridge where fire and smoke can be seen in back.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: a picture of themselves on bridge where fire and smoke can be seen in back",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for have-04 :ARG1 take-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Cannot license a local antecedent for themselves with the supplied predicate structure.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1872",
+    "text": "Five years since the filming, everything about the PCH is different.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "universal_scope",
+        "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+        "shared_checks": [
+          {
+            "code": "universal_scope",
+            "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+            "source_words": "everything"
+          }
+        ]
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "universal_scope",
+        "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+        "shared_checks": [
+          {
+            "code": "universal_scope",
+            "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+            "source_words": "everything"
+          }
+        ]
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1874",
+    "text": "In the earlier footage, the road is clear and the vegetation on the side of the road is healthy.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: earlier, footage",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/road",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1875",
+    "text": "In the later footage, the road is covered in traffic cones and the vegetation looks burnt.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: later, footage",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "source_alignment",
+        "reason": "No unique simple source sentence for the original media description.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1878",
+    "text": "Some on-screen text, cut off, says '...experienced one of the worst wildfire sieges in its history. When the fires finally ended on November 5, 1993, there were four fatalities, over 1,200 structures had been destroyed, nearly 200,000 acres had been swept by 22 different fires — and the response cost/damage estimate approached $1 billion'.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: cut off",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "LayoutError",
+        "reason": "possibly disconnected graph",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c4/fires",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1884",
+    "text": "It is implied that Rosenthal Winery, Wiley's Bakeshop, Cholada Thai, and the Topanga Ranch Motel are all establishments near Topanga Beach.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "conditional_scope",
+        "reason": "The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": [
+          {
+            "code": "conditional_scope",
+            "reason": "The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context."
+          }
+        ]
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for imply-01 :ARG1 be-located-at-91",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1889",
+    "text": "There is a row of homes on the coast that was evidently untouched by the fire, seemingly due to a concrete rock wall across the street that may have protected them.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: protected",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "negative_argument_scope",
+        "reason": "A negated argument needs scope projection over its governing relation.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c5/street from the row of homes",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1894",
+    "text": "It is unclear how long it will be until people whose homes were destroyed in the fire will be allowed to rebuild them.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG1 on destroyed",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for allow-01 :ARG1 rebuild-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: SRL repeats ARG1 on destroyed",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1909",
+    "text": "On-screen text states fire grew from 2,921 acres to over 16,000 acres in less than 8 hours on January 8th, 2025.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: screen, text, states",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "numeric_source_mismatch",
+        "reason": "A numeric graph value has no matching explicit source value.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c1/acres",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1924",
+    "text": "The video depicts a 'Palisades Incident Operations Update' from January 12, 2025.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unlinked_temporal_value",
+        "reason": "Names remain in a list string without linked member descriptions.",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_name_omission",
+        "reason": "An explicit proper-name component is absent from emitted graph names/concepts.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "description_alignment",
+        "reason": "A shared property is not anchored in the original text.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1968",
+    "text": "The Palisades Fire is one of the most destructive in California's history.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: most, destructive, California, history",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "source_number_omission",
+        "reason": "An explicit source amount/identifier is not represented in graph values.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Two compiled entities in one clause map to one original mention.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1976",
+    "text": "The man in the blue blazer is presumably a lawyer or member of law enforcement.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "nominal_disjunction",
+        "reason": "Nominal OR has no explicit alternative group.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "shared_description",
+        "reason": "Shared mentions have different compiled descriptions; merging could move modifiers across contexts.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1999",
+    "text": "Kenny Cooper explains that a holdover fire is 'deeply seeded in vegetation and roots'.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: holdover, fire",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for explain-01 :ARG1 seed-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: holdover, fire",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_2003",
+    "text": "Rinderknecht repeatedly listened to a French rap song about fire in the months leading up to the Lachman Fire.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "missing_predicate",
+        "reason": "Explicit source clause predicates have no linked SRL frame: leading",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "name_source_mismatch",
+        "reason": "A generated name is absent from the original source.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: Explicit source clause predicates have no linked SRL frame: leading",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2029",
+    "text": "Shi Yongxin led warrior monks on tours to perform Kung Fu abroad.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: to perform Kung Fu abroad",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for tour-01 :ARG1 perform-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: A clausal argument has no attached SRL frame: to perform Kung Fu abroad",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2058",
+    "text": "The female reporter said she would ask the Abbot to address some of the public's doubts.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "modal_scope",
+        "reason": "Unresolved modal interpretation: would",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for ask-02 :ARG1 address-02",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unresolved modal interpretation: would",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2068",
+    "text": "Shi Yongxin claims that as long as he has a clear conscience, he is not afraid of criticism.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "opaque_clause",
+        "reason": "A finite clause remains inside a literal/entity instead of a linked clause.",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for fear-01 :ARG1 criticize-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: A finite clause remains inside a literal/entity instead of a linked clause.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2078",
+    "text": "The third charge is accepting bribes as a non-state functionary.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: third, charge",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for charge-05 :ARG2 accept-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: third, charge",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2096",
+    "text": "Tourists are charged a fee for practically everything they do inside the temple.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "universal_scope",
+        "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+        "shared_checks": [
+          {
+            "code": "universal_scope",
+            "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+            "source_words": "everything"
+          }
+        ]
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "universal_scope",
+        "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+        "shared_checks": [
+          {
+            "code": "universal_scope",
+            "reason": "An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+            "source_words": "everything"
+          }
+        ]
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: An explicit universal or near-universal expression needs quantified scope; one existential candidate is insufficient.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2111",
+    "text": "The allegations imply that Shi Yongxin's position as Abbot was obtained illegitimately.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "conditional_scope",
+        "reason": "The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": [
+          {
+            "code": "conditional_scope",
+            "reason": "The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context."
+          }
+        ]
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for imply-01 :ARG1 obtain-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: The source contains an explicit conditional or implication, but the complete program has no corresponding condition/question context.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2114",
+    "text": "Therefore, the expulsion of Shi Yongxin is considered invalid.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: expulsion, Shi, Yongxin",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "negative_argument_scope",
+        "reason": "A negated argument needs scope projection over its governing relation.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: expulsion, Shi, Yongxin",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2127",
+    "text": "Shi Yongxin deviated from the identity of a monk in running the temple.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: in running the temple",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for deviate-01 :ARG2 run-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c3/context",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2161",
+    "text": "Shi Yongxin has been described as acting more like a corporate CEO.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: more",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for describe-01 :ARG2 act-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: more",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2166",
+    "text": "The video takes place on a large, open paved pier or terminal area.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "nominal_disjunction",
+        "reason": "Nominal alternative must occupy one explicit event argument.",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_reentry",
+        "reason": "An OR operand is referenced outside its choice.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "event_alignment",
+        "reason": "Repeated original event has conflicting ARGM-LOC arguments.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2173",
+    "text": "Some people crouch or sit on the ground for stability.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats obl on crouch",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "description_alignment",
+        "reason": "A shared property is not anchored in the original text.",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2185",
+    "text": "The highest rainfall accumulation of the day was in Meishan Township, Chiayi, which received 149.0 mm.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "duplicate_role",
+        "reason": "SRL repeats ARG0 on received",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "measurement_binding",
+        "reason": "The complete source amount and unit lack a linked quantity condition.",
+        "shared_checks": []
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "No unique compiled noun head: c2/Meishan Township, Chiayi",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2191",
+    "text": "Northern regions are expected to experience high temperatures of 35°C to 36°C the following day before afternoon rain begins.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: following, day",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for expect-01 :ARG1 experience-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c2: Unrepresented source content: 36°C",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2199",
+    "text": "A direct impact on Taiwan is considered unlikely.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: direct, impact, Taiwan",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "negative_argument_scope",
+        "reason": "A negated argument needs scope projection over its governing relation.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: direct, impact, Taiwan",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2215",
+    "text": "Western and Northern Taiwan are expected to see only occasional afternoon thunderstorms over the weekend.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: only",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for expect-01 :ARG1 see-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: only",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2234",
+    "text": "Tourists decided to go out to sea because they had already paid.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: because they had already paid",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for decide-01 :ARG1 go-02",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: A clausal argument has no attached SRL frame: because they had already paid",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2289",
+    "text": "Pedestrians are struggling to walk or stand in strong wind carrying a spray of water in Jiangmen.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: carrying a spray of water in Jiangmen",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "coordination_scope",
+        "reason": "An annotated coordination needs explicit scope.",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "entity_alignment",
+        "reason": "Original noun head is absent or ambiguous: c4/event",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2316",
+    "text": "Based on the trajectory shown, the coastal regions of Guangdong likely experienced severe heavy rainfall and high winds during landfall.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: the coastal regions of Guangdong likely experienced severe",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for likely-01 :ARG1 experience-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: A clausal argument has no attached SRL frame: the coastal regions of Guangdong likely experienced severe heavy rainfall and high winds",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2317",
+    "text": "Based on the trajectory shown, the coastal regions of Hainan likely experienced severe heavy rainfall and high winds during landfall.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "unresolved_clause",
+        "reason": "A clausal argument has no attached SRL frame: the coastal regions of Hainan likely experienced severe heavy rainfall and high winds during landfall",
+        "shared_checks": null
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for likely-01 :ARG1 experience-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: A clausal argument has no attached SRL frame: the coastal regions of Hainan likely experienced severe heavy rainfall and high winds during landfall",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2343",
+    "text": "A reporter in Zhuhai, Guangdong is shown wearing a white raincoat.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: Guangdong",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for show-01 :ARG1 wear-01",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: reporter, Zhuhai",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2362",
+    "text": "The reporter notes that rainfall intensity in some of these areas may be historically rare for this time of year.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: areas",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for rare-02 :ARG1 intense-02",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c1: Unrepresented source content: areas",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2371",
+    "text": "On-screen text at the end of the video names an upcoming storm as Typhoon No. 8 'Co-May.'",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: No., 8, Co, May",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "duplicate_roles",
+        "reason": "Repeated core role at n",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: Unrepresented source content: Typhoon, No., 8",
+        "shared_checks": null
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2428",
+    "text": "The forecast expected the signal to be lowered to Signal No. 3 after 7:00 PM.",
+    "attempts": [
+      {
+        "stage": "srl",
+        "status": "unsupported",
+        "code": "coverage_omission",
+        "reason": "Unrepresented source content: No., 3",
+        "shared_checks": []
+      },
+      {
+        "stage": "amr",
+        "status": "unsupported",
+        "code": "unhandled_complement",
+        "reason": "No scope policy for expect-01 :ARG1 lower-05",
+        "shared_checks": null
+      },
+      {
+        "stage": "rewrite",
+        "status": "unsupported",
+        "code": "rewrite_component",
+        "reason": "c3: Unrepresented source content: No., 3",
+        "shared_checks": null
+      }
+    ]
+  }
+]

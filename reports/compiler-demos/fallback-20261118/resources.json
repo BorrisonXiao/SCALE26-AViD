@@ -1,0 +1,31 @@
+{
+  "peak_gpus": 1,
+  "gpu_type": "NVIDIA A100 80GB PCIe",
+  "generated_responses": 8,
+  "jobs": [
+    {
+      "job_id": 1250075,
+      "state": "cancelled_pending",
+      "elapsed_seconds": 0,
+      "reason": "H100 start estimate was next day; no GPU allocated"
+    },
+    {
+      "job_id": 1250079,
+      "state": "cancelled",
+      "elapsed_seconds": 472,
+      "gpus": 1,
+      "reason": "Cold checkpoint loading left too little of the 10-minute limit. A request to extend the limit was denied by Slurm. No responses generated."
+    },
+    {
+      "job_id": 1250086,
+      "state": "completed",
+      "elapsed_seconds": 411,
+      "gpus": 1,
+      "responses": 8,
+      "generation_seconds": 10.364261597394943
+    }
+  ],
+  "gpu_hours": 0.2452777777777778,
+  "active_experiment_jobs": 0,
+  "new_parser_inference": "Frozen BERT SRL on CPU for20 existing external texts and25 rewrite components; Stanza dependency parsing for25 components. No retraining."
+}
