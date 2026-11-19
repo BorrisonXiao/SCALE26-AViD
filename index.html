@@ -24,14 +24,20 @@
       <div class="container">
         <p class="eyebrow">SCALE 2026 · AViD</p>
         <h1>Probabilistic parsing for multimodal claim verification</h1>
-        <p class="lede">Compile a claim into probabilistic logic, use frozen visual and audio models to collect evidence, and learn small relation classifiers to check whether the participants and events are related as the claim says.</p>
-        <div class="button-row">
-          <a class="button primary" href="proposals/probabilistic-verification.html">Read the chosen paper direction</a>
-          <a class="button" href="proposals/probabilistic-verification.html#generated-examples">See generated examples</a>
-          <a class="button" href="reports/scope-compilation.html">Inspect source scope and claim conditions</a>
-          <a class="button" href="reports/tree-crf.html">Earlier tree-CRF note</a>
-        </div>
-        <p class="meta">Direction adopted 14 October 2026. A restricted compiler and sample DeepProbLog training run are implemented as of 22 October. Held-out method gains remain unmeasured. Earlier tree-CRF reports are retained below as historical evidence.</p>
+        <p class="lede">Compile claims into probabilistic logic and check them against video and audio evidence.</p>
+        <nav class="project-links" aria-labelledby="project-links-heading">
+          <h2 id="project-links-heading">Project navigation</h2>
+          <div class="button-row">
+            <a class="button primary" href="reports/compiler-demos.html#daily-progress">Daily log</a>
+            <a class="button" href="reports/compiler-demos.html#current-work">Compiler overview</a>
+            <a class="button" href="reports/compiler-demos.html#walkthroughs">Examples</a>
+            <a class="button" href="reports/compiler-demos.html#outputs">All claims</a>
+            <a class="button" href="reports/compiler-demos.html#history">History</a>
+            <a class="button" href="reports/verification-pipeline.html">Verification pipeline</a>
+            <a class="button" href="reports/verification-pipeline.html#next-steps">Project checklist</a>
+            <a class="button" href="proposals/probabilistic-verification.html">Paper direction</a>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -40,64 +46,6 @@
         <p class="eyebrow">The idea in one paragraph</p>
         <h2>Represent the claim, score the relations, and infer support</h2>
         <p class="section-intro">Dependency parsing and semantic role labeling identify the claim's predicates and arguments. A compiler preserves their roles, shared variables, and logical scope in a probabilistic program. Fixed functions or small learned classifiers produce evidence probabilities from cached media-model outputs. Inference considers alternative evidence assignments and returns supported, refuted, or insufficient-evidence probabilities. Existing systems such as DeepProbLog can provide the inference and learning backend.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <p class="eyebrow">Read next</p>
-        <h2>Method note &amp; design notes</h2>
-        <div class="card-grid">
-          <a class="card card-link" href="reports/scope-compilation.html"><span class="tag green">1 November 2026 · compiler and human review</span><h3>Source scope and claim conditions</h3><p>Protected labels, depicted content, sufficiency, alternatives and time conditions. Full-corpus results and an empty 20-claim human review packet; ratings remain pending.</p></a>
-          <a class="card card-link" href="reports/compiler-followup.html"><span class="tag green">30 October 2026 · compiler experiments</span><h3>Compiler revision and evaluation</h3><p>Event references, duration constraints, native inference timings, all 2,375 outcomes and separate reviews of meaning preservation.</p></a>
-          <a class="card card-link" href="reports/semantic-compilation.html"><span class="tag green">29 October 2026 · compiler revision</span><h3>Meaning preservation in compilation</h3><p>Revised source scope and shared references, full 2,375-input census, 24 reference readings and a separate fresh 20-case review.</p></a>
-          <a class="card card-link" href="reports/srl-compilation.html">
-            <span class="tag green">29 October · SRL-only follow-up</span>
-            <h3>SRL compilation and parse editing</h3>
-            <p>One deterministic SRL/dependency pipeline and separate LLM edit conditions. Full-corpus acceptance and paired meaning reviews remain distinct.</p>
-          </a>
-          <a class="card card-link" href="reports/claim-compilation.html">
-            <span class="tag green">29 October · full-corpus compilation</span>
-            <h3>Compilation of all 2,375 claims</h3>
-            <p>Inspect the revised compiler, full-inventory counts, reviewed meaning errors and every claim's semantic structure and predicates. Acceptance is reported separately from correctness.</p>
-          </a>
-          <a class="card card-link" href="reports/verification-pipeline.html#compilation-methods">
-            <span class="tag green">28 October · compiler comparison</span>
-            <h3>Claim compiler and DeepProbLog pipeline</h3>
-            <p>Inspect the common logical form, parser/compiler interfaces, recursive source scope and frozen checks on new source videos. Accepted outputs and their meaning errors are both shown. Sentence rewriting remains an unimplemented last resort.</p>
-          </a>
-          <a class="card card-link" href="proposals/probabilistic-verification.html">
-            <span class="tag green">Chosen direction · design draft</span>
-            <h3>Probabilistic parsing and learned relation classifiers</h3>
-            <p>The current paper plan: claim compilation, frozen evidence modules, interchangeable fixed and learned functions, model parameterization, training objectives, and controlled experiments.</p>
-          </a>
-          <a class="card card-link" href="reports/pipeline.html">
-            <span class="tag amber">Historical pipeline · ablation</span>
-            <h3>From a claim to a verdict</h3>
-            <p>The earlier end-to-end pipeline — parse → checkable units → semantic factor tree → check-worthiness gate → multimodal probing → tree-CRF — plus the local-vs-external gate ablation (84% agreement; we use the local Qwen gate).</p>
-          </a>
-          <a class="card card-link" href="reports/verification-pilot.html">
-            <span class="tag green">15 October · completed development runs</span>
-            <h3>Generated data and verification baselines</h3>
-            <p>Inspect actual candidates, prompt revisions, corrected seed descriptions, and two checked color swaps. Explicit fact assignments worked better than free-form editing in this small pilot; method gains remain unmeasured.</p>
-          </a>
-          <a class="card card-link" href="reports/tree-crf.html">
-            <span class="tag green">Model · math · analysis</span>
-            <h3>A CRF over the parse tree</h3>
-            <p>The full definition: the tree-structured conditional random field, its emissions (the multimodal probe) and transitions (the composition rules), exact belief-propagation inference, the existence-versus-binding veto, and what the structure buys on negation, binding, and modality attribution.</p>
-          </a>
-          <a class="card card-link" href="reports/interior-emissions.html">
-            <span class="tag amber">Open question</span>
-            <h3>What does an interior node's probe measure?</h3>
-            <p>A design note on the model's sharpest open question: the probe at an interior node scores the whole subtree, not the node alone, so the same evidence gets counted twice. Why that happens, why you cannot just probe the head word, and what a clean per-conjunct fix looks like.</p>
-          </a>
-          <a class="card card-link" href="proposals/semantic-factor-tree.html">
-            <span class="tag green">Implemented pilot</span>
-            <h3>Conjunct-local semantic factor trees</h3>
-            <p>The executable follow-up: independent content probes, explicit property and binding factors, a revised local meaning of <code>na</code>, exact tree inference, prompt audits, and the new gold-v3 annotation surface.</p>
-          </a>
-        </div>
-        <p class="section-intro" style="margin-top:20px;">More reports — the dataset, the annotation surface, and the full experiment grid — will be added here as they are written up. This page starts with the core method.</p>
       </div>
     </section>
 
@@ -116,12 +64,13 @@
           <strong>Earlier reported comparison</strong>
           <p>The earlier report lists negation 88.1% vs 84.4%, entity-swap 93.0% vs 75.5%, and argument-removal 71.1% vs 31.1%. Label validity, paired eligibility, and unequal negation handling limit interpretation. These numbers alone do not establish a binding mechanism or explain the source of the difference.</p>
         </div>
+        <p><a href="reports/tree-crf.html">Tree-CRF method note</a> · <a href="reports/interior-emissions.html">Analysis of interior-node probes</a></p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">SCALE 2026 · AViD — multimodal claim verification · Updated 22 October 2026</div>
+    <div class="container">SCALE 2026 · AViD — multimodal claim verification</div>
   </footer>
 </body>
 </html>
