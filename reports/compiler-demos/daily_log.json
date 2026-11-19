@@ -35,6 +35,21 @@
           "text": "Ran 26 exact inference controls on reference forms and two on compiled forms. The controls show correct exclusion and how a partially observed report can receive support if the report condition is assumed supported.",
           "href": "#or-evidence-controls",
           "label": "Inference controls"
+        },
+        {
+          "text": "Implemented explicit exclusion, same-entity and shared-time alternatives, and a speech predicate for the full reported OR. All 12 development cases compile. Ten match their readings and two are partial.",
+          "href": "#or-scope-cases",
+          "label": "Before and after"
+        },
+        {
+          "text": "The corpus rerun passes 2,179 of 2,375 claims. All 2,178 prior programs are byte-identical. The new pass preserves the purpose of crouching or sitting.",
+          "href": "#or-shared-context",
+          "label": "Shared conditions"
+        },
+        {
+          "text": "Passed 26 exact inference controls on compiled forms. The speech test distinguishes complete reports, single assertions and incomplete transcripts. The rewrite test checks that the shared condition binds to the same truck.",
+          "href": "#or-scope-controls",
+          "label": "Evidence controls"
         }
       ]
     },

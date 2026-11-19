@@ -898,11 +898,30 @@
     {
       "id": 41,
       "title": "Handle exclusion and preserve scope across alternatives",
+      "status": "completed",
+      "items": [
+        {
+          "text": "Recognize explicit exclusion in “exactly one” and “but not both”. Goal is to prevent a false pass for both options.",
+          "done": true
+        },
+        {
+          "text": "Keep modifiers, purpose and event identity shared where the source requires them. Goal is to recover nested rewrites without moving conditions outside their scope.",
+          "done": true
+        },
+        {
+          "text": "Require evidence that a report expressed the full disjunction. Goal is to distinguish partial transcripts from stated alternatives.",
+          "done": true
+        }
+      ],
+      "note": "All 12 development inputs compile, with ten full matches and two partial. The speech predicate was exercised with supplied evidence states."
+    },
+    {
+      "id": 42,
+      "title": "Test reported content and OR on new sources",
       "status": "planned",
       "items": [
-        "Recognize explicit exclusion in “exactly one” and “but not both”. Goal is to prevent a false pass for both options.",
-        "Keep modifiers, purpose and event identity shared where the source requires them. Goal is to recover nested rewrites without moving conditions outside their scope.",
-        "Require evidence that a report expressed the full disjunction. Goal is to distinguish partial transcripts from stated alternatives."
+        "Use speaker-aligned complete and partial transcripts. Goal is to measure whether the speech evidence model can recover the full disjunction.",
+        "Review new ORs with ambiguous attachment and pronouns. Goal is to find where source scope and identity still need repair."
       ]
     },
     {
@@ -916,7 +935,7 @@
       ]
     }
   ],
-  "intro": "The OR evaluation found an incorrect pass for “exactly one” and a gap in reported-content evidence. Keep the reviewed logical forms and frame-based pairs for benchmark development.",
+  "intro": "The OR repairs now compile all twelve development claims. Keep the benchmark reserved for evaluation. Test real transcript evidence before building a training set.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -982,5 +1001,6 @@
   "compiler_scope_run": "exp/probabilistic_verification/compiler_scope_20261118",
   "logical_form_review_run": "exp/probabilistic_verification/logical_form_review_20261118",
   "disjunction_repairs_run": "exp/probabilistic_verification/disjunction_repairs_20261119",
-  "disjunction_evaluation_run": "exp/probabilistic_verification/disjunction_evaluation_20261119"
+  "disjunction_evaluation_run": "exp/probabilistic_verification/disjunction_evaluation_20261119",
+  "disjunction_scope_run": "exp/probabilistic_verification/disjunction_scope_20261119"
 }
