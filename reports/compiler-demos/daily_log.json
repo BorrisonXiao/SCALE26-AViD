@@ -13,13 +13,28 @@
         },
         {
           "text": "Fixed AMR conversion of the pier or terminal area claim. The fixed sequence now passes 2,178 of 2,375 checks. All 2,177 earlier programs are byte-identical.",
-          "href": "#remaining-failures",
+          "href": "#earlier-or-repair",
           "label": "Comparison"
         },
         {
           "text": "Tested a parallel rewrite with explicit OR. It compiles when each branch preserves its source modifiers. The AND version and the version that adds modifiers to the terminal branch are refused.",
           "href": "#rewrite-or-control",
           "label": "Rewrite controls"
+        },
+        {
+          "text": "One local Qwen response per remaining failure. All five emitted OR. Zero passed because of scope, component compilation or a repeated formula leaf.",
+          "href": "#or-rewrite-results",
+          "label": "Five rewrite results"
+        },
+        {
+          "text": "Evaluated 12 authored claims. Eight programs passed checks, four matched the reference, three were partial, one was incorrect and four had no program. The incorrect pass omits explicit exclusion.",
+          "href": "#or-evaluation-cases",
+          "label": "Twelve evaluation cases"
+        },
+        {
+          "text": "Ran 26 exact inference controls on reference forms and two on compiled forms. The controls show correct exclusion and how a partially observed report can receive support if the report condition is assumed supported.",
+          "href": "#or-evidence-controls",
+          "label": "Inference controls"
         }
       ]
     },

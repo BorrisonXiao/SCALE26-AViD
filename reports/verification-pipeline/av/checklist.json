@@ -883,10 +883,26 @@
     {
       "id": 40,
       "title": "Extend the OR evaluation",
+      "status": "completed",
+      "items": [
+        {
+          "text": "Run one frozen Qwen rewrite on each of the five remaining failures. Goal is to test whether retaining an explicit operator recovers compilation.",
+          "done": true
+        },
+        {
+          "text": "Evaluate 12 claims about reported speech, shared modifiers and exclusion, and run exact evidence controls. Goal is to separate errors in the compiled meaning from errors in evidence aggregation.",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Handle exclusion and preserve scope across alternatives",
       "status": "planned",
       "items": [
-        "Review remaining direct failures and test explicit rewrites on them. Goal is to preserve the original scope, including purpose and reported content.",
-        "Add controls for shared modifiers, explicit exclusion and source assertions. Goal is to establish which claims the compiler and evidence rules can handle."
+        "Recognize explicit exclusion in “exactly one” and “but not both”. Goal is to prevent a false pass for both options.",
+        "Keep modifiers, purpose and event identity shared where the source requires them. Goal is to recover nested rewrites without moving conditions outside their scope.",
+        "Require evidence that a report expressed the full disjunction. Goal is to distinguish partial transcripts from stated alternatives."
       ]
     },
     {
@@ -900,7 +916,7 @@
       ]
     }
   ],
-  "intro": "The OR repair compiles the pier or terminal area claim. Reserve the reviewed logical forms and frame-based pairs for benchmark development. Feature and training design remain separate.",
+  "intro": "The OR evaluation found an incorrect pass for “exactly one” and a gap in reported-content evidence. Keep the reviewed logical forms and frame-based pairs for benchmark development.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -965,5 +981,6 @@
   "compiler_coverage_run": "exp/probabilistic_verification/compiler_coverage_20261118",
   "compiler_scope_run": "exp/probabilistic_verification/compiler_scope_20261118",
   "logical_form_review_run": "exp/probabilistic_verification/logical_form_review_20261118",
-  "disjunction_repairs_run": "exp/probabilistic_verification/disjunction_repairs_20261119"
+  "disjunction_repairs_run": "exp/probabilistic_verification/disjunction_repairs_20261119",
+  "disjunction_evaluation_run": "exp/probabilistic_verification/disjunction_evaluation_20261119"
 }

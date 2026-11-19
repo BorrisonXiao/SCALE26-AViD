@@ -1,0 +1,53 @@
+{
+  "rewrites": 5,
+  "explicit_or": 5,
+  "rewrite_passes": 0,
+  "rewrite_stops": {
+    "rewrite_or_scope": 3,
+    "rewrite_component": 1,
+    "invalid_model_output": 1
+  },
+  "benchmark": {
+    "Reported speech": {
+      "partial": 3,
+      "auto_pass": 4,
+      "total": 4,
+      "matches_reference": 1
+    },
+    "Modifiers": {
+      "matches_reference": 2,
+      "auto_pass": 2,
+      "total": 4,
+      "no_program": 2
+    },
+    "Exclusion": {
+      "no_program": 2,
+      "auto_pass": 2,
+      "total": 4,
+      "incorrect": 1,
+      "matches_reference": 1
+    }
+  },
+  "total_benchmark": {
+    "partial": 3,
+    "auto_pass": 8,
+    "total": 12,
+    "matches_reference": 4,
+    "no_program": 4,
+    "incorrect": 1
+  },
+  "native_reference_controls": 26,
+  "native_compiled_controls": 2,
+  "generation": {
+    "seconds": 13.959132304415107,
+    "responses": 5
+  },
+  "resources": {
+    "job_id": "1254097",
+    "state": "COMPLETED",
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "allocated_gpus": 1,
+    "elapsed_seconds": 310,
+    "active_experiment_jobs": 0
+  }
+}
