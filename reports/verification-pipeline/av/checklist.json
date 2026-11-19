@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "steps": [
     {
       "id": 25,
@@ -866,6 +866,30 @@
       ]
     },
     {
+      "id": 39,
+      "title": "Preserve explicit alternatives in compilation and rewriting",
+      "status": "completed",
+      "items": [
+        {
+          "text": "Repair direct AMR conversion and check the fallback operator against the source. Goal is to keep both alternatives and their own modifiers.",
+          "done": true
+        },
+        {
+          "text": "Compare all 2,375 claims and run the pier inference and rewrite controls. Goal is to check the change without losing earlier programs.",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Extend the OR evaluation",
+      "status": "planned",
+      "items": [
+        "Review remaining direct failures and test explicit rewrites on them. Goal is to preserve the original scope, including purpose and reported content.",
+        "Add controls for shared modifiers, explicit exclusion and source assertions. Goal is to establish which claims the compiler and evidence rules can handle."
+      ]
+    },
+    {
       "id": 38,
       "title": "Design features and training data separately",
       "status": "planned",
@@ -876,7 +900,7 @@
       ]
     }
   ],
-  "intro": "Evaluation comes first. The latest review covers 60 saved programs across 64 source videos and finds 22 full matches. Reserve the reviewed forms and frame-based pairs for benchmark development. Feature design and training data will be specified separately.",
+  "intro": "The OR repair compiles the pier or terminal area claim. Reserve the reviewed logical forms and frame-based pairs for benchmark development. Feature and training design remain separate.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -940,5 +964,6 @@
   "compiler_fallback_run": "exp/probabilistic_verification/compiler_fallback_20261118",
   "compiler_coverage_run": "exp/probabilistic_verification/compiler_coverage_20261118",
   "compiler_scope_run": "exp/probabilistic_verification/compiler_scope_20261118",
-  "logical_form_review_run": "exp/probabilistic_verification/logical_form_review_20261118"
+  "logical_form_review_run": "exp/probabilistic_verification/logical_form_review_20261118",
+  "disjunction_repairs_run": "exp/probabilistic_verification/disjunction_repairs_20261119"
 }

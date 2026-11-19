@@ -1,8 +1,28 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "timezone": "America/New_York",
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
+    {
+      "date": "2026-11-19",
+      "items": [
+        {
+          "text": "Audited 35 claims with standalone “or” outside quotes and tested inclusive OR with fixed evidence. Reviewed lost alternatives, modifier attachment and reported speech.",
+          "href": "#parallel-or-demo",
+          "label": "OR examples"
+        },
+        {
+          "text": "Fixed AMR conversion of the pier or terminal area claim. The fixed sequence now passes 2,178 of 2,375 checks. All 2,177 earlier programs are byte-identical.",
+          "href": "#remaining-failures",
+          "label": "Comparison"
+        },
+        {
+          "text": "Tested a parallel rewrite with explicit OR. It compiles when each branch preserves its source modifiers. The AND version and the version that adds modifiers to the terminal branch are refused.",
+          "href": "#rewrite-or-control",
+          "label": "Rewrite controls"
+        }
+      ]
+    },
     {
       "date": "2026-11-18",
       "items": [

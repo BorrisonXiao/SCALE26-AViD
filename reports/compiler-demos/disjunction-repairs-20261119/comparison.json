@@ -1,0 +1,3939 @@
+{
+  "counts": {
+    "before": 2177,
+    "after": 2178,
+    "total": 2375,
+    "earlier_programs_identical": 2177,
+    "explicit_or_claims": 35,
+    "explicit_or_before": 22,
+    "explicit_or_after": 23
+  },
+  "changed_programs": [
+    {
+      "claim_id": "Txf2EdqOg1SQ_2166",
+      "text": "The video takes place on a large, open paved pier or terminal area.",
+      "before": [
+        null,
+        null
+      ],
+      "after": [
+        "amr",
+        "0c544b54b7c258dc747ce6752de88e93ad10fae6dc195ec7ada8716e66b49fa7"
+      ]
+    }
+  ],
+  "changed_abstentions": [
+    {
+      "claim_id": "TQEmEycTI0RQ_983",
+      "text": "Only question is whether it will be a majority government or a minority government.",
+      "before": {
+        "srl": "nominal_disjunction",
+        "amr": "coordination_scope",
+        "rewrite": "description_alignment"
+      },
+      "after": {
+        "srl": "nominal_disjunction",
+        "amr": "coordination_scope",
+        "rewrite": "rewrite_or_required"
+      }
+    },
+    {
+      "claim_id": "TFgw4IaR9R8s_1726",
+      "text": "Shows picture of what the voter information service page looks like: can find electoral district, look at the map, profile, etc. with a place you can type your postal code and search ('Go') or a link you can click to find an electoral district without a postal code.",
+      "before": {
+        "srl": "unresolved_clause",
+        "amr": "sentence_mode",
+        "rewrite": "entity_alignment"
+      },
+      "after": {
+        "srl": "unresolved_clause",
+        "amr": "sentence_mode",
+        "rewrite": "rewrite_or_required"
+      }
+    },
+    {
+      "claim_id": "TgR_u37mCoQ4_1976",
+      "text": "The man in the blue blazer is presumably a lawyer or member of law enforcement.",
+      "before": {
+        "srl": "nominal_disjunction",
+        "amr": "coordination_scope",
+        "rewrite": "shared_description"
+      },
+      "after": {
+        "srl": "nominal_disjunction",
+        "amr": "coordination_scope",
+        "rewrite": "rewrite_or_required"
+      }
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2173",
+      "text": "Some people crouch or sit on the ground for stability.",
+      "before": {
+        "srl": "duplicate_role",
+        "amr": "coordination_scope",
+        "rewrite": "description_alignment"
+      },
+      "after": {
+        "srl": "duplicate_role",
+        "amr": "coordination_scope",
+        "rewrite": "rewrite_or_required"
+      }
+    },
+    {
+      "claim_id": "Txf2EdqOg1SQ_2289",
+      "text": "Pedestrians are struggling to walk or stand in strong wind carrying a spray of water in Jiangmen.",
+      "before": {
+        "srl": "unresolved_clause",
+        "amr": "coordination_scope",
+        "rewrite": "entity_alignment"
+      },
+      "after": {
+        "srl": "unresolved_clause",
+        "amr": "coordination_scope",
+        "rewrite": "rewrite_or_required"
+      }
+    }
+  ],
+  "pier": {
+    "before": {
+      "srl": "nominal_disjunction",
+      "amr": "coordination_reentry",
+      "rewrite": "event_alignment"
+    },
+    "after": {
+      "srl": "nominal_disjunction",
+      "amr": "compiled"
+    },
+    "raw_amr": "(b / be-located-at-91\n      :ARG1 (v / video)\n      :ARG2 (o / or\n            :op1 (p / pier\n                  :mod (l / large)\n                  :ARG1-of (p2 / pave-01)\n                  :ARG1-of (o2 / open-06))\n            :op2 (a / area\n                  :mod (t / terminal))))",
+    "output": {
+      "claim_id": "Txf2EdqOg1SQ_2166",
+      "text": "The video takes place on a large, open paved pier or terminal area.",
+      "raw": "(b / be-located-at-91\n      :ARG1 (v / video)\n      :ARG2 (o / or\n            :op1 (p / pier\n                  :mod (l / large)\n                  :ARG1-of (p2 / pave-01)\n                  :ARG1-of (o2 / open-06))\n            :op2 (a / area\n                  :mod (t / terminal))))",
+      "status": "compiled",
+      "normalised_amr": "(b / be-located-at-91\n   :ARG1 (v / video)\n   :ARG2 (o / or\n            :op1 (p / pier\n                    :mod (l / large)\n                    :ARG1-of (p2 / pave-01)\n                    :ARG1-of (o2 / open-06))\n            :op2 (a / area\n                    :mod (t / terminal))))",
+      "source_trace": {
+        "normalisations": [],
+        "issues": [],
+        "inscriptions": [],
+        "clocks": [],
+        "source_alignments": {
+          "b": [],
+          "v": [
+            {
+              "token_id": 2,
+              "start": 4,
+              "end": 9,
+              "text": "video"
+            }
+          ],
+          "o": [
+            {
+              "token_id": 12,
+              "start": 50,
+              "end": 52,
+              "text": "or"
+            }
+          ],
+          "p": [
+            {
+              "token_id": 11,
+              "start": 45,
+              "end": 49,
+              "text": "pier"
+            }
+          ],
+          "l": [
+            {
+              "token_id": 7,
+              "start": 27,
+              "end": 32,
+              "text": "large"
+            }
+          ],
+          "p2": [],
+          "o2": [
+            {
+              "token_id": 9,
+              "start": 34,
+              "end": 38,
+              "text": "open"
+            }
+          ],
+          "a": [
+            {
+              "token_id": 14,
+              "start": 62,
+              "end": 66,
+              "text": "area"
+            }
+          ],
+          "t": [
+            {
+              "token_id": 13,
+              "start": 53,
+              "end": 61,
+              "text": "terminal"
+            }
+          ]
+        },
+        "noun_readings": {},
+        "property_alignments": {}
+      },
+      "compilation": {
+        "claim_id": "Txf2EdqOg1SQ_2166",
+        "text": "The video takes place on a large, open paved pier or terminal area.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "The",
+            "lemma": "the",
+            "upos": "DET",
+            "head": 2,
+            "deprel": "det",
+            "start_char": 0,
+            "end_char": 3,
+            "feats": "Definite=Def|PronType=Art"
+          },
+          {
+            "id": 2,
+            "text": "video",
+            "lemma": "video",
+            "upos": "NOUN",
+            "head": 3,
+            "deprel": "nsubj",
+            "start_char": 4,
+            "end_char": 9,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 3,
+            "text": "takes",
+            "lemma": "take",
+            "upos": "VERB",
+            "head": 0,
+            "deprel": "root",
+            "start_char": 10,
+            "end_char": 15,
+            "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+          },
+          {
+            "id": 4,
+            "text": "place",
+            "lemma": "place",
+            "upos": "NOUN",
+            "head": 3,
+            "deprel": "obj",
+            "start_char": 16,
+            "end_char": 21,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 5,
+            "text": "on",
+            "lemma": "on",
+            "upos": "ADP",
+            "head": 11,
+            "deprel": "case",
+            "start_char": 22,
+            "end_char": 24,
+            "feats": null
+          },
+          {
+            "id": 6,
+            "text": "a",
+            "lemma": "a",
+            "upos": "DET",
+            "head": 11,
+            "deprel": "det",
+            "start_char": 25,
+            "end_char": 26,
+            "feats": "Definite=Ind|PronType=Art"
+          },
+          {
+            "id": 7,
+            "text": "large",
+            "lemma": "large",
+            "upos": "ADJ",
+            "head": 11,
+            "deprel": "amod",
+            "start_char": 27,
+            "end_char": 32,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 8,
+            "text": ",",
+            "lemma": ",",
+            "upos": "PUNCT",
+            "head": 7,
+            "deprel": "punct",
+            "start_char": 32,
+            "end_char": 33,
+            "feats": null
+          },
+          {
+            "id": 9,
+            "text": "open",
+            "lemma": "open",
+            "upos": "ADJ",
+            "head": 11,
+            "deprel": "amod",
+            "start_char": 34,
+            "end_char": 38,
+            "feats": "Degree=Pos"
+          },
+          {
+            "id": 10,
+            "text": "paved",
+            "lemma": "paved",
+            "upos": "VERB",
+            "head": 11,
+            "deprel": "amod",
+            "start_char": 39,
+            "end_char": 44,
+            "feats": "Tense=Past|VerbForm=Part"
+          },
+          {
+            "id": 11,
+            "text": "pier",
+            "lemma": "pier",
+            "upos": "NOUN",
+            "head": 3,
+            "deprel": "obl",
+            "start_char": 45,
+            "end_char": 49,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 12,
+            "text": "or",
+            "lemma": "or",
+            "upos": "CCONJ",
+            "head": 14,
+            "deprel": "cc",
+            "start_char": 50,
+            "end_char": 52,
+            "feats": null
+          },
+          {
+            "id": 13,
+            "text": "terminal",
+            "lemma": "terminal",
+            "upos": "NOUN",
+            "head": 14,
+            "deprel": "compound",
+            "start_char": 53,
+            "end_char": 61,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 14,
+            "text": "area",
+            "lemma": "area",
+            "upos": "NOUN",
+            "head": 11,
+            "deprel": "conj",
+            "start_char": 62,
+            "end_char": 66,
+            "feats": "Number=Sing"
+          },
+          {
+            "id": 15,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "head": 3,
+            "deprel": "punct",
+            "start_char": 66,
+            "end_char": 67,
+            "feats": null
+          }
+        ],
+        "variables": [
+          {
+            "name": "E1",
+            "kind": "event",
+            "description": "be-located-at-91",
+            "token_ids": []
+          },
+          {
+            "name": "X2",
+            "kind": "entity",
+            "description": "video",
+            "token_ids": []
+          },
+          {
+            "name": "X3",
+            "kind": "entity",
+            "description": "or",
+            "token_ids": []
+          },
+          {
+            "name": "X5",
+            "kind": "entity",
+            "description": "large",
+            "token_ids": []
+          },
+          {
+            "name": "E6",
+            "kind": "event",
+            "description": "pave-01",
+            "token_ids": []
+          },
+          {
+            "name": "X7",
+            "kind": "property",
+            "description": "open-06",
+            "token_ids": []
+          },
+          {
+            "name": "X9",
+            "kind": "entity",
+            "description": "terminal",
+            "token_ids": []
+          }
+        ],
+        "atoms": [
+          {
+            "id": "a1",
+            "predicate": "concept",
+            "arguments": [
+              "E1",
+              "be-located-at-91",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "concept",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a2",
+            "predicate": "concept",
+            "arguments": [
+              "X2",
+              "video",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "concept",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a3",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG1",
+              "X2",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "role",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a4",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "pier",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "concept",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a5",
+            "predicate": "concept",
+            "arguments": [
+              "X5",
+              "large",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "concept",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a6",
+            "predicate": "role",
+            "arguments": [
+              "X3",
+              "mod",
+              "X5",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "role",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a7",
+            "predicate": "concept",
+            "arguments": [
+              "E6",
+              "pave-01",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "concept",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a8",
+            "predicate": "role",
+            "arguments": [
+              "E6",
+              "ARG1",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "role",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a9",
+            "predicate": "concept",
+            "arguments": [
+              "X7",
+              "open-06",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "concept",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a10",
+            "predicate": "role",
+            "arguments": [
+              "X7",
+              "ARG1",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "role",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a11",
+            "predicate": "concept",
+            "arguments": [
+              "X3",
+              "area",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "concept",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a12",
+            "predicate": "concept",
+            "arguments": [
+              "X9",
+              "terminal",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "entity",
+            "roles": [],
+            "text": "concept",
+            "token_ids": [],
+            "trainable": false
+          },
+          {
+            "id": "a13",
+            "predicate": "role",
+            "arguments": [
+              "X3",
+              "mod",
+              "X9",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "role",
+            "token_ids": [],
+            "trainable": true
+          },
+          {
+            "id": "a14",
+            "predicate": "role",
+            "arguments": [
+              "E1",
+              "ARG2",
+              "X3",
+              "scope",
+              "world",
+              "route",
+              "unspecified"
+            ],
+            "kind": "relation",
+            "roles": [],
+            "text": "role",
+            "token_ids": [],
+            "trainable": true
+          }
+        ],
+        "expression": {
+          "op": "exists",
+          "children": [
+            {
+              "op": "and",
+              "children": [
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a1",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a2",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a3",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "or",
+                  "children": [
+                    {
+                      "op": "exists",
+                      "children": [
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a4",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a5",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a6",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "exists",
+                              "children": [
+                                {
+                                  "op": "and",
+                                  "children": [
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a7",
+                                      "variables": [],
+                                      "state": ""
+                                    },
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a8",
+                                      "variables": [],
+                                      "state": ""
+                                    }
+                                  ],
+                                  "atom_id": "",
+                                  "variables": [],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [
+                                "E6"
+                              ],
+                              "state": ""
+                            },
+                            {
+                              "op": "exists",
+                              "children": [
+                                {
+                                  "op": "and",
+                                  "children": [
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a9",
+                                      "variables": [],
+                                      "state": ""
+                                    },
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a10",
+                                      "variables": [],
+                                      "state": ""
+                                    }
+                                  ],
+                                  "atom_id": "",
+                                  "variables": [],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [
+                                "X7"
+                              ],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [
+                        "X5"
+                      ],
+                      "state": ""
+                    },
+                    {
+                      "op": "exists",
+                      "children": [
+                        {
+                          "op": "and",
+                          "children": [
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a11",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a12",
+                              "variables": [],
+                              "state": ""
+                            },
+                            {
+                              "op": "atom",
+                              "children": [],
+                              "atom_id": "a13",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [
+                        "X9"
+                      ],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                },
+                {
+                  "op": "atom",
+                  "children": [],
+                  "atom_id": "a14",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [],
+              "state": ""
+            }
+          ],
+          "atom_id": "",
+          "variables": [
+            "E1",
+            "X2",
+            "X3"
+          ],
+          "state": ""
+        },
+        "coverage": [],
+        "warnings": [
+          "No unique source tense/aspect alignment for p2 / pave-01",
+          "No unique source tense/aspect alignment for b / be-located-at-91"
+        ],
+        "version": "amr-composition-v1",
+        "metadata": {
+          "amr": "(b / be-located-at-91\n   :ARG1 (v / video)\n   :ARG2 (o / or\n            :op1 (p / pier\n                    :mod (l / large)\n                    :ARG1-of (p2 / pave-01)\n                    :ARG1-of (o2 / open-06))\n            :op2 (a / area\n                    :mod (t / terminal))))",
+          "concepts": {
+            "b": "be-located-at-91",
+            "v": "video",
+            "o": "or",
+            "p": "pier",
+            "l": "large",
+            "p2": "pave-01",
+            "o2": "open-06",
+            "a": "area",
+            "t": "terminal"
+          },
+          "edges": {
+            "b": [
+              [
+                "ARG1",
+                "v"
+              ],
+              [
+                "ARG2",
+                "o"
+              ]
+            ],
+            "v": [],
+            "o": [
+              [
+                "op1",
+                "p"
+              ],
+              [
+                "op2",
+                "a"
+              ]
+            ],
+            "p": [
+              [
+                "mod",
+                "l"
+              ]
+            ],
+            "l": [],
+            "p2": [
+              [
+                "ARG1",
+                "p"
+              ]
+            ],
+            "o2": [
+              [
+                "ARG1",
+                "p"
+              ]
+            ],
+            "a": [
+              [
+                "mod",
+                "t"
+              ]
+            ],
+            "t": []
+          },
+          "node_variables": {
+            "b": "E1",
+            "v": "X2",
+            "o": "X3",
+            "p": "X3",
+            "l": "X5",
+            "p2": "E6",
+            "o2": "X7",
+            "a": "X3",
+            "t": "X9"
+          },
+          "node_scopes": {
+            "b": "world",
+            "v": "world",
+            "o": "world",
+            "p": "world",
+            "l": "world",
+            "p2": "world",
+            "o2": "world",
+            "a": "world",
+            "t": "world"
+          },
+          "scopes": {},
+          "temporal": {},
+          "translations": [
+            {
+              "source": "b",
+              "role": "instance",
+              "target": "be-located-at-91",
+              "scope": "world",
+              "translation": "concept"
+            },
+            {
+              "source": "v",
+              "role": "instance",
+              "target": "video",
+              "scope": "world",
+              "translation": "concept"
+            },
+            {
+              "source": "b",
+              "role": "ARG1",
+              "target": "v",
+              "scope": "world",
+              "translation": "role"
+            },
+            {
+              "source": "o",
+              "role": "instance",
+              "target": "or",
+              "scope": "world",
+              "translation": "participant_coordination"
+            },
+            {
+              "source": "p",
+              "role": "instance",
+              "target": "pier",
+              "scope": "world",
+              "translation": "concept"
+            },
+            {
+              "source": "l",
+              "role": "instance",
+              "target": "large",
+              "scope": "world",
+              "translation": "concept"
+            },
+            {
+              "source": "p",
+              "role": "mod",
+              "target": "l",
+              "scope": "world",
+              "translation": "role"
+            },
+            {
+              "source": "p2",
+              "role": "instance",
+              "target": "pave-01",
+              "scope": "world",
+              "translation": "concept"
+            },
+            {
+              "source": "p",
+              "role": "ARG1-of",
+              "target": "p2",
+              "scope": "world",
+              "translation": "role"
+            },
+            {
+              "source": "o2",
+              "role": "instance",
+              "target": "open-06",
+              "scope": "world",
+              "translation": "concept"
+            },
+            {
+              "source": "p",
+              "role": "ARG1-of",
+              "target": "o2",
+              "scope": "world",
+              "translation": "role"
+            },
+            {
+              "source": "o",
+              "role": "op1",
+              "target": "p",
+              "scope": "world",
+              "translation": "alternative_assignment"
+            },
+            {
+              "source": "a",
+              "role": "instance",
+              "target": "area",
+              "scope": "world",
+              "translation": "concept"
+            },
+            {
+              "source": "t",
+              "role": "instance",
+              "target": "terminal",
+              "scope": "world",
+              "translation": "concept"
+            },
+            {
+              "source": "a",
+              "role": "mod",
+              "target": "t",
+              "scope": "world",
+              "translation": "role"
+            },
+            {
+              "source": "o",
+              "role": "op2",
+              "target": "a",
+              "scope": "world",
+              "translation": "alternative_assignment"
+            },
+            {
+              "source": "b",
+              "role": "ARG2",
+              "target": "o",
+              "scope": "world",
+              "translation": "role"
+            }
+          ],
+          "compiler_fragment": "Base AMR conditions plus explicit AND groups, OR participant assignments and declared shared complement classes; unsupported projection still refuses.",
+          "evidence_functions": "Concept/name/quantity/time functions and media-conditioned role/context functions are required; no new media function is implemented.",
+          "source_faithfulness": "Not certified. Neural AMR omissions, invented roles, tense alignment and scope require separate review.",
+          "allowed_routes": {
+            "a1": [
+              "unspecified"
+            ],
+            "a2": [
+              "unspecified"
+            ],
+            "a3": [
+              "unspecified"
+            ],
+            "a4": [
+              "unspecified"
+            ],
+            "a5": [
+              "unspecified"
+            ],
+            "a6": [
+              "unspecified"
+            ],
+            "a7": [
+              "unspecified"
+            ],
+            "a8": [
+              "unspecified"
+            ],
+            "a9": [
+              "unspecified"
+            ],
+            "a10": [
+              "unspecified"
+            ],
+            "a11": [
+              "unspecified"
+            ],
+            "a12": [
+              "unspecified"
+            ],
+            "a13": [
+              "unspecified"
+            ],
+            "a14": [
+              "unspecified"
+            ]
+          },
+          "compiler_options": {
+            "participant_coordination": true,
+            "shared_scope_classes": true
+          },
+          "predicate_types": {
+            "b": {
+              "concept": "be-located-at-91",
+              "kind": "event",
+              "token_ids": [],
+              "derivational": false
+            },
+            "v": {
+              "concept": "video",
+              "kind": "entity",
+              "token_ids": [
+                2
+              ],
+              "derivational": false
+            },
+            "o": {
+              "concept": "or",
+              "kind": "entity",
+              "token_ids": [
+                12
+              ],
+              "derivational": false
+            },
+            "p": {
+              "concept": "pier",
+              "kind": "entity",
+              "token_ids": [
+                11
+              ],
+              "derivational": false
+            },
+            "l": {
+              "concept": "large",
+              "kind": "entity",
+              "token_ids": [
+                7
+              ],
+              "derivational": false
+            },
+            "p2": {
+              "concept": "pave-01",
+              "kind": "event",
+              "token_ids": [],
+              "derivational": false
+            },
+            "o2": {
+              "concept": "open-06",
+              "kind": "property",
+              "token_ids": [
+                9
+              ],
+              "derivational": false
+            },
+            "a": {
+              "concept": "area",
+              "kind": "entity",
+              "token_ids": [
+                14
+              ],
+              "derivational": false
+            },
+            "t": {
+              "concept": "terminal",
+              "kind": "entity",
+              "token_ids": [
+                13
+              ],
+              "derivational": false
+            }
+          },
+          "source_alignment": {
+            "normalisations": [],
+            "issues": [],
+            "inscriptions": [],
+            "clocks": [],
+            "source_alignments": {
+              "b": [],
+              "v": [
+                {
+                  "token_id": 2,
+                  "start": 4,
+                  "end": 9,
+                  "text": "video"
+                }
+              ],
+              "o": [
+                {
+                  "token_id": 12,
+                  "start": 50,
+                  "end": 52,
+                  "text": "or"
+                }
+              ],
+              "p": [
+                {
+                  "token_id": 11,
+                  "start": 45,
+                  "end": 49,
+                  "text": "pier"
+                }
+              ],
+              "l": [
+                {
+                  "token_id": 7,
+                  "start": 27,
+                  "end": 32,
+                  "text": "large"
+                }
+              ],
+              "p2": [],
+              "o2": [
+                {
+                  "token_id": 9,
+                  "start": 34,
+                  "end": 38,
+                  "text": "open"
+                }
+              ],
+              "a": [
+                {
+                  "token_id": 14,
+                  "start": 62,
+                  "end": 66,
+                  "text": "area"
+                }
+              ],
+              "t": [
+                {
+                  "token_id": 13,
+                  "start": 53,
+                  "end": 61,
+                  "text": "terminal"
+                }
+              ]
+            },
+            "noun_readings": {},
+            "property_alignments": {}
+          },
+          "source_features": [],
+          "source_checks": [],
+          "source_checks_pass": true,
+          "semantic_checks": [],
+          "semantic_checks_pass": true,
+          "normalization": {
+            "name_aliases": {},
+            "implicit_values": [],
+            "unit_token_ids": [],
+            "rate_spans": [],
+            "rate_sources": [],
+            "trace": []
+          }
+        },
+        "status": "compiled",
+        "logical_form": "EXISTS E1, X2, X3: ((concept(E1, be-located-at-91, scope, world, route, unspecified) AND concept(X2, video, scope, world, route, unspecified) AND role(E1, ARG1, X2, scope, world, route, unspecified) AND (EXISTS X5: ((concept(X3, pier, scope, world, route, unspecified) AND concept(X5, large, scope, world, route, unspecified) AND role(X3, mod, X5, scope, world, route, unspecified) AND EXISTS E6: ((concept(E6, pave-01, scope, world, route, unspecified) AND role(E6, ARG1, X3, scope, world, route, unspecified))) AND EXISTS X7: ((concept(X7, open-06, scope, world, route, unspecified) AND role(X7, ARG1, X3, scope, world, route, unspecified))))) OR EXISTS X9: ((concept(X3, area, scope, world, route, unspecified) AND concept(X9, terminal, scope, world, route, unspecified) AND role(X3, mod, X9, scope, world, route, unspecified)))) AND role(E1, ARG2, X3, scope, world, route, unspecified)))"
+      },
+      "program": "% Exact categorical evidence; internal unknown = neither supported nor refuted.\n0::status(o_306cebc0b574bd2a8812,supported); 0::status(o_306cebc0b574bd2a8812,refuted); 1::status(o_306cebc0b574bd2a8812,unknown).\n0::status(o_3549282f61e0eae88899,supported); 0::status(o_3549282f61e0eae88899,refuted); 1::status(o_3549282f61e0eae88899,unknown).\n0::status(o_36f4e87bae330a0e7e59,supported); 0::status(o_36f4e87bae330a0e7e59,refuted); 1::status(o_36f4e87bae330a0e7e59,unknown).\n0::status(o_3d7c880e036c28d5a605,supported); 0::status(o_3d7c880e036c28d5a605,refuted); 1::status(o_3d7c880e036c28d5a605,unknown).\n0::status(o_43101714671efcbec0ff,supported); 0::status(o_43101714671efcbec0ff,refuted); 1::status(o_43101714671efcbec0ff,unknown).\n0::status(o_4ece7c8906a9f0a0b857,supported); 0::status(o_4ece7c8906a9f0a0b857,refuted); 1::status(o_4ece7c8906a9f0a0b857,unknown).\n0::status(o_6c3e2cd9508ccdd6c8f6,supported); 0::status(o_6c3e2cd9508ccdd6c8f6,refuted); 1::status(o_6c3e2cd9508ccdd6c8f6,unknown).\n0::status(o_74f3ead5769caf452d77,supported); 0::status(o_74f3ead5769caf452d77,refuted); 1::status(o_74f3ead5769caf452d77,unknown).\n0::status(o_940ac863e11bea22d4f6,supported); 0::status(o_940ac863e11bea22d4f6,refuted); 1::status(o_940ac863e11bea22d4f6,unknown).\n0::status(o_aff17c0bcbf6bebda56f,supported); 0::status(o_aff17c0bcbf6bebda56f,refuted); 1::status(o_aff17c0bcbf6bebda56f,unknown).\n0::status(o_b656f796245955500fbe,supported); 0::status(o_b656f796245955500fbe,refuted); 1::status(o_b656f796245955500fbe,unknown).\n0::status(o_b78aadd1a2665b98bb03,supported); 0::status(o_b78aadd1a2665b98bb03,refuted); 1::status(o_b78aadd1a2665b98bb03,unknown).\n0::status(o_f2b0f292f9d147b6f538,supported); 0::status(o_f2b0f292f9d147b6f538,refuted); 1::status(o_f2b0f292f9d147b6f538,unknown).\n0::status(o_f3eb9b6009c6adb7474b,supported); 0::status(o_f3eb9b6009c6adb7474b,refuted); 1::status(o_f3eb9b6009c6adb7474b,unknown).\nnode(n1,supported) :- status(o_43101714671efcbec0ff,supported).\nnode(n1,refuted) :- status(o_43101714671efcbec0ff,refuted).\nnode(n1,unknown) :- status(o_43101714671efcbec0ff,unknown).\nnode(n2,supported) :- status(o_36f4e87bae330a0e7e59,supported).\nnode(n2,refuted) :- status(o_36f4e87bae330a0e7e59,refuted).\nnode(n2,unknown) :- status(o_36f4e87bae330a0e7e59,unknown).\nnode(n3,supported) :- status(o_3549282f61e0eae88899,supported).\nnode(n3,refuted) :- status(o_3549282f61e0eae88899,refuted).\nnode(n3,unknown) :- status(o_3549282f61e0eae88899,unknown).\nnode(n6,supported) :- status(o_f3eb9b6009c6adb7474b,supported).\nnode(n6,refuted) :- status(o_f3eb9b6009c6adb7474b,refuted).\nnode(n6,unknown) :- status(o_f3eb9b6009c6adb7474b,unknown).\nnode(n7,supported) :- status(o_74f3ead5769caf452d77,supported).\nnode(n7,refuted) :- status(o_74f3ead5769caf452d77,refuted).\nnode(n7,unknown) :- status(o_74f3ead5769caf452d77,unknown).\nnode(n8,supported) :- status(o_6c3e2cd9508ccdd6c8f6,supported).\nnode(n8,refuted) :- status(o_6c3e2cd9508ccdd6c8f6,refuted).\nnode(n8,unknown) :- status(o_6c3e2cd9508ccdd6c8f6,unknown).\nnode(n10,supported) :- status(o_3d7c880e036c28d5a605,supported).\nnode(n10,refuted) :- status(o_3d7c880e036c28d5a605,refuted).\nnode(n10,unknown) :- status(o_3d7c880e036c28d5a605,unknown).\nnode(n11,supported) :- status(o_b656f796245955500fbe,supported).\nnode(n11,refuted) :- status(o_b656f796245955500fbe,refuted).\nnode(n11,unknown) :- status(o_b656f796245955500fbe,unknown).\nnode(n9,supported) :- node(n10,supported), node(n11,supported).\nnode(n9,refuted) :- node(n10,refuted).\nnode(n9,refuted) :- node(n11,refuted).\nnode(n9,unknown) :- \\+ node(n9,supported), \\+ node(n9,refuted).\nnode(n13,supported) :- status(o_b78aadd1a2665b98bb03,supported).\nnode(n13,refuted) :- status(o_b78aadd1a2665b98bb03,refuted).\nnode(n13,unknown) :- status(o_b78aadd1a2665b98bb03,unknown).\nnode(n14,supported) :- status(o_aff17c0bcbf6bebda56f,supported).\nnode(n14,refuted) :- status(o_aff17c0bcbf6bebda56f,refuted).\nnode(n14,unknown) :- status(o_aff17c0bcbf6bebda56f,unknown).\nnode(n12,supported) :- node(n13,supported), node(n14,supported).\nnode(n12,refuted) :- node(n13,refuted).\nnode(n12,refuted) :- node(n14,refuted).\nnode(n12,unknown) :- \\+ node(n12,supported), \\+ node(n12,refuted).\nnode(n5,supported) :- node(n6,supported), node(n7,supported), node(n8,supported), node(n9,supported), node(n12,supported).\nnode(n5,refuted) :- node(n6,refuted).\nnode(n5,refuted) :- node(n7,refuted).\nnode(n5,refuted) :- node(n8,refuted).\nnode(n5,refuted) :- node(n9,refuted).\nnode(n5,refuted) :- node(n12,refuted).\nnode(n5,unknown) :- \\+ node(n5,supported), \\+ node(n5,refuted).\nnode(n16,supported) :- status(o_4ece7c8906a9f0a0b857,supported).\nnode(n16,refuted) :- status(o_4ece7c8906a9f0a0b857,refuted).\nnode(n16,unknown) :- status(o_4ece7c8906a9f0a0b857,unknown).\nnode(n17,supported) :- status(o_306cebc0b574bd2a8812,supported).\nnode(n17,refuted) :- status(o_306cebc0b574bd2a8812,refuted).\nnode(n17,unknown) :- status(o_306cebc0b574bd2a8812,unknown).\nnode(n18,supported) :- status(o_940ac863e11bea22d4f6,supported).\nnode(n18,refuted) :- status(o_940ac863e11bea22d4f6,refuted).\nnode(n18,unknown) :- status(o_940ac863e11bea22d4f6,unknown).\nnode(n15,supported) :- node(n16,supported), node(n17,supported), node(n18,supported).\nnode(n15,refuted) :- node(n16,refuted).\nnode(n15,refuted) :- node(n17,refuted).\nnode(n15,refuted) :- node(n18,refuted).\nnode(n15,unknown) :- \\+ node(n15,supported), \\+ node(n15,refuted).\nnode(n4,refuted) :- node(n5,refuted), node(n15,refuted).\nnode(n4,supported) :- node(n5,supported).\nnode(n4,supported) :- node(n15,supported).\nnode(n4,unknown) :- \\+ node(n4,supported), \\+ node(n4,refuted).\nnode(n19,supported) :- status(o_f2b0f292f9d147b6f538,supported).\nnode(n19,refuted) :- status(o_f2b0f292f9d147b6f538,refuted).\nnode(n19,unknown) :- status(o_f2b0f292f9d147b6f538,unknown).\nnode(n0,supported) :- node(n1,supported), node(n2,supported), node(n3,supported), node(n4,supported), node(n19,supported).\nnode(n0,refuted) :- node(n1,refuted).\nnode(n0,refuted) :- node(n2,refuted).\nnode(n0,refuted) :- node(n3,refuted).\nnode(n0,refuted) :- node(n4,refuted).\nnode(n0,refuted) :- node(n19,refuted).\nnode(n0,unknown) :- \\+ node(n0,supported), \\+ node(n0,refuted).\nverdict(c_adf975d74308db52,supported) :- node(n0,supported).\nquery(verdict(c_adf975d74308db52,supported)).\nverdict(c_adf975d74308db52,refuted) :- node(n0,refuted).\nquery(verdict(c_adf975d74308db52,refuted)).\nverdict(c_adf975d74308db52,unknown) :- node(n0,unknown).\nquery(verdict(c_adf975d74308db52,unknown)).\n",
+      "program_sha256": "0c544b54b7c258dc747ce6752de88e93ad10fae6dc195ec7ada8716e66b49fa7",
+      "errors": [],
+      "shared_checks": []
+    }
+  },
+  "rewrite_controls": [
+    {
+      "label": "Source-aligned subclaims with OR",
+      "sentences": [
+        "The video takes place on a large, open, paved pier.",
+        "The video takes place on a terminal area."
+      ],
+      "formula": {
+        "op": "or",
+        "children": [
+          1,
+          2
+        ]
+      },
+      "outcome": "compiled",
+      "reason": null,
+      "output": {
+        "status": "compiled",
+        "compilation": {
+          "claim_id": "Txf2EdqOg1SQ_2166",
+          "text": "The video takes place on a large, open, paved pier. The video takes place on a terminal area.",
+          "tokens": [
+            {
+              "id": 1,
+              "text": "The",
+              "lemma": "the",
+              "upos": "DET",
+              "head": 2,
+              "deprel": "det",
+              "start_char": 0,
+              "end_char": 3,
+              "feats": "Definite=Def|PronType=Art"
+            },
+            {
+              "id": 2,
+              "text": "video",
+              "lemma": "video",
+              "upos": "NOUN",
+              "head": 3,
+              "deprel": "nsubj",
+              "start_char": 4,
+              "end_char": 9,
+              "feats": "Number=Sing"
+            },
+            {
+              "id": 3,
+              "text": "takes",
+              "lemma": "take",
+              "upos": "VERB",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 10,
+              "end_char": 15,
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+            },
+            {
+              "id": 4,
+              "text": "place",
+              "lemma": "place",
+              "upos": "NOUN",
+              "head": 3,
+              "deprel": "obj",
+              "start_char": 16,
+              "end_char": 21,
+              "feats": "Number=Sing"
+            },
+            {
+              "id": 5,
+              "text": "on",
+              "lemma": "on",
+              "upos": "ADP",
+              "head": 12,
+              "deprel": "case",
+              "start_char": 22,
+              "end_char": 24,
+              "feats": null
+            },
+            {
+              "id": 6,
+              "text": "a",
+              "lemma": "a",
+              "upos": "DET",
+              "head": 12,
+              "deprel": "det",
+              "start_char": 25,
+              "end_char": 26,
+              "feats": "Definite=Ind|PronType=Art"
+            },
+            {
+              "id": 7,
+              "text": "large",
+              "lemma": "large",
+              "upos": "ADJ",
+              "head": 12,
+              "deprel": "amod",
+              "start_char": 27,
+              "end_char": 32,
+              "feats": "Degree=Pos"
+            },
+            {
+              "id": 8,
+              "text": ",",
+              "lemma": ",",
+              "upos": "PUNCT",
+              "head": 12,
+              "deprel": "punct",
+              "start_char": 32,
+              "end_char": 33,
+              "feats": null
+            },
+            {
+              "id": 9,
+              "text": "open",
+              "lemma": "open",
+              "upos": "ADJ",
+              "head": 12,
+              "deprel": "amod",
+              "start_char": 34,
+              "end_char": 38,
+              "feats": "Degree=Pos"
+            },
+            {
+              "id": 10,
+              "text": ",",
+              "lemma": ",",
+              "upos": "PUNCT",
+              "head": 12,
+              "deprel": "punct",
+              "start_char": 38,
+              "end_char": 39,
+              "feats": null
+            },
+            {
+              "id": 11,
+              "text": "paved",
+              "lemma": "paved",
+              "upos": "VERB",
+              "head": 12,
+              "deprel": "amod",
+              "start_char": 40,
+              "end_char": 45,
+              "feats": "Tense=Past|VerbForm=Part"
+            },
+            {
+              "id": 12,
+              "text": "pier",
+              "lemma": "pier",
+              "upos": "NOUN",
+              "head": 3,
+              "deprel": "obl",
+              "start_char": 46,
+              "end_char": 50,
+              "feats": "Number=Sing"
+            },
+            {
+              "id": 13,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "head": 3,
+              "deprel": "punct",
+              "start_char": 50,
+              "end_char": 51,
+              "feats": null
+            },
+            {
+              "id": 14,
+              "text": "The",
+              "lemma": "the",
+              "upos": "DET",
+              "head": 15,
+              "deprel": "det",
+              "start_char": 52,
+              "end_char": 55,
+              "feats": "Definite=Def|PronType=Art"
+            },
+            {
+              "id": 15,
+              "text": "video",
+              "lemma": "video",
+              "upos": "NOUN",
+              "head": 16,
+              "deprel": "nsubj",
+              "start_char": 56,
+              "end_char": 61,
+              "feats": "Number=Sing"
+            },
+            {
+              "id": 16,
+              "text": "takes",
+              "lemma": "take",
+              "upos": "VERB",
+              "head": 0,
+              "deprel": "root",
+              "start_char": 62,
+              "end_char": 67,
+              "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+            },
+            {
+              "id": 17,
+              "text": "place",
+              "lemma": "place",
+              "upos": "NOUN",
+              "head": 16,
+              "deprel": "obj",
+              "start_char": 68,
+              "end_char": 73,
+              "feats": "Number=Sing"
+            },
+            {
+              "id": 18,
+              "text": "on",
+              "lemma": "on",
+              "upos": "ADP",
+              "head": 21,
+              "deprel": "case",
+              "start_char": 74,
+              "end_char": 76,
+              "feats": null
+            },
+            {
+              "id": 19,
+              "text": "a",
+              "lemma": "a",
+              "upos": "DET",
+              "head": 21,
+              "deprel": "det",
+              "start_char": 77,
+              "end_char": 78,
+              "feats": "Definite=Ind|PronType=Art"
+            },
+            {
+              "id": 20,
+              "text": "terminal",
+              "lemma": "terminal",
+              "upos": "NOUN",
+              "head": 21,
+              "deprel": "compound",
+              "start_char": 79,
+              "end_char": 87,
+              "feats": "Number=Sing"
+            },
+            {
+              "id": 21,
+              "text": "area",
+              "lemma": "area",
+              "upos": "NOUN",
+              "head": 16,
+              "deprel": "obl",
+              "start_char": 88,
+              "end_char": 92,
+              "feats": "Number=Sing"
+            },
+            {
+              "id": 22,
+              "text": ".",
+              "lemma": ".",
+              "upos": "PUNCT",
+              "head": 16,
+              "deprel": "punct",
+              "start_char": 92,
+              "end_char": 93,
+              "feats": null
+            }
+          ],
+          "variables": [
+            {
+              "name": "E1",
+              "kind": "event",
+              "description": "take",
+              "token_ids": []
+            },
+            {
+              "name": "X1",
+              "kind": "entity",
+              "description": "video",
+              "token_ids": []
+            },
+            {
+              "name": "X2",
+              "kind": "entity",
+              "description": "place",
+              "token_ids": []
+            },
+            {
+              "name": "X3",
+              "kind": "entity",
+              "description": "pier",
+              "token_ids": []
+            },
+            {
+              "name": "E2",
+              "kind": "event",
+              "description": "take",
+              "token_ids": []
+            },
+            {
+              "name": "X4",
+              "kind": "entity",
+              "description": "area",
+              "token_ids": []
+            }
+          ],
+          "atoms": [
+            {
+              "id": "a1",
+              "predicate": "referent",
+              "arguments": [
+                "X1",
+                "video",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "entity",
+              "roles": [],
+              "text": "referent",
+              "token_ids": [],
+              "trainable": false
+            },
+            {
+              "id": "a2",
+              "predicate": "referent",
+              "arguments": [
+                "X2",
+                "place",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "entity",
+              "roles": [],
+              "text": "referent",
+              "token_ids": [],
+              "trainable": false
+            },
+            {
+              "id": "a3",
+              "predicate": "referent",
+              "arguments": [
+                "X3",
+                "pier",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "entity",
+              "roles": [],
+              "text": "referent",
+              "token_ids": [],
+              "trainable": false
+            },
+            {
+              "id": "a4",
+              "predicate": "property",
+              "arguments": [
+                "X3",
+                "mod",
+                "large",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "property",
+              "roles": [],
+              "text": "property",
+              "token_ids": [],
+              "trainable": true
+            },
+            {
+              "id": "a5",
+              "predicate": "property",
+              "arguments": [
+                "X3",
+                "mod",
+                "open",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "property",
+              "roles": [],
+              "text": "property",
+              "token_ids": [],
+              "trainable": true
+            },
+            {
+              "id": "a6",
+              "predicate": "property",
+              "arguments": [
+                "X3",
+                "mod",
+                "paved",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "property",
+              "roles": [],
+              "text": "property",
+              "token_ids": [],
+              "trainable": true
+            },
+            {
+              "id": "a7",
+              "predicate": "take",
+              "arguments": [
+                "E1",
+                "ARG1",
+                "X1",
+                "ARG2",
+                "X2",
+                "ARGM-LOC",
+                "X3",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "relation",
+              "roles": [],
+              "text": "take",
+              "token_ids": [],
+              "trainable": true
+            },
+            {
+              "id": "a8",
+              "predicate": "property",
+              "arguments": [
+                "E1",
+                "preposition:ARGM-LOC",
+                "on",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "property",
+              "roles": [],
+              "text": "property",
+              "token_ids": [],
+              "trainable": true
+            },
+            {
+              "id": "a9",
+              "predicate": "referent",
+              "arguments": [
+                "X4",
+                "area",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "entity",
+              "roles": [],
+              "text": "referent",
+              "token_ids": [],
+              "trainable": false
+            },
+            {
+              "id": "a10",
+              "predicate": "property",
+              "arguments": [
+                "X4",
+                "mod",
+                "terminal",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "property",
+              "roles": [],
+              "text": "property",
+              "token_ids": [],
+              "trainable": true
+            },
+            {
+              "id": "a11",
+              "predicate": "take",
+              "arguments": [
+                "E2",
+                "ARG1",
+                "X1",
+                "ARG2",
+                "X2",
+                "ARGM-LOC",
+                "X4",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "relation",
+              "roles": [],
+              "text": "take",
+              "token_ids": [],
+              "trainable": true
+            },
+            {
+              "id": "a12",
+              "predicate": "property",
+              "arguments": [
+                "E2",
+                "preposition:ARGM-LOC",
+                "on",
+                "scope",
+                "world",
+                "route",
+                "unspecified"
+              ],
+              "kind": "property",
+              "roles": [],
+              "text": "property",
+              "token_ids": [],
+              "trainable": true
+            }
+          ],
+          "expression": {
+            "op": "exists",
+            "children": [
+              {
+                "op": "or",
+                "children": [
+                  {
+                    "op": "exists",
+                    "children": [
+                      {
+                        "op": "and",
+                        "children": [
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a1",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a2",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a3",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a4",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a5",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a6",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "exists",
+                            "children": [
+                              {
+                                "op": "and",
+                                "children": [
+                                  {
+                                    "op": "atom",
+                                    "children": [],
+                                    "atom_id": "a7",
+                                    "variables": [],
+                                    "state": ""
+                                  },
+                                  {
+                                    "op": "atom",
+                                    "children": [],
+                                    "atom_id": "a8",
+                                    "variables": [],
+                                    "state": ""
+                                  }
+                                ],
+                                "atom_id": "",
+                                "variables": [],
+                                "state": ""
+                              }
+                            ],
+                            "atom_id": "",
+                            "variables": [
+                              "E1"
+                            ],
+                            "state": ""
+                          }
+                        ],
+                        "atom_id": "",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [
+                      "X3"
+                    ],
+                    "state": ""
+                  },
+                  {
+                    "op": "exists",
+                    "children": [
+                      {
+                        "op": "and",
+                        "children": [
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a1",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a2",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a9",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "atom",
+                            "children": [],
+                            "atom_id": "a10",
+                            "variables": [],
+                            "state": ""
+                          },
+                          {
+                            "op": "exists",
+                            "children": [
+                              {
+                                "op": "and",
+                                "children": [
+                                  {
+                                    "op": "atom",
+                                    "children": [],
+                                    "atom_id": "a11",
+                                    "variables": [],
+                                    "state": ""
+                                  },
+                                  {
+                                    "op": "atom",
+                                    "children": [],
+                                    "atom_id": "a12",
+                                    "variables": [],
+                                    "state": ""
+                                  }
+                                ],
+                                "atom_id": "",
+                                "variables": [],
+                                "state": ""
+                              }
+                            ],
+                            "atom_id": "",
+                            "variables": [
+                              "E2"
+                            ],
+                            "state": ""
+                          }
+                        ],
+                        "atom_id": "",
+                        "variables": [],
+                        "state": ""
+                      }
+                    ],
+                    "atom_id": "",
+                    "variables": [
+                      "X4"
+                    ],
+                    "state": ""
+                  }
+                ],
+                "atom_id": "",
+                "variables": [],
+                "state": ""
+              }
+            ],
+            "atom_id": "",
+            "variables": [
+              "X1",
+              "X2"
+            ],
+            "state": ""
+          },
+          "coverage": [],
+          "warnings": [
+            "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold.",
+            "Repeated predicate anchor: takes; tense/aspect left unassigned."
+          ],
+          "version": "logical-form-v2",
+          "metadata": {
+            "logical_form": {
+              "version": "logical-form-v2",
+              "kind": "claim",
+              "entities": [
+                {
+                  "id": "c1_x2",
+                  "text": "video",
+                  "type": "entity"
+                },
+                {
+                  "id": "c1_x4",
+                  "text": "place",
+                  "type": "entity"
+                },
+                {
+                  "id": "c1_x12",
+                  "text": "pier",
+                  "type": "entity",
+                  "properties": [
+                    {
+                      "role": "mod",
+                      "value": "large"
+                    },
+                    {
+                      "role": "mod",
+                      "value": "open"
+                    },
+                    {
+                      "role": "mod",
+                      "value": "paved"
+                    }
+                  ]
+                },
+                {
+                  "id": "c2_x8",
+                  "text": "area",
+                  "type": "entity",
+                  "properties": [
+                    {
+                      "role": "mod",
+                      "value": "terminal"
+                    }
+                  ]
+                }
+              ],
+              "formula": {
+                "op": "or",
+                "children": [
+                  {
+                    "op": "event",
+                    "id": "e3",
+                    "predicate": "take",
+                    "anchor": "takes",
+                    "arguments": {
+                      "ARG1": "c1_x2",
+                      "ARG2": "c1_x4",
+                      "ARGM-LOC": "c1_x12"
+                    },
+                    "properties": [
+                      {
+                        "role": "preposition:ARGM-LOC",
+                        "value": "on"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "event",
+                    "id": "e16",
+                    "predicate": "take",
+                    "anchor": "takes",
+                    "arguments": {
+                      "ARG1": "c1_x2",
+                      "ARG2": "c1_x4",
+                      "ARGM-LOC": "c2_x8"
+                    },
+                    "properties": [
+                      {
+                        "role": "preposition:ARGM-LOC",
+                        "value": "on"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "warnings": [
+                "Composed from simple sentences; shared mentions and clause context are explicit proposals, not semantic gold."
+              ]
+            },
+            "normalizations": [],
+            "entities": {
+              "X1": {
+                "id": "c1_x2",
+                "text": "video",
+                "type": "entity"
+              },
+              "X2": {
+                "id": "c1_x4",
+                "text": "place",
+                "type": "entity"
+              },
+              "X3": {
+                "id": "c1_x12",
+                "text": "pier",
+                "type": "entity",
+                "properties": [
+                  {
+                    "role": "mod",
+                    "value": "large"
+                  },
+                  {
+                    "role": "mod",
+                    "value": "open"
+                  },
+                  {
+                    "role": "mod",
+                    "value": "paved"
+                  }
+                ]
+              },
+              "X4": {
+                "id": "c2_x8",
+                "text": "area",
+                "type": "entity",
+                "properties": [
+                  {
+                    "role": "mod",
+                    "value": "terminal"
+                  }
+                ]
+              }
+            },
+            "events": {
+              "E1": {
+                "op": "event",
+                "id": "e3",
+                "predicate": "take",
+                "anchor": "takes",
+                "arguments": {
+                  "ARG1": "c1_x2",
+                  "ARG2": "c1_x4",
+                  "ARGM-LOC": "c1_x12"
+                },
+                "properties": [
+                  {
+                    "role": "preposition:ARGM-LOC",
+                    "value": "on"
+                  }
+                ],
+                "scope": "world",
+                "route": "unspecified",
+                "owner": null
+              },
+              "E2": {
+                "op": "event",
+                "id": "e16",
+                "predicate": "take",
+                "anchor": "takes",
+                "arguments": {
+                  "ARG1": "c1_x2",
+                  "ARG2": "c1_x4",
+                  "ARGM-LOC": "c2_x8"
+                },
+                "properties": [
+                  {
+                    "role": "preposition:ARGM-LOC",
+                    "value": "on"
+                  }
+                ],
+                "scope": "world",
+                "route": "unspecified",
+                "owner": null
+              }
+            },
+            "scopes": {},
+            "temporal": {},
+            "allowed_routes": {
+              "a1": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a2": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a3": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a4": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a5": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a6": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a7": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a8": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a9": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a10": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a11": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ],
+              "a12": [
+                "visual_depiction",
+                "audio_event",
+                "speech_assertion",
+                "ocr_assertion"
+              ]
+            },
+            "kind": "claim",
+            "requires_context": false,
+            "runtime_requirements": [],
+            "uses_phrase_arguments": false,
+            "limitations": [
+              "Executable structure is not a certificate of semantic equivalence.",
+              "Scoped, group and reference predicates require evidence functions; missing functions return unknown.",
+              "Group descriptions preserve quantifier conditions; no general first-order quantifier theorem prover is implemented."
+            ],
+            "split_composition": {
+              "flat": false,
+              "clauses": [
+                {
+                  "id": "c1",
+                  "text": "The video takes place on a large, open, paved pier.",
+                  "parent": null,
+                  "relation": "root",
+                  "target": ""
+                },
+                {
+                  "id": "c2",
+                  "text": "The video takes place on a terminal area.",
+                  "parent": "c1",
+                  "relation": "and",
+                  "target": ""
+                }
+              ],
+              "shared": [
+                {
+                  "mentions": [
+                    {
+                      "clause": "c1",
+                      "text": "video"
+                    },
+                    {
+                      "clause": "c2",
+                      "text": "video"
+                    }
+                  ]
+                },
+                {
+                  "mentions": [
+                    {
+                      "clause": "c1",
+                      "text": "place"
+                    },
+                    {
+                      "clause": "c2",
+                      "text": "place"
+                    }
+                  ]
+                }
+              ]
+            },
+            "original_alignment": {
+              "entities": [
+                {
+                  "original_token": 2,
+                  "original_text": "video",
+                  "mentions": [
+                    {
+                      "clause": "c1",
+                      "entity": "x2",
+                      "text": "video"
+                    },
+                    {
+                      "clause": "c2",
+                      "entity": "x2",
+                      "text": "video"
+                    }
+                  ]
+                },
+                {
+                  "original_token": 4,
+                  "original_text": "place",
+                  "mentions": [
+                    {
+                      "clause": "c1",
+                      "entity": "x4",
+                      "text": "place"
+                    },
+                    {
+                      "clause": "c2",
+                      "entity": "x4",
+                      "text": "place"
+                    }
+                  ]
+                },
+                {
+                  "original_token": 11,
+                  "original_text": "pier",
+                  "mentions": [
+                    {
+                      "clause": "c1",
+                      "entity": "x12",
+                      "text": "pier"
+                    }
+                  ]
+                },
+                {
+                  "original_token": 14,
+                  "original_text": "area",
+                  "mentions": [
+                    {
+                      "clause": "c2",
+                      "entity": "x8",
+                      "text": "area"
+                    }
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "clause": "c1",
+                  "event": "e3",
+                  "predicate": "take",
+                  "original_token": 3
+                },
+                {
+                  "clause": "c2",
+                  "event": "e3",
+                  "predicate": "take",
+                  "original_token": 3
+                }
+              ],
+              "event_merges": []
+            }
+          },
+          "status": "compiled",
+          "logical_form": "EXISTS X1, X2: ((EXISTS X3: ((referent(X1, video, scope, world, route, unspecified) AND referent(X2, place, scope, world, route, unspecified) AND referent(X3, pier, scope, world, route, unspecified) AND property(X3, mod, large, scope, world, route, unspecified) AND property(X3, mod, open, scope, world, route, unspecified) AND property(X3, mod, paved, scope, world, route, unspecified) AND EXISTS E1: ((take(E1, ARG1, X1, ARG2, X2, ARGM-LOC, X3, scope, world, route, unspecified) AND property(E1, preposition:ARGM-LOC, on, scope, world, route, unspecified))))) OR EXISTS X4: ((referent(X1, video, scope, world, route, unspecified) AND referent(X2, place, scope, world, route, unspecified) AND referent(X4, area, scope, world, route, unspecified) AND property(X4, mod, terminal, scope, world, route, unspecified) AND EXISTS E2: ((take(E2, ARG1, X1, ARG2, X2, ARGM-LOC, X4, scope, world, route, unspecified) AND property(E2, preposition:ARGM-LOC, on, scope, world, route, unspecified)))))))"
+        },
+        "program": "% Exact categorical evidence; internal unknown = neither supported nor refuted.\n0::status(o_1c8ea729df7ca5515c35,supported); 0::status(o_1c8ea729df7ca5515c35,refuted); 1::status(o_1c8ea729df7ca5515c35,unknown).\n0::status(o_3a60b1909dcceb991276,supported); 0::status(o_3a60b1909dcceb991276,refuted); 1::status(o_3a60b1909dcceb991276,unknown).\n0::status(o_4bb97966d321a60e529d,supported); 0::status(o_4bb97966d321a60e529d,refuted); 1::status(o_4bb97966d321a60e529d,unknown).\n0::status(o_4d1fca631e8eb9ca424a,supported); 0::status(o_4d1fca631e8eb9ca424a,refuted); 1::status(o_4d1fca631e8eb9ca424a,unknown).\n0::status(o_57d554a26f659deb5621,supported); 0::status(o_57d554a26f659deb5621,refuted); 1::status(o_57d554a26f659deb5621,unknown).\n0::status(o_711b27602c3cec2b1a47,supported); 0::status(o_711b27602c3cec2b1a47,refuted); 1::status(o_711b27602c3cec2b1a47,unknown).\n0::status(o_8d1e46f68c16334dffde,supported); 0::status(o_8d1e46f68c16334dffde,refuted); 1::status(o_8d1e46f68c16334dffde,unknown).\n0::status(o_a9cfeeded47c4dcae33e,supported); 0::status(o_a9cfeeded47c4dcae33e,refuted); 1::status(o_a9cfeeded47c4dcae33e,unknown).\n0::status(o_b09032f6f0512fe96e87,supported); 0::status(o_b09032f6f0512fe96e87,refuted); 1::status(o_b09032f6f0512fe96e87,unknown).\n0::status(o_c62614a03d891acae945,supported); 0::status(o_c62614a03d891acae945,refuted); 1::status(o_c62614a03d891acae945,unknown).\n0::status(o_cbeb46d86b8c18ca4ac9,supported); 0::status(o_cbeb46d86b8c18ca4ac9,refuted); 1::status(o_cbeb46d86b8c18ca4ac9,unknown).\n0::status(o_e9679e6440456308eda8,supported); 0::status(o_e9679e6440456308eda8,refuted); 1::status(o_e9679e6440456308eda8,unknown).\nnode(n2,supported) :- status(o_8d1e46f68c16334dffde,supported).\nnode(n2,refuted) :- status(o_8d1e46f68c16334dffde,refuted).\nnode(n2,unknown) :- status(o_8d1e46f68c16334dffde,unknown).\nnode(n3,supported) :- status(o_4d1fca631e8eb9ca424a,supported).\nnode(n3,refuted) :- status(o_4d1fca631e8eb9ca424a,refuted).\nnode(n3,unknown) :- status(o_4d1fca631e8eb9ca424a,unknown).\nnode(n4,supported) :- status(o_1c8ea729df7ca5515c35,supported).\nnode(n4,refuted) :- status(o_1c8ea729df7ca5515c35,refuted).\nnode(n4,unknown) :- status(o_1c8ea729df7ca5515c35,unknown).\nnode(n5,supported) :- status(o_3a60b1909dcceb991276,supported).\nnode(n5,refuted) :- status(o_3a60b1909dcceb991276,refuted).\nnode(n5,unknown) :- status(o_3a60b1909dcceb991276,unknown).\nnode(n6,supported) :- status(o_e9679e6440456308eda8,supported).\nnode(n6,refuted) :- status(o_e9679e6440456308eda8,refuted).\nnode(n6,unknown) :- status(o_e9679e6440456308eda8,unknown).\nnode(n7,supported) :- status(o_cbeb46d86b8c18ca4ac9,supported).\nnode(n7,refuted) :- status(o_cbeb46d86b8c18ca4ac9,refuted).\nnode(n7,unknown) :- status(o_cbeb46d86b8c18ca4ac9,unknown).\nnode(n9,supported) :- status(o_57d554a26f659deb5621,supported).\nnode(n9,refuted) :- status(o_57d554a26f659deb5621,refuted).\nnode(n9,unknown) :- status(o_57d554a26f659deb5621,unknown).\nnode(n10,supported) :- status(o_a9cfeeded47c4dcae33e,supported).\nnode(n10,refuted) :- status(o_a9cfeeded47c4dcae33e,refuted).\nnode(n10,unknown) :- status(o_a9cfeeded47c4dcae33e,unknown).\nnode(n8,supported) :- node(n9,supported), node(n10,supported).\nnode(n8,refuted) :- node(n9,refuted).\nnode(n8,refuted) :- node(n10,refuted).\nnode(n8,unknown) :- \\+ node(n8,supported), \\+ node(n8,refuted).\nnode(n1,supported) :- node(n2,supported), node(n3,supported), node(n4,supported), node(n5,supported), node(n6,supported), node(n7,supported), node(n8,supported).\nnode(n1,refuted) :- node(n2,refuted).\nnode(n1,refuted) :- node(n3,refuted).\nnode(n1,refuted) :- node(n4,refuted).\nnode(n1,refuted) :- node(n5,refuted).\nnode(n1,refuted) :- node(n6,refuted).\nnode(n1,refuted) :- node(n7,refuted).\nnode(n1,refuted) :- node(n8,refuted).\nnode(n1,unknown) :- \\+ node(n1,supported), \\+ node(n1,refuted).\nnode(n12,supported) :- status(o_4bb97966d321a60e529d,supported).\nnode(n12,refuted) :- status(o_4bb97966d321a60e529d,refuted).\nnode(n12,unknown) :- status(o_4bb97966d321a60e529d,unknown).\nnode(n13,supported) :- status(o_711b27602c3cec2b1a47,supported).\nnode(n13,refuted) :- status(o_711b27602c3cec2b1a47,refuted).\nnode(n13,unknown) :- status(o_711b27602c3cec2b1a47,unknown).\nnode(n15,supported) :- status(o_c62614a03d891acae945,supported).\nnode(n15,refuted) :- status(o_c62614a03d891acae945,refuted).\nnode(n15,unknown) :- status(o_c62614a03d891acae945,unknown).\nnode(n16,supported) :- status(o_b09032f6f0512fe96e87,supported).\nnode(n16,refuted) :- status(o_b09032f6f0512fe96e87,refuted).\nnode(n16,unknown) :- status(o_b09032f6f0512fe96e87,unknown).\nnode(n14,supported) :- node(n15,supported), node(n16,supported).\nnode(n14,refuted) :- node(n15,refuted).\nnode(n14,refuted) :- node(n16,refuted).\nnode(n14,unknown) :- \\+ node(n14,supported), \\+ node(n14,refuted).\nnode(n11,supported) :- node(n2,supported), node(n3,supported), node(n12,supported), node(n13,supported), node(n14,supported).\nnode(n11,refuted) :- node(n2,refuted).\nnode(n11,refuted) :- node(n3,refuted).\nnode(n11,refuted) :- node(n12,refuted).\nnode(n11,refuted) :- node(n13,refuted).\nnode(n11,refuted) :- node(n14,refuted).\nnode(n11,unknown) :- \\+ node(n11,supported), \\+ node(n11,refuted).\nnode(n0,refuted) :- node(n1,refuted), node(n11,refuted).\nnode(n0,supported) :- node(n1,supported).\nnode(n0,supported) :- node(n11,supported).\nnode(n0,unknown) :- \\+ node(n0,supported), \\+ node(n0,refuted).\nverdict(c_adf975d74308db52,supported) :- node(n0,supported).\nquery(verdict(c_adf975d74308db52,supported)).\nverdict(c_adf975d74308db52,refuted) :- node(n0,refuted).\nquery(verdict(c_adf975d74308db52,refuted)).\nverdict(c_adf975d74308db52,unknown) :- node(n0,unknown).\nquery(verdict(c_adf975d74308db52,unknown)).\n",
+        "program_sha256": "d7de84d9f54581ee58b633638318c89fe835f43960d040a09a89e9a7c0bb22b7",
+        "components": [
+          {
+            "id": "c1",
+            "text": "The video takes place on a large, open, paved pier.",
+            "result": {
+              "claim_id": "Txf2EdqOg1SQ_2166__c1",
+              "text": "The video takes place on a large, open, paved pier.",
+              "status": "compiled",
+              "changes": [],
+              "proposed_form": {
+                "version": "logical-form-v2",
+                "kind": "claim",
+                "entities": [
+                  {
+                    "id": "x2",
+                    "text": "video",
+                    "type": "entity"
+                  },
+                  {
+                    "id": "x4",
+                    "text": "place",
+                    "type": "entity"
+                  },
+                  {
+                    "id": "x12",
+                    "text": "pier",
+                    "type": "entity",
+                    "properties": [
+                      {
+                        "role": "mod",
+                        "value": "large"
+                      },
+                      {
+                        "role": "mod",
+                        "value": "open"
+                      },
+                      {
+                        "role": "mod",
+                        "value": "paved"
+                      }
+                    ]
+                  }
+                ],
+                "formula": {
+                  "op": "event",
+                  "id": "e3",
+                  "predicate": "take",
+                  "anchor": "takes",
+                  "arguments": {
+                    "ARG1": "x2",
+                    "ARG2": "x4",
+                    "ARGM-LOC": "x12"
+                  },
+                  "properties": [
+                    {
+                      "role": "preposition:ARGM-LOC",
+                      "value": "on"
+                    }
+                  ]
+                },
+                "warnings": [
+                  "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+                  "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+                ]
+              },
+              "compilation": {
+                "claim_id": "Txf2EdqOg1SQ_2166__c1",
+                "text": "The video takes place on a large, open, paved pier.",
+                "tokens": [
+                  {
+                    "id": 1,
+                    "text": "The",
+                    "lemma": "the",
+                    "upos": "DET",
+                    "head": 2,
+                    "deprel": "det",
+                    "start_char": 0,
+                    "end_char": 3,
+                    "feats": "Definite=Def|PronType=Art"
+                  },
+                  {
+                    "id": 2,
+                    "text": "video",
+                    "lemma": "video",
+                    "upos": "NOUN",
+                    "head": 3,
+                    "deprel": "nsubj",
+                    "start_char": 4,
+                    "end_char": 9,
+                    "feats": "Number=Sing"
+                  },
+                  {
+                    "id": 3,
+                    "text": "takes",
+                    "lemma": "take",
+                    "upos": "VERB",
+                    "head": 0,
+                    "deprel": "root",
+                    "start_char": 10,
+                    "end_char": 15,
+                    "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+                  },
+                  {
+                    "id": 4,
+                    "text": "place",
+                    "lemma": "place",
+                    "upos": "NOUN",
+                    "head": 3,
+                    "deprel": "obj",
+                    "start_char": 16,
+                    "end_char": 21,
+                    "feats": "Number=Sing"
+                  },
+                  {
+                    "id": 5,
+                    "text": "on",
+                    "lemma": "on",
+                    "upos": "ADP",
+                    "head": 12,
+                    "deprel": "case",
+                    "start_char": 22,
+                    "end_char": 24,
+                    "feats": null
+                  },
+                  {
+                    "id": 6,
+                    "text": "a",
+                    "lemma": "a",
+                    "upos": "DET",
+                    "head": 12,
+                    "deprel": "det",
+                    "start_char": 25,
+                    "end_char": 26,
+                    "feats": "Definite=Ind|PronType=Art"
+                  },
+                  {
+                    "id": 7,
+                    "text": "large",
+                    "lemma": "large",
+                    "upos": "ADJ",
+                    "head": 12,
+                    "deprel": "amod",
+                    "start_char": 27,
+                    "end_char": 32,
+                    "feats": "Degree=Pos"
+                  },
+                  {
+                    "id": 8,
+                    "text": ",",
+                    "lemma": ",",
+                    "upos": "PUNCT",
+                    "head": 12,
+                    "deprel": "punct",
+                    "start_char": 32,
+                    "end_char": 33,
+                    "feats": null
+                  },
+                  {
+                    "id": 9,
+                    "text": "open",
+                    "lemma": "open",
+                    "upos": "ADJ",
+                    "head": 12,
+                    "deprel": "amod",
+                    "start_char": 34,
+                    "end_char": 38,
+                    "feats": "Degree=Pos"
+                  },
+                  {
+                    "id": 10,
+                    "text": ",",
+                    "lemma": ",",
+                    "upos": "PUNCT",
+                    "head": 12,
+                    "deprel": "punct",
+                    "start_char": 38,
+                    "end_char": 39,
+                    "feats": null
+                  },
+                  {
+                    "id": 11,
+                    "text": "paved",
+                    "lemma": "paved",
+                    "upos": "VERB",
+                    "head": 12,
+                    "deprel": "amod",
+                    "start_char": 40,
+                    "end_char": 45,
+                    "feats": "Tense=Past|VerbForm=Part"
+                  },
+                  {
+                    "id": 12,
+                    "text": "pier",
+                    "lemma": "pier",
+                    "upos": "NOUN",
+                    "head": 3,
+                    "deprel": "obl",
+                    "start_char": 46,
+                    "end_char": 50,
+                    "feats": "Number=Sing"
+                  },
+                  {
+                    "id": 13,
+                    "text": ".",
+                    "lemma": ".",
+                    "upos": "PUNCT",
+                    "head": 3,
+                    "deprel": "punct",
+                    "start_char": 50,
+                    "end_char": 51,
+                    "feats": null
+                  }
+                ],
+                "variables": [
+                  {
+                    "name": "E1",
+                    "kind": "event",
+                    "description": "take",
+                    "token_ids": []
+                  },
+                  {
+                    "name": "X1",
+                    "kind": "entity",
+                    "description": "video",
+                    "token_ids": []
+                  },
+                  {
+                    "name": "X2",
+                    "kind": "entity",
+                    "description": "place",
+                    "token_ids": []
+                  },
+                  {
+                    "name": "X3",
+                    "kind": "entity",
+                    "description": "pier",
+                    "token_ids": []
+                  },
+                  {
+                    "name": "T0",
+                    "kind": "context",
+                    "description": "Reference time supplied by the caller",
+                    "token_ids": []
+                  }
+                ],
+                "atoms": [
+                  {
+                    "id": "a1",
+                    "predicate": "referent",
+                    "arguments": [
+                      "X1",
+                      "video",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "entity",
+                    "roles": [],
+                    "text": "referent",
+                    "token_ids": [],
+                    "trainable": false
+                  },
+                  {
+                    "id": "a2",
+                    "predicate": "referent",
+                    "arguments": [
+                      "X2",
+                      "place",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "entity",
+                    "roles": [],
+                    "text": "referent",
+                    "token_ids": [],
+                    "trainable": false
+                  },
+                  {
+                    "id": "a3",
+                    "predicate": "referent",
+                    "arguments": [
+                      "X3",
+                      "pier",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "entity",
+                    "roles": [],
+                    "text": "referent",
+                    "token_ids": [],
+                    "trainable": false
+                  },
+                  {
+                    "id": "a4",
+                    "predicate": "property",
+                    "arguments": [
+                      "X3",
+                      "mod",
+                      "large",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "property",
+                    "roles": [],
+                    "text": "property",
+                    "token_ids": [],
+                    "trainable": true
+                  },
+                  {
+                    "id": "a5",
+                    "predicate": "property",
+                    "arguments": [
+                      "X3",
+                      "mod",
+                      "open",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "property",
+                    "roles": [],
+                    "text": "property",
+                    "token_ids": [],
+                    "trainable": true
+                  },
+                  {
+                    "id": "a6",
+                    "predicate": "property",
+                    "arguments": [
+                      "X3",
+                      "mod",
+                      "paved",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "property",
+                    "roles": [],
+                    "text": "property",
+                    "token_ids": [],
+                    "trainable": true
+                  },
+                  {
+                    "id": "a7",
+                    "predicate": "take",
+                    "arguments": [
+                      "E1",
+                      "ARG1",
+                      "X1",
+                      "ARG2",
+                      "X2",
+                      "ARGM-LOC",
+                      "X3",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "relation",
+                    "roles": [],
+                    "text": "take",
+                    "token_ids": [],
+                    "trainable": true
+                  },
+                  {
+                    "id": "a8",
+                    "predicate": "property",
+                    "arguments": [
+                      "E1",
+                      "preposition:ARGM-LOC",
+                      "on",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "property",
+                    "roles": [],
+                    "text": "property",
+                    "token_ids": [],
+                    "trainable": true
+                  },
+                  {
+                    "id": "a9",
+                    "predicate": "temporal",
+                    "arguments": [
+                      "E1",
+                      "pres",
+                      "simple",
+                      "T0",
+                      "unspecified",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "temporal",
+                    "roles": [],
+                    "text": "temporal",
+                    "token_ids": [],
+                    "trainable": false
+                  }
+                ],
+                "expression": {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a1",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a3",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a5",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a6",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "and",
+                              "children": [
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a7",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a8",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "exists",
+                                  "children": [
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a9",
+                                      "variables": [],
+                                      "state": ""
+                                    }
+                                  ],
+                                  "atom_id": "",
+                                  "variables": [
+                                    "T0"
+                                  ],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "E1"
+                          ],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X1",
+                    "X2",
+                    "X3"
+                  ],
+                  "state": ""
+                },
+                "coverage": [],
+                "warnings": [
+                  "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+                  "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+                ],
+                "version": "logical-form-v2",
+                "metadata": {
+                  "logical_form": {
+                    "version": "logical-form-v2",
+                    "kind": "claim",
+                    "entities": [
+                      {
+                        "id": "x2",
+                        "text": "video",
+                        "type": "entity"
+                      },
+                      {
+                        "id": "x4",
+                        "text": "place",
+                        "type": "entity"
+                      },
+                      {
+                        "id": "x12",
+                        "text": "pier",
+                        "type": "entity",
+                        "properties": [
+                          {
+                            "role": "mod",
+                            "value": "large"
+                          },
+                          {
+                            "role": "mod",
+                            "value": "open"
+                          },
+                          {
+                            "role": "mod",
+                            "value": "paved"
+                          }
+                        ]
+                      }
+                    ],
+                    "formula": {
+                      "op": "event",
+                      "id": "e3",
+                      "predicate": "take",
+                      "anchor": "takes",
+                      "arguments": {
+                        "ARG1": "x2",
+                        "ARG2": "x4",
+                        "ARGM-LOC": "x12"
+                      },
+                      "properties": [
+                        {
+                          "role": "preposition:ARGM-LOC",
+                          "value": "on"
+                        }
+                      ]
+                    },
+                    "warnings": [
+                      "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+                      "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+                    ]
+                  },
+                  "normalizations": [],
+                  "entities": {
+                    "X1": {
+                      "id": "x2",
+                      "text": "video",
+                      "type": "entity"
+                    },
+                    "X2": {
+                      "id": "x4",
+                      "text": "place",
+                      "type": "entity"
+                    },
+                    "X3": {
+                      "id": "x12",
+                      "text": "pier",
+                      "type": "entity",
+                      "properties": [
+                        {
+                          "role": "mod",
+                          "value": "large"
+                        },
+                        {
+                          "role": "mod",
+                          "value": "open"
+                        },
+                        {
+                          "role": "mod",
+                          "value": "paved"
+                        }
+                      ]
+                    }
+                  },
+                  "events": {
+                    "E1": {
+                      "op": "event",
+                      "id": "e3",
+                      "predicate": "take",
+                      "anchor": "takes",
+                      "arguments": {
+                        "ARG1": "x2",
+                        "ARG2": "x4",
+                        "ARGM-LOC": "x12"
+                      },
+                      "properties": [
+                        {
+                          "role": "preposition:ARGM-LOC",
+                          "value": "on"
+                        }
+                      ],
+                      "scope": "world",
+                      "route": "unspecified",
+                      "owner": null
+                    }
+                  },
+                  "scopes": {},
+                  "temporal": {
+                    "E1": {
+                      "tense": "pres",
+                      "aspect": "simple",
+                      "reference": "context",
+                      "token_ids": [
+                        3
+                      ],
+                      "finite": true,
+                      "completion": "unspecified"
+                    }
+                  },
+                  "allowed_routes": {
+                    "a1": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a2": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a3": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a4": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a5": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a6": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a7": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a8": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a9": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ]
+                  },
+                  "kind": "claim",
+                  "requires_context": false,
+                  "runtime_requirements": [],
+                  "uses_phrase_arguments": false,
+                  "limitations": [
+                    "Executable structure is not a certificate of semantic equivalence.",
+                    "Scoped, group and reference predicates require evidence functions; missing functions return unknown.",
+                    "Group descriptions preserve quantifier conditions; no general first-order quantifier theorem prover is implemented."
+                  ],
+                  "event_references": [],
+                  "compiler_changes": [],
+                  "content_coverage": {
+                    "complete": true,
+                    "missing": [],
+                    "method": "Source lexical content compared with reachable translated values, allowing inflection.",
+                    "limitation": "Necessary coverage check, not a semantic-equivalence or role/scope check."
+                  },
+                  "structural_alerts": [],
+                  "source_alignments": []
+                },
+                "status": "compiled",
+                "logical_form": "EXISTS X1, X2, X3: ((referent(X1, video, scope, world, route, unspecified) AND referent(X2, place, scope, world, route, unspecified) AND referent(X3, pier, scope, world, route, unspecified) AND property(X3, mod, large, scope, world, route, unspecified) AND property(X3, mod, open, scope, world, route, unspecified) AND property(X3, mod, paved, scope, world, route, unspecified) AND EXISTS E1: ((take(E1, ARG1, X1, ARG2, X2, ARGM-LOC, X3, scope, world, route, unspecified) AND property(E1, preposition:ARGM-LOC, on, scope, world, route, unspecified) AND EXISTS T0: (temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified))))))"
+              },
+              "program": "% Explicit state heads; categorical observations remain shared.\n0::status(o_17108accdcc1f13f979c,supported); 0::status(o_17108accdcc1f13f979c,refuted); 1::status(o_17108accdcc1f13f979c,unknown).\n0::status(o_1dd7dfe53e94818073bd,supported); 0::status(o_1dd7dfe53e94818073bd,refuted); 1::status(o_1dd7dfe53e94818073bd,unknown).\n0::status(o_271bc15977bfd3fcb5a7,supported); 0::status(o_271bc15977bfd3fcb5a7,refuted); 1::status(o_271bc15977bfd3fcb5a7,unknown).\n0::status(o_4928945e40a9363d8f27,supported); 0::status(o_4928945e40a9363d8f27,refuted); 1::status(o_4928945e40a9363d8f27,unknown).\n0::status(o_4af0641d18e2a322ee57,supported); 0::status(o_4af0641d18e2a322ee57,refuted); 1::status(o_4af0641d18e2a322ee57,unknown).\n0::status(o_a31fa7e980a95256120b,supported); 0::status(o_a31fa7e980a95256120b,refuted); 1::status(o_a31fa7e980a95256120b,unknown).\n0::status(o_f14bc82f7115204cbfdf,supported); 0::status(o_f14bc82f7115204cbfdf,refuted); 1::status(o_f14bc82f7115204cbfdf,unknown).\n0::status(o_f71b23a405f517657d96,supported); 0::status(o_f71b23a405f517657d96,refuted); 1::status(o_f71b23a405f517657d96,unknown).\n0::status(o_fa4c261f51f08cf15e0f,supported); 0::status(o_fa4c261f51f08cf15e0f,refuted); 1::status(o_fa4c261f51f08cf15e0f,unknown).\nnode(n3,supported) :- status(o_17108accdcc1f13f979c,supported).\nnode(n3,refuted) :- status(o_17108accdcc1f13f979c,refuted).\nnode(n3,unknown) :- status(o_17108accdcc1f13f979c,unknown).\nnode(n4,supported) :- status(o_1dd7dfe53e94818073bd,supported).\nnode(n4,refuted) :- status(o_1dd7dfe53e94818073bd,refuted).\nnode(n4,unknown) :- status(o_1dd7dfe53e94818073bd,unknown).\nnode(n2,refuted) :- node(n3,refuted).\nnode(n2,refuted) :- node(n4,refuted).\nnode(n2,supported) :- node(n3,supported), node(n4,supported).\nnode(n2,unknown) :- node(n3,unknown), node(n4,supported).\nnode(n2,unknown) :- node(n3,supported), node(n4,unknown).\nnode(n2,unknown) :- node(n3,unknown), node(n4,unknown).\nnode(n6,supported) :- status(o_271bc15977bfd3fcb5a7,supported).\nnode(n6,refuted) :- status(o_271bc15977bfd3fcb5a7,refuted).\nnode(n6,unknown) :- status(o_271bc15977bfd3fcb5a7,unknown).\nnode(n7,supported) :- status(o_4928945e40a9363d8f27,supported).\nnode(n7,refuted) :- status(o_4928945e40a9363d8f27,refuted).\nnode(n7,unknown) :- status(o_4928945e40a9363d8f27,unknown).\nnode(n5,refuted) :- node(n6,refuted).\nnode(n5,refuted) :- node(n7,refuted).\nnode(n5,supported) :- node(n6,supported), node(n7,supported).\nnode(n5,unknown) :- node(n6,unknown), node(n7,supported).\nnode(n5,unknown) :- node(n6,supported), node(n7,unknown).\nnode(n5,unknown) :- node(n6,unknown), node(n7,unknown).\nnode(n1,refuted) :- node(n2,refuted).\nnode(n1,refuted) :- node(n5,refuted).\nnode(n1,supported) :- node(n2,supported), node(n5,supported).\nnode(n1,unknown) :- node(n2,unknown), node(n5,supported).\nnode(n1,unknown) :- node(n2,supported), node(n5,unknown).\nnode(n1,unknown) :- node(n2,unknown), node(n5,unknown).\nnode(n10,supported) :- status(o_4af0641d18e2a322ee57,supported).\nnode(n10,refuted) :- status(o_4af0641d18e2a322ee57,refuted).\nnode(n10,unknown) :- status(o_4af0641d18e2a322ee57,unknown).\nnode(n11,supported) :- status(o_a31fa7e980a95256120b,supported).\nnode(n11,refuted) :- status(o_a31fa7e980a95256120b,refuted).\nnode(n11,unknown) :- status(o_a31fa7e980a95256120b,unknown).\nnode(n9,refuted) :- node(n10,refuted).\nnode(n9,refuted) :- node(n11,refuted).\nnode(n9,supported) :- node(n10,supported), node(n11,supported).\nnode(n9,unknown) :- node(n10,unknown), node(n11,supported).\nnode(n9,unknown) :- node(n10,supported), node(n11,unknown).\nnode(n9,unknown) :- node(n10,unknown), node(n11,unknown).\nnode(n13,supported) :- status(o_f14bc82f7115204cbfdf,supported).\nnode(n13,refuted) :- status(o_f14bc82f7115204cbfdf,refuted).\nnode(n13,unknown) :- status(o_f14bc82f7115204cbfdf,unknown).\nnode(n15,supported) :- status(o_f71b23a405f517657d96,supported).\nnode(n15,refuted) :- status(o_f71b23a405f517657d96,refuted).\nnode(n15,unknown) :- status(o_f71b23a405f517657d96,unknown).\nnode(n16,supported) :- status(o_fa4c261f51f08cf15e0f,supported).\nnode(n16,refuted) :- status(o_fa4c261f51f08cf15e0f,refuted).\nnode(n16,unknown) :- status(o_fa4c261f51f08cf15e0f,unknown).\nnode(n14,refuted) :- node(n15,refuted).\nnode(n14,refuted) :- node(n16,refuted).\nnode(n14,supported) :- node(n15,supported), node(n16,supported).\nnode(n14,unknown) :- node(n15,unknown), node(n16,supported).\nnode(n14,unknown) :- node(n15,supported), node(n16,unknown).\nnode(n14,unknown) :- node(n15,unknown), node(n16,unknown).\nnode(n12,refuted) :- node(n13,refuted).\nnode(n12,refuted) :- node(n14,refuted).\nnode(n12,supported) :- node(n13,supported), node(n14,supported).\nnode(n12,unknown) :- node(n13,unknown), node(n14,supported).\nnode(n12,unknown) :- node(n13,supported), node(n14,unknown).\nnode(n12,unknown) :- node(n13,unknown), node(n14,unknown).\nnode(n8,refuted) :- node(n9,refuted).\nnode(n8,refuted) :- node(n12,refuted).\nnode(n8,supported) :- node(n9,supported), node(n12,supported).\nnode(n8,unknown) :- node(n9,unknown), node(n12,supported).\nnode(n8,unknown) :- node(n9,supported), node(n12,unknown).\nnode(n8,unknown) :- node(n9,unknown), node(n12,unknown).\nnode(n0,refuted) :- node(n1,refuted).\nnode(n0,refuted) :- node(n8,refuted).\nnode(n0,supported) :- node(n1,supported), node(n8,supported).\nnode(n0,unknown) :- node(n1,unknown), node(n8,supported).\nnode(n0,unknown) :- node(n1,supported), node(n8,unknown).\nnode(n0,unknown) :- node(n1,unknown), node(n8,unknown).\nverdict(c_c1d0741a3653154a,supported) :- node(n0,supported).\nquery(verdict(c_c1d0741a3653154a,supported)).\nverdict(c_c1d0741a3653154a,refuted) :- node(n0,refuted).\nquery(verdict(c_c1d0741a3653154a,refuted)).\nverdict(c_c1d0741a3653154a,unknown) :- node(n0,unknown).\nquery(verdict(c_c1d0741a3653154a,unknown)).\n",
+              "program_sha256": "0bb22917a1570a83d270cb1d2cc2ed733708af652d01c91bfbdd35ab69968531",
+              "diagnostics": [],
+              "coverage": {
+                "complete": true,
+                "missing": [],
+                "method": "Source lexical content compared with reachable translated values, allowing inflection.",
+                "limitation": "Necessary coverage check, not a semantic-equivalence or role/scope check."
+              },
+              "structural_alerts": [],
+              "shared_checks": []
+            }
+          },
+          {
+            "id": "c2",
+            "text": "The video takes place on a terminal area.",
+            "result": {
+              "claim_id": "Txf2EdqOg1SQ_2166__c2",
+              "text": "The video takes place on a terminal area.",
+              "status": "compiled",
+              "changes": [],
+              "proposed_form": {
+                "version": "logical-form-v2",
+                "kind": "claim",
+                "entities": [
+                  {
+                    "id": "x2",
+                    "text": "video",
+                    "type": "entity"
+                  },
+                  {
+                    "id": "x4",
+                    "text": "place",
+                    "type": "entity"
+                  },
+                  {
+                    "id": "x8",
+                    "text": "area",
+                    "type": "entity",
+                    "properties": [
+                      {
+                        "role": "mod",
+                        "value": "terminal"
+                      }
+                    ]
+                  }
+                ],
+                "formula": {
+                  "op": "event",
+                  "id": "e3",
+                  "predicate": "take",
+                  "anchor": "takes",
+                  "arguments": {
+                    "ARG1": "x2",
+                    "ARG2": "x4",
+                    "ARGM-LOC": "x8"
+                  },
+                  "properties": [
+                    {
+                      "role": "preposition:ARGM-LOC",
+                      "value": "on"
+                    }
+                  ]
+                },
+                "warnings": [
+                  "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+                  "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+                ]
+              },
+              "compilation": {
+                "claim_id": "Txf2EdqOg1SQ_2166__c2",
+                "text": "The video takes place on a terminal area.",
+                "tokens": [
+                  {
+                    "id": 1,
+                    "text": "The",
+                    "lemma": "the",
+                    "upos": "DET",
+                    "head": 2,
+                    "deprel": "det",
+                    "start_char": 0,
+                    "end_char": 3,
+                    "feats": "Definite=Def|PronType=Art"
+                  },
+                  {
+                    "id": 2,
+                    "text": "video",
+                    "lemma": "video",
+                    "upos": "NOUN",
+                    "head": 3,
+                    "deprel": "nsubj",
+                    "start_char": 4,
+                    "end_char": 9,
+                    "feats": "Number=Sing"
+                  },
+                  {
+                    "id": 3,
+                    "text": "takes",
+                    "lemma": "take",
+                    "upos": "VERB",
+                    "head": 0,
+                    "deprel": "root",
+                    "start_char": 10,
+                    "end_char": 15,
+                    "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin"
+                  },
+                  {
+                    "id": 4,
+                    "text": "place",
+                    "lemma": "place",
+                    "upos": "NOUN",
+                    "head": 3,
+                    "deprel": "obj",
+                    "start_char": 16,
+                    "end_char": 21,
+                    "feats": "Number=Sing"
+                  },
+                  {
+                    "id": 5,
+                    "text": "on",
+                    "lemma": "on",
+                    "upos": "ADP",
+                    "head": 8,
+                    "deprel": "case",
+                    "start_char": 22,
+                    "end_char": 24,
+                    "feats": null
+                  },
+                  {
+                    "id": 6,
+                    "text": "a",
+                    "lemma": "a",
+                    "upos": "DET",
+                    "head": 8,
+                    "deprel": "det",
+                    "start_char": 25,
+                    "end_char": 26,
+                    "feats": "Definite=Ind|PronType=Art"
+                  },
+                  {
+                    "id": 7,
+                    "text": "terminal",
+                    "lemma": "terminal",
+                    "upos": "NOUN",
+                    "head": 8,
+                    "deprel": "compound",
+                    "start_char": 27,
+                    "end_char": 35,
+                    "feats": "Number=Sing"
+                  },
+                  {
+                    "id": 8,
+                    "text": "area",
+                    "lemma": "area",
+                    "upos": "NOUN",
+                    "head": 3,
+                    "deprel": "obl",
+                    "start_char": 36,
+                    "end_char": 40,
+                    "feats": "Number=Sing"
+                  },
+                  {
+                    "id": 9,
+                    "text": ".",
+                    "lemma": ".",
+                    "upos": "PUNCT",
+                    "head": 3,
+                    "deprel": "punct",
+                    "start_char": 40,
+                    "end_char": 41,
+                    "feats": null
+                  }
+                ],
+                "variables": [
+                  {
+                    "name": "E1",
+                    "kind": "event",
+                    "description": "take",
+                    "token_ids": []
+                  },
+                  {
+                    "name": "X1",
+                    "kind": "entity",
+                    "description": "video",
+                    "token_ids": []
+                  },
+                  {
+                    "name": "X2",
+                    "kind": "entity",
+                    "description": "place",
+                    "token_ids": []
+                  },
+                  {
+                    "name": "X3",
+                    "kind": "entity",
+                    "description": "area",
+                    "token_ids": []
+                  },
+                  {
+                    "name": "T0",
+                    "kind": "context",
+                    "description": "Reference time supplied by the caller",
+                    "token_ids": []
+                  }
+                ],
+                "atoms": [
+                  {
+                    "id": "a1",
+                    "predicate": "referent",
+                    "arguments": [
+                      "X1",
+                      "video",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "entity",
+                    "roles": [],
+                    "text": "referent",
+                    "token_ids": [],
+                    "trainable": false
+                  },
+                  {
+                    "id": "a2",
+                    "predicate": "referent",
+                    "arguments": [
+                      "X2",
+                      "place",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "entity",
+                    "roles": [],
+                    "text": "referent",
+                    "token_ids": [],
+                    "trainable": false
+                  },
+                  {
+                    "id": "a3",
+                    "predicate": "referent",
+                    "arguments": [
+                      "X3",
+                      "area",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "entity",
+                    "roles": [],
+                    "text": "referent",
+                    "token_ids": [],
+                    "trainable": false
+                  },
+                  {
+                    "id": "a4",
+                    "predicate": "property",
+                    "arguments": [
+                      "X3",
+                      "mod",
+                      "terminal",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "property",
+                    "roles": [],
+                    "text": "property",
+                    "token_ids": [],
+                    "trainable": true
+                  },
+                  {
+                    "id": "a5",
+                    "predicate": "take",
+                    "arguments": [
+                      "E1",
+                      "ARG1",
+                      "X1",
+                      "ARG2",
+                      "X2",
+                      "ARGM-LOC",
+                      "X3",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "relation",
+                    "roles": [],
+                    "text": "take",
+                    "token_ids": [],
+                    "trainable": true
+                  },
+                  {
+                    "id": "a6",
+                    "predicate": "property",
+                    "arguments": [
+                      "E1",
+                      "preposition:ARGM-LOC",
+                      "on",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "property",
+                    "roles": [],
+                    "text": "property",
+                    "token_ids": [],
+                    "trainable": true
+                  },
+                  {
+                    "id": "a7",
+                    "predicate": "temporal",
+                    "arguments": [
+                      "E1",
+                      "pres",
+                      "simple",
+                      "T0",
+                      "unspecified",
+                      "scope",
+                      "world",
+                      "route",
+                      "unspecified"
+                    ],
+                    "kind": "temporal",
+                    "roles": [],
+                    "text": "temporal",
+                    "token_ids": [],
+                    "trainable": false
+                  }
+                ],
+                "expression": {
+                  "op": "exists",
+                  "children": [
+                    {
+                      "op": "and",
+                      "children": [
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a1",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a2",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a3",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "atom",
+                          "children": [],
+                          "atom_id": "a4",
+                          "variables": [],
+                          "state": ""
+                        },
+                        {
+                          "op": "exists",
+                          "children": [
+                            {
+                              "op": "and",
+                              "children": [
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a5",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "atom",
+                                  "children": [],
+                                  "atom_id": "a6",
+                                  "variables": [],
+                                  "state": ""
+                                },
+                                {
+                                  "op": "exists",
+                                  "children": [
+                                    {
+                                      "op": "atom",
+                                      "children": [],
+                                      "atom_id": "a7",
+                                      "variables": [],
+                                      "state": ""
+                                    }
+                                  ],
+                                  "atom_id": "",
+                                  "variables": [
+                                    "T0"
+                                  ],
+                                  "state": ""
+                                }
+                              ],
+                              "atom_id": "",
+                              "variables": [],
+                              "state": ""
+                            }
+                          ],
+                          "atom_id": "",
+                          "variables": [
+                            "E1"
+                          ],
+                          "state": ""
+                        }
+                      ],
+                      "atom_id": "",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [
+                    "X1",
+                    "X2",
+                    "X3"
+                  ],
+                  "state": ""
+                },
+                "coverage": [],
+                "warnings": [
+                  "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+                  "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+                ],
+                "version": "logical-form-v2",
+                "metadata": {
+                  "logical_form": {
+                    "version": "logical-form-v2",
+                    "kind": "claim",
+                    "entities": [
+                      {
+                        "id": "x2",
+                        "text": "video",
+                        "type": "entity"
+                      },
+                      {
+                        "id": "x4",
+                        "text": "place",
+                        "type": "entity"
+                      },
+                      {
+                        "id": "x8",
+                        "text": "area",
+                        "type": "entity",
+                        "properties": [
+                          {
+                            "role": "mod",
+                            "value": "terminal"
+                          }
+                        ]
+                      }
+                    ],
+                    "formula": {
+                      "op": "event",
+                      "id": "e3",
+                      "predicate": "take",
+                      "anchor": "takes",
+                      "arguments": {
+                        "ARG1": "x2",
+                        "ARG2": "x4",
+                        "ARGM-LOC": "x8"
+                      },
+                      "properties": [
+                        {
+                          "role": "preposition:ARGM-LOC",
+                          "value": "on"
+                        }
+                      ]
+                    },
+                    "warnings": [
+                      "SRL supplies PropBank roles; dependency edges supply clause attachment. Complement content is not projected to the world.",
+                      "Semantic SRL pass: source arguments retain their context; nominal predication shares its subject; missing controllers require explicit or declared lexical evidence."
+                    ]
+                  },
+                  "normalizations": [],
+                  "entities": {
+                    "X1": {
+                      "id": "x2",
+                      "text": "video",
+                      "type": "entity"
+                    },
+                    "X2": {
+                      "id": "x4",
+                      "text": "place",
+                      "type": "entity"
+                    },
+                    "X3": {
+                      "id": "x8",
+                      "text": "area",
+                      "type": "entity",
+                      "properties": [
+                        {
+                          "role": "mod",
+                          "value": "terminal"
+                        }
+                      ]
+                    }
+                  },
+                  "events": {
+                    "E1": {
+                      "op": "event",
+                      "id": "e3",
+                      "predicate": "take",
+                      "anchor": "takes",
+                      "arguments": {
+                        "ARG1": "x2",
+                        "ARG2": "x4",
+                        "ARGM-LOC": "x8"
+                      },
+                      "properties": [
+                        {
+                          "role": "preposition:ARGM-LOC",
+                          "value": "on"
+                        }
+                      ],
+                      "scope": "world",
+                      "route": "unspecified",
+                      "owner": null
+                    }
+                  },
+                  "scopes": {},
+                  "temporal": {
+                    "E1": {
+                      "tense": "pres",
+                      "aspect": "simple",
+                      "reference": "context",
+                      "token_ids": [
+                        3
+                      ],
+                      "finite": true,
+                      "completion": "unspecified"
+                    }
+                  },
+                  "allowed_routes": {
+                    "a1": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a2": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a3": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a4": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a5": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a6": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ],
+                    "a7": [
+                      "visual_depiction",
+                      "audio_event",
+                      "speech_assertion",
+                      "ocr_assertion"
+                    ]
+                  },
+                  "kind": "claim",
+                  "requires_context": false,
+                  "runtime_requirements": [],
+                  "uses_phrase_arguments": false,
+                  "limitations": [
+                    "Executable structure is not a certificate of semantic equivalence.",
+                    "Scoped, group and reference predicates require evidence functions; missing functions return unknown.",
+                    "Group descriptions preserve quantifier conditions; no general first-order quantifier theorem prover is implemented."
+                  ],
+                  "event_references": [],
+                  "compiler_changes": [],
+                  "content_coverage": {
+                    "complete": true,
+                    "missing": [],
+                    "method": "Source lexical content compared with reachable translated values, allowing inflection.",
+                    "limitation": "Necessary coverage check, not a semantic-equivalence or role/scope check."
+                  },
+                  "structural_alerts": [],
+                  "source_alignments": []
+                },
+                "status": "compiled",
+                "logical_form": "EXISTS X1, X2, X3: ((referent(X1, video, scope, world, route, unspecified) AND referent(X2, place, scope, world, route, unspecified) AND referent(X3, area, scope, world, route, unspecified) AND property(X3, mod, terminal, scope, world, route, unspecified) AND EXISTS E1: ((take(E1, ARG1, X1, ARG2, X2, ARGM-LOC, X3, scope, world, route, unspecified) AND property(E1, preposition:ARGM-LOC, on, scope, world, route, unspecified) AND EXISTS T0: (temporal(E1, pres, simple, T0, unspecified, scope, world, route, unspecified))))))"
+              },
+              "program": "% Explicit state heads; categorical observations remain shared.\n0::status(o_17108accdcc1f13f979c,supported); 0::status(o_17108accdcc1f13f979c,refuted); 1::status(o_17108accdcc1f13f979c,unknown).\n0::status(o_1c362500a210b4e01ec2,supported); 0::status(o_1c362500a210b4e01ec2,refuted); 1::status(o_1c362500a210b4e01ec2,unknown).\n0::status(o_1dd7dfe53e94818073bd,supported); 0::status(o_1dd7dfe53e94818073bd,refuted); 1::status(o_1dd7dfe53e94818073bd,unknown).\n0::status(o_271bc15977bfd3fcb5a7,supported); 0::status(o_271bc15977bfd3fcb5a7,refuted); 1::status(o_271bc15977bfd3fcb5a7,unknown).\n0::status(o_4928945e40a9363d8f27,supported); 0::status(o_4928945e40a9363d8f27,refuted); 1::status(o_4928945e40a9363d8f27,unknown).\n0::status(o_bd535e2856b1a12a46b3,supported); 0::status(o_bd535e2856b1a12a46b3,refuted); 1::status(o_bd535e2856b1a12a46b3,unknown).\n0::status(o_f71b23a405f517657d96,supported); 0::status(o_f71b23a405f517657d96,refuted); 1::status(o_f71b23a405f517657d96,unknown).\nnode(n2,supported) :- status(o_17108accdcc1f13f979c,supported).\nnode(n2,refuted) :- status(o_17108accdcc1f13f979c,refuted).\nnode(n2,unknown) :- status(o_17108accdcc1f13f979c,unknown).\nnode(n4,supported) :- status(o_1c362500a210b4e01ec2,supported).\nnode(n4,refuted) :- status(o_1c362500a210b4e01ec2,refuted).\nnode(n4,unknown) :- status(o_1c362500a210b4e01ec2,unknown).\nnode(n5,supported) :- status(o_1dd7dfe53e94818073bd,supported).\nnode(n5,refuted) :- status(o_1dd7dfe53e94818073bd,refuted).\nnode(n5,unknown) :- status(o_1dd7dfe53e94818073bd,unknown).\nnode(n3,refuted) :- node(n4,refuted).\nnode(n3,refuted) :- node(n5,refuted).\nnode(n3,supported) :- node(n4,supported), node(n5,supported).\nnode(n3,unknown) :- node(n4,unknown), node(n5,supported).\nnode(n3,unknown) :- node(n4,supported), node(n5,unknown).\nnode(n3,unknown) :- node(n4,unknown), node(n5,unknown).\nnode(n1,refuted) :- node(n2,refuted).\nnode(n1,refuted) :- node(n3,refuted).\nnode(n1,supported) :- node(n2,supported), node(n3,supported).\nnode(n1,unknown) :- node(n2,unknown), node(n3,supported).\nnode(n1,unknown) :- node(n2,supported), node(n3,unknown).\nnode(n1,unknown) :- node(n2,unknown), node(n3,unknown).\nnode(n8,supported) :- status(o_271bc15977bfd3fcb5a7,supported).\nnode(n8,refuted) :- status(o_271bc15977bfd3fcb5a7,refuted).\nnode(n8,unknown) :- status(o_271bc15977bfd3fcb5a7,unknown).\nnode(n9,supported) :- status(o_4928945e40a9363d8f27,supported).\nnode(n9,refuted) :- status(o_4928945e40a9363d8f27,refuted).\nnode(n9,unknown) :- status(o_4928945e40a9363d8f27,unknown).\nnode(n7,refuted) :- node(n8,refuted).\nnode(n7,refuted) :- node(n9,refuted).\nnode(n7,supported) :- node(n8,supported), node(n9,supported).\nnode(n7,unknown) :- node(n8,unknown), node(n9,supported).\nnode(n7,unknown) :- node(n8,supported), node(n9,unknown).\nnode(n7,unknown) :- node(n8,unknown), node(n9,unknown).\nnode(n11,supported) :- status(o_bd535e2856b1a12a46b3,supported).\nnode(n11,refuted) :- status(o_bd535e2856b1a12a46b3,refuted).\nnode(n11,unknown) :- status(o_bd535e2856b1a12a46b3,unknown).\nnode(n12,supported) :- status(o_f71b23a405f517657d96,supported).\nnode(n12,refuted) :- status(o_f71b23a405f517657d96,refuted).\nnode(n12,unknown) :- status(o_f71b23a405f517657d96,unknown).\nnode(n10,refuted) :- node(n11,refuted).\nnode(n10,refuted) :- node(n12,refuted).\nnode(n10,supported) :- node(n11,supported), node(n12,supported).\nnode(n10,unknown) :- node(n11,unknown), node(n12,supported).\nnode(n10,unknown) :- node(n11,supported), node(n12,unknown).\nnode(n10,unknown) :- node(n11,unknown), node(n12,unknown).\nnode(n6,refuted) :- node(n7,refuted).\nnode(n6,refuted) :- node(n10,refuted).\nnode(n6,supported) :- node(n7,supported), node(n10,supported).\nnode(n6,unknown) :- node(n7,unknown), node(n10,supported).\nnode(n6,unknown) :- node(n7,supported), node(n10,unknown).\nnode(n6,unknown) :- node(n7,unknown), node(n10,unknown).\nnode(n0,refuted) :- node(n1,refuted).\nnode(n0,refuted) :- node(n6,refuted).\nnode(n0,supported) :- node(n1,supported), node(n6,supported).\nnode(n0,unknown) :- node(n1,unknown), node(n6,supported).\nnode(n0,unknown) :- node(n1,supported), node(n6,unknown).\nnode(n0,unknown) :- node(n1,unknown), node(n6,unknown).\nverdict(c_7445e96fc265d5a5,supported) :- node(n0,supported).\nquery(verdict(c_7445e96fc265d5a5,supported)).\nverdict(c_7445e96fc265d5a5,refuted) :- node(n0,refuted).\nquery(verdict(c_7445e96fc265d5a5,refuted)).\nverdict(c_7445e96fc265d5a5,unknown) :- node(n0,unknown).\nquery(verdict(c_7445e96fc265d5a5,unknown)).\n",
+              "program_sha256": "864eb26d3bc944a9dc5ba17a97e436f2ef387a72909d84e1f8492fe7e9d243de",
+              "diagnostics": [],
+              "coverage": {
+                "complete": true,
+                "missing": [],
+                "method": "Source lexical content compared with reachable translated values, allowing inflection.",
+                "limitation": "Necessary coverage check, not a semantic-equivalence or role/scope check."
+              },
+              "structural_alerts": [],
+              "shared_checks": []
+            }
+          }
+        ],
+        "proposal": {
+          "action": "split",
+          "clauses": [
+            {
+              "id": "c1",
+              "text": "The video takes place on a large, open, paved pier.",
+              "parent": null,
+              "relation": "root",
+              "target": ""
+            },
+            {
+              "id": "c2",
+              "text": "The video takes place on a terminal area.",
+              "parent": "c1",
+              "relation": "and",
+              "target": ""
+            }
+          ],
+          "shared": [
+            {
+              "mentions": [
+                {
+                  "clause": "c1",
+                  "text": "video"
+                },
+                {
+                  "clause": "c2",
+                  "text": "video"
+                }
+              ]
+            },
+            {
+              "mentions": [
+                {
+                  "clause": "c1",
+                  "text": "place"
+                },
+                {
+                  "clause": "c2",
+                  "text": "place"
+                }
+              ]
+            }
+          ],
+          "reason": "Links inferred from unique original mentions, not generated by the model.",
+          "formula": {
+            "op": "or",
+            "children": [
+              1,
+              2
+            ]
+          }
+        },
+        "alignment": {
+          "entities": [
+            {
+              "original_token": 2,
+              "original_text": "video",
+              "mentions": [
+                {
+                  "clause": "c1",
+                  "entity": "x2",
+                  "text": "video"
+                },
+                {
+                  "clause": "c2",
+                  "entity": "x2",
+                  "text": "video"
+                }
+              ]
+            },
+            {
+              "original_token": 4,
+              "original_text": "place",
+              "mentions": [
+                {
+                  "clause": "c1",
+                  "entity": "x4",
+                  "text": "place"
+                },
+                {
+                  "clause": "c2",
+                  "entity": "x4",
+                  "text": "place"
+                }
+              ]
+            },
+            {
+              "original_token": 11,
+              "original_text": "pier",
+              "mentions": [
+                {
+                  "clause": "c1",
+                  "entity": "x12",
+                  "text": "pier"
+                }
+              ]
+            },
+            {
+              "original_token": 14,
+              "original_text": "area",
+              "mentions": [
+                {
+                  "clause": "c2",
+                  "entity": "x8",
+                  "text": "area"
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "clause": "c1",
+              "event": "e3",
+              "predicate": "take",
+              "original_token": 3
+            },
+            {
+              "clause": "c2",
+              "event": "e3",
+              "predicate": "take",
+              "original_token": 3
+            }
+          ],
+          "event_merges": []
+        },
+        "shared_checks": []
+      }
+    },
+    {
+      "label": "Same subclaims with AND",
+      "sentences": [
+        "The video takes place on a large, open, paved pier.",
+        "The video takes place on a terminal area."
+      ],
+      "formula": {
+        "op": "and",
+        "children": [
+          1,
+          2
+        ]
+      },
+      "outcome": "rewrite_or_required",
+      "reason": "Keep explicit source alternatives in an OR formula.",
+      "output": null
+    },
+    {
+      "label": "Legacy subclaims with OR and copied adjectives",
+      "sentences": [
+        "The video takes place on a large, open, paved pier.",
+        "The video takes place on a large, open, paved terminal area."
+      ],
+      "formula": {
+        "op": "or",
+        "children": [
+          1,
+          2
+        ]
+      },
+      "outcome": "rewrite_or_alignment",
+      "reason": "Each alternative must retain its own source description and the shared claim.",
+      "output": null
+    }
+  ],
+  "native_controls": [
+    {
+      "case": "pier only",
+      "expected": "supported",
+      "distribution": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      }
+    },
+    {
+      "case": "terminal only",
+      "expected": "supported",
+      "distribution": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      }
+    },
+    {
+      "case": "both labels supported",
+      "expected": "supported",
+      "distribution": {
+        "supported": 1.0,
+        "refuted": 0.0,
+        "unknown": 0.0
+      }
+    },
+    {
+      "case": "missing paved evidence",
+      "expected": "unknown",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 0.0,
+        "unknown": 1.0
+      }
+    },
+    {
+      "case": "both labels refuted",
+      "expected": "refuted",
+      "distribution": {
+        "supported": 0.0,
+        "refuted": 1.0,
+        "unknown": 0.0
+      }
+    }
+  ]
+}

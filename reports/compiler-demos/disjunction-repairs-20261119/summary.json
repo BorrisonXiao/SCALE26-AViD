@@ -1,0 +1,32 @@
+{
+  "total": 2375,
+  "selected": {
+    "srl": 1978,
+    "abstained": 197,
+    "amr": 179,
+    "rewrite": 21
+  },
+  "automatic_compiled": 2178,
+  "parsing_abstentions": 197,
+  "srl_attempts": 2375,
+  "amr_attempts": 397,
+  "rewrite_attempts": 218,
+  "final_stops": {
+    "rewrite_component": 115,
+    "entity_alignment": 67,
+    "conditional_scope": 1,
+    "sentence_parse": 2,
+    "missing_shared_participant": 1,
+    "event_alignment": 2,
+    "shared_description": 1,
+    "rewrite_or_required": 5,
+    "source_alignment": 2,
+    "description_alignment": 1
+  },
+  "seconds": 60.61147179827094,
+  "models_called": 0,
+  "fresh_rewrite_responses": 8,
+  "retained_pool": 1981,
+  "promotions": 0,
+  "policy": "Fixed automatic SRL -> AMR -> one cached rewrite. No meaning-review, media or claim-label routing. Parse abstention is not evidence unknown."
+}
