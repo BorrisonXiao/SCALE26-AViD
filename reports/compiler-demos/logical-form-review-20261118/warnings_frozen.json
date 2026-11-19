@@ -1,0 +1,55 @@
+{
+  "sample_sha256": "6fd2f685cc8709c87be00b4902f4f7d2aadf2469575ccaaadb02234724ddf721",
+  "rule_sha256": "452f869608dadabc40f22452a2ee8a3ecdcb2cd184fb14eea9d609080134013c",
+  "alerts": {
+    "Tg0UxWYuPeJ0_373": [
+      {
+        "code": "measurement_unbound",
+        "source": "100m",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ],
+    "TzF9M4kZ3Pys_282": [
+      {
+        "code": "identifier_omission",
+        "source": "misswong_1204",
+        "reason": "An explicit handle or identifier is absent from the emitted predicates."
+      }
+    ],
+    "T2EE72iNELEs_183": [
+      {
+        "code": "measurement_unbound",
+        "source": "384 mph",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ],
+    "T3HTSBW42QaY_775": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ],
+    "TjHepwuhkYFA_1027": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ],
+    "TFgw4IaR9R8s_1746": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ],
+    "T2G_ACMxR_I4_1446": [
+      {
+        "code": "measurement_unbound",
+        "source": "135 km/h",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  }
+}

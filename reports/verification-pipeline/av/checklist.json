@@ -852,16 +852,31 @@
     },
     {
       "id": 37,
-      "title": "Prepare features and a binding baseline",
+      "title": "Expand the logical-form benchmark review",
+      "status": "completed",
+      "items": [
+        {
+          "text": "Review 60 more saved forms across strict SRL and provisional outputs. Goal is to identify where compiled meanings still diverge from the source claim.",
+          "done": true
+        },
+        {
+          "text": "Add advisory checks for names, quantities and scope. Goal is to surface silent mistakes for evaluation.",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Design features and training data separately",
       "status": "planned",
       "items": [
-        "Review complete forms and add entity, number and source checks. Goal is to avoid training on wrong bindings.",
-        "Extract frozen features for both assignments. Goal is to use identical evidence with no variant or label leakage.",
-        "Add speech and audio pairs and compare the binding model with a no-binding baseline. Goal is to isolate binding gains."
+        "Write a feature comparison using uniform frames, keyframes for long clips and attention scores when available. For speech and sound specify aligned windows and speaker-timed transcript spans. Goal is to isolate the effect of selection.",
+        "Use one evidence set per binding pair and compare each assignment on that same evidence. Goal is to measure binding without changing the input.",
+        "Plan independent labels and a source-disjoint training set before fitting. Goal is to reserve the current logical forms and frame pairs for benchmark development."
       ]
     }
   ],
-  "intro": "Compiler remains the priority. One source-typed AMR path: 1,785/2,375 programs, 1,559 check passes, net +162. Earlier 92 whole-reading matches: 30→31. Source checks and execution are not semantic accuracy. Remaining automatic failures: 816; incorrect passes also remain. 581 tests pass; retained pool 1,981 unchanged. Training deferred.",
+  "intro": "Evaluation comes first. The latest review covers 60 saved programs across 64 source videos and finds 22 full matches. Reserve the reviewed forms and frame-based pairs for benchmark development. Feature design and training data will be specified separately.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -924,5 +939,6 @@
   "amr_contexts_run": "exp/probabilistic_verification/amr_contexts_20261118",
   "compiler_fallback_run": "exp/probabilistic_verification/compiler_fallback_20261118",
   "compiler_coverage_run": "exp/probabilistic_verification/compiler_coverage_20261118",
-  "compiler_scope_run": "exp/probabilistic_verification/compiler_scope_20261118"
+  "compiler_scope_run": "exp/probabilistic_verification/compiler_scope_20261118",
+  "logical_form_review_run": "exp/probabilistic_verification/logical_form_review_20261118"
 }

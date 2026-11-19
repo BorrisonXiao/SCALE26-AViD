@@ -1,0 +1,1620 @@
+[
+  {
+    "claim_id": "TInVWzp25aIM_25",
+    "text": "The typhoon caused the water to surge almost 7 feet high.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "7 feet",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2EE72iNELEs_183",
+    "text": "Rocket reached a max of 384 mph when the video cut off.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "384 mph",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2EE72iNELEs_187",
+    "text": "Video beginning altitude of 56.6 km.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "56.6 km",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2EE72iNELEs_192",
+    "text": "Video beginning velocity 17828 mph.",
+    "category": "strict_baseline",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "17828 mph",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_218",
+    "text": "A haboob, or an intense, massive wall of dust and sand created by the downdrafts of a collapsing thunderstorm. ",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_255",
+    "text": "Dust storm or dust cloud approaching airport.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_269",
+    "text": "Winds of 30 mph.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "30 mph",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_282",
+    "text": "Tik Tok misswong_1204",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "identifier_omission",
+        "source": "misswong_1204",
+        "reason": "An explicit handle or identifier is absent from the emitted predicates."
+      }
+    ]
+  },
+  {
+    "claim_id": "TzF9M4kZ3Pys_297",
+    "text": "Drivers hit with monsoon rain and winds of up 70 mph.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "70 mph",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_373",
+    "text": "Robot 100m sprint.",
+    "category": "advisory_checks",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "100m",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_421",
+    "text": "100m- final lineup",
+    "category": "advisory_checks",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "100m",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "Tg0UxWYuPeJ0_436",
+    "text": "Person starts a count, it is likely they are the referee of the match.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFOEIehBwT8Q_497",
+    "text": "\"Mexico City security chief: 20 arrested for theft and assault.\"",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "Mexico City",
+        "missing": [
+          "city",
+          "mexico"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      }
+    ]
+  },
+  {
+    "claim_id": "T3HTSBW42QaY_775",
+    "text": "It is likely too hazardous for ships to safely dock.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_805",
+    "text": "NDP received only 6% of the popular vote, compared to 18% four years ago, a drop of about two-thirds of their vote share.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "6%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "18%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_808",
+    "text": "In Windsor West, Conservative Harb Gill had 39.1% with a total of 21,270 votes (lead of 4,529); Liberal Richard Pollock had 30.8% with 16,741 votes; NDP Brian Masse had 27.8% with 15,112; and PPC Jacob Bezaire has 1% with 548 votes.",
+    "category": "advisory_checks",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "PPC Jacob Bezaire",
+        "missing": [
+          "ppc"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_823",
+    "text": "2021 map shows more Bloc Québécois seats (blue) — not as much red.",
+    "category": "advisory_checks",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "Bloc Québécois",
+        "missing": [
+          "québécois"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_830",
+    "text": "Liberal Ernie Klassen has 50.4% of the votes with 32,423 votes (lead 2,925 votes); Conservative Kerry-Lynne Findlay has 45.8% with 29,498 votes; NDP Jureun Park has 2.5% with 1,602.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "50.4%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_856",
+    "text": "They show the current House composition: Liberals hold 152 seats, Conservatives 120, Bloc Québécois 33, NDP 24, Greens 2, with 3 independents and 4 seats vacant.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "Bloc Québécois",
+        "missing": [
+          "bloc",
+          "québécois"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_892",
+    "text": "Green is consistently the lowest with BLOC slightly above it following a similar flat distribution around 5 and 6% respectively.",
+    "category": "amr_reentrancy",
+    "stage": "reentrant_amr",
+    "alerts": [
+      {
+        "code": "measurement_range_unbound",
+        "source": "5 and 6%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_896",
+    "text": "Present day has Libs at about 45%, Cons at 40%, NDPs at 8%, Green at 5%, and Bloc at 6%.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "45%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "40%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "8%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "5%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "6%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_911",
+    "text": "The channel notes they are close to one million subscribers (have 920,988) and asks viewers to subscribe, says 68% of viewers aren't subscribed.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "68%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_920",
+    "text": "Estimated change and trend (Jan 2023-Jan 2025): Conservatives rise from about 34-35% to 43-44% (up ~9 points), Liberals fall from roughly 31-32% to 20-21% (down ~11 points), NDP remain relatively flat around 18-19%, Bloc Québécois edge up slightly from 6-7% to 8-9%, and Greens stay low and stable near 3-4%; overall trend shows widening Conservative lead driven mainly by declining Liberal support.",
+    "category": "amr_reentrancy",
+    "stage": "reentrant_amr",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "Bloc Québécois",
+        "missing": [
+          "bloc",
+          "québécois"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "18-19%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "6-7%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "8-9%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "3-4%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_924",
+    "text": "Shows same graph as before with post January results: Conservatives drop sharply from about 43-44% to roughly 37-38% (down ~6 points), Liberals surge from around 20-21% to about 42-43% (up ~21-22 points), NDP fall from roughly 18-19% to near 8-9% (down ~10 points), Bloc Québécois ease slightly from about 8-9% to 6-7%, and Greens decline from around 4% to about 2-3%; overall, the new data shows a rapid realignment driven primarily by a large shift from NDP and Conservative support toward the Liberals.",
+    "category": "amr_reentrancy",
+    "stage": "reentrant_amr",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "Bloc Québécois",
+        "missing": [
+          "bloc",
+          "québécois"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "37-38%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "20-21%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "18-19%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "8-9%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "8-9%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "6-7%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "4%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_926",
+    "text": "Shows table picture of various polls in April: multiple national polls show the Liberals leading at roughly 41-44%, with the Conservatives close behind at about 37-41%, The NDP polls mostly between 6-11%, well below earlier levels; the Bloc Québécois is stable around 6% nationally; Greens sit near 1-3%; PPC and others remain around 1-2%.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_range_unbound",
+        "source": "41-44%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "37-41%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "6-11%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "6%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "1-3%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "1-2%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_930",
+    "text": "Polling: Ipsos showed 49% of Canadians preferred Carney to negotiate with Trump vs. 33% for Poilievre.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "49%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "33%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_935",
+    "text": "Leadership approval snapshot (Angus Reid, March 17, 2025): Pierre Poilievre has approval around the mid-30% range with disapproval near 55-60%, Justin Trudeau shows higher approval near ~48-50% with disapproval around ~35%, Jagmeet Singh records approval near ~32-33% with disapproval close to ~60%, and Yves-François Blanchet (Quebec polling only) has approval around ~48-50% and disapproval near ~40-42%, indicating Trudeau and Blanchet with net-positive standings and Poilievre and Singh facing higher disapproval than approval.",
+    "category": "earlier_srl",
+    "stage": "earlier_srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "30%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "55-60%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "48-50%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "35%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "32-33%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "60%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "48-50%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_range_unbound",
+        "source": "40-42%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_947",
+    "text": "Liberals beat Conservatives in popular vote but only by ~1.4 points: 43.1% vs. 41.7%.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "43.1%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "41.7%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_948",
+    "text": "With 96% counted: Liberals projected 48.1% of seats = 166 seats; Conservatives 42.9% = 146 seats (out of 343 total).",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "48.1%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "42.9%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_951",
+    "text": "Remaining seats expected mainly for Bloc Québécois (Quebec-only nationalist party) and NDP (social democratic, left of Liberals).",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "Bloc Québécois",
+        "missing": [
+          "bloc",
+          "québécois"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_954",
+    "text": "Seat comparison (2021 vs projected 2025): The chart compares seats won in the 2021 election with projected 2025 results, showing the Liberals increasing their seat total (roughly mid-150s to near 180), the Conservatives also gaining (from about 120 to the mid-140s), and the Bloc Québécois declining (from low-30s to around 20); NDP and Green Party results are not displayed.",
+    "category": "advisory_checks",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "Bloc Québécois",
+        "missing": [
+          "québécois"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_971",
+    "text": "Viewers invited to try Brilliant free via link or QR code; promotion includes 20% off annual premium.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "20%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TQEmEycTI0RQ_973",
+    "text": "Can see numbers updating on bottom throughout. Start at Liberals 118, Conservatives 83, Bloc Québécois 15, NDP 4, Greens 0.",
+    "category": "advisory_checks",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "Bloc Québécois",
+        "missing": [
+          "québécois"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1018",
+    "text": "A large object in the background (presumably a tower supporting a power line) falls.",
+    "category": "strict_baseline",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "presumably",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1027",
+    "text": "An unseen crowd of spectators is heard reacting to the collapse (likely in Thai).",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1040",
+    "text": "Violent shaking is likely to result in extensive building damage and high casualties.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1052",
+    "text": "The Sagaing Fault is 1200 kilometers long.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "1200 kilometers",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TjHepwuhkYFA_1070",
+    "text": "A video shows a tall building collapsing in Bangkok (inferred).",
+    "category": "amr_reentrancy",
+    "stage": "reentrant_amr",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "inferred",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1123",
+    "text": "Blue Ghost Mission 1 was at 105.8 kilometers above ground level 1 hour and 11 minutes prior to landing.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "105.8 kilometers",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1136",
+    "text": "Blue Ghost completed on-orbit commissioning.",
+    "category": "strict_baseline",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1137",
+    "text": "Blue Ghost began the journey to the moon after on-orbit commissioning.",
+    "category": "strict_baseline",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1156",
+    "text": "A low lunar orbit is roughly 100 km above the Moon.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "100 km",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1193",
+    "text": "Cut to larger crowd of what is likely members of the public cheering; this event was almost certainly broadcasted live.",
+    "category": "amr_reentrancy",
+    "stage": "reentrant_amr",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1200",
+    "text": "The LMS electrodes were launched by a spring mechanism and traveled about 20 meters from the lander, forming an approximately 40-meter baseline.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "20 meters",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1233",
+    "text": "Firefly reported that lunar noon is the hottest part of the lunar day and temperatures can reach about 250°F or 121°C.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1430",
+    "text": "Blue Ghost's descent orbit insertion was around 100,000m from the moon's surface.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "100,000m",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1431",
+    "text": "Blue Ghost's powered descent started before 10,000m from the moon's surface.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "10,000m",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1432",
+    "text": "Blue Ghost's D'Souza Guidance started before 10,000m from the moon's surface.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "10,000m",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1433",
+    "text": "Blue Ghost's Terminal Guidance began under 1,000m from the moon's surface.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "1,000m",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1434",
+    "text": "Blue Ghost's landing guidance began around 10m from the moon's surface.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "10m",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1445",
+    "text": "Blue Ghost was 520 meters above ground 1 minute and 43 seconds prior to landing.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "520 meters",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "T2G_ACMxR_I4_1446",
+    "text": "Blue Ghost's velocity was 135 km/h 1 minute and 43 seconds prior to landing.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "135 km/h",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1469",
+    "text": "Starting at 7am central on the morning of the 3rd there is about 10-20 knots of flow at 850mb out of the south.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_range_unbound",
+        "source": "10-20 knots",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1487",
+    "text": "Made landfall on the east coast of Mexico with winds at 45mph.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "45mph",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1490",
+    "text": "Darker green values show an excess of 2 inches of precipitable water parked over Texas for the duration of the event.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "2 inches",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1507",
+    "text": "The clockwise motion indicates a ridge or high-pressure anti-cyclone over the region.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1515",
+    "text": "As it goes through time, you see those currents breakdown to 5 to 10 knots of flow.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_range_unbound",
+        "source": "5 to 10 knots",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgPh_fzHTCm4_1517",
+    "text": "5-15 knot flow over Texas allowing that remnant circulation to move very slowly to the east across central Texas and sit there over the next couple of days.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_range_unbound",
+        "source": "5-15 knot",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1535",
+    "text": "It is unclear whether the injunction is temporary or permanent.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1564",
+    "text": "The White House is likely to first ask the Court of Appeals to block the ruling and allow the tariffs to stand.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1566",
+    "text": "The case will likely be argued to the Federal Circuit.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1567",
+    "text": "The losing side for the appeal at the Federal Circuit is likely to appeal up to the US Supreme Court.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1590",
+    "text": "Tariff poster shows: European Union 39% / 20%.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "39%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "20%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1591",
+    "text": "Tariff poster shows: Vietnam 90% / 46%.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "90%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "46%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1592",
+    "text": "Tariff poster shows: Taiwan 64% / 32%.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "64%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "32%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1593",
+    "text": "Tariff poster shows: Japan 46% / 24%.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "46%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "24%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1594",
+    "text": "Tariff poster shows: India 52% / 26%.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "52%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "26%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1595",
+    "text": "Tariff poster shows: South Korea 50% / 25%.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "50%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "25%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1596",
+    "text": "Tariff poster shows: Thailand 72% / 36%.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "72%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "36%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1597",
+    "text": "Tariff poster shows: Switzerland 61% / 31%.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "61%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "31%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1598",
+    "text": "Tariff poster shows: Indonesia 64% / 32%.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "64%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      },
+      {
+        "code": "measurement_unbound",
+        "source": "32%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1605",
+    "text": "US Futures: DOW 42,638.00, +468.00, +1.1%.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "1.1%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1607",
+    "text": "US Futures: NASDAQ 21,752.00, +372.25, +1.74%.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "1.74%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1608",
+    "text": "US Futures (second reading): DOW 42,634.00, +464.00, +1.1%.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "1.1%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1609",
+    "text": "US Futures (second reading): S&P 500 5,988.75, +86.00, +1.46%.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "1.46%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1610",
+    "text": "US Futures (second reading): NASDAQ 21,749.50, +369.75, +1.73%.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "1.73%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1630",
+    "text": "The Justice Department is likely to comment on the ruling.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1631",
+    "text": "The White House is likely to comment on the ruling.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1642",
+    "text": "The administration will likely ask the court to put a pause on its own ruling while appeals are made.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1644",
+    "text": "If the court does not agree to pause its ruling, the Administration will likely go to the First Circuit for a pause on the ruling while they decide on the case.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1679",
+    "text": "Trump is ending the De Minimis exemption for imported goods valued at $800 or less.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1680",
+    "text": "Prices could go up; extra tariffs for $800 or less but only if shipped via the international postal service.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1681",
+    "text": "An additional 30% tariff or $25 per item as of time of video but could go up to $50 per item by June 1, 2025.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1715",
+    "text": "They show the current House composition: Liberals hold 152 seats, Conservatives 120, Bloc Québécois 33, NDP 24, Greens 2, with 3 independents and 4 seats vacant.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "Bloc Québécois",
+        "missing": [
+          "bloc",
+          "québécois"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1746",
+    "text": "The Trump appeals to the International Trade Foundation will likely go to their Supreme Court.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1759",
+    "text": "Taiwan, took USA computer chips and semiconductors says Trump, tariffs the USA 64%, USA will reciprocate with 32%.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "64%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TFgw4IaR9R8s_1763",
+    "text": "Trump says minimum baseline tariff of 10% to help rebuild the USA economy and prevent cheating; 10 year jail sentence for mishandling at the gate.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "10%",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1905",
+    "text": "Different stills are shown, presumably from different time points.",
+    "category": "strict_baseline",
+    "stage": "amr",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "presumably",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1931",
+    "text": "The presence of these logos possibly suggests that all of these parties were involved in the update.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "possibly",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1976",
+    "text": "The man in the blue blazer is presumably a lawyer or member of law enforcement.",
+    "category": "amr_annotated_coordination",
+    "stage": "annotated_coordination",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "presumably",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1991",
+    "text": "Rinderknecht repeatedly called 911 from the hilltop, allegedly to set up an alibi.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "allegedly",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1992",
+    "text": "When firefighters arrived, Rinderknecht allegedly followed them.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "allegedly",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1993",
+    "text": "Rinderknecht allegedly videotaped the firefighters.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "allegedly",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_1994",
+    "text": "Rinderknecht allegedly asked the firefighters if he could help them.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "allegedly",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TgR_u37mCoQ4_2013",
+    "text": "Investigators say the fire was probably set with a lighter used on the brush.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "probably",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2035",
+    "text": "Shi Yongxin is accused of allegedly embezzling temple assets.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "allegedly",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2114",
+    "text": "Therefore, the expulsion of Shi Yongxin is considered invalid.",
+    "category": "advisory_checks",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "proper_name_omission",
+        "source": "Shi Yongxin",
+        "missing": [
+          "shi",
+          "yongxin"
+        ],
+        "reason": "Part of an explicit multiword name is absent from the emitted predicates."
+      }
+    ]
+  },
+  {
+    "claim_id": "TzzhcBIczf_M_2124",
+    "text": "Shi Yongxin allegedly violated Buddhist precepts by maintaining illicit relationships with multiple women.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "allegedly",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2166",
+    "text": "The video takes place on a large, open paved pier or terminal area.",
+    "category": "earlier_srl",
+    "stage": "earlier_srl",
+    "alerts": [
+      {
+        "code": "alternative_missing",
+        "source": "or",
+        "reason": "The source contains an explicit alternative and the formula contains no OR."
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2186",
+    "text": "Songshan District in Taipei recorded 95.5 mm of rainfall.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "95.5 mm",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2218",
+    "text": "The AI-generated footage is likely intended to demonstrate the capsizing of a yacht mentioned later in the video.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2316",
+    "text": "Based on the trajectory shown, the coastal regions of Guangdong likely experienced severe heavy rainfall and high winds during landfall.",
+    "category": "amr_reentrancy",
+    "stage": "reentrant_amr",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2317",
+    "text": "Based on the trajectory shown, the coastal regions of Hainan likely experienced severe heavy rainfall and high winds during landfall.",
+    "category": "amr_reentrancy",
+    "stage": "reentrant_amr",
+    "alerts": [
+      {
+        "code": "qualification_scope_missing",
+        "source": "likely",
+        "reason": "An explicit qualifier has no matching qualification in the emitted program."
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2337",
+    "text": "The reporter states the typhoon passed 50km south of Hong Kong.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "50km",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2379",
+    "text": "The collapsed structure at Tin Po Building was over 100 meters long.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "100 meters",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  },
+  {
+    "claim_id": "Txf2EdqOg1SQ_2380",
+    "text": "The collapsed structure at Tin Po Building was nearly 20 meters high.",
+    "category": "strict_baseline",
+    "stage": "srl",
+    "alerts": [
+      {
+        "code": "measurement_unbound",
+        "source": "20 meters",
+        "reason": "An explicit numeric value and its unit lack a typed measurement binding."
+      }
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "total": 60,
+  "source_groups": 64,
+  "topics": 23,
+  "judgments": {
+    "partial": 20,
+    "incorrect": 16,
+    "matches_reference": 22,
+    "needs_context": 2
+  },
+  "by_bucket": {
+    "provisional": {
+      "partial": 10,
+      "incorrect": 11,
+      "matches_reference": 3
+    },
+    "strict_srl": {
+      "partial": 10,
+      "matches_reference": 19,
+      "incorrect": 5,
+      "needs_context": 2
+    }
+  },
+  "issues": {
+    "numeric binding": 5,
+    "source scope": 2,
+    "unit": 3,
+    "entity binding": 1,
+    "qualification": 5,
+    "clause scope": 1,
+    "none": 22,
+    "participant binding": 6,
+    "reported scope": 3,
+    "predicate omission": 2,
+    "comparative scope": 1,
+    "question scope": 1,
+    "temporal scope": 1,
+    "condition scope": 1,
+    "entity identity": 2,
+    "reported wording": 1,
+    "reference binding": 2,
+    "temporal binding": 1
+  },
+  "diagnostics": {
+    "prior_flagged": 17,
+    "sample_alerts": 7,
+    "sample_alerts_new_to_existing_checks": 6
+  },
+  "checked_corpus_programs": 2358,
+  "flagged_corpus_programs": 106,
+  "corpus_alert_codes": {
+    "measurement_unbound": 71,
+    "alternative_missing": 11,
+    "identifier_omission": 1,
+    "qualification_scope_missing": 28,
+    "proper_name_omission": 11,
+    "measurement_range_unbound": 24
+  },
+  "policy": "Source-diverse development benchmark audit. These are self-reviewed reference readings and saved candidate programs.",
+  "routing": "Advisory only. No program or routing change. Keep the 2,375-claim evaluation inventory."
+}

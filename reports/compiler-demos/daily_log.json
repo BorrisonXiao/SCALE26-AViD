@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-18",
   "timezone": "America/New_York",
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
@@ -13,7 +13,7 @@
         },
         {
           "text": "Completed context/noun fixes and all 2,375 cached claims: AMR 1,808 programs and 1,578 automatic passes, 21 gains/two new alerts, no lost generated cases.",
-          "href": "#remaining-failures",
+          "href": "#amr-contexts-status",
           "label": "Full results"
         },
         {
@@ -28,7 +28,7 @@
         },
         {
           "text": "Implemented the accepted SRL→AMR→bounded rewrite sequence: 2,177/2,375 automatic passes, 198 explicit parsing abstentions. All inputs remain counted.",
-          "href": "#remaining-failures",
+          "href": "#strict-fallback-overview",
           "label": "Fixed-sequence results",
           "fallback_entry": true
         },
@@ -73,6 +73,16 @@
           "href": "#binding-contrasts",
           "label": "Binding contrasts",
           "scope_repair_entry": true
+        },
+        {
+          "text": "Reviewed 60 new logical forms across 64 source videos. Found 22 full matches, 20 partial, 16 incorrect and two context-needed. The forms and five earlier binding pairs are reserved for evaluation development.",
+          "href": "#logical-form-benchmark",
+          "label": "All 60 logical-form reviews"
+        },
+        {
+          "text": "Checked 2,358 saved programs for missing names, measurements and scope. Confirmed seven warnings in the sample and queued 106 programs for follow-up.",
+          "href": "#benchmark-warnings",
+          "label": "Advisory warnings"
         }
       ]
     },
