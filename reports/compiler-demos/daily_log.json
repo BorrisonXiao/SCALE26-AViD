@@ -50,6 +50,16 @@
           "text": "Passed 26 exact inference controls on compiled forms. The speech test distinguishes complete reports, single assertions and incomplete transcripts. The rewrite test checks that the shared condition binds to the same truck.",
           "href": "#or-scope-controls",
           "label": "Evidence controls"
+        },
+        {
+          "text": "Compared three ways to check reported OR on 58 pairs from eight AMI recordings and controlled edits. The alternative comparison matches 54 judgments and whole-utterance entailment matches 42. Three compiled speech conditions support 18 exact DeepProbLog checks.",
+          "href": "#reported-or-transcripts",
+          "label": "Transcript evidence"
+        },
+        {
+          "text": "Ran the fixed direct compiler on 16 AVeriTeC claims from fresh source pages. Ten pass the checks, two match the frozen reading, and six produce no program. Negation and shared words across alternatives are exposed as remaining errors.",
+          "href": "#fresh-or-cases",
+          "label": "New-source cases"
         }
       ]
     },

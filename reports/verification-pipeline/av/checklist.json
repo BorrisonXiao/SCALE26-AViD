@@ -918,10 +918,26 @@
     {
       "id": 42,
       "title": "Test reported content and OR on new sources",
+      "status": "done",
+      "items": [
+        {
+          "text": "Tested eight speaker-aligned AMI utterances with complete and partial transcript evidence.",
+          "done": true
+        },
+        {
+          "text": "Ran the fixed direct compiler on 16 new source pages and reviewed the meaning of every output.",
+          "done": true
+        }
+      ],
+      "note": "Transcript alternative comparison matches 54 of 58 judgments. Three of eight claims preserve the full speech predicate, and all 18 selected DeepProbLog comparisons match. Ten of 16 new-source claims compile and two fully match the reference reading."
+    },
+    {
+      "id": 43,
+      "title": "Repair scope errors and broaden the speech test",
       "status": "planned",
       "items": [
-        "Use speaker-aligned complete and partial transcripts. Goal is to measure whether the speech evidence model can recover the full disjunction.",
-        "Review new ORs with ambiguous attachment and pronouns. Goal is to find where source scope and identity still need repair."
+        "Fix negation over OR, and preserve shared nouns and destinations across branches. Goal is to remove incorrect automatic passes and confirm the fixes on fresh claims.",
+        "Test naturally worded alternatives without “or” and vary the speaker and time windows. Goal is to see how the speech condition behaves when wording and alignment are less controlled."
       ]
     },
     {
@@ -935,7 +951,7 @@
       ]
     }
   ],
-  "intro": "The OR repairs now compile all twelve development claims. Keep the benchmark reserved for evaluation. Test real transcript evidence before building a training set.",
+  "intro": "The new-source audit measures both compilation and meaning. The transcript pilot shows how evidence for each alternative can support a reported OR. Repair the detected scope errors and test broader speech wording before fitting a relation model.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1002,5 +1018,6 @@
   "logical_form_review_run": "exp/probabilistic_verification/logical_form_review_20261118",
   "disjunction_repairs_run": "exp/probabilistic_verification/disjunction_repairs_20261119",
   "disjunction_evaluation_run": "exp/probabilistic_verification/disjunction_evaluation_20261119",
-  "disjunction_scope_run": "exp/probabilistic_verification/disjunction_scope_20261119"
+  "disjunction_scope_run": "exp/probabilistic_verification/disjunction_scope_20261119",
+  "or_source_evaluation_run": "exp/probabilistic_verification/or_source_evaluation_20261119"
 }
