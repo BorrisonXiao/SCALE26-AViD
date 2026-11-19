@@ -60,6 +60,21 @@
           "text": "Ran the fixed direct compiler on 16 AVeriTeC claims from fresh source pages. Ten pass the checks, two match the frozen reading, and six produce no program. Negation and shared words across alternatives are exposed as remaining errors.",
           "href": "#fresh-or-cases",
           "label": "New-source cases"
+        },
+        {
+          "text": "Fixed negation over OR and two kinds of shared content, and recovered one reported alternative. Both original errors are repaired. All 2,179 earlier corpus programs are byte-identical.",
+          "href": "#or-followup-compilation",
+          "label": "Logical form changes"
+        },
+        {
+          "text": "Checked genuine alternatives worded without “or,” plus crops, speaker and time shifts, and edited claims. The revised check matches 32 of 32 expected judgments, with speaker and timing supplied.",
+          "href": "#implicit-speech-cases",
+          "label": "Transcript cases"
+        },
+        {
+          "text": "Reviewed 12 new claim texts. Seven compile, and one fully matches the reading. “Without,” consequences and swapped roles remain. The targeted repair and transcript checks meet their stopping criteria.",
+          "href": "#or-followup-fresh",
+          "label": "Fresh claim audit"
         }
       ]
     },

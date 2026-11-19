@@ -934,10 +934,30 @@
     {
       "id": 43,
       "title": "Repair scope errors and broaden the speech test",
+      "status": "done",
+      "items": [
+        {
+          "text": "Repaired the two identified false passes and checked negation, shared destinations, and noun modifiers.",
+          "done": true
+        },
+        {
+          "text": "Reviewed twelve new source claims and reran all 2,375 original claims.",
+          "done": true
+        },
+        {
+          "text": "Compared naturally worded alternatives under complete, incomplete, wrong-speaker, and disjoint-time conditions.",
+          "done": true
+        }
+      ],
+      "note": "Both old false passes are repaired and all 2,179 corpus programs replay byte-identically. The new transcript test matches 32 of 32 development comparisons. The new-source audit has seven automatic passes and one full match."
+    },
+    {
+      "id": 44,
+      "title": "Check negative scope, consequences, and speaker alignment",
       "status": "planned",
       "items": [
-        "Fix negation over OR, and preserve shared nouns and destinations across branches. Goal is to remove incorrect automatic passes and confirm the fixes on fresh claims.",
-        "Test naturally worded alternatives without “or” and vary the speaker and time windows. Goal is to see how the speech condition behaves when wording and alignment are less controlled."
+        "Add fresh examples with “without” and obligations followed by a consequence. Goal is to catch additional scope errors before a binding study.",
+        "Compare supplied speaker and time with automatically proposed windows. Goal is to measure alignment risk on a small independently reviewed set."
       ]
     },
     {
@@ -951,7 +971,7 @@
       ]
     }
   ],
-  "intro": "The new-source audit measures both compilation and meaning. The transcript pilot shows how evidence for each alternative can support a reported OR. Repair the detected scope errors and test broader speech wording before fitting a relation model.",
+  "intro": "The targeted OR repairs and transcript pilot meet this round’s stopping criteria. A fresh audit still finds errors with negation and consequences. Check those patterns and test automatically proposed speaker windows before designing the training set.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1019,5 +1039,6 @@
   "disjunction_repairs_run": "exp/probabilistic_verification/disjunction_repairs_20261119",
   "disjunction_evaluation_run": "exp/probabilistic_verification/disjunction_evaluation_20261119",
   "disjunction_scope_run": "exp/probabilistic_verification/disjunction_scope_20261119",
-  "or_source_evaluation_run": "exp/probabilistic_verification/or_source_evaluation_20261119"
+  "or_source_evaluation_run": "exp/probabilistic_verification/or_source_evaluation_20261119",
+  "or_followup_run": "exp/probabilistic_verification/or_followup_20261119"
 }
