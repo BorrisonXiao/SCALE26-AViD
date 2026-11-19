@@ -46,7 +46,7 @@
         },
         {
           "text": "The coverage experiment produces 2,354/2,375 semantic programs (99.12%). 21 more claims produce only dependency analyses. Earlier strict checks pass 2,177, and targeted repairs bring that count to 2,183. Allowing already generated programs with warnings alone gives 2,280. Advisory outputs require review before evidence inference.",
-          "href": "#remaining-failures",
+          "href": "#earlier-coverage",
           "label": "Coverage comparison",
           "coverage_entry": true
         },
@@ -55,6 +55,24 @@
           "href": "#coverage-examples",
           "label": "Repairs and failure patterns",
           "coverage_entry": true
+        },
+        {
+          "text": "The scope repair pass recovers 4 provisional programs and raises coverage to 2,358/2,375 (99.28%). The remaining 17 claims have dependency analyses.",
+          "href": "#scope-repair-examples",
+          "label": "Scope repairs",
+          "scope_repair_entry": true
+        },
+        {
+          "text": "The 32-program development sample spans 33 source videos. It contains one full match, 13 partial readings and 18 incorrect readings. All 15 sampled outputs without a warning have a meaning problem. An explicit OR warning flags four of the 171 provisional programs.",
+          "href": "#scope-fidelity",
+          "label": "Fidelity audit",
+          "scope_repair_entry": true
+        },
+        {
+          "text": "Five reviewed frame-based pairs supply ten examples. Three development clips and two reserved clips have disjoint source IDs and video hashes. Three pairs use visual attributes and two use OCR. Ten ProbLog checks with manual assignments return the expected labels. No frozen features were extracted for this protocol.",
+          "href": "#binding-contrasts",
+          "label": "Binding contrasts",
+          "scope_repair_entry": true
         }
       ]
     },

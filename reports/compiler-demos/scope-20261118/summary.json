@@ -1,0 +1,12 @@
+{
+  "total": 2375,
+  "tried": 21,
+  "recovered": 4,
+  "previous_semantic": 2354,
+  "current_semantic": 2358,
+  "dependency_only": 17,
+  "strict_after_repairs": 2183,
+  "failure_codes": {
+    "no_source_licensed_edit": 17
+  }
+}

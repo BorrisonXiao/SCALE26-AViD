@@ -834,11 +834,30 @@
     {
       "id": 36,
       "title": "Resolve remaining scopes and prepare binding evidence",
+      "status": "scope experiment and binding pilot complete",
+      "items": [
+        {
+          "text": "The scope repair pass recovers 4 provisional programs and raises coverage to 2,358/2,375 (99.28%). The remaining 17 claims have dependency analyses.",
+          "done": true
+        },
+        {
+          "text": "The 32-program development sample spans 33 source videos. It contains one full match, 13 partial readings and 18 incorrect readings. All 15 sampled outputs without a warning have a meaning problem. An explicit OR warning flags four of the 171 provisional programs.",
+          "done": true
+        },
+        {
+          "text": "Five reviewed frame-based pairs supply ten examples. Three development clips and two reserved clips have disjoint source IDs and video hashes. Three pairs use visual attributes and two use OCR. Ten ProbLog checks with manual assignments return the expected labels. No frozen features were extracted for this protocol.",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Prepare features and a binding baseline",
       "status": "planned",
       "items": [
-        "Resolve event references and OR branches. Goal: compile more of the remaining claims with the correct scope.",
-        "Review warnings by source group. Goal: estimate meaning preservation and catch misleading primary passes.",
-        "Inspect source-disjoint evidence labels and binding edits. Goal: prepare controls for relation learning."
+        "Review complete forms and add entity, number and source checks. Goal is to avoid training on wrong bindings.",
+        "Extract frozen features for both assignments. Goal is to use identical evidence with no variant or label leakage.",
+        "Add speech and audio pairs and compare the binding model with a no-binding baseline. Goal is to isolate binding gains."
       ]
     }
   ],
@@ -904,5 +923,6 @@
   "amr_types_run": "exp/probabilistic_verification/amr_types_20261115",
   "amr_contexts_run": "exp/probabilistic_verification/amr_contexts_20261118",
   "compiler_fallback_run": "exp/probabilistic_verification/compiler_fallback_20261118",
-  "compiler_coverage_run": "exp/probabilistic_verification/compiler_coverage_20261118"
+  "compiler_coverage_run": "exp/probabilistic_verification/compiler_coverage_20261118",
+  "compiler_scope_run": "exp/probabilistic_verification/compiler_scope_20261118"
 }

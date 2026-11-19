@@ -1,0 +1,14 @@
+{
+  "original_claims": 2375,
+  "strict_programs": 2183,
+  "provisional_semantic_programs": 175,
+  "recovered_grounded_programs": 4,
+  "previous_selections_preserved": 2371,
+  "dependency_analyses": 17,
+  "reviewed_programs": 32,
+  "checked_ruling_binding": true,
+  "paired_logic_controls": 10,
+  "source_disjoint": true,
+  "frozen_feature_extractions": 0,
+  "status": "passed"
+}

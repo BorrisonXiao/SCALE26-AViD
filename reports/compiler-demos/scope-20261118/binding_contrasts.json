@@ -1,0 +1,1648 @@
+{
+  "pairs": [
+    {
+      "pair_id": "vehicle_colors",
+      "split": "development",
+      "media_route": "visual_depiction",
+      "source_video": "zlD_zgNiYJkRV1PS",
+      "frames": [
+        {
+          "source_video": "zlD_zgNiYJkRV1PS",
+          "clip": "zlD_zgNiYJkRV1PS_0000.mp4",
+          "video_sha256": "912d8560e4a3efe0d65f8eaa27c7656fd70c49327b0664a2b9be86ce0e73897c",
+          "requested_seconds": 2.0,
+          "frame_index": 60,
+          "frame_seconds": 1.99507,
+          "image": "zlD_zgNiYJkRV1PS_2.00.png",
+          "image_sha256": "0b68ff0056864aa8d552f693209244877a8b49c2394cc26d36def245e4272b74"
+        },
+        {
+          "source_video": "zlD_zgNiYJkRV1PS",
+          "clip": "zlD_zgNiYJkRV1PS_0000.mp4",
+          "video_sha256": "912d8560e4a3efe0d65f8eaa27c7656fd70c49327b0664a2b9be86ce0e73897c",
+          "requested_seconds": 5.0,
+          "frame_index": 150,
+          "frame_seconds": 4.98767,
+          "image": "zlD_zgNiYJkRV1PS_5.00.png",
+          "image_sha256": "28e260f7a0a9340807c5ec2c17a3182eb6dbe00ffebbc64b4ff8f2420b302626"
+        }
+      ],
+      "candidates": [
+        "cargo aircraft",
+        "school bus"
+      ],
+      "review": "The 2.00 s frame shows the gray fuselage and engines. The 5.00 s frame shows the yellow school bus.",
+      "examples": [
+        {
+          "variant": "observed",
+          "claim": "The cargo aircraft is gray and the school bus is yellow.",
+          "label": "supported",
+          "paired_route": "visual_depiction",
+          "audio_event": "unknown",
+          "speech_assertion": "unknown",
+          "bindings": [
+            [
+              "cargo aircraft",
+              "gray"
+            ],
+            [
+              "school bus",
+              "yellow"
+            ]
+          ],
+          "logical_form": {
+            "claim_id": "vehicle_colors:observed",
+            "text": "The cargo aircraft is gray and the school bus is yellow.",
+            "tokens": [],
+            "variables": [
+              {
+                "name": "X1",
+                "kind": "entity",
+                "description": "cargo aircraft",
+                "token_ids": []
+              },
+              {
+                "name": "X2",
+                "kind": "entity",
+                "description": "school bus",
+                "token_ids": []
+              }
+            ],
+            "atoms": [
+              {
+                "id": "a1",
+                "predicate": "property",
+                "arguments": [
+                  "X1",
+                  "color",
+                  "gray",
+                  "scope",
+                  "zlD_zgNiYJkRV1PS_frame_60",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "gray",
+                "token_ids": [],
+                "trainable": true
+              },
+              {
+                "id": "a2",
+                "predicate": "property",
+                "arguments": [
+                  "X2",
+                  "color",
+                  "yellow",
+                  "scope",
+                  "zlD_zgNiYJkRV1PS_frame_150",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "yellow",
+                "token_ids": [],
+                "trainable": true
+              }
+            ],
+            "expression": {
+              "op": "exists",
+              "children": [
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [
+                "X1",
+                "X2"
+              ],
+              "state": ""
+            },
+            "coverage": [],
+            "warnings": [],
+            "version": "logical-form-v2",
+            "metadata": {
+              "scopes": {
+                "zlD_zgNiYJkRV1PS_frame_60": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "visual_depiction",
+                  "frame_seconds": 1.99507
+                },
+                "zlD_zgNiYJkRV1PS_frame_150": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "visual_depiction",
+                  "frame_seconds": 4.98767
+                }
+              },
+              "allowed_routes": {
+                "a1": [
+                  "visual_depiction"
+                ],
+                "a2": [
+                  "visual_depiction"
+                ]
+              },
+              "kind": "claim",
+              "supplied_candidates": true
+            },
+            "status": "compiled",
+            "logical_form": "EXISTS X1, X2: ((property(X1, color, gray, scope, zlD_zgNiYJkRV1PS_frame_60, route, visual_depiction) AND property(X2, color, yellow, scope, zlD_zgNiYJkRV1PS_frame_150, route, visual_depiction)))"
+          },
+          "program_sha256": "9c35169f8b75619bf2006d7d1055ce345205465ace8de1052aedccebfe2d0f1f",
+          "logic_control": {
+            "supported": 1.0,
+            "refuted": 0.0,
+            "unknown": 0.0
+          }
+        },
+        {
+          "variant": "swapped",
+          "claim": "The cargo aircraft is yellow and the school bus is gray.",
+          "label": "refuted",
+          "paired_route": "visual_depiction",
+          "audio_event": "unknown",
+          "speech_assertion": "unknown",
+          "bindings": [
+            [
+              "cargo aircraft",
+              "yellow"
+            ],
+            [
+              "school bus",
+              "gray"
+            ]
+          ],
+          "logical_form": {
+            "claim_id": "vehicle_colors:swapped",
+            "text": "The cargo aircraft is yellow and the school bus is gray.",
+            "tokens": [],
+            "variables": [
+              {
+                "name": "X1",
+                "kind": "entity",
+                "description": "cargo aircraft",
+                "token_ids": []
+              },
+              {
+                "name": "X2",
+                "kind": "entity",
+                "description": "school bus",
+                "token_ids": []
+              }
+            ],
+            "atoms": [
+              {
+                "id": "a1",
+                "predicate": "property",
+                "arguments": [
+                  "X1",
+                  "color",
+                  "yellow",
+                  "scope",
+                  "zlD_zgNiYJkRV1PS_frame_60",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "yellow",
+                "token_ids": [],
+                "trainable": true
+              },
+              {
+                "id": "a2",
+                "predicate": "property",
+                "arguments": [
+                  "X2",
+                  "color",
+                  "gray",
+                  "scope",
+                  "zlD_zgNiYJkRV1PS_frame_150",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "gray",
+                "token_ids": [],
+                "trainable": true
+              }
+            ],
+            "expression": {
+              "op": "exists",
+              "children": [
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [
+                "X1",
+                "X2"
+              ],
+              "state": ""
+            },
+            "coverage": [],
+            "warnings": [],
+            "version": "logical-form-v2",
+            "metadata": {
+              "scopes": {
+                "zlD_zgNiYJkRV1PS_frame_60": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "visual_depiction",
+                  "frame_seconds": 1.99507
+                },
+                "zlD_zgNiYJkRV1PS_frame_150": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "visual_depiction",
+                  "frame_seconds": 4.98767
+                }
+              },
+              "allowed_routes": {
+                "a1": [
+                  "visual_depiction"
+                ],
+                "a2": [
+                  "visual_depiction"
+                ]
+              },
+              "kind": "claim",
+              "supplied_candidates": true
+            },
+            "status": "compiled",
+            "logical_form": "EXISTS X1, X2: ((property(X1, color, yellow, scope, zlD_zgNiYJkRV1PS_frame_60, route, visual_depiction) AND property(X2, color, gray, scope, zlD_zgNiYJkRV1PS_frame_150, route, visual_depiction)))"
+          },
+          "program_sha256": "8603c5ee7fea69a3f9d8c3a12bd4c103e191ba3f84bfd64bb589dd7cabc60a8c",
+          "logic_control": {
+            "supported": 0.0,
+            "refuted": 1.0,
+            "unknown": 0.0
+          }
+        }
+      ],
+      "vocabulary_matched": true,
+      "prior_checked_claim_ids": []
+    },
+    {
+      "pair_id": "road_dates",
+      "split": "development",
+      "media_route": "ocr_assertion",
+      "source_video": "M2dVSDPilbnrmb73",
+      "frames": [
+        {
+          "source_video": "M2dVSDPilbnrmb73",
+          "clip": "M2dVSDPilbnrmb73_0000.mp4",
+          "video_sha256": "79de941af378a8f9ed72d469e370bf98d94b18ab813493b0bcd3a43c8fe8f63c",
+          "requested_seconds": 57.92,
+          "frame_index": 3472,
+          "frame_seconds": 57.92453,
+          "image": "M2dVSDPilbnrmb73_57.92.png",
+          "image_sha256": "73ad482bda72c996643e6dad00d56f3771f4e0488111d6eaed319994cb4dbc72"
+        },
+        {
+          "source_video": "M2dVSDPilbnrmb73",
+          "clip": "M2dVSDPilbnrmb73_0000.mp4",
+          "video_sha256": "79de941af378a8f9ed72d469e370bf98d94b18ab813493b0bcd3a43c8fe8f63c",
+          "requested_seconds": 57.92,
+          "frame_index": 3472,
+          "frame_seconds": 57.92453,
+          "image": "M2dVSDPilbnrmb73_57.92.png",
+          "image_sha256": "73ad482bda72c996643e6dad00d56f3771f4e0488111d6eaed319994cb4dbc72"
+        }
+      ],
+      "candidates": [
+        "left panel date label",
+        "right panel date label"
+      ],
+      "review": "In the side-by-side view, the two dates are printed directly above their respective road panels.",
+      "examples": [
+        {
+          "variant": "observed",
+          "claim": "The left panel is labeled \"APRIL 21, 2020\" and the right panel is labeled \"JANUARY 23, 2025\".",
+          "label": "supported",
+          "paired_route": "ocr_assertion",
+          "audio_event": "unknown",
+          "speech_assertion": "unknown",
+          "bindings": [
+            [
+              "left panel date label",
+              "APRIL 21, 2020"
+            ],
+            [
+              "right panel date label",
+              "JANUARY 23, 2025"
+            ]
+          ],
+          "logical_form": {
+            "claim_id": "road_dates:observed",
+            "text": "The left panel is labeled \"APRIL 21, 2020\" and the right panel is labeled \"JANUARY 23, 2025\".",
+            "tokens": [],
+            "variables": [
+              {
+                "name": "X1",
+                "kind": "entity",
+                "description": "left panel date label",
+                "token_ids": []
+              },
+              {
+                "name": "X2",
+                "kind": "entity",
+                "description": "right panel date label",
+                "token_ids": []
+              }
+            ],
+            "atoms": [
+              {
+                "id": "a1",
+                "predicate": "written_text",
+                "arguments": [
+                  "X1",
+                  "APRIL 21, 2020",
+                  "scope",
+                  "M2dVSDPilbnrmb73_frame_3472",
+                  "route",
+                  "ocr_assertion"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "APRIL 21, 2020",
+                "token_ids": [],
+                "trainable": true
+              },
+              {
+                "id": "a2",
+                "predicate": "written_text",
+                "arguments": [
+                  "X2",
+                  "JANUARY 23, 2025",
+                  "scope",
+                  "M2dVSDPilbnrmb73_frame_3472",
+                  "route",
+                  "ocr_assertion"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "JANUARY 23, 2025",
+                "token_ids": [],
+                "trainable": true
+              }
+            ],
+            "expression": {
+              "op": "exists",
+              "children": [
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [
+                "X1",
+                "X2"
+              ],
+              "state": ""
+            },
+            "coverage": [],
+            "warnings": [],
+            "version": "logical-form-v2",
+            "metadata": {
+              "scopes": {
+                "M2dVSDPilbnrmb73_frame_3472": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "ocr_assertion",
+                  "frame_seconds": 57.92453
+                }
+              },
+              "allowed_routes": {
+                "a1": [
+                  "ocr_assertion"
+                ],
+                "a2": [
+                  "ocr_assertion"
+                ]
+              },
+              "kind": "claim",
+              "supplied_candidates": true
+            },
+            "status": "compiled",
+            "logical_form": "EXISTS X1, X2: ((written_text(X1, APRIL 21, 2020, scope, M2dVSDPilbnrmb73_frame_3472, route, ocr_assertion) AND written_text(X2, JANUARY 23, 2025, scope, M2dVSDPilbnrmb73_frame_3472, route, ocr_assertion)))"
+          },
+          "program_sha256": "df62c274c59ca740580549dfb5af089d58346a4ac819f27588f3d43c23e69464",
+          "logic_control": {
+            "supported": 1.0,
+            "refuted": 0.0,
+            "unknown": 0.0
+          }
+        },
+        {
+          "variant": "swapped",
+          "claim": "The left panel is labeled \"JANUARY 23, 2025\" and the right panel is labeled \"APRIL 21, 2020\".",
+          "label": "refuted",
+          "paired_route": "ocr_assertion",
+          "audio_event": "unknown",
+          "speech_assertion": "unknown",
+          "bindings": [
+            [
+              "left panel date label",
+              "JANUARY 23, 2025"
+            ],
+            [
+              "right panel date label",
+              "APRIL 21, 2020"
+            ]
+          ],
+          "logical_form": {
+            "claim_id": "road_dates:swapped",
+            "text": "The left panel is labeled \"JANUARY 23, 2025\" and the right panel is labeled \"APRIL 21, 2020\".",
+            "tokens": [],
+            "variables": [
+              {
+                "name": "X1",
+                "kind": "entity",
+                "description": "left panel date label",
+                "token_ids": []
+              },
+              {
+                "name": "X2",
+                "kind": "entity",
+                "description": "right panel date label",
+                "token_ids": []
+              }
+            ],
+            "atoms": [
+              {
+                "id": "a1",
+                "predicate": "written_text",
+                "arguments": [
+                  "X1",
+                  "JANUARY 23, 2025",
+                  "scope",
+                  "M2dVSDPilbnrmb73_frame_3472",
+                  "route",
+                  "ocr_assertion"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "JANUARY 23, 2025",
+                "token_ids": [],
+                "trainable": true
+              },
+              {
+                "id": "a2",
+                "predicate": "written_text",
+                "arguments": [
+                  "X2",
+                  "APRIL 21, 2020",
+                  "scope",
+                  "M2dVSDPilbnrmb73_frame_3472",
+                  "route",
+                  "ocr_assertion"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "APRIL 21, 2020",
+                "token_ids": [],
+                "trainable": true
+              }
+            ],
+            "expression": {
+              "op": "exists",
+              "children": [
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [
+                "X1",
+                "X2"
+              ],
+              "state": ""
+            },
+            "coverage": [],
+            "warnings": [],
+            "version": "logical-form-v2",
+            "metadata": {
+              "scopes": {
+                "M2dVSDPilbnrmb73_frame_3472": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "ocr_assertion",
+                  "frame_seconds": 57.92453
+                }
+              },
+              "allowed_routes": {
+                "a1": [
+                  "ocr_assertion"
+                ],
+                "a2": [
+                  "ocr_assertion"
+                ]
+              },
+              "kind": "claim",
+              "supplied_candidates": true
+            },
+            "status": "compiled",
+            "logical_form": "EXISTS X1, X2: ((written_text(X1, JANUARY 23, 2025, scope, M2dVSDPilbnrmb73_frame_3472, route, ocr_assertion) AND written_text(X2, APRIL 21, 2020, scope, M2dVSDPilbnrmb73_frame_3472, route, ocr_assertion)))"
+          },
+          "program_sha256": "8709ee463dce53d4eb478f47749d1ff421c8aabc418307216d05f78a31591b19",
+          "logic_control": {
+            "supported": 0.0,
+            "refuted": 1.0,
+            "unknown": 0.0
+          }
+        }
+      ],
+      "vocabulary_matched": true,
+      "prior_checked_claim_ids": [
+        "TgR_u37mCoQ4_1878"
+      ]
+    },
+    {
+      "pair_id": "sails_and_caption",
+      "split": "development",
+      "media_route": "visual_depiction",
+      "source_video": "gzD8zHnzVeSzQ0lX",
+      "frames": [
+        {
+          "source_video": "gzD8zHnzVeSzQ0lX",
+          "clip": "gzD8zHnzVeSzQ0lX_0000.mp4",
+          "video_sha256": "7fb79f9516264b920d00ea84d4b4990796112c912df02448d22ee96daaeeaaeb",
+          "requested_seconds": 34.77,
+          "frame_index": 1043,
+          "frame_seconds": 34.76667,
+          "image": "gzD8zHnzVeSzQ0lX_34.77.png",
+          "image_sha256": "955a77ede36d567b7bd52c90512ed7e63220d3e70da586933b4534f6bcca3f22"
+        },
+        {
+          "source_video": "gzD8zHnzVeSzQ0lX",
+          "clip": "gzD8zHnzVeSzQ0lX_0000.mp4",
+          "video_sha256": "7fb79f9516264b920d00ea84d4b4990796112c912df02448d22ee96daaeeaaeb",
+          "requested_seconds": 34.77,
+          "frame_index": 1043,
+          "frame_seconds": 34.76667,
+          "image": "gzD8zHnzVeSzQ0lX_34.77.png",
+          "image_sha256": "955a77ede36d567b7bd52c90512ed7e63220d3e70da586933b4534f6bcca3f22"
+        }
+      ],
+      "candidates": [
+        "large rectangular sails",
+        "bottom username"
+      ],
+      "review": "The prominent rectangular sails are lit red. The bottom username @rt_russian is rendered white. The target property is the displayed color.",
+      "examples": [
+        {
+          "variant": "observed",
+          "claim": "The large rectangular sails are red and the bottom username is white.",
+          "label": "supported",
+          "paired_route": "visual_depiction",
+          "audio_event": "unknown",
+          "speech_assertion": "unknown",
+          "bindings": [
+            [
+              "large rectangular sails",
+              "red"
+            ],
+            [
+              "bottom username",
+              "white"
+            ]
+          ],
+          "logical_form": {
+            "claim_id": "sails_and_caption:observed",
+            "text": "The large rectangular sails are red and the bottom username is white.",
+            "tokens": [],
+            "variables": [
+              {
+                "name": "X1",
+                "kind": "entity",
+                "description": "large rectangular sails",
+                "token_ids": []
+              },
+              {
+                "name": "X2",
+                "kind": "entity",
+                "description": "bottom username",
+                "token_ids": []
+              }
+            ],
+            "atoms": [
+              {
+                "id": "a1",
+                "predicate": "property",
+                "arguments": [
+                  "X1",
+                  "color",
+                  "red",
+                  "scope",
+                  "gzD8zHnzVeSzQ0lX_frame_1043",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "red",
+                "token_ids": [],
+                "trainable": true
+              },
+              {
+                "id": "a2",
+                "predicate": "property",
+                "arguments": [
+                  "X2",
+                  "color",
+                  "white",
+                  "scope",
+                  "gzD8zHnzVeSzQ0lX_frame_1043",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "white",
+                "token_ids": [],
+                "trainable": true
+              }
+            ],
+            "expression": {
+              "op": "exists",
+              "children": [
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [
+                "X1",
+                "X2"
+              ],
+              "state": ""
+            },
+            "coverage": [],
+            "warnings": [],
+            "version": "logical-form-v2",
+            "metadata": {
+              "scopes": {
+                "gzD8zHnzVeSzQ0lX_frame_1043": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "visual_depiction",
+                  "frame_seconds": 34.76667
+                }
+              },
+              "allowed_routes": {
+                "a1": [
+                  "visual_depiction"
+                ],
+                "a2": [
+                  "visual_depiction"
+                ]
+              },
+              "kind": "claim",
+              "supplied_candidates": true
+            },
+            "status": "compiled",
+            "logical_form": "EXISTS X1, X2: ((property(X1, color, red, scope, gzD8zHnzVeSzQ0lX_frame_1043, route, visual_depiction) AND property(X2, color, white, scope, gzD8zHnzVeSzQ0lX_frame_1043, route, visual_depiction)))"
+          },
+          "program_sha256": "d97bbc7b13bc6ec691fe1ffb69aca66b224fca9a414488c6bbc465da07f9deee",
+          "logic_control": {
+            "supported": 1.0,
+            "refuted": 0.0,
+            "unknown": 0.0
+          }
+        },
+        {
+          "variant": "swapped",
+          "claim": "The large rectangular sails are white and the bottom username is red.",
+          "label": "refuted",
+          "paired_route": "visual_depiction",
+          "audio_event": "unknown",
+          "speech_assertion": "unknown",
+          "bindings": [
+            [
+              "large rectangular sails",
+              "white"
+            ],
+            [
+              "bottom username",
+              "red"
+            ]
+          ],
+          "logical_form": {
+            "claim_id": "sails_and_caption:swapped",
+            "text": "The large rectangular sails are white and the bottom username is red.",
+            "tokens": [],
+            "variables": [
+              {
+                "name": "X1",
+                "kind": "entity",
+                "description": "large rectangular sails",
+                "token_ids": []
+              },
+              {
+                "name": "X2",
+                "kind": "entity",
+                "description": "bottom username",
+                "token_ids": []
+              }
+            ],
+            "atoms": [
+              {
+                "id": "a1",
+                "predicate": "property",
+                "arguments": [
+                  "X1",
+                  "color",
+                  "white",
+                  "scope",
+                  "gzD8zHnzVeSzQ0lX_frame_1043",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "white",
+                "token_ids": [],
+                "trainable": true
+              },
+              {
+                "id": "a2",
+                "predicate": "property",
+                "arguments": [
+                  "X2",
+                  "color",
+                  "red",
+                  "scope",
+                  "gzD8zHnzVeSzQ0lX_frame_1043",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "red",
+                "token_ids": [],
+                "trainable": true
+              }
+            ],
+            "expression": {
+              "op": "exists",
+              "children": [
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [
+                "X1",
+                "X2"
+              ],
+              "state": ""
+            },
+            "coverage": [],
+            "warnings": [],
+            "version": "logical-form-v2",
+            "metadata": {
+              "scopes": {
+                "gzD8zHnzVeSzQ0lX_frame_1043": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "visual_depiction",
+                  "frame_seconds": 34.76667
+                }
+              },
+              "allowed_routes": {
+                "a1": [
+                  "visual_depiction"
+                ],
+                "a2": [
+                  "visual_depiction"
+                ]
+              },
+              "kind": "claim",
+              "supplied_candidates": true
+            },
+            "status": "compiled",
+            "logical_form": "EXISTS X1, X2: ((property(X1, color, white, scope, gzD8zHnzVeSzQ0lX_frame_1043, route, visual_depiction) AND property(X2, color, red, scope, gzD8zHnzVeSzQ0lX_frame_1043, route, visual_depiction)))"
+          },
+          "program_sha256": "51c93eb1474e806f15e0b9c63a32aca363a4cf21061a51cbbc9bd221e32dd613",
+          "logic_control": {
+            "supported": 0.0,
+            "refuted": 1.0,
+            "unknown": 0.0
+          }
+        }
+      ],
+      "vocabulary_matched": true,
+      "prior_checked_claim_ids": [
+        "TQKCK6-tRaoE_662",
+        "TQKCK6-tRaoE_675"
+      ]
+    },
+    {
+      "pair_id": "tie_colors",
+      "split": "reserved",
+      "media_route": "visual_depiction",
+      "source_video": "J2vYKin5lPXfBgGb",
+      "frames": [
+        {
+          "source_video": "J2vYKin5lPXfBgGb",
+          "clip": "J2vYKin5lPXfBgGb_0000.mp4",
+          "video_sha256": "776c49e3bcfac3a0be2d3b3047ef8e571d0e5bb1670d716657b46e5454e6393b",
+          "requested_seconds": 4.2,
+          "frame_index": 126,
+          "frame_seconds": 4.2042,
+          "image": "J2vYKin5lPXfBgGb_4.20.png",
+          "image_sha256": "6fe365b1d74e561d996283e8647d00234c2de174ec0e36348eba52edefe1942c"
+        },
+        {
+          "source_video": "J2vYKin5lPXfBgGb",
+          "clip": "J2vYKin5lPXfBgGb_0000.mp4",
+          "video_sha256": "776c49e3bcfac3a0be2d3b3047ef8e571d0e5bb1670d716657b46e5454e6393b",
+          "requested_seconds": 32.43,
+          "frame_index": 972,
+          "frame_seconds": 32.4324,
+          "image": "J2vYKin5lPXfBgGb_32.43.png",
+          "image_sha256": "97aa875e1bf8c95361c3b7c0b12964956345a4746a932ea6e932812ce4173d10"
+        }
+      ],
+      "candidates": [
+        "Mark Carney tie",
+        "Donald Trump tie"
+      ],
+      "review": "The Carney lower-third and dark blue tie are visible at 4.20 s. The Trump photo shows a red tie at 32.43 s. The two frames supply separate observations.",
+      "examples": [
+        {
+          "variant": "observed",
+          "claim": "Mark Carney has a blue tie and Donald Trump has a red tie.",
+          "label": "supported",
+          "paired_route": "visual_depiction",
+          "audio_event": "unknown",
+          "speech_assertion": "unknown",
+          "bindings": [
+            [
+              "Mark Carney tie",
+              "blue"
+            ],
+            [
+              "Donald Trump tie",
+              "red"
+            ]
+          ],
+          "logical_form": {
+            "claim_id": "tie_colors:observed",
+            "text": "Mark Carney has a blue tie and Donald Trump has a red tie.",
+            "tokens": [],
+            "variables": [
+              {
+                "name": "X1",
+                "kind": "entity",
+                "description": "Mark Carney tie",
+                "token_ids": []
+              },
+              {
+                "name": "X2",
+                "kind": "entity",
+                "description": "Donald Trump tie",
+                "token_ids": []
+              }
+            ],
+            "atoms": [
+              {
+                "id": "a1",
+                "predicate": "property",
+                "arguments": [
+                  "X1",
+                  "color",
+                  "blue",
+                  "scope",
+                  "J2vYKin5lPXfBgGb_frame_126",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "blue",
+                "token_ids": [],
+                "trainable": true
+              },
+              {
+                "id": "a2",
+                "predicate": "property",
+                "arguments": [
+                  "X2",
+                  "color",
+                  "red",
+                  "scope",
+                  "J2vYKin5lPXfBgGb_frame_972",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "red",
+                "token_ids": [],
+                "trainable": true
+              }
+            ],
+            "expression": {
+              "op": "exists",
+              "children": [
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [
+                "X1",
+                "X2"
+              ],
+              "state": ""
+            },
+            "coverage": [],
+            "warnings": [],
+            "version": "logical-form-v2",
+            "metadata": {
+              "scopes": {
+                "J2vYKin5lPXfBgGb_frame_126": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "visual_depiction",
+                  "frame_seconds": 4.2042
+                },
+                "J2vYKin5lPXfBgGb_frame_972": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "visual_depiction",
+                  "frame_seconds": 32.4324
+                }
+              },
+              "allowed_routes": {
+                "a1": [
+                  "visual_depiction"
+                ],
+                "a2": [
+                  "visual_depiction"
+                ]
+              },
+              "kind": "claim",
+              "supplied_candidates": true
+            },
+            "status": "compiled",
+            "logical_form": "EXISTS X1, X2: ((property(X1, color, blue, scope, J2vYKin5lPXfBgGb_frame_126, route, visual_depiction) AND property(X2, color, red, scope, J2vYKin5lPXfBgGb_frame_972, route, visual_depiction)))"
+          },
+          "program_sha256": "e2aaa4a5ab292e462414429d9fd6f9a4235b8e15d3a5405d5e9673c18f56d6e9",
+          "logic_control": {
+            "supported": 1.0,
+            "refuted": 0.0,
+            "unknown": 0.0
+          }
+        },
+        {
+          "variant": "swapped",
+          "claim": "Mark Carney has a red tie and Donald Trump has a blue tie.",
+          "label": "refuted",
+          "paired_route": "visual_depiction",
+          "audio_event": "unknown",
+          "speech_assertion": "unknown",
+          "bindings": [
+            [
+              "Mark Carney tie",
+              "red"
+            ],
+            [
+              "Donald Trump tie",
+              "blue"
+            ]
+          ],
+          "logical_form": {
+            "claim_id": "tie_colors:swapped",
+            "text": "Mark Carney has a red tie and Donald Trump has a blue tie.",
+            "tokens": [],
+            "variables": [
+              {
+                "name": "X1",
+                "kind": "entity",
+                "description": "Mark Carney tie",
+                "token_ids": []
+              },
+              {
+                "name": "X2",
+                "kind": "entity",
+                "description": "Donald Trump tie",
+                "token_ids": []
+              }
+            ],
+            "atoms": [
+              {
+                "id": "a1",
+                "predicate": "property",
+                "arguments": [
+                  "X1",
+                  "color",
+                  "red",
+                  "scope",
+                  "J2vYKin5lPXfBgGb_frame_126",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "red",
+                "token_ids": [],
+                "trainable": true
+              },
+              {
+                "id": "a2",
+                "predicate": "property",
+                "arguments": [
+                  "X2",
+                  "color",
+                  "blue",
+                  "scope",
+                  "J2vYKin5lPXfBgGb_frame_972",
+                  "route",
+                  "visual_depiction"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "blue",
+                "token_ids": [],
+                "trainable": true
+              }
+            ],
+            "expression": {
+              "op": "exists",
+              "children": [
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [
+                "X1",
+                "X2"
+              ],
+              "state": ""
+            },
+            "coverage": [],
+            "warnings": [],
+            "version": "logical-form-v2",
+            "metadata": {
+              "scopes": {
+                "J2vYKin5lPXfBgGb_frame_126": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "visual_depiction",
+                  "frame_seconds": 4.2042
+                },
+                "J2vYKin5lPXfBgGb_frame_972": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "visual_depiction",
+                  "frame_seconds": 32.4324
+                }
+              },
+              "allowed_routes": {
+                "a1": [
+                  "visual_depiction"
+                ],
+                "a2": [
+                  "visual_depiction"
+                ]
+              },
+              "kind": "claim",
+              "supplied_candidates": true
+            },
+            "status": "compiled",
+            "logical_form": "EXISTS X1, X2: ((property(X1, color, red, scope, J2vYKin5lPXfBgGb_frame_126, route, visual_depiction) AND property(X2, color, blue, scope, J2vYKin5lPXfBgGb_frame_972, route, visual_depiction)))"
+          },
+          "program_sha256": "e494f888a1016a1532decb38bd5c72d8260731eb5ea519809357948dd3019301",
+          "logic_control": {
+            "supported": 0.0,
+            "refuted": 1.0,
+            "unknown": 0.0
+          }
+        }
+      ],
+      "vocabulary_matched": true,
+      "prior_checked_claim_ids": [
+        "TFgw4IaR9R8s_1695",
+        "TQEmEycTI0RQ_836"
+      ]
+    },
+    {
+      "pair_id": "corner_logos",
+      "split": "reserved",
+      "media_route": "ocr_assertion",
+      "source_video": "AHROLHmgvOS9veQ2",
+      "frames": [
+        {
+          "source_video": "AHROLHmgvOS9veQ2",
+          "clip": "AHROLHmgvOS9veQ2_0000.mp4",
+          "video_sha256": "8c1f0d3ab2770772eaa3955640ca033330233d8ce452412a8b67438376b416a4",
+          "requested_seconds": 0.8,
+          "frame_index": 20,
+          "frame_seconds": 0.8,
+          "image": "AHROLHmgvOS9veQ2_0.80.png",
+          "image_sha256": "e94f680e10e11c23c2a18d70848784521bfa1b63fdcb99b598ea9775d1859ffc"
+        },
+        {
+          "source_video": "AHROLHmgvOS9veQ2",
+          "clip": "AHROLHmgvOS9veQ2_0000.mp4",
+          "video_sha256": "8c1f0d3ab2770772eaa3955640ca033330233d8ce452412a8b67438376b416a4",
+          "requested_seconds": 0.8,
+          "frame_index": 20,
+          "frame_seconds": 0.8,
+          "image": "AHROLHmgvOS9veQ2_0.80.png",
+          "image_sha256": "e94f680e10e11c23c2a18d70848784521bfa1b63fdcb99b598ea9775d1859ffc"
+        }
+      ],
+      "candidates": [
+        "upper left logo",
+        "upper right logo"
+      ],
+      "review": "The red 7 and NEWS.com.au are in a stacked logo on the left. The orange sunrise wordmark is on the right. Whitespace between stacked lines is normalized.",
+      "examples": [
+        {
+          "variant": "observed",
+          "claim": "The upper left logo displays \"7 NEWS .com.au\" and the upper right logo displays \"sunrise\".",
+          "label": "supported",
+          "paired_route": "ocr_assertion",
+          "audio_event": "unknown",
+          "speech_assertion": "unknown",
+          "bindings": [
+            [
+              "upper left logo",
+              "7 NEWS .com.au"
+            ],
+            [
+              "upper right logo",
+              "sunrise"
+            ]
+          ],
+          "logical_form": {
+            "claim_id": "corner_logos:observed",
+            "text": "The upper left logo displays \"7 NEWS .com.au\" and the upper right logo displays \"sunrise\".",
+            "tokens": [],
+            "variables": [
+              {
+                "name": "X1",
+                "kind": "entity",
+                "description": "upper left logo",
+                "token_ids": []
+              },
+              {
+                "name": "X2",
+                "kind": "entity",
+                "description": "upper right logo",
+                "token_ids": []
+              }
+            ],
+            "atoms": [
+              {
+                "id": "a1",
+                "predicate": "written_text",
+                "arguments": [
+                  "X1",
+                  "7 NEWS .com.au",
+                  "scope",
+                  "AHROLHmgvOS9veQ2_frame_20",
+                  "route",
+                  "ocr_assertion"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "7 NEWS .com.au",
+                "token_ids": [],
+                "trainable": true
+              },
+              {
+                "id": "a2",
+                "predicate": "written_text",
+                "arguments": [
+                  "X2",
+                  "sunrise",
+                  "scope",
+                  "AHROLHmgvOS9veQ2_frame_20",
+                  "route",
+                  "ocr_assertion"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "sunrise",
+                "token_ids": [],
+                "trainable": true
+              }
+            ],
+            "expression": {
+              "op": "exists",
+              "children": [
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [
+                "X1",
+                "X2"
+              ],
+              "state": ""
+            },
+            "coverage": [],
+            "warnings": [],
+            "version": "logical-form-v2",
+            "metadata": {
+              "scopes": {
+                "AHROLHmgvOS9veQ2_frame_20": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "ocr_assertion",
+                  "frame_seconds": 0.8
+                }
+              },
+              "allowed_routes": {
+                "a1": [
+                  "ocr_assertion"
+                ],
+                "a2": [
+                  "ocr_assertion"
+                ]
+              },
+              "kind": "claim",
+              "supplied_candidates": true
+            },
+            "status": "compiled",
+            "logical_form": "EXISTS X1, X2: ((written_text(X1, 7 NEWS .com.au, scope, AHROLHmgvOS9veQ2_frame_20, route, ocr_assertion) AND written_text(X2, sunrise, scope, AHROLHmgvOS9veQ2_frame_20, route, ocr_assertion)))"
+          },
+          "program_sha256": "4560a61ea4f43f5681cf91aa842f0aa20a0939cb56a719ce33763a50b969a4a9",
+          "logic_control": {
+            "supported": 1.0,
+            "refuted": 0.0,
+            "unknown": 0.0
+          }
+        },
+        {
+          "variant": "swapped",
+          "claim": "The upper left logo displays \"sunrise\" and the upper right logo displays \"7 NEWS .com.au\".",
+          "label": "refuted",
+          "paired_route": "ocr_assertion",
+          "audio_event": "unknown",
+          "speech_assertion": "unknown",
+          "bindings": [
+            [
+              "upper left logo",
+              "sunrise"
+            ],
+            [
+              "upper right logo",
+              "7 NEWS .com.au"
+            ]
+          ],
+          "logical_form": {
+            "claim_id": "corner_logos:swapped",
+            "text": "The upper left logo displays \"sunrise\" and the upper right logo displays \"7 NEWS .com.au\".",
+            "tokens": [],
+            "variables": [
+              {
+                "name": "X1",
+                "kind": "entity",
+                "description": "upper left logo",
+                "token_ids": []
+              },
+              {
+                "name": "X2",
+                "kind": "entity",
+                "description": "upper right logo",
+                "token_ids": []
+              }
+            ],
+            "atoms": [
+              {
+                "id": "a1",
+                "predicate": "written_text",
+                "arguments": [
+                  "X1",
+                  "sunrise",
+                  "scope",
+                  "AHROLHmgvOS9veQ2_frame_20",
+                  "route",
+                  "ocr_assertion"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "sunrise",
+                "token_ids": [],
+                "trainable": true
+              },
+              {
+                "id": "a2",
+                "predicate": "written_text",
+                "arguments": [
+                  "X2",
+                  "7 NEWS .com.au",
+                  "scope",
+                  "AHROLHmgvOS9veQ2_frame_20",
+                  "route",
+                  "ocr_assertion"
+                ],
+                "kind": "property",
+                "roles": [],
+                "text": "7 NEWS .com.au",
+                "token_ids": [],
+                "trainable": true
+              }
+            ],
+            "expression": {
+              "op": "exists",
+              "children": [
+                {
+                  "op": "and",
+                  "children": [
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a1",
+                      "variables": [],
+                      "state": ""
+                    },
+                    {
+                      "op": "atom",
+                      "children": [],
+                      "atom_id": "a2",
+                      "variables": [],
+                      "state": ""
+                    }
+                  ],
+                  "atom_id": "",
+                  "variables": [],
+                  "state": ""
+                }
+              ],
+              "atom_id": "",
+              "variables": [
+                "X1",
+                "X2"
+              ],
+              "state": ""
+            },
+            "coverage": [],
+            "warnings": [],
+            "version": "logical-form-v2",
+            "metadata": {
+              "scopes": {
+                "AHROLHmgvOS9veQ2_frame_20": {
+                  "parent": "world",
+                  "kind": "frame",
+                  "route": "ocr_assertion",
+                  "frame_seconds": 0.8
+                }
+              },
+              "allowed_routes": {
+                "a1": [
+                  "ocr_assertion"
+                ],
+                "a2": [
+                  "ocr_assertion"
+                ]
+              },
+              "kind": "claim",
+              "supplied_candidates": true
+            },
+            "status": "compiled",
+            "logical_form": "EXISTS X1, X2: ((written_text(X1, sunrise, scope, AHROLHmgvOS9veQ2_frame_20, route, ocr_assertion) AND written_text(X2, 7 NEWS .com.au, scope, AHROLHmgvOS9veQ2_frame_20, route, ocr_assertion)))"
+          },
+          "program_sha256": "a699f26923cd2a3a52263ab33ff19b381eb572b196e328c7c930faac14a40a2a",
+          "logic_control": {
+            "supported": 0.0,
+            "refuted": 1.0,
+            "unknown": 0.0
+          }
+        }
+      ],
+      "vocabulary_matched": true,
+      "prior_checked_claim_ids": [
+        "TjHepwuhkYFA_1003",
+        "TjHepwuhkYFA_1005",
+        "TjHepwuhkYFA_997"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "source_video": "tRXmuOpb4QD84JAu",
+      "claim_id": "Tsuk2uoYj-kc_628",
+      "reason": "The fixed frames show Arabic overlay text. The English claim is a translation, so it cannot supervise an exact English inscription."
+    },
+    {
+      "source_video": "c0zHs25t-Ied7wyr",
+      "claim_id": "Tg0UxWYuPeJ0_425",
+      "reason": "A robot falls near the ropes, but the inspected frames did not clearly establish its numeric identity."
+    },
+    {
+      "source_video": "nbLGyE4eZpvwO22t",
+      "claim_id": "Txf2EdqOg1SQ_2236",
+      "reason": "The reviewed sequence includes a boat clip and other scenes. A clean role swap requires jointly identified alternatives within the same segment."
+    },
+    {
+      "source_video": "zlD_zgNiYJkRV1PS",
+      "claim_id": "earlier_music_attribute",
+      "reason": "The earlier instrumental versus vocal label comes from a model readout and needs an audio review. It is excluded from this frame-labeled set."
+    },
+    {
+      "source_video": "J2vYKin5lPXfBgGb",
+      "claim_id": "TQEmEycTI0RQ_836",
+      "reason": "The inspected frames show Carney at the lectern and a Trump cutaway. They suffice for the tie contrast and leave the Trump–Musk handshake unverified."
+    }
+  ],
+  "groups": {
+    "development": [
+      "M2dVSDPilbnrmb73",
+      "gzD8zHnzVeSzQ0lX",
+      "zlD_zgNiYJkRV1PS"
+    ],
+    "reserved": [
+      "AHROLHmgvOS9veQ2",
+      "J2vYKin5lPXfBgGb"
+    ]
+  },
+  "label_provenance": "Assistant reviewed fixed original-resolution frames. One label per hypothesis on the supplied frame candidates.",
+  "scope": "Pilot with supplied candidate identity and timestamps. Template-built logical forms. No trained verifier or test accuracy.",
+  "feature_status": "Frame and source references recorded. Frozen features still need extraction for this pair protocol."
+}
