@@ -954,10 +954,30 @@
     {
       "id": 44,
       "title": "Check negative scope, consequences, and speaker alignment",
+      "status": "done",
+      "items": [
+        {
+          "text": "Tested 22 authored controls, nine new source claims, and two earlier false passes.",
+          "done": true
+        },
+        {
+          "text": "Preserved shared absence and explicit consequences, and replayed all original claims.",
+          "done": true
+        },
+        {
+          "text": "Compared annotations to automatic speaker windows on eight new AMI meetings.",
+          "done": true
+        }
+      ],
+      "note": "The target scope is preserved in 21 authored controls and both earlier cases. Two new source false passes now abstain. All 2,179 accepted corpus programs replay exactly. The audio comparison supports eight of eight with annotations and one of eight with automatically proposed speaker windows."
+    },
+    {
+      "id": 45,
+      "title": "Measure speech binding with and without alignment errors",
       "status": "planned",
       "items": [
-        "Add fresh examples with “without” and obligations followed by a consequence. Goal is to catch additional scope errors before a binding study.",
-        "Compare supplied speaker and time with automatically proposed windows. Goal is to measure alignment risk on a small independently reviewed set."
+        "Use annotated windows in the small, source-disjoint binding evaluation. Goal is to measure the relation model under known speaker and time.",
+        "Compare an overlap-aware diarizer and allow multiple candidate windows. Goal is to see whether speaker alignment improves on the same claims."
       ]
     },
     {
@@ -971,7 +991,7 @@
       ]
     }
   ],
-  "intro": "The targeted OR repairs and transcript pilot meet this round’s stopping criteria. A fresh audit still finds errors with negation and consequences. Check those patterns and test automatically proposed speaker windows before designing the training set.",
+  "intro": "The new scope checks preserve the two targeted readings. Automatic speaker windows recover one of eight correct-speaker cases with the transcript words supplied. Use annotated windows for the first speech binding comparison and measure alignment separately.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1040,5 +1060,6 @@
   "disjunction_evaluation_run": "exp/probabilistic_verification/disjunction_evaluation_20261119",
   "disjunction_scope_run": "exp/probabilistic_verification/disjunction_scope_20261119",
   "or_source_evaluation_run": "exp/probabilistic_verification/or_source_evaluation_20261119",
-  "or_followup_run": "exp/probabilistic_verification/or_followup_20261119"
+  "or_followup_run": "exp/probabilistic_verification/or_followup_20261119",
+  "scope_alignment_run": "exp/probabilistic_verification/scope_and_alignment_20261119"
 }

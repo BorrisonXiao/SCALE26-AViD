@@ -75,6 +75,16 @@
           "text": "Reviewed 12 new claim texts. Seven compile, and one fully matches the reading. “Without,” consequences and swapped roles remain. The targeted repair and transcript checks meet their stopping criteria.",
           "href": "#or-followup-fresh",
           "label": "Fresh claim audit"
+        },
+        {
+          "text": "Tested shared absence and consequences on 33 texts. Both earlier scope errors are repaired, and two new false passes now abstain. All 2,179 accepted corpus programs replay byte-for-byte.",
+          "href": "#negative-scope-cases",
+          "label": "Scope examples"
+        },
+        {
+          "text": "Ran CPU diarization on eight fresh AMI meetings. Correct-speaker support falls from eight with the annotated windows to one with automatic speaker windows. Providing the participant count leaves the verdict counts unchanged.",
+          "href": "#automatic-speaker-windows",
+          "label": "Speaker alignment"
         }
       ]
     },
