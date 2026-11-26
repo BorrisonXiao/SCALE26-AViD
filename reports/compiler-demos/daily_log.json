@@ -1,8 +1,23 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-26",
   "timezone": "America/New_York",
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
+    {
+      "date": "2026-11-26",
+      "items": [
+        {
+          "text": "Compared speaker and utterance binding on eight AMI utterances and 32 controls. Requiring one utterance matched 40 of 40 verdicts. Three usable compiled programs passed all 15 exact inference checks.",
+          "href": "#ami-binding-controls",
+          "label": "Binding controls and compiled programs"
+        },
+        {
+          "text": "Compared two diarizers on the same clips. Three Pyannote windows recover one additional query with mixed speakers. Reverb supports one of eight, the same as the earlier baseline.",
+          "href": "#ami-candidate-windows",
+          "label": "Automatic speaker windows"
+        }
+      ]
+    },
     {
       "date": "2026-11-19",
       "items": [

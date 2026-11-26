@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-26",
   "steps": [
     {
       "id": 25,
@@ -974,10 +974,26 @@
     {
       "id": 45,
       "title": "Measure speech binding with and without alignment errors",
+      "status": "done",
+      "items": [
+        {
+          "text": "Compared whole-utterance binding with speaker-only and across-speaker pooling on eight annotated utterances and 32 controls.",
+          "done": true
+        },
+        {
+          "text": "Compared two diarizers and checked up to three candidates from each. Used word annotations to audit mixed-speaker windows after scoring.",
+          "done": true
+        }
+      ],
+      "note": "One-speaker, one-utterance binding matches all 40 verdicts. Three of eight compiled claims preserve the speaker and alternatives. They pass all 15 exact inference checks. Pyannote supports two of eight correct-speaker queries with up to three windows, including a match with words from another speaker. Reverb supports one of eight."
+    },
+    {
+      "id": 46,
+      "title": "Measure binding and find where speaker attribution fails",
       "status": "planned",
       "items": [
-        "Use annotated windows in the small, source-disjoint binding evaluation. Goal is to measure the relation model under known speaker and time.",
-        "Compare an overlap-aware diarizer and allow multiple candidate windows. Goal is to see whether speaker alignment improves on the same claims."
+        "Use annotated speaker and utterance windows in the first speech binding comparison and count compiler abstentions. Goal is to test which cases reach inference and whether the relation scores work with evidence already located.",
+        "Use the reference speaker annotations to map estimated clusters in the target interval. Goal is to tell whether the missing words come from naming speakers, finding their speech, or assigning overlapping words."
       ]
     },
     {
@@ -991,7 +1007,7 @@
       ]
     }
   ],
-  "intro": "The new scope checks preserve the two targeted readings. Automatic speaker windows recover one of eight correct-speaker cases with the transcript words supplied. Use annotated windows for the first speech binding comparison and measure alignment separately.",
+  "intro": "Use annotated speech windows in the first relation comparison. Automatic windows often miss all target words from the requested speaker.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1061,5 +1077,6 @@
   "disjunction_scope_run": "exp/probabilistic_verification/disjunction_scope_20261119",
   "or_source_evaluation_run": "exp/probabilistic_verification/or_source_evaluation_20261119",
   "or_followup_run": "exp/probabilistic_verification/or_followup_20261119",
-  "scope_alignment_run": "exp/probabilistic_verification/scope_and_alignment_20261119"
+  "scope_alignment_run": "exp/probabilistic_verification/scope_and_alignment_20261119",
+  "ami_speaker_binding_run": "exp/probabilistic_verification/ami_speaker_binding_20261126"
 }
