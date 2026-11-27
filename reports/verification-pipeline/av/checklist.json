@@ -1006,10 +1006,26 @@
     {
       "id": 47,
       "title": "Improve speech windows and prepare relation examples",
+      "status": "done",
+      "items": [
+        {
+          "text": "Compared the disjunction-based window method with two methods that take text directly from estimated turns in 24 fresh AMI meeting series.",
+          "done": true
+        },
+        {
+          "text": "Prepared 96 claims, fit a two-parameter calibration on one group of meetings, and tested it on a disjoint group.",
+          "done": true
+        }
+      ],
+      "note": "Turn-based windows that retain overlaps have complete target text in 18 of 24 cases before naming and zero using estimated names. Calibration raises initial test decisions from 37 to 41 of 48, with 42 after the wording audit."
+    },
+    {
+      "id": 48,
+      "title": "Test calibrated speech scores in probabilistic inference",
       "status": "planned",
       "items": [
-        "Compare bounded transcript windows taken from estimated speaker turns with the existing disjunction-based window proposals on separate meetings. Goal is to recover relevant words while measuring mixed-speaker windows and wrong-speaker support at the same candidate budget.",
-        "Build a source-disjoint set of paraphrases, changed alternatives and changed shared context using fixed transcript windows. Goal is to learn or calibrate a speech relation score and compare it with whole-utterance DeBERTa on separate meetings."
+        "Feed calibrated and raw scores to the same DeepProbLog speech predicate with annotated speaker windows and reviewed logical forms. Goal is to measure the score separately from the same-speaker and same-utterance constraints.",
+        "Compare speaker names derived from short and longer labeled examples on saved turns. Goal is to see whether better enrollment can make complete windows available to the requested speaker."
       ]
     },
     {
@@ -1023,7 +1039,7 @@
       ]
     }
   ],
-  "intro": "The annotated transcript comparison identifies false support on small claim edits. The speaker audit finds losses in both window construction and speaker naming.",
+  "intro": "Use annotated speaker windows for the next speech inference comparison. Broader automatic windows recover words before speaker naming, and the estimated names still miss the full utterances.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1095,5 +1111,6 @@
   "or_followup_run": "exp/probabilistic_verification/or_followup_20261119",
   "scope_alignment_run": "exp/probabilistic_verification/scope_and_alignment_20261119",
   "ami_speaker_binding_run": "exp/probabilistic_verification/ami_speaker_binding_20261126",
-  "ami_speech_verification_run": "exp/probabilistic_verification/ami_speech_verification_20261126"
+  "ami_speech_verification_run": "exp/probabilistic_verification/ami_speech_verification_20261126",
+  "ami_window_comparison_run": "exp/probabilistic_verification/ami_window_comparison_20261126"
 }

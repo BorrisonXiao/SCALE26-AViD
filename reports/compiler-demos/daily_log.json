@@ -25,6 +25,16 @@
           "text": "Used target-interval speaker annotations to diagnose automatic attribution. Each diarizer recovers one clean match. Both retain every word in one candidate for only two of eight utterances before speaker naming.",
           "href": "#ami-speaker-attribution-cases",
           "label": "Speaker attribution examples"
+        },
+        {
+          "text": "Compared speaker-turn windows on 24 unused AMI meeting series. Keeping overlaps retains all target words in 18 before naming and zero with names assigned from earlier speech.",
+          "href": "#ami-turn-window-cases",
+          "label": "Window cases"
+        },
+        {
+          "text": "Calibrated frozen DeBERTa scores on one group of meetings and tested on another. Correct decisions rise from 37 to 41 of 48 on the initial test wording and to 42 after wording corrections.",
+          "href": "#ami-calibrated-speech-cases",
+          "label": "Held-out speech cases"
         }
       ]
     },
