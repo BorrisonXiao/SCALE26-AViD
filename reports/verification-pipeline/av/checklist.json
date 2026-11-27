@@ -1022,9 +1022,33 @@
     {
       "id": 48,
       "title": "Test calibrated speech scores in probabilistic inference",
+      "status": "done",
+      "items": [
+        {
+          "text": "Compared a whole-claim baseline, an exact program with separate utterances, a shared-utterance program, and a simple filter on identical candidate transcripts.",
+          "done": true
+        },
+        {
+          "text": "Used raw and calibrated frozen scores and ran a separate compiler audit on 48 direct quotations.",
+          "done": true
+        }
+      ],
+      "note": "Calibrated decisions improve from 72 to 89 of 96 with shared binding. All 24 valid reports stay supported. The simple filter matches exact inference."
+    },
+    {
+      "id": 49,
+      "title": "Test binding on fresh speech and visual or OCR examples",
       "status": "planned",
       "items": [
-        "Feed calibrated and raw scores to the same DeepProbLog speech predicate with annotated speaker windows and reviewed logical forms. Goal is to measure the score separately from the same-speaker and same-utterance constraints.",
+        "Add independently checked speech reports with implicit alternatives and harder distractors. Goal is to test whether the binding result holds outside the explicit “or” controls.",
+        "Compare the hard filter and exact inference when visual or OCR claims have several relations and uncertain competing assignments. Goal is to establish where probability aggregation improves a decision."
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Compare speaker enrollment with the same candidate windows",
+      "status": "planned",
+      "items": [
         "Compare speaker names derived from short and longer labeled examples on saved turns. Goal is to see whether better enrollment can make complete windows available to the requested speaker."
       ]
     },
@@ -1039,7 +1063,7 @@
       ]
     }
   ],
-  "intro": "Use annotated speaker windows for the next speech inference comparison. Broader automatic windows recover words before speaker naming, and the estimated names still miss the full utterances.",
+  "intro": "The same-utterance condition improves speech binding on annotated evidence. A simple filter reaches the same decisions as exact inference on these queries.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1112,5 +1136,6 @@
   "scope_alignment_run": "exp/probabilistic_verification/scope_and_alignment_20261119",
   "ami_speaker_binding_run": "exp/probabilistic_verification/ami_speaker_binding_20261126",
   "ami_speech_verification_run": "exp/probabilistic_verification/ami_speech_verification_20261126",
-  "ami_window_comparison_run": "exp/probabilistic_verification/ami_window_comparison_20261126"
+  "ami_window_comparison_run": "exp/probabilistic_verification/ami_window_comparison_20261126",
+  "ami_probabilistic_binding_run": "exp/probabilistic_verification/ami_probabilistic_binding_20261126"
 }

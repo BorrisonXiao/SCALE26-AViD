@@ -35,6 +35,16 @@
           "text": "Calibrated frozen DeBERTa scores on one group of meetings and tested on another. Correct decisions rise from 37 to 41 of 48 on the initial test wording and to 42 after wording corrections.",
           "href": "#ami-calibrated-speech-cases",
           "label": "Held-out speech cases"
+        },
+        {
+          "text": "Compared five methods on 96 speech queries with the same annotated transcripts. Shared binding raised calibrated decisions from 72 to 89. The simple filter matched DeepProbLog on every query.",
+          "href": "#ami-probabilistic-binding-examples",
+          "label": "Paired binding examples"
+        },
+        {
+          "text": "Audited 48 directly quoted claims. The compiler retained 32 as verbatim speech and abstained on the multi-sentence quotations.",
+          "href": "#ami-probabilistic-compiler-audit",
+          "label": "Automatic compilation"
         }
       ]
     },
