@@ -15,6 +15,16 @@
           "text": "Compared two diarizers on the same clips. Three Pyannote windows recover one additional query with mixed speakers. Reverb supports one of eight, the same as the earlier baseline.",
           "href": "#ami-candidate-windows",
           "label": "Automatic speaker windows"
+        },
+        {
+          "text": "Compared frozen transcript scorers on the same eight annotated windows. Whole-utterance DeBERTa matches 26 of 32 judgments and accepts six edits. Sixteen claims preserve the required speaker and reported content in the compiler.",
+          "href": "#ami-speech-scorer-cases",
+          "label": "Scorer and compiler examples"
+        },
+        {
+          "text": "Used target-interval speaker annotations to diagnose automatic attribution. Each diarizer recovers one clean match. Both retain every word in one candidate for only two of eight utterances before speaker naming.",
+          "href": "#ami-speaker-attribution-cases",
+          "label": "Speaker attribution examples"
         }
       ]
     },

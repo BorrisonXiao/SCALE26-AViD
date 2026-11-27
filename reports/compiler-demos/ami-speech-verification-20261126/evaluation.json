@@ -1,0 +1,4988 @@
+{
+  "scoring": {
+    "summary": {
+      "total": 32,
+      "compiler": {
+        "usable": 16,
+        "missing_report": 1,
+        "abstained": 15
+      },
+      "results": {
+        "exact": {
+          "matches": 16,
+          "false_support": 0,
+          "missed_support": 16
+        },
+        "minilm_whole": {
+          "matches": 23,
+          "false_support": 9,
+          "missed_support": 0
+        },
+        "minilm_branches": {
+          "matches": 20,
+          "false_support": 0,
+          "missed_support": 12
+        },
+        "deberta_whole": {
+          "matches": 26,
+          "false_support": 6,
+          "missed_support": 0
+        },
+        "deberta_branches": {
+          "matches": 19,
+          "false_support": 0,
+          "missed_support": 13
+        }
+      },
+      "by_variant": {
+        "exact": {
+          "original": 0,
+          "paraphrase": 0,
+          "changed_option": 8,
+          "changed_context": 8
+        },
+        "minilm_whole": {
+          "original": 8,
+          "paraphrase": 8,
+          "changed_option": 2,
+          "changed_context": 5
+        },
+        "minilm_branches": {
+          "original": 3,
+          "paraphrase": 1,
+          "changed_option": 8,
+          "changed_context": 8
+        },
+        "deberta_whole": {
+          "original": 8,
+          "paraphrase": 8,
+          "changed_option": 4,
+          "changed_context": 6
+        },
+        "deberta_branches": {
+          "original": 2,
+          "paraphrase": 1,
+          "changed_option": 8,
+          "changed_context": 8
+        }
+      },
+      "paired_ranking": {
+        "minilm": {
+          "changed_option": 7,
+          "changed_context": 8
+        },
+        "deberta": {
+          "changed_option": 8,
+          "changed_context": 8
+        }
+      }
+    },
+    "rows": [
+      {
+        "meeting": "IS1006a",
+        "evidence": {
+          "text": "Yeah but for instance when you change channels you can have you can just go to the next one or go to channel twenty five.",
+          "start": 668.0,
+          "end": 675.96,
+          "speaker": "D",
+          "turn": "IS1006a:annotated",
+          "complete": true
+        },
+        "query": {
+          "start": 660,
+          "end": 695,
+          "speaker": "D"
+        },
+        "variants": [
+          {
+            "claim_id": "ami_IS1006a_original",
+            "variant": "original",
+            "content": "you can just go to the next one or go to channel twenty five",
+            "text": "Participant D said that you can just go to the next one or go to channel twenty five.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.0007193240453489125,
+                "entailment": 0.9919115900993347,
+                "neutral": 0.007369109895080328
+              },
+              "deberta": {
+                "contradiction": 0.00019901372434105724,
+                "entailment": 0.9947940707206726,
+                "neutral": 0.0050069852732121944
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_IS1006a_original, that you can just go to the next one or go to channel twenty five, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_IS1006a_original, scope, world, route, unspecified)",
+              "form": "EXISTS X2: ((EXISTS X1: ((referent(X1, Participant D, scope, world, route, unspecified) AND EXISTS E1: ((say(E1, ARG0, X1, ARG1, c1::ami_IS1006a_original, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_IS1006a_original, that you can just go to the next one or go to channel twenty five, scope, world, route, speech_assertion) AND EXISTS T0: (temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified)))))) AND (reference(X2, x5, scope, world, route, unspecified) AND EXISTS E4: (channel(E4, ARG0, X2, ARGM-TMP, {\"kind\":\"time\",\"value\":\"twenty five\"}, scope, world, route, unspecified)))))"
+            }
+          },
+          {
+            "claim_id": "ami_IS1006a_paraphrase",
+            "variant": "paraphrase",
+            "content": "when changing channels, you can advance to the next channel or go straight to channel twenty-five",
+            "text": "Participant D said that when changing channels, you can advance to the next channel or go straight to channel twenty-five.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.0029941683169454336,
+                "entailment": 0.9855878353118896,
+                "neutral": 0.011417997069656849
+              },
+              "deberta": {
+                "contradiction": 9.63595521170646e-05,
+                "entailment": 0.9978747367858887,
+                "neutral": 0.002028900198638439
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_IS1006a_paraphrase, that when changing channels, you can advance to the next channel or go straight to channel twenty-five, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_IS1006a_paraphrase, scope, world, route, unspecified)",
+              "form": "(EXISTS X1: ((referent(X1, Participant D, scope, world, route, unspecified) AND EXISTS E1, T0: ((say(E1, ARG0, X1, ARG1, c1::ami_IS1006a_paraphrase, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_IS1006a_paraphrase, that when changing channels, you can advance to the next channel or go straight to channel twenty-five, scope, world, route, speech_assertion) AND temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified))))) AND EXISTS E5: (channel(E5, ARGM-TMP, {\"kind\":\"time\",\"value\":\"twenty-five\"}, scope, world, route, unspecified)))"
+            }
+          },
+          {
+            "claim_id": "ami_IS1006a_changed_option",
+            "variant": "changed_option",
+            "content": "when changing channels, you can advance to the next channel or go straight to channel twenty-six",
+            "text": "Participant D said that when changing channels, you can advance to the next channel or go straight to channel twenty-six.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.015518112108111382,
+                "entailment": 0.9619989991188049,
+                "neutral": 0.022482886910438538
+              },
+              "deberta": {
+                "contradiction": 0.028601109981536865,
+                "entailment": 0.9375568628311157,
+                "neutral": 0.033841997385025024
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_IS1006a_changed_option, that when changing channels, you can advance to the next channel or go straight to channel twenty-six, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_IS1006a_changed_option, scope, world, route, unspecified)",
+              "form": "(EXISTS X1: ((referent(X1, Participant D, scope, world, route, unspecified) AND EXISTS E1, T0: ((say(E1, ARG0, X1, ARG1, c1::ami_IS1006a_changed_option, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_IS1006a_changed_option, that when changing channels, you can advance to the next channel or go straight to channel twenty-six, scope, world, route, speech_assertion) AND temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified))))) AND EXISTS E5: (channel(E5, ARGM-TMP, {\"kind\":\"time\",\"value\":\"twenty-six\"}, scope, world, route, unspecified)))"
+            }
+          },
+          {
+            "claim_id": "ami_IS1006a_changed_context",
+            "variant": "changed_context",
+            "content": "when changing inputs, you can advance to the next channel or go straight to channel twenty-five",
+            "text": "Participant D said that when changing inputs, you can advance to the next channel or go straight to channel twenty-five.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.004067992325872183,
+                "entailment": 0.9792419672012329,
+                "neutral": 0.016690056771039963
+              },
+              "deberta": {
+                "contradiction": 0.00033568585058674216,
+                "entailment": 0.9941032528877258,
+                "neutral": 0.005560989025980234
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_IS1006a_changed_context, that when changing inputs, you can advance to the next channel or go straight to channel twenty-five, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_IS1006a_changed_context, scope, world, route, unspecified)",
+              "form": "(EXISTS X1: ((referent(X1, Participant D, scope, world, route, unspecified) AND EXISTS E1, T0: ((say(E1, ARG0, X1, ARG1, c1::ami_IS1006a_changed_context, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_IS1006a_changed_context, that when changing inputs, you can advance to the next channel or go straight to channel twenty-five, scope, world, route, speech_assertion) AND temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified))))) AND EXISTS X6: ((referent(X6, five, scope, world, route, unspecified) AND property(X6, mod, twenty-, scope, world, route, unspecified) AND EXISTS E5: (channel(E5, ARG1, X6, scope, world, route, unspecified)))))"
+            }
+          }
+        ]
+      },
+      {
+        "meeting": "ES2014c",
+        "evidence": {
+          "text": "And that you can make them curved or double-curved and that would be the kind of sleek and sexy look.",
+          "start": 1628.74,
+          "end": 1634.11,
+          "speaker": "C",
+          "turn": "ES2014c:annotated",
+          "complete": true
+        },
+        "query": {
+          "start": 1620,
+          "end": 1655,
+          "speaker": "C"
+        },
+        "variants": [
+          {
+            "claim_id": "ami_ES2014c_original",
+            "variant": "original",
+            "content": "you can make them curved or double-curved",
+            "text": "Participant C said that you can make them curved or double-curved.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.000567032431717962,
+                "entailment": 0.9855332970619202,
+                "neutral": 0.013899744488298893
+              },
+              "deberta": {
+                "contradiction": 0.0003261524543631822,
+                "entailment": 0.9944490194320679,
+                "neutral": 0.0052248407155275345
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "missing_report",
+              "form": "EXISTS X1: ((referent(X1, Participant C, scope, world, route, unspecified) AND EXISTS E1: ((say(E1, ARG0, X1, ARG1, c1::ami_ES2014c_original, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND proposition(E1, ARG1, assertion, c1::ami_ES2014c_original, scope, world, route, unspecified) AND (qualification(ability, q2::ami_ES2014c_original, scope, c1::ami_ES2014c_original, route, speech_assertion, owner, E1) AND EXISTS X2, X3: ((referent(X2, you, scope, q2::ami_ES2014c_original, route, speech_assertion, owner, E1) AND resolve_reference(X2, you, scope, q2::ami_ES2014c_original, route, speech_assertion, owner, E1) AND referent(X3, them curved or double-curved, scope, q2::ami_ES2014c_original, route, speech_assertion, owner, E1) AND EXISTS E2: (make(E2, ARG0, X2, ARG1, X3, scope, q2::ami_ES2014c_original, route, speech_assertion, owner, E1))))) AND EXISTS T0: (temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified))))))"
+            }
+          },
+          {
+            "claim_id": "ami_ES2014c_paraphrase",
+            "variant": "paraphrase",
+            "content": "you can make the design curved or give it a double curve",
+            "text": "Participant C said that you can make the design curved or give it a double curve.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.000838219013530761,
+                "entailment": 0.9625524282455444,
+                "neutral": 0.03660937398672104
+              },
+              "deberta": {
+                "contradiction": 0.0001689078490016982,
+                "entailment": 0.9922206997871399,
+                "neutral": 0.007610398344695568
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_ES2014c_paraphrase, that you can make the design curved or give it a double curve, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_ES2014c_paraphrase, scope, world, route, unspecified)",
+              "form": "EXISTS X1: ((referent(X1, Participant C, scope, world, route, unspecified) AND EXISTS E1: ((say(E1, ARG0, X1, ARG1, c1::ami_ES2014c_paraphrase, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_ES2014c_paraphrase, that you can make the design curved or give it a double curve, scope, world, route, speech_assertion) AND EXISTS T0: (temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified))))))"
+            }
+          },
+          {
+            "claim_id": "ami_ES2014c_changed_option",
+            "variant": "changed_option",
+            "content": "you can make the design straight or give it a double curve",
+            "text": "Participant C said that you can make the design straight or give it a double curve.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.10678251087665558,
+                "entailment": 0.7911675572395325,
+                "neutral": 0.10204993188381195
+              },
+              "deberta": {
+                "contradiction": 0.009975212626159191,
+                "entailment": 0.9665666818618774,
+                "neutral": 0.02345806546509266
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_ES2014c_changed_option, that you can make the design straight or give it a double curve, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_ES2014c_changed_option, scope, world, route, unspecified)",
+              "form": "EXISTS X1: ((referent(X1, Participant C, scope, world, route, unspecified) AND EXISTS E1: ((say(E1, ARG0, X1, ARG1, c1::ami_ES2014c_changed_option, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_ES2014c_changed_option, that you can make the design straight or give it a double curve, scope, world, route, speech_assertion) AND EXISTS T0: (temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified))))))"
+            }
+          },
+          {
+            "claim_id": "ami_ES2014c_changed_context",
+            "variant": "changed_context",
+            "content": "you must make the design curved or give it a double curve",
+            "text": "Participant C said that you must make the design curved or give it a double curve.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": false,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.06801482290029526,
+                "entailment": 0.645344614982605,
+                "neutral": 0.28664058446884155
+              },
+              "deberta": {
+                "contradiction": 0.09316068142652512,
+                "entailment": 0.3694572150707245,
+                "neutral": 0.5373821258544922
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_ES2014c_changed_context, that you must make the design curved or give it a double curve, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_ES2014c_changed_context, scope, world, route, unspecified)",
+              "form": "EXISTS X1: ((referent(X1, Participant C, scope, world, route, unspecified) AND EXISTS E1: ((say(E1, ARG0, X1, ARG1, c1::ami_ES2014c_changed_context, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_ES2014c_changed_context, that you must make the design curved or give it a double curve, scope, world, route, speech_assertion) AND EXISTS T0: (temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified))))))"
+            }
+          }
+        ]
+      },
+      {
+        "meeting": "ES2008d",
+        "evidence": {
+          "text": "But if it's like under covers or like in a couch you still can't see it.",
+          "start": 417.33,
+          "end": 420.98,
+          "speaker": "D",
+          "turn": "ES2008d:annotated",
+          "complete": true
+        },
+        "query": {
+          "start": 390,
+          "end": 425,
+          "speaker": "D"
+        },
+        "variants": [
+          {
+            "claim_id": "ami_ES2008d_original",
+            "variant": "original",
+            "content": "if it's like under covers or like in a couch you still can't see it",
+            "text": "Participant D said that if it's like under covers or like in a couch you still can't see it.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": true,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.0010908296098932624,
+                "entailment": 0.9895052313804626,
+                "neutral": 0.009403849020600319
+              },
+              "deberta": {
+                "contradiction": 0.0005475177313201129,
+                "entailment": 0.9948424696922302,
+                "neutral": 0.004609996918588877
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: ca"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "No scope policy for resemble-01 :ARG2 be-located-at-91"
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_ES2008d_paraphrase",
+            "variant": "paraphrase",
+            "content": "you still cannot see it when it is under blankets or inside a couch",
+            "text": "Participant D said that you still cannot see it when it is under blankets or inside a couch.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.0016196726355701685,
+                "entailment": 0.9872612953186035,
+                "neutral": 0.011119062080979347
+              },
+              "deberta": {
+                "contradiction": 0.00012488174252212048,
+                "entailment": 0.9985034465789795,
+                "neutral": 0.0013716969406232238
+              }
+            },
+            "compiler": {
+              "stage": "amr",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: cannot"
+                },
+                {
+                  "stage": "amr",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1, that you still cannot see it when it is under blankets or inside a couch, scope, world, route, speech_assertion)",
+              "speaker": "role(E1, ARG0, X2, scope, world, route, unspecified)",
+              "form": "EXISTS E1, X2: ((concept(E1, say-01, scope, world, route, unspecified) AND (concept(X2, person, scope, world, route, unspecified) AND name(X2, D, scope, world, route, unspecified) AND EXISTS X3: ((concept(X3, participant, scope, world, route, unspecified) AND role(X3, domain, X2, scope, world, route, unspecified)))) AND role(E1, ARG0, X2, scope, world, route, unspecified) AND reported_disjunction(E1, c1, that you still cannot see it when it is under blankets or inside a couch, scope, world, route, speech_assertion) AND EXISTS T0: (temporal(E1, past, simple, T0, scope, world, route, unspecified))))"
+            }
+          },
+          {
+            "claim_id": "ami_ES2008d_changed_option",
+            "variant": "changed_option",
+            "content": "you still cannot see it when it is under blankets or inside a drawer",
+            "text": "Participant D said that you still cannot see it when it is under blankets or inside a drawer.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": false,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.12051756680011749,
+                "entailment": 0.5605280995368958,
+                "neutral": 0.31895434856414795
+              },
+              "deberta": {
+                "contradiction": 0.14914099872112274,
+                "entailment": 0.012276506051421165,
+                "neutral": 0.8385825753211975
+              }
+            },
+            "compiler": {
+              "stage": "amr",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: cannot"
+                },
+                {
+                  "stage": "amr",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1, that you still cannot see it when it is under blankets or inside a drawer, scope, world, route, speech_assertion)",
+              "speaker": "role(E1, ARG0, X2, scope, world, route, unspecified)",
+              "form": "EXISTS E1, X2: ((concept(E1, say-01, scope, world, route, unspecified) AND (concept(X2, person, scope, world, route, unspecified) AND name(X2, D, scope, world, route, unspecified) AND EXISTS X3: ((concept(X3, participant, scope, world, route, unspecified) AND role(X3, domain, X2, scope, world, route, unspecified)))) AND role(E1, ARG0, X2, scope, world, route, unspecified) AND reported_disjunction(E1, c1, that you still cannot see it when it is under blankets or inside a drawer, scope, world, route, speech_assertion) AND EXISTS T0: (temporal(E1, past, simple, T0, scope, world, route, unspecified))))"
+            }
+          },
+          {
+            "claim_id": "ami_ES2008d_changed_context",
+            "variant": "changed_context",
+            "content": "you still can see it when it is under blankets or inside a couch",
+            "text": "Participant D said that you still can see it when it is under blankets or inside a couch.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": false,
+              "minilm_branches": false,
+              "deberta_whole": false,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.9896710515022278,
+                "entailment": 0.005158910993486643,
+                "neutral": 0.005170031916350126
+              },
+              "deberta": {
+                "contradiction": 0.9984667897224426,
+                "entailment": 0.0010139024816453457,
+                "neutral": 0.0005192864337004721
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_ES2008d_changed_context, that you still can see it when it is under blankets or inside a couch, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_ES2008d_changed_context, scope, world, route, unspecified)",
+              "form": "EXISTS X1: ((referent(X1, Participant D, scope, world, route, unspecified) AND EXISTS E1, T0: ((say(E1, ARG0, X1, ARG1, c1::ami_ES2008d_changed_context, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_ES2008d_changed_context, that you still can see it when it is under blankets or inside a couch, scope, world, route, speech_assertion) AND temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified)))))"
+            }
+          }
+        ]
+      },
+      {
+        "meeting": "TS3003c",
+        "evidence": {
+          "text": "one remote, but it would have to be fancy with either the wood cover or the plastic one.",
+          "start": 1502.37,
+          "end": 1508.67,
+          "speaker": "D",
+          "turn": "TS3003c:annotated",
+          "complete": true
+        },
+        "query": {
+          "start": 1500,
+          "end": 1535,
+          "speaker": "D"
+        },
+        "variants": [
+          {
+            "claim_id": "ami_TS3003c_original",
+            "variant": "original",
+            "content": "it would have to be fancy with either the wood cover or the plastic one",
+            "text": "Participant D said that it would have to be fancy with either the wood cover or the plastic one.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.0010792800458148122,
+                "entailment": 0.9841386675834656,
+                "neutral": 0.014782048761844635
+              },
+              "deberta": {
+                "contradiction": 0.0002691764384508133,
+                "entailment": 0.9937660694122314,
+                "neutral": 0.005964726209640503
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_TS3003c_paraphrase",
+            "variant": "paraphrase",
+            "content": "the remote would have to look fancy with a wooden cover or a plastic cover",
+            "text": "Participant D said that the remote would have to look fancy with a wooden cover or a plastic cover.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.0012781573459506035,
+                "entailment": 0.9873026609420776,
+                "neutral": 0.01141915563493967
+              },
+              "deberta": {
+                "contradiction": 0.00015879144484642893,
+                "entailment": 0.9975008368492126,
+                "neutral": 0.002340397797524929
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_TS3003c_changed_option",
+            "variant": "changed_option",
+            "content": "the remote would have to look fancy with a wooden cover or a metal cover",
+            "text": "Participant D said that the remote would have to look fancy with a wooden cover or a metal cover.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": false,
+              "minilm_branches": false,
+              "deberta_whole": false,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.5963884592056274,
+                "entailment": 0.2215360552072525,
+                "neutral": 0.18207544088363647
+              },
+              "deberta": {
+                "contradiction": 0.977696418762207,
+                "entailment": 0.0018434260273352265,
+                "neutral": 0.020460031926631927
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_TS3003c_changed_context",
+            "variant": "changed_context",
+            "content": "the remote would have to look plain with a wooden cover or a plastic cover",
+            "text": "Participant D said that the remote would have to look plain with a wooden cover or a plastic cover.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": false,
+              "minilm_branches": false,
+              "deberta_whole": false,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.9934402108192444,
+                "entailment": 0.00414102990180254,
+                "neutral": 0.0024187606759369373
+              },
+              "deberta": {
+                "contradiction": 0.9987815022468567,
+                "entailment": 0.0007974519394338131,
+                "neutral": 0.00042101790313608944
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          }
+        ]
+      },
+      {
+        "meeting": "ES2016a",
+        "evidence": {
+          "text": "Oh you can get those key well you could whistle or make a noise and it'd beep.",
+          "start": 408.76,
+          "end": 413.26,
+          "speaker": "C",
+          "turn": "ES2016a:annotated",
+          "complete": true
+        },
+        "query": {
+          "start": 390,
+          "end": 425,
+          "speaker": "C"
+        },
+        "variants": [
+          {
+            "claim_id": "ami_ES2016a_original",
+            "variant": "original",
+            "content": "you could whistle or make a noise and it'd beep",
+            "text": "Participant C said that you could whistle or make a noise and it'd beep.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.0006667845300398767,
+                "entailment": 0.9896398782730103,
+                "neutral": 0.009693403728306293
+              },
+              "deberta": {
+                "contradiction": 0.0006641384097747505,
+                "entailment": 0.9908496141433716,
+                "neutral": 0.008486269973218441
+              }
+            },
+            "compiler": {
+              "stage": "amr",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unrepresented source content: it'd, beep"
+                },
+                {
+                  "stage": "amr",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1, that you could whistle or make a noise and it'd beep, scope, world, route, speech_assertion)",
+              "speaker": "role(E1, ARG0, X2, scope, world, route, unspecified)",
+              "form": "EXISTS E1, X2: ((concept(E1, say-01, scope, world, route, unspecified) AND (concept(X2, person, scope, world, route, unspecified) AND name(X2, C, scope, world, route, unspecified) AND EXISTS X3: ((concept(X3, participant, scope, world, route, unspecified) AND role(X3, domain, X2, scope, world, route, unspecified)))) AND role(E1, ARG0, X2, scope, world, route, unspecified) AND reported_disjunction(E1, c1, that you could whistle or make a noise and it'd beep, scope, world, route, speech_assertion) AND EXISTS T0: (temporal(E1, past, simple, T0, scope, world, route, unspecified))))"
+            }
+          },
+          {
+            "claim_id": "ami_ES2016a_paraphrase",
+            "variant": "paraphrase",
+            "content": "the device would beep if you whistled or made a sound",
+            "text": "Participant C said that the device would beep if you whistled or made a sound.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.002249147742986679,
+                "entailment": 0.9735226631164551,
+                "neutral": 0.02422827109694481
+              },
+              "deberta": {
+                "contradiction": 0.0001493640011176467,
+                "entailment": 0.9971827268600464,
+                "neutral": 0.0026679551228880882
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_ES2016a_changed_option",
+            "variant": "changed_option",
+            "content": "the device would beep if you waved or made a sound",
+            "text": "Participant C said that the device would beep if you waved or made a sound.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.030753299593925476,
+                "entailment": 0.9020172357559204,
+                "neutral": 0.06722951680421829
+              },
+              "deberta": {
+                "contradiction": 0.021983031183481216,
+                "entailment": 0.9457343816757202,
+                "neutral": 0.03228263184428215
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_ES2016a_changed_context",
+            "variant": "changed_context",
+            "content": "the device would flash if you whistled or made a sound",
+            "text": "Participant C said that the device would flash if you whistled or made a sound.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.04770837351679802,
+                "entailment": 0.882534921169281,
+                "neutral": 0.06975673884153366
+              },
+              "deberta": {
+                "contradiction": 0.001902280142530799,
+                "entailment": 0.9849864840507507,
+                "neutral": 0.013111158274114132
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          }
+        ]
+      },
+      {
+        "meeting": "EN2002d",
+        "evidence": {
+          "text": "Yeah, that could be yeah, that could easily be five or six pages.",
+          "start": 1657.17,
+          "end": 1660.13,
+          "speaker": "D",
+          "turn": "EN2002d:annotated",
+          "complete": true
+        },
+        "query": {
+          "start": 1650,
+          "end": 1685,
+          "speaker": "D"
+        },
+        "variants": [
+          {
+            "claim_id": "ami_EN2002d_original",
+            "variant": "original",
+            "content": "that could easily be five or six pages",
+            "text": "Participant D said that that could easily be five or six pages.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": true,
+              "deberta_whole": true,
+              "deberta_branches": true
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.0006504366756416857,
+                "entailment": 0.9864119291305542,
+                "neutral": 0.012937717139720917
+              },
+              "deberta": {
+                "contradiction": 0.00020583246077876538,
+                "entailment": 0.9953778982162476,
+                "neutral": 0.004416229203343391
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unrepresented source content: six"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "An OR operand already has another assignment."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_EN2002d_paraphrase",
+            "variant": "paraphrase",
+            "content": "the document could easily run to five pages or six pages",
+            "text": "Participant D said that the document could easily run to five pages or six pages.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.0019828227814286947,
+                "entailment": 0.7794341444969177,
+                "neutral": 0.21858300268650055
+              },
+              "deberta": {
+                "contradiction": 4.735491893370636e-05,
+                "entailment": 0.7870821356773376,
+                "neutral": 0.2128705382347107
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_EN2002d_paraphrase, that the document could easily run to five pages or six pages, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_EN2002d_paraphrase, scope, world, route, unspecified)",
+              "form": "EXISTS X1: ((referent(X1, Participant D, scope, world, route, unspecified) AND EXISTS E1: ((say(E1, ARG0, X1, ARG1, c1::ami_EN2002d_paraphrase, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_EN2002d_paraphrase, that the document could easily run to five pages or six pages, scope, world, route, speech_assertion) AND EXISTS T0: (temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified))))))"
+            }
+          },
+          {
+            "claim_id": "ami_EN2002d_changed_option",
+            "variant": "changed_option",
+            "content": "the document could easily run to five pages or seven pages",
+            "text": "Participant D said that the document could easily run to five pages or seven pages.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": false,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.003236153395846486,
+                "entailment": 0.8241286873817444,
+                "neutral": 0.17263518273830414
+              },
+              "deberta": {
+                "contradiction": 0.009620880708098412,
+                "entailment": 0.008912148885428905,
+                "neutral": 0.9814669489860535
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_EN2002d_changed_option, that the document could easily run to five pages or seven pages, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_EN2002d_changed_option, scope, world, route, unspecified)",
+              "form": "EXISTS X1: ((referent(X1, Participant D, scope, world, route, unspecified) AND EXISTS E1: ((say(E1, ARG0, X1, ARG1, c1::ami_EN2002d_changed_option, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_EN2002d_changed_option, that the document could easily run to five pages or seven pages, scope, world, route, speech_assertion) AND EXISTS T0: (temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified))))))"
+            }
+          },
+          {
+            "claim_id": "ami_EN2002d_changed_context",
+            "variant": "changed_context",
+            "content": "the document had already reached five pages or six pages",
+            "text": "Participant D said that the document had already reached five pages or six pages.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": false,
+              "minilm_branches": false,
+              "deberta_whole": false,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.30084937810897827,
+                "entailment": 0.04395756497979164,
+                "neutral": 0.6551930904388428
+              },
+              "deberta": {
+                "contradiction": 0.008282966911792755,
+                "entailment": 0.012915984727442265,
+                "neutral": 0.9788010716438293
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_EN2002d_changed_context, that the document had already reached five pages or six pages, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_EN2002d_changed_context, scope, world, route, unspecified)",
+              "form": "EXISTS X1: ((referent(X1, Participant D, scope, world, route, unspecified) AND EXISTS E1, T0: ((say(E1, ARG0, X1, ARG1, c1::ami_EN2002d_changed_context, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_EN2002d_changed_context, that the document had already reached five pages or six pages, scope, world, route, speech_assertion) AND temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified)))))"
+            }
+          }
+        ]
+      },
+      {
+        "meeting": "IN1001",
+        "evidence": {
+          "text": "So I will ask you or someone else, okay.",
+          "start": 3113.57,
+          "end": 3118.89,
+          "speaker": "C",
+          "turn": "IN1001:annotated",
+          "complete": true
+        },
+        "query": {
+          "start": 3090,
+          "end": 3125,
+          "speaker": "C"
+        },
+        "variants": [
+          {
+            "claim_id": "ami_IN1001_original",
+            "variant": "original",
+            "content": "they will ask you or someone else",
+            "text": "Participant C said that they will ask you or someone else.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.044556308537721634,
+                "entailment": 0.8647900819778442,
+                "neutral": 0.09065359830856323
+              },
+              "deberta": {
+                "contradiction": 0.0033884067088365555,
+                "entailment": 0.9711527824401855,
+                "neutral": 0.02545885555446148
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_IN1001_original, that they will ask you or someone else, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_IN1001_original, scope, world, route, unspecified)",
+              "form": "EXISTS X1: ((referent(X1, Participant C, scope, world, route, unspecified) AND EXISTS E1: ((say(E1, ARG0, X1, ARG1, c1::ami_IN1001_original, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_IN1001_original, that they will ask you or someone else, scope, world, route, speech_assertion) AND EXISTS T0: (temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified))))))"
+            }
+          },
+          {
+            "claim_id": "ami_IN1001_paraphrase",
+            "variant": "paraphrase",
+            "content": "they would ask you or somebody else",
+            "text": "Participant C said that they would ask you or somebody else.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": true
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.019424060359597206,
+                "entailment": 0.9083892703056335,
+                "neutral": 0.07218669354915619
+              },
+              "deberta": {
+                "contradiction": 0.002013553399592638,
+                "entailment": 0.9832241535186768,
+                "neutral": 0.0147622711956501
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "Would is embedded or multiply scoped; its clause must be resolved before compilation can be accepted."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_IN1001_changed_option",
+            "variant": "changed_option",
+            "content": "they would ask you or your supervisor",
+            "text": "Participant C said that they would ask you or your supervisor.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": false,
+              "minilm_branches": false,
+              "deberta_whole": false,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.005352224688977003,
+                "entailment": 0.022998793050646782,
+                "neutral": 0.9716489911079407
+              },
+              "deberta": {
+                "contradiction": 0.0003718327498063445,
+                "entailment": 0.00046729747555218637,
+                "neutral": 0.999160885810852
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "An OR operand is referenced outside its choice."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_IN1001_changed_context",
+            "variant": "changed_context",
+            "content": "they had already asked you or somebody else",
+            "text": "Participant C said that they had already asked you or somebody else.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": false,
+              "minilm_branches": false,
+              "deberta_whole": false,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.4349461495876312,
+                "entailment": 0.10283394902944565,
+                "neutral": 0.46221989393234253
+              },
+              "deberta": {
+                "contradiction": 0.8427440524101257,
+                "entailment": 0.016002554446458817,
+                "neutral": 0.14125336706638336
+              }
+            },
+            "compiler": {
+              "stage": "srl",
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "compiled"
+                }
+              ],
+              "state": "usable",
+              "report": "reported_disjunction(E1, c1::ami_IN1001_changed_context, that they had already asked you or somebody else, scope, world, route, speech_assertion)",
+              "speaker": "say(E1, ARG0, X1, ARG1, c1::ami_IN1001_changed_context, scope, world, route, unspecified)",
+              "form": "EXISTS X1: ((referent(X1, Participant C, scope, world, route, unspecified) AND EXISTS E1, T0: ((say(E1, ARG0, X1, ARG1, c1::ami_IN1001_changed_context, scope, world, route, unspecified) AND property(E1, clause_marker:ARG1, that, scope, world, route, unspecified) AND reported_disjunction(E1, c1::ami_IN1001_changed_context, that they had already asked you or somebody else, scope, world, route, speech_assertion) AND temporal(E1, past, simple, T0, unspecified, scope, world, route, unspecified)))))"
+            }
+          }
+        ]
+      },
+      {
+        "meeting": "IS1003c",
+        "evidence": {
+          "text": "I don't see how adding speech or gesture recognition would make the remote control look more like Google.",
+          "start": 818.48,
+          "end": 825.76,
+          "speaker": "D",
+          "turn": "IS1003c:annotated",
+          "complete": true
+        },
+        "query": {
+          "start": 810,
+          "end": 845,
+          "speaker": "D"
+        },
+        "variants": [
+          {
+            "claim_id": "ami_IS1003c_original",
+            "variant": "original",
+            "content": "they don't see how adding speech or gesture recognition would make the remote control look more like Google",
+            "text": "Participant D said that they don't see how adding speech or gesture recognition would make the remote control look more like Google.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": true,
+              "deberta_whole": true,
+              "deberta_branches": true
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.008410542272031307,
+                "entailment": 0.9512850046157837,
+                "neutral": 0.04030444473028183
+              },
+              "deberta": {
+                "contradiction": 0.002549502532929182,
+                "entailment": 0.9891616106033325,
+                "neutral": 0.008288860321044922
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "No scope policy for make-02 :ARG0 add-02"
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_IS1003c_paraphrase",
+            "variant": "paraphrase",
+            "content": "they could not see how speech recognition or gesture recognition would make the remote look more like Google",
+            "text": "Participant D said that they could not see how speech recognition or gesture recognition would make the remote look more like Google.",
+            "expected_support": true,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": true,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.005339820869266987,
+                "entailment": 0.9441209435462952,
+                "neutral": 0.05053922161459923
+              },
+              "deberta": {
+                "contradiction": 0.0009300481760874391,
+                "entailment": 0.9912324547767639,
+                "neutral": 0.007837465964257717
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "A noun-attached adjective is used as a participant of that noun's event predicate; preserve the property on its noun. Declared predicative-value roles are exempt."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_IS1003c_changed_option",
+            "variant": "changed_option",
+            "content": "they could not see how speech recognition or face recognition would make the remote look more like Google",
+            "text": "Participant D said that they could not see how speech recognition or face recognition would make the remote look more like Google.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": true,
+              "minilm_branches": false,
+              "deberta_whole": true,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.02309088036417961,
+                "entailment": 0.6048117876052856,
+                "neutral": 0.37209728360176086
+              },
+              "deberta": {
+                "contradiction": 0.02290980890393257,
+                "entailment": 0.852730393409729,
+                "neutral": 0.12435976415872574
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "A noun-attached adjective is used as a participant of that noun's event predicate; preserve the property on its noun. Declared predicative-value roles are exempt."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          },
+          {
+            "claim_id": "ami_IS1003c_changed_context",
+            "variant": "changed_context",
+            "content": "they understood how speech recognition or gesture recognition would make the remote look more like Google",
+            "text": "Participant D said that they understood how speech recognition or gesture recognition would make the remote look more like Google.",
+            "expected_support": false,
+            "predictions": {
+              "exact": false,
+              "minilm_whole": false,
+              "minilm_branches": false,
+              "deberta_whole": false,
+              "deberta_branches": false
+            },
+            "whole_scores": {
+              "minilm": {
+                "contradiction": 0.9914612770080566,
+                "entailment": 0.0013016704469919205,
+                "neutral": 0.007237132638692856
+              },
+              "deberta": {
+                "contradiction": 0.9995026588439941,
+                "entailment": 0.00013050076086074114,
+                "neutral": 0.0003669149591587484
+              }
+            },
+            "compiler": {
+              "stage": null,
+              "statuses": [
+                {
+                  "stage": "srl",
+                  "status": "unsupported",
+                  "reason": "Unresolved modal interpretation: would"
+                },
+                {
+                  "stage": "amr",
+                  "status": "unsupported",
+                  "reason": "A noun-attached adjective is used as a participant of that noun's event predicate; preserve the property on its noun. Declared predicative-value roles are exempt."
+                },
+                {
+                  "stage": "rewrite",
+                  "status": "unavailable",
+                  "reason": "No rewrite provider supplied."
+                }
+              ],
+              "state": "abstained"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "attribution": {
+    "total": 8,
+    "word_coverage": {
+      "pyannote": {
+        "speech_activity": {
+          "any": 8,
+          "all": 8
+        },
+        "one_turn": {
+          "any": 8,
+          "all": 8
+        },
+        "any_window": {
+          "any": 5,
+          "all": 2
+        },
+        "earlier_labels": {
+          "any": 2,
+          "all": 1
+        },
+        "target_labels": {
+          "any": 4,
+          "all": 2
+        }
+      },
+      "reverb": {
+        "speech_activity": {
+          "any": 8,
+          "all": 7
+        },
+        "one_turn": {
+          "any": 8,
+          "all": 5
+        },
+        "any_window": {
+          "any": 7,
+          "all": 2
+        },
+        "earlier_labels": {
+          "any": 1,
+          "all": 0
+        },
+        "target_labels": {
+          "any": 5,
+          "all": 1
+        }
+      }
+    },
+    "support": {
+      "pyannote": {
+        "earlier_labels": {
+          "correct_speaker": 2,
+          "different_speaker": 0,
+          "correct_speaker_clean": 0,
+          "different_speaker_clean": 0
+        },
+        "target_labels": {
+          "correct_speaker": 3,
+          "correct_speaker_clean": 1,
+          "different_speaker": 0,
+          "different_speaker_clean": 0
+        }
+      },
+      "reverb": {
+        "earlier_labels": {
+          "correct_speaker": 1,
+          "different_speaker": 0,
+          "correct_speaker_clean": 0,
+          "different_speaker_clean": 0
+        },
+        "target_labels": {
+          "correct_speaker": 3,
+          "correct_speaker_clean": 1,
+          "different_speaker": 0,
+          "different_speaker_clean": 0
+        }
+      }
+    },
+    "rows": [
+      {
+        "meeting": "IS1006a",
+        "target": "Yeah but for instance when you change channels you can have you can just go to the next one or go to channel twenty five.",
+        "speaker": "D",
+        "word_count": 25,
+        "models": {
+          "pyannote": {
+            "word_counts": {
+              "speech_activity": 25,
+              "one_turn": 25,
+              "any_window": 23,
+              "earlier_labels": 0,
+              "target_labels": 23
+            },
+            "earlier_names": {
+              "4": "A"
+            },
+            "target_names": {
+              "11": "B",
+              "15": "D",
+              "18": "C"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                4,
+                6,
+                9,
+                11,
+                15,
+                18
+              ],
+              "match_seconds": [
+                [
+                  0.4190312501043536,
+                  3.9190312501043536,
+                  0.12999999999999545,
+                  1.8500000000000227
+                ],
+                [
+                  5.08965663157403,
+                  9.519031250104376,
+                  0.12999999999999545,
+                  4.280000000000086
+                ],
+                [
+                  17.744030265808078,
+                  2.115906333923249,
+                  0.0,
+                  2.255906333923349
+                ],
+                [
+                  0.0,
+                  0.5399999999999636,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.42840652465815765,
+                  0.0,
+                  0.5384065246581713
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 655
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                4,
+                6,
+                9,
+                11,
+                15,
+                18
+              ],
+              "match_seconds": [
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  6.610000000000014,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.4700000000000273,
+                  3.7899999999999636,
+                  0.5699999999999363,
+                  16.939718933105496
+                ],
+                [
+                  0.0,
+                  0.0,
+                  5.64284698486324,
+                  1.2602810668945494
+                ]
+              ],
+              "cutoff": 695
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 2,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          },
+          "reverb": {
+            "word_counts": {
+              "speech_activity": 25,
+              "one_turn": 25,
+              "any_window": 23,
+              "earlier_labels": 0,
+              "target_labels": 23
+            },
+            "earlier_names": {
+              "3": "A"
+            },
+            "target_names": {
+              "13": "B",
+              "16": "D"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                3,
+                9,
+                12,
+                13,
+                15,
+                16
+              ],
+              "match_seconds": [
+                [
+                  2.744031822308898,
+                  7.083750774487953,
+                  0.4199999999999591,
+                  2.969094352722209
+                ],
+                [
+                  18.182781486511203,
+                  1.2656248092650912,
+                  0.0,
+                  1.2956248092651776
+                ],
+                [
+                  0.08222114562988736,
+                  0.5315292358397983,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.42840652465815765,
+                  0.0,
+                  0.5384065246581713
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 655
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                3,
+                9,
+                12,
+                13,
+                15,
+                16
+              ],
+              "match_seconds": [
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  6.022218933105478,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.5877810668945358,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.4700000000000273,
+                  3.7899999999999636,
+                  6.342846984863172,
+                  18.200000000000045
+                ]
+              ],
+              "cutoff": 695
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 2,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "meeting": "ES2014c",
+        "target": "And that you can make them curved or double-curved and that would be the kind of sleek and sexy look.",
+        "speaker": "C",
+        "word_count": 20,
+        "models": {
+          "pyannote": {
+            "word_counts": {
+              "speech_activity": 20,
+              "one_turn": 20,
+              "any_window": 20,
+              "earlier_labels": 20,
+              "target_labels": 20
+            },
+            "earlier_names": {
+              "0": "B",
+              "1": "D",
+              "5": "C",
+              "13": "A"
+            },
+            "target_names": {
+              "0": "B",
+              "5": "C",
+              "13": "A"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                3,
+                5,
+                7,
+                12,
+                13,
+                15,
+                17,
+                19,
+                20,
+                22,
+                23,
+                24,
+                25
+              ],
+              "match_seconds": [
+                [
+                  4.421250140294433,
+                  12.597565345764679,
+                  2.0265300750731967,
+                  2.225063967704955
+                ],
+                [
+                  1.5490312501042354,
+                  0.07534402847295496,
+                  0.0,
+                  6.690000000000055
+                ],
+                [
+                  0.2899999999999636,
+                  4.243125534057754,
+                  0.6522204589844023,
+                  1.0896556091308867
+                ],
+                [
+                  0.23277877807618097,
+                  2.049095840454129,
+                  5.799095840454129,
+                  0.13999999999987267
+                ],
+                [
+                  0.4953446960448673,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6075000762939453,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  2.718060913085992,
+                  0.4050006866455078,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 1615
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                3,
+                5,
+                7,
+                12,
+                13,
+                15,
+                17,
+                19,
+                20,
+                22,
+                23,
+                24,
+                25
+              ],
+              "match_seconds": [
+                [
+                  1.0243829345702125,
+                  11.10722229003909,
+                  1.991876220703034,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.9322207641600926,
+                  5.122220764160147,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  2.3299999999999272,
+                  0.0,
+                  0.8590930175780613,
+                  0.2300000000000182
+                ],
+                [
+                  0.6581230163574219,
+                  0.0,
+                  0.0,
+                  0.2300000000000182
+                ],
+                [
+                  0.8146569824218659,
+                  0.0,
+                  3.3546569824218295,
+                  0.0
+                ],
+                [
+                  0.47715545654295966,
+                  0.4800000000000182,
+                  0.5231246948242188,
+                  0.493405151367142
+                ],
+                [
+                  0.38999999999987267,
+                  5.249719085693414,
+                  2.7193742370604923,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.2799999999999727,
+                  0.0
+                ],
+                [
+                  2.0622198486328216,
+                  0.11340270996083746,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.47249603271484375,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.8127813720702761,
+                  0.0,
+                  0.9800000000000182,
+                  0.0
+                ]
+              ],
+              "cutoff": 1655
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 2,
+                  "matching": [
+                    {
+                      "text": "And that you can make them curved or double-curved and that would be the kind of Oh sleek yeah and sexy yeah one of look the things",
+                      "start": 1628.74,
+                      "end": 1634.11,
+                      "speaker": "C",
+                      "cluster": 5,
+                      "complete": false,
+                      "anchors": [
+                        [
+                          "curved",
+                          "make",
+                          "them"
+                        ],
+                        [
+                          "curved",
+                          "double",
+                          "kind",
+                          "would"
+                        ]
+                      ],
+                      "word_ids": [
+                        "ES2014c.C.words1230",
+                        "ES2014c.C.words1231",
+                        "ES2014c.C.words1232",
+                        "ES2014c.C.words1233",
+                        "ES2014c.C.words1234",
+                        "ES2014c.C.words1235",
+                        "ES2014c.C.words1236",
+                        "ES2014c.C.words1237",
+                        "ES2014c.C.words1238",
+                        "ES2014c.C.words1239",
+                        "ES2014c.C.words1240",
+                        "ES2014c.C.words1241",
+                        "ES2014c.C.words1242",
+                        "ES2014c.C.words1243",
+                        "ES2014c.C.words1244",
+                        "ES2014c.C.words1245",
+                        "ES2014c.B.words1709",
+                        "ES2014c.C.words1246",
+                        "ES2014c.B.words1710",
+                        "ES2014c.C.words1247",
+                        "ES2014c.C.words1248",
+                        "ES2014c.B.words1711",
+                        "ES2014c.B.words1712",
+                        "ES2014c.B.words1713",
+                        "ES2014c.C.words1249",
+                        "ES2014c.B.words1714",
+                        "ES2014c.B.words1715"
+                      ],
+                      "overlapping_words": 12,
+                      "annotated_word_speakers": {
+                        "C": 20,
+                        "B": 7
+                      }
+                    }
+                  ]
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 2,
+                  "matching": [
+                    {
+                      "text": "And that you can make them curved or double-curved and that would be the kind of Oh sleek yeah and sexy yeah one of look the things",
+                      "start": 1628.74,
+                      "end": 1634.11,
+                      "speaker": "C",
+                      "cluster": 5,
+                      "complete": false,
+                      "anchors": [
+                        [
+                          "curved",
+                          "make",
+                          "them"
+                        ],
+                        [
+                          "curved",
+                          "double",
+                          "kind",
+                          "would"
+                        ]
+                      ],
+                      "word_ids": [
+                        "ES2014c.C.words1230",
+                        "ES2014c.C.words1231",
+                        "ES2014c.C.words1232",
+                        "ES2014c.C.words1233",
+                        "ES2014c.C.words1234",
+                        "ES2014c.C.words1235",
+                        "ES2014c.C.words1236",
+                        "ES2014c.C.words1237",
+                        "ES2014c.C.words1238",
+                        "ES2014c.C.words1239",
+                        "ES2014c.C.words1240",
+                        "ES2014c.C.words1241",
+                        "ES2014c.C.words1242",
+                        "ES2014c.C.words1243",
+                        "ES2014c.C.words1244",
+                        "ES2014c.C.words1245",
+                        "ES2014c.B.words1709",
+                        "ES2014c.C.words1246",
+                        "ES2014c.B.words1710",
+                        "ES2014c.C.words1247",
+                        "ES2014c.C.words1248",
+                        "ES2014c.B.words1711",
+                        "ES2014c.B.words1712",
+                        "ES2014c.B.words1713",
+                        "ES2014c.C.words1249",
+                        "ES2014c.B.words1714",
+                        "ES2014c.B.words1715"
+                      ],
+                      "overlapping_words": 12,
+                      "annotated_word_speakers": {
+                        "C": 20,
+                        "B": 7
+                      }
+                    }
+                  ]
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          },
+          "reverb": {
+            "word_counts": {
+              "speech_activity": 20,
+              "one_turn": 16,
+              "any_window": 16,
+              "earlier_labels": 0,
+              "target_labels": 16
+            },
+            "earlier_names": {
+              "1": "D",
+              "2": "B",
+              "6": "C"
+            },
+            "target_names": {
+              "0": "B",
+              "20": "C"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                2,
+                6,
+                12,
+                16,
+                19,
+                20,
+                22,
+                24
+              ],
+              "match_seconds": [
+                [
+                  2.8856258392333984,
+                  4.591939697265843,
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.5490312501042354,
+                  0.0,
+                  0.0,
+                  6.619718952179028
+                ],
+                [
+                  0.0,
+                  10.35034683227559,
+                  1.9406261444091797,
+                  1.8146558952332725
+                ],
+                [
+                  0.6443758392333621,
+                  0.4724998474121094,
+                  3.9428450775146757,
+                  0.3496554565429051
+                ],
+                [
+                  2.262435379028375,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 1615
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                2,
+                6,
+                12,
+                16,
+                19,
+                20,
+                22,
+                24
+              ],
+              "match_seconds": [
+                [
+                  2.4672186279296966,
+                  13.973686218261719,
+                  2.016184997558412,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.09784347534173321,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.8146569824218659,
+                  0.0,
+                  3.3546569824218295,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.4800000000000182,
+                  0.0,
+                  0.476528930664017
+                ],
+                [
+                  0.7959051513671511,
+                  0.07159454345696759,
+                  5.237499694824237,
+                  0.0
+                ],
+                [
+                  0.36277877807606274,
+                  0.7472187805176418,
+                  0.7672187805176236,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.2634011840821131,
+                  0.0
+                ]
+              ],
+              "cutoff": 1655
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 1,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "meeting": "ES2008d",
+        "target": "But if it's like under covers or like in a couch you still can't see it.",
+        "speaker": "D",
+        "word_count": 16,
+        "models": {
+          "pyannote": {
+            "word_counts": {
+              "speech_activity": 16,
+              "one_turn": 16,
+              "any_window": 0,
+              "earlier_labels": 0,
+              "target_labels": 0
+            },
+            "earlier_names": {
+              "0": "C",
+              "2": "B"
+            },
+            "target_names": {
+              "2": "B",
+              "7": "C",
+              "9": "A"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "clusters": [
+                0,
+                2,
+                7,
+                9,
+                14,
+                17
+              ],
+              "match_seconds": [
+                [
+                  1.1399999999999864,
+                  0.0,
+                  11.679031250104288
+                ],
+                [
+                  0.7843748855590889,
+                  21.0,
+                  0.35437488555908203
+                ],
+                [
+                  0.0,
+                  0.1934077453613554,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 385
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                2,
+                7,
+                9,
+                14,
+                17
+              ],
+              "match_seconds": [
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.3747180175781182,
+                  14.014718017578105,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.32159439086916564,
+                  1.0900000000000318,
+                  0.0
+                ],
+                [
+                  7.839999999999975,
+                  0.4000000000000341,
+                  0.24903137207036252,
+                  0.0
+                ],
+                [
+                  1.079999999999984,
+                  5.403404541015618,
+                  0.0,
+                  3.6434725952148597
+                ],
+                [
+                  3.990000000000009,
+                  1.6065295410156182,
+                  0.0,
+                  3.4931259155273438
+                ]
+              ],
+              "cutoff": 425
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          },
+          "reverb": {
+            "word_counts": {
+              "speech_activity": 16,
+              "one_turn": 16,
+              "any_window": 16,
+              "earlier_labels": 0,
+              "target_labels": 0
+            },
+            "earlier_names": {
+              "0": "C",
+              "2": "B"
+            },
+            "target_names": {
+              "2": "B",
+              "8": "A"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "clusters": [
+                0,
+                2,
+                6,
+                8,
+                11,
+                12,
+                13
+              ],
+              "match_seconds": [
+                [
+                  1.0984688949585006,
+                  0.0,
+                  11.647500145062793
+                ],
+                [
+                  0.4300000000000068,
+                  21.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 385
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                2,
+                6,
+                8,
+                11,
+                12,
+                13
+              ],
+              "match_seconds": [
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  13.145633697509766,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.5447201538086119,
+                  0.0
+                ],
+                [
+                  7.839999999999975,
+                  1.3356239318847543,
+                  0.21000000000003638,
+                  0.0
+                ],
+                [
+                  0.3765283203125023,
+                  0.38812255859375,
+                  0.0,
+                  0.0
+                ],
+                [
+                  3.990000000000009,
+                  4.104027099609368,
+                  0.0,
+                  3.650000000000034
+                ],
+                [
+                  0.892781372070317,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 425
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "meeting": "TS3003c",
+        "target": "one remote, but it would have to be fancy with either the wood cover or the plastic one.",
+        "speaker": "D",
+        "word_count": 18,
+        "models": {
+          "pyannote": {
+            "word_counts": {
+              "speech_activity": 18,
+              "one_turn": 18,
+              "any_window": 16,
+              "earlier_labels": 16,
+              "target_labels": 16
+            },
+            "earlier_names": {
+              "0": "D",
+              "2": "A"
+            },
+            "target_names": {
+              "0": "D",
+              "11": "A"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                2,
+                3,
+                5,
+                7,
+                10,
+                11,
+                13,
+                15,
+                16
+              ],
+              "match_seconds": [
+                [
+                  1.3099999570847558,
+                  0.053406195640491205,
+                  15.724158878326534
+                ],
+                [
+                  0.9956250544637442,
+                  0.4065938043595452,
+                  0.0
+                ],
+                [
+                  6.3015962219237736,
+                  0.0,
+                  2.0837513732910793
+                ],
+                [
+                  0.3543739318847656,
+                  0.0,
+                  0.3184700012207031
+                ],
+                [
+                  5.954653701782263,
+                  0.0,
+                  2.6400000000001
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 1495
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                2,
+                3,
+                5,
+                7,
+                10,
+                11,
+                13,
+                15,
+                16
+              ],
+              "match_seconds": [
+                [
+                  1.809029235839489,
+                  0.0,
+                  0.9872186279296784,
+                  15.014718627929597
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  2.4137503051758813,
+                  0.37000000000011823,
+                  0.22999999999979082,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.30659545898447504,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  3.3009698486328034,
+                  0.0,
+                  0.0,
+                  2.3999999999998636
+                ],
+                [
+                  1.2150039672851562,
+                  0.0,
+                  0.0,
+                  0.3465982055663517
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.40500640869140625,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.5877758789063137,
+                  0.0
+                ]
+              ],
+              "cutoff": 1535
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 1,
+                  "matching": [
+                    {
+                      "text": "remote, but it would have to be fancy with either the wood cover or the Yeah plastic.",
+                      "start": 1502.59,
+                      "end": 1508.12,
+                      "speaker": "D",
+                      "cluster": 0,
+                      "complete": false,
+                      "word_ids": [
+                        "TS3003c.D.words951",
+                        "TS3003c.D.words952",
+                        "TS3003c.D.words953",
+                        "TS3003c.D.words954",
+                        "TS3003c.D.words955",
+                        "TS3003c.D.words956",
+                        "TS3003c.D.words957",
+                        "TS3003c.D.words958",
+                        "TS3003c.D.words959",
+                        "TS3003c.D.words960",
+                        "TS3003c.D.words961",
+                        "TS3003c.D.words962",
+                        "TS3003c.D.words963",
+                        "TS3003c.D.words964",
+                        "TS3003c.D.words965",
+                        "TS3003c.D.words966",
+                        "TS3003c.A.words1117",
+                        "TS3003c.D.words967",
+                        "TS3003c.A.words1118"
+                      ],
+                      "annotated_word_speakers": {
+                        "D": 17,
+                        "A": 2
+                      }
+                    }
+                  ]
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 1,
+                  "matching": [
+                    {
+                      "text": "remote, but it would have to be fancy with either the wood cover or the Yeah plastic.",
+                      "start": 1502.59,
+                      "end": 1508.12,
+                      "speaker": "D",
+                      "cluster": 0,
+                      "complete": false,
+                      "word_ids": [
+                        "TS3003c.D.words951",
+                        "TS3003c.D.words952",
+                        "TS3003c.D.words953",
+                        "TS3003c.D.words954",
+                        "TS3003c.D.words955",
+                        "TS3003c.D.words956",
+                        "TS3003c.D.words957",
+                        "TS3003c.D.words958",
+                        "TS3003c.D.words959",
+                        "TS3003c.D.words960",
+                        "TS3003c.D.words961",
+                        "TS3003c.D.words962",
+                        "TS3003c.D.words963",
+                        "TS3003c.D.words964",
+                        "TS3003c.D.words965",
+                        "TS3003c.D.words966",
+                        "TS3003c.A.words1117",
+                        "TS3003c.D.words967",
+                        "TS3003c.A.words1118"
+                      ],
+                      "annotated_word_speakers": {
+                        "D": 17,
+                        "A": 2
+                      }
+                    }
+                  ]
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          },
+          "reverb": {
+            "word_counts": {
+              "speech_activity": 18,
+              "one_turn": 18,
+              "any_window": 16,
+              "earlier_labels": 16,
+              "target_labels": 16
+            },
+            "earlier_names": {
+              "1": "D",
+              "5": "A"
+            },
+            "target_names": {
+              "1": "D",
+              "9": "A",
+              "16": "C"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                3,
+                5,
+                7,
+                8,
+                9,
+                14,
+                16
+              ],
+              "match_seconds": [
+                [
+                  0.8437500353902578,
+                  0.25471878528605885,
+                  0.0
+                ],
+                [
+                  1.5390312123299736,
+                  0.23903121232979174,
+                  14.26159500122094
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.8056259155273438
+                ],
+                [
+                  10.148749389648401,
+                  0.0,
+                  3.272499389648601
+                ],
+                [
+                  0.6412506103515625,
+                  0.0,
+                  0.6412506103515625
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 1495
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                3,
+                5,
+                7,
+                8,
+                9,
+                14,
+                16
+              ],
+              "match_seconds": [
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  3.209935760497501,
+                  0.0,
+                  0.0,
+                  13.954154052734339
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.83465621948244,
+                  0.37000000000011823,
+                  0.22999999999979082,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.5399999999999636
+                ],
+                [
+                  4.625623474121085,
+                  0.37000000000011823,
+                  0.22999999999979082,
+                  2.3999999999998636
+                ],
+                [
+                  0.005971069335828361,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.34715240478522,
+                  0.371246337890625
+                ]
+              ],
+              "cutoff": 1535
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 1,
+                  "matching": [
+                    {
+                      "text": "remote, but it would have to be fancy with either the wood cover or the Yeah plastic.",
+                      "start": 1502.59,
+                      "end": 1508.12,
+                      "speaker": "D",
+                      "cluster": 1,
+                      "complete": false,
+                      "word_ids": [
+                        "TS3003c.D.words951",
+                        "TS3003c.D.words952",
+                        "TS3003c.D.words953",
+                        "TS3003c.D.words954",
+                        "TS3003c.D.words955",
+                        "TS3003c.D.words956",
+                        "TS3003c.D.words957",
+                        "TS3003c.D.words958",
+                        "TS3003c.D.words959",
+                        "TS3003c.D.words960",
+                        "TS3003c.D.words961",
+                        "TS3003c.D.words962",
+                        "TS3003c.D.words963",
+                        "TS3003c.D.words964",
+                        "TS3003c.D.words965",
+                        "TS3003c.D.words966",
+                        "TS3003c.A.words1117",
+                        "TS3003c.D.words967",
+                        "TS3003c.A.words1118"
+                      ],
+                      "annotated_word_speakers": {
+                        "D": 17,
+                        "A": 2
+                      }
+                    }
+                  ]
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 1,
+                  "matching": [
+                    {
+                      "text": "remote, but it would have to be fancy with either the wood cover or the Yeah plastic.",
+                      "start": 1502.59,
+                      "end": 1508.12,
+                      "speaker": "D",
+                      "cluster": 1,
+                      "complete": false,
+                      "word_ids": [
+                        "TS3003c.D.words951",
+                        "TS3003c.D.words952",
+                        "TS3003c.D.words953",
+                        "TS3003c.D.words954",
+                        "TS3003c.D.words955",
+                        "TS3003c.D.words956",
+                        "TS3003c.D.words957",
+                        "TS3003c.D.words958",
+                        "TS3003c.D.words959",
+                        "TS3003c.D.words960",
+                        "TS3003c.D.words961",
+                        "TS3003c.D.words962",
+                        "TS3003c.D.words963",
+                        "TS3003c.D.words964",
+                        "TS3003c.D.words965",
+                        "TS3003c.D.words966",
+                        "TS3003c.A.words1117",
+                        "TS3003c.D.words967",
+                        "TS3003c.A.words1118"
+                      ],
+                      "annotated_word_speakers": {
+                        "D": 17,
+                        "A": 2
+                      }
+                    }
+                  ]
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "meeting": "ES2016a",
+        "target": "Oh you can get those key well you could whistle or make a noise and it'd beep.",
+        "speaker": "C",
+        "word_count": 17,
+        "models": {
+          "pyannote": {
+            "word_counts": {
+              "speech_activity": 17,
+              "one_turn": 17,
+              "any_window": 6,
+              "earlier_labels": 0,
+              "target_labels": 0
+            },
+            "earlier_names": {
+              "0": "C",
+              "3": "A"
+            },
+            "target_names": {
+              "0": "C",
+              "8": "A",
+              "10": "D"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                2,
+                3,
+                5,
+                8,
+                10,
+                11,
+                12,
+                15,
+                19
+              ],
+              "match_seconds": [
+                [
+                  1.1200000000000045,
+                  0.25,
+                  16.426811630353313,
+                  0.20999999999997954
+                ],
+                [
+                  1.2365949249267487,
+                  0.0,
+                  1.0765949249267805,
+                  0.0
+                ],
+                [
+                  7.931251525878906,
+                  0.0,
+                  0.06340507507326265,
+                  0.08999999999997499
+                ],
+                [
+                  1.9627822875976335,
+                  0.0,
+                  0.0,
+                  0.23999999999995225
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 385
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                2,
+                3,
+                5,
+                8,
+                10,
+                11,
+                12,
+                15,
+                19
+              ],
+              "match_seconds": [
+                [
+                  1.7109707641601517,
+                  0.0,
+                  8.350970764160138,
+                  0.6299999999999955
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  5.778125305175763,
+                  0.0,
+                  1.7881253051758108,
+                  0.9871560668945563
+                ],
+                [
+                  0.7015956115722588,
+                  0.0,
+                  0.0,
+                  1.4515956115722588
+                ],
+                [
+                  4.000001525878929,
+                  0.0,
+                  4.690066070556668,
+                  0.2784043884277594
+                ],
+                [
+                  5.4647167968749955,
+                  0.5918750000000159,
+                  3.194652099609357,
+                  0.17999999999994998
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.30374908447265625
+                ],
+                [
+                  0.015283203125022737,
+                  0.0,
+                  1.5399999999999636,
+                  0.3534680175781091
+                ]
+              ],
+              "cutoff": 425
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          },
+          "reverb": {
+            "word_counts": {
+              "speech_activity": 17,
+              "one_turn": 8,
+              "any_window": 8,
+              "earlier_labels": 0,
+              "target_labels": 0
+            },
+            "earlier_names": {
+              "0": "C",
+              "6": "A"
+            },
+            "target_names": {
+              "0": "C",
+              "6": "A"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                3,
+                6,
+                8,
+                9,
+                12,
+                15
+              ],
+              "match_seconds": [
+                [
+                  0.54624950408936,
+                  0.25,
+                  15.28250262461603,
+                  0.20999999999997954
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.4859042358398256,
+                  0.0
+                ],
+                [
+                  9.686248779296875,
+                  0.0,
+                  1.1400000000000432,
+                  0.08999999999997499
+                ],
+                [
+                  2.6377815246581804,
+                  0.0,
+                  0.0,
+                  0.23999999999995225
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 385
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                3,
+                6,
+                8,
+                9,
+                12,
+                15
+              ],
+              "match_seconds": [
+                [
+                  1.299372711181661,
+                  0.0,
+                  7.797499237060549,
+                  0.6299999999999955
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  7.634376068115216,
+                  0.17000000000001592,
+                  2.629719238281268,
+                  1.9099999999999682
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  2.8753431701659906,
+                  0.0,
+                  1.6402807617187705,
+                  0.0
+                ],
+                [
+                  1.0127796936035907,
+                  0.0,
+                  2.0627796936034883,
+                  0.4209729003906091
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.5390274047851449,
+                  0.0
+                ]
+              ],
+              "cutoff": 425
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 1,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 1,
+                  "matching": []
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "meeting": "EN2002d",
+        "target": "Yeah, that could be yeah, that could easily be five or six pages.",
+        "speaker": "D",
+        "word_count": 13,
+        "models": {
+          "pyannote": {
+            "word_counts": {
+              "speech_activity": 13,
+              "one_turn": 13,
+              "any_window": 0,
+              "earlier_labels": 0,
+              "target_labels": 0
+            },
+            "earlier_names": {
+              "0": "D",
+              "1": "B",
+              "7": "A"
+            },
+            "target_names": {
+              "7": "A",
+              "14": "D",
+              "22": "B"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                4,
+                6,
+                7,
+                14,
+                16,
+                19,
+                22
+              ],
+              "match_seconds": [
+                [
+                  1.3237517166137422,
+                  1.6831890487671899,
+                  13.238816368207381
+                ],
+                [
+                  0.2947192382812318,
+                  4.601875438690286,
+                  1.6074371147155944
+                ],
+                [
+                  3.1087493515015012,
+                  3.9852807617189683,
+                  2.650000000000091
+                ],
+                [
+                  3.920345840454047,
+                  0.024653625488326725,
+                  2.75
+                ],
+                [
+                  9.43840446472177,
+                  1.6900000000000546,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 1645
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                4,
+                6,
+                7,
+                14,
+                16,
+                19,
+                22
+              ],
+              "match_seconds": [
+                [
+                  1.113466949462918,
+                  0.5997200012207031,
+                  2.273813476562509
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  8.014441833496221,
+                  1.2818749999999,
+                  2.9721566772459482
+                ],
+                [
+                  2.088123321533203,
+                  0.0,
+                  2.9600000000000364
+                ],
+                [
+                  1.6572195434571313,
+                  0.6200000000001182,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  8.380280151367288,
+                  0.2999999999999545
+                ]
+              ],
+              "cutoff": 1685
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 1,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          },
+          "reverb": {
+            "word_counts": {
+              "speech_activity": 13,
+              "one_turn": 13,
+              "any_window": 9,
+              "earlier_labels": 0,
+              "target_labels": 9
+            },
+            "earlier_names": {
+              "0": "D",
+              "1": "B",
+              "6": "A"
+            },
+            "target_names": {
+              "6": "A",
+              "8": "D",
+              "10": "B"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                3,
+                4,
+                5,
+                6,
+                8,
+                10,
+                11
+              ],
+              "match_seconds": [
+                [
+                  1.2175014877318517,
+                  0.20221942901616785,
+                  10.293752109631896
+                ],
+                [
+                  1.2397189331054506,
+                  4.974311923980849,
+                  1.354311923980731
+                ],
+                [
+                  0.06590499877938782,
+                  1.124719772338949,
+                  0.0
+                ],
+                [
+                  0.7425003051757812,
+                  2.1937503814697266,
+                  1.14590438842788
+                ],
+                [
+                  1.254095611572211,
+                  0.0,
+                  1.4343757629394531
+                ],
+                [
+                  9.404653930664153,
+                  1.6900000000000546,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 1645
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                3,
+                4,
+                5,
+                6,
+                8,
+                10,
+                11
+              ],
+              "match_seconds": [
+                [
+                  0.0,
+                  0.40000000000009095,
+                  1.433468475341897
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.581247100830069,
+                  0.6200000000001182,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  5.416594238281277,
+                  0.8599999999999,
+                  0.713750152587636
+                ],
+                [
+                  2.0375022888183594,
+                  0.0,
+                  2.933405761718859
+                ],
+                [
+                  0.0,
+                  8.3900000000001,
+                  0.2999999999999545
+                ],
+                [
+                  0.0,
+                  0.30374908447265625,
+                  0.2759692382812773
+                ]
+              ],
+              "cutoff": 1685
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 1,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 1,
+                  "matching": [
+                    {
+                      "text": "But yeah, that could easily be So five or six pages.",
+                      "start": 1658.0,
+                      "end": 1660.13,
+                      "speaker": "D",
+                      "cluster": 8,
+                      "complete": false,
+                      "word_ids": [
+                        "EN2002d.A.words1001",
+                        "EN2002d.D.words2969",
+                        "EN2002d.D.words2970",
+                        "EN2002d.D.words2971",
+                        "EN2002d.D.words2972",
+                        "EN2002d.D.words2973",
+                        "EN2002d.D.words2974",
+                        "EN2002d.A.words1003",
+                        "EN2002d.D.words2975",
+                        "EN2002d.D.words2976",
+                        "EN2002d.D.words2977",
+                        "EN2002d.D.words2978",
+                        "EN2002d.D.words2979"
+                      ],
+                      "annotated_word_speakers": {
+                        "A": 2,
+                        "D": 11
+                      }
+                    }
+                  ]
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "meeting": "IN1001",
+        "target": "So I will ask you or someone else, okay.",
+        "speaker": "C",
+        "word_count": 9,
+        "models": {
+          "pyannote": {
+            "word_counts": {
+              "speech_activity": 9,
+              "one_turn": 9,
+              "any_window": 0,
+              "earlier_labels": 0,
+              "target_labels": 0
+            },
+            "earlier_names": {
+              "0": "B",
+              "6": "C"
+            },
+            "target_names": {
+              "0": "B",
+              "6": "C"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "clusters": [
+                0,
+                1,
+                4,
+                6,
+                8,
+                9,
+                11,
+                13,
+                15,
+                16
+              ],
+              "match_seconds": [
+                [
+                  2.050000000000182,
+                  17.217155294418262,
+                  1.745969429015986
+                ],
+                [
+                  0.7903438282014577,
+                  0.4899999999997817,
+                  1.9190312501041262
+                ],
+                [
+                  0.339029617309734,
+                  6.798125724792499,
+                  2.029719543457304
+                ],
+                [
+                  0.18972114562984643,
+                  2.0222206115722656,
+                  5.128751258850116
+                ],
+                [
+                  0.0,
+                  2.514373779296875,
+                  0.7971540069579532
+                ],
+                [
+                  0.0,
+                  0.3712501525878906,
+                  0.352846755981318
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 3085
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "B",
+                "C"
+              ],
+              "clusters": [
+                0,
+                1,
+                4,
+                6,
+                8,
+                9,
+                11,
+                13,
+                15,
+                16
+              ],
+              "match_seconds": [
+                [
+                  14.475971374511573,
+                  3.395971374511646
+                ],
+                [
+                  0.0,
+                  0.005969390869267954
+                ],
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  4.642497253417787,
+                  7.779718933105414
+                ],
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.8209690856933776,
+                  1.9149996948240187
+                ],
+                [
+                  0.9468740844727108,
+                  0.5400009155273438
+                ],
+                [
+                  2.8687515258789062,
+                  2.8687515258789062
+                ],
+                [
+                  3.1302810668944403,
+                  2.4602810668943675
+                ]
+              ],
+              "cutoff": 3125
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          },
+          "reverb": {
+            "word_counts": {
+              "speech_activity": 7,
+              "one_turn": 4,
+              "any_window": 0,
+              "earlier_labels": 0,
+              "target_labels": 0
+            },
+            "earlier_names": {
+              "1": "B",
+              "4": "C"
+            },
+            "target_names": {
+              "1": "B"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C"
+              ],
+              "clusters": [
+                0,
+                1,
+                3,
+                4,
+                9,
+                12,
+                13
+              ],
+              "match_seconds": [
+                [
+                  1.265625238418579,
+                  0.0,
+                  1.7381250709295273
+                ],
+                [
+                  0.5709686946870534,
+                  20.659656362533497,
+                  2.149376525878779
+                ],
+                [
+                  0.0,
+                  2.3052812194823673,
+                  0.16528121948249463
+                ],
+                [
+                  0.257220306396448,
+                  1.2300000000000182,
+                  3.947500686645526
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 3085
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "B",
+                "C"
+              ],
+              "clusters": [
+                0,
+                1,
+                3,
+                4,
+                9,
+                12,
+                13
+              ],
+              "match_seconds": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  12.760062866210774,
+                  2.957220153808521
+                ],
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.3059045410154795,
+                  4.1312521362301595
+                ],
+                [
+                  0.0,
+                  0.9602796936032973
+                ],
+                [
+                  0.4284042358399347,
+                  0.0
+                ],
+                [
+                  6.250555725097456,
+                  4.245622253417878
+                ]
+              ],
+              "cutoff": 3125
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "meeting": "IS1003c",
+        "target": "I don't see how adding speech or gesture recognition would make the remote control look more like Google.",
+        "speaker": "D",
+        "word_count": 18,
+        "models": {
+          "pyannote": {
+            "word_counts": {
+              "speech_activity": 18,
+              "one_turn": 18,
+              "any_window": 18,
+              "earlier_labels": 0,
+              "target_labels": 18
+            },
+            "earlier_names": {
+              "0": "C",
+              "4": "A",
+              "6": "B"
+            },
+            "target_names": {
+              "11": "A",
+              "13": "D",
+              "18": "C"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                4,
+                6,
+                9,
+                11,
+                13,
+                15,
+                18
+              ],
+              "match_seconds": [
+                [
+                  1.6809713745117278,
+                  0.8434050750732922,
+                  25.079031250104208,
+                  1.1100000000000136
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.8099994659423828,
+                  0.8072188186645235
+                ],
+                [
+                  7.070625305175781,
+                  0.49159576416013806,
+                  0.6599999999999682,
+                  0.0
+                ],
+                [
+                  1.0687510681152617,
+                  2.3847212982177552,
+                  0.6487510681151889,
+                  0.0
+                ],
+                [
+                  1.962778091430664,
+                  1.172498550415071,
+                  1.2527780914306277,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 805
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                0,
+                1,
+                4,
+                6,
+                9,
+                11,
+                13,
+                15,
+                18
+              ],
+              "match_seconds": [
+                [
+                  0.5746540832519713,
+                  0.7300000000000182,
+                  0.0,
+                  2.092498779296875
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.0590950012207259,
+                  0.0,
+                  0.0,
+                  0.31909500122071677
+                ],
+                [
+                  0.5577816772461119,
+                  0.7300000000000182,
+                  1.6453445434570995,
+                  24.627781677245935
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.7702804565429915,
+                  0.4802804565429142
+                ],
+                [
+                  0.0,
+                  0.0,
+                  3.815276184081995,
+                  0.9999999999998863
+                ]
+              ],
+              "cutoff": 845
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 1,
+                  "matching": [
+                    {
+                      "text": "I don't see how adding speech or gesture recognition would make the remote control look more like Google.",
+                      "start": 818.48,
+                      "end": 825.76,
+                      "speaker": "D",
+                      "cluster": 13,
+                      "complete": false,
+                      "word_ids": [
+                        "IS1003c.D.words389",
+                        "IS1003c.D.words390",
+                        "IS1003c.D.words391",
+                        "IS1003c.D.words392",
+                        "IS1003c.D.words393",
+                        "IS1003c.D.words394",
+                        "IS1003c.D.words395",
+                        "IS1003c.D.words396",
+                        "IS1003c.D.words397",
+                        "IS1003c.D.words398",
+                        "IS1003c.D.words399",
+                        "IS1003c.D.words400",
+                        "IS1003c.D.words401",
+                        "IS1003c.D.words402",
+                        "IS1003c.D.words403",
+                        "IS1003c.D.words404",
+                        "IS1003c.D.words405",
+                        "IS1003c.D.words406",
+                        "IS1003c.D.words407"
+                      ],
+                      "annotated_word_speakers": {
+                        "D": 19
+                      }
+                    }
+                  ]
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          },
+          "reverb": {
+            "word_counts": {
+              "speech_activity": 18,
+              "one_turn": 18,
+              "any_window": 18,
+              "earlier_labels": 0,
+              "target_labels": 18
+            },
+            "earlier_names": {
+              "1": "C",
+              "4": "A",
+              "5": "B"
+            },
+            "target_names": {
+              "20": "D",
+              "23": "C"
+            },
+            "earlier_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                1,
+                4,
+                5,
+                13,
+                15,
+                20,
+                23
+              ],
+              "match_seconds": [
+                [
+                  1.7206238555908158,
+                  0.7843740844726881,
+                  24.628060524090984,
+                  0.8427811431885175
+                ],
+                [
+                  5.484375,
+                  0.25,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.5621547698974609,
+                  1.7887496948242188,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "cutoff": 805
+            },
+            "target_evidence": {
+              "annotated_speakers": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "clusters": [
+                1,
+                4,
+                5,
+                13,
+                15,
+                20,
+                23
+              ],
+              "match_seconds": [
+                [
+                  0.3037528991699219,
+                  0.0,
+                  0.0,
+                  0.3037528991699219
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.5359703063965071,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.5746540832519713,
+                  0.7300000000000182,
+                  0.5697204589844205,
+                  5.1546540832518986
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  17.35715072631831
+                ],
+                [
+                  0.0,
+                  0.0,
+                  3.815276184081995,
+                  0.5899999999999181
+                ]
+              ],
+              "cutoff": 845
+            },
+            "predictions": {
+              "earlier_labels": {
+                "correct_speaker": {
+                  "windows": 0,
+                  "matching": []
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              },
+              "target_labels": {
+                "correct_speaker": {
+                  "windows": 1,
+                  "matching": [
+                    {
+                      "text": "I don't see how adding speech or gesture recognition would make the remote control look more like Google.",
+                      "start": 818.48,
+                      "end": 825.76,
+                      "speaker": "D",
+                      "cluster": 20,
+                      "complete": false,
+                      "word_ids": [
+                        "IS1003c.D.words389",
+                        "IS1003c.D.words390",
+                        "IS1003c.D.words391",
+                        "IS1003c.D.words392",
+                        "IS1003c.D.words393",
+                        "IS1003c.D.words394",
+                        "IS1003c.D.words395",
+                        "IS1003c.D.words396",
+                        "IS1003c.D.words397",
+                        "IS1003c.D.words398",
+                        "IS1003c.D.words399",
+                        "IS1003c.D.words400",
+                        "IS1003c.D.words401",
+                        "IS1003c.D.words402",
+                        "IS1003c.D.words403",
+                        "IS1003c.D.words404",
+                        "IS1003c.D.words405",
+                        "IS1003c.D.words406",
+                        "IS1003c.D.words407"
+                      ],
+                      "annotated_word_speakers": {
+                        "D": 19
+                      }
+                    }
+                  ]
+                },
+                "different_speaker": {
+                  "windows": 0,
+                  "matching": []
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "tests": 705
+}

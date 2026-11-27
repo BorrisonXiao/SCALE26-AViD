@@ -990,10 +990,26 @@
     {
       "id": 46,
       "title": "Measure binding and find where speaker attribution fails",
+      "status": "done",
+      "items": [
+        {
+          "text": "Compared exact matching, MiniLM and DeBERTa on 32 claims against eight annotated utterances. Kept parser coverage separate.",
+          "done": true
+        },
+        {
+          "text": "Compared earlier speaker labels with reference labels in the target slot while keeping the estimated turns fixed.",
+          "done": true
+        }
+      ],
+      "note": "Whole-utterance DeBERTa matches 26 of 32 judgments and accepts six edited claims. Sixteen of 32 claims compile with the needed speaker and content. Target labels yield one clean speaker match for each diarizer. Only two of eight utterances have every word in one candidate before names are applied."
+    },
+    {
+      "id": 47,
+      "title": "Improve speech windows and prepare relation examples",
       "status": "planned",
       "items": [
-        "Use annotated speaker and utterance windows in the first speech binding comparison and count compiler abstentions. Goal is to test which cases reach inference and whether the relation scores work with evidence already located.",
-        "Use the reference speaker annotations to map estimated clusters in the target interval. Goal is to tell whether the missing words come from naming speakers, finding their speech, or assigning overlapping words."
+        "Compare bounded transcript windows taken from estimated speaker turns with the existing disjunction-based window proposals on separate meetings. Goal is to recover relevant words while measuring mixed-speaker windows and wrong-speaker support at the same candidate budget.",
+        "Build a source-disjoint set of paraphrases, changed alternatives and changed shared context using fixed transcript windows. Goal is to learn or calibrate a speech relation score and compare it with whole-utterance DeBERTa on separate meetings."
       ]
     },
     {
@@ -1007,7 +1023,7 @@
       ]
     }
   ],
-  "intro": "Use annotated speech windows in the first relation comparison. Automatic windows often miss all target words from the requested speaker.",
+  "intro": "The annotated transcript comparison identifies false support on small claim edits. The speaker audit finds losses in both window construction and speaker naming.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1078,5 +1094,6 @@
   "or_source_evaluation_run": "exp/probabilistic_verification/or_source_evaluation_20261119",
   "or_followup_run": "exp/probabilistic_verification/or_followup_20261119",
   "scope_alignment_run": "exp/probabilistic_verification/scope_and_alignment_20261119",
-  "ami_speaker_binding_run": "exp/probabilistic_verification/ami_speaker_binding_20261126"
+  "ami_speaker_binding_run": "exp/probabilistic_verification/ami_speaker_binding_20261126",
+  "ami_speech_verification_run": "exp/probabilistic_verification/ami_speech_verification_20261126"
 }
