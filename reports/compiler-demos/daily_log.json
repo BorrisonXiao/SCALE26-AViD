@@ -7,6 +7,16 @@
       "date": "2026-11-27",
       "items": [
         {
+          "text": "Scored whether speakers present alternatives in 24 fixed excerpts. Qwen improves the grounded comparison from 39 to 44 of 48 decisions. Two changed options still get false support.",
+          "href": "#speech-alternative-score-cases",
+          "label": "Speech alternatives and remaining errors"
+        },
+        {
+          "text": "Compared three ways of scoring several distinct pairs on five real frames. Exact inference accounts for reused regions and all three methods agree on the 20 decisions.",
+          "href": "#visual-overlapping-assignment-cases",
+          "label": "Overlapping visual assignments"
+        },
+        {
           "text": "Tested speech without explicit “or” on 12 unused AMI recordings. Same-span binding reduces raw false support from ten to three and keeps seven valid reports. The wording check misses all eight.",
           "href": "#ami-implicit-binding-examples",
           "label": "Implicit alternatives"

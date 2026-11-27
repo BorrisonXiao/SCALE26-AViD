@@ -1054,10 +1054,20 @@
     {
       "id": 51,
       "title": "Score whether a report presents alternatives and test harder visual assignments",
+      "status": "done",
+      "items": [
+        {"text": "Froze 24 choice and addition excerpts before scoring, with 48 queries and annotated speaker spans. Compared two semantic scores and the earlier wording rules.", "done": true},
+        {"text": "Compared exact inference, the best pair, and independent pairs on five actual frames with manually marked regions.", "done": true}
+      ],
+      "note": "Qwen raises speech accuracy from 39/48 to 44/48. Two changed options still get false support. All visual methods agree on all 20 decisions, even when the support scores differ."
+    },
+    {
+      "id": 52,
+      "title": "Check specific spoken options and add naturally ambiguous visual examples",
       "status": "planned",
       "items": [
-        "Evaluate a soft score for presenting alternatives on independently checked speech with both choices and additions. Goal is to recover natural wording while keeping the speaker and span constraint.",
-        "Find real frames with several similar regions and overlapping plausible assignments. Goal is to test where probability aggregation helps while using the same best-assignment baseline."
+        "Match each proposed option to the same speaker and report span. Use changed options and negated replacements. Goal is to identify which options were offered and keep valid paraphrases.",
+        "Select fresh scenes with occlusion, small items, and matched false claims before seeing scores. Goal is to measure whether accounting for shared regions improves decisions with weaker visual evidence."
       ]
     },
     {
@@ -1079,7 +1089,7 @@
       ]
     }
   ],
-  "intro": "Same-span binding helps on new speech examples without explicit “or.” The wording check misses the valid reports. Exact inference and the best visual assignment agree in this pilot.",
+  "intro": "A semantic score for alternatives improves same-span speech verification. Exact inference changes visual support scores while preserving all decisions in the five-frame pilot.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1154,5 +1164,6 @@
   "ami_speech_verification_run": "exp/probabilistic_verification/ami_speech_verification_20261126",
   "ami_window_comparison_run": "exp/probabilistic_verification/ami_window_comparison_20261126",
   "ami_probabilistic_binding_run": "exp/probabilistic_verification/ami_probabilistic_binding_20261126",
-  "binding_generalization_run": "exp/probabilistic_verification/binding_generalization_20261127"
+  "binding_generalization_run": "exp/probabilistic_verification/binding_generalization_20261127",
+  "binding_followup_run": "exp/probabilistic_verification/binding_followup_20261127"
 }
