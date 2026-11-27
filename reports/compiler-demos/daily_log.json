@@ -7,6 +7,11 @@
       "date": "2026-11-27",
       "items": [
         {
+          "text": "Trained logistic and neural classifiers on the prepared speech examples. With the same whole-claim check, logistic regression gets 77 of 86 and the five neural runs get 76–77. The frozen combination gets 80.",
+          "href": "#trained-speech-examples",
+          "label": "Learned speech relation scores"
+        },
+        {
           "text": "Prepared 104 training and 62 calibration examples for spoken alternatives from five AMI recordings outside the earlier evaluations. Reviewed both wordings and edits, checked the source split, and cached frozen DeBERTa vectors.",
           "href": "#speech-training-examples",
           "label": "Speech relation training data"

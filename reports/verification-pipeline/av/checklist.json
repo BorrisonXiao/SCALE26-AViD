@@ -1084,10 +1084,20 @@
     {
       "id": 54,
       "title": "Fit and evaluate a small speech relation classifier",
+      "status": "done",
+      "items": [
+        {"text": "Fit logistic regression and a 64-unit neural classifier on the same frozen features. Fit one calibration temperature per model on the separate recordings.", "done": true},
+        {"text": "Compared both methods with the frozen scorer and a claim-only control on the reserved benchmark. Verified 344 native support probabilities and recorded errors by query type.", "done": true}
+      ],
+      "note": "With the same whole-claim check, logistic regression gets 77/86, the neural runs get 76–77/86, and the frozen combination gets 80/86. The neural model fits all 104 training examples."
+    },
+    {
+      "id": 56,
+      "title": "Expand speech sources and test option alignment",
       "status": "planned",
       "items": [
-        "Fit a regularized logistic classifier on frozen features and adjust its scores on the calibration recordings. Goal is to test whether learning improves sensitivity to edited options on the reserved benchmark.",
-        "Compare with frozen scores and a claim-only check. Goal is to measure whether gains depend on the transcript evidence. Report by edit type."
+        "Add training examples from more topics and review difficult benchmark labels. Goal is to distinguish data coverage from limitations of the classifiers.",
+        "Compare a small neural module that aligns the claimed options to transcript tokens with the pooled-feature heads and frozen relation score. Goal is to preserve quantities and argument roles in similar paraphrases."
       ]
     },
     {
@@ -1117,7 +1127,7 @@
       ]
     }
   ],
-  "intro": "The first speech relation training and calibration sets are ready, with frozen features and separate source recordings. The next speech step is the first small classifier fit.",
+  "intro": "Logistic regression and a small neural classifier have been trained on frozen speech features. The frozen combination remains ahead on the reserved benchmark.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1195,5 +1205,6 @@
   "binding_generalization_run": "exp/probabilistic_verification/binding_generalization_20261127",
   "binding_followup_run": "exp/probabilistic_verification/binding_followup_20261127",
   "option_binding_run": "exp/probabilistic_verification/option_binding_20261127",
-  "speech_relation_training_run": "exp/probabilistic_verification/speech_relation_training_20261127"
+  "speech_relation_training_run": "exp/probabilistic_verification/speech_relation_training_20261127",
+  "speech_relation_classifier_run": "exp/probabilistic_verification/speech_relation_classifier_20261127"
 }
