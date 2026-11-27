@@ -1,8 +1,23 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "timezone": "America/New_York",
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
+    {
+      "date": "2026-11-27",
+      "items": [
+        {
+          "text": "Tested speech without explicit “or” on 12 unused AMI recordings. Same-span binding reduces raw false support from ten to three and keeps seven valid reports. The wording check misses all eight.",
+          "href": "#ami-implicit-binding-examples",
+          "label": "Implicit alternatives"
+        },
+        {
+          "text": "Compared exact inference with the best assignment on five visual and OCR frame pairs. The methods agree on all 20 decisions. Constructed controls show when several scores can change a decision and when repeated evidence should count once.",
+          "href": "#visual-assignment-examples",
+          "label": "Visual and OCR assignments"
+        }
+      ]
+    },
     {
       "date": "2026-11-26",
       "items": [

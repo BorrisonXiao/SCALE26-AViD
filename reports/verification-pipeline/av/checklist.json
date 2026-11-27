@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "steps": [
     {
       "id": 25,
@@ -1038,10 +1038,26 @@
     {
       "id": 49,
       "title": "Test binding on fresh speech and visual or OCR examples",
+      "status": "done",
+      "items": [
+        {
+          "text": "Tested 36 queries on new AMI recordings without explicit “or” in the focal evidence. Compared the wording check, shared spans, and separate spans.",
+          "done": true
+        },
+        {
+          "text": "Scored five reviewed visual and OCR frame pairs with a frozen model and compared the best complete assignment with exact inference at two resolutions.",
+          "done": true
+        }
+      ],
+      "note": "Speech binding keeps 7/8 valid raw matches and reduces false support from 10 to 3. The cue check misses all eight valid reports. Both visual methods agree on all 20 decisions."
+    },
+    {
+      "id": 51,
+      "title": "Score whether a report presents alternatives and test harder visual assignments",
       "status": "planned",
       "items": [
-        "Add independently checked speech reports with implicit alternatives and harder distractors. Goal is to test whether the binding result holds outside the explicit “or” controls.",
-        "Compare the hard filter and exact inference when visual or OCR claims have several relations and uncertain competing assignments. Goal is to establish where probability aggregation improves a decision."
+        "Evaluate a soft score for presenting alternatives on independently checked speech with both choices and additions. Goal is to recover natural wording while keeping the speaker and span constraint.",
+        "Find real frames with several similar regions and overlapping plausible assignments. Goal is to test where probability aggregation helps while using the same best-assignment baseline."
       ]
     },
     {
@@ -1063,7 +1079,7 @@
       ]
     }
   ],
-  "intro": "The same-utterance condition improves speech binding on annotated evidence. A simple filter reaches the same decisions as exact inference on these queries.",
+  "intro": "Same-span binding helps on new speech examples without explicit “or.” The wording check misses the valid reports. Exact inference and the best visual assignment agree in this pilot.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1137,5 +1153,6 @@
   "ami_speaker_binding_run": "exp/probabilistic_verification/ami_speaker_binding_20261126",
   "ami_speech_verification_run": "exp/probabilistic_verification/ami_speech_verification_20261126",
   "ami_window_comparison_run": "exp/probabilistic_verification/ami_window_comparison_20261126",
-  "ami_probabilistic_binding_run": "exp/probabilistic_verification/ami_probabilistic_binding_20261126"
+  "ami_probabilistic_binding_run": "exp/probabilistic_verification/ami_probabilistic_binding_20261126",
+  "binding_generalization_run": "exp/probabilistic_verification/binding_generalization_20261127"
 }
