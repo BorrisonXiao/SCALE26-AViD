@@ -1,0 +1,87 @@
+{
+  "splits": {
+    "train": {
+      "rows": 104,
+      "spans": 24,
+      "recordings": [
+        "IB4002",
+        "IB4004",
+        "IB4005"
+      ],
+      "reviewed_reports": 24,
+      "supported": 48,
+      "unsupported": 56,
+      "variants": {
+        "addition_as_alternatives": 6,
+        "alternatives_as_addition": 12,
+        "description": 6,
+        "different_span": 8,
+        "option": 10,
+        "paraphrase": 24,
+        "polarity": 1,
+        "quantity": 7,
+        "reference": 24,
+        "reversed_preference": 6
+      },
+      "positive_relations": {
+        "alternatives": 24,
+        "preference": 12,
+        "together": 12
+      },
+      "speakers": 9
+    },
+    "calibration": {
+      "rows": 62,
+      "spans": 15,
+      "recordings": [
+        "IN1005",
+        "IN1014"
+      ],
+      "reviewed_reports": 14,
+      "supported": 28,
+      "unsupported": 34,
+      "variants": {
+        "addition_as_alternatives": 5,
+        "alternatives_as_addition": 6,
+        "description": 5,
+        "different_span": 6,
+        "option": 5,
+        "paraphrase": 14,
+        "quantity": 4,
+        "reference": 14,
+        "reversed_preference": 3
+      },
+      "positive_relations": {
+        "alternatives": 12,
+        "preference": 6,
+        "together": 10
+      },
+      "speakers": 6
+    }
+  },
+  "exact_cross_split_overlap": 0,
+  "reserved_series_used": 0,
+  "reviewed_by": "implementing assistant",
+  "source_sha256": "b56e5babb2496b8795deeeda7e71178d7fbc9963f94276cf2a3f4b56ebbc9f9d",
+  "reserved_series": 54,
+  "corpus_recordings": 171,
+  "checked_recordings": 166,
+  "overlap_matches": 0,
+  "fragment_size": 12,
+  "features": {
+    "views": [
+      "claim",
+      "relation"
+    ],
+    "shape": [
+      166,
+      2,
+      768
+    ],
+    "unique_inputs": 218,
+    "max_input_tokens": 160,
+    "max_model_tokens": 512,
+    "feature_sha256": "97e16bf1ba2397e64d4a12978174da885c85902c7aad8839d2eb8fef13b96a7a"
+  },
+  "tests": 713
+}

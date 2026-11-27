@@ -7,6 +7,11 @@
       "date": "2026-11-27",
       "items": [
         {
+          "text": "Prepared 104 training and 62 calibration examples for spoken alternatives from five AMI recordings outside the earlier evaluations. Reviewed both wordings and edits, checked the source split, and cached frozen DeBERTa vectors.",
+          "href": "#speech-training-examples",
+          "label": "Speech relation training data"
+        },
+        {
           "text": "Checked whether a speech span relates the options in the claim. Combining this check with whole-claim scoring gives 35 of 38 new decisions, compared with 32 for the earlier method.",
           "href": "#specific-option-examples",
           "label": "Specific speech options"

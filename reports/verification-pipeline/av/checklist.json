@@ -1073,10 +1073,28 @@
     },
     {
       "id": 53,
-      "title": "Prepare relation training examples and compare nearby frames",
+      "title": "Prepare speech relation training and calibration examples",
+      "status": "done",
+      "items": [
+        {"text": "Reviewed 38 reports and exported 104 training and 62 calibration examples from five recording series outside earlier tests. Checked source overlap, paraphrases, local edits, and changed-evidence controls.", "done": true},
+        {"text": "Cached frozen DeBERTa features for the transcript paired with the original claim or the stated two-option relation.", "done": true}
+      ],
+      "note": "Training uses three related office-planning meetings. Calibration uses two separate technical discussions. All labels come from assistant review."
+    },
+    {
+      "id": 54,
+      "title": "Fit and evaluate a small speech relation classifier",
       "status": "planned",
       "items": [
-        "Prepare new speech sources with verified paraphrases and changes to numbers, descriptions, and option roles. Split off separate calibration sources. Goal is to develop a small relation scorer while reserving these speech cases for evaluation.",
+        "Fit a regularized logistic classifier on frozen features and adjust its scores on the calibration recordings. Goal is to test whether learning improves sensitivity to edited options on the reserved benchmark.",
+        "Compare with frozen scores and a claim-only check. Goal is to measure whether gains depend on the transcript evidence. Report by edit type."
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Compare nearby frames for obscured visual evidence",
+      "status": "planned",
+      "items": [
         "Compare evidence from a single image against a short neighboring-frame window on the same queries. Goal is to measure whether another view of the same object supplies the evidence lost to blur or occlusion."
       ]
     },
@@ -1099,7 +1117,7 @@
       ]
     }
   ],
-  "intro": "Checking the relationship between the claimed options improves speech verification alongside whole-claim scoring. The new visual comparisons find the same decisions at three support thresholds.",
+  "intro": "The first speech relation training and calibration sets are ready, with frozen features and separate source recordings. The next speech step is the first small classifier fit.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1176,5 +1194,6 @@
   "ami_probabilistic_binding_run": "exp/probabilistic_verification/ami_probabilistic_binding_20261126",
   "binding_generalization_run": "exp/probabilistic_verification/binding_generalization_20261127",
   "binding_followup_run": "exp/probabilistic_verification/binding_followup_20261127",
-  "option_binding_run": "exp/probabilistic_verification/option_binding_20261127"
+  "option_binding_run": "exp/probabilistic_verification/option_binding_20261127",
+  "speech_relation_training_run": "exp/probabilistic_verification/speech_relation_training_20261127"
 }
