@@ -7,6 +7,16 @@
       "date": "2026-11-27",
       "items": [
         {
+          "text": "Checked whether a speech span relates the options in the claim. Combining this check with whole-claim scoring gives 35 of 38 new decisions, compared with 32 for the earlier method.",
+          "href": "#specific-option-examples",
+          "label": "Specific speech options"
+        },
+        {
+          "text": "Compared aggregation on eight original frames with natural occlusion or small objects. All three methods agree on the decisions, including a miss on shields partly obscured by smoke.",
+          "href": "#natural-visual-evidence",
+          "label": "Naturally difficult frames"
+        },
+        {
           "text": "Scored whether speakers present alternatives in 24 fixed excerpts. Qwen improves the grounded comparison from 39 to 44 of 48 decisions. Two changed options still get false support.",
           "href": "#speech-alternative-score-cases",
           "label": "Speech alternatives and remaining errors"

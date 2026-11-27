@@ -1064,10 +1064,20 @@
     {
       "id": 52,
       "title": "Check specific spoken options and add naturally ambiguous visual examples",
+      "status": "done",
+      "items": [
+        {"text": "Compared separate option checks with scoring the relationship between specific options, on 48 previous and 38 new speech queries with annotated spans.", "done": true},
+        {"text": "Compared exact inference, the best pair, and independent pairs on eight new original frames selected for natural blur, distance, or occlusion.", "done": true}
+      ],
+      "note": "The specific relationship plus whole claim gives 35/38 correct decisions on new speech queries, compared with 32/38 for the earlier method. All three vision methods score 15/16 at 0.5 and miss the same smoke-obscured shields."
+    },
+    {
+      "id": 53,
+      "title": "Prepare relation training examples and compare nearby frames",
       "status": "planned",
       "items": [
-        "Match each proposed option to the same speaker and report span. Use changed options and negated replacements. Goal is to identify which options were offered and keep valid paraphrases.",
-        "Select fresh scenes with occlusion, small items, and matched false claims before seeing scores. Goal is to measure whether accounting for shared regions improves decisions with weaker visual evidence."
+        "Prepare new speech sources with verified paraphrases and changes to numbers, descriptions, and option roles. Split off separate calibration sources. Goal is to develop a small relation scorer while reserving these speech cases for evaluation.",
+        "Compare evidence from a single image against a short neighboring-frame window on the same queries. Goal is to measure whether another view of the same object supplies the evidence lost to blur or occlusion."
       ]
     },
     {
@@ -1089,7 +1099,7 @@
       ]
     }
   ],
-  "intro": "A semantic score for alternatives improves same-span speech verification. Exact inference changes visual support scores while preserving all decisions in the five-frame pilot.",
+  "intro": "Checking the relationship between the claimed options improves speech verification alongside whole-claim scoring. The new visual comparisons find the same decisions at three support thresholds.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1165,5 +1175,6 @@
   "ami_window_comparison_run": "exp/probabilistic_verification/ami_window_comparison_20261126",
   "ami_probabilistic_binding_run": "exp/probabilistic_verification/ami_probabilistic_binding_20261126",
   "binding_generalization_run": "exp/probabilistic_verification/binding_generalization_20261127",
-  "binding_followup_run": "exp/probabilistic_verification/binding_followup_20261127"
+  "binding_followup_run": "exp/probabilistic_verification/binding_followup_20261127",
+  "option_binding_run": "exp/probabilistic_verification/option_binding_20261127"
 }
