@@ -7,6 +7,11 @@
       "date": "2026-11-27",
       "items": [
         {
+          "text": "Added ICSI data and compared pooled features, token averages, and option attention on fresh recording groups. Frozen Qwen with whole-claim scoring gets 50 of 60 ICSI queries. The expanded attention model gets 42–44. Calibrating the combined score brings the first attention run to 46.",
+          "href": "#aligned-speech-examples",
+          "label": "Option alignment and new recordings"
+        },
+        {
           "text": "Trained logistic and neural classifiers on the prepared speech examples. With the same whole-claim check, logistic regression gets 77 of 86 and the five neural runs get 76–77. The frozen combination gets 80.",
           "href": "#trained-speech-examples",
           "label": "Learned speech relation scores"

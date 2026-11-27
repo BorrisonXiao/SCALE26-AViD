@@ -1094,10 +1094,20 @@
     {
       "id": 56,
       "title": "Expand speech sources and test option alignment",
+      "status": "done",
+      "items": [
+        {"text": "Added 120 ICSI training examples and 32 calibration examples. Evaluated on 60 new queries from separate meeting groups and on the existing AMI benchmark.", "done": true},
+        {"text": "Compared option attention, uniform token averages, and pooled features. Checked the ranking of supported claims and edits, and tested calibration after combining the scores.", "done": true}
+      ],
+      "note": "Frozen Qwen with whole-claim scoring gives 80/86 on AMI and 50/60 on ICSI. Expanded attention gives 73–76/86 and 42–44/60. Calibrating the combined score brings the first attention run to 46/60 on ICSI."
+    },
+    {
+      "id": 57,
+      "title": "Compare annotated and automatic speech evidence with a fixed scorer",
       "status": "planned",
       "items": [
-        "Add training examples from more topics and review difficult benchmark labels. Goal is to distinguish data coverage from limitations of the classifiers.",
-        "Compare a small neural module that aligns the claimed options to transcript tokens with the pooled-feature heads and frozen relation score. Goal is to preserve quantities and argument roles in similar paraphrases."
+        "Use the frozen relation scorer with the same claims and compare annotated report spans with automatically selected transcript windows. Goal is to measure how many errors come from missing or partial evidence.",
+        "Check speaker and report scope in each recovered window. Goal is to see which cases are ready for a joint speech and video evaluation."
       ]
     },
     {
@@ -1127,7 +1137,7 @@
       ]
     }
   ],
-  "intro": "Logistic regression and a small neural classifier have been trained on frozen speech features. The frozen combination remains ahead on the reserved benchmark.",
+  "intro": "The frozen speech scorer leads on both AMI and the new ICSI test after broader training, token alignment, and calibration checks. The next comparison will measure evidence selection with that scorer held fixed.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1206,5 +1216,6 @@
   "binding_followup_run": "exp/probabilistic_verification/binding_followup_20261127",
   "option_binding_run": "exp/probabilistic_verification/option_binding_20261127",
   "speech_relation_training_run": "exp/probabilistic_verification/speech_relation_training_20261127",
-  "speech_relation_classifier_run": "exp/probabilistic_verification/speech_relation_classifier_20261127"
+  "speech_relation_classifier_run": "exp/probabilistic_verification/speech_relation_classifier_20261127",
+  "speech_option_alignment_run": "exp/probabilistic_verification/speech_option_alignment_20261127"
 }
