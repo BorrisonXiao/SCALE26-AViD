@@ -1,8 +1,23 @@
 {
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "timezone": "America/New_York",
   "note": "Recent work is listed first. Earlier dates cover selected milestones reconstructed from saved reports and project notes; they are not a complete activity history.",
   "days": [
+    {
+      "date": "2026-11-28",
+      "items": [
+        {
+          "text": "Compared speech evidence on 120 AMI queries. Annotated excerpts support 39 of 48 valid queries, diarized windows named using labels in the query interval support 14, and earlier-name Whisper windows support 2.",
+          "href": "#speech-window-comparison",
+          "label": "Speech windows and speaker assignment"
+        },
+        {
+          "text": "Compared center crops and matched neighboring views on eight AViD scenes. All conditions get 15 of 16 decisions right. The shields in smoke remain the single miss.",
+          "href": "#neighboring-frame-comparison",
+          "label": "Neighboring video frames"
+        }
+      ]
+    },
     {
       "date": "2026-11-27",
       "items": [

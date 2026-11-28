@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "steps": [
     {
       "id": 25,
@@ -1104,19 +1104,30 @@
     {
       "id": 57,
       "title": "Compare annotated and automatic speech evidence with a fixed scorer",
-      "status": "planned",
+      "status": "done",
       "items": [
-        "Use the frozen relation scorer with the same claims and compare annotated report spans with automatically selected transcript windows. Goal is to measure how many errors come from missing or partial evidence.",
-        "Check speaker and report scope in each recovered window. Goal is to see which cases are ready for a joint speech and video evaluation."
-      ]
+        {
+          "text": "Compared annotated excerpts, selected audio windows with and without speaker labels, and Whisper transcripts on 120 matched queries.",
+          "done": true
+        },
+        {
+          "text": "Counted missing speaker matches, partial transcripts and false support on option, context and speaker edits.",
+          "done": true
+        }
+      ],
+      "note": "Of 48 valid queries, annotated excerpts support 39, windows named with the query annotations support 14, and windows named from earlier excerpts with Whisper support 2. Earlier names produce no eligible windows for 20 of 24 target speakers."
     },
     {
       "id": 55,
       "title": "Compare nearby frames for obscured visual evidence",
-      "status": "planned",
+      "status": "done",
       "items": [
-        "Compare evidence from a single image against a short neighboring-frame window on the same queries. Goal is to measure whether another view of the same object supplies the evidence lost to blur or occlusion."
-      ]
+        {
+          "text": "Compared center crops with neighboring views of the same marked objects on 16 queries from eight scenes.",
+          "done": true
+        }
+      ],
+      "note": "All conditions get 15/16 decisions right. Neighboring views increase the score for distant runners. The shields in smoke remain below threshold."
     },
     {
       "id": 50,
@@ -1124,6 +1135,15 @@
       "status": "planned",
       "items": [
         "Compare speaker names derived from short and longer labeled examples on saved turns. Goal is to see whether better enrollment can make complete windows available to the requested speaker."
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Recover complete speech excerpts within the same evidence budget",
+      "status": "planned",
+      "items": [
+        "Compare claim-based retrieval and a window that can span a short speaker-turn boundary. Goal is to recover the whole reported statement with at most three windows.",
+        "Hold out recording groups and keep the frozen scorer and wrong-speaker controls fixed. Goal is to measure gains in valid report coverage without granting support to the wrong person."
       ]
     },
     {
@@ -1137,7 +1157,7 @@
       ]
     }
   ],
-  "intro": "The frozen speech scorer leads on both AMI and the new ICSI test after broader training, token alignment, and calibration checks. The next comparison will measure evidence selection with that scorer held fixed.",
+  "intro": "The frozen speech scorers lose support when the evidence windows and speaker names are selected from audio. Speaker assignment and span recovery are the next priorities. The eight-scene video comparison has the same decisions when using neighboring frames.",
   "temporal_diagnostic": {
     "source_path": "exp/probabilistic_verification/temporal_audit_20261028/current_behavior.json",
     "artifact": "temporal_compilation_check.json",
@@ -1217,5 +1237,6 @@
   "option_binding_run": "exp/probabilistic_verification/option_binding_20261127",
   "speech_relation_training_run": "exp/probabilistic_verification/speech_relation_training_20261127",
   "speech_relation_classifier_run": "exp/probabilistic_verification/speech_relation_classifier_20261127",
-  "speech_option_alignment_run": "exp/probabilistic_verification/speech_option_alignment_20261127"
+  "speech_option_alignment_run": "exp/probabilistic_verification/speech_option_alignment_20261127",
+  "evidence_selection_run": "exp/probabilistic_verification/evidence_selection_20261128"
 }
